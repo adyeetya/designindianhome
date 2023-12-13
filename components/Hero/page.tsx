@@ -55,7 +55,7 @@ const Hero = () => {
      // Watch for changes in screen size using matchMedia
      const mediaQuery = window.matchMedia('(min-width: 768px)')
 
-     const handleMediaQueryChange = (event) => {
+     const handleMediaQueryChange = (event: { matches: any }) => {
        if (event.matches) {
          setScreenSize('md')
        } else {
