@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
-import ComplexNavbar from '@/components/navbar/navbar'
+import Navbar from '@/components/Navbar/Navbar'
 // import Complex from '@/components/navbar'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -21,7 +21,7 @@ export default function RootLayout({
       
       <body className={inter.className}>
       <header>
-          <ComplexNavbar/>
+          {/* <Navbar/> */}
         </header>
         {children}</body>
     </html>

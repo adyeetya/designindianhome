@@ -1,88 +1,67 @@
 'use client'
 import React, { useEffect, useState } from 'react'
 import DarkMode from '../DarkMode/page'
-import ImageSlider from '../ImageSlider.tsx/page'
+
 import SimpleImageSlider from 'react-simple-image-slider'
+import MaxWidthWrapper from '../MaxWidthWrapper'
 
 const Hero = () => {
-  // const [screenSize, setScreenSize] = useState('')
-
-  // const determineScreenSize = () => {
-  //   const width = window.innerWidth
-
-  //   if (width >= 1024) {
-  //     setScreenSize('lg')
-  //   } else if (width >= 768) {
-  //     setScreenSize('md')
-  //   } else {
-  //     setScreenSize('sm')
-  //   }
-  // }
-
-  // useEffect(() => {
-  //   // Initial screen size determination
-  //   determineScreenSize()
-
-  //   // Update screen size on window resize
-  //   const handleResize = () => {
-  //     determineScreenSize()
-  //   }
-
-  //   window.addEventListener('resize', handleResize)
-
-  //   // Cleanup the event listener on component unmount
-  //   return () => {
-  //     window.removeEventListener('resize', handleResize)
-  //   }
-  // }, [])
+ 
  
    const [screenSize, setScreenSize] = useState('')
 
    const updateScreenSize = () => {
-     if (window.matchMedia('(min-width: 1280px)').matches) {
-       setScreenSize('lg')
-     } else if (window.matchMedia('(min-width: 768px)').matches) {
-       setScreenSize('md')
-     } else {
-       setScreenSize('sm')
-     }
-   }
+  if (window.matchMedia('(min-width: 1280px)').matches) {
+    setScreenSize('lg');
+  } else if (window.matchMedia('(min-width: 768px)').matches) {
+    setScreenSize('md');
+  } else {
+    setScreenSize('sm');
+  }
+};
 
-   useEffect(() => {
-     // Initial screen size determination
-     updateScreenSize()
+useEffect(() => {
+  // Initial screen size determination
+  updateScreenSize();
 
-     // Watch for changes in screen size using matchMedia
-     const mediaQuery = window.matchMedia('(min-width: 768px)')
+  // Watch for changes in screen size using matchMedia
+  const mediaQuery = window.matchMedia('(min-width: 768px)');
 
-     const handleMediaQueryChange = (event: { matches: any }) => {
-       if (event.matches) {
-         setScreenSize('md')
-       } else {
-         setScreenSize('sm')
-       }
-     }
+  const handleMediaQueryChange = (event: { matches: any }) => {
+    updateScreenSize() // Update screen size when media query changes
+    console.log('Screen Width:', window.innerWidth)
+  }
 
-     mediaQuery.addEventListener('change', handleMediaQueryChange)
+  mediaQuery.addEventListener('change', handleMediaQueryChange);
 
-     // Cleanup the event listener on component unmount
-     return () => {
-       mediaQuery.removeEventListener('change', handleMediaQueryChange)
-     }
-   }, []) 
+  // Cleanup the event listener on component unmount
+  return () => {
+    mediaQuery.removeEventListener('change', handleMediaQueryChange);
+  };
+}, []);
+
  
-  let wd = 912
-  let h1 = 908
-  let h2 = 410
+  let wd = 355
+  let h1 = 300
+  let h2 = 300
+
   console.log(screenSize)
   if (screenSize === 'sm') {
-    wd = 410
-    h1 = 350
-    h2 = 350
+    wd = 355
+    h1 = 300
+    h2 = 300
   }
   if(screenSize === 'md'){
-    wd=960
+    wd=558
+    h1=577
+    h2=280
+  
   }
+    if (screenSize == 'lg') {
+      wd = 848
+      h1 = 854
+      h2 = 410
+    }
 
   const images1 = [
     { url: '/images/top1.jpeg' },
@@ -99,9 +78,9 @@ const Hero = () => {
     { url: '/images/right5.jpeg' },
   ]
   return (
-    <div className=" text-white py-8 px-2 md:px-4 lg:px-4 xl:px-4 mx-auto">
-      <div className="max-w-screen-xl ">
-        <div className="flex flex-col gap-4 justify-items-center xl:flex-row lg:ml-2">
+    <>
+      <MaxWidthWrapper className="mb-12 mt-28 sm:mt-40 flex flex-col items-center justify-center text-center">
+        <div className="flex flex-col gap-4 md:flex-row">
           <div className="">
             <SimpleImageSlider
               width={wd}
@@ -110,17 +89,18 @@ const Hero = () => {
               showBullets={false}
               showNavs={false}
               autoPlay={true}
+              style={{ margin: '0 auto' }}
             />
           </div>
           <div className="flex-col gap-4 ">
             <img
               src="/images/new-launch.jpeg"
+              width={wd}
               alt=""
               className="pb-4 lg:w-full"
-              style={{width:`${wd}`}}
              
             />
-            <div className="lg:w-full">
+            <div className="">
               <SimpleImageSlider
                 width={wd}
                 height={h2}
@@ -128,12 +108,13 @@ const Hero = () => {
                 showBullets={false}
                 showNavs={false}
                 autoPlay={true}
+                style={{ margin: '0 auto' }}
               />
             </div>
           </div>
         </div>
-      </div>
-    </div>
+      </MaxWidthWrapper>
+    </>
   )
 }
 

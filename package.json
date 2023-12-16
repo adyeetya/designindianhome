@@ -11,10 +11,16 @@
   "dependencies": {
     "@heroicons/react": "^2.0.18",
     "@material-tailwind/react": "^2.1.5",
+    "bootstrap": "^5.3.2",
+    "clsx": "^2.0.0",
     "next": "14.0.4",
     "react": "^18",
+    "react-bootstrap": "^2.9.1",
     "react-dom": "^18",
-    "react-simple-image-slider": "^2.4.1"
+    "react-router": "^6.3.0",
+    "react-router-dom": "^6.20.1",
+    "react-simple-image-slider": "^2.4.1",
+    "swiper": "^8.1.1"
   },
   "devDependencies": {
     "@types/node": "^20",
