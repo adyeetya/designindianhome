@@ -79,41 +79,7 @@ useEffect(() => {
   ]
   return (
     <>
-      <MaxWidthWrapper className="mb-12 mt-28 sm:mt-40 flex flex-col items-center justify-center text-center">
-        <div className="flex flex-col gap-4 md:flex-row">
-          <div className="">
-            <SimpleImageSlider
-              width={wd}
-              height={h1}
-              images={images1}
-              showBullets={false}
-              showNavs={false}
-              autoPlay={true}
-              style={{ margin: '0 auto' }}
-            />
-          </div>
-          <div className="flex-col gap-4 ">
-            <img
-              src="/images/new-launch.jpeg"
-              width={wd}
-              alt=""
-              className="pb-4 lg:w-full"
-             
-            />
-            <div className="">
-              <SimpleImageSlider
-                width={wd}
-                height={h2}
-                images={images2}
-                showBullets={false}
-                showNavs={false}
-                autoPlay={true}
-                style={{ margin: '0 auto' }}
-              />
-            </div>
-          </div>
-        </div>
-      </MaxWidthWrapper>
+      
     </>
   )
 }
