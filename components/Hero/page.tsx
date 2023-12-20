@@ -58,8 +58,8 @@ useEffect(() => {
   
   }
     if (screenSize == 'lg') {
-      wd = 848
-      h1 = 854
+      wd = 648
+      h1 = 754
       h2 = 410
     }
 
