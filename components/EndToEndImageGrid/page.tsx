@@ -1,6 +1,5 @@
 import React from 'react'
 import MaxWidthWrapper from '../MaxWidthWrapper'
-
 const EndToEndImageGrid = () => {
   // Sample list of images with associated text
   const imageList = [
@@ -106,7 +105,11 @@ const EndToEndImageGrid = () => {
             </div>
           </div>
         </div>
+
+
+
       </MaxWidthWrapper>
+
     </>
   )
 }
