@@ -11,7 +11,7 @@ import "../style/hero.css"
 export default function Home() {
   return (
     <>
-      <TopRibon/>
+      {/* <TopRibon/> */}
       <Header />
       <Hero />
       <ImageGrid/>

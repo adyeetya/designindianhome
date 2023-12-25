@@ -5,7 +5,6 @@ import { SocialIcon } from 'react-social-icons';
 import Modal from 'react-modal';
 import { Link } from 'react-router-dom';
 
-
 const megaMenuDialogStyle = {
   overlay: {
     backgroundColor: 'rgba(0, 0, 0, 0.5)',
@@ -13,7 +12,7 @@ const megaMenuDialogStyle = {
   content: {
     width: '900px',
     height: '400px',
-    top: '57%',
+    top: '65%',
     left: '45%',
     transform: 'translate(-50%, -50%)',
     padding: '10px',
@@ -45,7 +44,7 @@ const Header = () => {
       },
       {
         category: 'Home Renovation Services',
-        subcategories: ['Structural Renovation', 'Interior Renovation', 'Bedroom Renovation', 'Lounge Renovation', 'Bathroom Renovation', 'Terrace Renovation', 'Living Room Renovation', 'Modular Kitchen Renovation', 'Wardrobe Renovation', 'Living Room Renovation', 'Mandir Renovation', 'Gym & Spas Renovation', 'Hotels Renovation', 'Farmhouse Renovation', 'Banquet Renovation', 'Villa Renovation']
+        subcategories: ['Structural Renovation' , 'Interior Renovation' , 'Bedroom Renovation' , 'Lounge Renovation' , 'Bathroom Renovation' , 'Terrace Renovation' , 'Living Room Renovation' , 'Modular Kitchen Renovation' , 'Wardrobe Renovation' , 'Living Room Renovation' , 'Mandir Renovation' , 'Gym & Spas Renovation' , 'Hotels Renovation' , 'Farmhouse Renovation' , 'Banquet Renovation' , 'Villa Renovation']
       }
     ],
     interiors: [
@@ -56,135 +55,19 @@ const Header = () => {
       },
       {
         category: 'Types of Interior Design Ideas',
-        subcategories: ['1bhk residence interior designs', '2bhk residence interior designs', '3bhk residence interior designs', '4bhk residence interior designs', 'Villa interior designs', 'farmhouse interior designs', 'Penthouse interior designs', 'Studio apartment interior designs', 'Bungalow interior designs', 'Duplex Residence interior Designs', ' Cottage Interior Designs'],
+        subcategories: ['1bhk residence interior designs' , '2bhk residence interior designs' , '3bhk residence interior designs' , '4bhk residence interior designs' , 'Villa interior designs' , 'farmhouse interior designs' , 'Penthouse interior designs' , 'Studio apartment interior designs' , 'Bungalow interior designs' , 'Duplex Residence interior Designs' ,' Cottage Interior Designs'],
       },
 
       {
         category: 'Renovation Services',
-        subcategories: ['Structural Renovation', 'Interior Renovation', 'Bedroom Renovation', 'Lounge Renovation', 'Bathroom Renovation ', 'Terrace Renovation', 'Living Room Renovation ', 'Modular Kitchen Renovation', 'Wardrobe Renovation', 'Living Room Renovation', 'Mandir Renovation', 'Gym & Spas Renovation', 'Hotels Renovation', 'Farmhouse Renovation', 'Banquet Renovation', 'Villa Renovation'
+        subcategories: ['Structural Renovation' , 'Interior Renovation' , 'Bedroom Renovation' , 'Lounge Renovation' , 'Bathroom Renovation ', 'Terrace Renovation' , 'Living Room Renovation ', 'Modular Kitchen Renovation' , 'Wardrobe Renovation' , 'Living Room Renovation' , 'Mandir Renovation' , 'Gym & Spas Renovation' , 'Hotels Renovation' , 'Farmhouse Renovation' , 'Banquet Renovation' , 'Villa Renovation'
         ],
       },
       {
         category: '/images/banner.png'
       }
-
+      
     ],
-    Architectural: [
-
-      {
-        category: 'Consultancy',
-
-      },
-      {
-        category: 'Designing & Planning',
-      },
-
-      {
-        category: 'End to End Structural projects'
-      },
-      {
-        category: 'Luxury Residence'
-      },
-      {
-        category: 'Renovations'
-      }
-
-    ],
-    Modular_kitchen: [
-      {
-        category: 'Types of Modular Kitchens'
-      },
-      {
-        category: 'Modular Kitchen Designs'
-      },
-      {
-        category: 'Luxury Modular Kitchen'
-      },
-      {
-        category: 'Kitchen Renovation'
-      }
-    ],
-
-    Wardrobes: [
-      {
-        category: 'Types of Wardrobes'
-      },
-      {
-        category: 'Luxury Wardrobes'
-      },
-      {
-        category: 'Wardrobes Designs'
-      },
-      {
-        category: 'Lacquer Glass Wardrobe Designs'
-      },
-      {
-        category: 'Wardrobe Renovation Services'
-      }
-    ],
-
-    Living: [
-      {
-        category: 'TV Units' 
-      },
-      {
-        category: 'Crockery Units'
-      },
-      {
-        category: 'Bookshelves'
-      },
-      {
-        category: 'Shoeracks'
-      },
-      {
-        category: 'Home Office'
-      },
-      {
-        category: 'Glass Partitions'
-      },
-      {
-        category: 'Dressings'
-
-      },
-      {
-        category: 'Renovation'
-      },
-      {
-        category: ' Services'
-      }
-    ],
-    Modular_interiors: [
-      {
-        category: 'Mandir'
-      },
-      {
-        category: 'chest of Drawers'
-      },
-      {
-        category: 'Bar Units'
-      },
-      {
-        category: 'side Tables'
-      },
-      {
-        category: 'custom Beds'
-      },
-      {
-        category: 'Foldable Beds'
-      },
-      {
-        category: 'Foyer Cabinets'
-      },
-      {
-        category: 'Bathroom Vanities'
-      },
-      {
-        category: 'Home Office'
-      },
-      {
-        category: 'Renovation'
-      },
-    ]
 
   };
 
@@ -260,48 +143,19 @@ const Header = () => {
   };
 
   return (
-    <div className={`bg-white ${scrollDirection === 'down' ? 'sticky' : ''}`}>
+    <div className="bg-white">
       <div className="hidden md:flex">
         {/* Desktop Header */}
         <div
-          className={`bg-white py-0 mb-px w-full z-50 transition-transform ease-in-out duration-300 ${scrollDirection === 'down' ? '-translate-y-full' : 'translate-y-0'
-            }`}
+          className={`bg-white py-1 mb-px w-full z-50 transition-transform ease-in-out duration-300 ${
+            scrollDirection === 'down' ? '-translate-y-full' : 'translate-y-0'
+          }`}
           style={{
             position: 'fixed',
-            top: 0,
-            marginTop: 0,
+            top: 48,
+            marginTop: 20,
           }}
         >
-          <div className="bg-red-600 py-1 sticky top-0">
-            <h1 className="text-center text-xs">ॐ साईं राम</h1>
-            <div className="flex justify-center gap-96">
-              <div className="flex gap-2"><SocialIcon
-                network="whatsapp"
-                url="www.vimeo.com"
-                style={{ width: '1.5rem', height: '1.5rem' }}
-              /> <h1>Call Us</h1></div>
-              <div className="flex gap-2 text-xs"><p>Book a Visit</p>
-                <p>| Refer a Rewards</p>
-                <p>| Architects & Interior Designs</p></div>
-              <div className=" flex gap-2 ">
-                {/* <SocialIcon
-                  network="instagram"
-                  url="www.vimeo.com"
-                  style={{ width: '1.5rem', height: '1.5rem' }}
-                />
-                <SocialIcon
-                  network="youtube"
-                  url="www.vimeo.com"
-                  style={{  width: '1.5rem', height: '1.5rem' }}
-                />
-                <SocialIcon
-                  network="whatsapp"
-                  url="www.vimeo.com"
-                  style={{ width: '1.5rem', height: '1.5rem' }}
-                /> */}
-              </div>
-            </div>
-          </div>
           <animated.div
             style={{
               transform: springPropsCenterLogo.translateY.to(
@@ -311,7 +165,7 @@ const Header = () => {
               transition: 'transform 0.3s ease-in-out, opacity 0.3s ease-in-out',
             }}
           >
-            <div className=" text-black text-center py-2 w-200px m-200px pt-2">
+            <div className=" text-black text-center py-2 w-200px m-200px pt-4">
               <div className="max-w-screen-xl mx-auto flex justify-between items-center m-200px">
                 {/* Right side */}
                 <div className="flex items-center space-x-4">
@@ -367,16 +221,59 @@ const Header = () => {
               }}
             />
 
+            <Modal
+              isOpen={megaMenuOpen}
+              onRequestClose={handleMegaMenuLeave}
+              contentLabel="Mega Menu Dialog"
+              style={megaMenuDialogStyle}
+            >
+              {/* Arrow to indicate the corresponding category */}
+              {hoveredCategory && (
+                <div
+                  style={{
+                    position: 'absolute',
+                    top: -15, // Adjust as needed
+                    left: '50%',
+                    transform: 'translateX(-50%)',
+                    borderTop: '15px solid white', // Adjust size and color as needed
+                    borderRight: '15px solid transparent',
+                    borderLeft: '15px solid transparent',
+                  }}
+                />
+              )}
+
+              {/* Render mega menu items for the hovered category */}
+              {hoveredCategory && (
+                <div className="flex flex-row">
+                  {/* Column for Categories */}
+                  <div className="pr-4 flex flex-row gap-4">
+                    {megaMenuData[hoveredCategory].map((item, idx) => (
+                      <div key={idx} className="mb-4">
+                        <p className="text-xs font-bold mb-2">{item.category}</p>
+                        {item.subcategories && (
+                          <ul>
+                            {item.subcategories.map((subCategory, subIdx) => (
+                              <li key={subIdx} className="text-xs">
+                                <Link to={`/${subCategory}`}>{subCategory}</Link>
+                              </li>
+                            ))}
+                          </ul>
+                        )}
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </Modal>
 
             {/* Main Header Navigation scroll up header */}
             <div className="">
-              <nav className="hidden md:flex items-center space-x-10">
+            <nav className="hidden md:flex items-center space-x-10">
                 <div
                   className="relative group"
                   onMouseEnter={() => handleMegaMenuHover('designIdeas')}
                   onMouseLeave={handleMegaMenuLeave}
                 >
-
                   <p className="text-xs font-bold">Design Ideas</p>
                 </div>
                 <div
@@ -386,22 +283,8 @@ const Header = () => {
                 >
                   <p className="text-xs font-bold">Interiors</p>
                 </div>
-
-                <div className="relative group"
-                  onMouseEnter={() => handleMegaMenuHover('Architectural')}
-                  onMouseLeave={handleMegaMenuLeave}
-                >
-                  <p className="text-xs font-bold">Architectural</p>
-                </div>
-
-                <div
-                  className="relative group"
-                  onMouseEnter={() => handleMegaMenuHover('Modular_kitchen')}
-                  onMouseLeave={handleMegaMenuLeave}
-                >
-                  <p className="text-xs font-bold">Modular Kitchen</p>
-                </div>
-
+                <p className="text-xs font-bold">Architectural</p>
+                <p className="text-xs font-bold">Modern Kitchen</p>
                 <animated.img
                   srcSet="/images/Logo.gif"
                   alt="Center Logo"
@@ -417,77 +300,13 @@ const Header = () => {
                     transition: 'transform 0.1s ease-in-out, opacity 0.1s ease-in-out',
                   }}
                 />
-
-                <div 
-                className="relative group"
-                onMouseEnter={() => handleMegaMenuHover('Wardrobes')}
-                onMouseLeave={handleMegaMenuLeave}
-                >
-                  <p className="text-xs font-bold">Wardrobes</p>
-                </div>
-                <div  className="relative group"
-                  onMouseEnter={() => handleMegaMenuHover('Living')}
-                  onMouseLeave={handleMegaMenuLeave}>
-                    <p className="text-xs font-bold">Living</p>
-                    
-                </div>
-                <div
-                  className="relative group"
-                  onMouseEnter={() => handleMegaMenuHover('Modular_interiors')}
-                  onMouseLeave={handleMegaMenuLeave}>
-                  <p className="text-xs font-bold">Modular Interiors</p>
-                  
-                  </div>
-                <div ><p className="text-xs font-bold">More</p></div>
+                <p className="text-xs font-bold">Wardrobes</p>
+                <p className="text-xs font-bold">Living</p>
+                <p className="text-xs font-bold">Modular Interiors</p>
+                <p className="text-xs font-bold">More</p>
                 <button className="bg-yellow-400 px-6 py-2 rounded-full text-sm">Get Quotes</button>
                 <button className="text-sm ">Contact</button>
               </nav>
-
-              <Modal
-                isOpen={megaMenuOpen}
-                onRequestClose={handleMegaMenuLeave}
-                contentLabel="Mega Menu Dialog"
-                style={megaMenuDialogStyle}
-              >
-                {/* Arrow to indicate the corresponding category */}
-                {hoveredCategory && (
-                  <div
-                    style={{
-                      position: 'absolute',
-                      top: -15, // Adjust as needed
-                      left: '50%',
-                      transform: 'translateX(-50%)',
-                      borderTop: '15px solid white', // Adjust size and color as needed
-                      borderRight: '15px solid transparent',
-                      borderLeft: '15px solid transparent',
-                    }}
-                  />
-                )}
-
-                {/* Render mega menu items for the hovered category */}
-                {hoveredCategory && (
-                  <div className="flex flex-row">
-                    {/* Column for Categories */}
-                    <div className="pr-4 flex flex-row gap-4">
-                      {megaMenuData[hoveredCategory].map((item, idx) => (
-                        <div key={idx} className="mb-4">
-                          <p className="text-xs font-bold mb-2">{item.category}</p>
-                          {item.subcategories && (
-                            <ul>
-                              {item.subcategories.map((subCategory, subIdx) => (
-                                <li key={subIdx} className="text-xs">
-                                  <p>{subCategory}</p>
-                                </li>
-                              ))}
-                            </ul>
-                          )}
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                )}
-              </Modal>
-
             </div>
           </div>
         </div>
