@@ -114,11 +114,11 @@ export class Footer extends Component {
                     </div>
 
                 </div>
-                <div className="bg-gray-200 p-4 md:p-16">
+                <div className="bg-gray-200 pt-1 md:p-4">
                     <hr className="flex justify-center h-2 w-11/12 border-1 border-black ml-4 md:ml-14" />
 
                     <p className="text-xs pl-4 md:pl-14 pr-4 md:pr-14 text-left">
-                        At Design Indian Homes, we bring together functionality and aesthetics to provide homeowners with customised and efficient home designs. Our designers specialise in home interior designs and home décor, and help you create a personalized home to suit your lifestyle. From sophisticated living room designs to space-saving and clutter-free interior designs, we are here to help you find the best home decor and home design to match your needs and style. All our products come with up to 10-year warranty along with unwavering support and maintenance services. Explore thousands of inspiring interior designs or get a free estimate – it's all here on designindianhomes.com, your one stop for complete home interiors.
+                        At Design Indian Homes, we bring together functionality and aesthetics to provide homeowners with customised and efficient home designs. Our designers specialise in home interior designs and home décor, and help you create a personalized home to suit your lifestyle. From sophisticated living room designs to space-saving and clutter-free interior designs, we are here to help you find the best home decor and home design to match your needs and style. All our products come with up to 10-year warranty along with unwavering support and maintenance services. Explore thousands of inspiring interior designs or get a free estimate – it is all here on designindianhomes.com, your one stop for complete home interiors.
                     </p>
 
                     <h2 className="font-bold pl-4 md:pl-14 mt-2">Popular Services</h2>
