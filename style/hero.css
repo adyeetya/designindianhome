@@ -8,7 +8,7 @@
   flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
-  justify-content: center; 
+  justify-content: center;  
 }
 .single-img{
   padding:0 10px 20px;
@@ -144,6 +144,7 @@
   margin-left: 36px;
 }
 .slider__radiobox-label--prev, .slider__radiobox-label--next {
+.slider_radiobox-label--prev, .slider_radiobox-label--next {
   display: none;
   top: 50%;
   transform: translateY(-50%);
@@ -189,6 +190,25 @@
   display: block;
 }
 .slider__radiobox--1:focus + .slider__radiobox-label--item-1, .slider__radiobox--2:focus + .slider__radiobox-label--item-2, .slider__radiobox--3:focus + .slider__radiobox-label--item-3, .slider__radiobox--4:focus + .slider__radiobox-label--item-4 {
+.slider_radiobox--1:checked ~ .slider_slides {
+  margin-left: 0;
+}
+.slider_radiobox--2:checked ~ .slider_slides {
+  margin-left: -100%;
+}
+.slider_radiobox--3:checked ~ .slider_slides {
+  margin-left: -200%;
+}
+.slider_radiobox--4:checked ~ .slider_slides {
+  margin-left: -300%;
+}
+.slider_radiobox--1:checked + .sliderradiobox-label--item-1, .sliderradiobox--2:checked + .sliderradiobox-label--item-2, .sliderradiobox--3:checked + .sliderradiobox-label--item-3, .sliderradiobox--4:checked + .slider_radiobox-label--item-4 {
+  opacity: 1;
+}
+.slider_radiobox--1:checked ~ .sliderradiobox-label--prev-4, .sliderradiobox--2:checked ~ .sliderradiobox-label--prev-1, .sliderradiobox--3:checked ~ .sliderradiobox-label--prev-2, .sliderradiobox--4:checked ~ .sliderradiobox-label--prev-3, .sliderradiobox--1:checked ~ .sliderradiobox-label--next-2, .sliderradiobox--2:checked ~ .sliderradiobox-label--next-3, .sliderradiobox--3:checked ~ .sliderradiobox-label--next-4, .sliderradiobox--4:checked ~ .slider_radiobox-label--next-1 {
+  display: block;
+}
+.slider_radiobox--1:focus + .sliderradiobox-label--item-1, .sliderradiobox--2:focus + .sliderradiobox-label--item-2, .sliderradiobox--3:focus + .sliderradiobox-label--item-3, .sliderradiobox--4:focus + .slider_radiobox-label--item-4 {
   outline: 5px auto ;
   outline: 5px auto -webkit-focus-ring-color;
 }
@@ -218,10 +238,3 @@ background-position: right top;
 }
 
 
-
-
- 
- .btn{
-   color:wheat;
-   background: linear-gradient(65deg, #FF9083 0, #FF6250 100%);
- }
