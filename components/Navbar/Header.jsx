@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import { useSpring, animated } from 'react-spring';
 import { SocialIcon } from 'react-social-icons';
+import Image from 'next/image';
 
 const Header = () => {
   const [scrollDirection, setScrollDirection] = useState('up');
@@ -218,7 +219,7 @@ const Header = () => {
               </button>
             </div>
             <div className="flex flex-col items-center py-2 gap-4 z-40">
-              <img src="https://www.kalyanjewellers.net/images/logo-icon.svg" alt="" />
+              <Image src="https://www.kalyanjewellers.net/images/logo-icon.svg" alt="" />
               <div className="flex gap-3">
               <SocialIcon
                     network="twitter"
