@@ -1,0 +1,21 @@
+.wrapper h1 {
+  text-align: center;
+  font-size: 30px;
+  font-family: Audiowide;
+}
+.img-area {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.single-img{
+  padding:0 10px 20px;
+}
+
+
+
+
+
+/* ignore the code below */

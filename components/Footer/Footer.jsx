@@ -114,7 +114,7 @@ export class Footer extends Component {
                     </div>
 
                 </div>
-                <div className="bg-gray-200 p-4 md:p-16">
+                <div className="bg-gray-200 pt-1 md:p-4">
                     <hr className="flex justify-center h-2 w-11/12 border-1 border-black ml-4 md:ml-14" />
 
                     <p className="text-xs pl-4 md:pl-14 pr-4 md:pr-14 text-left">
