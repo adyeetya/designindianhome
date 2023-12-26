@@ -1,5 +1,8 @@
 import React from 'react'
 import MaxWidthWrapper from '../MaxWidthWrapper'
+
+import Image from 'next/image'
+
 const EndToEndImageGrid = () => {
   // Sample list of images with associated text
   const imageList = [
@@ -94,7 +97,9 @@ const EndToEndImageGrid = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
               {imageList.map((item, index) => (
                 <div key={index} className="text-center">
-                  <img
+                  <Image
+                    width={200}
+                    height={100}
                     src={item.src}
                     alt={item.text}
                     className="w-full  object-cover"

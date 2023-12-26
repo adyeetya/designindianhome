@@ -1,4 +1,3 @@
-import DarkMode from '@/components/DarkMode/page'
 import Hero from '@/components/Hero/page'
 import ImageGrid from '@/components/ImageGrid/page'
 import Image from 'next/image'
@@ -11,14 +10,13 @@ import "../style/hero.css"
 export default function Home() {
   return (
     <>
-      {/* <TopRibon/> */}
+
       <Header />
       <Hero />
-      <ImageGrid/>
+      <ImageGrid />
       <EndToEndImageGrid />
       <Display/>
       <Footer />
-      <DarkMode />
     </>
   )
 }

@@ -2,6 +2,9 @@
 import React, { useEffect, useState } from 'react';
 import { useSpring, animated } from 'react-spring';
 import { SocialIcon } from 'react-social-icons';
+
+import Image from 'next/image';
+
 import Modal from 'react-modal';
 import { Link } from 'react-router-dom';
 
@@ -21,6 +24,7 @@ const megaMenuDialogStyle = {
     flexDirection: 'row',
   },
 };
+
 
 const Header = () => {
   const [megaMenuPosition, setMegaMenuPosition] = useState({ top: 0, left: 0 });
@@ -552,7 +556,10 @@ const Header = () => {
               </button>
             </div>
             <div className="flex flex-col items-center py-2 gap-4 z-40">
+
+
               <img srcSet="images/Logo.gif" alt="" className="w-18 h-14" />
+
               <div className="flex gap-3">
                 <SocialIcon
                   network="twitter"

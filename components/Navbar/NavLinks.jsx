@@ -8,8 +8,8 @@ const NavLinks = () => {
   const [subHeading, setSubHeading] = useState('')
   return (
     <>
-      {links.map((link) => (
-        <div>
+      {links.map((link, index) => (
+        <div key={index}>
           <div className="px-3 text-left md:cursor-pointer group">
             <h1
               className="py-7 flex justify-between items-center md:pr-0 pr-5 group"
@@ -40,13 +40,13 @@ const NavLinks = () => {
                     ></div>
                   </div>
                   <div className="bg-white p-5 grid grid-cols-3 gap-10">
-                    {link.sublinks.map((mysublinks) => (
-                      <div>
+                    {link.sublinks.map((mysublinks, index) => (
+                      <div key={index}>
                         <h1 className="text-lg font-semibold">
                           {mysublinks.Head}
                         </h1>
-                        {mysublinks.sublink.map((slink) => (
-                          <li className="text-sm text-gray-600 my-2.5">
+                        {mysublinks.sublink.map((slink, index) => (
+                          <li key={index} className="text-sm text-gray-600 my-2.5">
                             <Link
                               to={slink.link}
                               className="hover:text-primary"
@@ -69,8 +69,8 @@ const NavLinks = () => {
           `}
           >
             {/* sublinks */}
-            {link.sublinks.map((slinks) => (
-              <div>
+            {link.sublinks.map((slinks, index) => (
+              <div key={index}>
                 <div>
                   <h1
                     onClick={() =>
@@ -97,8 +97,8 @@ const NavLinks = () => {
                       subHeading === slinks.Head ? 'md:hidden' : 'hidden'
                     }`}
                   >
-                    {slinks.sublink.map((slink) => (
-                      <li className="py-3 pl-14">
+                    {slinks.sublink.map((slink, index) => (
+                      <li key={index} className="py-3 pl-14">
                         <Link to={slink.link}>{slink.name}</Link>
                       </li>
                     ))}
