@@ -144,7 +144,7 @@
   margin-left: 36px;
 }
 .slider__radiobox-label--prev, .slider__radiobox-label--next {
-.slider_radiobox-label--prev, .slider_radiobox-label--next {
+
   display: none;
   top: 50%;
   transform: translateY(-50%);
@@ -237,4 +237,4 @@ background-position: right top;
   }
 }
 
-
+}
