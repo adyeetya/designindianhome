@@ -15,7 +15,9 @@ const DesignCard: React.FC<CardProps> = ({ data }) => {
     console.log(data);
     
   return (
+
     <Link href={`/design-ideas/${data.designId}`}>
+
       <div className="max-w-sm rounded overflow-hidden shadow-lg">
         <Image
           width={90}
