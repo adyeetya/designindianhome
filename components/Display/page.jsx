@@ -169,7 +169,7 @@ const Display = () => {
   
   <div className="section1">
     <div className="title_header">
-      <h1>What Clients Say About Us</h1>
+      <h1>Connect Wih Us</h1>
       <span className="bar" />
    
     </div><br/>
