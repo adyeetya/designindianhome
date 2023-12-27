@@ -5,78 +5,78 @@ const ImageGrid = () => {
   // Sample list of images with associated text
   const imageList = [
     {
-      src: '/images/Structural Renovation.jpg',
-      text: 'Image 1',
+      src: '/images/top-picks/bathroom renovation.jpg',
+      text: 'Bathroom Renovation',
     },
     {
-      src: '/images/Structural Renovation.jpg',
-      text: 'Image 1',
+      src: '/images/top-picks/bedroomrenovation.jpg',
+      text: 'Bedroom Renovation',
     },
     {
-      src: '/images/Structural Renovation.jpg',
-      text: 'Image 1',
+      src: '/images/top-picks/beds.jpg',
+      text: 'Beds',
     },
     {
-      src: '/images/Structural Renovation.jpg',
-      text: 'Image 1',
+      src: '/images/top-picks/door.jpg',
+      text: 'Doors',
     },
     {
-      src: '/images/Structural Renovation.jpg',
-      text: 'Image 1',
+      src: '/images/top-picks/electric.jpg',
+      text: 'Electric',
     },
     {
-      src: '/images/Structural Renovation.jpg',
-      text: 'Image 1',
+      src: '/images/top-picks/exterior cladding.jpg',
+      text: 'Exterior Cladding',
     },
     {
-      src: '/images/Structural Renovation.jpg',
-      text: 'Image 1',
+      src: '/images/top-picks/glass partition.jpg',
+      text: 'Glass Partitions',
     },
     {
-      src: '/images/Structural Renovation.jpg',
-      text: 'Image 1',
+      src: '/images/top-picks/Interior Lightening.jpg',
+      text: 'Interior Lightening',
     },
     {
-      src: '/images/Structural Renovation.jpg',
-      text: 'Image 1',
+      src: '/images/top-picks/kitchen renovation.jpg',
+      text: 'Kitchen Renovation',
     },
     {
-      src: '/images/Structural Renovation.jpg',
-      text: 'Image 1',
+      src: '/images/top-picks/plumbing.jpg',
+      text: 'Plumbing',
     },
     {
-      src: '/images/Structural Renovation.jpg',
-      text: 'Image 1',
+      src: '/images/top-picks/pop.jpg',
+      text: 'Pop',
     },
     {
-      src: '/images/Structural Renovation.jpg',
-      text: 'Image 1',
+      src: '/images/top-picks/sofa.jpg',
+      text: 'Sofa',
     },
     {
-      src: '/images/Structural Renovation.jpg',
-      text: 'Image 1',
+      src: '/images/top-picks/tiling.jpg',
+      text: 'Tiling',
     },
     {
-      src: '/images/Structural Renovation.jpg',
-      text: 'Image 1',
+      src: '/images/top-picks/upvc window.jpg',
+      text: 'UPVC Windows',
     },
     {
-      src: '/images/Structural Renovation.jpg',
-      text: 'Image 1',
+      src: '/images/top-picks/Vertical Garden.jpg',
+      text: 'Vertical Gardens',
     },
     {
-      src: '/images/Structural Renovation.jpg',
-      text: 'Image 1',
+      src: '/images/top-picks/wall pannaling.jpg',
+      text: 'Wall Panneling',
     },
     {
-      src: '/images/Structural Renovation.jpg',
-      text: 'Image 1',
+      src: '/images/top-picks/wooden flooring.jpg',
+      text: 'Wooden Flooring',
     },
     {
-      src: '/images/Structural Renovation.jpg',
-      text: 'Image 1',
+      src: '/images/top-picks/wooden polishing.jpg',
+      text: 'Wooden Polishing',
     },
-    
+
     // Add more images as needed
   ]
 
@@ -98,7 +98,7 @@ const ImageGrid = () => {
                     alt={item.text}
                     className="w-full  object-cover"
                   />
-                  <p className="text-xs mt-2">{item.text}</p>
+                  <p className="text-sm mt-2">{item.text}</p>
                 </div>
               ))}
             </div>
