@@ -1,6 +1,7 @@
 'use client'
 
 import React, { useState, useEffect } from 'react';
+import Button from '../Button';
 const Display = () => {
   const [isPlaying, setIsPlaying] = useState(false);
 
@@ -142,8 +143,8 @@ const Display = () => {
                 </div>
                 <div className="slider__slide slider__slide--3">
                   <img
-                    alt="Placeholder 300x150"
-                    src="images/12.png"
+                    alt="Placeholder 300x150 "
+                    src="images/12.png"      
                   />
                 </div>
                 <div className="slider__slide slider__slide--4">
@@ -160,6 +161,78 @@ const Display = () => {
 
         </section>
       </div>
+
+
+
+
+      <>
+  
+  <div className="section1">
+    <div className="title_header">
+      <h1>What Clients Say About Us</h1>
+      <span className="bar" />
+   
+    </div><br/>
+    <section>
+      <div className="card">
+      
+
+
+
+      <div className="grids">
+        <article className="main ">
+        <h2>Connect on</h2>
+        <h1>Whatsapp</h1>
+      
+        </article>
+        <section className="side">
+        <img
+                    src="https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dw9fa2f775/images/home/whatsapp-icon.svg"
+                  />
+        </section>
+      </div>
+      </div>
+
+
+
+
+      <div className="card">
+      <div className="grids">
+        <article className="main ">
+        <h2>Book An</h2>
+        <h1>Appointment</h1>
+      
+        </article>
+        <section className="side">
+        <img
+                    src="https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dwac5fb555/images/home/marker-icon.svg"
+                  />
+        </section>
+      </div>  
+      </div>
+
+
+
+      <div className="card">
+      <div className="grids">
+        <article className="main ">
+        <h2>Schedule A</h2>
+        <h1>Video Call</h1>
+      
+        </article>
+        <section className="side">
+        <img
+                    src="https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dw153e7692/images/home/video-icon.svg"
+                  />
+        </section>
+      </div>
+      </div>
+
+
+
+    </section>
+  </div>
+</>
 
     </>
 
