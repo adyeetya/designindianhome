@@ -57,7 +57,10 @@ const Hero = () => {
     wd = 648
     h1 = 754
     h2 = 410
+
   }
+
+
 
   const images1 = [
     { url: '/images/top1.jpeg' },
@@ -76,7 +79,8 @@ const Hero = () => {
   return (
     <>
 
-      <MaxWidthWrapper className="mb-12 mt-28 sm:mt-40 flex flex-col items-center justify-center text-center">
+      <MaxWidthWrapper className="mb-12 mt-8 sm:mt-40 flex flex-col items-center justify-center text-center">
+
         <div className="flex flex-col gap-4 md:flex-row">
           <div className="">
             <SimpleImageSlider
@@ -91,7 +95,9 @@ const Hero = () => {
           </div>
           <div className="flex-col gap-4 ">
             <Image
-            height={100}
+
+              height={100}
+
               src="/images/new-launch.jpeg"
               width={wd}
               alt=""

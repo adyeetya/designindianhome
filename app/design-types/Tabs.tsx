@@ -4,10 +4,10 @@ import Tabs from '@mui/material/Tabs'
 import Tab from '@mui/material/Tab'
 
 import Box from '@mui/material/Box'
-import { pagesData } from './pagesData'
+import { designTypesData } from './designTypeData'
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
-import DesignCard from './designCard'
+import DesignTypeCard from './designTypeCard'
 
 interface TabPanelProps {
   children?: React.ReactNode
@@ -27,7 +27,7 @@ function CustomTabPanel(props: TabPanelProps) {
       {...other}
     >
       {value === index && (
-        <div >
+        <div>
           <div>{children}</div>
           {/* <Typography>{children}</Typography> */}
         </div>
@@ -60,52 +60,50 @@ export default function BasicTabs({ id }: TabsProps) {
   }
 
   return (
-
-      <Box sx={{ width: '100%' }}>
-        <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
-          <Tabs
-            value={value}
-            onChange={handleChange}
-            variant="scrollable"
-            scrollButtons="auto"
-            aria-label="basic tabs example"
-          >
-            {pagesData.map((page, index) => (
-              <Link
-                key={page.id}
-                href={`/design-ideas/${page.slug}`}
-                scroll={false}
-              >
-                <div style={{ whiteSpace: 'nowrap', width: 'max-content' }}>
-                  <Tab label={page.name} {...a11yProps(index)} />
-                </div>
-              </Link>
-            ))}
-          </Tabs>
-        </Box>
-        {pagesData.map((page, index) => {
-          // console.log(page.items);
-
-          return (
-            <CustomTabPanel key={page.id} value={value} index={index}>
-              <div className="flex items-center bg-white p-4">
-                <div className="w-1 h-8 rounded bg-red-500 mr-2"></div>
-                <h1 className="text-3xl font-bold">{page.heading}</h1>
+    <Box sx={{ width: '100%' }}>
+      <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
+        <Tabs
+          value={value}
+          onChange={handleChange}
+          variant="scrollable"
+          scrollButtons="auto"
+          aria-label="basic tabs example"
+        >
+          {designTypesData.map((page, index) => (
+            <Link
+              key={page.id}
+              href={`/design-types/${page.slug}`}
+              scroll={false}
+            >
+              <div style={{ whiteSpace: 'nowrap', width: 'max-content' }}>
+                <Tab label={page.name} {...a11yProps(index)} />
               </div>
-              <p className="text-gray-700 text-sm px-7">{page.desc}</p>
-              <div className="flex">
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 px-7 mt-16">
-                  {page.items &&
-                    page.items.map((design) => (
-                      <DesignCard key={design.designId} data={design} />
-                    ))}
-                </div>
-              </div>
-            </CustomTabPanel>
-          )
-        })}
+            </Link>
+          ))}
+        </Tabs>
       </Box>
-  
+      {designTypesData.map((page, index) => {
+        // console.log(page.items);
+
+        return (
+          <CustomTabPanel key={page.id} value={value} index={index}>
+            <div className="flex items-center bg-white p-4">
+              <div className="w-1 h-8 rounded bg-red-500 mr-2"></div>
+              <h1 className="text-3xl font-bold">{page.heading}</h1>
+            </div>
+            <p className="text-gray-700 text-sm px-7">{page.desc}</p>
+            <div className="flex">
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 px-7 mt-16">
+                {page.items &&
+                  page.items.map((design) => (
+                    <DesignTypeCard key={design.designId} data={design} />
+                  ))}
+              </div>
+            </div>
+          </CustomTabPanel>
+        )
+      })}
+    </Box>
   )
 }
 // 'use client'
@@ -166,4 +164,4 @@ export default function BasicTabs({ id }: TabsProps) {
 //   )
 // }
 
-// export default CustomTabs
+// export default CdesignType

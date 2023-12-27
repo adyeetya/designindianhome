@@ -163,6 +163,12 @@ const Display = () => {
       </div>
 
 
+
+
+
+      <>
+  
+
   <div className="section1">
     <div className="title_header">
       <h1>Connect Wih Us</h1>
@@ -230,7 +236,9 @@ const Display = () => {
   </div>
 </>
 
-  
+
+    </>
+
 
   )
 }

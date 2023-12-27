@@ -1,3 +1,4 @@
+
 "use client";
 import React, { useEffect, useState } from 'react';
 import { useSpring, animated } from 'react-spring';
@@ -7,6 +8,7 @@ import Image from 'next/image';
 
 import Modal from 'react-modal';
 import { Link } from 'react-router-dom';
+
 
 
 const megaMenuDialogStyle = {
@@ -23,16 +25,20 @@ const megaMenuDialogStyle = {
     display: 'flex',
     flexDirection: 'row',
   },
+
+
 };
 
 
 const Header = () => {
   const [megaMenuPosition, setMegaMenuPosition] = useState({ top: 0, left: 0 });
 
+
   const megaMenuData = {
     designIdeas: [
       {
         category: 'Modular Interior Designs',
+
         subcategories: ['Modular Kitchens', 'Wardrobes', 'Vanities', 'Dressers', 'TV Units', 'Crockery Units', 'Glass Partitions'],
       },
       {
@@ -51,20 +57,25 @@ const Header = () => {
         category: 'Home Renovation Services',
         subcategories: ['Structural Renovation', 'Interior Renovation', 'Bedroom Renovation', 'Lounge Renovation', 'Bathroom Renovation', 'Terrace Renovation', 'Living Room Renovation', 'Modular Kitchen Renovation', 'Wardrobe Renovation', 'Living Room Renovation', 'Mandir Renovation', 'Gym & Spas Renovation', 'Hotels Renovation', 'Farmhouse Renovation', 'Banquet Renovation', 'Villa Renovation']
       }
+
     ],
     interiors: [
       {
         category: 'End to end Interiors',
+
+
         subcategories: ['Modular Interiors', 'Commercial Interiors', 'Luxury Interiors'],
 
       },
       {
         category: 'Types of Interior Design Ideas',
         subcategories: ['1bhk residence interior designs', '2bhk residence interior designs', '3bhk residence interior designs', '4bhk residence interior designs', 'Villa interior designs', 'farmhouse interior designs', 'Penthouse interior designs', 'Studio apartment interior designs', 'Bungalow interior designs', 'Duplex Residence interior Designs', ' Cottage Interior Designs'],
+
       },
 
       {
         category: 'Renovation Services',
+
         subcategories: ['Structural Renovation', 'Interior Renovation', 'Bedroom Renovation', 'Lounge Renovation', 'Bathroom Renovation ', 'Terrace Renovation', 'Living Room Renovation ', 'Modular Kitchen Renovation', 'Wardrobe Renovation', 'Living Room Renovation', 'Mandir Renovation', 'Gym & Spas Renovation', 'Hotels Renovation', 'Farmhouse Renovation', 'Banquet Renovation', 'Villa Renovation'
         ],
       },
@@ -78,12 +89,14 @@ const Header = () => {
       {
         category: 'Consultancy',
 
+
       },
       {
         category: 'Designing & Planning',
       },
 
       {
+
         category: 'End to End Structural projects'
       },
       {
@@ -107,10 +120,12 @@ const Header = () => {
       {
         category: 'Kitchen Renovation'
       }
+
     ],
 
     Wardrobes: [
       {
+
         category: 'Types of Wardrobes'
       },
       {
@@ -125,10 +140,12 @@ const Header = () => {
       {
         category: 'Wardrobe Renovation Services'
       }
+
     ],
 
     Living: [
       {
+
         category: 'TV Units' 
       },
       {
@@ -208,41 +225,44 @@ const Header = () => {
   };
 
   const [scrollDirection, setScrollDirection] = useState('up');
+
   const [springPropsLeftLogo, setSpringPropsLeftLogo] = useSpring(() => ({
     translateY: 0,
     translateX: 0,
     opacity: 1,
     scale: 1,
-  }));
+  }))
   const [springPropsCenterLogo, setSpringPropsCenterLogo] = useSpring(() => ({
     translateY: 0,
     translateX: 0,
     opacity: 1,
     scale: 1,
+
   }));
   const [mobileMenuVisible, setMobileMenuVisible] = useState(false);
 
+
   useEffect(() => {
-    let lastScrollY = 0;
+    let lastScrollY = 0
 
     const handleScroll = () => {
-      const currentScrollY = window.scrollY;
+      const currentScrollY = window.scrollY
 
       if (currentScrollY > lastScrollY) {
-        setScrollDirection('down');
+        setScrollDirection('down')
       } else {
-        setScrollDirection('up');
+        setScrollDirection('up')
       }
 
-      lastScrollY = currentScrollY;
-    };
+      lastScrollY = currentScrollY
+    }
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll)
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
 
   useEffect(() => {
     setSpringPropsLeftLogo({
@@ -250,14 +270,18 @@ const Header = () => {
       translateX: scrollDirection === 'down' ? 0 : -100,
       opacity: scrollDirection === 'up' ? 0 : 1,
       scale: scrollDirection === 'up' ? 0.5 : 1,
-    });
+    })
     setSpringPropsCenterLogo({
       translateY: scrollDirection === 'down' ? 100 : 0,
       translateX: scrollDirection === 'down' ? 0 : -100,
       opacity: scrollDirection === 'down' ? 0 : 1,
       scale: scrollDirection === 'down' ? 0.5 : 1,
-    });
-  }, [scrollDirection, setSpringPropsLeftLogo, setSpringPropsCenterLogo]);
+    })
+  }, [scrollDirection, setSpringPropsLeftLogo, setSpringPropsCenterLogo])
+
+  const toggleMobileMenu = () => {
+    setMobileMenuVisible((prevState) => !prevState)
+  }
 
   const toggleMobileMenu = () => {
     setMobileMenuVisible((prevState) => !prevState);
@@ -268,8 +292,10 @@ const Header = () => {
       <div className="hidden md:flex">
         {/* Desktop Header */}
         <div
+
           className={`bg-white py-0 mb-px w-full z-50 transition-transform ease-in-out duration-300 ${scrollDirection === 'down' ? '-translate-y-full' : 'translate-y-0'
             }`}
+
           style={{
             position: 'fixed',
             top: 0,
@@ -279,6 +305,7 @@ const Header = () => {
           <div className="bg-red-600 py-1 sticky top-0">
             <h1 className="text-center text-xs">ॐ साईं राम</h1>
             <div className="flex justify-center gap-96">
+
               <div className="flex gap-2"><SocialIcon
                 network="whatsapp"
                 url="www.vimeo.com"
@@ -287,6 +314,7 @@ const Header = () => {
               <div className="flex gap-2 text-xs"><p>Book a Visit</p>
                 <p>| Refer a Rewards</p>
                 <p>| Architects & Interior Designs</p></div>
+
               <div className=" flex gap-2 ">
                 {/* <SocialIcon
                   network="instagram"
@@ -309,10 +337,12 @@ const Header = () => {
           <animated.div
             style={{
               transform: springPropsCenterLogo.translateY.to(
+
                 y => `translateY(${y}%) scale(${springPropsCenterLogo.scale})`
               ),
               opacity: springPropsCenterLogo.opacity,
               transition: 'transform 0.3s ease-in-out, opacity 0.3s ease-in-out',
+
             }}
           >
             <div className=" text-black text-center py-2 w-200px m-200px pt-2">
@@ -361,6 +391,7 @@ const Header = () => {
             style={{}}
           >
             <animated.img
+
               srcSet="images/left-logo.png"
               alt="Left Logo"
               className="hidden md:flex h-16 w-16 mr-2"
@@ -370,6 +401,7 @@ const Header = () => {
                 transition: 'transform 0.3s ease-in-out, opacity 0.3s ease-in-out',
               }}
             />
+
 
 
             {/* Main Header Navigation scroll up header */}
@@ -391,7 +423,9 @@ const Header = () => {
                   <p className="text-xs font-bold">Interiors</p>
                 </div>
 
+
                 <div className="relative group"
+
                   onMouseEnter={() => handleMegaMenuHover('Architectural')}
                   onMouseLeave={handleMegaMenuLeave}
                 >
@@ -412,6 +446,7 @@ const Header = () => {
                   className="h-30 w-20 top-2/4 transform -translate-y-2/4 scale-150 "
                   style={{
                     transform: springPropsCenterLogo.translateY.to(
+
                       y => `translateY(${y}%) scale(${springPropsCenterLogo.scale})`
                     ),
                     opacity: springPropsCenterLogo.opacity,
@@ -433,17 +468,19 @@ const Header = () => {
                   onMouseEnter={() => handleMegaMenuHover('Living')}
                   onMouseLeave={handleMegaMenuLeave}>
                     <p className="text-xs font-bold">Living</p>
-                    
+
                 </div>
                 <div
                   className="relative group"
                   onMouseEnter={() => handleMegaMenuHover('Modular_interiors')}
+
                   onMouseLeave={handleMegaMenuLeave}>
                   <p className="text-xs font-bold">Modular Interiors</p>
                   
                   </div>
                 <div ><p className="text-xs font-bold">More</p></div>
                 <button className="bg-yellow-400 px-6 py-2 rounded-full text-sm">Get Quotes</button>
+
                 <button className="text-sm ">Contact</button>
               </nav>
 
@@ -475,7 +512,9 @@ const Header = () => {
                     <div className="pr-4 flex flex-row gap-4">
                       {megaMenuData[hoveredCategory].map((item, idx) => (
                         <div key={idx} className="mb-4">
+
                           <p className="text-xs font-bold mb-2">{item.category}</p>
+
                           {item.subcategories && (
                             <ul>
                               {item.subcategories.map((subCategory, subIdx) => (
@@ -500,7 +539,9 @@ const Header = () => {
       {/* Mobile Header */}
       <div className="md:hidden sticky top-0">
         <div className="flex justify-between items-center px-4 py-2 bg-white">
-          <img src="images/left-logo.png" alt="" className="h-12 w-12" />
+
+          <img src="/images/left-logo.png" alt="" className="h-12 w-12" />
+
           <button
             onClick={toggleMobileMenu}
             className="text-black focus:outline-none"
@@ -527,8 +568,10 @@ const Header = () => {
             className="bg-green-600 fixed top-0 left-0 w-full h-full overflow-y-scroll text-white"
             style={{
               opacity: springPropsCenterLogo.opacity,
+
               display: springPropsCenterLogo.opacity.to(
                 (opacity) => (opacity === 0 ? 'none' : 'block')
+
               ),
               transition: 'opacity 0.3s ease-in-out',
               pointerEvents: mobileMenuVisible ? 'auto' : 'none', // Add this line
@@ -556,7 +599,6 @@ const Header = () => {
               </button>
             </div>
             <div className="flex flex-col items-center py-2 gap-4 z-40">
-
 
               <img srcSet="images/Logo.gif" alt="" className="w-18 h-14" />
 
@@ -595,7 +637,9 @@ const Header = () => {
         )}
       </div>
     </div>
+
   );
 };
 
 export default Header;
+
