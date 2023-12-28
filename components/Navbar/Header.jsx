@@ -279,14 +279,14 @@ const Header = () => {
     })
   }, [scrollDirection, setSpringPropsLeftLogo, setSpringPropsCenterLogo])
 
-  const toggleMobileMenu = () => {
+/*   const toggleMobileMenu = () => {
     setMobileMenuVisible((prevState) => !prevState)
   }
 
   const toggleMobileMenu = () => {
     setMobileMenuVisible((prevState) => !prevState);
   };
-
+ */
   return (
     <div className={`bg-white ${scrollDirection === 'down' ? 'sticky' : ''}`}>
       <div className="hidden md:flex">
@@ -542,7 +542,7 @@ const Header = () => {
 
           <img src="/images/left-logo.png" alt="" className="h-12 w-12" />
 
-          <button
+         {/*  <button
             onClick={toggleMobileMenu}
             className="text-black focus:outline-none"
           >
@@ -560,7 +560,7 @@ const Header = () => {
                 d="M4 6h16M4 12h16m-7 6h7"
               />
             </svg>
-          </button>
+          </button> */}
         </div>
 
         {mobileMenuVisible && (
