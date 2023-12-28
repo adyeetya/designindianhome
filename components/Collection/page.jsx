@@ -1,21 +1,23 @@
 const Collection = () =>{
     return(
         <>
+        <div className="containr">
+          <h1>
+          Why Design Indian Homes?
+          </h1>
         <div id="content">
   <div className="item">
-    <a href="http://placekitten.com/g/280/195">
-      <img src="http://placekitten.com/g/280/195" />
-    </a>
+    
+      <img src="images/icon/icons8-on-time-delivery-53.png" />
+   
     <p>
-      Cough furball hide from vacuum cleaner or pooping rainbow while flying in
-      a toasted bread costume in space give attitude.
+      On time Delivery
     </p>
   </div>
   
   <div className="item">
-    <a href="http://placekitten.com/g/280/205">
-      <img src="http://placekitten.com/g/280/205" />
-    </a>
+      <img src="images/icon/icons8-on-time-delivery-53.png"/>
+   
     <p>
       Lick butt cat snacks, so stick butt in face intently sniff hand, and
       intrigued by the shower hunt anything that moves. Destroy couch as revenge
@@ -111,7 +113,7 @@ const Collection = () =>{
   <div className="foo" />
   <div className="foo" />
 </div>
-
+</div>
         </>
     )
 }
