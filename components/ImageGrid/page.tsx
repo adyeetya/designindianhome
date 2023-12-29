@@ -1,6 +1,6 @@
 import React from 'react'
 import MaxWidthWrapper from '../MaxWidthWrapper'
-
+import Image from 'next/image'
 const ImageGrid = () => {
   // Sample list of images with associated text
   const imageList = [
@@ -90,15 +90,19 @@ const ImageGrid = () => {
           </div>
 
           <div className="container mx-auto mt-8">
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-1 sm:gap-4">
               {imageList.map((item, index) => (
-                <div key={index} className="text-center">
-                  <img
-                    src={item.src}
-                    alt={item.text}
-                    className="w-full  object-cover"
-                  />
-                  <p className="text-sm mt-2">{item.text}</p>
+                <div key={index} className="text-center md:w-full w-4/5">
+                  <div className="mb-4 ml-8">
+                    <Image
+                      height={100}
+                      width={200}
+                      src={item.src}
+                      alt={item.text}
+                      className="w-full object-cover"
+                    />
+                    <p className="text-sm mt-2">{item.text}</p>
+                  </div>
                 </div>
               ))}
             </div>
