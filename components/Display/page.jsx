@@ -18,7 +18,7 @@ const Display = () => {
       <div className="wrapper">
         <div className="img-area ">
           <div className="single-img">
-            <Image src="images/bannernew.png" alt="" />
+            <img src="images/bannernew.png" alt="" />
           </div>
           <div className="single-img">
             <video loop autoPlay muted controls={isPlaying} src="video/vid21.mp4" alt="" />
@@ -27,7 +27,7 @@ const Display = () => {
             <video loop autoPlay controls={isPlaying} src="video/vid1.mp4" alt="" />
           </div>
           <div className="single-img">
-            <Image src="images/banner1.png" alt="" />
+            <img src="images/banner1.png" alt="" />
           </div>
 
 
@@ -130,25 +130,25 @@ const Display = () => {
               />
               <div className="slider__slides">
                 <div className="slider__slide slider__slide--1">
-                  <Image
+                  <img
 
                     src="images/52.png"
                   />
                 </div>
                 <div className="slider__slide slider__slide--2">
-                  <Image
+                  <img
                     alt="Placeholder 1200x600"
                     src="images/50.png"
                   />
                 </div>
                 <div className="slider__slide slider__slide--3">
-                  <Image
+                  <img
                     alt="Placeholder 300x150 "
-                    src="images/12.png"      
+                    src="images/12.png"
                   />
                 </div>
                 <div className="slider__slide slider__slide--4">
-                  <Image
+                  <img
                     alt="Placeholder 800x400"
                     src="images/74.png"
                   />
@@ -165,73 +165,73 @@ const Display = () => {
 
 
 
-  
-
-  <div className="section1">
-    <div className="title_header">
-      <h1>Connect With Us</h1>
-      <span className="bar" />
-   
-    </div><br/>
-    <section>
-      <div className="card">
-      
 
 
+      <div className="section1">
+        <div className="title_header">
+          <h1>Connect With Us</h1>
+          <span className="bar" />
 
-      <div className="grids">
-        <article className="main ">
-        <h2>Connect on</h2>
-        <h1>Whatsapp</h1>
-      
-        </article>
-        <section className="side">
-        <Image
-                    src="https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dw9fa2f775/images/home/whatsapp-icon.svg"
-                  />
+        </div><br />
+        <section>
+          <div className="card">
+
+
+
+
+            <div className="grids">
+              <article className="main ">
+                <h2>Connect on</h2>
+                <h1>Whatsapp</h1>
+
+              </article>
+              <section className="side">
+                <img
+                  src="https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dw9fa2f775/images/home/whatsapp-icon.svg"
+                />
+              </section>
+            </div>
+          </div>
+
+
+
+
+          <div className="card">
+            <div className="grids">
+              <article className="main ">
+                <h2>Book An</h2>
+                <h1>Appointment</h1>
+
+              </article>
+              <section className="side">
+                <img
+                  src="https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dwac5fb555/images/home/marker-icon.svg"
+                />
+              </section>
+            </div>
+          </div>
+
+
+
+          <div className="card">
+            <div className="grids">
+              <article className="main ">
+                <h2>Schedule A</h2>
+                <h1>Video Call</h1>
+
+              </article>
+              <section className="side">
+                <img
+                  src="https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dw153e7692/images/home/video-icon.svg"
+                />
+              </section>
+            </div>
+          </div>
+
+
+
         </section>
       </div>
-      </div>
-
-
-
-
-      <div className="card">
-      <div className="grids">
-        <article className="main ">
-        <h2>Book An</h2>
-        <h1>Appointment</h1>
-      
-        </article>
-        <section className="side">
-        <Image
-                    src="https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dwac5fb555/images/home/marker-icon.svg"
-                  />
-        </section>
-      </div>  
-      </div>
-
-
-
-      <div className="card">
-      <div className="grids">
-        <article className="main ">
-        <h2>Schedule A</h2>
-        <h1>Video Call</h1>
-      
-        </article>
-        <section className="side">
-        <Image
-                    src="https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dw153e7692/images/home/video-icon.svg"
-                  />
-        </section>
-      </div>
-      </div>
-
-
-
-    </section>
-  </div>
 
 
     </>
