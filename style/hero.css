@@ -462,80 +462,56 @@ background-position: right top;
   background-color: #f1f1f1;
 }
 
-/* 
-.Width {
-  margin: 0 auto;
-  padding: 0 1rem;
-  max-width: 100%;
-}
 
-
-
-.griding h1{
-  text-align: center;
-  font-size: 30px;
-  font-weight: 600;
-  padding-top: 10%;
-  width: 100%;
-}
-
-.griding h3{
-  text-align: center;
-  font-size: 20px;
-  font-weight: 300;
-  padding-bottom: 3%;
-  width: 100%;
-}
-
-.img-hover-zoom {
-  height: 300px; 
-  overflow: hidden; 
-}
-
-.img-hover-zoom img {
-  transition: transform .5s ease;
-}
-
-.img-hover-zoom:hover img {
-  transform: scale(1.5);
-}
-
-
-.responsive-image {
-  max-width: 100%;
-}
-
-.cell img {
-  display: block;
-}
-@media screen and (min-width: 600px){
-  .griding {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+@-webkit-keyframes scroll {
+  0% {
+    transform: translateX(0);
   }
-  .cell {
-    width:50%;
+  100% {
+    transform: translateX(calc(-250px * 7));
   }
 }
-@media screen and (min-width: 1000px){
-  .cell {
-    width:calc (100%/3);
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 7));
   }
 }
-.cell {
-  margin: 1rem;
+.slider {
+  background: white;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+  height: 100px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 960px;
 }
-
-@media screen and (min-width: 600px){
-  .cell {
-    width: calc(50% - 2rem);
-  }
+.slider::before, .slider::after {
+  background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+  content: "";
+  height: 100px;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
 }
-@media screen and (min-width: 1000px){
-  .cell{
-    width: calc(33.3333% - 2rem);
-  }
-} */
-
-
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+.slider::before {
+  left: 0;
+  top: 0;
+}
+.slider .slide-track {
+  -webkit-animation: scroll 40s linear infinite;
+          animation: scroll 40s linear infinite;
+  display: flex;
+  width: calc(250px * 14);
+}
+.slider .slide {
+  height: 100px;
+  width: 250px;
+}
