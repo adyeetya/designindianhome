@@ -2,6 +2,7 @@
 import React, { useState } from 'react'
 import { Stepper, Step, StepLabel, Typography, Button } from '@mui/material'
 import Image from 'next/image'
+import MaxWidthWrapper from '../MaxWidthWrapper'
 const steps = [
   {
     label: '',
@@ -50,36 +51,38 @@ const StepperComponent = () => {
 
   return (
     <>
-      <div className="flex flex-col md:flex-row m-8">
-        {/* Image Section (50% width) */}
-        <div className="w-full md:w-1/2">
-          <Image
-            src="/images/stepper-img.webp"
-            width={600}
-            height={100}
-            alt="Demo Image"
-            className="w-full h-auto"
-          />
-        </div>
+      <MaxWidthWrapper>
+        <div className="flex flex-col md:flex-row m-8">
+          {/* Image Section (50% width) */}
+          <div className="w-full md:w-1/2">
+            <Image
+              src="/images/stepper-img.webp"
+              width={600}
+              height={100}
+              alt="Demo Image"
+              className="w-full h-auto"
+            />
+          </div>
 
-        {/* Stepper Section (50% width) */}
-        <div className="w-full md:w-1/2 mt-4 sm:mt-0">
-          <Stepper activeStep={activeStep} alternativeLabel>
-            {steps.map((step, index) => (
-              <Step key={index} onClick={() => handleStepChange(index)}>
-                <StepLabel>{step.label}</StepLabel>
-              </Step>
-            ))}
-          </Stepper>
+          {/* Stepper Section (50% width) */}
+          <div className="w-full md:w-1/2 mt-4 sm:mt-0">
+            <Stepper activeStep={activeStep} alternativeLabel>
+              {steps.map((step, index) => (
+                <Step key={index} onClick={() => handleStepChange(index)}>
+                  <StepLabel>{step.label}</StepLabel>
+                </Step>
+              ))}
+            </Stepper>
 
-          <div className="md:mx-8 my-8">
-            <h2 className="text-xl font-semibold text-green-500 mb-4">
-              {steps[activeStep].heading}
-            </h2>
-            <p className="text-sm">{steps[activeStep].content}</p>
+            <div className="md:mx-8 my-8">
+              <h2 className="text-xl font-semibold text-green-500 mb-4">
+                {steps[activeStep].heading}
+              </h2>
+              <p className="text-sm">{steps[activeStep].content}</p>
+            </div>
           </div>
         </div>
-      </div>
+      </MaxWidthWrapper>
     </>
   )
 }
