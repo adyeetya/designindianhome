@@ -856,7 +856,7 @@ const Header = () => {
     });
   }, [scrollDirection, setSpringPropsLeftLogo, setSpringPropsCenterLogo]);
 
-  const [mobileMenuVisible, setMobileMenuVisible] = useState(true);
+  const [mobileMenuVisible, setMobileMenuVisible] = useState(false);
   const [activeSection, setActiveSection] = useState(null);
 
 
@@ -870,6 +870,20 @@ const Header = () => {
     setMobileMenuVisible((prevState) => !prevState);
   };
 
+  useEffect(() => {
+    const body = document.body;
+
+    if (mobileMenuVisible) {
+      body.style.overflow = 'hidden';
+    } else {
+      body.style.overflow = 'auto';
+    }
+
+    // Cleanup the style when the component unmounts or the menu is closed
+    return () => {
+      body.style.overflow = 'auto';
+    };
+  }, [mobileMenuVisible]);
   return (
     <div className={`bg-white  ${scrollDirection === 'down'}`}>
       <div className="hidden md:flex">
@@ -1041,7 +1055,7 @@ const Header = () => {
 
       <div className="md:hidden sticky top-6 z-40">
 
-        <div className="flex justify-between items-center px-4 py-2 bg-gradient-to-l from-green-500 sticky top-0">
+        <div className="flex justify-between items-center px-4 py-2 bg-gradient-to-l from-green-500 sticky top-0 overflow-y-scroll ">
           <img src="images/left.gif" alt="" className="h-16 w-16" />
           <button
             onClick={toggleMobileMenu}
@@ -1065,16 +1079,24 @@ const Header = () => {
         </div>
 
         {mobileMenuVisible && (
+          <div className='fixed top-0'>
+             <div
+        className={`bg-white bg-gradient-to-t from-green-400 text-black fixed top-0 left-0 w-full h-full overflow-y-scroll ${
+          mobileMenuVisible ? 'block' : 'hidden'
+        }`}
+      >
+
+      
 
           <animated.div
-            className="bg-white bg-gradient-to-t from-green-400 text-black fixed top-0 left-0 w-full h-full overflow-y-scroll "
+            className="bg-white bg-gradient-to-t from-green-400 text-black fixed top-0 sticky z-50 left-0 w-full h-full overflow-y-scroll "
             style={{
               opacity: springPropsCenterLogo.opacity,
               display: springPropsCenterLogo.opacity.to(
                 (opacity) => (opacity === 0 ? 'none' : 'block')
               ),
               transition: 'opacity 0.3s ease-in-out',
-              pointerEvents: mobileMenuVisible ? 'auto' : 'none', // Add this line
+              pointerEvents: mobileMenuVisible ? 'auto' : 'none', 
             }}
           >
             <div className="flex justify-end p-4">
@@ -1820,29 +1842,29 @@ const Header = () => {
               <div style={{borderRadius: '20px'}}>
                 <video src="video/video-interior-designer-company-in-delhi-gurgaon-noida-india.mp4" loop="true" autoPlay="true" className='' style={{ paddingLeft: '5px', paddingRight: '5px',borderRadius: '10px', border: '1px solid green'}}></video>
               </div>
-              <div style={{ display: 'flex', gap: '150px', marginTop: '30px' }}>
+              <div style={{ display: 'flex', gap: '150px', marginTop: '30px', justifyContent: 'center' }}>
                 <SocialIcon
                   network="twitter"
                   url="www.vimeo.com"
-                  style={{ width: '15rem', height: '15rem' }}
+                  style={{ width: '7rem', height: '7rem' }}
                 />
                 <SocialIcon
                   network="facebook"
                   url="www.vimeo.com"
-                  style={{ width: '15rem', height: '15rem' }}
+                  style={{ width: '7rem', height: '7rem' }}
                 />
               </div>
 
-              <div style={{ display: 'flex', gap: '150px', marginTop: '30px' }}>
+              <div className='' style={{ display: 'flex', gap: '150px', marginTop: '30px', justifyContent: 'center'}}>
                 <SocialIcon
                   network="instagram"
                   url="www.vimeo.com"
-                  style={{ width: '15rem', height: '15rem' }}
+                  style={{ width: '7rem', height: '7rem' }}
                 />
                 <SocialIcon
                   network="linkedin"
                   url="www.vimeo.com"
-                  style={{ width: '15rem', height: '15rem' }}
+                  style={{ width: '7rem', height: '7rem' }}
                 />
               </div>
 
@@ -1852,6 +1874,8 @@ const Header = () => {
 
             </div>
           </animated.div>
+          </div>
+          </div>
         )}
       </div>
 
