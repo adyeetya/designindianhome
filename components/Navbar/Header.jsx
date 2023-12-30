@@ -5,7 +5,7 @@ import { SocialIcon } from 'react-social-icons';
 import Modal from 'react-modal';
 import { Link } from 'react-router-dom';
 
-
+import Image from 'next/image'
 
 
 
@@ -275,7 +275,7 @@ const Header = () => {
           </ul>
         </div>
         <div className='ml-48 mt-12 center'>
-          <img
+          <Image
             src={hoveredItem ? getImageForItem(hoveredItem) : 'images/top4.jpeg'}
             alt=''
             className='shadow-sm rounded-full border-2'
@@ -306,7 +306,7 @@ const Header = () => {
             <ul className=''>
               {/* { Starting, this is the sub-category} */}
               <div className='flex gap-2'>
-                <img src="images/consultancy/short_image/Consultancy - in delhi - gurgaon - noida - faridabad.jpeg" alt="" style={{ width: '100px', height: '50px', borderRadius: '4px' }} />
+                <Image src="images/consultancy/short_image/Consultancy - in delhi - gurgaon - noida - faridabad.jpeg" alt="" style={{ width: '100px', height: '50px', borderRadius: '4px' }} />
                 <div>
                   <h3 className='text-sm text-white bg-black' onMouseOver={() => handleMouseOverImage('consultant')}>Consultancy</h3>
                   <p className='text-xs text-black'>Connect with the top end to end interior Brand</p>
@@ -315,7 +315,7 @@ const Header = () => {
 
 
               <div className='flex gap-2'>
-                <img src="images/consultancy/short_image/Beautiful - Design- project - in - delhi - gurgaon- noida.jpeg" alt="" style={{ width: '75px', height: '50px', borderRadius: '4px' }} />
+                <Image src="images/consultancy/short_image/Beautiful - Design- project - in - delhi - gurgaon- noida.jpeg" alt="" style={{ width: '75px', height: '50px', borderRadius: '4px' }} />
                 <div>
                   <h3 className='text-sm text-white bg-black' onMouseOver={() => handleMouseOverImage('design')}>Designing & Planning</h3>
                   <p className='text-xs text-black'>Connect with the top end to end interior Brand</p>
@@ -324,7 +324,7 @@ const Header = () => {
 
 
               <div className='flex gap-2 '>
-                <img src="images/consultancy/short_image/complete-turnkey-structures-builders-developers-end-to-end-building-works-in-delhi-gurgaon-noida-india (6).jpg" alt="" style={{ width: '100px', height: '50px', borderRadius: '4px' }} />
+                <Image src="images/consultancy/short_image/complete-turnkey-structures-builders-developers-end-to-end-building-works-in-delhi-gurgaon-noida-india (6).jpg" alt="" style={{ width: '100px', height: '50px', borderRadius: '4px' }} />
                 <div>
                   <h3 className='text-sm text-white bg-black absolute' onMouseOver={() => handleMouseOverImage('project')}>End to End Structural Projects</h3>
                   <p className='text-xs mt-4'>Connect with the top end to end interior Brand</p>
@@ -337,7 +337,7 @@ const Header = () => {
           <div className='ml-2'>
 
             <div className='flex gap-2 '>
-              <img src="images/consultancy/short_image/affordable-luxury-residences-flats-apartments-interior-designs-in-delhi-gurgaon-noida-india (5).jpg" alt="" style={{ width: '100px', height: '50px', borderRadius: '4px' }} />
+              <Image src="images/consultancy/short_image/affordable-luxury-residences-flats-apartments-interior-designs-in-delhi-gurgaon-noida-india (5).jpg" alt="" style={{ width: '100px', height: '50px', borderRadius: '4px' }} />
 
               <div>
                 <h3 className='text-sm text-white bg-black' onMouseOver={() => handleMouseOverImage('luxury')}>Luxury Residences</h3>
@@ -348,7 +348,7 @@ const Header = () => {
 
 
             <div className='flex gap-2 mt-1'>
-              <img src="images/consultancy/short_image/villa-renovation-services-in-delhi-gurgaon-india-noida (1).jpg" alt="" style={{ width: '100px', height: '50px', borderRadius: '4px' }} />
+              <Image src="images/consultancy/short_image/villa-renovation-services-in-delhi-gurgaon-india-noida (1).jpg" alt="" style={{ width: '100px', height: '50px', borderRadius: '4px' }} />
 
               <div>
                 <h3 className='text-sm text-white bg-black' onMouseOver={() => handleMouseOverImage('renovation')}>Renovations</h3>
@@ -358,7 +358,7 @@ const Header = () => {
           </div>
         </div>
         <div className=''>
-          <img
+          <Image
             src={hoveredItem ? getImageForItem(hoveredItem) : 'images/top4.jpeg'}
             alt=''
             className='shadow-sm rounded-full border-2'
@@ -389,7 +389,7 @@ const Header = () => {
             <ul className=''>
               {/* { Starting, this is the sub-category} */}
               <div className='flex gap-2'>
-                <img src="images/modular_kitchen/short/best-modular-kitchen-wardrobes-designs-small-kitchen-designs-wardrobe-designs-in-delhi-gurgaon-noida-india (5).jpg" alt="" style={{ width: '100px', height: '50px', borderRadius: '4px' }} />
+                <Image src="images/modular_kitchen/short/best-modular-kitchen-wardrobes-designs-small-kitchen-designs-wardrobe-designs-in-delhi-gurgaon-noida-india (5).jpg" alt="" style={{ width: '100px', height: '50px', borderRadius: '4px' }} />
                 <div>
                   <h3 className='text-sm text-white bg-black' onMouseOver={() => handleMouseOverImage('type')}>Types of Modular Kitchen</h3>
                   <p className='text-xs text-black'>Connect with the top end to end interior Brand</p>
@@ -398,7 +398,7 @@ const Header = () => {
 
 
               <div className='flex gap-2'>
-                <img src="images/modular_kitchen/short/modular-kitchen-wardrobe-designs-dealers-manufacturers-in-delhi-gurgaon-noida-india (1).png" alt="" style={{ width: '100px', height: '50px', borderRadius: '4px' }} />
+                <Image src="images/modular_kitchen/short/modular-kitchen-wardrobe-designs-dealers-manufacturers-in-delhi-gurgaon-noida-india (1).png" alt="" style={{ width: '100px', height: '50px', borderRadius: '4px' }} />
                 <div>
                   <h3 className='text-sm text-white bg-black' onMouseOver={() => handleMouseOverImage('modular')}>MOdular Kitchen Designs</h3>
                   <p className='text-xs text-black'>Connect with the top end to end interior Brand</p>
@@ -407,7 +407,7 @@ const Header = () => {
 
 
               <div className='flex gap-2 '>
-                <img src="images/modular_kitchen/short/modular-kitchen-wardrobe-designs-dealers-manufacturers-in-delhi-gurgaon-noida-india (7).jpg" alt="" style={{ width: '100px', height: '50px', borderRadius: '4px' }} />
+                <Image src="images/modular_kitchen/short/modular-kitchen-wardrobe-designs-dealers-manufacturers-in-delhi-gurgaon-noida-india (7).jpg" alt="" style={{ width: '100px', height: '50px', borderRadius: '4px' }} />
                 <div>
                   <h3 className='text-sm text-white bg-black absolute' onMouseOver={() => handleMouseOverImage('luxury_modular')}>Luxury Modular Kitchen</h3>
                   <p className='text-xs mt-4'>Connect with the top end to end interior Brand</p>
@@ -420,7 +420,7 @@ const Header = () => {
           <div className='ml-2'>
 
             <div className='flex gap-2 '>
-              <img src="images/modular_kitchen/short/modular-kitchen-wardrobe-largest-manufacturers-dealers-in-delhi-gurgaon-noida-faridabad-india (5).jpg" alt="" style={{ width: '100px', height: '50px', borderRadius: '4px' }} />
+              <Image src="images/modular_kitchen/short/modular-kitchen-wardrobe-largest-manufacturers-dealers-in-delhi-gurgaon-noida-faridabad-india (5).jpg" alt="" style={{ width: '100px', height: '50px', borderRadius: '4px' }} />
 
               <div>
                 <h3 className='text-sm text-white bg-black' onMouseOver={() => handleMouseOverImage('kitchen_renovation')}>Kitchen Renovation</h3>
@@ -431,7 +431,7 @@ const Header = () => {
 
 
             <div className='flex gap-2 mt-1'>
-              <img src="images/modular_kitchen/short/top-modular-kitchen-and-wardrobe-brand-in-delhi-gurgaon-noida-india (7).jpg" alt="" style={{ width: '100px', height: '50px', borderRadius: '4px' }} />
+              <Image src="images/modular_kitchen/short/top-modular-kitchen-and-wardrobe-brand-in-delhi-gurgaon-noida-india (7).jpg" alt="" style={{ width: '100px', height: '50px', borderRadius: '4px' }} />
 
               <div>
                 <h3 className='text-sm text-white bg-black' onMouseOver={() => handleMouseOverImage('renovationss')}>Renovations</h3>
@@ -441,7 +441,7 @@ const Header = () => {
           </div>
         </div>
         <div className=''>
-          <img
+          <Image
             src={hoveredItem ? getImageForItem(hoveredItem) : 'images/top4.jpeg'}
             alt=''
             className='shadow-sm rounded-full border-2'
@@ -473,7 +473,7 @@ const Header = () => {
             <ul className=''>
               {/* { Starting, this is the sub-category} */}
               <div className='flex gap-2'>
-                <img src="images/wardrobe/complete-modular-kitchens-wardrobe-renovation-services-in-delhi-gurgaon-noida-india (1).jpg" alt="" style={{ width: '100px', height: '50px', borderRadius: '4px' }} />
+                <Image src="images/wardrobe/complete-modular-kitchens-wardrobe-renovation-services-in-delhi-gurgaon-noida-india (1).jpg" alt="" style={{ width: '100px', height: '50px', borderRadius: '4px' }} />
                 <div>
                   <h3 className='text-sm text-white bg-black' onMouseOver={() => handleMouseOverImage('types_wardrobe')}>Types of Wardrobes</h3>
                   <p className='text-xs text-black'>Connect with the top end to end interior Brand</p>
@@ -482,7 +482,7 @@ const Header = () => {
 
 
               <div className='flex gap-2'>
-                <img src="images/wardrobe/complete-modular-kitchens-wardrobe-renovation-services-in-delhi-gurgaon-noida-india (2).jpg" alt="" style={{ width: '100px', height: '50px', borderRadius: '4px' }} />
+                <Image src="images/wardrobe/complete-modular-kitchens-wardrobe-renovation-services-in-delhi-gurgaon-noida-india (2).jpg" alt="" style={{ width: '100px', height: '50px', borderRadius: '4px' }} />
                 <div>
                   <h3 className='text-sm text-white bg-black' onMouseOver={() => handleMouseOverImage('luxury_wardrobe')}>Luxury Wardrobes</h3>
                   <p className='text-xs text-black'>Connect with the top end to end interior Brand</p>
@@ -491,7 +491,7 @@ const Header = () => {
 
 
               <div className='flex gap-2 '>
-                <img src="images/wardrobe/largest-collection-of-modular-kitchens-wardrobes-designs-in-delhi-gurgaon-noida-india (5).jpg" alt="" style={{ width: '100px', height: '50px', borderRadius: '4px' }} />
+                <Image src="images/wardrobe/largest-collection-of-modular-kitchens-wardrobes-designs-in-delhi-gurgaon-noida-india (5).jpg" alt="" style={{ width: '100px', height: '50px', borderRadius: '4px' }} />
                 <div>
                   <h3 className='text-sm text-white bg-black absolute' onMouseOver={() => handleMouseOverImage('wardrobe_design')}>Wardrobe Designs</h3>
                   <p className='text-xs mt-4'>Connect with the top end to end interior Brand</p>
@@ -504,7 +504,7 @@ const Header = () => {
           <div className='ml-2'>
 
             <div className='flex gap-2 '>
-              <img src="images/wardrobe/modular-kitchen-wardrobe-largest-manufacturers-dealers-in-delhi-gurgaon-noida-faridabad-india (2).jpg" alt="" style={{ width: '100px', height: '50px', borderRadius: '4px' }} />
+              <Image src="images/wardrobe/modular-kitchen-wardrobe-largest-manufacturers-dealers-in-delhi-gurgaon-noida-faridabad-india (2).jpg" alt="" style={{ width: '100px', height: '50px', borderRadius: '4px' }} />
 
               <div>
                 <h3 className='text-sm text-white bg-black' onMouseOver={() => handleMouseOverImage('glass_wardrobe')}>Lacquer Glass Wardrobe Designs</h3>
@@ -515,7 +515,7 @@ const Header = () => {
 
 
             <div className='flex gap-2 mt-1'>
-              <img src="images/wardrobe/modular-kitchen-wardrobe-largest-manufacturers-dealers-in-delhi-gurgaon-noida-faridabad-india (6).jpg" alt="" style={{ width: '100px', height: '50px', borderRadius: '4px' }} />
+              <Image src="images/wardrobe/modular-kitchen-wardrobe-largest-manufacturers-dealers-in-delhi-gurgaon-noida-faridabad-india (6).jpg" alt="" style={{ width: '100px', height: '50px', borderRadius: '4px' }} />
 
               <div>
                 <h3 className='text-sm text-white bg-black' onMouseOver={() => handleMouseOverImage('wardrobe_renovation')}>Wardrobe Renovation Services</h3>
@@ -525,7 +525,7 @@ const Header = () => {
           </div>
         </div>
         <div className=''>
-          <img
+          <Image
             src={hoveredItem ? getImageForItem(hoveredItem) : 'images/top4.jpeg'}
             alt=''
             className='shadow-sm rounded-full border-2'
@@ -555,7 +555,7 @@ const Header = () => {
             <ul className=''>
               {/* { Starting, this is the sub-category} */}
               <div className='flex gap-2'>
-                <img src="images/living/beautiful-design-tv-unit-in-delhi-gurgaon-noida.jpg" alt="" style={{ width: '100px', height: '50px', borderRadius: '4px' }} />
+                <Image src="images/living/beautiful-design-tv-unit-in-delhi-gurgaon-noida.jpg" alt="" style={{ width: '100px', height: '50px', borderRadius: '4px' }} />
                 <div>
                   <h3 className='text-sm text-white bg-black' onMouseOver={() => handleMouseOverImage('tv_units')}>TV Units</h3>
                   <p className='text-xs text-black'>Connect with the top end to end interior Brand</p>
@@ -564,7 +564,7 @@ const Header = () => {
 
 
               <div className='flex gap-2'>
-                <img src="images/living/best-designing-services-crockery-unit-in-gurgaon-delhi-noida-faridabad.jpeg" alt="" style={{ width: '100px', height: '50px', borderRadius: '4px' }} />
+                <Image src="images/living/best-designing-services-crockery-unit-in-gurgaon-delhi-noida-faridabad.jpeg" alt="" style={{ width: '100px', height: '50px', borderRadius: '4px' }} />
                 <div>
                   <h3 className='text-sm text-white bg-black' onMouseOver={() => handleMouseOverImage('crockery_unit')}>Crockery Units</h3>
                   <p className='text-xs text-black'>Connect with the top end to end interior Brand</p>
@@ -573,7 +573,7 @@ const Header = () => {
 
 
               <div className='flex gap-2 '>
-                <img src="images/living/best-residential-office-designs-in-budget-interiors-in-delhi-gurgaon-noida-india (1).jpg" alt="" style={{ width: '100px', height: '50px', borderRadius: '4px' }} />
+                <Image src="images/living/best-residential-office-designs-in-budget-interiors-in-delhi-gurgaon-noida-india (1).jpg" alt="" style={{ width: '100px', height: '50px', borderRadius: '4px' }} />
                 <div>
                   <h3 className='text-sm text-white bg-black absolute' onMouseOver={() => handleMouseOverImage('home_office')}>Home Office</h3>
                   <p className='text-xs mt-4'>Connect with the top end to end interior Brand</p>
@@ -581,7 +581,7 @@ const Header = () => {
               </div>
 
               <div className='flex gap-2 '>
-                <img src="images/living/beautiful-design-shoe-racks-in-delhi-gurgaon-noida-faridabad.jpeg" alt="" style={{ width: '100px', height: '50px', borderRadius: '4px' }} />
+                <Image src="images/living/beautiful-design-shoe-racks-in-delhi-gurgaon-noida-faridabad.jpeg" alt="" style={{ width: '100px', height: '50px', borderRadius: '4px' }} />
                 <div>
                   <h3 className='text-sm text-white bg-black absolute' onMouseOver={() => handleMouseOverImage('shoes_rack')}>Shoes Rocks</h3>
                   <p className='text-xs mt-4'>Connect with the top end to end interior Brand</p>
@@ -594,7 +594,7 @@ const Header = () => {
           <div className='ml-2'>
 
             <div className='flex gap-2 '>
-              <img src="images/wardrobe/modular-kitchen-wardrobe-largest-manufacturers-dealers-in-delhi-gurgaon-noida-faridabad-india (2).jpg" alt="" style={{ width: '100px', height: '50px', borderRadius: '4px' }} />
+              <Image src="images/wardrobe/modular-kitchen-wardrobe-largest-manufacturers-dealers-in-delhi-gurgaon-noida-faridabad-india (2).jpg" alt="" style={{ width: '100px', height: '50px', borderRadius: '4px' }} />
 
               <div>
                 <h3 className='text-sm text-white bg-black' onMouseOver={() => handleMouseOverImage('glass_partition')}>Glass Partition</h3>
@@ -605,7 +605,7 @@ const Header = () => {
 
 
             <div className='flex gap-2 mt-1'>
-              <img src="images/wardrobe/modular-kitchen-wardrobe-largest-manufacturers-dealers-in-delhi-gurgaon-noida-faridabad-india (6).jpg" alt="" style={{ width: '100px', height: '50px', borderRadius: '4px' }} />
+              <Image src="images/wardrobe/modular-kitchen-wardrobe-largest-manufacturers-dealers-in-delhi-gurgaon-noida-faridabad-india (6).jpg" alt="" style={{ width: '100px', height: '50px', borderRadius: '4px' }} />
 
               <div>
                 <h3 className='text-sm text-white bg-black' onMouseOver={() => handleMouseOverImage('dressing')}>Dressings</h3>
@@ -613,7 +613,7 @@ const Header = () => {
               </div>
             </div>
             <div className='flex gap-2 mt-1'>
-              <img src="images/living/best-interior-designing-company-in-delhi-gurgaon-noida-india-Design-Indian-Homes (6).jpg" alt="" style={{ widht: '100px', height: '50px', borderRadius: '4px' }} />
+              <Image src="images/living/best-interior-designing-company-in-delhi-gurgaon-noida-india-Design-Indian-Homes (6).jpg" alt="" style={{ widht: '100px', height: '50px', borderRadius: '4px' }} />
               <div>
                 <h3 className='text-sm text-white bg-black' onMouseOver={() => handleMouseOverImage('living_renovation')}>Renovation Services</h3>
                 <p className='text-xs'>Connect with the top end to end interior Brand</p>
@@ -622,7 +622,7 @@ const Header = () => {
           </div>
         </div>
         <div className=''>
-          <img
+          <Image
             src={hoveredItem ? getImageForItem(hoveredItem) : 'images/top4.jpeg'}
             alt=''
             className='shadow-sm rounded-full border-2'
@@ -644,7 +644,11 @@ const Header = () => {
           <div className=''>
             <h1 className="text-4xl font-bold">Modular Interior Advice</h1>
             <p className='text-black'>Modular Interior tips, tricks, ideas and advice from experts</p>
+<<<<<<< HEAD
             <button className='bg-green-500 text-white text-sm py-2 px-3 rounded-full'>explore Now</button>
+=======
+            <button className='bg-green-500  text-sm py-2 px-3 rounded-full text-white mt-6'>explore Now</button>
+>>>>>>> parent of 27a662e (Revert "images opttimised")
           </div>
         </div>
         <div className='flex'>
@@ -652,7 +656,7 @@ const Header = () => {
             <ul className=''>
               {/* { Starting, this is the sub-category} */}
               <div className='flex gap-2'>
-                <img src="images/living/beautiful-design-tv-unit-in-delhi-gurgaon-noida.jpg" alt="" style={{ width: '100px', height: '50px', borderRadius: '4px' }} />
+                <Image src="images/living/beautiful-design-tv-unit-in-delhi-gurgaon-noida.jpg" alt="" style={{ width: '100px', height: '50px', borderRadius: '4px' }} />
                 <div>
                   <h3 className='text-sm text-white bg-black' onMouseOver={() => handleMouseOverImage('mandir_interior')}>Mandir</h3>
                   <p className='text-xs text-black'>Connect with the top end to end interior Brand</p>
@@ -661,7 +665,7 @@ const Header = () => {
 
 
               <div className='flex gap-2'>
-                <img src="images/living/best-designing-services-crockery-unit-in-gurgaon-delhi-noida-faridabad.jpeg" alt="" style={{ width: '100px', height: '50px', borderRadius: '4px' }} />
+                <Image src="images/living/best-designing-services-crockery-unit-in-gurgaon-delhi-noida-faridabad.jpeg" alt="" style={{ width: '100px', height: '50px', borderRadius: '4px' }} />
                 <div>
                   <h3 className='text-sm text-white bg-black' onMouseOver={() => handleMouseOverImage('chest_drawer')}>Chest of Drawers</h3>
                   <p className='text-xs text-black'>Connect with the top end to end interior Brand</p>
@@ -670,7 +674,7 @@ const Header = () => {
 
 
               <div className='flex gap-2 '>
-                <img src="images/living/best-residential-office-designs-in-budget-interiors-in-delhi-gurgaon-noida-india (1).jpg" alt="" style={{ width: '100px', height: '50px', borderRadius: '4px' }} />
+                <Image src="images/living/best-residential-office-designs-in-budget-interiors-in-delhi-gurgaon-noida-india (1).jpg" alt="" style={{ width: '100px', height: '50px', borderRadius: '4px' }} />
                 <div>
                   <h3 className='text-sm text-white bg-black absolute' onMouseOver={() => handleMouseOverImage('bar_unit')}>Bar Units</h3>
                   <p className='text-xs mt-4'>Connect with the top end to end interior Brand</p>
@@ -678,7 +682,7 @@ const Header = () => {
               </div>
 
               <div className='flex gap-2 '>
-                <img src="images/living/beautiful-design-shoe-racks-in-delhi-gurgaon-noida-faridabad.jpeg" alt="" style={{ width: '100px', height: '50px', borderRadius: '4px' }} />
+                <Image src="images/living/beautiful-design-shoe-racks-in-delhi-gurgaon-noida-faridabad.jpeg" alt="" style={{ width: '100px', height: '50px', borderRadius: '4px' }} />
                 <div>
                   <h3 className='text-sm text-white bg-black absolute' onMouseOver={() => handleMouseOverImage('side_table')}>Side Tables</h3>
                   <p className='text-xs mt-4'>Connect with the top end to end interior Brand</p>
@@ -691,7 +695,7 @@ const Header = () => {
           <div className='ml-2'>
 
             <div className='flex gap-2 '>
-              <img src="images/wardrobe/modular-kitchen-wardrobe-largest-manufacturers-dealers-in-delhi-gurgaon-noida-faridabad-india (2).jpg" alt="" style={{ width: '100px', height: '50px', borderRadius: '4px' }} />
+              <Image src="images/wardrobe/modular-kitchen-wardrobe-largest-manufacturers-dealers-in-delhi-gurgaon-noida-faridabad-india (2).jpg" alt="" style={{ width: '100px', height: '50px', borderRadius: '4px' }} />
 
               <div>
                 <h3 className='text-sm text-white bg-black' onMouseOver={() => handleMouseOverImage('foldable_bed')}>Foldable Beds</h3>
@@ -702,7 +706,7 @@ const Header = () => {
 
 
             <div className='flex gap-2 mt-1'>
-              <img src="images/wardrobe/modular-kitchen-wardrobe-largest-manufacturers-dealers-in-delhi-gurgaon-noida-faridabad-india (6).jpg" alt="" style={{ width: '100px', height: '50px', borderRadius: '4px' }} />
+              <Image src="images/wardrobe/modular-kitchen-wardrobe-largest-manufacturers-dealers-in-delhi-gurgaon-noida-faridabad-india (6).jpg" alt="" style={{ width: '100px', height: '50px', borderRadius: '4px' }} />
 
               <div>
                 <h3 className='text-sm text-white bg-black' onMouseOver={() => handleMouseOverImage('foyer_cabinet')}>Foyer Cabinets</h3>
@@ -710,7 +714,7 @@ const Header = () => {
               </div>
             </div>
             <div className='flex gap-2 mt-1'>
-              <img src="images/living/best-interior-designing-company-in-delhi-gurgaon-noida-india-Design-Indian-Homes (6).jpg" alt="" style={{ widht: '100px', height: '50px', borderRadius: '4px' }} />
+              <Image src="images/living/best-interior-designing-company-in-delhi-gurgaon-noida-india-Design-Indian-Homes (6).jpg" alt="" style={{ widht: '100px', height: '50px', borderRadius: '4px' }} />
               <div>
                 <h3 className='text-sm text-white bg-black' onMouseOver={() => handleMouseOverImage('bathroom_vatities')}>Bathroom Vanities</h3>
                 <p className='text-xs'>Connect with the top end to end interior Brand</p>
@@ -719,7 +723,7 @@ const Header = () => {
           </div>
         </div>
         <div className=''>
-          <img
+          <Image
             src={hoveredItem ? getImageForItem(hoveredItem) : 'images/top4.jpeg'}
             alt=''
             className='shadow-sm rounded-full border-2'
@@ -761,7 +765,7 @@ const Header = () => {
 
         </div>
         <div className='ml-48  '>
-          <img srcSet="/design-Indian-home-about-us.jpg" alt="" className='shadow-sm rounded-full border-2 max-w-42 ' style={{ width: '550px', height: '250px' }} />
+          <Image srcSet="/design-Indian-home-about-us.jpg" alt="" className='shadow-sm rounded-full border-2 max-w-42 ' style={{ width: '550px', height: '250px' }} />
 
         </div>
       </div>
@@ -945,7 +949,7 @@ const Header = () => {
             className="max-w-screen-xl  flex justify-center items-center relative "
             style={{}}
           >
-            <animated.img
+            <animated.Image
               srcSet="images/left.gif"
               alt="Left Logo"
               className="hidden md:flex h-16 w-16 mr-2"
@@ -991,7 +995,7 @@ const Header = () => {
                 >Modular Kitchen</p>
 
 
-                <animated.img
+                <animated.Image
                   srcSet="/images/Logo.gif"
                   alt="Center Logo"
                   className="h-30 w-20 top-2/4 transform -translate-y-2/4 scale-150 "
@@ -1041,8 +1045,13 @@ const Header = () => {
 
       <div className="md:hidden sticky top-6 z-40">
 
+<<<<<<< HEAD
         <div className="flex justify-between items-center px-4 py-2 bg-gradient-to-l from-green-500 sticky top-0">
           <img src="images/left.gif" alt="" className="h-16 w-16" />
+=======
+        <div className="flex justify-between items-center px-4 py-2 bg-gradient-to-l from-green-500 sticky top-0 overflow-y-scroll ">
+          <Image src="images/left.gif" alt="" className="h-16 w-16" />
+>>>>>>> parent of 27a662e (Revert "images opttimised")
           <button
             onClick={toggleMobileMenu}
             className="text-black focus:outline-none"
@@ -1082,6 +1091,7 @@ const Header = () => {
                 onClick={toggleMobileMenu}
                 className="text-white focus:outline-none"
               >
+<<<<<<< HEAD
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -1101,6 +1111,32 @@ const Header = () => {
             <div className="flex flex-col gap-4 z-40">
               <img src="images/Logo.gif" alt="" style={{ width: '250px', height: '90px' }} />
               <div className="flex gap-3">
+=======
+                <div className="flex justify-end p-4">
+                  <button
+                    onClick={toggleMobileMenu}
+                    className="text-white focus:outline-none"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="red"
+                      className="h-6 w-6"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M6 18L18 6M6 6l12 12"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div className="flex flex-col gap-4 z-40">
+                  <Image src="images/Logo.gif" alt="" style={{ width: '250px', height: '90px' }} />
+                  <div className="flex gap-3">
+>>>>>>> parent of 27a662e (Revert "images opttimised")
 
               </div>
               <AccordionSection
@@ -1191,6 +1227,7 @@ const Header = () => {
                           <li>Architectural Designing and Planning</li>
                           <li>Commercial Architectural Services</li>
                         </div>
+<<<<<<< HEAD
 
 
                       </ul>
@@ -1294,6 +1331,10 @@ const Header = () => {
                     </div>
                     <div className='ml-48 mt-12 center'>
                       {/* <img
+=======
+                        <div className='ml-48 mt-12 center'>
+                          {/* <Image
+>>>>>>> parent of 27a662e (Revert "images opttimised")
                         src={hoveredItem ? getImageForItem(hoveredItem) : 'images/top4.jpeg'}
                         alt=''
                         className='shadow-sm rounded-full border-2'
@@ -1320,11 +1361,88 @@ const Header = () => {
                   <div className=''>
                     <div className=''>
                       <div className=''>
+<<<<<<< HEAD
                         <h1>Architectural Décor Advice</h1>
                         <p className='text-black'>Architectural tips, tricks, ideas and advice from experts</p>
                         {/* <button className='bg-green-500 text-white text-sm py-2 px-3 rounded-full'>explore Now</button> */}
+=======
+                        <div className=''>
+                          <div className=''>
+                            <h1>Architectural Décor Advice</h1>
+                            <p className='text-black'>Architectural tips, tricks, ideas and advice from experts</p>
+                            {/* <button className='bg-green-500 text-white text-sm py-2 px-3 rounded-full'>explore Now</button> */}
+                          </div>
+                        </div>
+                        <div className='flex'>
+                          <div className=''>
+                            <ul className=''>
+                              {/* { Starting, this is the sub-category} */}
+                              <div className='flex gap-2'>
+                                <Image src="images/consultancy/short_image/Consultancy - in delhi - gurgaon - noida - faridabad.jpeg" alt="" style={{ width: '100px', height: '50px', borderRadius: '4px' }} />
+                                <div>
+                                  <h3 className='text-sm text-white bg-black' onMouseOver={() => handleMouseOverImage('consultant')}>Consultancy</h3>
+                                  <p className='text-xs text-black'>Connect with the top end to end interior Brand</p>
+                                </div>
+                              </div>
+
+
+                              <div className='flex gap-2'>
+                                <Image src="images/consultancy/short_image/Beautiful - Design- project - in - delhi - gurgaon- noida.jpeg" alt="" style={{ width: '75px', height: '50px', borderRadius: '4px' }} />
+                                <div>
+                                  <h3 className='text-sm text-white bg-black' onMouseOver={() => handleMouseOverImage('design')}>Designing & Planning</h3>
+                                  <p className='text-xs text-black'>Connect with the top end to end interior Brand</p>
+                                </div>
+                              </div>
+
+
+                              <div className='flex gap-2 '>
+                                <Image src="images/consultancy/short_image/complete-turnkey-structures-builders-developers-end-to-end-building-works-in-delhi-gurgaon-noida-india (6).jpg" alt="" style={{ width: '100px', height: '50px', borderRadius: '4px' }} />
+                                <div>
+                                  <h3 className='text-sm text-white bg-black absolute' onMouseOver={() => handleMouseOverImage('project')}>End to End Structural Projects</h3>
+                                  <p className='text-xs mt-4'>Connect with the top end to end interior Brand</p>
+                                </div>
+                              </div>
+                            </ul>
+                          </div>
+
+
+                          <div className='ml-2'>
+
+                            <div className='flex gap-2 '>
+                              <Image src="images/consultancy/short_image/affordable-luxury-residences-flats-apartments-interior-designs-in-delhi-gurgaon-noida-india (5).jpg" alt="" style={{ width: '100px', height: '50px', borderRadius: '4px' }} />
+
+                              <div>
+                                <h3 className='text-sm text-white bg-black' onMouseOver={() => handleMouseOverImage('luxury')}>Luxury Residences</h3>
+                                <p className='text-xs'>Connect with the top end to end interior Brand</p>
+                              </div>
+
+                            </div>
+
+
+                            <div className='flex gap-2 mt-1'>
+                              <Image src="images/consultancy/short_image/villa-renovation-services-in-delhi-gurgaon-india-noida (1).jpg" alt="" style={{ width: '100px', height: '50px', borderRadius: '4px' }} />
+
+                              <div>
+                                <h3 className='text-sm text-white bg-black' onMouseOver={() => handleMouseOverImage('renovation')}>Renovations</h3>
+                                <p className='text-xs'>Connect with the top end to end interior Brand</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div className=''>
+                          {/* <Image
+            src={hoveredItem ? getImageForItem(hoveredItem) : 'images/top4.jpeg'}
+            alt=''
+            className='shadow-sm rounded-full border-2'
+            style={{ width: '550px', height: '250px' }}
+          /> */}
+                          {/* <button className='mt-4 bg-green-400 p-3 ml-8 rounded-full text-white font-bold'>Book an Architectural Consultancy </button> */}
+
+                        </div>
+>>>>>>> parent of 27a662e (Revert "images opttimised")
                       </div>
                     </div>
+<<<<<<< HEAD
                     <div className='flex'>
                       <div className=''>
                         <ul className=''>
@@ -1334,6 +1452,167 @@ const Header = () => {
                             <div>
                               <h3 className='text-sm text-white bg-black' onMouseOver={() => handleMouseOverImage('consultant')}>Consultancy</h3>
                               <p className='text-xs text-black'>Connect with the top end to end interior Brand</p>
+=======
+
+                  </AccordionSection>
+
+                  <AccordionSection
+                    title='Modular Kitchen'
+                    isActive={activeSection === 'Modular Kitchen'}
+                    onClick={() => toggleSection('Modular Kitchen')}
+                  >
+                    <div className='bg-white shadow-2xl rounded-lg  w-full  p-4 h-fit text-black'
+                      onMouseLeave={handleMouseLeave}>
+                      <div className=' '>
+                        <div className=''>
+                          <div className=''>
+                            <h1>Modular Kitchen Décor Advice</h1>
+                            <p className='text-black'>Home décor tips, tricks, ideas and advice from experts</p>
+                            {/* <button className='bg-green-500 text-white text-sm py-2 px-3 rounded-full'>explore Now</button> */}
+                          </div>
+                        </div>
+                        <div className='flex'>
+                          <div className=''>
+                            <ul className=''>
+                              {/* { Starting, this is the sub-category} */}
+                              <div className='flex gap-2'>
+                                <Image src="images/modular_kitchen/short/best-modular-kitchen-wardrobes-designs-small-kitchen-designs-wardrobe-designs-in-delhi-gurgaon-noida-india (5).jpg" alt="" style={{ width: '100px', height: '50px', borderRadius: '4px' }} />
+                                <div>
+                                  <h3 className='text-sm text-white bg-black' onMouseOver={() => handleMouseOverImage('type')}>Types of Modular Kitchen</h3>
+                                  <p className='text-xs text-black'>Connect with the top end to end interior Brand</p>
+                                </div>
+                              </div>
+
+
+                              <div className='flex gap-2'>
+                                <Image src="images/modular_kitchen/short/modular-kitchen-wardrobe-designs-dealers-manufacturers-in-delhi-gurgaon-noida-india (1).png" alt="" style={{ width: '100px', height: '50px', borderRadius: '4px' }} />
+                                <div>
+                                  <h3 className='text-sm text-white bg-black' onMouseOver={() => handleMouseOverImage('modular')}>MOdular Kitchen Designs</h3>
+                                  <p className='text-xs text-black'>Connect with the top end to end interior Brand</p>
+                                </div>
+                              </div>
+
+
+                              <div className='flex gap-2 '>
+                                <Image src="images/modular_kitchen/short/modular-kitchen-wardrobe-designs-dealers-manufacturers-in-delhi-gurgaon-noida-india (7).jpg" alt="" style={{ width: '100px', height: '50px', borderRadius: '4px' }} />
+                                <div>
+                                  <h3 className='text-sm text-white bg-black absolute' onMouseOver={() => handleMouseOverImage('luxury_modular')}>Luxury Modular Kitchen</h3>
+                                  <p className='text-xs mt-4'>Connect with the top end to end interior Brand</p>
+                                </div>
+                              </div>
+                            </ul>
+                          </div>
+
+
+                          <div className='ml-2'>
+
+                            <div className='flex gap-2 '>
+                              <Image src="images/modular_kitchen/short/modular-kitchen-wardrobe-largest-manufacturers-dealers-in-delhi-gurgaon-noida-faridabad-india (5).jpg" alt="" style={{ width: '100px', height: '50px', borderRadius: '4px' }} />
+
+                              <div>
+                                <h3 className='text-sm text-white bg-black' onMouseOver={() => handleMouseOverImage('kitchen_renovation')}>Kitchen Renovation</h3>
+                                <p className='text-xs'>Connect with the top end to end interior Brand</p>
+                              </div>
+
+                            </div>
+
+
+                            <div className='flex gap-2 mt-1'>
+                              <Image src="images/modular_kitchen/short/top-modular-kitchen-and-wardrobe-brand-in-delhi-gurgaon-noida-india (7).jpg" alt="" style={{ width: '100px', height: '50px', borderRadius: '4px' }} />
+
+                              <div>
+                                <h3 className='text-sm text-white bg-black' onMouseOver={() => handleMouseOverImage('renovationss')}>Renovations</h3>
+                                <p className='text-xs'>Connect with the top end to end interior Brand</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div className=''>
+                          {/* <Image
+            src={hoveredItem ? getImageForItem(hoveredItem) : 'images/top4.jpeg'}
+            alt=''
+            className='shadow-sm rounded-full border-2'
+            style={{ width: '550px', height: '250px' }}
+          /> */}
+                          {/* <button className='mt-4 bg-green-400 p-3 ml-8 rounded-full text-white font-bold'>Book an Architectural Consultancy </button> */}
+
+                        </div>
+                      </div>
+
+
+                    </div>
+                  </AccordionSection>
+
+
+                  <AccordionSection
+                    title='Wardrobes'
+                    isActive={activeSection === 'Wardrobes'}
+                    onClick={() => toggleSection('Wardrobes')}
+                  >
+                    <div className='bg-white shadow-2xl rounded-lg   w-full p-2  h-fit text-black'
+                      onMouseLeave={handleMouseLeave}>
+                      <div className=''>
+                        <div className=''>
+                          <div className=''>
+                            <h1>Wardrobes Décor Advice</h1>
+                            <p className='text-black'>Home décor tips, tricks, ideas and advice from experts</p>
+                            {/* <button className='bg-green-500 text-white text-sm py-2 px-3 rounded-full'>explore Now</button> */}
+                          </div>
+                        </div>
+                        <div className='flex'>
+                          <div className=''>
+                            <ul className=''>
+                              {/* { Starting, this is the sub-category} */}
+                              <div className='flex gap-2'>
+                                <Image src="images/wardrobe/complete-modular-kitchens-wardrobe-renovation-services-in-delhi-gurgaon-noida-india (1).jpg" alt="" style={{ width: '100px', height: '50px', borderRadius: '4px' }} />
+                                <div>
+                                  <h3 className='text-sm text-white bg-black' onMouseOver={() => handleMouseOverImage('types_wardrobe')}>Types of Wardrobes</h3>
+                                  <p className='text-xs text-black'>Connect with the top end to end interior Brand</p>
+                                </div>
+                              </div>
+
+
+                              <div className='flex gap-2'>
+                                <Image src="images/wardrobe/complete-modular-kitchens-wardrobe-renovation-services-in-delhi-gurgaon-noida-india (2).jpg" alt="" style={{ width: '100px', height: '50px', borderRadius: '4px' }} />
+                                <div>
+                                  <h3 className='text-sm text-white bg-black' onMouseOver={() => handleMouseOverImage('luxury_wardrobe')}>Luxury Wardrobes</h3>
+                                  <p className='text-xs text-black'>Connect with the top end to end interior Brand</p>
+                                </div>
+                              </div>
+
+
+                              <div className='flex gap-2 '>
+                                <Image src="images/wardrobe/largest-collection-of-modular-kitchens-wardrobes-designs-in-delhi-gurgaon-noida-india (5).jpg" alt="" style={{ width: '100px', height: '50px', borderRadius: '4px' }} />
+                                <div>
+                                  <h3 className='text-sm text-white bg-black absolute' onMouseOver={() => handleMouseOverImage('wardrobe_design')}>Wardrobe Designs</h3>
+                                  <p className='text-xs mt-4'>Connect with the top end to end interior Brand</p>
+                                </div>
+                              </div>
+                            </ul>
+                          </div>
+
+
+                          <div className='ml-2'>
+
+                            <div className='flex gap-2 '>
+                              <Image src="images/wardrobe/modular-kitchen-wardrobe-largest-manufacturers-dealers-in-delhi-gurgaon-noida-faridabad-india (2).jpg" alt="" style={{ width: '100px', height: '50px', borderRadius: '4px' }} />
+
+                              <div>
+                                <h3 className='text-sm text-white bg-black' onMouseOver={() => handleMouseOverImage('glass_wardrobe')}>Lacquer Glass Wardrobe Designs</h3>
+                                <p className='text-xs'>Connect with the top end to end interior Brand</p>
+                              </div>
+
+                            </div>
+
+
+                            <div className='flex gap-2 mt-1'>
+                              <Image src="images/wardrobe/modular-kitchen-wardrobe-largest-manufacturers-dealers-in-delhi-gurgaon-noida-faridabad-india (6).jpg" alt="" style={{ width: '100px', height: '50px', borderRadius: '4px' }} />
+
+                              <div>
+                                <h3 className='text-sm text-white bg-black' onMouseOver={() => handleMouseOverImage('wardrobe_renovation')}>Wardrobe Renovation Services</h3>
+                                <p className='text-xs'>Connect with the top end to end interior Brand</p>
+                              </div>
+>>>>>>> parent of 27a662e (Revert "images opttimised")
                             </div>
                           </div>
 
@@ -1369,6 +1648,7 @@ const Header = () => {
                           </div>
 
                         </div>
+<<<<<<< HEAD
 
 
                         <div className='flex gap-2 mt-1'>
@@ -1383,6 +1663,10 @@ const Header = () => {
                     </div>
                     <div className=''>
                       {/* <img
+=======
+                        <div className=''>
+                          {/* <Image
+>>>>>>> parent of 27a662e (Revert "images opttimised")
             src={hoveredItem ? getImageForItem(hoveredItem) : 'images/top4.jpeg'}
             alt=''
             className='shadow-sm rounded-full border-2'
@@ -1555,6 +1839,7 @@ const Header = () => {
                             <p className='text-xs'>Connect with the top end to end interior Brand</p>
                           </div>
                         </div>
+<<<<<<< HEAD
                       </div>
                     </div>
                     <div className=''>
@@ -1606,10 +1891,64 @@ const Header = () => {
                             <div>
                               <h3 className='text-sm text-white bg-black' onMouseOver={() => handleMouseOverImage('crockery_unit')}>Crockery Units</h3>
                               <p className='text-xs text-black'>Connect with the top end to end interior Brand</p>
+=======
+                        <div className='flex'>
+                          <div className=''>
+                            <ul className=''>
+                              {/* { Starting, this is the sub-category} */}
+                              <div className='flex gap-2'>
+                                <Image src="images/living/beautiful-design-tv-unit-in-delhi-gurgaon-noida.jpg" alt="" style={{ width: '100px', height: '50px', borderRadius: '4px' }} />
+                                <div>
+                                  <h3 className='text-sm text-white bg-black' onMouseOver={() => handleMouseOverImage('tv_units')}>TV Units</h3>
+                                  <p className='text-xs text-black'>Connect with the top end to end interior Brand</p>
+                                </div>
+                              </div>
+
+
+                              <div className='flex gap-2'>
+                                <Image src="images/living/best-designing-services-crockery-unit-in-gurgaon-delhi-noida-faridabad.jpeg" alt="" style={{ width: '100px', height: '50px', borderRadius: '4px' }} />
+                                <div>
+                                  <h3 className='text-sm text-white bg-black' onMouseOver={() => handleMouseOverImage('crockery_unit')}>Crockery Units</h3>
+                                  <p className='text-xs text-black'>Connect with the top end to end interior Brand</p>
+                                </div>
+                              </div>
+
+
+                              <div className='flex gap-2 '>
+                                <Image src="images/living/best-residential-office-designs-in-budget-interiors-in-delhi-gurgaon-noida-india (1).jpg" alt="" style={{ width: '100px', height: '50px', borderRadius: '4px' }} />
+                                <div>
+                                  <h3 className='text-sm text-white bg-black absolute' onMouseOver={() => handleMouseOverImage('home_office')}>Home Office</h3>
+                                  <p className='text-xs mt-4'>Connect with the top end to end interior Brand</p>
+                                </div>
+                              </div>
+
+                              <div className='flex gap-2 '>
+                                <Image src="images/living/beautiful-design-shoe-racks-in-delhi-gurgaon-noida-faridabad.jpeg" alt="" style={{ width: '100px', height: '50px', borderRadius: '4px' }} />
+                                <div>
+                                  <h3 className='text-sm text-white bg-black absolute' onMouseOver={() => handleMouseOverImage('shoes_rack')}>Shoes Rocks</h3>
+                                  <p className='text-xs mt-4'>Connect with the top end to end interior Brand</p>
+                                </div>
+                              </div>
+                            </ul>
+                          </div>
+
+
+                          <div className='ml-2'>
+
+                            <div className='flex gap-2 '>
+                              <Image src="images/wardrobe/modular-kitchen-wardrobe-largest-manufacturers-dealers-in-delhi-gurgaon-noida-faridabad-india (2).jpg" alt="" style={{ width: '100px', height: '50px', borderRadius: '4px' }} />
+
+                              <div>
+                                <h3 className='text-sm text-white bg-black' onMouseOver={() => handleMouseOverImage('glass_partition')}>Glass Partition</h3>
+                                <p className='text-xs'>Connect with the top end to end interior Brand</p>
+                              </div>
+
+>>>>>>> parent of 27a662e (Revert "images opttimised")
                             </div>
                           </div>
 
 
+<<<<<<< HEAD
                           <div className='flex gap-2 '>
                             <img src="images/living/best-residential-office-designs-in-budget-interiors-in-delhi-gurgaon-noida-india (1).jpg" alt="" style={{ width: '100px', height: '50px', borderRadius: '4px' }} />
                             <div>
@@ -1623,6 +1962,22 @@ const Header = () => {
                             <div>
                               <h3 className='text-sm text-white bg-black absolute' onMouseOver={() => handleMouseOverImage('shoes_rack')}>Shoes Rocks</h3>
                               <p className='text-xs mt-4'>Connect with the top end to end interior Brand</p>
+=======
+                            <div className='flex gap-2 mt-1'>
+                              <Image src="images/wardrobe/modular-kitchen-wardrobe-largest-manufacturers-dealers-in-delhi-gurgaon-noida-faridabad-india (6).jpg" alt="" style={{ width: '100px', height: '50px', borderRadius: '4px' }} />
+
+                              <div>
+                                <h3 className='text-sm text-white bg-black' onMouseOver={() => handleMouseOverImage('dressing')}>Dressings</h3>
+                                <p className='text-xs'>Connect with the top end to end interior Brand</p>
+                              </div>
+                            </div>
+                            <div className='flex gap-2 mt-1'>
+                              <Image src="images/living/best-interior-designing-company-in-delhi-gurgaon-noida-india-Design-Indian-Homes (6).jpg" alt="" style={{ widht: '100px', height: '50px', borderRadius: '4px' }} />
+                              <div>
+                                <h3 className='text-sm text-white bg-black' onMouseOver={() => handleMouseOverImage('living_renovation')}>Renovation Services</h3>
+                                <p className='text-xs'>Connect with the top end to end interior Brand</p>
+                              </div>
+>>>>>>> parent of 27a662e (Revert "images opttimised")
                             </div>
                           </div>
                         </ul>
@@ -1650,6 +2005,7 @@ const Header = () => {
                             <p className='text-xs'>Connect with the top end to end interior Brand</p>
                           </div>
                         </div>
+<<<<<<< HEAD
                         <div className='flex gap-2 mt-1'>
                           <img src="images/living/best-interior-designing-company-in-delhi-gurgaon-noida-india-Design-Indian-Homes (6).jpg" alt="" style={{ widht: '100px', height: '50px', borderRadius: '4px' }} />
                           <div>
@@ -1661,6 +2017,10 @@ const Header = () => {
                     </div>
                     <div className=''>
                       {/* <img
+=======
+                        <div className=''>
+                          {/* <Image
+>>>>>>> parent of 27a662e (Revert "images opttimised")
                         src={hoveredItem ? getImageForItem(hoveredItem) : 'images/top4.jpeg'}
                         alt=''
                         className='shadow-sm rounded-full border-2'
@@ -1669,7 +2029,185 @@ const Header = () => {
                       {/* <button className='mt-4 bg-green-400 p-3 ml-8 rounded-full text-white font-bold'>Book an Architectural Consultancy </button> */}
 
                     </div>
+<<<<<<< HEAD
                   </div>
+=======
+                  </AccordionSection>
+
+                  <AccordionSection
+                    title='Modular Interior'
+                    isActive={activeSection === 'Modular Interior'}
+                    onClick={() => toggleSection('Modular Interior')}
+                  >
+                    <div className='bg-white shadow-2xl rounded-lg p-4  h-fit text-black'
+                      onMouseLeave={handleMouseLeave}>
+                      <div className=''>
+                        <div className=''>
+                          <div className=''>
+                            <h1>Modular Interior Décor Advice</h1>
+                            <p className='text-black'>Home décor tips, tricks, ideas and advice from experts</p>
+                            {/* <button className='bg-green-500 text-white text-sm py-2 px-3 rounded-full'>explore Now</button> */}
+                          </div>
+                        </div>
+                        <div className='flex'>
+                          <div className=''>
+                            <ul className=''>
+                              {/* { Starting, this is the sub-category} */}
+                              <div className='flex gap-2'>
+                                <Image src="images/living/beautiful-design-tv-unit-in-delhi-gurgaon-noida.jpg" alt="" style={{ width: '100px', height: '50px', borderRadius: '4px' }} />
+                                <div>
+                                  <h3 className='text-sm text-white bg-black' onMouseOver={() => handleMouseOverImage('mandir_interior')}>Mandir</h3>
+                                  <p className='text-xs text-black'>Connect with the top end to end interior Brand</p>
+                                </div>
+                              </div>
+
+
+                              <div className='flex gap-2'>
+                                <Image src="images/living/best-designing-services-crockery-unit-in-gurgaon-delhi-noida-faridabad.jpeg" alt="" style={{ width: '100px', height: '50px', borderRadius: '4px' }} />
+                                <div>
+                                  <h3 className='text-sm text-white bg-black' onMouseOver={() => handleMouseOverImage('chest_drawer')}>Chest of Drawers</h3>
+                                  <p className='text-xs text-black'>Connect with the top end to end interior Brand</p>
+                                </div>
+                              </div>
+
+
+                              <div className='flex gap-2 '>
+                                <Image src="images/living/best-residential-office-designs-in-budget-interiors-in-delhi-gurgaon-noida-india (1).jpg" alt="" style={{ width: '100px', height: '50px', borderRadius: '4px' }} />
+                                <div>
+                                  <h3 className='text-sm text-white bg-black absolute' onMouseOver={() => handleMouseOverImage('bar_unit')}>Bar Units</h3>
+                                  <p className='text-xs mt-4'>Connect with the top end to end interior Brand</p>
+                                </div>
+                              </div>
+
+                              <div className='flex gap-2 '>
+                                <Image src="images/living/beautiful-design-shoe-racks-in-delhi-gurgaon-noida-faridabad.jpeg" alt="" style={{ width: '100px', height: '50px', borderRadius: '4px' }} />
+                                <div>
+                                  <h3 className='text-sm text-white bg-black absolute' onMouseOver={() => handleMouseOverImage('side_table')}>Side Tables</h3>
+                                  <p className='text-xs mt-4'>Connect with the top end to end interior Brand</p>
+                                </div>
+                              </div>
+                            </ul>
+                          </div>
+
+
+                          <div className='ml-2'>
+
+                            <div className='flex gap-2 '>
+                              <Image src="images/wardrobe/modular-kitchen-wardrobe-largest-manufacturers-dealers-in-delhi-gurgaon-noida-faridabad-india (2).jpg" alt="" style={{ width: '100px', height: '50px', borderRadius: '4px' }} />
+
+                              <div>
+                                <h3 className='text-sm text-white bg-black' onMouseOver={() => handleMouseOverImage('foldable_bed')}>Foldable Beds</h3>
+                                <p className='text-xs'>Connect with the top end to end interior Brand</p>
+                              </div>
+
+                            </div>
+
+
+                            <div className='flex gap-2 mt-1'>
+                              <Image src="images/wardrobe/modular-kitchen-wardrobe-largest-manufacturers-dealers-in-delhi-gurgaon-noida-faridabad-india (6).jpg" alt="" style={{ width: '100px', height: '50px', borderRadius: '4px' }} />
+
+                              <div>
+                                <h3 className='text-sm text-white bg-black' onMouseOver={() => handleMouseOverImage('foyer_cabinet')}>Foyer Cabinets</h3>
+                                <p className='text-xs'>Connect with the top end to end interior Brand</p>
+                              </div>
+                            </div>
+                            <div className='flex gap-2 mt-1'>
+                              <Image src="images/living/best-interior-designing-company-in-delhi-gurgaon-noida-india-Design-Indian-Homes (6).jpg" alt="" style={{ widht: '100px', height: '50px', borderRadius: '4px' }} />
+                              <div>
+                                <h3 className='text-sm text-white bg-black' onMouseOver={() => handleMouseOverImage('bathroom_vatities')}>Bathroom Vanities</h3>
+                                <p className='text-xs'>Connect with the top end to end interior Brand</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div className=''>
+                          <Image
+                            src={hoveredItem ? getImageForItem(hoveredItem) : 'images/top4.jpeg'}
+                            alt=''
+                            className='shadow-sm rounded-full border-2'
+                            style={{ width: '550px', height: '250px' }}
+                          />
+                          {/* <button className='mt-4 bg-green-400 p-3 ml-8 rounded-full text-white font-bold'>Book an Architectural Consultancy </button> */}
+
+                        </div>
+                      </div>
+
+
+                    </div>
+                  </AccordionSection>
+
+                  <AccordionSection
+                    title='More..'
+                    isActive={activeSection === 'More'}
+                    onClick={() => toggleSection('More')}
+                  >
+                    <div className='bg-white shadow-2xl rounded-lg p-4 h-fit text-black' onMouseLeave={handleMouseLeave}>
+                      <div className='flex'>
+                        <div class >
+                          <ul className='text-sm border-r-2	pr-12'>
+                            <h3 className='text-lg'>Renovation</h3>
+                            <h3 className='text-lg'> Book a Virtual Meeting</h3>
+                            <h3 className='text-lg'> About Us</h3>
+                            <h3 className='text-lg'>The Team</h3>
+                            <h3 className='text-lg'>Collaborate with Us</h3>
+
+                          </ul>
+                          <button className='bg-green-800 text-sm py-2 px-3 ml-8 rounded-full text-white font-bold'>Get Quotes</button>
+
+                        </div>
+                        <div class >
+                          <ul className='text-sm'>
+                            <h3 className='text-lg'>Reviews</h3>
+                            <h3 className='text-lg'> Request Catlog</h3>
+                            <h3 className='text-lg'>Why Choose Us</h3>
+                            <h3 className='text-lg'>Join As a Designer</h3>
+                            <h3 className='text-lg'>Book a Design Visit</h3>
+                          </ul>
+
+                          <button className=' bg-green-800 text-sm py-2 px-3 ml-2 rounded-full text-white font-bold'>Refer for Rewards</button>
+
+                        </div>
+                        <div className=''>
+                          {/* <Image srcSet="/design-Indian-home-about-us.jpg" alt="" className='shadow-sm rounded-full border-2 max-w-42 ' style={{ width: '550px', height: '250px' }} /> */}
+
+                        </div>
+                      </div>
+
+
+                    </div>
+                  </AccordionSection>
+                  <div style={{ borderRadius: '20px' }}>
+                    <video src="video/video-interior-designer-company-in-delhi-gurgaon-noida-india.mp4" loop="true" autoPlay="true" className='' style={{ paddingLeft: '5px', paddingRight: '5px', borderRadius: '10px', border: '1px solid green' }}></video>
+                  </div>
+                  <div style={{ display: 'flex', gap: '150px', marginTop: '30px', justifyContent: 'center' }}>
+                    <SocialIcon
+                      network="twitter"
+                      url="www.vimeo.com"
+                      style={{ width: '7rem', height: '7rem' }}
+                    />
+                    <SocialIcon
+                      network="facebook"
+                      url="www.vimeo.com"
+                      style={{ width: '7rem', height: '7rem' }}
+                    />
+                  </div>
+
+                  <div className='' style={{ display: 'flex', gap: '150px', marginTop: '30px', justifyContent: 'center' }}>
+                    <SocialIcon
+                      network="instagram"
+                      url="www.vimeo.com"
+                      style={{ width: '7rem', height: '7rem' }}
+                    />
+                    <SocialIcon
+                      network="linkedin"
+                      url="www.vimeo.com"
+                      style={{ width: '7rem', height: '7rem' }}
+                    />
+                  </div>
+
+                  <Image src="https://designindianhomes.com/assets/Image/design-indian-home-1.gif" alt="Design Indian Home" style={{ width: '740px', height: '250px', borderRadius: '20px' }} />
+
+>>>>>>> parent of 27a662e (Revert "images opttimised")
 
 
                 </div>
