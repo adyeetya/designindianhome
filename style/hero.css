@@ -1,8 +1,14 @@
 .wrapper h1 {
   text-align: center;
-  font-size: 30px;
-  font-family: Audiowide;
+  font-size: 35px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding-top: 8%;font-weight: 600;
 }
+.wrapper h3 {
+  text-align: center;
+  font-size: 20px; font-family: Georgia, 'Times New Roman', Times, serif;padding-bottom: 3%;
+}
+
 .img-area {
   display: flex;
   flex-wrap: wrap;
@@ -12,10 +18,16 @@
 }
 .single-img{
   padding:0 10px 20px;
-  
+  overflow: hidden;
 }
 
 
+#name img{
+  border-radius: 30px !important; transition: transform .5s ease;
+}
+#name img:hover{
+transform: scale(1.10);
+}
 .main h1{
   font-size:30px;
   font-weight: 600;
@@ -57,7 +69,7 @@ background-position: right top;
   display:block;
   height: 5px;
   width: 100px;
-  background: var(--primary);
+  background: #90c671dd;
   position: relative;
   border-radius: 5px;
   overflow: hidden;
@@ -130,7 +142,28 @@ background-position: right top;
   
     
   }
+
+  #rem{
+    padding-top: 20px;
+  }
   
+  /* [1] The container */
+.img-hover-zoom {
+  height: 300px; /* [1.1] Set it as per your need */
+  overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+}
+
+/* [2] Transition property for smooth transformation of images */
+.img-hover-zoom img {
+  transition: transform .5s ease;
+}
+
+/* [3] Finally, transforming the image when container gets hovered */
+.img-hover-zoom:hover img {
+  transform: scale(1.5);
+}
+
+
   /*SECTION1*/
   .section1{
   width:100%;
@@ -398,6 +431,7 @@ background-position: right top;
 }
 
 
+
 .containr h1{
   text-align: center;
   font-size: 30px;
@@ -422,4 +456,86 @@ background-position: right top;
   align-items: center !important;
   transform: scale(0.65, 0.65);
 }
+
+
+#bg{
+  background-color: #f1f1f1;
+}
+
+/* 
+.Width {
+  margin: 0 auto;
+  padding: 0 1rem;
+  max-width: 100%;
+}
+
+
+
+.griding h1{
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  padding-top: 10%;
+  width: 100%;
+}
+
+.griding h3{
+  text-align: center;
+  font-size: 20px;
+  font-weight: 300;
+  padding-bottom: 3%;
+  width: 100%;
+}
+
+.img-hover-zoom {
+  height: 300px; 
+  overflow: hidden; 
+}
+
+.img-hover-zoom img {
+  transition: transform .5s ease;
+}
+
+.img-hover-zoom:hover img {
+  transform: scale(1.5);
+}
+
+
+.responsive-image {
+  max-width: 100%;
+}
+
+.cell img {
+  display: block;
+}
+@media screen and (min-width: 600px){
+  .griding {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .cell {
+    width:50%;
+  }
+}
+@media screen and (min-width: 1000px){
+  .cell {
+    width:calc (100%/3);
+  }
+}
+.cell {
+  margin: 1rem;
+}
+
+@media screen and (min-width: 600px){
+  .cell {
+    width: calc(50% - 2rem);
+  }
+}
+@media screen and (min-width: 1000px){
+  .cell{
+    width: calc(33.3333% - 2rem);
+  }
+} */
+
 
