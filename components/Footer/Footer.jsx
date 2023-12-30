@@ -17,19 +17,19 @@ export class Footer extends Component {
                 <div className="flex flex-col items-center md:flex-row justify-center gap-6 md:gap-32 w-full mt-5">
                     {/* Brand 1 */}
                     <div className="text-center">
-                        <Image src="images/dkilogo.png" alt="" style={{ width: '200px', height: '80px' }} />
+                        <img src="images/dkilogo.png" alt="" style={{ width: '200px', height: '80px' }} />
                         <p className="text-green-500 text-2xl font-medium">Design Indian Kitchen</p>
                     </div>
 
                     {/* Brand 2 */}
                     <div className="text-center mt-4 md:mt-0">
-                        <Image src="images/desig indian homes.gif" alt="" style={{ width: '200px', height: '80px' }} />
+                        <img src="images/desig indian homes.gif" alt="" style={{ width: '200px', height: '80px' }} />
                         <p className="text-green-500 text-2xl font-medium">Design Indian Home</p>
                     </div>
 
                     {/* Brand 3 */}
                     <div className="text-center mt-4 md:mt-0">
-                        <Image src="images/footer-logo-multi.png" alt="" style={{ width: '200px', height: '80px' }} />
+                        <img src="images/footer-logo-multi.png" alt="" style={{ width: '200px', height: '80px' }} />
                         <p className="text-green-500 text-2xl font-medium">Design Indian Wardrobe</p>
                     </div>
                 </div>
@@ -39,28 +39,28 @@ export class Footer extends Component {
                 <div className="flex flex-col items-center md:flex-row justify-center bg-gray-200 p-10 gap-6 mt-10 text-black">
                     {/* Feature 1 */}
                     <div className="text-center">
-                        <Image src="images/warranty.png" alt="" className="w-30 h-20 mx-auto" />
+                        <img src="images/warranty.png" alt="" className="w-30 h-20 mx-auto" />
                         <h1 className='font-bold text-center text-sm'>Flat 10 year warranty</h1>
                         <p className="text-sm">Choose interiors designed with superior quality material, leaving no room for defects.</p>
                     </div>
 
                     {/* Feature 2 */}
                     <div className="text-center mt-4 md:mt-0">
-                        <Image src="images/fast-delivery.png" alt="" className="w-30 h-20 mx-auto" />
+                        <img src="images/fast-delivery.png" alt="" className="w-30 h-20 mx-auto" />
                         <h1 className='font-bold text-center text-sm'>45-day delivery</h1>
                         <p className="text-sm">Get beautiful interiors for your new home in just 45 days. That’s our delivery guarantee.</p>
                     </div>
 
                     {/* Feature 3 */}
                     <div className="text-center mt-4 md:mt-0">
-                        <Image src="images/team-building.png" alt="" className="w-30 h-20 mx-auto" />
+                        <img src="images/team-building.png" alt="" className="w-30 h-20 mx-auto" />
                         <h1 className='font-bold text-center text-sm'>600+ design experts</h1>
                         <p className="text-sm">Explore design ideas and co-create your dream home with our experienced designers</p>
                     </div>
 
                     {/* Feature 4 */}
                     <div className="text-center mt-4 md:mt-0">
-                        <Image src="images/customer-service.png" alt="" className="w-30 h-20 mx-auto" />
+                        <img src="images/customer-service.png" alt="" className="w-30 h-20 mx-auto" />
                         <h1 className='font-bold text-center text-sm'>Post-installation service</h1>
                         <p className="text-sm">Complete your design journey and get unwavering support from our dedicated care team.</p>
                     </div>
@@ -70,7 +70,7 @@ export class Footer extends Component {
                 <div className="flex flex-col md:flex-row justify-center bg-gray-200 gap-6 p-6  text-black">
                     {/* Social Media Icons */}
                     <div className="text-left">
-                        <Image src="images/desig indian homes.gif" alt="footer logo" className="w-30 h-20" />
+                        <img src="images/desig indian homes.gif" alt="footer logo" className="w-30 h-20" />
                         <div className='flex gap-4 mt-4 hover'>
                             <SocialIcon network="twitter" url="www.vimeo.com" style={{ width: '2rem', height: '2rem' }} />
                             <SocialIcon network="facebook" url="www.vimeo.com" style={{ width: '2rem', height: '2rem' }} />
@@ -114,7 +114,7 @@ export class Footer extends Component {
                         </ul>
                     </div>
                     <div>
-                        <Image src="images/homes-gif-logo-optimize.gif" alt="" className="w-60 h-30" />
+                        <img src="images/homes-gif-logo-optimize.gif" alt="" className="w-60 h-30" />
                     </div>
 
                 </div>

@@ -1,5 +1,5 @@
 'use client'
-import Image from 'next/image'
+
 import React, { useState, useEffect } from 'react';
 import Button from '../Button';
 const Display = () => {
@@ -18,7 +18,7 @@ const Display = () => {
       <div className="wrapper">
         <div className="img-area ">
           <div className="single-img">
-            <Image src="images/bannernew.png" alt="" />
+            <img src="images/bannernew.png" alt="" />
           </div>
           <div className="single-img">
             <video loop autoPlay muted controls={isPlaying} src="video/vid21.mp4" alt="" />
@@ -27,7 +27,7 @@ const Display = () => {
             <video loop autoPlay controls={isPlaying} src="video/vid1.mp4" alt="" />
           </div>
           <div className="single-img">
-            <Image src="images/banner1.png" alt="" />
+            <img src="images/banner1.png" alt="" />
           </div>
 
 
@@ -130,25 +130,25 @@ const Display = () => {
               />
               <div className="slider__slides">
                 <div className="slider__slide slider__slide--1">
-                  <Image
+                  <img
 
                     src="images/52.png"
                   />
                 </div>
                 <div className="slider__slide slider__slide--2">
-                  <Image
+                  <img
                     alt="Placeholder 1200x600"
                     src="images/50.png"
                   />
                 </div>
                 <div className="slider__slide slider__slide--3">
-                  <Image
+                  <img
                     alt="Placeholder 300x150 "
                     src="images/12.png"      
                   />
                 </div>
                 <div className="slider__slide slider__slide--4">
-                  <Image
+                  <img
                     alt="Placeholder 800x400"
                     src="images/74.png"
                   />
@@ -186,7 +186,7 @@ const Display = () => {
       
         </article>
         <section className="side">
-        <Image
+        <img
                     src="https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dw9fa2f775/images/home/whatsapp-icon.svg"
                   />
         </section>
@@ -204,7 +204,7 @@ const Display = () => {
       
         </article>
         <section className="side">
-        <Image
+        <img
                     src="https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dwac5fb555/images/home/marker-icon.svg"
                   />
         </section>
@@ -221,7 +221,7 @@ const Display = () => {
       
         </article>
         <section className="side">
-        <Image
+        <img
                     src="https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dw153e7692/images/home/video-icon.svg"
                   />
         </section>
