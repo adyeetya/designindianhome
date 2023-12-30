@@ -66,7 +66,7 @@ const EndToEndImageGrid = () => {
 
   return (
     <>
-      <MaxWidthWrapper className="mb-12 mt-28 sm:mt-20 flex flex-col items-center justify-center text-center">
+      <MaxWidthWrapper className="mb-12 sm:mt-28 mt-16 flex flex-col items-center justify-center text-center">
         <div className="py-2">
           <div className="container mx-auto text-center">
             <h2 className="text-4xl font-bold mb-4">End To End Structural</h2>

@@ -22,6 +22,15 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/layout.jsx", "app/page.jsx", "components/DarkMode/page.tsx"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "app/layout.jsx",
+    "app/page.jsx",
+    "components/DarkMode/page.tsx",
+    "components/Stepper/page.jsx"
+, "components/FAQ/page.jsx"  ],
   "exclude": ["node_modules"]
 }
