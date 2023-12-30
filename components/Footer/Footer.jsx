@@ -6,16 +6,7 @@ export class Footer extends Component {
     render() {
         return (
             <div className="mt-30px">
-                <div className="flex items-center justify-center ">
-                    <div className="text-black">
-                       {/*  <button className="md:text-3xl font-bold rounded-full border-dotted border-2 border-black px-80 py-20 sm:px-6 sm:py-8 hover:bg-black hover:text-white">
-                            Call Us Today!
-                        </button> */}
-
-
-
-                    </div>
-                </div>
+               
 
                 <h1 className="text-4xl md:text font-semibold text-center text-black pt-4">
                     Know The Trinity Brands
