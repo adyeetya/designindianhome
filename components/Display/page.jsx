@@ -190,13 +190,13 @@ const Display = () => {
 
 
 
-            <div className="grids">
-              <article className="main ">
+            <div className="gridz">
+              <article className="mainz ">
                 <h2>Connect on</h2>
                 <h1>Whatsapp</h1>
 
               </article>
-              <section className="side">
+              <section className="sidez">
                <Image
                   src="https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dw9fa2f775//images/home/whatsapp-icon.svg"
                   width={0} height={0}/>
@@ -208,13 +208,13 @@ const Display = () => {
 
 
           <div className="card">
-            <div className="grids">
-              <article className="main ">
+            <div className="gridz">
+              <article className="mainz ">
                 <h2>Book An</h2>
                 <h1>Appointment</h1>
 
               </article>
-              <section className="side">
+              <section className="sidez">
               <Image
                   src="https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dwac5fb555//images/home/marker-icon.svg"
                   width={0} height={0}   />
@@ -225,13 +225,13 @@ const Display = () => {
 
 
           <div className="card">
-            <div className="grids">
-              <article className="main ">
+            <div className="gridz">
+              <article className="mainz ">
                 <h2>Schedule A</h2>
                 <h1>Video Call</h1>
 
               </article>
-              <section className="side">
+              <section className="sidez">
               <Image
                   src="https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dw153e7692//images/home/video-icon.svg"
                   width={0} height={0}
