@@ -37,8 +37,8 @@ const Display = () => {
       </div>
 
 
-      <div className="grids">
-        <article className="main ">
+      <div className="gridz">
+        <article className="mainz">
           <h1>ABOUT US</h1>
           <p>
             We are one of the oldest business families in India with a family
@@ -51,9 +51,9 @@ const Display = () => {
             spread across India and GCC
           </p>
         </article>
-        <section className="side">
+        <section className="sidez">
 
-          <div className="slider slider--cover">
+          <div className="sliderz slider--cover">
             <div className="slider__inner">
               <input
                 defaultChecked=""

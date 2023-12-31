@@ -279,7 +279,7 @@ Study Tables</p>
 
 
 
-         <div className="slider">
+      {/*    <div className="slider">
   <div className="slide-track">
     <div className="slide">
       <img
@@ -394,7 +394,7 @@ Study Tables</p>
       />
     </div>
   </div>
-</div>
+</div> */}
 
 
 

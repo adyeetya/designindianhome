@@ -28,12 +28,12 @@
 #name img:hover{
 transform: scale(1.10);
 }
-.main h1{
+.mainz h1{
   font-size:30px;
   font-weight: 600;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-.main p{
+.mainz p{
   font-size: 15px;
   padding-top: 5px;
   color: rgb(106, 106, 106);
@@ -41,7 +41,7 @@ transform: scale(1.10);
 }
 
 
-.grids {
+.gridz {
   display: grid;
   gap: 50px;
   grid-template-columns: 2fr 1fr;
@@ -49,11 +49,11 @@ transform: scale(1.10);
 }
 
 
-.side {
+.sidez {
   border-radius: 10px
 }
 
-.main{
+.mainz{
   padding:10%;
 background-image: url(../public/images/bg.png);
 background-position: right top;
@@ -217,14 +217,14 @@ background-position: right top;
   padding:1rem;
   margin:20px 0;
   }
-  .main{
+  .mainz{
     background-image: url("../public/images/bg-global.avif");
   }
   }
   
   
 @media(max-width: 600px){
-  .grids {
+  .gridz {
     grid-template-columns: 1fr;
     margin:3%;
   }
@@ -244,7 +244,7 @@ background-position: right top;
 
 
 /** slider */
-.slider {
+.sliderz {
   position: relative;
   max-width: 100%;
   max-height: 100%;
