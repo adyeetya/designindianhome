@@ -279,13 +279,17 @@ const Header = () => {
           <Image
             src={hoveredItem ? getImageForItem(hoveredItem) : '/images/top4.jpeg'}
             alt=''
-            className='shadow-sm rounded-full border-2'
+            className='shadow-sm rounded-full border-2 object-cover max-w-96'
             width={550}
             height={250}
+            style={{ width: '550px', height: '250px' }}
+            layout="fixed"
           />
 
+           <div className='flex justify-center'>
+           <button className='mt-4 bg-green-700 p-3  rounded-full text-white font-bold text-sm'>Book an End To End Interior Consultancy </button>
 
-          <button className='mt-4 bg-green-700 p-3 ml-28 rounded-full text-white font-bold text-sm'>Book an End To End Interior Consultancy </button>
+           </div>
         </div>
       </div>
 
@@ -316,7 +320,7 @@ const Header = () => {
               </div>
 
 
-              <div className='flex gap-2'>
+              <div className='flex gap-2 mt-2'>
                 <Image src="/images/consultancy/short_image/Beautiful - Design- project - in - delhi - gurgaon- noida.jpeg" alt="" width={100} height={50} style={{ borderRadius: '4px' }} />
                 <div>
                   <h3 className='text-sm text-white bg-black' onMouseOver={() => handleMouseOverImage('design')}>Designing & Planning</h3>
@@ -325,10 +329,10 @@ const Header = () => {
               </div>
 
 
-              <div className='flex gap-2 '>
-                <Image src="/images/consultancy/short_image/complete-turnkey-structures-builders-developers-end-to-end-building-works-in-delhi-gurgaon-noida-india (6).jpg" alt="" width={100} height={50} style={{ borderRadius: '4px' }} />
+              <div className='flex gap-2 mt-2'>
+                <Image src="/images/consultancy/short_image/complete-turnkey-structures-builders-developers-end-to-end-building-works-in-delhi-gurgaon-noida-india (6).jpg" alt="" width={100} height={50} style={{width: '100px', height: '50px', borderRadius: '4px' }} />
                 <div>
-                  <h3 className='text-sm text-white bg-black absolute' onMouseOver={() => handleMouseOverImage('project')}>End to End Structural Projects</h3>
+                  <h3 className='text-sm text-white bg-black' onMouseOver={() => handleMouseOverImage('project')}>End to End Structural Projects</h3>
                   <p className='text-xs mt-4'>Connect with the top end to end interior Brand</p>
                 </div>
               </div>
@@ -350,7 +354,7 @@ const Header = () => {
 
 
             <div className='flex gap-2 mt-1'>
-              <Image src="/images/consultancy/short_image/villa-renovation-services-in-delhi-gurgaon-india-noida (1).jpg" alt="" width={100} height={50} style={{ borderRadius: '4px' }} />
+              <Image src="/images/consultancy/short_image/villa-renovation-services-in-delhi-gurgaon-india-noida (1).jpg" alt="" width={100} height={50} style={{ height:'50px', borderRadius: '4px' }} />
 
               <div>
                 <h3 className='text-sm text-white bg-black' onMouseOver={() => handleMouseOverImage('renovation')}>Renovations</h3>
@@ -366,6 +370,8 @@ const Header = () => {
             className='shadow-sm rounded-full border-2'
             width={550}
             height={250}
+            style={{ width: '550px', height: '250px' }}
+            layout="fixed"
           />
           {/* <button className='mt-4 bg-green-400 p-3 ml-8 rounded-full text-white font-bold'>Book an Architectural Consultancy </button> */}
 
@@ -377,7 +383,7 @@ const Header = () => {
 
   );
   const MegaMenuModularKitchenContent = () => (
-    <div className='bg-white shadow-2xl rounded-lg  flex absolute w-full p-2 mt-40  h-fit text-black'
+    <div className='bg-white shadow-2xl rounded-lg  flex absolute w-full  mt-40  h-fit text-black'
       onMouseLeave={handleMouseLeave}>
       <div className='flex '>
         <div className=''>
@@ -400,19 +406,19 @@ const Header = () => {
               </div>
 
 
-              <div className='flex gap-2'>
-                <Image src="/images/modular_kitchen/short/modular-kitchen-wardrobe-designs-dealers-manufacturers-in-delhi-gurgaon-noida-india (1).png" alt="" width={100} height={50} style={{ borderRadius: '4px' }} />
+              <div className='flex gap-2 mt-2'>
+                <Image src="/images/modular_kitchen/short/modular-kitchen-wardrobe-designs-dealers-manufacturers-in-delhi-gurgaon-noida-india (1).png" alt="" width={100} height={50} style={{  width: '130px', height: '50px', borderRadius: '4px' }} />
                 <div>
-                  <h3 className='text-sm text-white bg-black' onMouseOver={() => handleMouseOverImage('modular')}>MOdular Kitchen Designs</h3>
+                  <h3 className='text-sm text-white bg-black' onMouseOver={() => handleMouseOverImage('modular')}>Modular Kitchen Designs</h3>
                   <p className='text-xs text-black'>Connect with the top end to end interior Brand</p>
                 </div>
               </div>
 
 
-              <div className='flex gap-2 '>
+              <div className='flex gap-2 mt-2'>
                 <Image src="/images/modular_kitchen/short/modular-kitchen-wardrobe-designs-dealers-manufacturers-in-delhi-gurgaon-noida-india (7).jpg" alt="" width={100} height={50} style={{ borderRadius: '4px' }} />
                 <div>
-                  <h3 className='text-sm text-white bg-black absolute' onMouseOver={() => handleMouseOverImage('luxury_modular')}>Luxury Modular Kitchen</h3>
+                  <h3 className='text-sm text-white bg-black' onMouseOver={() => handleMouseOverImage('luxury_modular')}>Luxury Modular Kitchen</h3>
                   <p className='text-xs mt-4'>Connect with the top end to end interior Brand</p>
                 </div>
               </div>
@@ -422,7 +428,7 @@ const Header = () => {
 
           <div className='ml-2'>
 
-            <div className='flex gap-2 '>
+            <div className='flex gap-2 mt-2'>
               <Image src="/images/modular_kitchen/short/modular-kitchen-wardrobe-largest-manufacturers-dealers-in-delhi-gurgaon-noida-faridabad-india (5).jpg" alt="" width={100} height={50} style={{ borderRadius: '4px' }} />
 
               <div>
@@ -450,6 +456,8 @@ const Header = () => {
             className='shadow-sm rounded-full border-2'
             width={550}
             height={250}
+            style={{ width: '550px', height: '250px' }}
+            layout="fixed"
           />
           {/* <button className='mt-4 bg-green-400 p-3 ml-8 rounded-full text-white font-bold'>Book an Architectural Consultancy </button> */}
 
@@ -535,6 +543,8 @@ const Header = () => {
             className='shadow-sm rounded-full border-2'
             width={550}
             height={250}
+            style={{ width: '550px', height: '250px' }}
+            layout="fixed"
           />
           {/* <button className='mt-4 bg-green-400 p-3 ml-8 rounded-full text-white font-bold'>Book an Architectural Consultancy </button> */}
 
@@ -632,8 +642,9 @@ const Header = () => {
             alt=''
             className='shadow-sm rounded-full border-2'
             width={550}
-           
             height={250}
+            style={{ width: '550px', height: '250px' }}
+            layout="fixed"
           />
           {/* <button className='mt-4 bg-green-400 p-3 ml-8 rounded-full text-white font-bold'>Book an Architectural Consultancy </button> */}
 
@@ -732,6 +743,8 @@ const Header = () => {
             className='shadow-sm rounded-full border-2'
             width={550}
             height={250}
+            style={{ width: '550px', height: '250px' }}
+            layout="fixed"
           />
           {/* <button className='mt-4 bg-green-400 p-3 ml-8 rounded-full text-white font-bold'>Book an Architectural Consultancy </button> */}
 
@@ -770,7 +783,9 @@ const Header = () => {
         </div>
         <div className='ml-48  '>
           <Image srcSet="/design-Indian-home-about-us.jpg" alt="" className='shadow-sm rounded-full border-2 max-w-42 ' width={550}
-            height={250} />
+            height={250}
+            style={{width: '550px', height: '250'}}
+            layout='fixed' />
 
         </div>
       </div>
