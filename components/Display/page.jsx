@@ -18,16 +18,16 @@ const Display = () => {
       <div className="wrapper">
         <div className="img-area ">
           <div className="single-img">
-            <img src="images/bannernew.png" alt="" />
+            <Image src="/images/bannernew.png" alt="" width={0} height={0} />
           </div>
           <div className="single-img">
-            <video loop autoPlay muted controls={isPlaying} src="video/vid21.mp4" alt="" />
+            <video loop autoPlay muted controls={isPlaying} src="video/vid21.mp4" alt="" width={0} height={0} />
           </div>
           <div className="single-img">
-            <video loop autoPlay controls={isPlaying} src="video/vid1.mp4" alt="" />
+            <video loop autoPlay controls={isPlaying} src="video/vid1.mp4" alt="" width={0} height={0} />
           </div>
           <div className="single-img">
-            <img src="images/banner1.png" alt="" />
+            <Image src="/images/banner1.png" alt="" width={0} height={0} />
           </div>
 
 
@@ -37,8 +37,8 @@ const Display = () => {
       </div>
 
 
-      <div className="gridz">
-        <article className="mainz">
+      <div className=" max-w-full md:max-w-auto flex flex-col md:flex-row">
+        <article className="main main md:w-2/3 p-4 md:p-8">
           <h1>ABOUT US</h1>
           <p>
             We are one of the oldest business families in India with a family
@@ -51,7 +51,7 @@ const Display = () => {
             spread across India and GCC
           </p>
         </article>
-        <section className="sidez">
+        <section className="side">
 
           <div className="sliderz slider--cover">
             <div className="slider__inner">
@@ -130,27 +130,31 @@ const Display = () => {
               />
               <div className="slider__slides">
                 <div className="slider__slide slider__slide--1">
-                  <img
+                  <Image
 
-                    src="images/52.png"
+                    src="/images/52.png"
+                    alt="" width={0} height={0}
                   />
                 </div>
                 <div className="slider__slide slider__slide--2">
-                  <img
+                  <Image
                     alt="Placeholder 1200x600"
-                    src="images/50.png"
+                    src="/images/50.png"
+                     width={0} height={0}
                   />
                 </div>
                 <div className="slider__slide slider__slide--3">
-                  <img
+                  <Image
                     alt="Placeholder 300x150 "
-                    src="images/12.png"
+                    src="/images/12.png"
+                    width={0} height={0}
                   />
                 </div>
                 <div className="slider__slide slider__slide--4">
-                  <img
+                  <Image
                     alt="Placeholder 800x400"
-                    src="images/74.png"
+                    src="/images/74.png"
+                    width={0} height={0}
                   />
                 </div>
               </div>
@@ -186,8 +190,9 @@ const Display = () => {
 
               </article>
               <section className="side">
-                <img
-                  src="https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dw9fa2f775/images/home/whatsapp-icon.svg"
+                <Image
+                  src="https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dw9fa2f775//images/home/whatsapp-icon.svg"
+                  width={0} height={0}
                 />
               </section>
             </div>
@@ -204,8 +209,9 @@ const Display = () => {
 
               </article>
               <section className="side">
-                <img
-                  src="https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dwac5fb555/images/home/marker-icon.svg"
+                <Image
+                  src="https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dwac5fb555//images/home/marker-icon.svg"
+                  width={0} height={0}
                 />
               </section>
             </div>
@@ -221,8 +227,9 @@ const Display = () => {
 
               </article>
               <section className="side">
-                <img
-                  src="https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dw153e7692/images/home/video-icon.svg"
+                <Image
+                  src="https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dw153e7692//images/home/video-icon.svg"
+                  width={0} height={0}
                 />
               </section>
             </div>

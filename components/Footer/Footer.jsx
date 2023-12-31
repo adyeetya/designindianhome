@@ -1,6 +1,7 @@
 "use client"
 import React, { Component } from 'react'
 import { SocialIcon } from 'react-social-icons'
+import Image from 'next/image'
 
 export class Footer extends Component {
     render() {
@@ -24,51 +25,63 @@ export class Footer extends Component {
                 <div className="flex flex-col items-center md:flex-row justify-center gap-6 md:gap-32 w-full mt-5">
                     {/* Brand 1 */}
                     <div className="text-center">
-                        <img src="https://designindianhomes.com/assets/img/dkilogo.png" alt="" style={{ width: '200px', height: '80px' }} />
+                        <Image src="/dkilogo.png" alt="" width={200} height={80} style={{alignContent: 'center'}}/>
                        
                         <p className="text-green-500 text-2xl font-medium">Design Indian Kitchen</p>
                     </div>
 
                     {/* Brand 2 */}
                     <div className="text-center mt-4 md:mt-0">
-                        <img src="images/desig indian homes.gif" alt="" style={{ width: '200px', height: '80px' }} />
+                        <Image src="/desig indian homes.gif" alt="" width={200} height={80} style={{alignContent: 'center'}} />
                         <p className="text-green-500 text-2xl font-medium">Design Indian Home</p>
                     </div>
 
                     {/* Brand 3 */}
                     <div className="text-center mt-4 md:mt-0">
-                        <img src="images/footer-logo-multi.png" alt="" style={{ width: '200px', height: '80px' }} />
+                        <Image src="/footer-logo-multi.png" alt="" width={300} height={80} style={{alignContent: 'center'}} />
                         <p className="text-green-500 text-2xl font-medium">Design Indian Wardrobe</p>
                     </div>
                 </div>
 
 
                 {/* Features Section */}
-                <div className="flex flex-col items-center md:flex-row justify-center bg-gray-200 p-10 gap-6 mt-10 text-black">
+                <div className="flex flex-col items-center md:flex-row justify-center bg-gray-200 p-10 gap-6 mt-10 text-black" style={{alignItems: 'center'}}>
                     {/* Feature 1 */}
                     <div className="text-center">
-                        <img src="https://designindianhomes.com/assets/img/warranty.png" alt="" className="w-30 h-20 mx-auto" />
+                        <div className='flex justify-center'>
+                        <Image src="/warranty.png" alt="" width={108} height={80}  />
+                        </div>
+                        
                         <h1 className='font-bold text-center text-sm'>Flat 10 year warranty</h1>
                         <p className="text-sm">Choose interiors designed with superior quality material, leaving no room for defects.</p>
                     </div>
 
                     {/* Feature 2 */}
                     <div className="text-center mt-4 md:mt-0">
-                        <img src="https://designindianhomes.com/assets/img/fast-delivery.png" alt="" className="w-30 h-20 mx-auto" />
+                        <div className='flex justify-center'>
+                        <Image src="/fast-delivery.png" alt=""  width={128} height={80}/>
+                        </div>
+                        
                         <h1 className='font-bold text-center text-sm'>45-day delivery</h1>
                         <p className="text-sm">Get beautiful interiors for your new home in just 45 days. That’s our delivery guarantee.</p>
                     </div>
 
                     {/* Feature 3 */}
                     <div className="text-center mt-4 md:mt-0">
-                        <img src="https://designindianhomes.com/assets/img/team-building.png" alt="" className="w-30 h-20 mx-auto" />
+                        <div className='flex justify-center'>
+                        <Image src="/team-building.png" alt=""  width={128} height={80}/>
+
+                        </div>
                         <h1 className='font-bold text-center text-sm'>600+ design experts</h1>
                         <p className="text-sm">Explore design ideas and co-create your dream home with our experienced designers</p>
                     </div>
 
                     {/* Feature 4 */}
                     <div className="text-center mt-4 md:mt-0">
-                        <img src="https://designindianhomes.com/assets/img/customer-service.png" alt="" className="w-30 h-20 mx-auto" />
+                        <div className='flex justify-center'>
+                        <Image src="/customer-service.png" alt=""  width={128} height={80}/>
+
+                        </div>
                         <h1 className='font-bold text-center text-sm'>Post-installation service</h1>
                         <p className="text-sm">Complete your design journey and get unwavering support from our dedicated care team.</p>
                     </div>
@@ -78,7 +91,7 @@ export class Footer extends Component {
                 <div className="flex flex-col md:flex-row justify-center bg-gray-200 gap-6 p-6  text-black">
                     {/* Social Media Icons */}
                     <div className="text-left">
-                        <img src="https://designindianhomes.com/assets/img/desig%20indian%20homes.gif" alt="footer logo" className="w-30 h-20" />
+                        <Image src="/desig indian homes.gif" alt="footer logo"  width={128} height={80} />
                         <div className='flex gap-4 mt-4 hover'>
                             <SocialIcon network="twitter" url="www.vimeo.com" style={{ width: '2rem', height: '2rem' }} />
                             <SocialIcon network="facebook" url="www.vimeo.com" style={{ width: '2rem', height: '2rem' }} />
@@ -122,7 +135,7 @@ export class Footer extends Component {
                         </ul>
                     </div>
                     <div>
-                        <img src="https://designindianhomes.com/assets/img/homes-gif-logo-optimize.gif" alt="" className="w-60 h-30" />
+                        <Image src="/homes-gif-logo-optimize.gif" alt=""  width={300} height={100} />
                     </div>
 
                 </div>
