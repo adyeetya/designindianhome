@@ -1898,7 +1898,7 @@ height={250} /> */}
                     />
                   </div>
 
-                  <Image src="https://designindianhomes.com/assets/img/design-indian-home-1.gif" alt="Design Indian Home" width={740} height={250} style={{ borderRadius: '20px' }} />
+                  <Image src="/desig indian homes.gif" alt="Design Indian Home" width={740} height={250} style={{ borderRadius: '20px' }} />
 
 
 

@@ -37,8 +37,8 @@ const Display = () => {
       </div>
 
 
-      <div className="grids">
-        <article className="main ">
+      <div className=" max-w-full md:max-w-auto flex flex-col md:flex-row">
+        <article className="main main md:w-2/3 p-4 md:p-8">
           <h1>ABOUT US</h1>
           <p>
             We are one of the oldest business families in India with a family
@@ -51,7 +51,7 @@ const Display = () => {
             spread across India and GCC
           </p>
         </article>
-        <section className="side">
+        <section className="side md:w-1/3">
 
           <div className="slider slider--cover">
             <div className="slider__inner">
