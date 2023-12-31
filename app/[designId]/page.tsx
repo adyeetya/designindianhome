@@ -119,10 +119,10 @@ const Page = ({ params }: PageProps) => {
           />
           {/* <Carousel width={698}>
             <div>
-              <img src="/designImages/75-1702272255-v3H68.avif" />
+              <Image width={0} height={0} src="/designImages/75-1702272255-v3H68.avif" />
             </div>
             <div>
-              <img src="/designImages/751-1702272254-3pVcQ.avif" />
+              <Image width={0} height={0} src="/designImages/751-1702272254-3pVcQ.avif" />
             </div>
           </Carousel> */}
         </div>

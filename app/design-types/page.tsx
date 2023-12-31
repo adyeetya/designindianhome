@@ -5,7 +5,7 @@ import MaxWidthWrapper from '@/components/MaxWidthWrapper'
 
 import Header from '@/components/Navbar/Header'
 import Footer from '@/components/Footer/Footer'
-import TopRibon from '@/components/Navbar/TopRibbon'
+
 import Link from 'next/link'
 import ProgressBar from '@/components/Progressbar'
 import Card from './Card'
@@ -31,7 +31,7 @@ const page = () => {
   return (
     <>
       <ProgressBar />
-      <TopRibon />
+     
       <Header />
 
       <div className="mt-10 sm:mt-40 mb-16 mx-auto mx-8 sm:mx-16">
