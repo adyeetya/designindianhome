@@ -18,16 +18,16 @@ const Display = () => {
       <div className="wrapper">
         <div className="img-area ">
           <div className="single-img">
-            <Image src="/images/bannernew.png" alt="" width={0} height={0} />
+          <Image src="/images/bannernew.png" alt="" width={0} height={0} />
           </div>
           <div className="single-img">
-            <video loop autoPlay muted controls={isPlaying} src="video/vid21.mp4" alt="" width={0} height={0} />
+            <video loop autoPlay muted controls={isPlaying} src="video/vid21.mp4" alt=""  width={0} height={0} />
           </div>
           <div className="single-img">
-            <video loop autoPlay controls={isPlaying} src="video/vid1.mp4" alt="" width={0} height={0} />
+            <video loop autoPlay controls={isPlaying} src="video/vid1.mp4" alt=""  width={0} height={0} />
           </div>
           <div className="single-img">
-            <Image src="/images/banner1.png" alt="" width={0} height={0} />
+          <Image src="/images/banner1.png" alt="" width={0} height={0} />
           </div>
 
 
@@ -37,8 +37,8 @@ const Display = () => {
       </div>
 
 
-      <div className=" max-w-full md:max-w-auto flex flex-col md:flex-row">
-        <article className="main main md:w-2/3 p-4 md:p-8">
+      <div className="gridz">
+        <article className="mainz">
           <h1>ABOUT US</h1>
           <p>
             We are one of the oldest business families in India with a family
@@ -51,7 +51,7 @@ const Display = () => {
             spread across India and GCC
           </p>
         </article>
-        <section className="side">
+        <section className="sidez">
 
           <div className="sliderz slider--cover">
             <div className="slider__inner">
@@ -130,31 +130,38 @@ const Display = () => {
               />
               <div className="slider__slides">
                 <div className="slider__slide slider__slide--1">
-                  <Image
+                <Image
+                  
 
                     src="/images/52.png"
                     alt="" width={0} height={0}
+                   
                   />
                 </div>
                 <div className="slider__slide slider__slide--2">
-                  <Image
+                <Image
+                 
                     alt="Placeholder 1200x600"
                     src="/images/50.png"
                      width={0} height={0}
                   />
                 </div>
                 <div className="slider__slide slider__slide--3">
-                  <Image
+                <Image
+                 
                     alt="Placeholder 300x150 "
                     src="/images/12.png"
                     width={0} height={0}
+                    
                   />
                 </div>
                 <div className="slider__slide slider__slide--4">
-                  <Image
+                <Image
+
                     alt="Placeholder 800x400"
                     src="/images/74.png"
                     width={0} height={0}
+                   
                   />
                 </div>
               </div>
@@ -190,10 +197,9 @@ const Display = () => {
 
               </article>
               <section className="side">
-                <Image
+               <Image
                   src="https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dw9fa2f775//images/home/whatsapp-icon.svg"
-                  width={0} height={0}
-                />
+                  width={0} height={0}/>
               </section>
             </div>
           </div>
@@ -209,10 +215,9 @@ const Display = () => {
 
               </article>
               <section className="side">
-                <Image
+              <Image
                   src="https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dwac5fb555//images/home/marker-icon.svg"
-                  width={0} height={0}
-                />
+                  width={0} height={0}   />
               </section>
             </div>
           </div>
@@ -227,10 +232,10 @@ const Display = () => {
 
               </article>
               <section className="side">
-                <Image
+              <Image
                   src="https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dw153e7692//images/home/video-icon.svg"
                   width={0} height={0}
-                />
+                      />
               </section>
             </div>
           </div>
