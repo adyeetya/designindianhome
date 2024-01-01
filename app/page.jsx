@@ -1,7 +1,7 @@
 import Hero from '../components/Hero/page'
 import ImageGrid from '../components/ImageGrid/page'
 import Image from 'next/image'
-
+import Brands from '../components/Brands/page'
 import Header from '../components/Navbar/Header'
 import Footer from '../components/Footer/Footer'
 import Display from '../components/Display/page'
@@ -20,10 +20,9 @@ export default function Home() {
       <Stepper />
       <FAQ />
       <EndToEndImageGrid />
-
+      <Brands />
       <Display/>
       <Collection/>
-
       <Footer />
     </>
   )
