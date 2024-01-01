@@ -253,7 +253,7 @@ const Collection = () => {
 
         </div>
       </div>
-      <div className="wrapper">
+      <div className="wrapperlatest">
         <h1>Happy Homes by Design Indian Homes</h1>
         <h3>What People Say About Us</h3></div>
       <div className="jiu">
@@ -366,7 +366,7 @@ const Collection = () => {
           </div>
         </div>
       </div>
-      <div className="wrapper">
+      <div className="wrapperlatest">
         <h1>Our Brands</h1>
         <h3>What People Say About Us</h3></div>
      <div className="slider">
