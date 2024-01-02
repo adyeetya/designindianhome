@@ -18,10 +18,9 @@ export default function Home() {
       <Header />
       <Hero />
       <ImageGrid />
-      <Collection/>
+      <Collection />
       <Brands />
       <Display />
-      <Collection />
       <TabsSection />
       <Footer />
     </>
