@@ -76,10 +76,10 @@ const EndToEndImageGrid = () => {
           </div>
 
           <div className="container mx-auto mt-8">
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-1 sm:gap-4">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
               {imageList.map((item, index) => (
-                <div key={index} className="text-center md:w-full w-4/5">
-                  <div className="mb-4 ml-8">
+                <div key={index} className="text-center md:w-full sm:w-4/5">
+                  <div className="mb-4 sm:ml-8">
                     <Image
                       height={100}
                       width={200}
