@@ -5,22 +5,13 @@ const Collection = () => {
   <div className="container mx-auto px-4">
   
   <section className="py-8 px-8">
-    <div className="flex flex-wrap -mx-4">
-      <div className="md:w-1/2 px-4 mb-8 md:mb-0">
-      <Image height={500} width={350}
-          className="rounded shadow-md"
-          src="/images/qwerty.png"
-          alt=""
-          
-        />  
-      </div>
-      <div className="md:w-1/2 px-4 mb-8 md:mb-0">
+    <div className="flex flex-wrap -mx-4"> 
       <Image height={500} width={350}
           className="rounded shadow-md"
           src="/images/qwert.png"
-          alt=""
+          alt=" "
               />  
-      </div>
+    
     </div>
   </section>
  {/*  <section className="pt-8 px-4">
