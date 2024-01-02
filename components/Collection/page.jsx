@@ -7,20 +7,20 @@ const Collection = () => {
   <section className="py-8 px-8">
     <div className="flex flex-wrap -mx-4">
       <div className="md:w-1/2 px-4 mb-8 md:mb-0">
-        <Image width={0} height={0} style={{width: 'set your desire width', height: 'set your desire height' }}
-       
+      <Image height={0} width={0}
           className="rounded shadow-md"
           src="/images/just sold.png"
           alt=""
-        />
+          style={{width: '0px', height: '0px'}}
+        />  
       </div>
       <div className="md:w-1/2 px-4 mb-8 md:mb-0">
-      <Image width={0} height={0} style={{width: 'set your desire width', height: 'set your desire height' }}
-       
-       className="rounded shadow-md"
-       src="/images/just sold.png"
-       alt=""
-     />
+      <Image height={0} width={0}
+          className="rounded shadow-md"
+          src="/images/just sold.png"
+          alt=""
+          style={{width: '0px', height: '0px'}}
+        />  
       </div>
     </div>
   </section>
@@ -74,18 +74,20 @@ const Collection = () => {
     <div className="flex flex-wrap -mx-4 -mb-8">
      
       <div className="md:w-1/3 px-4 mb-8">
-        <img
+      <Image height={0} width={0}
           className="rounded shadow-md"
-          src="/images/design1."
+          src="/images/just sold.png"
           alt=""
-        />
+          style={{width: '0px', height: '0px'}}
+        />  
       </div>
       <div className="md:w-1/3 px-4 mb-8">
-        <img
+      <Image height={0} width={0}
           className="rounded shadow-md"
-          src="https://source.unsplash.com/random/1280x720"
+          src="/images/just sold.png"
           alt=""
-        />
+          style={{width: '0px', height: '0px'}}
+        />  
       </div>
       <div className="md:w-1/3 px-4 mb-8">
         <img
