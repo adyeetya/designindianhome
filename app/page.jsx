@@ -26,7 +26,10 @@ export default function Home() {
       <TabsSection />
       <EndToEndImageGrid />
       <FAQ />
-      <MyForm />
+      <div className="bg-amber-50 p-4">
+        <MyForm />
+      </div>
+
       <Footer />
     </>
   )
