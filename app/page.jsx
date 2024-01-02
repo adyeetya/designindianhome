@@ -9,6 +9,7 @@ import EndToEndImageGrid from '../components/EndToEndImageGrid/page'
 import Stepper from '../components/Stepper/page'
 import FAQ from '../components/FAQ/page'
 import Collection from '../components/Collection/page'
+import TabsSection from '../components/TabsSection/page'
 import '../style/hero.css'
 
 export default function Home() {
@@ -19,10 +20,9 @@ export default function Home() {
       <ImageGrid />
       <Collection/>
       <Brands />
-      <Display/>
-      <EndToEndImageGrid />
-      <Stepper />
-      <FAQ />
+      <Display />
+      <Collection />
+      <TabsSection />
       <Footer />
     </>
   )
