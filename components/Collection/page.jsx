@@ -159,63 +159,63 @@ const Collection = () => {
         <h3>For Beautiful Homes!</h3>
         <div className="img-area ">
           <div className="single-img" id="name">
-            <Image width={100} height={100} src="/images/1.png" alt="" />
+            <Image width={400} height={400} src="/images/1.png" alt="" />
             <p className="text-lg font-bold" id="rem">
               3 Seater Sofas Plush
             </p>
             <p className="text-md ">Plush, Stylish & Relaxing</p>
           </div>
           <div className="single-img" id="name">
-            <Image width={100} height={100} src="/images/2.png" alt="" />
+            <Image width={400} height={400} src="/images/2.png" alt="" />
             <p className="text-lg font-bold" id="rem">
               3 Seater Sofas Plush
             </p>
             <p className="text-md ">Plush, Stylish & Relaxing</p>
           </div>
           <div className="single-img" id="name">
-            <Image width={100} height={100} src="/images/3.png" alt="" />
+            <Image width={400} height={400} src="/images/3.png" alt="" />
             <p className="text-lg font-bold" id="rem">
               3 Seater Sofas Plush
             </p>
             <p className="text-md ">Plush, Stylish & Relaxing</p>
           </div>
           <div className="single-img" id="name">
-            <Image width={100} height={100} src="/images/4.png" alt="" />
+            <Image width={400} height={400} src="/images/4.png" alt="" />
             <p className="text-lg font-bold" id="rem">
               3 Seater Sofas Plush
             </p>
             <p className="text-md ">Plush, Stylish & Relaxing</p>
           </div>
           <div className="single-img" id="name">
-            <Image width={100} height={100} src="/images/78.png" alt="" />{' '}
+            <Image width={400} height={400} src="/images/78.png" alt="" />{' '}
             <p className="text-lg font-bold" id="rem">
               3 Seater Sofas Plush
             </p>
             <p className="text-md ">Plush, Stylish & Relaxing</p>
           </div>
           <div className="single-img" id="name">
-            <Image width={100} height={100} src="/images/56.png" alt="" />{' '}
+            <Image width={400} height={400} src="/images/56.png" alt="" />{' '}
             <p className="text-lg font-bold" id="rem">
               3 Seater Sofas Plush
             </p>
             <p className="text-md ">Plush, Stylish & Relaxing</p>
           </div>
           <div className="single-img" id="name">
-            <Image width={100} height={100} src="/images/1.png" alt="" />{' '}
+            <Image width={400} height={400} src="/images/1.png" alt="" />{' '}
             <p className="text-lg font-bold" id="rem">
               3 Seater Sofas Plush
             </p>
             <p className="text-md ">Plush, Stylish & Relaxing</p>
           </div>
           <div className="single-img" id="name">
-            <Image width={100} height={100} src="/images/2.png" alt="" />
+            <Image width={400} height={400} src="/images/2.png" alt="" />
             <p className="text-lg font-bold" id="rem">
               3 Seater Sofas Plush
             </p>
             <p className="text-md ">Plush, Stylish & Relaxing</p>
           </div>
           <div className="single-img" id="name">
-            <Image width={100} height={100} src="/images/3.png" alt="" />{' '}
+            <Image width={400} height={400} src="/images/3.png" alt="" />{' '}
             <p className="text-lg font-bold" id="rem">
               3 Seater Sofas Plush
             </p>
@@ -227,97 +227,97 @@ const Collection = () => {
 
       <div className="img-area pt-6">
         <div className="single-img" id="name">
-          <Image width={100} height={100} src="/images/a.png" alt="" />
+          <Image width={400} height={400} src="/images/a.png" alt="" />
           <p className="text-lg font-bold" id="rem">
             Modular Kitchen
           </p>
         </div>
         <div className="single-img" id="name">
-          <Image width={100} height={100} src="/images/b.png" alt="" />
+          <Image width={400} height={400} src="/images/b.png" alt="" />
           <p className="text-lg font-bold" id="rem">
             Storage and wardrobe
           </p>
         </div>
         <div className="single-img" id="name">
-          <Image width={100} height={100} src="/images/c.png" alt="" />
+          <Image width={400} height={400} src="/images/c.png" alt="" />
           <p className="text-lg font-bold" id="rem">
             Crockery Units
           </p>
         </div>
         <div className="single-img" id="name">
-          <Image width={100} height={100} src="/images/d.png" alt="" />
+          <Image width={400} height={400} src="/images/d.png" alt="" />
           <p className="text-lg font-bold" id="rem">
             Space Saving Furniture
           </p>
         </div>
         <div className="single-img" id="name">
-          <Image width={100} height={100} src="/images/e.png" alt="" />{' '}
+          <Image width={400} height={400} src="/images/e.png" alt="" />{' '}
           <p className="text-lg font-bold" id="rem">
             TV Units
           </p>
         </div>
         <div className="single-img" id="name">
-          <Image width={100} height={100} src="/images/f.png" alt="" />{' '}
+          <Image width={400} height={400} src="/images/f.png" alt="" />{' '}
           <p className="text-lg font-bold" id="rem">
             Study Tables
           </p>
         </div>
         <div className="single-img" id="name">
-          <Image width={100} height={100} src="/images/g.png" alt="" />{' '}
+          <Image width={400} height={400} src="/images/g.png" alt="" />{' '}
           <p className="text-lg font-bold" id="rem">
             Lights
           </p>
         </div>
         <div className="single-img" id="name">
-          <Image width={100} height={100} src="/images/h.png" alt="" />
+          <Image width={400} height={400} src="/images/h.png" alt="" />
           <p className="text-lg font-bold" id="rem">
             False Ceiling
           </p>
         </div>
         <div className="single-img" id="name">
-          <Image width={100} height={100} src="/images/i.png" alt="" />{' '}
+          <Image width={400} height={400} src="/images/i.png" alt="" />{' '}
           <p className="text-lg font-bold" id="rem">
             Wallpaper
           </p>
         </div>
         <div className="single-img" id="name">
-          <Image width={100} height={100} src="/images/j.png" alt="" />{' '}
+          <Image width={400} height={400} src="/images/j.png" alt="" />{' '}
           <p className="text-lg font-bold" id="rem">
             Wall Paint
           </p>
         </div>{' '}
         <div className="single-img" id="name">
-          <Image width={100} height={100} src="/images/k.png" alt="" />{' '}
+          <Image width={400} height={400} src="/images/k.png" alt="" />{' '}
           <p className="text-lg font-bold" id="rem">
             Bathroom
           </p>
         </div>{' '}
         <div className="single-img" id="name">
-          <Image width={100} height={100} src="/images/l.png" alt="" />{' '}
+          <Image width={400} height={400} src="/images/l.png" alt="" />{' '}
           <p className="text-lg font-bold" id="rem">
             Pooja Unit
           </p>
         </div>{' '}
         <div className="single-img" id="name">
-          <Image width={100} height={100} src="/images/m.png" alt="" />{' '}
+          <Image width={400} height={400} src="/images/m.png" alt="" />{' '}
           <p className="text-lg font-bold" id="rem">
             Foyer Designs
           </p>
         </div>{' '}
         <div className="single-img" id="name">
-          <Image width={100} height={100} src="/images/n.png" alt="" />{' '}
+          <Image width={400} height={400} src="/images/n.png" alt="" />{' '}
           <p className="text-lg font-bold" id="rem">
             Movable furniture
           </p>
         </div>
         <div className="single-img" id="name">
-          <Image width={100} height={100} src="/images/o.png" alt="" />{' '}
+          <Image width={400} height={400} src="/images/o.png" alt="" />{' '}
           <p className="text-lg font-bold" id="rem">
             Kids Bedroom
           </p>
         </div>
         <div className="single-img" id="name">
-          <Image width={100} height={100} src="/images/p.png" alt="" />{' '}
+          <Image width={400} height={400} src="/images/p.png" alt="" />{' '}
           <p className="text-lg font-bold" id="rem">
             Bookshelves
           </p>
