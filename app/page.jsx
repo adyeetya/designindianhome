@@ -21,8 +21,10 @@ export default function Home() {
       <Collection/>
       <Brands />
       <Display />
-      
+      <Stepper/>
+      <FAQ/>
       <TabsSection />
+     < EndToEndImageGrid/>
       <Footer />
     </>
   )

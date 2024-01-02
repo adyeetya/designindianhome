@@ -8,22 +8,22 @@ import MaxWidthWrapper from '../../components/MaxWidthWrapper'
 const tabData = [
   // Data for Tab 1
   [
-    '/images/boho.webp',
-    '/images/boho.webp',
-    '/images/boho.webp',
-    '/images/boho.webp',
+     ' /images/a.png',
+     ' /images/b.png',
+     ' /images/c.png',
+     ' /images/d.png',
   ],
   [
-    '/images/contemporary.webp',
-    '/images/contemporary.webp',
-    '/images/contemporary.webp',
-    '/images/contemporary.webp',
+    ' /images/e.png',
+    ' /images/f.png',
+    ' /images/g.png',
+    ' /images/h.png',
   ],
   [
-    '/images/industrial.webp',
-    '/images/industrial.webp',
-    '/images/industrial.webp',
-    '/images/industrial.webp',
+   ' /images/i.png',
+   ' /images/j.png',
+   ' /images/k.png',
+   ' /images/l.png',
   ],
   // Data for Tab 2 (and so on...)
   // ...
@@ -87,9 +87,9 @@ const ResponsiveTabs = () => {
             aria-label="styled tabs example"
             className="flex justify-center"
           >
-            <StyledTab label="Kids" />
-            <StyledTab label="Mens" />
-            <StyledTab label="Womens" />
+            <StyledTab label="Kids Designed Services" />
+            <StyledTab label="Interior Designed Services" />
+            <StyledTab label="Complete Designed Services" />
           </StyledTabs>
         </Box>
 
