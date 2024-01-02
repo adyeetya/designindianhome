@@ -21,7 +21,7 @@ export default function Home() {
       <Collection/>
       <Brands />
       <Display />
-      <Collection />
+      
       <TabsSection />
       <Footer />
     </>
