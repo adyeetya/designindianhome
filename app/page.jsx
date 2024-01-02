@@ -24,7 +24,7 @@ export default function Home() {
       <Stepper/>
       <FAQ/>
       <TabsSection />
-     < EndToEndImageGrid/>
+     <EndToEndImageGrid/>
       <Footer />
     </>
   )

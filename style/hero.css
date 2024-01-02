@@ -545,7 +545,7 @@ background-position: right top;
 
 
 .containeru{
-  margin: 0 auto;
+  margin-bottom:20%;
   padding: 0 20px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
