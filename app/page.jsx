@@ -10,6 +10,7 @@ import Stepper from '../components/Stepper/page'
 import FAQ from '../components/FAQ/page'
 import Collection from '../components/Collection/page'
 import TabsSection from '../components/TabsSection/page'
+import MyForm from '../components/MyForm'
 import '../style/hero.css'
 
 export default function Home() {
@@ -18,13 +19,17 @@ export default function Home() {
       <Header />
       <Hero />
       <ImageGrid />
-      <Collection/>
+      <Collection />
       <Brands />
       <Display />
-      <Stepper/>
-      <FAQ/>
+      <Stepper />
       <TabsSection />
-     <EndToEndImageGrid/>
+      <EndToEndImageGrid />
+      <FAQ />
+      <div className="bg-amber-50 p-4">
+        <MyForm />
+      </div>
+
       <Footer />
     </>
   )
