@@ -18,16 +18,16 @@ const Display = () => {
       <div className="wrapper">
         <div className="img-area ">
           <div className="single-img">
-          <Image src="/images/bannernew.png" alt="" width={0} height={0} />
+          <Image src="/images/bannernew.png" alt="" width={600} height={600} />
           </div>
           <div className="single-img">
-            <video loop autoPlay muted controls={isPlaying} src="video/vid21.mp4" alt=""  width={0} height={0} />
+            <video loop autoPlay muted controls={isPlaying} src="video/vid21.mp4" alt=""  width={600} height={600} />
           </div>
           <div className="single-img">
-            <video loop autoPlay controls={isPlaying} src="video/vid1.mp4" alt=""  width={0} height={0} />
+            <video loop autoPlay controls={isPlaying} src="video/vid1.mp4" alt=""  width={600} height={600} />
           </div>
           <div className="single-img">
-          <Image src="/images/banner1.png" alt="" width={0} height={0} />
+          <Image src="/images/banner1.png" alt="" width={600} height={600} />
           </div>
 
 
@@ -178,72 +178,7 @@ const Display = () => {
 
 
 
-      <div className="section1">
-        <div className="title_header">
-          <h1>Connect With Us</h1>
-          <span className="bar" />
-
-        </div><br />
-        <section>
-          <div className="card">
-
-
-
-
-            <div className="gridz">
-              <article className="mainz ">
-                <h2>Connect on</h2>
-                <h1>Whatsapp</h1>
-
-              </article>
-              <section className="sidez">
-               <Image
-                  src="https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dw9fa2f775//images/home/whatsapp-icon.svg"
-                  width={0} height={0}/>
-              </section>
-            </div>
-          </div>
-
-
-
-
-          <div className="card">
-            <div className="gridz">
-              <article className="mainz ">
-                <h2>Book An</h2>
-                <h1>Appointment</h1>
-
-              </article>
-              <section className="sidez">
-              <Image
-                  src="https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dwac5fb555//images/home/marker-icon.svg"
-                  width={0} height={0}   />
-              </section>
-            </div>
-          </div>
-
-
-
-          <div className="card">
-            <div className="gridz">
-              <article className="mainz ">
-                <h2>Schedule A</h2>
-                <h1>Video Call</h1>
-
-              </article>
-              <section className="sidez">
-              <Image
-                  src="https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dw153e7692//images/home/video-icon.svg"
-                  width={0} height={0}
-                      />
-              </section>
-            </div>
-          </div>
-
-
-
-        </section>
-      </div>
+     
 
 
     </>

@@ -444,7 +444,6 @@ const ScheduleChatSection = () => {
         backgroundColor: 'rgba(0, 0, 0, 0.51)',
         backgroundBlendMode: 'darken',
         marginTop: '50px',
-        backgroundSize: 'cover',
       }}
     >
       <div className="text-center mx-auto text-white">
