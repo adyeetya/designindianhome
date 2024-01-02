@@ -7,18 +7,20 @@ const Collection = () => {
   <section className="py-8 px-8">
     <div className="flex flex-wrap -mx-4">
       <div className="md:w-1/2 px-4 mb-8 md:mb-0">
-        <Image height={1000} width={1000}
+        <Image width={0} height={0} style={{width: 'set your desire width', height: 'set your desire height' }}
+       
           className="rounded shadow-md"
           src="/images/just sold.png"
           alt=""
         />
       </div>
       <div className="md:w-1/2 px-4 mb-8 md:mb-0">
-        <Image  width={0} height={0} style={{width: 'set your desire width', height: 'set your desire height' }}
-          className="rounded shadow-md"
-          src="https://source.unsplash.com/random/1280x720"
-          alt=""
-        />
+      <Image width={0} height={0} style={{width: 'set your desire width', height: 'set your desire height' }}
+       
+       className="rounded shadow-md"
+       src="/images/just sold.png"
+       alt=""
+     />
       </div>
     </div>
   </section>
