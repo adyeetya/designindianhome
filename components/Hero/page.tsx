@@ -4,7 +4,7 @@ import DarkMode from '../DarkMode/page'
 import Image from 'next/image'
 import SimpleImageSlider from 'react-simple-image-slider'
 import MaxWidthWrapper from '../MaxWidthWrapper'
-
+import Main from "../../public/images/a.png"
 const Hero = () => {
   const [screenSize, setScreenSize] = useState('')
 
@@ -116,9 +116,13 @@ const Hero = () => {
             </div>
           </div>
         </div>
+
+       
       </MaxWidthWrapper>
 
-    
+    <div className="mb-12 mt-8 sm:mt-40 flex flex-col items-center justify-center">
+      <img src={Main}/>
+    </div>
 
 
     </>

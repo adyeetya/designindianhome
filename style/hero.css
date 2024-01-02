@@ -614,17 +614,6 @@ font-size: 14px;    text-decoration: none;
   left: 35px;
 }
 
-.tags a{
-  color: #888;
-  font-weight: 700;
-  text-decoration: none;
-  margin-right: 15px;
-  transition: 0.3s ease;
-}
-
-.tags a:hover{
-  color: #000;
-}
 
 @media screen and (max-width: 1100px) {
   .containeru{
