@@ -134,7 +134,7 @@ const Display = () => {
                   
 
                     src="/images/52.png"
-                    alt="" width={0} height={0}
+                    alt="" width={300} height={300}
                    
                   />
                 </div>
@@ -142,8 +142,8 @@ const Display = () => {
                 <Image
                  
                     alt="Placeholder 1200x600"
-                    src="/images/50.png"
-                     width={0} height={0}
+                    src="/images/74.png"
+                     width={300} height={300}
                   />
                 </div>
                 <div className="slider__slide slider__slide--3">
@@ -151,7 +151,7 @@ const Display = () => {
                  
                     alt="Placeholder 300x150 "
                     src="/images/12.png"
-                    width={0} height={0}
+                    width={300} height={300}
                     
                   />
                 </div>
@@ -159,8 +159,8 @@ const Display = () => {
                 <Image
 
                     alt="Placeholder 800x400"
-                    src="/images/74.png"
-                    width={0} height={0}
+                    src="/images/50.png"
+                    width={300} height={300}
                    
                   />
                 </div>

@@ -1,7 +1,4 @@
 import Image from 'next/image';
-import OwlCarousel from 'react-owl-carousel';
-import 'owl.carousel/dist/assets/owl.carousel.css';
-import 'owl.carousel/dist/assets/owl.theme.default.css';
 
 const Collection = () => {
   return (
@@ -449,120 +446,119 @@ const Collection = () => {
      
       <div className="wrapperlatest">
         <h1>Our Brands</h1>
-        <h3>What People Say About Us</h3>
+    
       </div>
       <div className="slider">
         <div className="slide-track">
           <div className="slide">
             <Image
-              src="/images/icon/icons8-on-time-delivery-53.png"
-              height={100}
+              src="/images/vedh.png.png"
+              height={250}
               width={250}
               alt=""
             />
-            <p>hi zswedrtygfcv</p>
-            <button>click me</button>
+           
           </div>
           <div className="slide">
             <Image
-              src="/images/icon/icons8-on-time-delivery-53.png"
-              height={100}
-              width={250}
-              alt=""
-            />
-          </div>
-          <div className="slide">
-            <Image
-              src="/images/icon/icons8-on-time-delivery-53.png"
-              height={100}
+              src="/images/vedh.png"
+              height={250}
               width={250}
               alt=""
             />
           </div>
           <div className="slide">
             <Image
-              src="/images/icon/icons8-on-time-delivery-53.png"
-              height={100}
+              src="/images/vedh.png"
+              height={250}
               width={250}
               alt=""
             />
           </div>
           <div className="slide">
             <Image
-              src="/images/icon/icons8-on-time-delivery-53.png"
-              height={100}
+              src="/images/vedh.png"
+              height={250}
               width={250}
               alt=""
             />
           </div>
           <div className="slide">
             <Image
-              src="/images/icon/icons8-on-time-delivery-53.png"
-              height={100}
+              src="/images/vedh.png"
+              height={250}
               width={250}
               alt=""
             />
           </div>
           <div className="slide">
             <Image
-              src="/images/icon/icons8-on-time-delivery-53.png"
-              height={100}
+              src="/images/vedh.png"
+              height={250}
               width={250}
               alt=""
             />
           </div>
           <div className="slide">
             <Image
-              src="/images/icon/icons8-on-time-delivery-53.png"
-              height={100}
+              src="/images/vedh.png"
+              height={250}
               width={250}
               alt=""
             />
           </div>
           <div className="slide">
             <Image
-              src="/images/icon/icons8-on-time-delivery-53.png"
-              height={100}
+              src="/images/vedh.png"
+              height={250}
               width={250}
               alt=""
             />
           </div>
           <div className="slide">
             <Image
-              src="/images/icon/icons8-on-time-delivery-53.png"
-              height={100}
+              src="/images/vedh.png"
+              height={250}
               width={250}
               alt=""
             />
           </div>
           <div className="slide">
             <Image
-              src="/images/icon/icons8-on-time-delivery-53.png"
-              height={100}
+              src="/images/vedh.png"
+              height={250}
               width={250}
               alt=""
             />
           </div>
           <div className="slide">
             <Image
-              src="/images/icon/icons8-on-time-delivery-53.png"
-              height={100}
+              src="/images/vedh.png"
+              height={250}
               width={250}
               alt=""
             />
           </div>
           <div className="slide">
             <Image
-              src="/images/icon/icons8-on-time-delivery-53.png"
-              height={100}
+              src="/images/vedh.png"
+              height={250}
               width={250}
               alt=""
             />
           </div>
           <div className="slide">
             <Image
-              src="/images/icon/icons8-on-time-delivery-53.png"
-              height={100}
+              src="/images/vedh.png"
+              height={250}
+              width={250}
+              alt=""
+            />
+          </div>
+          <div className="slide">
+            <Image
+              src="/images/vedh.png"
+              height={250}
               width={250}
               alt=""
             />
