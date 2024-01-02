@@ -17,12 +17,12 @@ export default function Home() {
       <Header />
       <Hero />
       <ImageGrid />
-      <Stepper />
-      <FAQ />
-      <EndToEndImageGrid />
+      <Collection/>
       <Brands />
       <Display/>
-      <Collection/>
+      <EndToEndImageGrid />
+      <Stepper />
+      <FAQ />
       <Footer />
     </>
   )
