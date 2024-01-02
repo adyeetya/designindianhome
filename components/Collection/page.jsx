@@ -14,7 +14,7 @@ const Collection = () => {
         />
       </div>
       <div className="md:w-1/2 px-4 mb-8 md:mb-0">
-        <img
+        <Image  width={0} height={0} style={{width: 'set your desire width', height: 'set your desire height' }}
           className="rounded shadow-md"
           src="https://source.unsplash.com/random/1280x720"
           alt=""
