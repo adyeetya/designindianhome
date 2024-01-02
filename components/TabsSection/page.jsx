@@ -73,8 +73,9 @@ const ResponsiveTabs = () => {
 
   return (
     <>
-      <div className="mt-16">
-        <h1 className="text-center text-4xl text-gray-700">Shop by Gender</h1>
+         <div className="wrapperlatest">
+        <h1>End-to-End Interior Solutions</h1>
+       <h3>Our Interior services </h3>
       </div>
       <Container maxWidth="md" className="mt-8">
         <Box className=" flex justify-center sm:px-8 py-4 sm:py-8">
