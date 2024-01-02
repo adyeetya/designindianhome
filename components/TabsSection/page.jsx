@@ -7,24 +7,9 @@ import MaxWidthWrapper from '../../components/MaxWidthWrapper'
 // Sample data for images
 const tabData = [
   // Data for Tab 1
-  [
-     ' /images/a.png',
-     ' /images/b.png',
-     ' /images/c.png',
-     ' /images/d.png',
-  ],
-  [
-    ' /images/e.png',
-    ' /images/f.png',
-    ' /images/g.png',
-    ' /images/h.png',
-  ],
-  [
-   ' /images/i.png',
-   ' /images/j.png',
-   ' /images/k.png',
-   ' /images/l.png',
-  ],
+  [' /images/a.png', ' /images/b.png', ' /images/c.png', ' /images/d.png'],
+  [' /images/e.png', ' /images/f.png', ' /images/g.png', ' /images/h.png'],
+  [' /images/i.png', ' /images/j.png', ' /images/k.png', ' /images/l.png'],
   // Data for Tab 2 (and so on...)
   // ...
 ]
@@ -73,9 +58,9 @@ const ResponsiveTabs = () => {
 
   return (
     <>
-         <div className="wrapperlatest">
+      <div className="wrapperlatest">
         <h1>End-to-End Interior Solutions</h1>
-       <h3>Our Interior services </h3>
+        <h3>Our Interior services </h3>
       </div>
       <Container maxWidth="md" className="mt-8">
         <Box className=" flex justify-center sm:px-8 py-4 sm:py-8">
@@ -96,7 +81,7 @@ const ResponsiveTabs = () => {
         {/* Display the images based on the selected tab */}
         {tabData.map((tabImages, index) => (
           <TabPanel key={index} value={value} index={index}>
-            <div className="grid sm:grid-cols-4 gap-2 mb-8 justify-center">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 mb-8 justify-center">
               {tabImages.map((image, imgIndex) => (
                 <img
                   key={imgIndex}
