@@ -132,7 +132,6 @@ export class Footer extends Component {
                             <li>Interior 101</li>
                             <li>Interior by Design Indian Homes</li>
                             <li>Design Indian Homes in your city</li>
-
                         </ul>
                     </div>
                     <div>
