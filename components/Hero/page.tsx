@@ -120,9 +120,7 @@ const Hero = () => {
        
       </MaxWidthWrapper>
 
-    <div className="mb-12 mt-8 sm:mt-40 flex flex-col items-center justify-center">
-      <img src={Main}/>
-    </div>
+   
 
 
     </>
