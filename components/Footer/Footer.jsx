@@ -6,6 +6,7 @@ import Image from 'next/image'
 export class Footer extends Component {
     render() {
         return (
+            
             <div className="mt-30px">
                 <div className="flex items-center justify-center ">
                     <div className="text-black">
@@ -156,6 +157,7 @@ export class Footer extends Component {
                         Modular Kitchen Designs | Home Interior Designs | Wardrobe Designs | Living room Designs | Bathroom Designs | Space Saving Furniture | Home Office Designs | Pooja Room Designs | Foyer Interior Design | Kids Bedroom Design | Interior Lighting Design
                     </p>
                 </div>
+
 
 
             </div>

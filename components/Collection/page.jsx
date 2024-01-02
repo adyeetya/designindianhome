@@ -1,4 +1,8 @@
-import Image from 'next/image'
+import Image from 'next/image';
+import OwlCarousel from 'react-owl-carousel';
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel/dist/assets/owl.theme.default.css';
+
 const Collection = () => {
   return (
     <>
@@ -343,75 +347,6 @@ const Collection = () => {
 
 
       
-      <div
-        className="flex flex-col items-center md:flex-row justify-center p-10 gap-6 mt-10"
-        id="bg"
-      >
-        <h1 className="font-bold text-2xl">Stay safe. Design virtually.</h1>
-        <br />
-        {/* Feature 1 */}
-        <div className="text-center">
-          <Image
-            width={100}
-            height={100}
-            src="/images/icon/12.png"
-            alt=""
-            className="w-60 h-70 mx-auto"
-          />
-          <h1 className="font-bold text-center">Contactless Experience</h1>
-          <p className="text-sm">
-            No stepping out. Design your home interiors from the safety and
-            comfort of your home.
-          </p>
-        </div>
-
-        {/* Feature 2 */}
-        <div className="text-center mt-4 md:mt-0">
-          <Image
-            width={100}
-            height={100}
-            src="/images/icon/5.png"
-            alt=""
-            className="w-60 h-70 mx-auto"
-          />
-          <h1 className="font-bold text-center">Online Expertise</h1>
-          <p className="text-sm">
-            Connect with our 600+ designers virtually and explore designs
-            online.
-          </p>
-        </div>
-
-        {/* Feature 3 */}
-        <div className="text-center mt-4 md:mt-0">
-          <Image
-            width={100}
-            height={100}
-            src="/images/icon/1.png"
-            alt=""
-            className="w-60 h-70 mx-auto"
-          />
-          <h1 className="font-bold text-center">Live 3D Designs</h1>
-          <p className="text-sm">
-            Explore life-like 3D designs online that are made for your floor
-            plan.
-          </p>
-        </div>
-
-        {/* Feature 4 */}
-        <div className="text-center mt-4 md:mt-0">
-          <Image
-            width={100}
-            height={100}
-            src="/images/icon/2.png"
-            alt=""
-            className="w-60 h-70 mx-auto"
-          />
-          <h1 className="font-bold text-center">Instant Pricing</h1>
-          <p className="text-sm">
-            Enjoy complete price transparency and stay within budget.
-          </p>
-        </div>
-      </div>
 
 
 
