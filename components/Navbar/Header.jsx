@@ -1109,7 +1109,7 @@ const Header = () => {
                   <FontAwesomeIcon icon={faPencil} size="3x" />
                 </div>
               </div>
-              <span className="mt-7">Let's Design</span>
+              <span className="mt-7">Let&apos;s Design</span>
             </button>
             <button className="flex flex-col items-center text-sm font-bold">
               <FontAwesomeIcon icon={faNewspaper} size="2x" />
