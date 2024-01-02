@@ -87,9 +87,9 @@ const ResponsiveTabs = () => {
             aria-label="styled tabs example"
             className="flex justify-center"
           >
-            <StyledTab label="Kids Designed Services" />
-            <StyledTab label="Interior Designed Services" />
-            <StyledTab label="Complete Designed Services" />
+            <StyledTab label="Exterior Services" />
+            <StyledTab label="Interior Services" />
+            <StyledTab label="Complete Services" />
           </StyledTabs>
         </Box>
 
