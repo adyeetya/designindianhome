@@ -541,6 +541,13 @@ background-position: right top;
     padding: 3% 0;
 }
 
+.newz{
+  margin: 0px 95px; 
+}
+
+#news{
+ padding: 0px 5px;
+}
 
 .containeru{
   margin-bottom:2%;
@@ -627,6 +634,10 @@ font-size: 14px;    text-decoration: none;
       grid-template-columns: 1fr;
       grid-row-gap: 60px;
       
+  }
+  #news, .newsz{
+    padding: 0px ;
+    margin: 5px -85px;
   }
 }
 
