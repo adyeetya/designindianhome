@@ -3,8 +3,8 @@ const Brands = () => {
   return (
     <>
       <div className="wrapperlatest">
-        <h1>Package Offers </h1>
-        <h3>Designindian Homes Services</h3>
+        <h1>Our Deals </h1>
+        <h3>Affordable Luxury</h3>
       </div>
 
       <div className="jiu">

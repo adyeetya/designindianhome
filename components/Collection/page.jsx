@@ -1,101 +1,82 @@
-import Image from 'next/image'
+'use client'
+import Image from 'next/image';
+
+import React, { useState, useEffect } from 'react';
+
 const Collection = () => {
+  const [isPlaying, setIsPlaying] = useState(false);
+
+  useEffect(() => {
+    const video = document.querySelector('video');
+    video.addEventListener('load', () => {
+      setIsPlaying(true);
+    });
+  }, []);
+
   return (
     <>
-  <div className="container mx-auto px-4">
+  <div className="container mx-auto ">
   
-  <section className="py-8 px-8">
-    <div className="flex flex-wrap -mx-4">
-      <div className="md:w-1/2 px-4 mb-8 md:mb-0">
-        <Image width={0} height={0} style={{width: 'set your desire width', height: 'set your desire height' }}
-       
-          className="rounded shadow-md"
-          src="/images/just sold.png"
-          alt=""
-        />
-      </div>
-      <div className="md:w-1/2 px-4 mb-8 md:mb-0">
-      <Image width={0} height={0} style={{width: 'set your desire width', height: 'set your desire height' }}
-       
-       className="rounded shadow-md"
-       src="/images/just sold.png"
-       alt=""
-     />
-      </div>
-    </div>
-  </section>
- {/*  <section className="pt-8 px-4">
-    <div className="flex flex-wrap -mx-4">
-      <div className="md:w-1/3 px-4 mb-8">
-        <img
-          className="rounded shadow-md"
-          src="https://source.unsplash.com/random/1280x720"
-          alt=""
-        />
-      </div>
-      <div className="md:w-1/3 px-4 mb-8">
-        <img
-          className="rounded shadow-md"
-          src="https://source.unsplash.com/random/1280x720"
-          alt=""
-        />
-      </div>
-      <div className="md:w-1/3 px-4 mb-8">
-        <img
-          className="rounded shadow-md"
-          src="https://source.unsplash.com/random/1280x720"
-          alt=""
-        />
-      </div>
-      <div className="md:w-1/3 px-4 mb-8">
-        <img
-          className="rounded shadow-md"
-          src="https://source.unsplash.com/random/1280x720"
-          alt=""
-        />
-      </div>
-      <div className="md:w-1/3 px-4 mb-8">
-        <img
-          className="rounded shadow-md"
-          src="https://source.unsplash.com/random/1280x720"
-          alt=""
-        />
-      </div>
-      <div className="md:w-1/3 px-4 mb-8">
-        <img
-          className="rounded shadow-md"
-          src="https://source.unsplash.com/random/1280x720"
-          alt=""
-        />
-      </div>
-    </div>
-  </section> */}
-  <section className="py-8 px-8">
-    <div className="flex flex-wrap -mx-4 -mb-8">
+ 
+  <section className="newz">
+    <div className="flex flex-wrap  ">
+    <div className=" mb-4" id='news'>
      
-      <div className="md:w-1/3 px-4 mb-8">
-        <img
+      <video loop autoPlay controls={isPlaying} src="video/vid1.mp4" alt=""  height={10} width={1500}
           className="rounded shadow-md"
-          src="/images/design1."
+        
+          
+        /></div>
+    
+      <div className="md:w-1/3 mb-4" id='news'>
+      <Image height={350} width={700}
+          className="rounded shadow-md"
+          src="/images/qwer.png"
           alt=""
-        />
+          
+        />   
       </div>
-      <div className="md:w-1/3 px-4 mb-8">
-        <img
+      <div className="md:w-1/3 mb-4" id='news'>
+      <Image height={350} width={700}
           className="rounded shadow-md"
-          src="https://source.unsplash.com/random/1280x720"
+          src="/images/qwert.png"
           alt=""
-        />
+          
+        />   
       </div>
-      <div className="md:w-1/3 px-4 mb-8">
-        <img
+      <div className="md:w-1/3 mb-4" id='news'>
+      <Image height={350} width={700}
           className="rounded shadow-md"
-          src="https://source.unsplash.com/random/1280x720"
+          src="/images/qwerty.png"
           alt=""
-        />
+          
+        />   
       </div>
       
-    
+      <div className="md:w-1/3 mb-4" id='news'>
+      <Image height={350} width={700}
+          className="rounded shadow-md"
+          src="/images/asd.png"
+          alt=""
+          
+        />   
+      </div>
+      <div className="md:w-1/3 mb-4" id='news'>
+      <Image height={350} width={700}
+          className="rounded shadow-md"
+          src="/images/asdf.png"
+          alt=""
+          
+        />   
+      </div>
+      <div className="md:w-1/3 mb-4" id='news'>
+      <Image height={350} width={700}
+          className="rounded shadow-md"
+          src="/images/talk.png"
+          alt=""
+          
+        />   
+      </div>
     </div>
   </section>
 </div>
@@ -369,21 +350,20 @@ const Collection = () => {
 
 
 
+      <div className="wrapperlatest">
+        <h1>Connect With Us</h1>
 
+      </div>
 
       <div className="section1">
-        <div className="title_header">
-          <h1>Connect With Us</h1>
-          <span className="bar" />
-
-        </div><br />
+        
         <section>
           <div className="card">
 
 
 
 
-            <div className="gridz">
+            <div className="grin">
               <article className="mainz ">
                 <h2>Connect on</h2>
                 <h1>Whatsapp</h1>
@@ -401,7 +381,7 @@ const Collection = () => {
 
 
           <div className="card">
-            <div className="gridz">
+            <div className="grin">
               <article className="mainz ">
                 <h2>Book An</h2>
                 <h1>Appointment</h1>
@@ -418,7 +398,7 @@ const Collection = () => {
 
 
           <div className="card">
-            <div className="gridz">
+            <div className="grin">
               <article className="mainz ">
                 <h2>Schedule A</h2>
                 <h1>Video Call</h1>
