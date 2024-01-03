@@ -2,8 +2,7 @@ import Image from 'next/image'
 const Brands = () => {
   return (
     <>
-
-
+ 
       <div className="wrapperlatest">
         <h1>Our Deals </h1>
         <h3>Affordable Luxury</h3>
@@ -98,6 +97,21 @@ const Brands = () => {
           </div>
         </div>
       </div>
+
+      <div className="wrapperlatest">
+        <h1>Why We Deliver Inspiring Interiors</h1>
+        
+      </div>
+<div className="body">
+      <ul className="smol-flexbox-grid">
+  <li>Since <br/><span>2004</span></li>
+  <li>Premium<br/><span> Materials</span></li>
+  <li>10 Years <br/> <span>Warranty</span></li>
+  <li>Completion  <br/> <span>45 Years</span></li>
+  <li>Furnishing  <br/><span>200 Homes/Month</span></li>
+  <li>Lifelong <br/><span> Service Supplier</span></li>
+</ul>
+</div>
     </>
   )
 }

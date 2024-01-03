@@ -92,7 +92,7 @@ const Collection = () => {
     secondImage={SECOND_IMAGE}
 />
       </div>
-      <div className="md:w-1/2 mb-4 px-4" id='news'>
+      <div className="md:w-1/2 px-16" id='news'>
       <div className="wrapperlatest">
         <h1>Before And After</h1>
         <h3>Affordable Luxury</h3>
@@ -119,12 +119,12 @@ const Collection = () => {
    </defs>
    <text width={400}>
      <textPath alignmentBaseline="top" xlinkHref="#circle" className="text">
-       Part of a heart-healthy breakfast...sorta! -
+     The Best Home Interior Brand of India -
      </textPath>
    </text>
  </svg>
 </div>
-      <div className="wrapper">
+      <div className="wrapper "id="rev">
         <h1>Explore Our Collection</h1>
         <h3>For Beautiful Homes!</h3>
         <div className="img-area ">
@@ -697,6 +697,11 @@ const Collection = () => {
           </div>
         </div>
       </div>
+
+
+
+
+
     </>
   )
 }
