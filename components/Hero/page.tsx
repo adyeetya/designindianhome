@@ -75,7 +75,7 @@ const Hero = () => {
   ]
   return (
     <>
-      <MaxWidthWrapper className="mb-12 mt-8 lg-mt-40 flex flex-col items-center justify-center text-center">
+      <MaxWidthWrapper className="mb-12 mt-14 lg:mt-52 flex flex-col items-center justify-center text-center">
         <div className="flex flex-col gap-4 md:flex-row">
           <div className="">
             <SimpleImageSlider

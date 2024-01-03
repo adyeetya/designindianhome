@@ -1,12 +1,14 @@
 'use client'
 import MaxWidthWrapper from '@/components/MaxWidthWrapper'
 import React from 'react'
-import Header from '@/components/Navbar/Header'
-import Footer from '@/components/Footer/Footer'
+
+import Header from '../../components/Navbar/Header'
+import Footer from '../../components/Footer/Footer'
 import Link from 'next/link'
-import ProgressBar from '@/components/Progressbar'
+import ProgressBar from '../../components/Progressbar'
 import Card from './Card'
-import MyForm from '@/components/MyForm'
+import MyForm from '../../components/MyForm'
+import Omsairam from '../../components/Navbar/Omsairam'
 const page = () => {
   const data = [
     {
@@ -147,8 +149,8 @@ const page = () => {
     <>
       <ProgressBar />
       <Header />
-
-      <div className="mt-10 sm:mt-52 mb-16 mx-auto mx-8 sm:mx-16">
+      <Omsairam />
+      <div className="mt-32 lg:mt-64 mb-16 mx-auto sm:mx-16">
         <div className="p-4  ">
           <span className="text-green-500 text-sm">
             <Link href="/">Home</Link>
