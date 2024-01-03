@@ -338,7 +338,7 @@ const Collection = () => {
 
 
       <div className="wrapperlatest">
-        <h1>Connect With Us</h1>
+        <h1>Connect With </h1>
 
       </div>
 
@@ -350,7 +350,7 @@ const Collection = () => {
 
 
 
-            <div className="gridz">
+            <div className="grin">
               <article className="mainz ">
                 <h2>Connect on</h2>
                 <h1>Whatsapp</h1>
@@ -368,7 +368,7 @@ const Collection = () => {
 
 
           <div className="card">
-            <div className="gridz">
+            <div className="grin">
               <article className="mainz ">
                 <h2>Book An</h2>
                 <h1>Appointment</h1>
@@ -385,7 +385,7 @@ const Collection = () => {
 
 
           <div className="card">
-            <div className="gridz">
+            <div className="grin">
               <article className="mainz ">
                 <h2>Schedule A</h2>
                 <h1>Video Call</h1>
