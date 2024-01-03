@@ -8,7 +8,30 @@ interface MyFormProps {}
 const MyForm: React.FC<MyFormProps> = () => {
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault()
-    // Add your form submission logic here
+    console.log('submit clicked')
+
+    const formData = {
+      name: (document.getElementById('fullName') as HTMLInputElement).value,
+      email: (document.getElementById('email') as HTMLInputElement).value,
+      phone: (document.getElementById('mobileNumber') as HTMLInputElement)
+        .value,
+      pincode: (document.getElementById('pincode') as HTMLInputElement).value,
+      agreeToUpdates: (document.getElementById('agree') as HTMLInputElement)
+        .value,
+    }
+    const recipientEmail = 'saurabhbehal@gmail.com'
+    const emailData = `
+        Name: ${formData.name},
+        Email: ${formData.email},
+        Mobile: ${formData.phone},
+        Pincode: ${formData.pincode},
+        Agree:${formData.agreeToUpdates},
+    `
+    const mailtoLink = `mailto:${recipientEmail}?subject=New Design Session Enquiry&body=${encodeURIComponent(
+      emailData ?? null
+    )}`
+    // window.location.href = mailtoLink
+    window.open(mailtoLink, '_blank')
   }
 
   return (
@@ -16,7 +39,7 @@ const MyForm: React.FC<MyFormProps> = () => {
       {/* Left side with heading and paragraph */}
       <div className="sm:w-1/2 p-4">
         <h1 className="text-2xl sm:text-4xl font-bold mb-4 text-sky-700">
-          Looking for expert guidance to design your {" "}
+          Looking for expert guidance to design your{' '}
           <TypeAnimation
             sequence={[
               // Same substring at the start will only be typed out once, initially
@@ -33,8 +56,7 @@ const MyForm: React.FC<MyFormProps> = () => {
             ]}
             wrapper="span"
             speed={50}
-            style={{ color:"purple", display: 'inline-block' }}
-           
+            style={{ color: 'purple', display: 'inline-block' }}
             repeat={Infinity}
           />
         </h1>
@@ -46,7 +68,11 @@ const MyForm: React.FC<MyFormProps> = () => {
 
       {/* Right side with the form */}
       <div className="sm:w-1/2 p-4">
-        <form onSubmit={handleSubmit} className="max-w-md mx-auto">
+        <form
+          method="post"
+          onSubmit={handleSubmit}
+          className="max-w-md mx-auto"
+        >
           <div className="mb-4">
             <label
               htmlFor="fullName"

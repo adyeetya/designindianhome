@@ -10,6 +10,8 @@ import {
 import Image from 'next/image'
 import Link from 'next/link'
 import React, { FormEvent } from 'react'
+import Header from '../../components/Navbar/Header'
+import Footer from '../../components/Footer/Footer'
 
 const TopFormSection = () => {
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
@@ -438,6 +440,7 @@ const ScheduleChatSection = () => {
         backgroundPosition: 'center top',
         backgroundRepeat: 'no-repeat',
         height: '400px',
+        backgroundSize: 'cover',
         position: 'relative',
         display: 'flex',
         alignItems: 'center',
@@ -558,7 +561,8 @@ const page = () => {
   }
   return (
     <>
-      <div className="mt-10 sm:mt-28 mb-16 mx-auto sm:mx-16">
+      <Header />
+      <div className="mt-12 sm:mt-48 mb-16 mx-auto sm:mx-16">
         {/* breadcrumb */}
         <div className="px-4  ">
           <span className="text-red-400 text-sm">
