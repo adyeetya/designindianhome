@@ -5,6 +5,7 @@ import Header from '@/components/Navbar/Header'
 import SimpleImageSlider from 'react-simple-image-slider'
 import 'react-responsive-carousel/lib/styles/carousel.min.css' // requires a loader
 import { Carousel } from 'react-responsive-carousel'
+import MaxWidthWrapper from '../../../components/MaxWidthWrapper'
 interface PageProps {
   params: {
     designId: string
@@ -17,7 +18,7 @@ const Page = ({ params }: PageProps) => {
   const updateScreenSize = () => {
     if (window.matchMedia('(min-width: 1280px)').matches) {
       setScreenSize('lg')
-    } else if (window.matchMedia('(min-width: 768px)').matches) {
+    } else if (window.matchMedia('(min-width: 460px)').matches) {
       setScreenSize('md')
     } else {
       setScreenSize('sm')
@@ -96,9 +97,9 @@ const Page = ({ params }: PageProps) => {
 
   return (
     <>
-      {/* <Header /> */}
+      <Header />
 
-      <div className="mt-16 p-4 flex flex-col lg:flex-row h-screen">
+      <div className="mt-12 lg:mt-52 md:p-4 flex flex-col lg:flex-row h-screen">
         {/* Image Section (60%) */}
         <div className=" relative ">
           {/* <Image
@@ -188,7 +189,7 @@ const Page = ({ params }: PageProps) => {
 
             <button
               type="submit"
-              className="bg-red-400 text-white py-3 px-6 rounded-3xl hover:bg-red-500 w-full "
+              className="bg-green-500 text-white py-3 px-6 rounded-3xl hover:bg-green-500 w-full "
             >
               Book Design Session
             </button>

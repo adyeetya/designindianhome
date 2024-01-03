@@ -11,7 +11,7 @@ const Hero = () => {
   const updateScreenSize = () => {
     if (window.matchMedia('(min-width: 1280px)').matches) {
       setScreenSize('lg')
-    } else if (window.matchMedia('(min-width: 768px)').matches) {
+    } else if (window.matchMedia('(min-width: 460px)').matches) {
       setScreenSize('md')
     } else {
       setScreenSize('sm')
@@ -75,7 +75,7 @@ const Hero = () => {
   ]
   return (
     <>
-      <MaxWidthWrapper className="mb-12 mt-8 sm:mt-40 flex flex-col items-center justify-center text-center">
+      <MaxWidthWrapper className="mb-12 mt-8 lg-mt-40 flex flex-col items-center justify-center text-center">
         <div className="flex flex-col gap-4 md:flex-row">
           <div className="">
             <SimpleImageSlider

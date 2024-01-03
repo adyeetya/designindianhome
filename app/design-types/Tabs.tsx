@@ -88,7 +88,7 @@ export default function BasicTabs({ id }: TabsProps) {
         return (
           <CustomTabPanel key={page.id} value={value} index={index}>
             <div className="flex items-center bg-white p-4">
-              <div className="w-1 h-8 rounded bg-red-500 mr-2"></div>
+              <div className="w-1 h-8 rounded bg-green-500 mr-2"></div>
               <h1 className="text-3xl font-bold">{page.heading}</h1>
             </div>
             <p className="text-gray-700 text-sm px-7">{page.desc}</p>
@@ -153,7 +153,7 @@ export default function BasicTabs({ id }: TabsProps) {
 //             className={`tab-content ${index === activeTab ? 'active' : ''}`}
 //           >
 //             <div className="flex items-center bg-white p-4">
-//               <div className="w-1 h-8 rounded bg-red-500 mr-2"></div>
+//               <div className="w-1 h-8 rounded bg-green-500 mr-2"></div>
 //               <h1 className="text-3xl font-bold">{page.heading}</h1>
 //             </div>
 //             <p className="text-gray-700 text-sm px-7">{page.desc}</p>

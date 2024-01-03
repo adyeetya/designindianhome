@@ -10,9 +10,9 @@ export class Footer extends Component {
             <div className="mt-30px">
                 <div className="flex items-center justify-center ">
                     <div className="text-black">
-                       {/*  <button className="md:text-3xl font-bold rounded-full border-dotted border-2 border-black px-80 py-20 sm:px-6 sm:py-8 hover:bg-black hover:text-white">
+                        <button className="md:text-5xl md:font-bold font-bold rounded-full border-dotted border-2 border-black py-12 px-16 mt-4 md:px-96 md:py-48 hover:bg-black hover:text-white" >
                             Call Us Today!
-                        </button> */}
+                        </button>
 
 
 
