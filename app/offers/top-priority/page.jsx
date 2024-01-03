@@ -4,11 +4,13 @@ import Image from 'next/image'
 import MaxWidthWrapper from '../../../components/MaxWidthWrapper'
 import Header from '../../../components/Navbar/Header'
 import Footer from '../../../components/Footer/Footer'
+import Omsairam from '../../../components/Navbar/Omsairam'
 const ImageSection = () => {
   return (
     <>
+      <Omsairam />
       <Header />
-      <MaxWidthWrapper className="mt-12 sm:mt-48">
+      <MaxWidthWrapper className="mt-32 lg:mt-64">
         <section className="text-center pb-4 bg-amber-50 mb-12">
           <div className="relative w-full mx-0 h-auto lg:h-[420px]">
             <Image

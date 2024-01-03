@@ -6,6 +6,7 @@ import SimpleImageSlider from 'react-simple-image-slider'
 import 'react-responsive-carousel/lib/styles/carousel.min.css' // requires a loader
 import { Carousel } from 'react-responsive-carousel'
 import MaxWidthWrapper from '../../../components/MaxWidthWrapper'
+import Omsairam from '../../../components/Navbar/Omsairam'
 interface PageProps {
   params: {
     designId: string
@@ -97,9 +98,9 @@ const Page = ({ params }: PageProps) => {
 
   return (
     <>
+      <Omsairam />
       <Header />
-
-      <div className="mt-12 lg:mt-52 md:p-4 flex flex-col lg:flex-row h-screen">
+      <div className="mt-32 lg:mt-64 md:p-4 flex flex-col lg:flex-row h-screen">
         {/* Image Section (60%) */}
         <div className=" relative ">
           {/* <Image

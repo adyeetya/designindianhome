@@ -12,6 +12,7 @@ import Link from 'next/link'
 import React, { FormEvent } from 'react'
 import Header from '../../components/Navbar/Header'
 import Footer from '../../components/Footer/Footer'
+import Omsairam from '../../components/Navbar/Omsairam'
 
 const TopFormSection = () => {
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
@@ -561,8 +562,9 @@ const page = () => {
   }
   return (
     <>
+      <Omsairam />
       <Header />
-      <div className="mt-12 sm:mt-52 mb-16 mx-auto sm:mx-16">
+      <div className="mt-32 lg:mt-64 mb-16 mx-auto sm:mx-16">
         {/* breadcrumb */}
         <div className="px-4  ">
           <span className="text-green-500 text-sm">
@@ -631,6 +633,7 @@ const page = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   )
 }
