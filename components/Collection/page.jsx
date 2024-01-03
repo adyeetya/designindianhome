@@ -337,14 +337,13 @@ const Collection = () => {
 
 
 
+      <div className="wrapperlatest">
+        <h1>Connect With Us</h1>
 
+      </div>
 
       <div className="section1">
-        <div className="title_header">
-          <h1>Connect With Us</h1>
-          <span className="bar" />
-
-        </div><br />
+        
         <section>
           <div className="card">
 
