@@ -12,38 +12,38 @@ import Card from './Card'
 import MyForm from '@/components/MyForm'
 
 const page = () => {
-   const data = [
-     {
-       id: 1,
-       heading: '1-BHK Designs',
-       smallText: 'Description for Card 1',
-       image: '/images/stock-image.avif',
-       slug: '1bhk',
-     },
-     {
-       id: 2,
-       heading: '2-BHK Designs',
-       smallText: 'Description for Card 2',
-       image: '/images/stock-image.avif',
-       slug: '2bhk',
-     },
-   ]
+  const data = [
+    {
+      id: 1,
+      heading: '1-BHK Designs',
+      smallText: 'Description for Card 1',
+      image: '/images/stock-image.avif',
+      slug: '1bhk',
+    },
+    {
+      id: 2,
+      heading: '2-BHK Designs',
+      smallText: 'Description for Card 2',
+      image: '/images/stock-image.avif',
+      slug: '2bhk',
+    },
+  ]
   return (
     <>
       <ProgressBar />
-     
+
       <Header />
 
       <div className="mt-10 sm:mt-40 mb-16 mx-auto mx-8 sm:mx-16">
         <div className="p-4  ">
-          <span className="text-red-400 text-sm">
+          <span className="text-green-500 text-sm">
             <Link href="/">Home</Link>
           </span>{' '}
           / <span className="text-gray-600 text-sm">Renovations</span>
         </div>
 
         <div className="flex items-center bg-white p-4">
-          <div className="w-1 h-8 rounded bg-red-500 mr-2"></div>
+          <div className="w-1 h-8 rounded bg-green-500 mr-2"></div>
 
           <h1 className="text-3xl font-bold">Home Interior Design</h1>
         </div>

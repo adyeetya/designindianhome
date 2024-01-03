@@ -474,7 +474,7 @@ const CardComponentSection = () => {
         <div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300 ease-in-out">
           <div className="py-6 px-2">
             <div className="text-center">
-              {/* <Mail className="text-5xl text-red-400 mx-auto" /> */}
+              {/* <Mail className="text-5xl text-green-500 mx-auto" /> */}
               <div className="bg-gray-100 w-full p-2 rounded-full">
                 <Smile
                   size={48}
@@ -499,7 +499,7 @@ const CardComponentSection = () => {
         <div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300 ease-in-out">
           <div className="py-6 px-2">
             <div className="text-center">
-              {/* <Mail className="text-5xl text-red-400 mx-auto" /> */}
+              {/* <Mail className="text-5xl text-green-500 mx-auto" /> */}
               <div className="bg-gray-100 w-full p-2 rounded-full">
                 <BookImage
                   size={48}
@@ -524,7 +524,7 @@ const CardComponentSection = () => {
         <div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300 ease-in-out">
           <div className="py-6 px-2">
             <div className="text-center">
-              {/* <Mail className="text-5xl text-red-400 mx-auto" /> */}
+              {/* <Mail className="text-5xl text-green-500 mx-auto" /> */}
               <div className="bg-gray-100 w-full p-2 rounded-full">
                 <Headphones
                   size={48}
@@ -562,10 +562,10 @@ const page = () => {
   return (
     <>
       <Header />
-      <div className="mt-12 sm:mt-48 mb-16 mx-auto sm:mx-16">
+      <div className="mt-12 sm:mt-52 mb-16 mx-auto sm:mx-16">
         {/* breadcrumb */}
         <div className="px-4  ">
-          <span className="text-red-400 text-sm">
+          <span className="text-green-500 text-sm">
             <Link href="/">Home</Link>
           </span>{' '}
           / <span className="text-gray-600 text-sm">Contact Us</span>

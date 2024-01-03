@@ -148,16 +148,16 @@ const page = () => {
       <ProgressBar />
       <Header />
 
-      <div className="mt-10 sm:mt-40 mb-16 mx-auto mx-8 sm:mx-16">
+      <div className="mt-10 sm:mt-52 mb-16 mx-auto mx-8 sm:mx-16">
         <div className="p-4  ">
-          <span className="text-red-400 text-sm">
+          <span className="text-green-500 text-sm">
             <Link href="/">Home</Link>
           </span>{' '}
           / <span className="text-gray-600 text-sm">Design ideas</span>
         </div>
 
         <div className="flex items-center bg-white p-4">
-          <div className="w-1 h-8 rounded bg-red-500 mr-2"></div>
+          <div className="w-1 h-8 rounded bg-green-500 mr-2"></div>
 
           <h1 className="text-3xl font-bold">Home Interior Design</h1>
         </div>
