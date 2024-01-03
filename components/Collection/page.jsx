@@ -1,5 +1,18 @@
-import Image from 'next/image'
+'use client'
+import Image from 'next/image';
+
+import React, { useState, useEffect } from 'react';
+
 const Collection = () => {
+  const [isPlaying, setIsPlaying] = useState(false);
+
+  useEffect(() => {
+    const video = document.querySelector('video');
+    video.addEventListener('load', () => {
+      setIsPlaying(true);
+    });
+  }, []);
+
   return (
     <>
   <div className="container mx-auto ">
@@ -8,10 +21,10 @@ const Collection = () => {
   <section className="newz">
     <div className="flex flex-wrap  ">
     <div className=" mb-4" id='news'>
-     <Image height={50} width={1500}
+     
+      <video loop autoPlay controls={isPlaying} src="video/vid1.mp4" alt=""  height={10} width={1500}
           className="rounded shadow-md"
-          src="/images/qwer.png"
-          alt=""
+        
           
         /></div>
     

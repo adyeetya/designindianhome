@@ -3,13 +3,39 @@ import Image from 'next/image'
 import React, { useState, useEffect } from 'react';
 import Button from '../Button';
 const Display = () => {
+  const [isPlaying, setIsPlaying] = useState(false);
 
+  useEffect(() => {
+    const video = document.querySelector('video');
+    video.addEventListener('load', () => {
+      setIsPlaying(true);
+    });
+  }, []);
 
 
   return (
     <>
       
+      <div className="wrapper">
+        <div className="img-area ">
+          <div className="single-img">
+          <Image src="/images/bannernew.png" alt="" width={600} height={600} />
+          </div>
+          <div className="single-img">
+            <video loop autoPlay muted controls={isPlaying} src="video/vid21.mp4" alt=""  width={600} height={600} />
+          </div>
+          <div className="single-img">
+            <video loop autoPlay controls={isPlaying} src="video/vid1.mp4" alt=""  width={600} height={600} />
+          </div>
+          <div className="single-img">
+          <Image src="/images/banner1.png" alt="" width={600} height={600} />
+          </div>
 
+
+
+
+        </div>
+      </div>
 
       <div className="gridz">
         <article className="mainz">
