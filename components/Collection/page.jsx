@@ -29,7 +29,7 @@ const Collection = () => {
   <section className="newz">
     <div className="flex flex-wrap  ">
     <div className=" mb-4" id='news'>
-     
+     <Image src="/images/bar.png" height={200} width={1500} />
       <video loop autoPlay controls={isPlaying} src="video/vid1.mp4" alt=""  height={10} width={1500}
           className="rounded shadow-md"
         
@@ -86,6 +86,7 @@ const Collection = () => {
           
         />   
       </div>
+      <Image src="/images/bar.png" height={200} width={1500} />
       <div className="md:w-1/2 mb-4" id='news'>
       <ReactBeforeSliderComponent
     firstImage={FIRST_IMAGE}
@@ -284,7 +285,7 @@ const Collection = () => {
       </div>
 
       <div className="main">
-      <img src="https://www.kirupa.com/icon/1f354.svg" width={50} height={50} />
+<img src="/images/left.gif" width={50} height={50} />
   
  <svg id="rotatingText" viewBox="0 0 200 200" width={200} height={200}>
    <defs>
@@ -299,17 +300,17 @@ const Collection = () => {
    </defs>
    <text width={400}>
      <textPath alignmentBaseline="top" xlinkHref="#circle" className="text">
-       Part of a heart-healthy breakfast...sorta! -
+     The Best Home Interior Brand of India -
      </textPath>
    </text>
  </svg>
-</div> 
-      <div className="wrapperlatest">
+</div>
+      <div className="wrapperlatest" id='rev'>
         <h1>End-to-End Interior Solutions</h1>
        <h3>Our Interior services </h3>
       </div>
       
-      <div className="img-area pt-6">
+      <div className="img-area pt-6" >
         <div className="single-img" id="name">
           <Image width={400} height={400} src="/images/a.png" alt="" />
           <p className="text-lg font-bold" id="rem">
@@ -411,7 +412,7 @@ const Collection = () => {
 
       
 
-
+      <Image src="/images/bar.png" height={200} width={1500} />
       <div className="wrapperlatest">
         <h1>Connect With Us</h1>
 
