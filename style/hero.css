@@ -73,7 +73,7 @@
 }
 
 
-.sidez {
+.sidez ,.sidezi{
   border-radius: 10px
 }
 
@@ -218,9 +218,7 @@
 
 
 @media(max-width: 600px) {
-.mainz h1{
-  font-size: 25px;
-}
+
   #content .item {
 
     margin: 0px !important;
@@ -265,8 +263,17 @@
     }
 
     .gridz {
-      grid-template-columns: 2fr 1fr;
-      margin: 1%;
+      grid-template-columns:2fr 1fr;
+      margin: 3%;
+      gap: 2% !important;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+    .sidezi{
+      height: 450px;width: 550px;
     }
     .single-img {
       height:320px;

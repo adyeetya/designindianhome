@@ -25,7 +25,7 @@ const Display = () => {
             spread across India and GCC
           </p>
         </article>
-        <section className="sidez">
+        <section className="sidezi">
 
           <div className="sliderz slider--cover">
             <div className="slider__inner">
