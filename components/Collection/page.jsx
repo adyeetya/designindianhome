@@ -7,7 +7,14 @@ const Collection = () => {
  
   <section className="newz">
     <div className="flex flex-wrap  ">
-     
+    <div className=" mb-4" id='news'>
+     <Image height={50} width={1500}
+          className="rounded shadow-md"
+          src="/images/qwer.png"
+          alt=""
+          
+        /></div>
+    
       <div className="md:w-1/3 mb-4" id='news'>
       <Image height={350} width={700}
           className="rounded shadow-md"
