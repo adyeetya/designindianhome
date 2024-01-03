@@ -17,17 +17,17 @@ const Display = () => {
     <>
       
       <div className="wrapper">
-        <div className="img-area ">
-          <div className="single-img">
+        <div className="img-areai ">
+          <div className="single-imgi">
           <Image src="/images/bannernew.png" alt="" width={600} height={600} />
           </div>
-          <div className="single-img">
+          <div className="single-imgi">
             <video loop autoPlay muted controls={isPlaying} src="video/vid21.mp4" alt=""  width={600} height={600} />
           </div>
-          <div className="single-img">
+          <div className="single-imgi">
             <video loop autoPlay controls={isPlaying} src="video/vid1.mp4" alt=""  width={600} height={600} />
           </div>
-          <div className="single-img">
+          <div className="single-imgi">
           <Image src="/images/banner1.png" alt="" width={600} height={600} />
           </div>
 

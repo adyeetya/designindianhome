@@ -27,7 +27,7 @@
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.img-area {
+.img-area,.img-areai {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -35,7 +35,7 @@
   justify-content: center;
 }
 
-.single-img {
+.single-img,.single-imgi {
   padding: 0 10px 20px;
   overflow: hidden;
 
@@ -224,7 +224,9 @@
     margin: 0px !important;
   }
  
-
+.img-areai{
+  margin-bottom: 5%;
+}
   .single-img {
     height:330px;
     margin: 0px;
@@ -742,7 +744,9 @@
 }
 
 @media screen and (max-width: 600px) {
-  
+  .containeru{
+    margin-bottom: 10%;
+  }
   #news,
   .newsz {
     padding: 0px;
