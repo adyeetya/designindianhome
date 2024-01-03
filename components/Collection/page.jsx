@@ -104,7 +104,7 @@ const Collection = () => {
 </div>
 
 <div className="main">
-<img src="https://www.kirupa.com/icon/1f354.svg" width={50} height={50} />
+<img src="/images/left.gif" width={50} height={50} />
   
  <svg id="rotatingText" viewBox="0 0 200 200" width={200} height={200}>
    <defs>
