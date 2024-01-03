@@ -4,7 +4,6 @@ const Brands = () => {
     <>
 
 
-    
       <div className="wrapperlatest">
         <h1>Our Deals </h1>
         <h3>Affordable Luxury</h3>

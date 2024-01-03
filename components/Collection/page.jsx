@@ -4,10 +4,10 @@ import ReactBeforeSliderComponent from 'react-before-after-slider-component';
 import 'react-before-after-slider-component/dist/build.css';
 import React, { useState, useEffect } from 'react';
 const FIRST_IMAGE = {
-  imageUrl: 'images/a.png'
+  imageUrl: 'https://source.unsplash.com/a-kitchen-with-blue-cabinets-and-a-black-refrigerator-zFGBEikZoRg'
 };
 const SECOND_IMAGE = {
-  imageUrl: 'images/i.png'
+  imageUrl: 'https://source.unsplash.com/a-ladder-and-buckets-of-paint-in-a-room-under-construction-XXanshmt5so'
 };
 const Collection = () => {
   const [isPlaying, setIsPlaying] = useState(false);
