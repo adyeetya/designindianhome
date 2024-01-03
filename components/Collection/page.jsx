@@ -338,7 +338,7 @@ const Collection = () => {
 
 
       <div className="wrapperlatest">
-        <h1>Connect With </h1>
+        <h1>Connect With Us</h1>
 
       </div>
 
