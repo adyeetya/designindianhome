@@ -1,8 +1,14 @@
 'use client'
 import Image from 'next/image';
-
+import ReactBeforeSliderComponent from 'react-before-after-slider-component';
+import 'react-before-after-slider-component/dist/build.css';
 import React, { useState, useEffect } from 'react';
-
+const FIRST_IMAGE = {
+  imageUrl: 'images/a.png'
+};
+const SECOND_IMAGE = {
+  imageUrl: 'images/i.png'
+};
 const Collection = () => {
   const [isPlaying, setIsPlaying] = useState(false);
 
@@ -12,7 +18,12 @@ const Collection = () => {
       setIsPlaying(true);
     });
   }, []);
-
+  
+  var divisor = document.getElementById("divisor"),
+  slider = document.getElementById("slider");
+  function moveDivisor() { 
+    divisor.style.width = slider.value+"%";
+  }
   return (
     <>
   <div className="container mx-auto ">
@@ -26,7 +37,8 @@ const Collection = () => {
           className="rounded shadow-md"
         
           
-        /></div>
+        />
+        </div>
     
       <div className="md:w-1/3 mb-4" id='news'>
       <Image height={350} width={700}
@@ -76,6 +88,15 @@ const Collection = () => {
           alt=""
           
         />   
+      </div>
+      <div className="md:w-2/3 mb-4" id='news'>
+      <ReactBeforeSliderComponent
+    firstImage={FIRST_IMAGE}
+    secondImage={SECOND_IMAGE}
+/>
+      </div>
+      <div className="md:w-1/3 mb-4" id='news'>
+    <p>dxfghgfdsarrdg,m</p>
       </div>
     </div>
   </section>
