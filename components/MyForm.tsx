@@ -25,7 +25,7 @@ const MyForm: React.FC<MyFormProps> = () => {
         Email: ${formData.email},
         Mobile: ${formData.phone},
         Pincode: ${formData.pincode},
-        Agree:${formData.agreeToUpdates},
+        Agree to receive updates: ${formData.agreeToUpdates},
     `
     const mailtoLink = `mailto:${recipientEmail}?subject=New Design Session Enquiry&body=${encodeURIComponent(
       emailData ?? null
