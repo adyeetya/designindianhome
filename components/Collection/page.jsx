@@ -19,15 +19,12 @@ const Collection = () => {
     });
   }, []);
   
-  var divisor = document.getElementById("divisor"),
-  slider = document.getElementById("slider");
-  function moveDivisor() { 
-    divisor.style.width = slider.value+"%";
-  }
+ 
   return (
     <>
   <div className="container mx-auto ">
-  
+ 
+
  
   <section className="newz">
     <div className="flex flex-wrap  ">
@@ -89,20 +86,44 @@ const Collection = () => {
           
         />   
       </div>
-      <div className="md:w-2/3 mb-4" id='news'>
+      <div className="md:w-1/2 mb-4" id='news'>
       <ReactBeforeSliderComponent
     firstImage={FIRST_IMAGE}
     secondImage={SECOND_IMAGE}
 />
       </div>
-      <div className="md:w-1/3 mb-4" id='news'>
-    <p>dxfghgfdsarrdg,m</p>
+      <div className="md:w-1/2 mb-4 px-4" id='news'>
+      <div className="wrapperlatest">
+        <h1>Before And After</h1>
+        <h3>Affordable Luxury</h3>
+        <p>We often use collective nouns to refer to groups of people. Examples: team, gang, squad, army, jury, clergy, cult, crew.</p>
+      </div>
       </div>
     </div>
   </section>
 </div>
 
-
+<div className="main">
+<img src="https://www.kirupa.com/icon/1f354.svg" width={50} height={50} />
+  
+ <svg id="rotatingText" viewBox="0 0 200 200" width={200} height={200}>
+   <defs>
+     <path
+       id="circle"
+       d="M 100, 100
+         m -75, 0
+         a 75, 75 0 1, 0 150, 0
+         a 75, 75 0 1, 0 -150, 0
+         "
+     ></path>
+   </defs>
+   <text width={400}>
+     <textPath alignmentBaseline="top" xlinkHref="#circle" className="text">
+       Part of a heart-healthy breakfast...sorta! -
+     </textPath>
+   </text>
+ </svg>
+</div>
       <div className="wrapper">
         <h1>Explore Our Collection</h1>
         <h3>For Beautiful Homes!</h3>
@@ -173,7 +194,6 @@ const Collection = () => {
         </div>
    
       </div>
-
 
 
 
@@ -263,7 +283,27 @@ const Collection = () => {
         </div>
       </div>
 
-
+      <div className="main">
+      <img src="https://www.kirupa.com/icon/1f354.svg" width={50} height={50} />
+  
+ <svg id="rotatingText" viewBox="0 0 200 200" width={200} height={200}>
+   <defs>
+     <path
+       id="circle"
+       d="M 100, 100
+         m -75, 0
+         a 75, 75 0 1, 0 150, 0
+         a 75, 75 0 1, 0 -150, 0
+         "
+     ></path>
+   </defs>
+   <text width={400}>
+     <textPath alignmentBaseline="top" xlinkHref="#circle" className="text">
+       Part of a heart-healthy breakfast...sorta! -
+     </textPath>
+   </text>
+ </svg>
+</div> 
       <div className="wrapperlatest">
         <h1>End-to-End Interior Solutions</h1>
        <h3>Our Interior services </h3>
@@ -369,6 +409,7 @@ const Collection = () => {
       </div>
 
 
+      
 
 
       <div className="wrapperlatest">

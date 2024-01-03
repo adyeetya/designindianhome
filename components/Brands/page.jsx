@@ -2,6 +2,9 @@ import Image from 'next/image'
 const Brands = () => {
   return (
     <>
+
+
+    
       <div className="wrapperlatest">
         <h1>Our Deals </h1>
         <h3>Affordable Luxury</h3>
