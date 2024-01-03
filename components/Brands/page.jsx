@@ -8,7 +8,7 @@ const Brands = () => {
       </div>
 
       <div className="jiu">
-        <div className="containera">
+        <div className="containeru">
           <div className="blog-post">
             <img
               src="https://source.unsplash.com/gray-2-seat-sofa-near-round-table-WPqcd-gpJeE"
