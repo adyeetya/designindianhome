@@ -11,19 +11,19 @@ const Brands = () => {
 
 
   const slides = [
-    {image:"https://picsum.photos/200/300",title:"This is a title",description:"This is a description"},
-    {image:"https://picsum.photos/600/500",title:"This is a second title",description:"This is a second description"},
-    {image:"https://picsum.photos/700/600",title:"This is a third title",description:"This is a third description"},
-    {image:"https://picsum.photos/500/400",title:"This is a fourth title",description:"This is a fourth description"},
-    {image:"https://picsum.photos/200/300",title:"This is a fifth title",description:"This is a fifth description"},
-    {image:"https://picsum.photos/800/700",title:"This is a sixth title",description:"This is a sixth description"},
-    {image:"https://picsum.photos/300/400",title:"This is a seventh title",description:"This is a seventh description"},
-    {image:"https://picsum.photos/200/300",title:"This is a title",description:"This is a description"},
-    {image:"https://picsum.photos/600/500",title:"This is a second title",description:"This is a second description"},
-    {image:"https://picsum.photos/700/600",title:"This is a third title",description:"This is a third description"},
-    {image:"https://picsum.photos/500/400",title:"This is a fourth title",description:"This is a fourth description"},
-    {image:"https://picsum.photos/200/300",title:"This is a fifth title",description:"This is a fifth description"},
-    {image:"https://picsum.photos/800/700",title:"This is a sixth title",description:"This is a sixth description"},
+    {image:"https://source.unsplash.com/brown-wooden-seat-beside-white-wooden-table-TRCJ-87Yoh0",title:"View More"},
+    {image:"https://source.unsplash.com/white-wooden-kitchen-island-and-cupboard-cabinets-near-glass-panel-door-AQl-J19ocWE",title:"View More",},
+    {image:"https://source.unsplash.com/white-over-the-range-oven-GliaHAJ3_5A",title:"View More"},
+    {image:"https://source.unsplash.com/white-and-black-kitchen-counter-oCw5_evbWyI",title:"View More"},
+    {image:"https://source.unsplash.com/white-wooden-kitchen-cabinet-with-stainless-steel-faucet-ik9WP2V8Vas",title:"View More"},
+    {image:"https://source.unsplash.com/gray-steel-3-door-refrigerator-near-modular-kitchen-MP0bgaS_d1c",title:"View More"},
+    {image:"https://source.unsplash.com/white-and-brown-kitchen-cabinet--aDGbdTsBZg",title:"View More"},
+    {image:"https://source.unsplash.com/white-wooden-kitchen-cupboards-and-gray-gas-stove-dn5VihVxloc",title:"View More"},
+    {image:"https://source.unsplash.com/white-wooden-kitchen-cabinet-with-black-pendant-lamp-KiUg-4xmTwo",title:"View More"},
+    {image:"https://source.unsplash.com/rectangular-white-wooden-table-I_QC1JICzA0",title:"View More"},
+    {image:"https://source.unsplash.com/kitchen-island-near-gas-range-beside-base-cabinets-sZ5CteK2r6E",title:"View More"},
+    {image:"https://source.unsplash.com/a-kitchen-with-a-center-island-with-stools-_IAZoJ6X-1A",title:"View More"},
+    {image:"https://source.unsplash.com/kitchen-house-area-z3QZ6gjGRt4",title:"View More"},
 ]
 
   return (
@@ -71,7 +71,7 @@ const Brands = () => {
  </svg>
 </div>
       <div className="wrapperlatest" id='rev'>
-        <h1>Our Trending Kitchen </h1>
+        <h1>Best Trending Kitchens</h1>
         
       </div>
 
