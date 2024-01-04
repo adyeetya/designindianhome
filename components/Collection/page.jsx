@@ -25,28 +25,31 @@ const Collection = () => {
   return (
     <>
      <div className="wrapperlatest mt-16 pt-60" id='fry'>
-        <h3 style={{ fontFamily: "Impact" }}>INDIA’S NO.1 INTERIOR & ARCHITECTURAL BRAND</h3>
+        <h3 >INDIA’S NO.1 INTERIOR & ARCHITECTURAL BRAND</h3>
 
       </div>
-      <div className="container flex items-center justify-between px-2 py-2 text-center ">
-        <TypeAnimation
+      <div class="flex mb-4">
+      <div className="container flex items-center justify-between px-2 py-2 text-center w-full">
+      
+ 
+
+        <TypeAnimation 
           sequence={[
-            'BEST HOME INTERIOR BRAND IN DELHI ',
+            'TOP KITCHEN & CLOSE BRAND ',
             1000, // wait 1s before replacing "Mice" with "Hamsters"
-            ' HOME RENOVATION SERVICE IN DELHI',
+            ' LARGEST KITCHEN DEALERS',
             1000,
-            'TOP ARCHITECTURAL & INTERIOR BRAND',
+            'MODULAR KITCHEN & CLOSET',
             1000,
-            'TOP ARCHITECTURAL & INTERIOR BRAND',
+            'LARGEST ARCHITECTURAL BRAND',
             1000,
-            'TOP CHOICE FOR HOME INTERIOR IN INDIA ',
+            'TOP AWARDED INTERIORS',
             1000, 
             'LARGEST ARCHITECTURAL BRAND', 
             1000, 
-            ' AWARDED INTERIOR DESIGNING BRAND', 
+            'MODULAR INTERIOR COMPANY',
             1000,
-            'LARGEST MODULAR INTERIOR COMPANY',
-             1000,
+            
           ]}
 
 
@@ -55,6 +58,7 @@ const Collection = () => {
           style={{ display: 'inline-block', }}
           repeat={Infinity}
         />
+        </div>
         </div>
 
       <div className="main-hero">
