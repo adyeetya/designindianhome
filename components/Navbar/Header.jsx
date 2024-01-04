@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 import Image from 'next/image'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faPalette, faPencil, faNewspaper, faEllipsisH } from '@fortawesome/free-solid-svg-icons';
-
+import ThemeSwitcher from '@/app/ThemeSwitcher'
 import { faWhatsapp, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 
@@ -1068,7 +1068,12 @@ const Header = () => {
                 >More</p>
                 </div>
 
-                <button className="bg-yellow-400 text-sm py-2 px-3 rounded-full">Get Quotes</button>
+                <button className=" bg-yellow-400 text-sm py-1 px-2 rounded-full">Get Quotes</button>
+                <div className='absolute' style={{marginLeft: '1300px', marginTop: '-15px'}}>
+                <ThemeSwitcher/>
+                <span className=''>dark mode</span>
+                </div>
+              
               </nav>
 
             </div>
@@ -1154,9 +1159,18 @@ const Header = () => {
                 style={{
 
                   transition: 'opacity 0.3s ease-in-out',
+                  marginTop: '35px',
                 }}
               >
+               
+               
                 <div className="flex justify-end p-4">
+                <div className='flex' style={{marginLeft: '-40px'}}>
+                <span className=''>dark mode</span>
+
+                <ThemeSwitcher/>
+                </div>
+                
                   <button
                     onClick={toggleMobileMenu}
                     className="text-white focus:outline-none"

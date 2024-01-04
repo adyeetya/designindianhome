@@ -5,7 +5,9 @@
   padding-top: 8%;
   font-weight: 600;
 }
-
+#fry{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif !important;
+}
 .wrapperlatest h1 {
   text-align: center;
   font-size: 35px;
@@ -221,12 +223,13 @@
 .body{
   padding-top: 0rem;
 }
-.fry{
-padding:0 15%;
+#fry{
+font-size: 5px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
 }
 .index-module_type__E-SaG{
   padding-left: 10% !important;
-  font-size: 20px !important;
+  font-size: 25px !important;
 
 }
   #content .item {
@@ -263,7 +266,9 @@ padding:0 15%;
       padding: 0px;
       margin: 0px;
     }
-
+#sm{
+margin-left: 10% !important;
+}
     .section1 section {
       width: 100%;
       padding: 0;
@@ -998,7 +1003,7 @@ color: #333;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   text-align: center;
   justify-items: center;
-  padding: 0% 15%;
+  padding-left: 25%;
   font-size: 4rem;
   }
 

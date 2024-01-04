@@ -50,7 +50,7 @@ const Brands = () => {
 
 
       <div className="main">
-<img src="/images/left.gif" width={50} height={50} />
+<img src="/images/left.gif" width={50} height={50} id='sm'/>
   
  <svg id="rotatingText" viewBox="0 0 200 200" width={200} height={200}>
    <defs>

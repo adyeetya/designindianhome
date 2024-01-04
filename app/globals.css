@@ -2,12 +2,3 @@
 @tailwind components;
 @tailwind utilities;
 
-/* tailwind.css */
-.dark-theme {
-    --tw-bg-opacity: 1;
-    background-color: #1a1a1a;
-    color: #fff;
-  }
-  
-  /* Add more dark mode styles as needed */
-  
