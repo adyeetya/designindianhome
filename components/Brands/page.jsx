@@ -53,7 +53,31 @@ const Brands = () => {
 
 
 
-
+      <div className="main">
+<img src="/images/left.gif" width={50} height={50} />
+  
+ <svg id="rotatingText" viewBox="0 0 200 200" width={200} height={200}>
+   <defs>
+     <path
+       id="circle"
+       d="M 100, 100
+         m -75, 0
+         a 75, 75 0 1, 0 150, 0
+         a 75, 75 0 1, 0 -150, 0
+         "
+     ></path>
+   </defs>
+   <text width={400}>
+     <textPath alignmentBaseline="top" xlinkHref="#circle" className="text">
+     The Best Home Interior Brand of India -
+     </textPath>
+   </text>
+ </svg>
+</div>
+      <div className="wrapperlatest" id='rev'>
+        <h1>Our Trending Kitchen </h1>
+        
+      </div>
 
 
 
