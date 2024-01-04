@@ -1,7 +1,63 @@
-import Image from 'next/image'
+import Image from 'next/image';
+import ReactCardSlider from 'react-card-slider-component';
+
+
 const Brands = () => {
+
+
+
+
+
+
+
+  const slides = [
+    {image:"https://picsum.photos/200/300",title:"This is a title",description:"This is a description"},
+    {image:"https://picsum.photos/600/500",title:"This is a second title",description:"This is a second description"},
+    {image:"https://picsum.photos/700/600",title:"This is a third title",description:"This is a third description"},
+    {image:"https://picsum.photos/500/400",title:"This is a fourth title",description:"This is a fourth description"},
+    {image:"https://picsum.photos/200/300",title:"This is a fifth title",description:"This is a fifth description"},
+    {image:"https://picsum.photos/800/700",title:"This is a sixth title",description:"This is a sixth description"},
+    {image:"https://picsum.photos/300/400",title:"This is a seventh title",description:"This is a seventh description"},
+    {image:"https://picsum.photos/200/300",title:"This is a title",description:"This is a description"},
+    {image:"https://picsum.photos/600/500",title:"This is a second title",description:"This is a second description"},
+    {image:"https://picsum.photos/700/600",title:"This is a third title",description:"This is a third description"},
+    {image:"https://picsum.photos/500/400",title:"This is a fourth title",description:"This is a fourth description"},
+    {image:"https://picsum.photos/200/300",title:"This is a fifth title",description:"This is a fifth description"},
+    {image:"https://picsum.photos/800/700",title:"This is a sixth title",description:"This is a sixth description"},
+]
+
   return (
     <>
+      <div className="wrapperlatest">
+        <h1>Happy Homes by Design Indian Homes</h1>
+        <h3>What People Say About Us</h3>
+      </div>
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <ReactCardSlider slides={slides}/>
  <div className="main">
 <img src="/images/left.gif" width={50} height={50} />
   
