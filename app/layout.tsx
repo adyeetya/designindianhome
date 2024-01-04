@@ -5,8 +5,8 @@ import type { Metadata } from 'next';
 import { GlobalStyle } from '../components/GlobalStyles'
 import Navbar from '@/components/Navbar/Navbar';
 import './globals.css';
-
-
+import ThemeSwitcher from "./ThemeSwitcher";
+import Providers from "./providers"
 
 export default function RootLayout({
   children,
@@ -21,12 +21,16 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=BioRhyme:wght@400;700&display=swap"
         />
       </Head>
-      <body>
+      <body className='dark:text-white'>
+        <Providers>
         <GlobalStyle />
         <header>
           {/* <Navbar/> */}
         </header>
+         <ThemeSwitcher/>
         {children}
+
+        </Providers>
       </body>
     </html>
   );

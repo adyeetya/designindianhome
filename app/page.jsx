@@ -32,7 +32,7 @@ export default function Home() {
         <TabsSection />
         <EndToEndImageGrid />
         <FAQ />
-        <div className="bg-amber-50 p-4">
+        <div className="bg-amber-50 p-4 dark:text-white">
           <MyForm />
         </div>
 
