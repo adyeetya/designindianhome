@@ -77,7 +77,7 @@ const Brands = () => {
 
 
 
-    <ReactCardSlider slides={slides} id="ml"/>
+    <ReactCardSlider slides={slides} />
  <div className="main">
 <img src="/images/left.gif" width={50} height={50} />
   
