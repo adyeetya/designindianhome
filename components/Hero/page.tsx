@@ -1,18 +1,22 @@
 'use client'
-import React, { useEffect, useState } from 'react';
+
 import { TypeAnimation } from 'react-type-animation';
 import DarkMode from '../DarkMode/page'
-import Image from 'next/image'
+import Image from 'next/image';
+import React, { useState, useEffect } from 'react';
 import SimpleImageSlider from 'react-simple-image-slider'
 import MaxWidthWrapper from '../MaxWidthWrapper'
 import Main from '../../public/images/a.png'
 const Hero = () => {
 
+  const [isPlaying, setIsPlaying] = useState(false);
 
-
-
-
-
+  useEffect(() => {
+    const video = document.querySelector('video');
+    video.addEventListener('load', () => {
+      setIsPlaying(true);
+    });
+  }, []);
 
 
 
@@ -123,8 +127,8 @@ const Hero = () => {
           </div>
         </div>
       </MaxWidthWrapper> */}
-      <div className="wrapperlatest mt-16 pt-64">
-        <h3 style={{fontFamily:"monospace", fontWeight:"600"}}>Indias No.1 Modular Kitchen & Wardrobe Brand in Delhi - NCR</h3>
+      <div className="wrapperlatest mt-16 pt-60">
+        <h3 style={{fontFamily:"Impact", fontWeight:"400"}}>Indias No.1 Modular Kitchen & Wardrobe Brand in Delhi - NCR</h3>
    
         </div>
         <div className="container flex items-center justify-between px-4 py-2 text-center ">
@@ -145,6 +149,42 @@ const Hero = () => {
       style={{  display: 'inline-block',  }}
       repeat={Infinity}
     /></div>
+
+    <div className="main-hero">
+	<div className="cover">
+		<div className="box a">
+      <h1>OUR WORK<br/>
+CENTERS ON RESULTS</h1>
+    </div>
+		<div className="box b">OUR STYLE<br/>
+IS TO DELIVER SMILES</div>
+	</div>
+</div>
+
+
+
+
+<div className="container mx-auto rounded-3xl ">
+ 
+
+ 
+ <section className="newz">
+   <div className="flex flex-wrap  ">
+   <div className=" mb-4" id='news'>
+ 
+     <video loop autoPlay controls={isPlaying} src="video/vid1.mp4"  height={10} width={1500}
+         className="rounded shadow-md"
+       
+         
+       />
+       </div>
+       </div>
+       </section>
+
+
+</div>
+
+
     </>
   )
 }
