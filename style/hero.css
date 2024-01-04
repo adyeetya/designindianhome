@@ -300,7 +300,9 @@
   margin-left: 10% !important;
 }
 
-
+.slider-icon.left {
+  margin-left: 10%;
+}
 
 /** slider */
 .sliderz {
