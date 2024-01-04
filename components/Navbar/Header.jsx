@@ -950,7 +950,7 @@ const Header = () => {
                 />
                 <h1 className="text-sm text-white font-bold ">Call Us</h1>
               </div>
-              <div className="flex gap-2 text-xs text-white">
+              <div className="flex gap-2 md:text-xs text-white">
                 <p>Book a Visit</p>
                 <p>| Refer a Rewards</p>
                 <p>| Architects & Interior Designs</p>
@@ -1128,7 +1128,7 @@ const Header = () => {
 
       <div className='lg:hidden flex justify-between items-center px-0 py-0 bg-white drop-shadow-lg mt-12 fixed top-0 w-full' style={{ zIndex: '200' }}>
         <div>
-          <Image src="/images/Logo.gif" alt='left logo' width={90} height={80} style={{ width: '120px', height:'auto', marginLeft: '10px', padding: '1px', marginTop: '10px' }} />
+          <Image src="/images/Logo.gif" alt='left logo' width={90} height={80} style={{ width: '120px', height: 'auto', marginLeft: '10px', padding: '1px', marginTop: '10px' }} />
         </div>
         <div >
           <button className='bg-black text-white py-5 px-6 m-0 '> Get Estimate</button>
@@ -1142,17 +1142,17 @@ const Header = () => {
 
 
         {mobileMenuVisible && (
-          <div className='' style={{zIndex: '5600'}}>
+          <div className='' style={{ zIndex: '5600' }}>
             <div
-              
-                style={{zIndex: '1200'}}
+
+              style={{ zIndex: '1200' }}
             >
 
 
               <animated.div
                 className="bg-white bg-gradient-to-t from-green-400 text-black fixed top-16 left-0 w-full h-full overflow-y-scroll ${mobileMenuVisible ? 'block' : "
                 style={{
-                 
+
                   transition: 'opacity 0.3s ease-in-out',
                 }}
               >
@@ -1902,11 +1902,20 @@ const Header = () => {
 
                     </div>
                   </AccordionSection>
-                  {/* <div style={{ borderRadius: '20px' }}>
-                    <video src="video/video-interior-designer-company-in-delhi-gurgaon-noida-india.mp4" loop="true" autoPlay="true" className='' style={{ paddingLeft: '5px', paddingRight: '5px', borderRadius: '10px', border: '1px solid green' }}></video>
-                 
-                 </div> */}
-                  <div style={{paddingBottom: '0px'}}>
+                  <div>
+                  <video
+                    autoPlay
+                    muted
+                    loop
+                    playsInline  
+                    style={{ width: '100%', height: 'auto', padding: '20px' }}
+                  >
+                    <source src="/video/video-interior-designer-company-in-delhi-gurgaon-noida-india.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                  </div>
+                
+                  <div style={{ paddingBottom: '0px' }}>
                     <div className='' style={{ display: 'flex', gap: '1px', marginTop: '30px', justifyContent: 'center' }}>
                       <SocialIcon
                         network="instagram"
@@ -1934,7 +1943,10 @@ const Header = () => {
                     </div>
 
                   </div>
-                  <div className='font-bold ' style={{marginTop: '30px', paddingBottom: '150px', textAlign: 'center', fontSize: '60px'}}>
+                  <div>
+                    <p className='text-center m-4'>Welcome to the Official Site of The <strong>Design Indian Homes Brand</strong>, We offer End to End Interiors, Modular Interiors & Complete Architectural Services across Delhi - NCR - India. Connect with us TODAY for guaranteed quotes, or Share your Quotes & Get Flat 7% off by any vendor across Delhi - NCR.</p>
+                  </div>
+                  <div className='font-bold ' style={{ marginTop: '30px', paddingBottom: '150px', textAlign: 'center', fontSize: '60px' }}>
                     <h1>
                       DESIGN INDIAN HOMES
                     </h1>

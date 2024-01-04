@@ -1,5 +1,7 @@
 'use client'
 import Image from 'next/image';
+import { TypeAnimation } from 'react-type-animation';
+
 import ReactBeforeSliderComponent from 'react-before-after-slider-component';
 import 'react-before-after-slider-component/dist/build.css';
 import React, { useState, useEffect } from 'react';
@@ -22,6 +24,72 @@ const Collection = () => {
  
   return (
     <>
+     <div className="wrapperlatest mt-16 pt-60" id='fry'>
+        <h3 style={{ fontFamily: "Impact" }}>INDIA’S NO.1 INTERIOR & ARCHITECTURAL BRAND</h3>
+
+      </div>
+      <div className="container flex items-center justify-between px-2 py-2 text-center ">
+        <TypeAnimation
+          sequence={[
+            'BEST HOME INTERIOR BRAND IN DELHI ',
+            1000, // wait 1s before replacing "Mice" with "Hamsters"
+            ' HOME RENOVATION SERVICE IN DELHI',
+            1000,
+            'TOP ARCHITECTURAL & INTERIOR BRAND',
+            1000,
+            'TOP ARCHITECTURAL & INTERIOR BRAND',
+            1000,
+            'TOP CHOICE FOR HOME INTERIOR IN INDIA ',
+            1000, 
+            'LARGEST ARCHITECTURAL BRAND', 
+            1000, 
+            ' AWARDED INTERIOR DESIGNING BRAND', 
+            1000,
+            'LARGEST MODULAR INTERIOR COMPANY',
+             1000,
+          ]}
+
+
+          wrapper="span"
+          speed={50}
+          style={{ display: 'inline-block', }}
+          repeat={Infinity}
+        />
+        </div>
+
+      <div className="main-hero">
+        <div className="cover">
+          <div className="box a">
+            <h1>OUR WORK<br />
+              CENTERS ON RESULTS</h1>
+          </div>
+          <div className="box b">OUR STYLE<br />
+            IS TO DELIVER SMILES</div>
+        </div>
+      </div>
+
+
+
+
+      <div className="container mx-auto rounded-3xl ">
+
+
+
+        <section className="newz">
+          <div className="flex flex-wrap  ">
+            <div className=" mb-4" id='news'>
+
+              <video loop autoPlay controls={isPlaying} src="video/vid21.mp4" height={10} width={1500}
+                className="rounded shadow-md"
+
+
+              />
+            </div>
+          </div>
+        </section>
+
+
+      </div>
   <div className="container mx-auto ">
  
 
@@ -30,7 +98,7 @@ const Collection = () => {
     <div className="flex flex-wrap  ">
     <div className=" mb-4" id='news'>
      <Image src="/images/bar.png" height={200} width={1500} />
-      <video loop autoPlay controls={isPlaying} src="video/vid1.mp4" alt=""  height={10} width={1500}
+      <video loop autoPlay controls={isPlaying} src="https://www.designindiankitchen.com/wp-content/themes/dkiblogs/assets/images/dkivid.mp4" alt=""  height={10} width={1500}
           className="rounded shadow-md"
         
           
@@ -577,10 +645,8 @@ const Collection = () => {
 
      
       <div className="wrapperlatest">
-        <h1>Our Brands</h1>
-        <h3>What People Say About Us</h3>
-      </div>
-      <div className="slider">
+        <h1>Brands you will find in our products</h1></div>
+             <div className="slider">
         <div className="slide-track">
           <div className="slide">
             <Image

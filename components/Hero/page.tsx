@@ -1,11 +1,20 @@
 'use client'
-import React, { useEffect, useState } from 'react'
+
+import { TypeAnimation } from 'react-type-animation';
 import DarkMode from '../DarkMode/page'
-import Image from 'next/image'
+import Image from 'next/image';
+import React, { useState, useEffect } from 'react';
 import SimpleImageSlider from 'react-simple-image-slider'
 import MaxWidthWrapper from '../MaxWidthWrapper'
 import Main from '../../public/images/a.png'
 const Hero = () => {
+
+  
+
+
+
+
+
   const [screenSize, setScreenSize] = useState('')
 
   const updateScreenSize = () => {
@@ -75,7 +84,7 @@ const Hero = () => {
   ]
   return (
     <>
-      <MaxWidthWrapper className="mb-12 mt-14 lg:mt-52 flex flex-col items-center justify-center text-center">
+      {/*   <MaxWidthWrapper className="mb-12 mt-14 lg:mt-52 flex flex-col items-center justify-center text-center">
         <div className="flex flex-col gap-4 md:flex-row">
           <div className="">
             <SimpleImageSlider
@@ -109,7 +118,10 @@ const Hero = () => {
             </div>
           </div>
         </div>
-      </MaxWidthWrapper>
+      </MaxWidthWrapper> */}
+     
+
+
     </>
   )
 }
