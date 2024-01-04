@@ -24,7 +24,7 @@ const Collection = () => {
  
   return (
     <>
-     <div className="wrapperlatest mt-16 pt-60">
+     <div className="wrapperlatest mt-16 pt-60" id='fry'>
         <h3 style={{ fontFamily: "Impact" }}>INDIA’S NO.1 INTERIOR & ARCHITECTURAL BRAND</h3>
 
       </div>

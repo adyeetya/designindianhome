@@ -221,9 +221,13 @@
 .body{
   padding-top: 0rem;
 }
+.fry{
+padding:0 15%;
+}
 .index-module_type__E-SaG{
-  padding-left: 0% !important;
-  font-size: 4px;
+  padding-left: 10% !important;
+  font-size: 20px !important;
+
 }
   #content .item {
     margin: 0px !important;
@@ -249,7 +253,9 @@
  
 }
 
-
+#fry{
+  padding-top: 80px;
+}
 }
 
   @media (max-width:500px) {
