@@ -23,8 +23,9 @@ export default function Home() {
         <Omsairam />
         <Header />
         <Hero />
-        <ImageGrid />
         <Collection />
+        <ImageGrid />
+      
         <Brands />
         <Display />
         <Stepper />

@@ -9,15 +9,7 @@ import MaxWidthWrapper from '../MaxWidthWrapper'
 import Main from '../../public/images/a.png'
 const Hero = () => {
 
-  const [isPlaying, setIsPlaying] = useState(false);
-
-  useEffect(() => {
-    const video = document.querySelector('video');
-    video.addEventListener('load', () => {
-      setIsPlaying(true);
-    });
-  }, []);
-
+  
 
 
 
@@ -127,72 +119,7 @@ const Hero = () => {
           </div>
         </div>
       </MaxWidthWrapper> */}
-      <div className="wrapperlatest mt-16 pt-60">
-        <h3 style={{ fontFamily: "Impact" }}>INDIA’S NO.1 INTERIOR & ARCHITECTURAL BRAND</h3>
-
-      </div>
-      <div className="container flex items-center justify-between px-2 py-2 text-center ">
-        <TypeAnimation
-          sequence={[
-            'BEST HOME INTERIOR BRAND IN DELHI ',
-            1000, // wait 1s before replacing "Mice" with "Hamsters"
-            ' HOME RENOVATION SERVICE IN DELHI',
-            1000,
-            'TOP ARCHITECTURAL & INTERIOR BRAND',
-            1000,
-            'TOP ARCHITECTURAL & INTERIOR BRAND',
-            1000,
-            'TOP CHOICE FOR HOME INTERIOR IN INDIA ',
-            1000, 
-            'LARGEST ARCHITECTURAL BRAND', 
-            1000, 
-            ' AWARDED INTERIOR DESIGNING BRAND', 
-            1000,
-            'LARGEST MODULAR INTERIOR COMPANY',
-             1000,
-          ]}
-
-
-          wrapper="span"
-          speed={50}
-          style={{ display: 'inline-block', }}
-          repeat={Infinity}
-        />
-        </div>
-
-      <div className="main-hero">
-        <div className="cover">
-          <div className="box a">
-            <h1>OUR WORK<br />
-              CENTERS ON RESULTS</h1>
-          </div>
-          <div className="box b">OUR STYLE<br />
-            IS TO DELIVER SMILES</div>
-        </div>
-      </div>
-
-
-
-
-      <div className="container mx-auto  ">
-
-
-
-        <section className="newz">
-          <div className="flex flex-wrap  ">
-            <div className=" mb-4" id='news'>
-
-              <video  className="rounded-2xl " loop autoPlay controls={isPlaying} src="https://www.designindiankitchen.com/wp-content/themes/dkiblogs/assets/images/dkivid.mp4" height={10} width={1500}
-                className="rounded shadow-md"
-
-
-              />
-            </div>
-          </div>
-        </section>
-
-
-      </div>
+     
 
 
     </>
