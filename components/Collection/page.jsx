@@ -28,7 +28,7 @@ const Collection = () => {
         <h3 style={{ fontFamily: "Impact" }}>INDIA’S NO.1 INTERIOR & ARCHITECTURAL BRAND</h3>
 
       </div>
-      <div className="container flex items-center justify-between px-2 py-2 text-center ">
+      <div className="container flex items-center justify-between py-2 text-center ">
         <TypeAnimation
           sequence={[
             'BEST HOME INTERIOR BRAND IN DELHI ',

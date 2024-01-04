@@ -39,12 +39,11 @@ const MyForm: React.FC<MyFormProps> = () => {
       {/* Left side with heading and paragraph */}
       <div className="sm:w-1/2 p-4">
         <h1 className="text-2xl sm:text-4xl font-bold mb-4 text-sky-700">
-          Looking for expert guidance to design your{' '}
+          Looking for expert guidance to design your <br />
           <TypeAnimation
             sequence={[
-              // Same substring at the start will only be typed out once, initially
               'kitchen?',
-              1000, // wait 1s before replacing "Mice" with "Hamsters"
+              1000,
               'bedroom?',
               1000,
               'bathroom?',
@@ -56,7 +55,19 @@ const MyForm: React.FC<MyFormProps> = () => {
             ]}
             wrapper="span"
             speed={50}
-            style={{ color: 'purple', display: 'inline-block' }}
+            className="text-left"
+            style={{
+              color: 'purple',
+              width: 'fit-content',
+              padding: '0',
+              paddingLeft: '0px',
+              fontSize: '60px',
+              marginTop: '30px',
+              lineHeight: '1',
+              fontWeight: 'lighter',
+              textAlign: 'left',
+              // marginLeft: '-40px',
+            }}
             repeat={Infinity}
           />
         </h1>
