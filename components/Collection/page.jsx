@@ -98,7 +98,7 @@ const Collection = () => {
     <div className="flex flex-wrap  ">
     <div className=" mb-4" id='news'>
      <Image src="/images/bar.png" height={200} width={1500} />
-      <video loop autoPlay controls={isPlaying} src="video/vid21.mp4" alt=""  height={10} width={1500}
+      <video loop autoPlay controls={isPlaying} src="https://www.designindiankitchen.com/wp-content/themes/dkiblogs/assets/images/dkivid.mp4" alt=""  height={10} width={1500}
           className="rounded shadow-md"
         
           
