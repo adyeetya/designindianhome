@@ -22,7 +22,7 @@ const Hero = () => {
 
 
 
-  
+
   const [screenSize, setScreenSize] = useState('')
 
   const updateScreenSize = () => {
@@ -92,7 +92,7 @@ const Hero = () => {
   ]
   return (
     <>
-    {/*   <MaxWidthWrapper className="mb-12 mt-14 lg:mt-52 flex flex-col items-center justify-center text-center">
+      {/*   <MaxWidthWrapper className="mb-12 mt-14 lg:mt-52 flex flex-col items-center justify-center text-center">
         <div className="flex flex-col gap-4 md:flex-row">
           <div className="">
             <SimpleImageSlider
@@ -128,61 +128,70 @@ const Hero = () => {
         </div>
       </MaxWidthWrapper> */}
       <div className="wrapperlatest mt-16 pt-60">
-        <h3 style={{fontFamily:"Impact", fontWeight:"400"}}>Indias No.1 Modular Kitchen & Wardrobe Brand in Delhi - NCR</h3>
-   
-        </div>
-        <div className="container flex items-center justify-between px-4 py-2 text-center ">
+        <h3 style={{ fontFamily: "Impact" }}>India’s No.1 Interior & Architectural Brand </h3>
+
+      </div>
+      <div className="container flex items-center justify-between px-4 py-2 text-center ">
         <TypeAnimation
-      sequence={[
-         'Best Home Interior Brand in Delhi ',
-        1000, // wait 1s before replacing "Mice" with "Hamsters"
-        ' Home Renovation Service in Delhi',
-        1000,
-        'Top Architectural & Interior Brand',
-        1000,
-        
-        'Top Choice for Home Interior in India ',
-        1000
-      ]}
-      wrapper="span"
-      speed={50}
-      style={{  display: 'inline-block',  }}
-      repeat={Infinity}
-    /></div>
-
-    <div className="main-hero">
-	<div className="cover">
-		<div className="box a">
-      <h1>OUR WORK<br/>
-CENTERS ON RESULTS</h1>
-    </div>
-		<div className="box b">OUR STYLE<br/>
-IS TO DELIVER SMILES</div>
-	</div>
-</div>
+          sequence={[
+            'BEST HOME INTERIOR BRAND IN DELHI ',
+            1000, // wait 1s before replacing "Mice" with "Hamsters"
+            ' HOME RENOVATION SERVICE IN DELHI',
+            1000,
+            'TOP ARCHITECTURAL & INTERIOR BRAND',
+            1000,
+            'TOP ARCHITECTURAL & INTERIOR BRAND',
+            1000,
+            'TOP CHOICE FOR HOME INTERIOR IN INDIA ',
+            1000, 
+            'LARGEST ARCHITECTURAL BRAND', 
+            1000, 
+            ' AWARDED INTERIOR DESIGNING BRAND', 
+            1000,
+            'LARGEST MODULAR INTERIOR COMPANY',
+             1000,
+          ]}
 
 
+          wrapper="span"
+          speed={50}
+          style={{ display: 'inline-block', }}
+          repeat={Infinity}
+        /></div>
+
+      <div className="main-hero">
+        <div className="cover">
+          <div className="box a">
+            <h1>OUR WORK<br />
+              CENTERS ON RESULTS</h1>
+          </div>
+          <div className="box b">OUR STYLE<br />
+            IS TO DELIVER SMILES</div>
+        </div>
+      </div>
 
 
-<div className="container mx-auto rounded-3xl ">
- 
-
- 
- <section className="newz">
-   <div className="flex flex-wrap  ">
-   <div className=" mb-4" id='news'>
- 
-     <video loop autoPlay controls={isPlaying} src="video/vid1.mp4"  height={10} width={1500}
-         className="rounded shadow-md"
-       
-         
-       />
-       </div>
-       </div>
-       </section>
 
 
-</div>
+      <div className="container mx-auto rounded-3xl ">
+
+
+
+        <section className="newz">
+          <div className="flex flex-wrap  ">
+            <div className=" mb-4" id='news'>
+
+              <video loop autoPlay controls={isPlaying} src="video/vid1.mp4" height={10} width={1500}
+                className="rounded shadow-md"
+
+
+              />
+            </div>
+          </div>
+        </section>
+
+
+      </div>
 
 
     </>
