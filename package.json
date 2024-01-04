@@ -46,7 +46,8 @@
     "sass": "^1.69.5",
     "scss": "^0.2.4",
     "styled-components": "^6.1.6",
-    "swiper": "^8.1.1"
+    "swiper": "^8.1.1",
+    "typed.js": "^2.1.0"
   },
   "devDependencies": {
     "@types/node": "^20",
