@@ -577,7 +577,7 @@ const Collection = () => {
 
      
       <div className="wrapperlatest">
-        <h1>Brands you will find in our products</h1>
+        <h1>Brands you will find in our products</h1></div>
              <div className="slider">
         <div className="slide-track">
           <div className="slide">
@@ -697,7 +697,7 @@ const Collection = () => {
         </div>
       </div>
 
-</div>
+
 
 
 

@@ -1,11 +1,24 @@
 'use client'
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react';
+import { TypeAnimation } from 'react-type-animation';
 import DarkMode from '../DarkMode/page'
 import Image from 'next/image'
 import SimpleImageSlider from 'react-simple-image-slider'
 import MaxWidthWrapper from '../MaxWidthWrapper'
 import Main from '../../public/images/a.png'
 const Hero = () => {
+
+
+
+
+
+
+
+
+
+
+
+  
   const [screenSize, setScreenSize] = useState('')
 
   const updateScreenSize = () => {
@@ -75,7 +88,7 @@ const Hero = () => {
   ]
   return (
     <>
-      <MaxWidthWrapper className="mb-12 mt-14 lg:mt-52 flex flex-col items-center justify-center text-center">
+    {/*   <MaxWidthWrapper className="mb-12 mt-14 lg:mt-52 flex flex-col items-center justify-center text-center">
         <div className="flex flex-col gap-4 md:flex-row">
           <div className="">
             <SimpleImageSlider
@@ -109,7 +122,29 @@ const Hero = () => {
             </div>
           </div>
         </div>
-      </MaxWidthWrapper>
+      </MaxWidthWrapper> */}
+      <div className="wrapperlatest mt-16 pt-64">
+        <h3 style={{fontFamily:"monospace", fontWeight:"600"}}>Indias No.1 Modular Kitchen & Wardrobe Brand in Delhi - NCR</h3>
+   
+        </div>
+        <div className="container flex items-center justify-between px-4 py-2 text-center ">
+        <TypeAnimation
+      sequence={[
+         'Best Home Interior Brand in Delhi ',
+        1000, // wait 1s before replacing "Mice" with "Hamsters"
+        ' Home Renovation Service in Delhi',
+        1000,
+        'Top Architectural & Interior Brand',
+        1000,
+        
+        'Top Choice for Home Interior in India ',
+        1000
+      ]}
+      wrapper="span"
+      speed={50}
+      style={{  display: 'inline-block',  }}
+      repeat={Infinity}
+    /></div>
     </>
   )
 }

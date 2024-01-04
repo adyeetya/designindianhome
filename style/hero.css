@@ -220,7 +220,10 @@
 @media(max-width: 600px) {
 .body{
   padding-top: 0rem;
-  
+}
+.index-module_type__E-SaG{
+  padding-left: 0% !important;
+  font-size: 4px;
 }
   #content .item {
     margin: 0px !important;
@@ -980,4 +983,14 @@ color: #333;
 
   #rev{
     margin-top: -10%;
+  }
+
+
+  .index-module_type__E-SaG{
+  font-weight: 500;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-align: center;
+  justify-items: center;
+  padding-left: 30%;
+  font-size: 3rem;
   }
