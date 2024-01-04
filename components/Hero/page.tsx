@@ -128,10 +128,10 @@ const Hero = () => {
         </div>
       </MaxWidthWrapper> */}
       <div className="wrapperlatest mt-16 pt-60">
-        <h3 style={{ fontFamily: "Impact" }}>India’s No.1 Interior & Architectural Brand </h3>
+        <h3 style={{ fontFamily: "Impact" }}>INDIA’S NO.1 INTERIOR & ARCHITECTURAL BRAND</h3>
 
       </div>
-      <div className="container flex items-center justify-between px-4 py-2 text-center ">
+      <div className="container flex items-center justify-between px-2 py-2 text-center ">
         <TypeAnimation
           sequence={[
             'BEST HOME INTERIOR BRAND IN DELHI ',
@@ -157,7 +157,8 @@ const Hero = () => {
           speed={50}
           style={{ display: 'inline-block', }}
           repeat={Infinity}
-        /></div>
+        />
+        </div>
 
       <div className="main-hero">
         <div className="cover">
@@ -173,7 +174,7 @@ const Hero = () => {
 
 
 
-      <div className="container mx-auto rounded-3xl ">
+      <div className="container mx-auto  ">
 
 
 
@@ -181,7 +182,7 @@ const Hero = () => {
           <div className="flex flex-wrap  ">
             <div className=" mb-4" id='news'>
 
-              <video loop autoPlay controls={isPlaying} src="video/vid1.mp4" height={10} width={1500}
+              <video  className="rounded-2xl " loop autoPlay controls={isPlaying} src="https://www.designindiankitchen.com/wp-content/themes/dkiblogs/assets/images/dkivid.mp4" height={10} width={1500}
                 className="rounded shadow-md"
 
 
