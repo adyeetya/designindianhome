@@ -28,11 +28,7 @@ const Brands = () => {
 
   return (
     <>
-      <div className="wrapperlatest">
-        <h1>Happy Homes by Design Indian Homes</h1>
-        <h3>What People Say About Us</h3>
-      </div>
-   
+     
 
 
 
