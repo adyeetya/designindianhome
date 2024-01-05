@@ -47,8 +47,7 @@ const Collection = () => {
             1000,
             'TOP AWARDED INTERIORS',
             1000, 
-            'LARGEST ARCHITECTURAL BRAND', 
-            1000, 
+            
             'MODULAR INTERIOR COMPANY',
             1000,
             

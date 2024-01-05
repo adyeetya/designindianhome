@@ -4,12 +4,6 @@ import ReactCardSlider from 'react-card-slider-component';
 
 const Brands = () => {
 
-
-
-
-
-
-
   const slides = [
     {image:"https://source.unsplash.com/brown-wooden-seat-beside-white-wooden-table-TRCJ-87Yoh0",title:"View More"},
     {image:"https://source.unsplash.com/white-wooden-kitchen-island-and-cupboard-cabinets-near-glass-panel-door-AQl-J19ocWE",title:"View More",},
@@ -29,24 +23,6 @@ const Brands = () => {
   return (
     <>
      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
       <div className="main">
