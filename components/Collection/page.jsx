@@ -24,8 +24,8 @@ const Collection = () => {
  
   return (
     <>
-     <div className="wrapperlatest mt-16 pt-60" id='fry'>
-        <h3  style={{   fontFamily:" 'Bebas Neue', sans-serif;"}}
+     <div  id='fry'>
+        <h3  
        
        >INDIA’S NO.1 INTERIOR & ARCHITECTURAL BRAND</h3>
 
@@ -56,7 +56,6 @@ const Collection = () => {
 
           wrapper="span"
           speed={50}
-          style={{ fontFamily:" 'Bebas Neue', sans-serif;"}}
           repeat={Infinity}
         />
    
