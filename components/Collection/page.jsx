@@ -75,7 +75,7 @@ const Collection = () => {
 
 
 
-      <div className="container mx-auto rounded-3xl ">
+     {/*  <div className="container mx-auto rounded-3xl ">
 
 
 
@@ -94,7 +94,35 @@ const Collection = () => {
         </section>
 
 
-      </div>
+      </div> */}
+      <section className="outter hero-video ">
+  <section className="video-container rounded-3xl">
+  <video loop autoPlay controls={isPlaying} src="https://www.designindiankitchen.com/wp-content/themes/dkiblogs/assets/images/dkivid.mp4"
+          height={10} width={1500}
+                className="rounded shadow-md"
+
+
+              />
+    <div className="callout">
+      <h1>
+      Looking for Interiors or Modular Works 
+      </h1>
+      {/* <div class="desc">An optional description</div> */}
+      <a className="button" href="/collections/all">
+      Connect with us 
+      </a>
+    </div>
+  </section>
+</section>
+
+
+
+
+
+
+
+
+
   <div className="container mx-auto ">
  
 
