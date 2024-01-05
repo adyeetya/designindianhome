@@ -2,10 +2,30 @@
 import React from 'react'
 import { ChevronRight } from 'lucide-react'
 import { TypeAnimation } from 'react-type-animation'
-
+import Typed from 'typed.js'
 interface MyFormProps {}
 
 const MyForm: React.FC<MyFormProps> = () => {
+  const el = React.useRef(null)
+  React.useEffect(() => {
+    const typed = new Typed(el.current, {
+      strings: [
+        'kitchen?',
+        'bedroom?',
+        'bathroom?',
+        'guest room?',
+        'living room?',
+      ],
+      typeSpeed: 10,
+      loop: true,
+      loopCount: Infinity,
+    })
+
+    return () => {
+      // Destroy Typed instance during cleanup to stop animation
+      typed.destroy()
+    }
+  }, [])
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault()
     console.log('submit clicked')
@@ -39,26 +59,8 @@ const MyForm: React.FC<MyFormProps> = () => {
       {/* Left side with heading and paragraph */}
       <div className="sm:w-1/2 p-4">
         <h1 className="text-2xl sm:text-4xl font-bold mb-4 text-sky-700">
-          Looking for expert guidance to design your{' '}
-          <TypeAnimation
-            sequence={[
-              // Same substring at the start will only be typed out once, initially
-              'kitchen?',
-              1000, // wait 1s before replacing "Mice" with "Hamsters"
-              'bedroom?',
-              1000,
-              'bathroom?',
-              1000,
-              'guest room?',
-              1000,
-              'living room?',
-              1000,
-            ]}
-            wrapper="span"
-            speed={50}
-            style={{ color: 'purple', display: 'inline-block' }}
-            repeat={Infinity}
-          />
+          Looking for expert guidance to design your <br />
+          <span ref={el} className="text-purple-700" />
         </h1>
         <p className="text-gray-700 text-sm">
           Leave your information and we will call you to book your preferred
