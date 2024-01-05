@@ -1128,7 +1128,9 @@ font-size: 15px;
  .a, .b{ padding-top: 30%;
 font-size: 10px;}
 }
-
+.hero-video h1 {
+  font-size: 20px !important;
+}
 .hero-video .video-container {
   height: 550px;
   width: 100%;
@@ -1165,15 +1167,9 @@ font-size: 10px;}
   background: rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
-
-  .hero-video h1 {
-    font-size: 32px;
-  }
-
-  .hero-video h1 {
-    font-size: 52px;
-  }
-
+#fry{
+  padding-top: 8%;
+}
 .hero-video .desc {
   color: white;
   font-weight: 400;
