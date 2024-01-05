@@ -25,13 +25,14 @@ const Collection = () => {
   return (
     <>
      <div className="wrapperlatest mt-16 pt-60" id='fry'>
-        <h3 >INDIA’S NO.1 INTERIOR & ARCHITECTURAL BRAND</h3>
+        <h3  style={{   fontFamily:" 'Bebas Neue', sans-serif;"}}
+       
+       >INDIA’S NO.1 INTERIOR & ARCHITECTURAL BRAND</h3>
 
       </div>
-      <div class="flex mb-4">
-      <div className="container flex items-center justify-between px-2 py-2 text-center w-full">
+     
       
- 
+    
 
         <TypeAnimation 
           sequence={[
@@ -55,11 +56,10 @@ const Collection = () => {
 
           wrapper="span"
           speed={50}
-          style={{ display: 'inline-block', }}
+          style={{ fontFamily:" 'Bebas Neue', sans-serif;"}}
           repeat={Infinity}
         />
-        </div>
-        </div>
+   
 
       <div className="main-hero">
         <div className="cover">

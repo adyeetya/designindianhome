@@ -1,3 +1,7 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
 .wrapper h1 {
   text-align: center;
   font-size: 35px;
@@ -6,7 +10,9 @@
   font-weight: 600;
 }
 #fry{
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif !important;
+  font-family: 'Bebas Neue' !important;
+  font-weight: 500;
+  padding: 0% 10%;
 }
 .wrapperlatest h1 {
   text-align: center;
@@ -26,8 +32,7 @@
 .wrapperlatest h3 {
   text-align: center;
   font-size: 20px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-}
+  font-family: 'Bebas Neue', sans-serif;}
 
 .img-area,.img-areai {
   display: flex;
@@ -215,7 +220,6 @@
     margin: 20px 0;
   }
  
- 
 }
 
 
@@ -223,9 +227,11 @@
 .body{
   padding-top: 0rem;
 }
+
 #fry{
 font-size: 5px;
 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+padding-top: 60px;
 }
 .index-module_type__E-SaG{
   padding-left: 10% !important;
