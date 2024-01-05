@@ -275,6 +275,25 @@ text-align: center;
       padding: 0px;
       margin: 0px;
     }
+
+
+    
+  #fry {
+    font-size: 13px !important;
+    margin-top: 30%;
+    padding: 0% 5%;
+    font-family: 'BioRhyme', serif;
+  }
+
+  .hero-video .button {
+    font-size: 15px !important;
+    padding: 1% 5%;
+  }
+
+  .hero-video h1 {
+    font-size: 20px !important;
+    font-family: 'BioRhyme', serif;
+}
 #sm{
 margin-left: 10% !important;
 }
