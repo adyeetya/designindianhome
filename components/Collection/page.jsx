@@ -2,7 +2,6 @@
 import Image from 'next/image'
 import { TypeAnimation } from 'react-type-animation'
 
-
 import ReactBeforeSliderComponent from 'react-before-after-slider-component'
 import 'react-before-after-slider-component/dist/build.css'
 import React, { useState, useEffect } from 'react'
@@ -26,44 +25,35 @@ const Collection = () => {
 
   return (
     <>
-     <div className="wrapperlatest mt-16 pt-60" id='fry'>
-        <h3 >INDIA’S NO.1 INTERIOR & ARCHITECTURAL BRAND</h3>
-
       <div className="wrapperlatest mt-16 pt-60" id="fry">
-        <h3 style={{ fontFamily: 'Impact' }}>
-          INDIA’S NO.1 INTERIOR & ARCHITECTURAL BRAND
-        </h3>
+        <h3>INDIA’S NO.1 INTERIOR & ARCHITECTURAL BRAND</h3>
       </div>
       <div class="flex mb-4">
-      <div className="container flex items-center justify-between px-2 py-2 text-center w-full">
-      
- 
-
-        <TypeAnimation 
-          sequence={[
-            'TOP KITCHEN & CLOSE BRAND ',
-            1000, // wait 1s before replacing "Mice" with "Hamsters"
-            ' LARGEST KITCHEN DEALERS',
-            1000,
-            'MODULAR KITCHEN & CLOSET',
-            1000,
-            'LARGEST ARCHITECTURAL BRAND',
-            1000,
-            'TOP AWARDED INTERIORS',
-            1000, 
-            'LARGEST ARCHITECTURAL BRAND', 
-            1000, 
-            'MODULAR INTERIOR COMPANY',
-            1000,
-            
-          ]}
-          wrapper="span"
-          speed={50}
-          style={{ display: 'inline-block' }}
-          repeat={Infinity}
-        />
+        <div className="container flex items-center justify-between px-2 py-2 text-center w-full">
+          <TypeAnimation
+            sequence={[
+              'TOP KITCHEN & CLOSE BRAND ',
+              1000, // wait 1s before replacing "Mice" with "Hamsters"
+              ' LARGEST KITCHEN DEALERS',
+              1000,
+              'MODULAR KITCHEN & CLOSET',
+              1000,
+              'LARGEST ARCHITECTURAL BRAND',
+              1000,
+              'TOP AWARDED INTERIORS',
+              1000,
+              'LARGEST ARCHITECTURAL BRAND',
+              1000,
+              'MODULAR INTERIOR COMPANY',
+              1000,
+            ]}
+            wrapper="span"
+            speed={50}
+            style={{ display: 'inline-block' }}
+            repeat={Infinity}
+          />
         </div>
-        </div>
+      </div>
 
       <div className="main-hero">
         <div className="cover">
@@ -85,97 +75,112 @@ const Collection = () => {
       <div className="container mx-auto rounded-3xl ">
         <section className="newz">
           <div className="flex flex-wrap  ">
-            <div className=" mb-4" id='news'>
-
-              <video loop autoPlay controls={isPlaying} src="https://www.designindiankitchen.com/wp-content/themes/dkiblogs/assets/images/dkivid.mp4"
-          height={10} width={1500}
+            <div className=" mb-4" id="news">
+              <video
+                loop
+                autoPlay
+                controls={isPlaying}
+                src="https://www.designindiankitchen.com/wp-content/themes/dkiblogs/assets/images/dkivid.mp4"
+                height={10}
+                width={1500}
                 className="rounded shadow-md"
               />
             </div>
           </div>
         </section>
       </div>
-  <div className="container mx-auto ">
- 
+      <div className="container mx-auto ">
+        <section className="newz">
+          <div className="flex flex-wrap  ">
+            <div className=" mb-4" id="news">
+              <Image src="/images/bar.png" height={200} width={1500} />
+              <video
+                loop
+                autoPlay
+                controls={isPlaying}
+                src="video/vid21.mp4"
+                alt=""
+                height={10}
+                width={1500}
+                className="rounded shadow-md"
+              />
+            </div>
 
- 
-  <section className="newz">
-    <div className="flex flex-wrap  ">
-    <div className=" mb-4" id='news'>
-     <Image src="/images/bar.png" height={200} width={1500} />
-      <video loop autoPlay controls={isPlaying}      src="video/vid21.mp4" alt=""  height={10} width={1500}
-          className="rounded shadow-md"
-        
-          
-        />
-        </div>
-    
-      <div className="md:w-1/3 mb-4" id='news'>
-      <Image height={350} width={700}
-          className="rounded shadow-md"
-          src="/images/qwer.png"
-          alt=""
-          
-        />   
+            <div className="md:w-1/3 mb-4" id="news">
+              <Image
+                height={350}
+                width={700}
+                className="rounded shadow-md"
+                src="/images/qwer.png"
+                alt=""
+              />
+            </div>
+            <div className="md:w-1/3 mb-4" id="news">
+              <Image
+                height={350}
+                width={700}
+                className="rounded shadow-md"
+                src="/images/qwert.png"
+                alt=""
+              />
+            </div>
+            <div className="md:w-1/3 mb-4" id="news">
+              <Image
+                height={350}
+                width={700}
+                className="rounded shadow-md"
+                src="/images/qwerty.png"
+                alt=""
+              />
+            </div>
+
+            <div className="md:w-1/3 mb-4" id="news">
+              <Image
+                height={350}
+                width={700}
+                className="rounded shadow-md"
+                src="/images/asd.png"
+                alt=""
+              />
+            </div>
+            <div className="md:w-1/3 mb-4" id="news">
+              <Image
+                height={350}
+                width={700}
+                className="rounded shadow-md"
+                src="/images/asdf.png"
+                alt=""
+              />
+            </div>
+            <div className="md:w-1/3 mb-4" id="news">
+              <Image
+                height={350}
+                width={700}
+                className="rounded shadow-md"
+                src="/images/talk.png"
+                alt=""
+              />
+            </div>
+            <Image src="/images/bar.png" height={200} width={1500} />
+            <div className="md:w-1/2 mb-4" id="news">
+              <ReactBeforeSliderComponent
+                firstImage={FIRST_IMAGE}
+                secondImage={SECOND_IMAGE}
+              />
+            </div>
+            <div className="md:w-1/2 px-16" id="news">
+              <div className="wrapperlatest">
+                <h1>Before And After</h1>
+                <h3>Affordable Luxury</h3>
+                <p>
+                  We often use collective nouns to refer to groups of people.
+                  Examples: team, gang, squad, army, jury, clergy, cult, crew.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
-      <div className="md:w-1/3 mb-4" id='news'>
-      <Image height={350} width={700}
-          className="rounded shadow-md"
-          src="/images/qwert.png"
-          alt=""
-          
-        />   
-      </div>
-      <div className="md:w-1/3 mb-4" id='news'>
-      <Image height={350} width={700}
-          className="rounded shadow-md"
-          src="/images/qwerty.png"
-          alt=""
-          
-        />   
-      </div>
-      
-      <div className="md:w-1/3 mb-4" id='news'>
-      <Image height={350} width={700}
-          className="rounded shadow-md"
-          src="/images/asd.png"
-          alt=""
-          
-        />   
-      </div>
-      <div className="md:w-1/3 mb-4" id='news'>
-      <Image height={350} width={700}
-          className="rounded shadow-md"
-          src="/images/asdf.png"
-          alt=""
-          
-        />   
-      </div>
-      <div className="md:w-1/3 mb-4" id='news'>
-      <Image height={350} width={700}
-          className="rounded shadow-md"
-          src="/images/talk.png"
-          alt=""
-          
-        />   
-      </div>
-      <Image src="/images/bar.png" height={200} width={1500} />
-      <div className="md:w-1/2 mb-4" id='news'>
-      <ReactBeforeSliderComponent
-    firstImage={FIRST_IMAGE}
-    secondImage={SECOND_IMAGE}
-/>
-      </div>
-      <div className="md:w-1/2 px-16" id='news'>
-      <div className="wrapperlatest">
-        <h1>Before And After</h1>
-        <h3>Affordable Luxury</h3>
-        <p>We often use collective nouns to refer to groups of people. Examples: team, gang, squad, army, jury, clergy, cult, crew.</p>
-      </div>
-      </div>
-    </div>
-  </section>
-</div>
 
       <div className="main">
         <img src="/images/left.gif" width={50} height={50} />
