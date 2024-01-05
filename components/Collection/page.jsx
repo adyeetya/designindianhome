@@ -1,7 +1,7 @@
 'use client'
 import Image from 'next/image'
 import { TypeAnimation } from 'react-type-animation'
-
+import Marquee from "react-fast-marquee";
 import ReactBeforeSliderComponent from 'react-before-after-slider-component'
 import 'react-before-after-slider-component/dist/build.css'
 import React, { useState, useEffect } from 'react'
@@ -25,13 +25,14 @@ const Collection = () => {
 
   return (
     <>
-     <div className="wrapperlatest mt-16 pt-60" id='fry'>
-        <h3  style={{   fontFamily:" 'Bebas Neue', sans-serif;"}}
+      
+        <div  id='fry'>
+        <h3  
        
        >INDIA’S NO.1 INTERIOR & ARCHITECTURAL BRAND</h3>
 
       </div>
-     
+  
       
     
 
@@ -47,8 +48,7 @@ const Collection = () => {
             1000,
             'TOP AWARDED INTERIORS',
             1000, 
-            'LARGEST ARCHITECTURAL BRAND', 
-            1000, 
+            
             'MODULAR INTERIOR COMPANY',
             1000,
             
@@ -57,7 +57,6 @@ const Collection = () => {
 
           wrapper="span"
           speed={50}
-          style={{ fontFamily:" 'Bebas Neue', sans-serif;"}}
           repeat={Infinity}
         />
    
@@ -122,7 +121,17 @@ const Collection = () => {
 </section>
 
 
+<Marquee> 
+        <div className="marquee">
 
+      
+        <h3  
+       
+       >INDIA’S NO.1 INTERIOR & ARCHITECTURAL BRAND</h3>
+
+      </div>
+     
+          </Marquee>
 
 
 

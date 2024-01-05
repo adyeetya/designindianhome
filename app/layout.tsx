@@ -16,10 +16,9 @@ export default function RootLayout({
   return (
     <html lang="en">
         <Head>
-        <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=BioRhyme:wght@400;700&display=swap"
-        />
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" />
+<link href="https://fonts.googleapis.com/css2?family=BioRhyme:wght@200;300;400;500;600&display=swap" rel="stylesheet"/>
       </Head>
       <body className='dark:text-white'>
         <Providers>
