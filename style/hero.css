@@ -242,7 +242,6 @@ text-align: center;
 }
 .index-module_type__E-SaG{
   padding-left: 15% !important;
-
   font-family: 'BioRhyme', serif;
 }
   #content .item {
@@ -819,6 +818,11 @@ font-size: 10px;
 #bg{
   display: none;
 }
+
+
+.index-module_type__E-SaG {
+  font-size: 16px !important;
+font-weight: 900;}
 }
 
 div#comparison { 
@@ -1121,6 +1125,8 @@ font-size: 15px;
   .outter.hero-video {
     height: 325px;
   }
+ .a, .b{ padding-top: 30%;
+font-size: 10px;}
 }
 
 .hero-video .video-container {
