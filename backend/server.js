@@ -61,7 +61,7 @@ app.post('/upload', upload.single('file'), async (req, res) => {
              <p><strong>Number:</strong> ${body.number}</p>
              <p><strong>Date:</strong> ${body.date}</p>
              <p><strong>Floor Plan:</strong> ${body.FloorPlan}</p>
-             <p><strong>Purpose:</strong> ${body.Purpose}</p>
+             <p><strong>Purpose:</strong> ${body.purpose}</p>
              <p><strong>Requirements:</strong> ${body.requirements}</p>
            
              <p><strong>Attached File:</strong> ${file.originalname}</p>`,
