@@ -5,6 +5,14 @@
   padding-top: 8%;
   font-weight: 600;
 }
+.marquee{
+  background-color: #e6c922;
+  font-weight: 500;font-family: 'BioRhyme', serif;
+
+  text-align: center;
+  font-size: 20px;
+ margin-top: 5%;
+}
 #fry{
   font-weight: 500;font-family: 'BioRhyme', serif;
   padding-top: 60px;
