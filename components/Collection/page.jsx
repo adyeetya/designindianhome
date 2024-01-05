@@ -23,7 +23,7 @@ const Collection = () => {
     })
   }, [])
 
-  return (
+  return (<>
     <>
       
         <div  id='fry'>
@@ -54,7 +54,7 @@ const Collection = () => {
             
           ]}
 
-
+style={{fontSize:"55px"}}
           wrapper="span"
           speed={50}
           repeat={Infinity}
@@ -112,8 +112,7 @@ const Collection = () => {
       <h1>
       Looking for Interiors or Modular Works 
       </h1>
-      {/* <div class="desc">An optional description</div> */}
-      <a className="button" href="/collections/all">
+       <a className="button" href="/collections/all">
       Connect with us 
       </a>
     </div>
@@ -121,13 +120,13 @@ const Collection = () => {
 </section>
 
 
-<Marquee> 
+<Marquee style={{ backgroundColor:" yellow ", marginTop:"5%"}}> 
         <div className="marquee">
 
       
         <h3  
        
-       >INDIA’S NO.1 INTERIOR & ARCHITECTURAL BRAND</h3>
+       >Top Interior, Architectural & Modular Kitchen - Wardrobe  Brand in Delhi - NCR - India</h3>
 
       </div>
      
@@ -583,13 +582,17 @@ const Collection = () => {
         </section>
       </div>
 
+
+
+
+
+
       <div
         className="flex flex-col items-center md:flex-row justify-center p-10 gap-6 mt-10"
         id="bg"
       >
         <h1 className="font-bold text-2xl">Stay safe. Design virtually.</h1>
         <br />
-        {/* Feature 1 */}
         <div className="text-center">
           <Image
             width={100}
@@ -605,7 +608,7 @@ const Collection = () => {
           </p>
         </div>
 
-        {/* Feature 2 */}
+        
         <div className="text-center mt-4 md:mt-0">
           <Image
             width={100}
@@ -621,7 +624,6 @@ const Collection = () => {
           </p>
         </div>
 
-        {/* Feature 3 */}
         <div className="text-center mt-4 md:mt-0">
           <Image
             width={100}
@@ -637,7 +639,7 @@ const Collection = () => {
           </p>
         </div>
 
-        {/* Feature 4 */}
+      
         <div className="text-center mt-4 md:mt-0">
           <Image
             width={100}
@@ -652,6 +654,18 @@ const Collection = () => {
           </p>
         </div>
       </div>
+
+
+
+
+
+
+
+
+
+
+
+
 
       {/*    <div className="wrapperlatest">
         <h1>Happy Homes by Design Indian Homes</h1>
@@ -710,6 +724,7 @@ const Collection = () => {
           </div>
         </div>
       </div>
+    </>
     </>
   )
 }

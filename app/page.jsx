@@ -26,7 +26,7 @@ export default function Home() {
         <Collection />
         <ImageGrid />
       
-        {/* <Brands /> */}
+        <Brands />
         <Display />
         <Stepper />
         <TabsSection />
