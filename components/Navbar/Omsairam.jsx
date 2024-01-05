@@ -1,34 +1,20 @@
 "use client";
 import React, { useRef, useEffect } from 'react';
+import Marquee from "react-fast-marquee";
 
 const Omsairam = () => {
-  const marqueeRef = useRef();
 
-  useEffect(() => {
-    const marqueeContent = marqueeRef.current.innerHTML;
-
-    const cloneMarquee = () => {
-      marqueeRef.current.innerHTML += marqueeContent;
-    };
-
-    const interval = setInterval(cloneMarquee, 40); // Adjust the interval as needed
-
-    return () => {
-      clearInterval(interval);
-    };
-  }, []);
 
   return (
-    <div className="bg-black font-bold text-white text-2xl" style={{ zIndex: '10000', position: 'fixed', width: '100%', top: 0 }}>
-      <h1 className="text-center text-xs text-white font-bold pt-1">ॐ साईं राम</h1>
-      <marquee
-        ref={marqueeRef}
-        behavior="scroll"
-        direction="left"
-        style={{ whiteSpace: 'nowrap', width: '100%', right: 0 }} // Set initial position to right
+    <div className="bg-black font-bold text-white" style={{ zIndex: '10000', position: 'fixed', width: '100%', top: 0 }}>
+      <h1 className="text-center  text-white font-bold " style={{ fontSize: '8px' }}>ॐ साईं राम</h1>
+      <Marquee
+        className='text-base' direction="left" speed={50} gradient={true} style={{ width: "100%", whiteSpace: "nowrap", height: '47px' }}
       >
-        100% Guaranteed Quotes for all Modular Kitchens & Wardrobes 🙂 Largest Manufacturing Brand Across Noida - Delhi - NCR 🙂 Bring Us any Quote & Take Flat 7% Off.
-      </marquee>
+        <div style={{ display: "inline-block" }}> 🙂 Largest Manufacturing Brand Across Noida - Delhi - NCR 🙂 Bring Us any Quote & Take Flat 7% Off.
+          100% Guaranteed Quotes for all Modular Kitchens & Wardrobes.
+        </div>
+      </Marquee>
     </div>
   );
 }
