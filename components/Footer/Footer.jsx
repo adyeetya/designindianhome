@@ -7,7 +7,7 @@ export class Footer extends Component {
     render() {
         return (
             
-            <div className="mt-30px">
+            <div className="mt-22" style={{marginTop: '40px'}}>
                 <div className="flex items-center justify-center ">
                     <div className="text-black">
                         <button className="md:text-5xl md:font-bold font-bold rounded-full border-dotted border-2 border-black py-12 px-16 mt-4 md:px-96 md:py-48 hover:bg-black hover:text-white" >
@@ -19,7 +19,7 @@ export class Footer extends Component {
                     </div>
                 </div>
 
-                <h1 className="text-4xl md:text font-semibold text-center text-black pt-4">
+                <h1 className="text-4xl md:text font-semibold text-center text-black pt-16">
                     Know The Trinity Brands
                 </h1>
 
