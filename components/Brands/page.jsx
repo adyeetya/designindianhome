@@ -1,84 +1,19 @@
 import Image from 'next/image';
-import ReactCardSlider from 'react-card-slider-component';
 
 
 const Brands = () => {
 
-  const slides = [
-    {image:"https://source.unsplash.com/brown-wooden-seat-beside-white-wooden-table-TRCJ-87Yoh0",title:"View More"},
-    {image:"https://source.unsplash.com/white-wooden-kitchen-island-and-cupboard-cabinets-near-glass-panel-door-AQl-J19ocWE",title:"View More",},
-    {image:"https://source.unsplash.com/white-over-the-range-oven-GliaHAJ3_5A",title:"View More"},
-    {image:"https://source.unsplash.com/white-and-black-kitchen-counter-oCw5_evbWyI",title:"View More"},
-    {image:"https://source.unsplash.com/white-wooden-kitchen-cabinet-with-stainless-steel-faucet-ik9WP2V8Vas",title:"View More"},
-    {image:"https://source.unsplash.com/gray-steel-3-door-refrigerator-near-modular-kitchen-MP0bgaS_d1c",title:"View More"},
-    {image:"https://source.unsplash.com/white-and-brown-kitchen-cabinet--aDGbdTsBZg",title:"View More"},
-    {image:"https://source.unsplash.com/white-wooden-kitchen-cupboards-and-gray-gas-stove-dn5VihVxloc",title:"View More"},
-    {image:"https://source.unsplash.com/white-wooden-kitchen-cabinet-with-black-pendant-lamp-KiUg-4xmTwo",title:"View More"},
-    {image:"https://source.unsplash.com/rectangular-white-wooden-table-I_QC1JICzA0",title:"View More"},
-    {image:"https://source.unsplash.com/kitchen-island-near-gas-range-beside-base-cabinets-sZ5CteK2r6E",title:"View More"},
-    {image:"https://source.unsplash.com/a-kitchen-with-a-center-island-with-stools-_IAZoJ6X-1A",title:"View More"},
-    {image:"https://source.unsplash.com/kitchen-house-area-z3QZ6gjGRt4",title:"View More"},
-]
-
+ 
   return (
-    <>
+  <>
+
      
 
 
-      <div className="main">
-<img src="/images/left.gif" width={50} height={50} id='sm'/>
   
- <svg id="rotatingText" viewBox="0 0 200 200" width={200} height={200}>
-   <defs>
-     <path
-       id="circle"
-       d="M 100, 100
-         m -75, 0
-         a 75, 75 0 1, 0 150, 0
-         a 75, 75 0 1, 0 -150, 0
-         "
-     ></path>
-   </defs>
-   <text width={400}>
-     <textPath alignmentBaseline="top" xlinkHref="#circle" className="text">
-     The Best Home Interior Brand of India -
-     </textPath>
-   </text>
- </svg>
-</div>
-      <div className="wrapperlatest" id='rev'>
-        <h1>Best Trending Kitchens</h1>
-        
-      </div>
 
 
 
-    <ReactCardSlider slides={slides} />
- <div className="main">
-<img src="/images/left.gif" width={50} height={50} />
-  
- <svg id="rotatingText" viewBox="0 0 200 200" width={200} height={200}>
-   <defs>
-     <path
-       id="circle"
-       d="M 100, 100
-         m -75, 0
-         a 75, 75 0 1, 0 150, 0
-         a 75, 75 0 1, 0 -150, 0
-         "
-     ></path>
-   </defs>
-   <text width={400}>
-     <textPath alignmentBaseline="top" xlinkHref="#circle" className="text">
-     The Best Home Interior Brand of India -
-     </textPath>
-   </text>
- </svg>
-</div>
-      <div className="wrapperlatest" id='rev'>
-        <h1>Our Deals </h1>
-        <h3>Affordable Luxury</h3>
-      </div>
 
       <div className="jiu">
         <div className="containeru">
@@ -168,7 +103,19 @@ const Brands = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> 
+
+
+
+
+
+
+
+
+
+
+
+
       <Image src="/images/bar.png" height={200} width={1500} />
       <div className="wrapperlatest">
         <h1>Why We Deliver Inspiring Interiors</h1>
@@ -184,6 +131,7 @@ const Brands = () => {
   <li>Lifelong <br/><span> Service Supplier</span></li>
 </ul>
 </div>
+    
     </>
   )
 }
