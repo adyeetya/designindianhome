@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import { Tabs, Tab, Box, Container, Typography } from '@mui/material'
 import { styled } from '@mui/material/styles'
 import MaxWidthWrapper from '../../components/MaxWidthWrapper'
-
+import Image from 'next/image';
 // Sample data for images
 const tabData = [
   // Data for Tab 1
@@ -58,6 +58,18 @@ const ResponsiveTabs = () => {
 
   return (
     <>
+    <div className="div">
+     <Image src="/images/bar.png" height={200} width={1500} />
+      <div className="main-hero">
+        <div className="cover">
+          <div className="box ai">
+           
+          </div>
+          <div className="box bi">
+          
+          </div>
+        </div>
+      </div>
       <div className="wrapperlatest">
         <h1>End-to-End Interior Solutions</h1>
         <h3>Our Interior services </h3>
@@ -94,7 +106,7 @@ const ResponsiveTabs = () => {
           </TabPanel>
         ))}
       </Container>
-    </>
+      </div> </>
   )
 }
 

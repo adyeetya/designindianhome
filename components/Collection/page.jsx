@@ -24,8 +24,11 @@ const Collection = () => {
   }, [])
 
   return (<>
-    <>
+    
       
+
+
+
         <div  id='fry'>
         <h3  
        
@@ -77,6 +80,14 @@ style={{fontSize:"55px"}}
           </div>
         </div>
       </div>
+
+
+
+
+
+
+     
+
 
      {/*  <div className="container mx-auto rounded-3xl ">
 
@@ -137,14 +148,83 @@ style={{fontSize:"55px"}}
 
 
 
-  <div className="container mx-auto ">
+
+
+
+
+
+          <div class="hero h-full">
+{/* 	 */}
+<div className="container mx-auto ">
+   <div className="flex">
+   <div className="md:w-1/3 h-full" id='hide'>
+   <h1>This is a crab</h1>
+	<p>I want an image of a crab behind this text.</p>
+    </div>
+
+
+     <div className="md:w-1/3 h-full bg-amber-100 py-40 opacity-55 ">
+     <h1>Introducing</h1>
  
 
- 
-  <section className="newz">
+    <Image src= "/images/left.gif" width={50} height={50} />
+
+   <span id='log'>Designer Homes</span>
+   
+   <span id='log'>Luxe</span>
+
+
+   
+  <div className="frame ">
+  <button class="custom-btn btn-11">Read More</button>
+    </div>
+</div>
+
+    <div className="md:w-1/3 h-full" id='hide'>
+    <h1>This is a crab</h1>
+	<p>I want an image of a crab behind this text.</p>
+    </div>
+    </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div className="container mx-auto ">
+ <section className="newz">
     <div className="flex flex-wrap  ">
     <div className=" mb-4" id='news'>
      <Image src="/images/bar.png" height={200} width={1500} />
+
+     <div className="main-hero">
+        <div className="cover">
+          <div className="box ai">
+           
+          </div>
+          <div className="box bi">
+          
+          </div>
+        </div>
+      </div>
+
+
       <video loop autoPlay controls={isPlaying}      src="video/vid21.mp4" alt=""  height={10} width={1500}
           className="rounded shadow-md"
         
@@ -156,9 +236,7 @@ style={{fontSize:"55px"}}
       <Image height={350} width={700}
           className="rounded shadow-md"
           src="/images/qwer.png"
-          alt=""
-          
-        />   
+          alt=""  />   
       </div>
       <div className="md:w-1/3 mb-4" id='news'>
       <Image height={350} width={700}
@@ -209,7 +287,31 @@ style={{fontSize:"55px"}}
 />
       </div>
       <div className="md:w-1/2 px-16" id='news'>
+
+      <div className="main-hero">
+        <div className="cover">
+          <div className="box ai">
+           
+          </div>
+          <div className="box bi">
+          
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+        
       <div className="wrapperlatest">
+
+
+
+
         <h1>Before And After</h1>
         <h3>Affordable Luxury</h3>
         <p>We often use collective nouns to refer to groups of people. Examples: team, gang, squad, army, jury, clergy, cult, crew.</p>
@@ -421,6 +523,8 @@ style={{fontSize:"55px"}}
           </text>
         </svg>
       </div>
+
+      
       <div className="wrapperlatest" id="rev">
         <h1>End-to-End Interior Solutions</h1>
         <h3>Our Interior services </h3>
@@ -526,6 +630,16 @@ style={{fontSize:"55px"}}
       </div>
 
       <Image src="/images/bar.png" height={200} width={1500} />
+      <div className="main-hero">
+        <div className="cover">
+          <div className="box ai">
+           
+          </div>
+          <div className="box bi">
+          
+          </div>
+        </div>
+      </div>
       <div className="wrapperlatest">
         <h1>Connect With Us</h1>
       </div>
@@ -667,11 +781,17 @@ style={{fontSize:"55px"}}
 
 
 
-      {/*    <div className="wrapperlatest">
-        <h1>Happy Homes by Design Indian Homes</h1>
-        <h3>What People Say About Us</h3>
+      <Image src="/images/bar.png" height={200} width={1500} />
+      <div className="main-hero">
+        <div className="cover">
+          <div className="box ai">
+           
+          </div>
+          <div className="box bi">
+          
+          </div>
+        </div>
       </div>
-      */}
 
       <div className="wrapperlatest">
         <h1>Brands you will find in our products</h1>
@@ -724,7 +844,7 @@ style={{fontSize:"55px"}}
           </div>
         </div>
       </div>
-    </>
+ 
     </>
   )
 }

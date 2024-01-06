@@ -11,6 +11,84 @@
   font-size:35px;
  padding: 10px;
 }
+
+#log{
+ font-size: 25px;font-family: 'Allura', cursive !important;
+}
+.custom-btn {
+  width: 150px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+  margin: 1%;
+}
+
+.btn-11 {
+  border: none;
+    background: linear-gradient(90deg,#c19038,#735419);
+    color: #fff;
+    overflow: hidden;
+}
+.btn-11:hover {
+    text-decoration: none;
+    color: #fff;
+}
+.btn-11:before {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    top: -180px;
+    left: 0;
+    width: 30px;
+    height: 100%;
+    background-color: #fff;
+    animation: shiny-btn1 3s ease-in-out infinite;
+}
+.btn-11:hover{
+  opacity: .7;
+}
+.btn-11:active{
+  box-shadow:  4px 4px 6px 0 rgba(255,255,255,.3),
+              -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+    inset -4px -4px 6px 0 rgba(255,255,255,.2),
+    inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
+}
+
+
+@-webkit-keyframes shiny-btn1 {
+    0% { -webkit-transform: scale(0) rotate(45deg); opacity: 0; }
+    80% { -webkit-transform: scale(0) rotate(45deg); opacity: 0.5; }
+    81% { -webkit-transform: scale(4) rotate(45deg); opacity: 1; }
+    100% { -webkit-transform: scale(50) rotate(45deg); opacity: 0; }
+}
+
+#hide{
+  visibility: hidden;
+}
+.hero {
+	background-color: #000000;
+	background-image:  linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+  
+  url(https://source.unsplash.com/kitchen-house-area-z3QZ6gjGRt4);
+  background-position: center;
+	background-size: cover;
+	color: #171313;
+	height: max-content;
+	text-align: center;
+  margin: 5% ;
+}
 #fry{
   font-weight: 500;font-family: 'BioRhyme', serif;
   padding-top: 60px;
@@ -1060,10 +1138,19 @@ color: #333;
 .box {
 	padding: 1em;
 }
-
-
+.bi{
+  border-left:2px solid #303030;
+text-align: right;
+align-items: end;
+font-family: 'BioRhyme', serif;
+padding-top: 15%;
+}
+.a1{
+ padding-top: 30%;
+ border-right:1px solid #303030;
+}
 .a {
-	border-right:3px solid #303030;
+	border-right:2px solid #303030;
   align-items: end;
   padding-top: 15%;
   font-size: 15px;

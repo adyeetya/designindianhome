@@ -54,6 +54,9 @@ const Display = () => {
         </div>
       </div>
 
+
+
+      <Image src="/images/bar.png" height={200} width={1500} />
       <div className="gridz">
         <article className="mainz">
           <h1>ABOUT US</h1>
@@ -266,16 +269,16 @@ const Display = () => {
 
 
     <ReactCardSlider slides={slides} />  <br/>
-    <div className="wrapperlatest" id='rev'>
-        <h1>Best Trending Kitchens</h1>
+    <div className="wrapperlatest" >
+        <h1>Best Trending Bathrooms</h1>
         
       </div>
 
 
 
     <ReactCardSlider slides={slides} />  <br/>
-    <div className="wrapperlatest" id='rev'>
-        <h1>Best Trending Kitchens</h1>
+    <div className="wrapperlatest" >
+        <h1>Best Trending Wardrobes</h1>
         
       </div>
 

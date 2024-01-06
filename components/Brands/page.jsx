@@ -8,7 +8,21 @@ const Brands = () => {
   <>
 
      
-
+<Image src="/images/bar.png" height={200} width={1500} />
+      <div className="main-hero">
+        <div className="cover">
+          <div className="box ai">
+           
+          </div>
+          <div className="box bi">
+          
+          </div>
+        </div>
+      </div>
+      <div className="wrapperlatest">
+        <h1>Our Deals</h1>
+        <h3>Affordable Luxury</h3>
+      </div>
 
   
 
@@ -117,6 +131,16 @@ const Brands = () => {
 
 
       <Image src="/images/bar.png" height={200} width={1500} />
+      <div className="main-hero">
+        <div className="cover">
+          <div className="box ai">
+           
+          </div>
+          <div className="box bi">
+          
+          </div>
+        </div>
+      </div>
       <div className="wrapperlatest">
         <h1>Why We Deliver Inspiring Interiors</h1>
         
