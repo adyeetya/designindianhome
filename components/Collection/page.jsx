@@ -89,28 +89,7 @@ const Collection = () => {
 
 
 
-    {/*  <div className="container mx-auto rounded-3xl ">
-
-
-
-        <section className="newz">
-          <div className="flex flex-wrap  ">
-            <div className=" mb-4" id="news">
-              <video
-                loop
-                autoPlay
-                controls={isPlaying}
-                src="https://www.designindiankitchen.com/wp-content/themes/dkiblogs/assets/images/dkivid.mp4"
-                height={10}
-                width={1500}
-                className="rounded shadow-md"
-              />
-            </div>
-          </div>
-        </section>
-
-
-      </div> */}
+    
     <section className="outter hero-video ">
       <section className="video-container rounded-3xl">
         <video loop autoPlay controls={isPlaying} src="https://www.designindiankitchen.com/wp-content/themes/dkiblogs/assets/images/dkivid.mp4"
@@ -129,6 +108,58 @@ const Collection = () => {
         </div>
       </section>
     </section>
+
+
+
+
+
+
+
+
+
+
+
+    <div className="more">
+  <div className="less">
+ 
+    <p>
+       Design Indian Homes is India's top Interior, Architectural & Modular Interior Brand serving across Delhi, Gurgaon, Noida & NCR. It is the most sought out by Homemakers, Architects, Interior Designers, Developers & just anyone who needs an Affordable Interior Makeover, Renovation Services, Architectural Services, Modular Kitchen, Wardrobe, Vanities, TV Units, Living works, Bathroom Or Just a peaceful Turnkey Work by Our Team. We are serving End to End Interiors & Modular Interiors across Delhi, Gurgaon, Noida, Faridabad & across NCR.
+  <br/> Our Brand Design Indian Homes was established in 2007, we are a professional team of certified architects, interior remodelers, and also happen to be Largest manufacturers of Modular Kitchens, Wardrobes, Tv units, Crockery units, Bookshelves, and just anything residential or commercial. We are delivering affordable top quality Interiors, Architectural Solutions, Modular Kitchens, Wardrobes, Tv Units, Bookshelves, Shoeracks, Crockery Units etc & executing end to end projects for our Clients. We are the Largest Manufacturers of Modular Kitchens, Wardrobes & TV Units across New Delhi - Gurgaon - Noida NCR, we have multiple modular manufacturing facilities across North India and are associated with more than 900+ Architects, Interior Designers, developers and Builders along with our thousands of direct clients across New delhi - NCR. <br/>
+  We have over 5000+ interior designs, and can cater to any custom requirements for our clients and associates. Delivering the most Affordable Luxury is our Principle and we work with utmost integrity and complete transparency. <br/>
+  Due to the Goodwill built by the brand and faith of our clients, we are the most referred to modular interior Brand in Delhi - Gurgaon - Noida and across India. All our interior designs, architectural concepts, modular kitchen designs, wardrobe designs, tv units designs or any modular kitchens are planned to perfection as per the design requirements. We create smooth, crisp and meticulous designs for your residence & also are top modular kitchen & modular wardrobe manufacturers with a precision timing in delivery, extensive warranty and a life long relation with our Brand.<br/>Our Modular Interior brand is also the top Modular brand in Delhi - NCR India, and we are honoured with the prestigious award of the Top Modular brand in India by the Timber Wood Society of India.<br/>
+
+  This is all due to the Hard work put in by our architectural designers, our  installers, our supervisors, our management and our entire Team which works tirelessly 24/7 in delivering top notch modular kitchen designs to our clients across New Delhi - India.
+
+
+
+
+
+We have the largest Modular Interior facilities and are serving extensively with most affordable solutions for the following services : -
+<br/>
+
+<br/>
+
+* Modular Kitchens * Wardrobes * TV Units * Vanities * Crockery Units * Shoe Racks * Bookshelves * Partitions * Studies & Bar Units * Mandir Units * End To End Interiors * Complete Structures * Luxury Interiors & Residences * Luxury Kitchens And Wardrobes * Italian - German - Swedish - Danish - Spanish Modular Kitchens & Wardrobes
+
+   <br/>
+
+
+   We assure you 100% Guaranteed Quotes across New Delhi - NCR for any type of Interior Works, Architectural Works, renovation works, Modular Kitchens, Wardrobes,  TV units or just any Modular Works, custom interior works or architectural consultancy works. We have the most affordable modular interiors and serve all clients with perfect understanding of the requirements. 
+   <br/>
+
+   We also assure you to bring us any quotes and assure you flat 7% less on any offerings by any vendor across New Delhi - NCR.
+
+Connect with the Largest Interior, Architectural, Modular Kitchens & Wardrobes Brand Across New Delhi - NCR - India.
+<br/>
+We are the Top Awarded Largest manufacturers for Modular Kitchens & Wardrobes across Delhi - NCR & have been rated as the TOP Interior & Architectural  Brand by The Architectural Congress India and Real Wood Societies since 2016.
+   <br/> 
+    </p>
+    <input type="checkbox" className="check" />
+  </div>
+ 
+</div>
+
+
 
 
     <Marquee style={{ backgroundColor: " yellow ", marginTop: "5%" }}>
@@ -189,7 +220,7 @@ const Collection = () => {
               </div>
             </div>
             <video loop autoPlay controls={isPlaying} src="video/lux.mp4" alt="" height={10} width={1500}
-              className="rounded shadow-md" style={{ marginBottom: "3%" }} />
+              className="rounded shadow-md" id='seek' style={{ marginBottom: "3%" }} />
 
 
 
