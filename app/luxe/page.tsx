@@ -9,9 +9,11 @@ import ImageList from './ImageList'
 import SpacesTabs from './SpacesTabs'
 import ClientReview from './ClientReview'
 import FAQ from '../../components/FAQ/page'
+import Omsairam from '../../components/Navbar/Omsairam'
 const page = () => {
   return (
     <>
+      <Omsairam />
       <Header />
       <MyForm />
       <WhySection />
