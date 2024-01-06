@@ -1,7 +1,7 @@
 'use client'
 import React from 'react'
 
-const page = () => {
+const SvgMap = () => {
   const [selectedPolygon, setSelectedPolygon] = React.useState(null)
 
   const handlePolygonClick = (polygonId) => {
@@ -20,13 +20,23 @@ const page = () => {
           backgroundSize: 'cover',
         }}
       >
-        <polygon
-          points="800,-3,1182,439,2094,459,2420,201,2505,130,2661,-3"
-          fill={selectedPolygon === 'polygon1' ? 'green' : 'transparent'}
-          fillOpacity="0.2"
-          onClick={() => handlePolygonClick('polygon1')}
-          style={{ cursor: 'pointer' }}
-        />
+        {/* <button onClick={() => handlePolygonClick('polygon1')}>
+          <polygon
+            points="800,-3,1182,439,2094,459,2420,201,2505,130,2661,-3"
+            fill={selectedPolygon === 'polygon1' ? 'green' : 'transparent'}
+            fillOpacity={selectedPolygon === 'polygon1' ? '0.8' : '0.2'}
+            style={{ cursor: 'pointer' }}
+          />
+        </button> */}
+        <a href="/" title="1">
+          <polygon
+            points="800,-3,1182,439,2094,459,2420,201,2505,130,2661,-3"
+            fill={selectedPolygon === 'polygon1' ? 'green' : 'transparent'}
+            fillOpacity={selectedPolygon === 'polygon1' ? '0.8' : '0.2'}
+            style={{ cursor: 'pointer' }}
+          />
+        </a>
+
         <rect
           x="1933.6666666666667"
           y="160.83333333333334"
@@ -37,7 +47,6 @@ const page = () => {
           opacity="0.3"
           ry={30}
           className="dynamic-rectangle cursor-pointer"
-          onClick={() => handlePolygonClick('polygon1')}
         />
         <image
           cursor="pointer"
@@ -58,7 +67,6 @@ const page = () => {
           id="polygon-text0"
           y="203.83333333333334"
           className="cursor-pointer"
-          onClick={() => handlePolygonClick('polygon1')}
         >
           False Ceiling
         </text>
@@ -71,6 +79,7 @@ const page = () => {
           height={50}
           href="/images/blue-pointer.svg"
         />
+        {/* ---------------------------------- */}
         <polygon
           points="-4,45,115,99,1120,660,1100,1017,936,1071,930,1167,358,1405,347,1725,222,1802,302,422,1,312"
           fill="transparent"
@@ -2513,4 +2522,4 @@ const page = () => {
   )
 }
 
-export default page
+export default SvgMap
