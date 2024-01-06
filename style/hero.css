@@ -77,18 +77,7 @@
 #hide{
   visibility: hidden;
 }
-.hero {
-	background-color: #000000;
-	background-image:  linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-  
-  url(https://source.unsplash.com/kitchen-house-area-z3QZ6gjGRt4);
-  background-position: center;
-	background-size: cover;
-	color: #171313;
-	height: max-content;
-	text-align: center;
-  margin: 5% ;
-}
+
 #fry{
   font-weight: 500;font-family: 'BioRhyme', serif;
   padding-top: 60px;
