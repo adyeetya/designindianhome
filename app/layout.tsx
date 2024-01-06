@@ -23,7 +23,7 @@ export default function RootLayout({
       <body className='dark:text-white'>
         <Providers>
         <GlobalStyle />
-        <header>
+        <header className='dark:text-white'>
           {/* <Navbar/> */}
         </header>
          <ThemeSwitcher/>
