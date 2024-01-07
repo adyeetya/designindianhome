@@ -15,23 +15,23 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-        <Head>
-        <link rel="preconnect" href="https://fonts.googleapis.com"/>
-<link rel="preconnect" href="https://fonts.gstatic.com" />
-<link href="https://fonts.googleapis.com/css2?family=BioRhyme:wght@200;300;400;500;600&display=swap" rel="stylesheet"/>
+      <Head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=BioRhyme:wght@200;300;400;500;600&display=swap" rel="stylesheet" />
 
-<link rel="preconnect" href="https://fonts.googleapis.com"/>
-<link rel="preconnect" href="https://fonts.gstatic.com" />
-<link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet" />
       </Head>
       <body className='dark:text-white'>
         <Providers>
-        <GlobalStyle />
-        <header className='dark:text-white'>
-          {/* <Navbar/> */}
-        </header>
-         <ThemeSwitcher/>
-        {children}
+          <GlobalStyle />
+          <header className='dark:text-white'>
+            {/* <Navbar/> */}
+          </header>
+          <ThemeSwitcher />
+          {children}
 
         </Providers>
       </body>
