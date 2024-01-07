@@ -16,7 +16,7 @@ const responsive = {
     slidesToSlide: 3 // optional, default to 1.
   },
   mobile: {
-    breakpoint: { max: 767, min: 464 },
+    breakpoint: { max: 767, min: 264 },
     items: 2,
     slidesToSlide: 1 // optional, default to 1.
   }
@@ -76,7 +76,7 @@ const Display = () => {
       
 
       <div className="main">
-<img src="/images/left.gif" width={50} height={50} id='sm'/>
+
   
  <svg id="rotatingText" viewBox="0 0 200 200" width={200} height={200}>
    <defs>

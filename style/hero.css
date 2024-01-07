@@ -216,7 +216,7 @@
 }
 
 .mainz h1 {
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 600;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -992,6 +992,9 @@ background: rgb(255, 68, 68) !important;display: none;
     margin-bottom: 8%;
   }
 
+  .slidering img{
+    height: 300px;
+  }
   #news,
   .newsz {
     padding: 0px;
@@ -1019,6 +1022,11 @@ background: rgb(255, 68, 68) !important;display: none;
   .index-module_type__E-SaG {
     font-size: 16px !important;
     font-weight: 900;
+  }
+  #content .item {
+
+    min-width: 185px;
+   
   }
 }
 
@@ -1274,7 +1282,7 @@ li span {
 
 
 .box {
-  padding: 1em;
+  padding: 1em 3em;
 }
 
 .bi {
@@ -1306,10 +1314,6 @@ li span {
   font-size: 15px;
 }
 
-.a,
-.b h1 {
-  font-family: 'BioRhyme', serif;
-}
 
 
 
@@ -1317,13 +1321,28 @@ li span {
   .marquee {
     font-size: 16px;
   }
-
+  .b h1{
+    font-size: 10px;
+  }
   #fry {
     font-size: 11px !important;
     margin-top: 30%;
     padding: 0% 5%;
     font-family: 'BioRhyme', serif;
   }
+  .slidering img{
+    height: 250px;
+  }
+
+ .a h1{
+  font-size: 10px;
+}
+
+
+[class*=smol]:not([data-component])>*:not([data-unstyled]) {
+  padding: 5rem;
+  font-size: 15px;
+}
 
 
   .callout h3{

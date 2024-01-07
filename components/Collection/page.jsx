@@ -10,7 +10,6 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
 
-window.$ = window.jQuery = require('jquery')
 const FIRST_IMAGE = {
   imageUrl:
     'https://source.unsplash.com/a-kitchen-with-blue-cabinets-and-a-black-refrigerator-zFGBEikZoRg',
@@ -37,7 +36,7 @@ const responsive = {
     slidesToSlide: 3 // optional, default to 1.
   },
   mobile: {
-    breakpoint: { max: 767, min: 464 },
+    breakpoint: { max: 767, min: 264 },
     items: 2,
     slidesToSlide: 1 // optional, default to 1.
   }
@@ -107,7 +106,7 @@ const Collection = () => {
 
     <TypeAnimation
       sequence={[
-        'TOP KITCHEN & CLOSE BRAND ',
+        'TOP KITCHEN & CLOSET BRAND ',
         1000, // wait 1s before replacing "Mice" with "Hamsters"
         ' LARGEST KITCHEN DEALERS',
         1000,
@@ -138,10 +137,10 @@ const Collection = () => {
           </h1>
         </div>
         <div className="box b">
-          OUR STYLE
+        <h1>   OUR STYLE
           <br />
           IS TO DELIVER SMILES
-        </div>
+       </h1> </div>
       </div>
     </div>
     {/*  <div className="container mx-auto rounded-3xl ">
@@ -369,100 +368,8 @@ const Collection = () => {
       </section>
     </div>
 
-    <div className="main">
-      <img src="/images/left.gif" width={50} height={50} />
-
-      <svg id="rotatingText" viewBox="0 0 200 200" width={200} height={200}>
-        <defs>
-          <path
-            id="circle"
-            d="M 100, 100
-         m -75, 0
-         a 75, 75 0 1, 0 150, 0
-         a 75, 75 0 1, 0 -150, 0
-         "
-          ></path>
-        </defs>
-        <text width={400}>
-          <textPath
-            alignmentBaseline="top"
-            xlinkHref="#circle"
-            className="text"
-          >
-            The Best Home Interior Brand of India -
-          </textPath>
-        </text>
-      </svg>
-    </div>
-    <div className="wrapper " id="rev">
-      <h1>Explore Our Collection</h1>
-      <h3>For Beautiful Homes!</h3>
-      <div className="img-area ">
-        <div className="single-img" id="name">
-          <Image width={400} height={400} src="/images/1.png" alt="" />
-          <p className="text-lg font-bold" id="rem">
-            3 Seater Sofas Plush
-          </p>
-          <p className="text-md ">Plush, Stylish & Relaxing</p>
-        </div>
-        <div className="single-img" id="name">
-          <Image width={400} height={400} src="/images/2.png" alt="" />
-          <p className="text-lg font-bold" id="rem">
-            3 Seater Sofas Plush
-          </p>
-          <p className="text-md ">Plush, Stylish & Relaxing</p>
-        </div>
-        <div className="single-img" id="name">
-          <Image width={400} height={400} src="/images/3.png" alt="" />
-          <p className="text-lg font-bold" id="rem">
-            3 Seater Sofas Plush
-          </p>
-          <p className="text-md ">Plush, Stylish & Relaxing</p>
-        </div>
-        <div className="single-img" id="name">
-          <Image width={400} height={400} src="/images/4.png" alt="" />
-          <p className="text-lg font-bold" id="rem">
-            3 Seater Sofas Plush
-          </p>
-          <p className="text-md ">Plush, Stylish & Relaxing</p>
-        </div>
-        <div className="single-img" id="name">
-          <Image width={400} height={400} src="/images/78.png" alt="" />{' '}
-          <p className="text-lg font-bold" id="rem">
-            3 Seater Sofas Plush
-          </p>
-          <p className="text-md ">Plush, Stylish & Relaxing</p>
-        </div>
-        <div className="single-img" id="name">
-          <Image width={400} height={400} src="/images/56.png" alt="" />{' '}
-          <p className="text-lg font-bold" id="rem">
-            3 Seater Sofas Plush
-          </p>
-          <p className="text-md ">Plush, Stylish & Relaxing</p>
-        </div>
-        <div className="single-img" id="name">
-          <Image width={400} height={400} src="/images/1.png" alt="" />{' '}
-          <p className="text-lg font-bold" id="rem">
-            3 Seater Sofas Plush
-          </p>
-          <p className="text-md ">Plush, Stylish & Relaxing</p>
-        </div>
-        <div className="single-img" id="name">
-          <Image width={400} height={400} src="/images/2.png" alt="" />
-          <p className="text-lg font-bold" id="rem">
-            3 Seater Sofas Plush
-          </p>
-          <p className="text-md ">Plush, Stylish & Relaxing</p>
-        </div>
-        <div className="single-img" id="name">
-          <Image width={400} height={400} src="/images/3.png" alt="" />{' '}
-          <p className="text-lg font-bold" id="rem">
-            3 Seater Sofas Plush
-          </p>
-          <p className="text-md ">Plush, Stylish & Relaxing</p>
-        </div>
-      </div>
-    </div>
+    
+   
 
     <div className="containr">
       <h1>Why Design Indian Homes?</h1>
@@ -547,7 +454,6 @@ const Collection = () => {
     </div>
 
     <div className="main">
-      <img src="/images/left.gif" width={50} height={50} />
 
       <svg id="rotatingText" viewBox="0 0 200 200" width={200} height={200}>
         <defs>
@@ -654,7 +560,6 @@ const Collection = () => {
 
 
     <div className="main">
-<img src="/images/left.gif" width={50} height={50} id='sm'/>
   
  <svg id="rotatingText" viewBox="0 0 200 200" width={200} height={200}>
    <defs>
