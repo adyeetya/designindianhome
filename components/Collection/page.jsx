@@ -202,18 +202,6 @@ const Collection = () => {
 
 
 
-    <Marquee style={{ backgroundColor: " yellow ", marginTop: "5%" }}>
-      <div className="marquee">
-
-
-        <h3
-
-        >Top Interior, Architectural & Modular Kitchen - Wardrobe  Brand in Delhi - NCR - India</h3>
-
-      </div>
-
-    </Marquee>
-
 
 
 
