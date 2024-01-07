@@ -44,7 +44,7 @@ const Collection = () => {
 
     <div id='fry'>
       <h3
-
+    
       >INDIA’S NO.1 INTERIOR & ARCHITECTURAL BRAND</h3>
 
     </div>
@@ -62,9 +62,7 @@ const Collection = () => {
         1000,
         'TOP AWARDED INTERIORS',
         1000,
-
-        'MODULAR INTERIOR COMPANY',
-        1000,
+  
 
       ]}
 
@@ -91,9 +89,46 @@ const Collection = () => {
         </div>
       </div>
     </div>
-  
+    {/*  <div className="container mx-auto rounded-3xl ">
 
 
+
+
+
+      </div> */}
+    {/* <div className='hidden sm:flex justify-center items-center absolute'>
+      <h1 className=' bg-white text-black text-5xl font-bold px-4' style={{ zIndex: '10', marginLeft: '150px', marginTop: '350px', }}>
+        Looking for Interiors or Modular Works
+      </h1>
+
+    </div>
+    <a className='hidden sm:flex justify-center absolute text-4xl text-black font-bold hover:bg-white' href="/collections/all" style={{ zIndex: '10', marginLeft: '500px', marginTop: '420px', border: "4px solid black", padding: '2px', borderRadius: '10px' }}>
+      Connect with us
+    </a> */}
+
+
+
+    <section className="outter hero-video" >
+      <div
+        className='videoBox'>
+        <video
+          loop
+          autoPlay
+          controls={isPlaying}
+          src="/video/dkivid.mp4"
+          width={1500}
+          height={550}
+          className="rounded shadow-md"
+          style={{}}
+        />
+      </div>
+      <div className="callout">
+        <h3>Looking for Interiors or Modular Works</h3>
+        <a className="button" href="/collections/all">
+          Connect with us
+        </a>
+      </div>
+    </section>
 
 
 
@@ -117,6 +152,7 @@ const Collection = () => {
         className="read-more__checkbox"
         aria-hidden="true"
       />
+  
       <p className="read-more__text mb-2">
         Design Indian Homes is India's top Interior, Architectural & Modular Interior Brand serving across Delhi, Gurgaon, Noida & NCR. It is the most sought out by Homemakers, Architects, Interior Designers, Developers & just anyone who needs an Affordable Interior Makeover, Renovation Services, Architectural Services, Modular Kitchen, Wardrobe, Vanities, TV Units, Living works, Bathroom Or Just a peaceful Turnkey Work by Our Team. We are serving End to End Interiors & Modular Interiors across Delhi, Gurgaon, Noida, Faridabad & across NCR.
         <br /> Our Brand Design Indian Homes was established in 2007,
