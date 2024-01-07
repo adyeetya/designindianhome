@@ -769,7 +769,7 @@ Explore life-like 3D designs online that are made for your floor plan.
         <Image
           width={100}
           height={100}
-          src="/images/icon/1.png"
+          src="/images/icon/2.png"
           alt=""
           className="w-60 h-70 mx-auto"
         />
