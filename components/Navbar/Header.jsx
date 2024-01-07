@@ -998,25 +998,25 @@ const Header = () => {
 
 
             {/* Main Header Navigation scroll up header */}
-            <div className="">
-              <nav className="hidden md:flex  space-x-5 center mt-8  text-black font-bold" style={{ justifyContent: 'center' }}>
+            <div className="sm:px-0 md:px-0 lg:px-1 xl:px-0 ">
+              <nav className="flex flex-wrap md:flex-nowrap justify-center items-center mt-8 text-black font-bold space-x-4 sm:space-x-5" style={{ justifyContent: 'center' }}>
                 <p className="text-sm font-bold" onMouseOver={() => handleMouseOver('DesignIdeas')}>
                   <FontAwesomeIcon icon={faLightbulb} className="mr-1" />
                   Design Ideas
                 </p>
 
                 <p className="text-sm font-bold" onMouseOver={() => handleMouseOver('Interiors')}>
-                  <FontAwesomeIcon icon={faHome} className="mr-1" />
+                  <FontAwesomeIcon icon={faHome} className="mr-1 text-xs" />
                   Interiors
                 </p>
 
                 <p className="text-sm font-bold" onMouseOver={() => handleMouseOver('Architectural')}>
-                  <FontAwesomeIcon icon={faBuilding} className="mr-1" />
+                  <FontAwesomeIcon icon={faBuilding} className="mr-1 text-xs" />
                   Architectural
                 </p>
 
                 <p className="text-sm font-bold" onMouseOver={() => handleMouseOver('Modular Kitchen')}>
-                  <FontAwesomeIcon icon={faUtensils} className="mr-1" />
+                  <FontAwesomeIcon icon={faUtensils} className="mr-1 text-xs" />
                   Modular Kitchen
                 </p>
 
@@ -1039,23 +1039,23 @@ const Header = () => {
                 />
 
                 <p className="text-sm font-bold" onMouseOver={() => handleMouseOver('Wardrobes')}>
-                  <FontAwesomeIcon icon={faCouch} className="mr-1" />
+                  <FontAwesomeIcon icon={faCouch} className="mr-1 text-xs" />
                   Wardrobes
                 </p>
 
                 <p className="text-sm font-bold" onMouseOver={() => handleMouseOver('Living')}>
-                  <FontAwesomeIcon icon={faWrench} className="mr-1" />
+                  <FontAwesomeIcon icon={faWrench} className="mr-1 text-xs" />
                   Living
                 </p>
 
                 <p className="text-sm font-bold" onMouseOver={() => handleMouseOver('Modular Interiors')}>
-                  <FontAwesomeIcon icon={faCouch} className="mr-1" />
+                  <FontAwesomeIcon icon={faCouch} className="mr-1 text-xs" />
                   Modular Interiors
                 </p>
 
                 <div>
                   <p className="text-sm font-bold" onMouseOver={() => handleMouseOver('More')}>
-                    <FontAwesomeIcon icon={faChevronDown} className="mr-1" />
+                    <FontAwesomeIcon icon={faChevronDown} className="mr-1 text-xs" />
                     More
                   </p>
                 </div>
