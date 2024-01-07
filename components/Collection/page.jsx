@@ -36,44 +36,39 @@ const Collection = () => {
 
 
   return (<>
+    
+
+      <div id='fry'>
+        <h3
+
+        >INDIA’S NO.1 INTERIOR & ARCHITECTURAL BRAND</h3>
+
+      </div>
 
 
+      <TypeAnimation
+        sequence={[
+          'TOP KITCHEN & CLOSE BRAND ',
+          1000, // wait 1s before replacing "Mice" with "Hamsters"
+          ' LARGEST KITCHEN DEALERS',
+          1000,
+          'MODULAR KITCHEN & CLOSET',
+          1000,
+          'LARGEST ARCHITECTURAL BRAND',
+          1000,
+          'TOP AWARDED INTERIORS',
+          1000,
 
+          'MODULAR INTERIOR COMPANY',
+          1000,
 
+        ]}
 
-    <div id='fry'>
-      <h3
-
-      >INDIA’S NO.1 INTERIOR & ARCHITECTURAL BRAND</h3>
-
-    </div>
-
-
-
-
-    <TypeAnimation
-      sequence={[
-        'TOP KITCHEN & CLOSE BRAND ',
-        1000, // wait 1s before replacing "Mice" with "Hamsters"
-        ' LARGEST KITCHEN DEALERS',
-        1000,
-        'MODULAR KITCHEN & CLOSET',
-        1000,
-        'LARGEST ARCHITECTURAL BRAND',
-        1000,
-        'TOP AWARDED INTERIORS',
-        1000,
-
-        'MODULAR INTERIOR COMPANY',
-        1000,
-
-      ]}
-
-      style={{ fontSize: "55px" }}
-      wrapper="span"
-      speed={50}
-      repeat={Infinity}
-    />
+        style={{ fontSize: "55px" }}
+        wrapper="span"
+        speed={50}
+        repeat={Infinity}
+      />
 
 
     <div className="main-hero">
@@ -91,43 +86,76 @@ const Collection = () => {
           IS TO DELIVER SMILES
         </div>
       </div>
+</div>
+      {/*  <div className="container mx-auto rounded-3xl ">
+
+
+
+        <section className="newz">
+          <div className="flex flex-wrap  ">
+            <div className=" mb-4" id="news">
+              <video
+                loop
+                autoPlay
+                controls={isPlaying}
+                src="https://www.designindiankitchen.com/wp-content/themes/dkiblogs/assets/images/dkivid.mp4"
+                height={10}
+                width={1500}
+                className="rounded shadow-md"
+              />
+            </div>
+          </div>
+        </section>
+
+
+      </div> */}
+      <div className='hidden sm:flex justify-center items-center absolute'>
+        <h1 className=' bg-white text-black text-5xl font-bold px-4' style={{ zIndex: '10', marginLeft: '150px', marginTop: '350px', }}>
+          Looking for Interiors or Modular Works
+        </h1>
+
+      </div>
+      <a className='hidden sm:flex justify-center absolute text-4xl text-black font-bold hover:bg-white' href="/collections/all" style={{ zIndex: '10',marginLeft: '500px', marginTop: '420px', border: "4px solid black", padding: '2px', borderRadius: '10px' }}>
+        Connect with us
+      </a>
+
+
+
+      <section className="outter hero-video" >
+  <section className="video-container rounded-3xl" style={{height: '550px'}}>
+    <video
+      loop
+      autoPlay
+      controls={isPlaying}
+      src="/video/dkivid.mp4"
+      width={1500}
+      height={550} 
+      className="rounded shadow-md"
+      style={{ height: '550px' }}
+    ></video>
+
+    <div className="callout">
+      <h1>Looking for Interiors or Modular Works</h1>
+      <a className="button" href="/collections/all">
+        Connect with us
+      </a>
     </div>
+  </section>
+</section>
 
 
 
+      <Marquee style={{ backgroundColor: " yellow ", marginTop: "5%" }}>
+        <div className="marquee">
 
 
+          <h3
 
+          >Top Interior, Architectural & Modular Kitchen - Wardrobe  Brand in Delhi - NCR - India</h3>
 
-
-
-
-    <section className="outter hero-video ">
-      <section className="video-container rounded-3xl">
-        <ReactPlayer
-          className="rounded shadow-md"
-          url="https://www.designindiankitchen.com/wp-content/themes/dkiblogs/assets/images/dkivid.mp4"
-          playing={true}
-          controls={false}
-          muted={true}
-          onPlay={(info) => console.warn(info)}
-          width="1500px"
-          height="360px"
-        />
-        <div className="callout">
-          <h1>
-            Looking for Interiors or Modular Works
-          </h1>
-          <a className="button" href="/collections/all">
-            Connect with us
-          </a>
         </div>
-      </section>
-    </section>
 
-
-
-
+      </Marquee>
 
 
     <div className="read-more mb-12">
@@ -174,14 +202,6 @@ const Collection = () => {
 
 
 
-
-
-
-
-
-
-
-
     <Marquee style={{ backgroundColor: " yellow ", marginTop: "5%" }}>
       <div className="marquee">
 
@@ -193,31 +213,6 @@ const Collection = () => {
       </div>
 
     </Marquee>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -547,109 +542,6 @@ const Collection = () => {
     </div>
 
 
-    <div className="wrapperlatest" id="rev">
-      <h1>End-to-End Interior Solutions</h1>
-      <h3>Our Interior services </h3>
-    </div>
-
-    <div className="img-area pt-6">
-      <div className="single-img" id="name">
-        <Image width={400} height={400} src="/images/a.png" alt="" />
-        <p className="text-lg font-bold" id="rem">
-          Modular Kitchen
-        </p>
-      </div>
-      <div className="single-img" id="name">
-        <Image width={400} height={400} src="/images/b.png" alt="" />
-        <p className="text-lg font-bold" id="rem">
-          Storage and wardrobe
-        </p>
-      </div>
-      <div className="single-img" id="name">
-        <Image width={400} height={400} src="/images/c.png" alt="" />
-        <p className="text-lg font-bold" id="rem">
-          Crockery Units
-        </p>
-      </div>
-      <div className="single-img" id="name">
-        <Image width={400} height={400} src="/images/d.png" alt="" />
-        <p className="text-lg font-bold" id="rem">
-          Space Saving Furniture
-        </p>
-      </div>
-      <div className="single-img" id="name">
-        <Image width={400} height={400} src="/images/e.png" alt="" />{' '}
-        <p className="text-lg font-bold" id="rem">
-          TV Units
-        </p>
-      </div>
-      <div className="single-img" id="name">
-        <Image width={400} height={400} src="/images/f.png" alt="" />{' '}
-        <p className="text-lg font-bold" id="rem">
-          Study Tables
-        </p>
-      </div>
-      <div className="single-img" id="name">
-        <Image width={400} height={400} src="/images/g.png" alt="" />{' '}
-        <p className="text-lg font-bold" id="rem">
-          Lights
-        </p>
-      </div>
-      <div className="single-img" id="name">
-        <Image width={400} height={400} src="/images/h.png" alt="" />
-        <p className="text-lg font-bold" id="rem">
-          False Ceiling
-        </p>
-      </div>
-      <div className="single-img" id="name">
-        <Image width={400} height={400} src="/images/i.png" alt="" />{' '}
-        <p className="text-lg font-bold" id="rem">
-          Wallpaper
-        </p>
-      </div>
-      <div className="single-img" id="name">
-        <Image width={400} height={400} src="/images/j.png" alt="" />{' '}
-        <p className="text-lg font-bold" id="rem">
-          Wall Paint
-        </p>
-      </div>{' '}
-      <div className="single-img" id="name">
-        <Image width={400} height={400} src="/images/k.png" alt="" />{' '}
-        <p className="text-lg font-bold" id="rem">
-          Bathroom
-        </p>
-      </div>{' '}
-      <div className="single-img" id="name">
-        <Image width={400} height={400} src="/images/l.png" alt="" />{' '}
-        <p className="text-lg font-bold" id="rem">
-          Pooja Unit
-        </p>
-      </div>{' '}
-      <div className="single-img" id="name">
-        <Image width={400} height={400} src="/images/m.png" alt="" />{' '}
-        <p className="text-lg font-bold" id="rem">
-          Foyer Designs
-        </p>
-      </div>{' '}
-      <div className="single-img" id="name">
-        <Image width={400} height={400} src="/images/n.png" alt="" />{' '}
-        <p className="text-lg font-bold" id="rem">
-          Movable furniture
-        </p>
-      </div>
-      <div className="single-img" id="name">
-        <Image width={400} height={400} src="/images/o.png" alt="" />{' '}
-        <p className="text-lg font-bold" id="rem">
-          Kids Bedroom
-        </p>
-      </div>
-      <div className="single-img" id="name">
-        <Image width={400} height={400} src="/images/p.png" alt="" />{' '}
-        <p className="text-lg font-bold" id="rem">
-          Bookshelves
-        </p>
-      </div>
-    </div>
 
     <Image src="/images/bar.png" height={200} width={1500} />
     <div className="main-hero">
@@ -773,6 +665,75 @@ const Collection = () => {
           Explore life-like 3D designs online that are made for your floor
           plan.
         </p>
+
+
+
+      <div
+        className="flex flex-col items-center md:flex-row justify-center p-10 gap-6 mt-10"
+        id="bg"
+      >
+        <h1 className="font-bold text-2xl">Stay safe. Design virtually.</h1>
+        <br />
+        <div className="text-center">
+          <Image
+            width={100}
+            height={100}
+            src="/images/icon/12.png"
+            alt=""
+            className="w-60 h-70 mx-auto"
+          />
+          <h1 className="font-bold text-center">Contactless Experience</h1>
+          <p className="text-sm">
+            No stepping out. Design your home interiors from the safety and
+            comfort of your home.
+          </p>
+        </div>
+
+
+        <div className="text-center mt-4 md:mt-0">
+          <Image
+            width={100}
+            height={100}
+            src="/images/icon/5.png"
+            alt=""
+            className="w-60 h-70 mx-auto"
+          />
+          <h1 className="font-bold text-center">Online Expertise</h1>
+          <p className="text-sm">
+            Connect with our 600+ designers virtually and explore designs
+            online.
+          </p>
+        </div>
+
+        <div className="text-center mt-4 md:mt-0">
+          <Image
+            width={100}
+            height={100}
+            src="/images/icon/1.png"
+            alt=""
+            className="w-60 h-70 mx-auto"
+          />
+          <h1 className="font-bold text-center">Live 3D Designs</h1>
+          <p className="text-sm">
+            Explore life-like 3D designs online that are made for your floor
+            plan.
+          </p>
+        </div>
+
+
+        <div className="text-center mt-4 md:mt-0">
+          <Image
+            width={100}
+            height={100}
+            src="/images/icon/2.png"
+            alt=""
+            className="w-60 h-70 mx-auto"
+          />
+          <h1 className="font-bold text-center">Instant Pricing</h1>
+          <p className="text-sm">
+            Enjoy complete price transparency and stay within budget.
+          </p>
+        </div>
       </div>
 
 
@@ -790,18 +751,7 @@ const Collection = () => {
         </p>
       </div>
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
+</div>
 
     <Image src="/images/bar.png" height={200} width={1500} />
     <div className="main-hero">
@@ -867,6 +817,7 @@ const Collection = () => {
       </div>
     </div>
 
+    
   </>
   )
 }
