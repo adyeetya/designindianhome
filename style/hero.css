@@ -439,6 +439,17 @@
     margin: 0px;
   }
 
+  .videoBox{
+    border-radius: 20px !important;
+  }
+  .callout h3{
+    font-size: 16px !important;
+  }
+  .callout a {
+    font-size: 16px !important;
+    border: 2px solid #000 !important;
+    padding: 5px 15px !important
+  }
   .marquee {
     font-size: 16px;
   }
@@ -1315,7 +1326,9 @@ li span {
   }
 
 
-
+  .callout h3{
+    font-size: 16px !important;
+  }
   .single-img {
     height: 320px;
     margin: 0px;
@@ -1364,7 +1377,7 @@ section.outter.hero-video {
 }
 
 .callout h3 {
-  font-size: 3rem !important;
+  font-size: 3rem ;
   background: #fff;
   padding: 0.1rem 2rem;
   text-align: center;

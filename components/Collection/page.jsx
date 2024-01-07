@@ -751,7 +751,6 @@ const Collection = () => {
           online.
         </p>
       </div>
-
       <div className="text-center mt-4 md:mt-0">
         <Image
           width={100}
@@ -760,72 +759,30 @@ const Collection = () => {
           alt=""
           className="w-60 h-70 mx-auto"
         />
-        <h1 className="font-bold text-center">Live 3D Designs</h1>
+        <h1 className="font-bold text-center">Live 3D Design</h1>
         <p className="text-sm">
-          Explore life-like 3D designs online that are made for your floor
-          plan.
-        </p>
-
-
-
-        <div
-          className="flex flex-col items-center md:flex-row justify-center p-10 gap-6 mt-10"
-          id="bg"
-        >
     
-         
-
-          <div className="text-center mt-4 md:mt-0">
-            <Image
-              width={100}
-              height={100}
-              src="/images/icon/5.png"
-              alt=""
-              className="w-60 h-70 mx-auto"
-            />
-            <h1 className="font-bold text-center">Online Expertise</h1>
-            <p className="text-sm">
-              Connect with our 600+ designers virtually and explore designs
-              online.
-            </p>
-          </div>
-
-         
-
-
-          <div className="text-center mt-4 md:mt-0">
-            <Image
-              width={100}
-              height={100}
-              src="/images/icon/2.png"
-              alt=""
-              className="w-60 h-70 mx-auto"
-            />
-            <h1 className="font-bold text-center">Instant Pricing</h1>
-            <p className="text-sm">
-              Enjoy complete price transparency and stay within budget.
-            </p>
-          </div>
-        </div>
-
-
-      
+Explore life-like 3D designs online that are made for your floor plan.
+        </p>
       </div>
-
       <div className="text-center mt-4 md:mt-0">
-            <Image
-              width={100}
-              height={100}
-              src="/images/icon/1.png"
-              alt=""
-              className="w-60 h-70 mx-auto"
-            />
-            <h1 className="font-bold text-center">Live 3D Designs</h1>
-            <p className="text-sm">
-              Explore life-like 3D designs online that are made for your floor
-              plan.
-            </p>
-          </div>
+        <Image
+          width={100}
+          height={100}
+          src="/images/icon/1.png"
+          alt=""
+          className="w-60 h-70 mx-auto"
+        />
+        <h1 className="font-bold text-center">Instant Pricing</h1>
+        <p className="text-sm">
+        Enjoy complete price transparency and stay within budget.
+
+
+        </p>
+      </div>
+   
+
+   
     </div>
 
     <Image src="/images/bar.png" height={200} width={1500} />
