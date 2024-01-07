@@ -92,6 +92,7 @@
   background-color: white;
   padding: 5%;
   border-radius: 10px;
+ align-items: center;
 }
 
 .less p {
@@ -110,26 +111,38 @@
   pointer-events: none;
   background: linear-gradient(to bottom, transparent, white);
 }
-
+input{
+  align-items: center;
+}
 .less .check {
   appearance: none;
   border: 1px solid black;
   padding: 0.5em;
   border-radius: 0.25em;
   cursor: pointer;
-  margin-top: 1rem;
+  margin-top: 1rem;position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .less .check::before {
   content: "Read more";
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .less .check:checked::before {
-  content: "Read less";
+  content: "Read less";  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .less p:has(+ .check:checked) {
-  max-height: none;
+  max-height: none;  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #fry{
