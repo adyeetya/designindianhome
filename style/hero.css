@@ -1339,7 +1339,7 @@ li span {
 
 /* video section style start */
 .videoBox {
-  height: 100vh;
+  height: 100%;
   position: relative;
   overflow: hidden;
   border-radius: 5rem;

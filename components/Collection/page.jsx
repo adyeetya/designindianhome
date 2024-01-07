@@ -23,6 +23,61 @@ const THIRD_IMAGE = {
   imageUrl:
     'https://source.unsplash.com/a-kitchen-with-blue-cabinets-and-a-black-refrigerator-zFGBEikZoRg',
 }
+
+
+const responsive = {
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 4,
+    slidesToSlide: 4 // optional, default to 1.
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 768 },
+    items: 3,
+    slidesToSlide: 3 // optional, default to 1.
+  },
+  mobile: {
+    breakpoint: { max: 767, min: 464 },
+    items: 2,
+    slidesToSlide: 1 // optional, default to 1.
+  }
+};
+
+
+const sliderImageUrl = [
+  //First image url
+  {
+    url:
+      "https://source.unsplash.com/black-flat-screen-tv-mounted-on-white-wall-3hEGHI4b4gg"
+  },
+  {
+    url:
+    "https://source.unsplash.com/white-wooden-kitchen-island-and-cupboard-cabinets-near-glass-panel-door-AQl-J19ocWE"
+  },
+  //Second image url
+  {
+    url:
+      "https://source.unsplash.com/white-and-black-kitchen-cabinet-jylx7bVZMIk"
+  },
+  //Third image url
+  {
+    url:
+    "https://source.unsplash.com/black-round-bowl-on-brown-wooden-seat-NWG-vYPZDoM"
+  },
+
+  //Fourth image url
+
+  {
+    url:
+      "https://source.unsplash.com/two-brown-wooden-bar-stools-cc0Gg3BegjE"
+  },
+
+{
+  url:
+    "https://source.unsplash.com/brown-and-white-wooden-kitchen-cabinet-DQpUeNzRj6s"
+  }
+];
+
 const Collection = () => {
 
 
@@ -132,17 +187,7 @@ const Collection = () => {
 
 
 
-    <Marquee style={{ backgroundColor: " yellow ", marginTop: "5%" }}>
-      <div className="marquee">
-
-
-        <h3
-
-        >Top Interior, Architectural & Modular Kitchen - Wardrobe  Brand in Delhi - NCR - India</h3>
-
-      </div>
-
-    </Marquee>
+   
 
 
     <div className="read-more mb-12">
@@ -189,7 +234,17 @@ const Collection = () => {
     </div>
 
 
+    <Marquee style={{ backgroundColor: " yellow ", marginTop: "5%" }}>
+      <div className="marquee">
 
+
+        <h3
+
+        >Top Interior, Architectural & Modular Kitchen - Wardrobe  Brand in Delhi - NCR - India</h3>
+
+      </div>
+
+    </Marquee>
 
 
 
