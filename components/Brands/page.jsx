@@ -19,9 +19,9 @@ const Brands = () => {
           </div>
         </div>
       </div>
-      <div className="wrapperlatest">
-        <h1>Our Deals</h1>
-        <h3>Affordable Luxury</h3>
+      <div className="wrapperlatesti">
+        <h1>Our Exclusive Packages</h1>
+        <h3 >The Best in Class "Tailormade" Interior Plans</h3>
       </div>
 
   

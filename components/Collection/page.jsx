@@ -127,7 +127,7 @@ const Collection = () => {
     />
 
 
-    <div className="main-hero">
+    <div className="main-hero mt-5">
       <div className="cover">
         <div className="box a">
           <h1>
@@ -164,7 +164,7 @@ const Collection = () => {
 
     <section className="outter hero-video" >
       <div
-        className='videoBox'>
+        className='videoBox mt-3'>
         <video
           loop
           autoPlay
@@ -177,7 +177,7 @@ const Collection = () => {
         />
       </div>
       <div className="callout">
-        <h3>Looking for Interiors or Modular Works</h3>
+        <h3>Looking for Interiors or Modular Works</h3><br/>
         <a className="button" href="/collections/all">
           Connect with us
         </a>
@@ -197,7 +197,7 @@ const Collection = () => {
         aria-hidden="true"
       />
   
-     {/*  <p className="read-more__text mb-2">
+      <p className="read-more__text mb-2">
         Design Indian Homes is India's top Interior, Architectural & Modular
          Interior Brand serving across Delhi, Gurgaon, Noida & NCR. It is the most
           sought out by Homemakers, Architects, Interior Designers, Developers & just anyone who needs an Affordable Interior Makeover, Renovation Services, Architectural Services, Modular Kitchen, Wardrobe, Vanities, TV Units, Living works, Bathroom Or Just a peaceful Turnkey Work by Our Team. We are serving End to End Interiors & Modular Interiors across Delhi, Gurgaon, Noida, Faridabad & across NCR.
@@ -220,11 +220,11 @@ const Collection = () => {
 
 
         <br />We have the largest Modular Interior facilities and are serving extensively with most affordable solutions for the following services : -
-        <br />Modular Kitchens * Wardrobes * TV Units * Vanities * Crockery Units * Shoe Racks * Bookshelves * Partitions * Studies & Bar Units * Mandir Units * End To End Interiors * Complete Structures * Luxury Interiors & Residences * Luxury Kitchens And Wardrobes * Italian - German - Swedish - Danish - Spanish Modular Kitchens & Wardrobes<br />We assure you 100% Guaranteed Quotes across New Delhi - NCR for any type of Interior Works, Architectural Works, renovation works, Modular Kitchens, Wardrobes,  TV units or just any Modular Works, custom interior works or architectural consultancy works. We have the most affordable modular interiors and serve all clients with perfect understanding of the requirements. <br />We also assure you to bring us any quotes and assure you flat 7% less on any offerings by any vendor across New Delhi - NCR.<br />
+       <br/> <br />Modular Kitchens * Wardrobes * TV Units * Vanities <br />* Crockery Units * Shoe Racks * Bookshelves * Partitions <br />* Studies & Bar Units * Mandir Units * End To End Interiors * Complete Structures <br />* Luxury Interiors & Residences * Luxury Kitchens And Wardrobes * Italian - German - Swedish - Danish - Spanish Modular Kitchens & Wardrobes<br /><br />We assure you 100% Guaranteed Quotes across New Delhi - NCR for any type of Interior Works, Architectural Works, renovation works, Modular Kitchens, Wardrobes,  TV units or just any Modular Works, custom interior works or architectural consultancy works. We have the most affordable modular interiors and serve all clients with perfect understanding of the requirements. <br />We also assure you to bring us any quotes and assure you flat 7% less on any offerings by any vendor across New Delhi - NCR.<br />
         Connect with the Largest Interior, Architectural, Modular Kitchens & Wardrobes Brand Across New Delhi - NCR - India.<br />We are the Top Awarded Largest manufacturers for Modular Kitchens & Wardrobes across Delhi - NCR & have been rated as the TOP Interior & Architectural  Brand by The Architectural Congress India and Real Wood Societies since 2016.<br />
 
 
-      </p> */}
+      </p> 
       <label
         htmlFor="read-more-checkbox"
         className="read-more__label"
@@ -267,17 +267,40 @@ const Collection = () => {
               </div>
             </div>
             <video loop autoPlay controls={isPlaying} src="video/lux.mp4" alt="" height={10} width={1500}
-              className="rounded shadow-md" id='seek' style={{ marginBottom: "3%" }} />
+              className="rounded shadow-md" id='seek' style={{ marginBottom: "6%" }} />
 
+<Image src="/images/bar.png" height={200} width={1500} />
+      <div className="main-hero">
+        <div className="cover">
+          <div className="box ai">
+           
+          </div>
+          <div className="box bi">
+          
+          </div>
+        </div>
+      </div>
+      <div className="wrapperlatest">
+        <h1>Our Exclusive Content</h1>
+        
+      </div>
 
-
-
-
+<video
+          loop
+          autoPlay
+          controls={isPlaying}
+          src="/video/dkivid.mp4"
+          width={1500}
+          height={550}
+          className="rounded shadow-md"
+          style={{}}
+        />
+{/* 
             <video loop autoPlay controls={isPlaying} src="video/vid21.mp4" alt="" height={10} width={1500}
               className="rounded shadow-md"
 
 
-            />
+            /> */}
           </div>
 
           <div className="md:w-1/3 mb-4" id='news'>
@@ -327,7 +350,7 @@ const Collection = () => {
 
             />
           </div>
-          <Image src="/images/bar.png" height={200} width={1500} />
+          <Image src="/images/bar.png" height={200} width={1500} style={{paddingTop:"5%", paddingBottom:"3%" }}/>
           <div className="md:w-1/2 mb-4" id='news'>
             <ReactBeforeSliderComponent
               firstImage={FIRST_IMAGE}
@@ -356,7 +379,7 @@ const Collection = () => {
 
 
 
-            <div className="wrapperlatest">
+            <div className="wrapperlatest" >
 
 
 
