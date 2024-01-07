@@ -801,7 +801,30 @@ margin-left: 10% !important;
 
 
 
+.slidering {
+  margin:0 10px;
+  overflow:"hidden";
+  padding:2rem 0;
+}
 
+.slidering img {
+  width: 360px;
+  height: 540px;
+  border-radius:10px;
+}
+
+.react-multi-carousel-list {
+padding: 0rem 0 2rem 0;
+}
+
+.custom-dot-list-style button{
+border: none;
+background: rgb(255, 68, 68);
+display: none;
+}
+.react-multi-carousel-dot.react-multi-carousel-dot--active button{
+background: rgb(255, 68, 68) !important;display: none;
+}
 
 
 * {

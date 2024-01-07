@@ -1,9 +1,64 @@
 'use client'
 import Image from 'next/image'
 import React, { useState, useEffect } from 'react';
-import Button from '../Button';
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 
-import ReactCardSlider from 'react-card-slider-component';
+const responsive = {
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 4,
+    slidesToSlide: 4 // optional, default to 1.
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 768 },
+    items: 3,
+    slidesToSlide: 3 // optional, default to 1.
+  },
+  mobile: {
+    breakpoint: { max: 767, min: 464 },
+    items: 2,
+    slidesToSlide: 1 // optional, default to 1.
+  }
+};
+
+
+const sliderImageUrl = [
+  //First image url
+  {
+    url:
+      "https://source.unsplash.com/black-flat-screen-tv-mounted-on-white-wall-3hEGHI4b4gg"
+  },
+  {
+    url:
+    "https://source.unsplash.com/white-wooden-kitchen-island-and-cupboard-cabinets-near-glass-panel-door-AQl-J19ocWE"
+  },
+  //Second image url
+  {
+    url:
+      "https://source.unsplash.com/white-and-black-kitchen-cabinet-jylx7bVZMIk"
+  },
+  //Third image url
+  {
+    url:
+    "https://source.unsplash.com/black-round-bowl-on-brown-wooden-seat-NWG-vYPZDoM"
+  },
+
+  //Fourth image url
+
+  {
+    url:
+      "https://source.unsplash.com/two-brown-wooden-bar-stools-cc0Gg3BegjE"
+  },
+
+{
+  url:
+    "https://source.unsplash.com/brown-and-white-wooden-kitchen-cabinet-DQpUeNzRj6s"
+  }
+];
+
+
+
 const Display = () => {
   const [isPlaying, setIsPlaying] = useState(false);
 
@@ -14,24 +69,67 @@ const Display = () => {
     });
   }, []);
 
-  const slides = [
-    {image:"https://source.unsplash.com/brown-wooden-seat-beside-white-wooden-table-TRCJ-87Yoh0",title:"View More"},
-    {image:"https://source.unsplash.com/white-wooden-kitchen-island-and-cupboard-cabinets-near-glass-panel-door-AQl-J19ocWE",title:"View More",},
-    {image:"https://source.unsplash.com/white-over-the-range-oven-GliaHAJ3_5A",title:"View More"},
-    {image:"https://source.unsplash.com/white-and-black-kitchen-counter-oCw5_evbWyI",title:"View More"},
-    {image:"https://source.unsplash.com/white-wooden-kitchen-cabinet-with-stainless-steel-faucet-ik9WP2V8Vas",title:"View More"},
-    {image:"https://source.unsplash.com/gray-steel-3-door-refrigerator-near-modular-kitchen-MP0bgaS_d1c",title:"View More"},
-    {image:"https://source.unsplash.com/white-and-brown-kitchen-cabinet--aDGbdTsBZg",title:"View More"},
-    {image:"https://source.unsplash.com/white-wooden-kitchen-cupboards-and-gray-gas-stove-dn5VihVxloc",title:"View More"},
-    {image:"https://source.unsplash.com/white-wooden-kitchen-cabinet-with-black-pendant-lamp-KiUg-4xmTwo",title:"View More"},
-    {image:"https://source.unsplash.com/rectangular-white-wooden-table-I_QC1JICzA0",title:"View More"},
-    {image:"https://source.unsplash.com/kitchen-island-near-gas-range-beside-base-cabinets-sZ5CteK2r6E",title:"View More"},
-    {image:"https://source.unsplash.com/a-kitchen-with-a-center-island-with-stools-_IAZoJ6X-1A",title:"View More"},
-    {image:"https://source.unsplash.com/kitchen-house-area-z3QZ6gjGRt4",title:"View More"},
-]
+
 
   return (
     <>
+      
+
+      <div className="main">
+<img src="/images/left.gif" width={50} height={50} id='sm'/>
+  
+ <svg id="rotatingText" viewBox="0 0 200 200" width={200} height={200}>
+   <defs>
+     <path
+       id="circle"
+       d="M 100, 100
+         m -75, 0
+         a 75, 75 0 1, 0 150, 0
+         a 75, 75 0 1, 0 -150, 0
+         "
+     ></path>
+   </defs>
+   <text width={400}>
+     <textPath alignmentBaseline="top" xlinkHref="#circle" className="text">
+     The Best Home Interior Brand of India -
+     </textPath>
+   </text>
+ </svg>
+</div>
+      <div className="wrapperlatest" id='rev'>
+        <h1>Best Trending Kitchens</h1>
+        
+      </div>
+
+      <div className="parent">
+      <Carousel
+        responsive={responsive}
+        autoPlay={true}
+        swipeable={true}
+        draggable={true}
+        showDots={true}
+        infinite={true}
+        partialVisible={false}
+        dotListClass="custom-dot-list-style"
+      >
+        {sliderImageUrl.map((imageUrl, index) => {
+          return (
+            <div className="slidering" key={index}>
+              <img src={imageUrl.url} alt="movie" />
+            </div>
+          );
+        })}
+      </Carousel>
+    </div>
+
+
+
+
+
+
+
+
+
       
       <div className="wrapper">
         <div className="img-areai ">
@@ -214,20 +312,7 @@ const Display = () => {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+{/* 
       <div className="main">
 <img src="/images/left.gif" width={50} height={50} id='sm'/>
   
@@ -286,7 +371,31 @@ const Display = () => {
 
     <ReactCardSlider slides={slides} />
     <br/>
-    
+     */}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     </>
 
 

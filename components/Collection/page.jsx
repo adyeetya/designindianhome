@@ -6,6 +6,10 @@ import ReactBeforeSliderComponent from 'react-before-after-slider-component'
 import 'react-before-after-slider-component/dist/build.css'
 import React, { useState, useEffect, useRef } from 'react'
 import ReactPlayer from 'react-player';
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+
+
 window.$ = window.jQuery = require('jquery')
 const FIRST_IMAGE = {
   imageUrl:
@@ -36,39 +40,39 @@ const Collection = () => {
 
 
   return (<>
-    
-
-      <div id='fry'>
-        <h3
-
-        >INDIA’S NO.1 INTERIOR & ARCHITECTURAL BRAND</h3>
-
-      </div>
 
 
-      <TypeAnimation
-        sequence={[
-          'TOP KITCHEN & CLOSE BRAND ',
-          1000, // wait 1s before replacing "Mice" with "Hamsters"
-          ' LARGEST KITCHEN DEALERS',
-          1000,
-          'MODULAR KITCHEN & CLOSET',
-          1000,
-          'LARGEST ARCHITECTURAL BRAND',
-          1000,
-          'TOP AWARDED INTERIORS',
-          1000,
+    <div id='fry'>
+      <h3
 
-          'MODULAR INTERIOR COMPANY',
-          1000,
+      >INDIA’S NO.1 INTERIOR & ARCHITECTURAL BRAND</h3>
 
-        ]}
+    </div>
 
-        style={{ fontSize: "55px" }}
-        wrapper="span"
-        speed={50}
-        repeat={Infinity}
-      />
+
+    <TypeAnimation
+      sequence={[
+        'TOP KITCHEN & CLOSE BRAND ',
+        1000, // wait 1s before replacing "Mice" with "Hamsters"
+        ' LARGEST KITCHEN DEALERS',
+        1000,
+        'MODULAR KITCHEN & CLOSET',
+        1000,
+        'LARGEST ARCHITECTURAL BRAND',
+        1000,
+        'TOP AWARDED INTERIORS',
+        1000,
+
+        'MODULAR INTERIOR COMPANY',
+        1000,
+
+      ]}
+
+      style={{ fontSize: "55px" }}
+      wrapper="span"
+      speed={50}
+      repeat={Infinity}
+    />
 
 
     <div className="main-hero">
@@ -86,87 +90,35 @@ const Collection = () => {
           IS TO DELIVER SMILES
         </div>
       </div>
-</div>
-      {/*  <div className="container mx-auto rounded-3xl ">
+    </div>
+  
 
 
 
-        <section className="newz">
-          <div className="flex flex-wrap  ">
-            <div className=" mb-4" id="news">
-              <video
-                loop
-                autoPlay
-                controls={isPlaying}
-                src="https://www.designindiankitchen.com/wp-content/themes/dkiblogs/assets/images/dkivid.mp4"
-                height={10}
-                width={1500}
-                className="rounded shadow-md"
-              />
-            </div>
-          </div>
-        </section>
 
 
-      </div> */}
-      <div className='hidden sm:flex justify-center items-center absolute'>
-        <h1 className=' bg-white text-black text-5xl font-bold px-4' style={{ zIndex: '10', marginLeft: '150px', marginTop: '350px', }}>
-          Looking for Interiors or Modular Works
-        </h1>
+    <Marquee style={{ backgroundColor: " yellow ", marginTop: "5%" }}>
+      <div className="marquee">
+
+
+        <h3
+
+        >Top Interior, Architectural & Modular Kitchen - Wardrobe  Brand in Delhi - NCR - India</h3>
 
       </div>
-      <a className='hidden sm:flex justify-center absolute text-4xl text-black font-bold hover:bg-white' href="/collections/all" style={{ zIndex: '10',marginLeft: '500px', marginTop: '420px', border: "4px solid black", padding: '2px', borderRadius: '10px' }}>
-        Connect with us
-      </a>
 
-
-
-      <section className="outter hero-video" >
-  <section className="video-container rounded-3xl" style={{height: '550px'}}>
-    <video
-      loop
-      autoPlay
-      controls={isPlaying}
-      src="/video/dkivid.mp4"
-      width={1500}
-      height={550} 
-      className="rounded shadow-md"
-      style={{ height: '550px' }}
-    ></video>
-
-    <div className="callout">
-      <h1>Looking for Interiors or Modular Works</h1>
-      <a className="button" href="/collections/all">
-        Connect with us
-      </a>
-    </div>
-  </section>
-</section>
-
-
-
-      <Marquee style={{ backgroundColor: " yellow ", marginTop: "5%" }}>
-        <div className="marquee">
-
-
-          <h3
-
-          >Top Interior, Architectural & Modular Kitchen - Wardrobe  Brand in Delhi - NCR - India</h3>
-
-        </div>
-
-      </Marquee>
+    </Marquee>
 
 
     <div className="read-more mb-12">
-  <input
-    id="read-more-checkbox"
-    type="checkbox"
-    className="read-more__checkbox"
-    aria-hidden="true"
-  />
-  <p className="read-more__text mb-2">
-  Design Indian Homes is India's top Interior, Architectural & Modular Interior Brand serving across Delhi, Gurgaon, Noida & NCR. It is the most sought out by Homemakers, Architects, Interior Designers, Developers & just anyone who needs an Affordable Interior Makeover, Renovation Services, Architectural Services, Modular Kitchen, Wardrobe, Vanities, TV Units, Living works, Bathroom Or Just a peaceful Turnkey Work by Our Team. We are serving End to End Interiors & Modular Interiors across Delhi, Gurgaon, Noida, Faridabad & across NCR.
+      <input
+        id="read-more-checkbox"
+        type="checkbox"
+        className="read-more__checkbox"
+        aria-hidden="true"
+      />
+      <p className="read-more__text mb-2">
+        Design Indian Homes is India's top Interior, Architectural & Modular Interior Brand serving across Delhi, Gurgaon, Noida & NCR. It is the most sought out by Homemakers, Architects, Interior Designers, Developers & just anyone who needs an Affordable Interior Makeover, Renovation Services, Architectural Services, Modular Kitchen, Wardrobe, Vanities, TV Units, Living works, Bathroom Or Just a peaceful Turnkey Work by Our Team. We are serving End to End Interiors & Modular Interiors across Delhi, Gurgaon, Noida, Faridabad & across NCR.
         <br /> Our Brand Design Indian Homes was established in 2007,
         we are a professional team of certified architects, interior remodelers,
         and also happen to be Largest manufacturers of Modular Kitchens, Wardrobes,
@@ -190,15 +142,15 @@ const Collection = () => {
         Connect with the Largest Interior, Architectural, Modular Kitchens & Wardrobes Brand Across New Delhi - NCR - India.<br />We are the Top Awarded Largest manufacturers for Modular Kitchens & Wardrobes across Delhi - NCR & have been rated as the TOP Interior & Architectural  Brand by The Architectural Congress India and Real Wood Societies since 2016.<br />
 
 
-  </p>
-  <label
-    htmlFor="read-more-checkbox"
-    className="read-more__label"
-    data-read-more="Read more"
-    data-read-less="See less"
-    aria-hidden="true"
-  />
-</div>
+      </p>
+      <label
+        htmlFor="read-more-checkbox"
+        className="read-more__label"
+        data-read-more="Read more"
+        data-read-less="See less"
+        aria-hidden="true"
+      />
+    </div>
 
 
 
@@ -603,6 +555,75 @@ const Collection = () => {
 
 
 
+
+
+
+
+
+
+
+    <div className="main">
+<img src="/images/left.gif" width={50} height={50} id='sm'/>
+  
+ <svg id="rotatingText" viewBox="0 0 200 200" width={200} height={200}>
+   <defs>
+     <path
+       id="circle"
+       d="M 100, 100
+         m -75, 0
+         a 75, 75 0 1, 0 150, 0
+         a 75, 75 0 1, 0 -150, 0
+         "
+     ></path>
+   </defs>
+   <text width={400}>
+     <textPath alignmentBaseline="top" xlinkHref="#circle" className="text">
+     The Best Home Interior Brand of India -
+     </textPath>
+   </text>
+ </svg>
+</div>
+      <div className="wrapperlatest" id='rev'>
+        <h1>Best Trending Wardrobes</h1>
+        
+      </div>
+
+      <div className="parent">
+      <Carousel
+        responsive={responsive}
+        autoPlay={true}
+        swipeable={true}
+        draggable={true}
+        showDots={true}
+        infinite={true}
+        partialVisible={false}
+        dotListClass="custom-dot-list-style"
+      >
+        {sliderImageUrl.map((imageUrl, index) => {
+          return (
+            <div className="slidering" key={index}>
+              <img src={imageUrl.url} alt="movie" />
+            </div>
+          );
+        })}
+      </Carousel>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <div
       className="flex flex-col items-center md:flex-row justify-center p-10 gap-6 mt-10"
       id="bg"
@@ -656,90 +677,65 @@ const Collection = () => {
 
 
 
-      <div
-        className="flex flex-col items-center md:flex-row justify-center p-10 gap-6 mt-10"
-        id="bg"
-      >
-        <h1 className="font-bold text-2xl">Stay safe. Design virtually.</h1>
-        <br />
-        <div className="text-center">
-          <Image
-            width={100}
-            height={100}
-            src="/images/icon/12.png"
-            alt=""
-            className="w-60 h-70 mx-auto"
-          />
-          <h1 className="font-bold text-center">Contactless Experience</h1>
-          <p className="text-sm">
-            No stepping out. Design your home interiors from the safety and
-            comfort of your home.
-          </p>
+        <div
+          className="flex flex-col items-center md:flex-row justify-center p-10 gap-6 mt-10"
+          id="bg"
+        >
+    
+         
+
+          <div className="text-center mt-4 md:mt-0">
+            <Image
+              width={100}
+              height={100}
+              src="/images/icon/5.png"
+              alt=""
+              className="w-60 h-70 mx-auto"
+            />
+            <h1 className="font-bold text-center">Online Expertise</h1>
+            <p className="text-sm">
+              Connect with our 600+ designers virtually and explore designs
+              online.
+            </p>
+          </div>
+
+         
+
+
+          <div className="text-center mt-4 md:mt-0">
+            <Image
+              width={100}
+              height={100}
+              src="/images/icon/2.png"
+              alt=""
+              className="w-60 h-70 mx-auto"
+            />
+            <h1 className="font-bold text-center">Instant Pricing</h1>
+            <p className="text-sm">
+              Enjoy complete price transparency and stay within budget.
+            </p>
+          </div>
         </div>
 
 
-        <div className="text-center mt-4 md:mt-0">
-          <Image
-            width={100}
-            height={100}
-            src="/images/icon/5.png"
-            alt=""
-            className="w-60 h-70 mx-auto"
-          />
-          <h1 className="font-bold text-center">Online Expertise</h1>
-          <p className="text-sm">
-            Connect with our 600+ designers virtually and explore designs
-            online.
-          </p>
-        </div>
-
-        <div className="text-center mt-4 md:mt-0">
-          <Image
-            width={100}
-            height={100}
-            src="/images/icon/1.png"
-            alt=""
-            className="w-60 h-70 mx-auto"
-          />
-          <h1 className="font-bold text-center">Live 3D Designs</h1>
-          <p className="text-sm">
-            Explore life-like 3D designs online that are made for your floor
-            plan.
-          </p>
-        </div>
-
-
-        <div className="text-center mt-4 md:mt-0">
-          <Image
-            width={100}
-            height={100}
-            src="/images/icon/2.png"
-            alt=""
-            className="w-60 h-70 mx-auto"
-          />
-          <h1 className="font-bold text-center">Instant Pricing</h1>
-          <p className="text-sm">
-            Enjoy complete price transparency and stay within budget.
-          </p>
-        </div>
+      
       </div>
-
 
       <div className="text-center mt-4 md:mt-0">
-        <Image
-          width={100}
-          height={100}
-          src="/images/icon/2.png"
-          alt=""
-          className="w-60 h-70 mx-auto"
-        />
-        <h1 className="font-bold text-center">Instant Pricing</h1>
-        <p className="text-sm">
-          Enjoy complete price transparency and stay within budget.
-        </p>
-      </div>
+            <Image
+              width={100}
+              height={100}
+              src="/images/icon/1.png"
+              alt=""
+              className="w-60 h-70 mx-auto"
+            />
+            <h1 className="font-bold text-center">Live 3D Designs</h1>
+            <p className="text-sm">
+              Explore life-like 3D designs online that are made for your floor
+              plan.
+            </p>
+          </div>
     </div>
-</div>
 
     <Image src="/images/bar.png" height={200} width={1500} />
     <div className="main-hero">
@@ -805,7 +801,7 @@ const Collection = () => {
       </div>
     </div>
 
-    
+
   </>
   )
 }
