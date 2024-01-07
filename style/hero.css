@@ -78,58 +78,62 @@
   visibility: hidden;
 }
 
-
-.more {
-  width: 100%;
+.read-more {
+  /* You can update this variable directly in the html with the style attribute: style="--line-clamp: 3" */
+  --line-clamp: 3;
+padding: 3%;
   display: flex;
-  justify-content: space-evenly;
-  align-items: start;
+  flex-direction: column;
+  align-items: center;
 }
 
-.less {
-  width: 100%;
-  max-width: 100%;
-  background-color: white;
-  padding: 5%;
-  border-radius: 10px;
-}
-
-.less p {
-  max-height: 150px;
+.read-more__text {
+  display: -webkit-box;
+  -webkit-line-clamp: var(--line-clamp);
+  -webkit-box-orient: vertical;
   overflow: hidden;
-  position: relative;
-  text-align: center;
 }
 
-.less p::before {
-  content: "";
+.read-more__checkbox {
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+  height: 1px;
+  overflow: hidden;
   position: absolute;
-  height: 20px;
-  width: 100%;
-  bottom: 0;
-  pointer-events: none;
-  background: linear-gradient(to bottom, transparent, white);
+  white-space: nowrap;
+  width: 1px;
 }
 
-.less .check {
-  appearance: none;
-  border: 1px solid black;
-  padding: 0.5em;
-  border-radius: 0.25em;
+.read-more__checkbox ~ .read-more__label {
   cursor: pointer;
-  margin-top: 1rem;
+  font-size: 1em;
+  font-weight: 700;
+ border: 1px solid #040404;
+ border-radius: 10px;
+ padding: 0.5% 2%;
+ 
 }
 
-.less .check::before {
-  content: "Read more";
+/* Don't forget focus and hover styles for accessibility! */
+.read-more__checkbox:focus ~ .read-more__label {
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
 }
 
-.less .check:checked::before {
-  content: "Read less";
+.read-more__checkbox:hover ~ .read-more__label {
+  text-decoration: none;
 }
 
-.less p:has(+ .check:checked) {
-  max-height: none;
+.read-more__checkbox ~ .read-more__label::before {
+  content: attr(data-read-more);
+}
+
+.read-more__checkbox:checked ~ .read-more__label::before {
+  content: attr(data-read-less);
+}
+
+.read-more__checkbox:checked ~ .read-more__text {
+  --line-clamp: none;
+  -webkit-line-clamp: var(--line-clamp);
 }
 
 #fry{
@@ -413,15 +417,7 @@ text-align: center;
     font-family: 'BioRhyme', serif;
   }
 
-  .hero-video .button {
-    font-size: 15px !important;
-    padding: 1% 5%;
-  }
-
-  .hero-video h1 {
-    font-size: 20px !important;
-    font-family: 'BioRhyme', serif;
-}
+  
 #sm{
 margin-left: 10% !important;
 }
@@ -1211,126 +1207,7 @@ font-size: 15px;
 .a,.b h1{
   font-family: 'BioRhyme', serif;
 }
-.main-hero {
-	
-	
-  margin: 1rem;
-}
-.hero-video .button {
-  text-transform: uppercase;
-  background-color: transparent;
- font-family: 'BioRhyme', serif !important;
-  border-radius:50px !important;
-  border:2px solid #111;
-  margin-top: 20px;
-  font-size: 21px;
-  background-color: transparent;
-  padding: 7px 15px;
-  border-radius: 0px;
-  color: #040404;
-  text-decoration: none;
-  font-weight: bold;
-}
-.hero-video h1 {
-  text-transform: uppercase;
-  margin: 0 0 1rem;
-  font-family: 'BioRhyme', serif !important;
-  padding: 1%;
-  line-height: 1;
-  font-size: 21px;
-  background-color: #ececec
-  ;
-}
-/* Hero Video */
-.outter.hero-video {
-  width: 100%;
-  height: 100%;
-  display: flex;
- padding: 0% 2%;
-  flex-direction: column;
-  justify-content: center;
-}
-.video-container{
-  border-radius: 50px;
-}
-@media (max-width: 767px) {
-  .outter.hero-video {
-    height: 325px;
-  }
- .a, .b{ padding-top: 30%;
-font-size: 10px;}
-}
-.hero-video h1 {
-  font-size: 20px !important;
-}
-.hero-video .video-container {
-  height: 550px;
-  width: 100%;
-  position: relative;
-  overflow: hidden;
- }
 
-  .hero-video .video-container {
-    height: 325px;
-  }
-
-.hero-video video {
-  -o-object-fit: cover;
-     object-fit: cover;
-  position: absolute;
-  height: 550px;
-  width: 100%;
-  top: 0;
-  left: 0;
-}
-@media (max-width: 767px) {
-  .hero-video video {
-    height: 325px;
-  }
-
-.hero-video .video-container:after {
-  content: "";
-  display: block;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-#fry{
-  padding-top: 8%;
-}
-.hero-video .desc {
-  color: white;
-  font-weight: 400;
-  font-size: 18px;
-}
-.hero-video .callout {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  height: 100%;
-  text-align: center;
-  position: relative;
-  z-index: 10;
-  width: 70%;
-  margin: auto;
-}
-
-  .hero-video .callout {
-    width: 90%;
-  }
-
-
-
-  .hero-video .button {
-    padding: 10px 20px;
-  }
-}
 
 
 @media (max-width:380px) {
@@ -1344,15 +1221,7 @@ font-size: 10px;}
     font-family: 'BioRhyme', serif;
   }
 
-  .hero-video .button {
-    font-size: 10px !important;
-    padding: 1% 5%;
-  }
-
-  .hero-video h1 {
-    font-size: 15px;
-    font-family: 'BioRhyme', serif;
-}
+  
 
 .single-img {
   height: 320px;
@@ -1374,10 +1243,3 @@ font-size: 10px;}
 
 
 
-
-
-.hero-video .button:hover {
-  cursor: pointer;
-  background-color: #0b0b0a;
-  color: #ccc;
-}

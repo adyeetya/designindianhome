@@ -130,15 +130,15 @@ const Collection = () => {
 
 
 
-
-
-
-
-
-
-    <div class="more">
-      <div class="less">
-        Design Indian Homes is India's top Interior, Architectural & Modular Interior Brand serving across Delhi, Gurgaon, Noida & NCR. It is the most sought out by Homemakers, Architects, Interior Designers, Developers & just anyone who needs an Affordable Interior Makeover, Renovation Services, Architectural Services, Modular Kitchen, Wardrobe, Vanities, TV Units, Living works, Bathroom Or Just a peaceful Turnkey Work by Our Team. We are serving End to End Interiors & Modular Interiors across Delhi, Gurgaon, Noida, Faridabad & across NCR.
+    <div className="read-more mb-12">
+  <input
+    id="read-more-checkbox"
+    type="checkbox"
+    className="read-more__checkbox"
+    aria-hidden="true"
+  />
+  <p className="read-more__text mb-2">
+  Design Indian Homes is India's top Interior, Architectural & Modular Interior Brand serving across Delhi, Gurgaon, Noida & NCR. It is the most sought out by Homemakers, Architects, Interior Designers, Developers & just anyone who needs an Affordable Interior Makeover, Renovation Services, Architectural Services, Modular Kitchen, Wardrobe, Vanities, TV Units, Living works, Bathroom Or Just a peaceful Turnkey Work by Our Team. We are serving End to End Interiors & Modular Interiors across Delhi, Gurgaon, Noida, Faridabad & across NCR.
         <br /> Our Brand Design Indian Homes was established in 2007,
         we are a professional team of certified architects, interior remodelers,
         and also happen to be Largest manufacturers of Modular Kitchens, Wardrobes,
@@ -162,10 +162,21 @@ const Collection = () => {
         Connect with the Largest Interior, Architectural, Modular Kitchens & Wardrobes Brand Across New Delhi - NCR - India.<br />We are the Top Awarded Largest manufacturers for Modular Kitchens & Wardrobes across Delhi - NCR & have been rated as the TOP Interior & Architectural  Brand by The Architectural Congress India and Real Wood Societies since 2016.<br />
 
 
+  </p>
+  <label
+    htmlFor="read-more-checkbox"
+    className="read-more__label"
+    data-read-more="Read more"
+    data-read-less="See less"
+    aria-hidden="true"
+  />
+</div>
 
-      </div>
 
-    </div>
+
+
+
+
 
 
 
