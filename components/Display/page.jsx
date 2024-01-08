@@ -105,6 +105,11 @@ const Display = () => {
 
 
 
+<div className="wrapperlatest ">
+        <h1 >Exquisite Designs</h1>
+        <h3> Exquisite Makeovers</h3>
+      </div>
+
 
       
       <div className="wrapper">
