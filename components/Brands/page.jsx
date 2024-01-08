@@ -21,7 +21,7 @@ const Brands = () => {
       </div>
       <div className="wrapperlatesti">
         <h1>Our Exclusive Packages</h1>
-        <h3 >The Best in Class &#34Tailormade&#34 Interior Plans</h3>
+        <h3 >The Best in Class &#34; Tailormade &#34; Interior Plans</h3>
       </div>
 
   
