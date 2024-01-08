@@ -96,31 +96,7 @@ const Display = () => {
    </text>
  </svg>
 </div>
-      <div className="wrapperlatest" id='rev'>
-        <h1>Best Trending Kitchens</h1>
-        
-      </div>
-
-      <div className="parent">
-      <Carousel
-        responsive={responsive}
-        autoPlay={true}
-        swipeable={true}
-        draggable={true}
-        showDots={true}
-        infinite={true}
-        partialVisible={false}
-        dotListClass="custom-dot-list-style"
-      >
-        {sliderImageUrl.map((imageUrl, index) => {
-          return (
-            <div className="slidering" key={index}>
-              <img src={imageUrl.url} alt="movie" />
-            </div>
-          );
-        })}
-      </Carousel>
-    </div>
+   
 
 
 
