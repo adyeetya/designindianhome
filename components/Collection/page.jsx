@@ -41,9 +41,108 @@ const responsive = {
     slidesToSlide: 1 // optional, default to 1.
   }
 };
+const StructureImageUrl = [
+  //First image url
+  {
+    url:
+      "https://source.unsplash.com/black-flat-screen-tv-mounted-on-white-wall-3hEGHI4b4gg"
+  },
+  {
+    url:
+    "https://source.unsplash.com/white-wooden-kitchen-island-and-cupboard-cabinets-near-glass-panel-door-AQl-J19ocWE"
+  },
+  //Second image url
+  {
+    url:
+      "https://source.unsplash.com/white-and-black-kitchen-cabinet-jylx7bVZMIk"
+  },
+  //Third image url
+  {
+    url:
+    "https://source.unsplash.com/black-round-bowl-on-brown-wooden-seat-NWG-vYPZDoM"
+  },
 
+  //Fourth image url
 
-const sliderImageUrl = [
+  {
+    url:
+      "https://source.unsplash.com/two-brown-wooden-bar-stools-cc0Gg3BegjE"
+  },
+
+{
+  url:
+    "https://source.unsplash.com/brown-and-white-wooden-kitchen-cabinet-DQpUeNzRj6s"
+  }
+];
+const KitchenImageUrl = [
+  //First image url
+  {
+    url:
+      "https://source.unsplash.com/black-flat-screen-tv-mounted-on-white-wall-3hEGHI4b4gg"
+  },
+  {
+    url:
+    "https://source.unsplash.com/white-wooden-kitchen-island-and-cupboard-cabinets-near-glass-panel-door-AQl-J19ocWE"
+  },
+  //Second image url
+  {
+    url:
+      "https://source.unsplash.com/white-and-black-kitchen-cabinet-jylx7bVZMIk"
+  },
+  //Third image url
+  {
+    url:
+    "https://source.unsplash.com/black-round-bowl-on-brown-wooden-seat-NWG-vYPZDoM"
+  },
+
+  //Fourth image url
+
+  {
+    url:
+      "https://source.unsplash.com/two-brown-wooden-bar-stools-cc0Gg3BegjE"
+  },
+
+{
+  url:
+    "https://source.unsplash.com/brown-and-white-wooden-kitchen-cabinet-DQpUeNzRj6s"
+  }
+];
+
+const InteriorImageUrl = [
+  //First image url
+  {
+    url:
+      "https://source.unsplash.com/black-flat-screen-tv-mounted-on-white-wall-3hEGHI4b4gg"
+  },
+  {
+    url:
+    "https://source.unsplash.com/white-wooden-kitchen-island-and-cupboard-cabinets-near-glass-panel-door-AQl-J19ocWE"
+  },
+  //Second image url
+  {
+    url:
+      "https://source.unsplash.com/white-and-black-kitchen-cabinet-jylx7bVZMIk"
+  },
+  //Third image url
+  {
+    url:
+    "https://source.unsplash.com/black-round-bowl-on-brown-wooden-seat-NWG-vYPZDoM"
+  },
+
+  //Fourth image url
+
+  {
+    url:
+      "https://source.unsplash.com/two-brown-wooden-bar-stools-cc0Gg3BegjE"
+  },
+
+{
+  url:
+    "https://source.unsplash.com/brown-and-white-wooden-kitchen-cabinet-DQpUeNzRj6s"
+  }
+];
+
+const WardrobeImageUrl = [
   //First image url
   {
     url:
@@ -478,30 +577,7 @@ const Collection = () => {
       </div>
     </div>
 
-    <div className="main">
-
-      <svg id="rotatingText" viewBox="0 0 200 200" width={200} height={200}>
-        <defs>
-          <path
-            id="circle"
-            d="M 100, 100
-         m -75, 0
-         a 75, 75 0 1, 0 150, 0
-         a 75, 75 0 1, 0 -150, 0
-         "
-          ></path>
-        </defs>
-        <text width={400}>
-          <textPath
-            alignmentBaseline="top"
-            xlinkHref="#circle"
-            className="text"
-          >
-            The Best Home Interior Brand of India -
-          </textPath>
-        </text>
-      </svg>
-    </div>
+   
 
 
 
@@ -579,33 +655,35 @@ const Collection = () => {
 
 
 
-
-
-
-
-
     <div className="main">
-  
- <svg id="rotatingText" viewBox="0 0 200 200" width={200} height={200}>
-   <defs>
-     <path
-       id="circle"
-       d="M 100, 100
-         m -75, 0
-         a 75, 75 0 1, 0 150, 0
-         a 75, 75 0 1, 0 -150, 0
-         "
-     ></path>
-   </defs>
-   <text width={400}>
-     <textPath alignmentBaseline="top" xlinkHref="#circle" className="text">
-     The Best Home Interior Brand of India -
-     </textPath>
-   </text>
- </svg>
+
+<svg id="rotatingText" viewBox="0 0 200 200" width={200} height={200}>
+  <defs>
+    <path
+      id="circle"
+      d="M 100, 100
+   m -75, 0
+   a 75, 75 0 1, 0 150, 0
+   a 75, 75 0 1, 0 -150, 0
+   "
+    ></path>
+  </defs>
+  <text width={400}>
+    <textPath
+      alignmentBaseline="top"
+      xlinkHref="#circle"
+      className="text"
+    >
+      The Best Home Interior Brand of India -
+    </textPath>
+  </text>
+</svg>
 </div>
-      <div className="wrapperlatest" id='rev'>
-        <h1>Best Trending Wardrobes</h1>
+
+
+
+      <div className="wrapperlatest ">
+        <h1 >Best Trending Kitchens</h1>
         
       </div>
 
@@ -620,7 +698,7 @@ const Collection = () => {
         partialVisible={false}
         dotListClass="custom-dot-list-style"
       >
-        {sliderImageUrl.map((imageUrl, index) => {
+        {KitchenImageUrl.map((imageUrl, index) => {
           return (
             <div className="slidering" key={index}>
               <img src={imageUrl.url} alt="movie" />
@@ -628,13 +706,94 @@ const Collection = () => {
           );
         })}
       </Carousel>
+      <div className="flex justify-center items-center "><button className=' bg-green-700 text-lg py-3 px-3 mb-12 rounded-full text-white  font-bold '>Check Out More From Our Collections</button>
+     </div> 
+    </div>
+
+   
+    <div className="wrapperlatest ">
+        <h1 >Best Trending Wardrobes</h1>
+        
+      </div>
+
+      <div className="parent">
+      <Carousel
+        responsive={responsive}
+        autoPlay={true}
+        swipeable={true}
+        draggable={true}
+        showDots={true}
+        infinite={true}
+        partialVisible={false}
+        dotListClass="custom-dot-list-style"
+      >
+        {WardrobeImageUrl.map((imageUrl, index) => {
+          return (
+            <div className="slidering" key={index}>
+              <img src={imageUrl.url} alt="kitchen" />
+            </div>
+          );
+        })}
+      </Carousel>
+      <div className="flex justify-center items-center "><button className=' bg-green-700 text-lg py-3 px-3 mb-12 rounded-full text-white  font-bold '>Check Out More From Our Collections</button>
+     </div> 
     </div>
 
 
+    <div className="wrapperlatest ">
+        <h1 >Best Trending Interiors</h1>
+        
+      </div>
 
+      <div className="parent">
+      <Carousel
+        responsive={responsive}
+        autoPlay={true}
+        swipeable={true}
+        draggable={true}
+        showDots={true}
+        infinite={true}
+        partialVisible={false}
+        dotListClass="custom-dot-list-style"
+      >
+        {InteriorImageUrl.map((imageUrl, index) => {
+          return (
+            <div className="slidering" key={index}>
+              <img src={imageUrl.url} alt="kitchen" />
+            </div>
+          );
+        })}
+      </Carousel> <div className="flex justify-center items-center "><button className=' bg-green-700 text-lg py-3 px-3 mb-12 rounded-full text-white  font-bold '>Check Out More From Our Collections</button>
+     </div> 
+    </div>
 
+    <div className="wrapperlatest ">
+        <h1 >Best Trending Structures</h1>
+        
+      </div>
 
-
+      <div className="parent">
+      <Carousel
+        responsive={responsive}
+        autoPlay={true}
+        swipeable={true}
+        draggable={true}
+        showDots={true}
+        infinite={true}
+        partialVisible={false}
+        dotListClass="custom-dot-list-style"
+      >
+        {StructureImageUrl.map((imageUrl, index) => {
+          return (
+            <div className="slidering" key={index}>
+              <img src={imageUrl.url} alt="kitchen" />
+            </div>
+          );
+        })}
+      </Carousel>
+     <div className="flex justify-center items-center "><button className=' bg-green-700 text-lg py-3 px-3 mb-12 rounded-full text-white  font-bold '>Check Out More From Our Collections</button>
+     </div> 
+</div>
 
 
 
@@ -653,9 +812,11 @@ const Collection = () => {
       <br />
       <div className="text-center">
         <Image
-          width={100}
-          height={100}
-          src="/images/icon/12.png"
+          width={0}
+          height={0}
+          sizes="100vw"
+          style={{ width: '40%', height: 'auto' }}
+          src="/images/icon/working.png"
           alt=""
           className="w-60 h-70 mx-auto"
         />
@@ -667,25 +828,14 @@ const Collection = () => {
       </div>
 
 
+      
       <div className="text-center mt-4 md:mt-0">
         <Image
-          width={100}
-          height={100}
-          src="/images/icon/5.png"
-          alt=""
-          className="w-60 h-70 mx-auto"
-        />
-        <h1 className="font-bold text-center">Online Expertise</h1>
-        <p className="text-sm">
-          Connect with our 600+ designers virtually and explore designs
-          online.
-        </p>
-      </div>
-      <div className="text-center mt-4 md:mt-0">
-        <Image
-          width={100}
-          height={100}
-          src="/images/icon/1.png"
+         width={0}
+         height={0}
+         sizes="100vw"
+         style={{ width: '50%', height: 'auto' }}
+          src="/images/icon/interior-design.png"
           alt=""
           className="w-60 h-70 mx-auto"
         />
@@ -697,9 +847,27 @@ Explore life-like 3D designs online that are made for your floor plan.
       </div>
       <div className="text-center mt-4 md:mt-0">
         <Image
-          width={100}
-          height={100}
-          src="/images/icon/2.png"
+         width={0}
+         height={0}
+         sizes="100vw"
+         style={{ width: '50%', height: 'auto' }}
+          src="/images/icon/badge.png"
+          alt=""
+          className="w-60 h-70 mx-auto"
+        />
+        <h1 className="font-bold text-center">Online Expertise</h1>
+        <p className="text-sm">
+          Connect with our 600+ designers virtually and explore designs
+          online.
+        </p>
+      </div>
+      <div className="text-center mt-4 md:mt-0">
+        <Image
+         width={0}
+         height={0}
+         sizes="100vw"
+         style={{ width: '65%', height: 'auto' }}
+          src="/images/icon/payment.png"
           alt=""
           className="w-60 h-70 mx-auto"
         />
@@ -734,8 +902,7 @@ Explore life-like 3D designs online that are made for your floor plan.
       <div className="slide-track">
         <div className="slide">
           <Image src="/images/vedh.png" height={300} width={300} alt="" />
-          <p>hi zswedrtygfcv</p>
-          <button>click me</button>
+        
         </div>
         <div className="slide">
           <Image src="/images/vedh.png" height={300} width={300} alt="" />

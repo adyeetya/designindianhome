@@ -145,16 +145,59 @@ const Brands = () => {
         <h1>Why We Deliver Inspiring Interiors</h1>
         
       </div>
-<div className="body">
-      <ul className="smol-flexbox-grid">
-  <li>Since <br/><span>2004</span></li>
-  <li>Premium<br/><span> Materials</span></li>
-  <li>10 Years <br/> <span>Warranty</span></li>
-  <li>Completion  <br/> <span>45 Years</span></li>
-  <li>Furnishing  <br/><span>200 Homes/Month</span></li>
-  <li>Lifelong <br/><span> Service Supplier</span></li>
-</ul>
+
+      <div className="key-container">
+  <div data-key={65}>
+    <span>
+      <kbd>Since</kbd>2004
+    </span>
+  </div>
+  <div data-key={83}>
+    <span>
+      <kbd>Premium
+</kbd>Materials
+    </span>
+  </div>
+  <div data-key={68}>
+    <span>
+      <kbd>10 Years
+</kbd>
+Warranty
+    </span>
+  </div>
+  <div data-key={70}>
+    <span>
+      <kbd> Completion</kbd>
+45 Years
+    </span>
+  </div>
+  <div data-key={71}>
+    <span>
+      <kbd>Furnishing</kbd>
+200 Homes/MTH
+    </span>
+  </div>
+  <div data-key={72}>
+    <span>
+      <kbd>Lifelong</kbd>
+Service Supplier
+    </span>
+  </div>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
     </>
   )
