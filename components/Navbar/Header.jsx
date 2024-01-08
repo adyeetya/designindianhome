@@ -764,7 +764,7 @@ const Header = () => {
       <div className='flex'>
         <div class >
           <ul className='text-sm 	font-bold pr-12'>
-            <h3 className='text-lg'>Renovation</h3>
+            <h3 className='text-lg'> <Link href="/components/modular"> Renovation</Link></h3> 
             <h3 className='text-lg'> Book a Virtual Meeting</h3>
             <h3 className='text-lg'> About Us</h3>
             <h3 className='text-lg'>The Team</h3>
