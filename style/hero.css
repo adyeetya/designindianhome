@@ -460,9 +460,8 @@
 
   #fry {
     padding-top: 80px;
-
-   
   }
+
 }
 
 @media (max-width:500px) {
@@ -492,8 +491,18 @@
     padding: 0% 5%;
    
   }
-
-
+  .key-container > div > span {
+    height: 140px !important;
+    width: 140px !important;
+  }
+  .key-container > div {
+    width: 140px !important;
+    height: 140px !important;
+    font-size: 11px !important;
+}
+.key-container > div > span > kbd {
+  font-size: 18px !important;
+}
   #sm {
     margin-left: 10% !important;
   }
@@ -1520,6 +1529,9 @@ section.outter.hero-video {
   font-size: 18px;
   color: #fff;
   transiton: all 0.07s;
+}
+.key-container > div:hover {
+  background-color: #408f13e1;
 }
 .key-container > div > span {
   display: table-cell;
