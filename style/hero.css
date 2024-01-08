@@ -1473,11 +1473,17 @@ section.outter.hero-video {
   .callout h3 {
     font-size: 2rem !important;
   }
+  .mainz h1{
+    font-size: 18px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
   .video-box {
     height: auto;
+  }
+  .mainz h1{
+    font-size: 18px;
   }
   #bg {
     display: none;

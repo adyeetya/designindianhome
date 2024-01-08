@@ -297,7 +297,7 @@ const Collection = () => {
       />
   
       <p className="read-more__text mb-2">
-        Design Indian Homes is India's top Interior, Architectural & Modular
+        Design Indian Homes is India&#39;s top Interior, Architectural & Modular
          Interior Brand serving across Delhi, Gurgaon, Noida & NCR. It is the most
           sought out by Homemakers, Architects, Interior Designers, Developers & just anyone who needs an Affordable Interior Makeover, Renovation Services, Architectural Services, Modular Kitchen, Wardrobe, Vanities, TV Units, Living works, Bathroom Or Just a peaceful Turnkey Work by Our Team. We are serving End to End Interiors & Modular Interiors across Delhi, Gurgaon, Noida, Faridabad & across NCR.
         <br /> Our Brand Design Indian Homes was established in 2007,
