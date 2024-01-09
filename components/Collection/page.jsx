@@ -898,8 +898,86 @@ Explore life-like 3D designs online that are made for your floor plan.
     </div>
 
     <div className="wrapperlatest">
-      <h1>Brands you will find in our products</h1>
+      <h1>Our Corporate presence</h1>
+      <h3></h3>
     </div>
+    <div className="slider">
+      <div className="slide-track">
+        <div className="slide">
+          <Image src="/images/vedh.png" height={300} width={300} alt="" />
+        
+        </div>
+        <div className="slide">
+          <Image src="/images/vedh.png" height={300} width={300} alt="" />
+        </div>
+        <div className="slide">
+          <Image src="/images/vedh.png" height={300} width={300} alt="" />
+        </div>
+        <div className="slide">
+          <Image src="/images/vedh.png" height={300} width={300} alt="" />
+        </div>
+        <div className="slide">
+          <Image src="/images/vedh.png" height={300} width={300} alt="" />
+        </div>
+        <div className="slide">
+          <Image src="/images/vedh.png" height={300} width={300} alt="" />
+        </div>
+        <div className="slide">
+          <Image src="/images/vedh.png" height={300} width={300} alt="" />
+        </div>
+        <div className="slide">
+          <Image src="/images/vedh.png" height={300} width={300} alt="" />
+        </div>
+        <div className="slide">
+          <Image src="/images/vedh.png" height={300} width={300} alt="" />
+        </div>
+        <div className="slide">
+          <Image src="/images/vedh.png" height={300} width={300} alt="" />
+        </div>
+        <div className="slide">
+          <Image src="/images/vedh.png" height={300} width={300} alt="" />
+        </div>
+        <div className="slide">
+          <Image src="/images/vedh.png" height={300} width={300} alt="" />
+        </div>
+        <div className="slide">
+          <Image src="/images/vedh.png" height={300} width={300} alt="" />
+        </div>
+        <div className="slide">
+          <Image src="/images/vedh.png" height={300} width={300} alt="" />
+        </div>
+      </div>
+    </div>
+    <div className="main">
+
+<svg id="rotatingText" viewBox="0 0 200 200" width={200} height={200}>
+  <defs>
+    <path
+      id="circle"
+      d="M 100, 100
+   m -75, 0
+   a 75, 75 0 1, 0 150, 0
+   a 75, 75 0 1, 0 -150, 0
+   "
+    ></path>
+  </defs>
+  <text width={400}>
+    <textPath
+      alignmentBaseline="top"
+      xlinkHref="#circle"
+      className="text"
+    >
+      The Best Home Interior Brand of India -
+    </textPath>
+  </text>
+</svg>
+</div>
+
+<div className="wrapperlatest">
+      <h1>Brands you will find in our products</h1>
+      <h3></h3>
+    </div>
+   
     <div className="slider">
       <div className="slide-track">
         <div className="slide">

@@ -614,7 +614,7 @@
 }
 
 .slider--proportional-4x3 .slider__inner {
-  padding-top: 75%;
+  padding-top: 75
 }
 
 .slider--proportional-5x4 .slider__inner {
@@ -847,12 +847,11 @@
 
 .slider {
   background: white;
-  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
-  height: 100px;
+  
   margin: auto;
   overflow: hidden;
   position: relative;
-  width: 100%;
+  
 }
 
 .slider::before,
@@ -884,8 +883,9 @@
 }
 
 .slider .slide {
-  height: 100px;
-  width: 250px;
+  height: 100%;
+  width: auto;
+  margin-left: 1%;
 }
 
 
