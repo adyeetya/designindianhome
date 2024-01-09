@@ -967,7 +967,7 @@ Explore life-like 3D designs online that are made for your floor plan.
       xlinkHref="#circle"
       className="text"
     >
-      The Best Home Interior Brand of India -
+     No.1 Architectural Brand in India 
     </textPath>
   </text>
 </svg>

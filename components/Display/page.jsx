@@ -91,8 +91,7 @@ const Display = () => {
    </defs>
    <text width={400}>
      <textPath alignmentBaseline="top" xlinkHref="#circle" className="text">
-     The Best Home Interior Brand of India -
-     </textPath>
+     Get Your Home Interior Quote    </textPath>
    </text>
  </svg>
 </div>
