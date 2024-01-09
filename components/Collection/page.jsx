@@ -706,7 +706,7 @@ const Collection = () => {
           );
         })}
       </Carousel>
-      <div className="flex justify-center items-center "><button className=' bg-green-700 text-lg py-3 px-3 mb-12 rounded-full text-white  font-bold '>Check Out More From Our Collections</button>
+      <div className="flex justify-center items-center "><button className=' bg-green-700 text-lg py-3 px-3 mb-12 rounded-full text-white  font-bold '>Check Out Our Collections</button>
      </div> 
     </div>
 
@@ -735,7 +735,7 @@ const Collection = () => {
           );
         })}
       </Carousel>
-      <div className="flex justify-center items-center "><button className=' bg-green-700 text-lg py-3 px-3 mb-12 rounded-full text-white  font-bold '>Check Out More From Our Collections</button>
+      <div className="flex justify-center items-center "><button className=' bg-green-700 text-lg py-3 px-3 mb-12 rounded-full text-white  font-bold '>Check Out Our Collections</button>
      </div> 
     </div>
 
@@ -765,7 +765,7 @@ const Collection = () => {
         })}
       </Carousel>
       
-       <div className="flex justify-center items-center "><button className=' bg-green-700 text-lg py-3 px-3 mb-12 rounded-full text-white  font-bold '>Check Out More From Our Collections</button>
+       <div className="flex justify-center items-center "><button className=' bg-green-700 text-lg py-3 px-3 mb-12 rounded-full text-white  font-bold '>Check Out Our Collections</button>
      </div> 
     </div>
 
@@ -793,7 +793,7 @@ const Collection = () => {
           );
         })}
       </Carousel>
-     <div className="flex justify-center items-center "><button className=' bg-green-700 text-lg py-3 px-3 mb-12 rounded-full text-white  font-bold '>Check Out More From Our Collections</button>
+     <div className="flex justify-center items-center "><button className=' bg-green-700 text-lg py-3 px-3 mb-12 rounded-full text-white  font-bold '>Check Out Our Collections</button>
      </div> 
 </div>
 
