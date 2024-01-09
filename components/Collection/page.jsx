@@ -656,7 +656,7 @@ const Collection = () => {
 
 
     <div className="main">
-
+    <img src="/images/left.gif" width={50} height={50} />
 <svg id="rotatingText" viewBox="0 0 200 200" width={200} height={200}>
   <defs>
     <path
@@ -949,7 +949,7 @@ Explore life-like 3D designs online that are made for your floor plan.
       </div>
     </div>
     <div className="main">
-
+    <img src="/images/left.gif" width={50} height={50} />
 <svg id="rotatingText" viewBox="0 0 200 200" width={200} height={200}>
   <defs>
     <path
