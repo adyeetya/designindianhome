@@ -315,11 +315,18 @@
     display: none;
   }
 
-
+  .mainz h1{
+    font-size: 18px !important;
+  }
   #content {
     margin: 0px !important;
   }
-
+  .main {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    margin-right: 54%;
+  }
 
 }
 
@@ -545,6 +552,13 @@
     width: 100px;
     padding: 0px;
     margin: 0px;
+  }
+  .mainz h1{
+    font-size: 18px !important;
+  }
+  .main {
+   
+    margin-right: 53% !important;
   }
 }
 
@@ -1418,7 +1432,12 @@ li span {
     padding-left: 10% !important;
     font-weight: 900;
   }
-
+  .main {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    margin-right: 54%;
+  }
 
 }
 
@@ -1492,7 +1511,7 @@ section.outter.hero-video {
     height: auto;
   }
   .mainz h1{
-    font-size: 18px;
+    font-size: 18px !important;
   }
   #bg {
     display: none;
