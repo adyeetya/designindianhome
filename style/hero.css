@@ -6,6 +6,15 @@
   font-weight: 600;
 }
 
+.run{
+font-size: 7rem;
+font-weight: 700;
+line-height: 1.3;
+padding: 4% 10%;
+}
+.button2{
+font-size: 1.4rem;
+}
 #second{
   margin-top: -10px !important;
 }
@@ -314,7 +323,9 @@
   } #bg {
     display: none;
   }
-
+.run {
+  font-size: 4rem;
+}
   .mainz h1{
     font-size: 18px !important;
   }
@@ -476,7 +487,13 @@
     padding: 0px;
     margin: 0px;
   }
-
+.run{
+  font-size: 2rem;
+}
+.button2{
+  font-size: 0.8rem;
+  
+}
   .videoBox{
     border-radius: 20px !important;
   }
