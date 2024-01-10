@@ -338,7 +338,7 @@ font-size: 1.4rem;
     justify-items: center;
     margin-right: 54%;
   }
-
+ 
 }
 
 #rem {
@@ -420,7 +420,7 @@ font-size: 1.4rem;
     padding: 1rem;
     margin: 20px 0;
   }
-
+ 
 }
 
 
@@ -431,6 +431,8 @@ font-size: 1.4rem;
   #bg {
     display: none;
   }
+
+  
   #fry {
     font-size: 22px !important;
    
@@ -1108,7 +1110,7 @@ background: rgb(255, 68, 68) !important;display: none;
   }
   .slidering img{
     height: 300px;
-  }
+  } 
 }
 
 div#comparison {
@@ -1419,7 +1421,9 @@ li span {
  .a h1{
   font-size: 10px;
 }
-
+.jiu{
+  display: none;
+}
 
 [class*=smol]:not([data-component])>*:not([data-unstyled]) {
   padding: 5rem;
@@ -1510,7 +1514,7 @@ section.outter.hero-video {
   .callout a {
     font-size: 1rem;
   }
-
+ 
   .callout h3 {
     font-size: 2rem !important;
   }
@@ -1576,4 +1580,15 @@ section.outter.hero-video {
 .key-container > div > span > kbd {
   display: block;font-size: 25px;
 }
-
+.slider-card-description{
+  font-size: 15px;
+ color: #000 !important;
+}
+.slider-card-title {
+ font-size:10px ; color: #1d1c1c  !important;
+}
+@media  (min-width: 1000px) and (max-width:3500px) {
+  .jiu-mob{display:none}
+}@media  (min-width: 200px) and (max-width:1000px) {
+  .jiu{display:none}
+}
