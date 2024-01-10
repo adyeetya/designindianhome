@@ -132,8 +132,8 @@ const Display = () => {
       </div>
 
 
-
-      <Image src="/images/bar.png" height={200} width={1500} />
+      <section class="bordered bordersec">
+ </section>
       <div className="gridz">
         <article className="mainz">
           <h1>ABOUT US</h1>

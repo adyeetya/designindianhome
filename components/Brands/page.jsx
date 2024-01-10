@@ -32,8 +32,8 @@ const Brands = () => {
   return (
     <>
 
-
-      <Image src="/images/bar.png" height={200} width={1500} />
+<section class="bordered bordersec">
+ </section>
       <div className="main-hero">
         <div className="cover">
           <div className="box ai">
@@ -162,7 +162,8 @@ const Brands = () => {
 
 
 
-      <Image src="/images/bar.png" height={200} width={1500} />
+<section class="bordered bordersec">
+ </section>
       <div className="main-hero">
         <div className="cover">
           <div className="box ai">

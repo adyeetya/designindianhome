@@ -1589,6 +1589,29 @@ section.outter.hero-video {
 }
 @media  (min-width: 1000px) and (max-width:3500px) {
   .jiu-mob{display:none}
-}@media  (min-width: 200px) and (max-width:1000px) {
+}
+
+@media  (min-width: 200px) and (max-width:1000px) {
   .jiu{display:none}
+}
+
+section.bordersec{
+  border-top:1px solid #e34603;
+ position: relative;
+margin-top: 5%;
+}
+section.bordersec::after {
+  content: '';
+  position: absolute;
+  top: -135px;
+  left: 50%;
+  transform: translate(-50%, 0%) !important;
+  -moz-transform: translate(-50%, 0%);
+  -webkit-transform: translate(-50%, 0%);
+  display: block;
+  width: 100px;
+  height: 242px;
+  background: url(../public/images/vyu.png) no-repeat 0px center;
+  background-size: 100%;
+  z-index: 1;
 }

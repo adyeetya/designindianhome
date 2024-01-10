@@ -10,6 +10,8 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
 
+
+
 const FIRST_IMAGE = {
   imageUrl:
     'https://source.unsplash.com/a-kitchen-with-blue-cabinets-and-a-black-refrigerator-zFGBEikZoRg',
@@ -17,10 +19,6 @@ const FIRST_IMAGE = {
 const SECOND_IMAGE = {
   imageUrl:
     'https://source.unsplash.com/a-ladder-and-buckets-of-paint-in-a-room-under-construction-XXanshmt5so',
-}
-const THIRD_IMAGE = {
-  imageUrl:
-    'https://source.unsplash.com/a-kitchen-with-blue-cabinets-and-a-black-refrigerator-zFGBEikZoRg',
 }
 
 
@@ -191,7 +189,7 @@ const Collection = () => {
     })
   }, []);
 
-
+ 
   return (<>
 
 
@@ -353,8 +351,8 @@ const Collection = () => {
       <section className="newz">
         <div className="flex flex-wrap  ">
           <div className=" mb-4" id='news'>
-            <Image src="/images/bar.png" height={200} width={1500} />
-
+          <section class="bordered bordersec">
+ </section>
             <div className="main-hero">
               <div className="cover">
                 <div className="box ai">
@@ -367,8 +365,8 @@ const Collection = () => {
             </div>
             <video loop autoPlay controls={isPlaying} src="video/lux.mp4" alt="" height={10} width={1500}
               className="rounded shadow-md" id='seek' style={{ marginBottom: "6%" }} />
-
-<Image src="/images/bar.png" height={200} width={1500} />
+<section class="bordered bordersec">
+ </section>
       <div className="main-hero">
         <div className="cover">
           <div className="box ai">
@@ -449,17 +447,16 @@ const Collection = () => {
 
             />
           </div>
-          <Image src="/images/bar.png" height={200} width={1500} style={{paddingTop:"5%", paddingBottom:"3%" }}/>
-          <div className="md:w-1/2 mb-4" id='news'>
+             <div className="md:w-1/2 mb-4" id='news'>
             <ReactBeforeSliderComponent
               firstImage={FIRST_IMAGE}
               secondImage={SECOND_IMAGE}
-              thirdImage={THIRD_IMAGE}
+              
             />
           </div>
           <div className="md:w-1/2 px-16" id='news'>
 
-            <div className="main-hero">
+          {/*   <div className="main-hero">
               <div className="cover">
                 <div className="box ai">
 
@@ -469,7 +466,7 @@ const Collection = () => {
                 </div>
               </div>
             </div>
-
+ */}
 
 
 
@@ -485,15 +482,30 @@ const Collection = () => {
 
               <h1>Before And After</h1>
               <h3>Affordable Luxury</h3>
-              <p>We often use collective nouns to refer to groups of people. Examples: team, gang, squad, army, jury, clergy, cult, crew.</p>
+              <p className='px-6 py-4'>We often use collective nouns to refer to groups of people. Examples: team, gang, squad, army, jury, clergy, cult, crew.</p>
             </div>
           </div>
         </div>
       </section>
     </div>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
-   
+
+
 
     <div className="containr">
       <h1>Why Design Indian Homes?</h1>
@@ -580,8 +592,8 @@ const Collection = () => {
    
 
 
-
-    <Image src="/images/bar.png" height={200} width={1500} />
+    <section class="bordered bordersec">
+ </section>
     <div className="main-hero">
       <div className="cover">
         <div className="box ai">
@@ -885,7 +897,8 @@ Explore life-like 3D designs online that are made for your floor plan.
    
     </div>
 
-    <Image src="/images/bar.png" height={200} width={1500} />
+    <section class="bordered bordersec">
+ </section>
     <div className="main-hero">
       <div className="cover">
         <div className="box ai">
