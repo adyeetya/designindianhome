@@ -21,6 +21,24 @@ const SECOND_IMAGE = {
     'https://source.unsplash.com/a-ladder-and-buckets-of-paint-in-a-room-under-construction-XXanshmt5so',
 }
 
+const falshResponsive = {
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 1,
+    slidesToSlide: 1 // optional, default to 1.
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 768 },
+    items: 1,
+    slidesToSlide: 1 // optional, default to 1.
+  },
+  mobile: {
+    breakpoint: { max: 767, min: 264 },
+    items: 1,
+    slidesToSlide: 1 // optional, default to 1.
+  }
+};
+
 
 const responsive = {
   desktop: {
@@ -47,7 +65,7 @@ const StructureImageUrl = [
   },
   {
     url:
-    "https://source.unsplash.com/white-wooden-kitchen-island-and-cupboard-cabinets-near-glass-panel-door-AQl-J19ocWE"
+      "https://source.unsplash.com/white-wooden-kitchen-island-and-cupboard-cabinets-near-glass-panel-door-AQl-J19ocWE"
   },
   //Second image url
   {
@@ -57,7 +75,7 @@ const StructureImageUrl = [
   //Third image url
   {
     url:
-    "https://source.unsplash.com/black-round-bowl-on-brown-wooden-seat-NWG-vYPZDoM"
+      "https://source.unsplash.com/black-round-bowl-on-brown-wooden-seat-NWG-vYPZDoM"
   },
 
   //Fourth image url
@@ -67,11 +85,51 @@ const StructureImageUrl = [
       "https://source.unsplash.com/two-brown-wooden-bar-stools-cc0Gg3BegjE"
   },
 
-{
-  url:
-    "https://source.unsplash.com/brown-and-white-wooden-kitchen-cabinet-DQpUeNzRj6s"
+  {
+    url:
+      "https://source.unsplash.com/brown-and-white-wooden-kitchen-cabinet-DQpUeNzRj6s"
   }
 ];
+
+
+const flasherslider = [
+  {
+    id: 0,
+    firstImage: 'https://source.unsplash.com/a-kitchen-with-blue-cabinets-and-a-black-refrigerator-zFGBEikZoRg',
+    secondImage: 'https://source.unsplash.com/a-ladder-and-buckets-of-paint-in-a-room-under-construction-XXanshmt5so',
+  },
+  {
+    id: 1,
+    firstImage: 'https://source.unsplash.com/a-kitchen-with-blue-cabinets-and-a-black-refrigerator-zFGBEikZoRg',
+    secondImage: 'https://source.unsplash.com/a-ladder-and-buckets-of-paint-in-a-room-under-construction-XXanshmt5so',
+  },
+  {
+    id: 2,
+    firstImage: 'https://source.unsplash.com/a-kitchen-with-blue-cabinets-and-a-black-refrigerator-zFGBEikZoRg',
+    secondImage: 'https://source.unsplash.com/a-ladder-and-buckets-of-paint-in-a-room-under-construction-XXanshmt5so',
+  },
+  {
+    id: 3,
+    firstImage: 'https://source.unsplash.com/a-kitchen-with-blue-cabinets-and-a-black-refrigerator-zFGBEikZoRg',
+    secondImage: 'https://source.unsplash.com/a-ladder-and-buckets-of-paint-in-a-room-under-construction-XXanshmt5so',
+  },
+  {
+    id: 4,
+    firstImage: 'https://source.unsplash.com/a-kitchen-with-blue-cabinets-and-a-black-refrigerator-zFGBEikZoRg',
+    secondImage: 'https://source.unsplash.com/a-ladder-and-buckets-of-paint-in-a-room-under-construction-XXanshmt5so',
+  },
+  {
+    id: 5,
+    firstImage: 'https://source.unsplash.com/a-kitchen-with-blue-cabinets-and-a-black-refrigerator-zFGBEikZoRg',
+    secondImage: 'https://source.unsplash.com/a-ladder-and-buckets-of-paint-in-a-room-under-construction-XXanshmt5so',
+  },
+  {
+    id: 6,
+    firstImage: 'https://source.unsplash.com/a-kitchen-with-blue-cabinets-and-a-black-refrigerator-zFGBEikZoRg',
+    secondImage: 'https://source.unsplash.com/a-ladder-and-buckets-of-paint-in-a-room-under-construction-XXanshmt5so',
+  }
+]
+
 const KitchenImageUrl = [
   //First image url
   {
@@ -80,7 +138,7 @@ const KitchenImageUrl = [
   },
   {
     url:
-    "https://source.unsplash.com/white-wooden-kitchen-island-and-cupboard-cabinets-near-glass-panel-door-AQl-J19ocWE"
+      "https://source.unsplash.com/white-wooden-kitchen-island-and-cupboard-cabinets-near-glass-panel-door-AQl-J19ocWE"
   },
   //Second image url
   {
@@ -90,7 +148,7 @@ const KitchenImageUrl = [
   //Third image url
   {
     url:
-    "https://source.unsplash.com/black-round-bowl-on-brown-wooden-seat-NWG-vYPZDoM"
+      "https://source.unsplash.com/black-round-bowl-on-brown-wooden-seat-NWG-vYPZDoM"
   },
 
   //Fourth image url
@@ -100,9 +158,9 @@ const KitchenImageUrl = [
       "https://source.unsplash.com/two-brown-wooden-bar-stools-cc0Gg3BegjE"
   },
 
-{
-  url:
-    "https://source.unsplash.com/brown-and-white-wooden-kitchen-cabinet-DQpUeNzRj6s"
+  {
+    url:
+      "https://source.unsplash.com/brown-and-white-wooden-kitchen-cabinet-DQpUeNzRj6s"
   }
 ];
 
@@ -114,7 +172,7 @@ const InteriorImageUrl = [
   },
   {
     url:
-    "https://source.unsplash.com/white-wooden-kitchen-island-and-cupboard-cabinets-near-glass-panel-door-AQl-J19ocWE"
+      "https://source.unsplash.com/white-wooden-kitchen-island-and-cupboard-cabinets-near-glass-panel-door-AQl-J19ocWE"
   },
   //Second image url
   {
@@ -124,7 +182,7 @@ const InteriorImageUrl = [
   //Third image url
   {
     url:
-    "https://source.unsplash.com/black-round-bowl-on-brown-wooden-seat-NWG-vYPZDoM"
+      "https://source.unsplash.com/black-round-bowl-on-brown-wooden-seat-NWG-vYPZDoM"
   },
 
   //Fourth image url
@@ -134,9 +192,9 @@ const InteriorImageUrl = [
       "https://source.unsplash.com/two-brown-wooden-bar-stools-cc0Gg3BegjE"
   },
 
-{
-  url:
-    "https://source.unsplash.com/brown-and-white-wooden-kitchen-cabinet-DQpUeNzRj6s"
+  {
+    url:
+      "https://source.unsplash.com/brown-and-white-wooden-kitchen-cabinet-DQpUeNzRj6s"
   }
 ];
 
@@ -148,7 +206,7 @@ const WardrobeImageUrl = [
   },
   {
     url:
-    "https://source.unsplash.com/white-wooden-kitchen-island-and-cupboard-cabinets-near-glass-panel-door-AQl-J19ocWE"
+      "https://source.unsplash.com/white-wooden-kitchen-island-and-cupboard-cabinets-near-glass-panel-door-AQl-J19ocWE"
   },
   //Second image url
   {
@@ -158,7 +216,7 @@ const WardrobeImageUrl = [
   //Third image url
   {
     url:
-    "https://source.unsplash.com/black-round-bowl-on-brown-wooden-seat-NWG-vYPZDoM"
+      "https://source.unsplash.com/black-round-bowl-on-brown-wooden-seat-NWG-vYPZDoM"
   },
 
   //Fourth image url
@@ -168,9 +226,9 @@ const WardrobeImageUrl = [
       "https://source.unsplash.com/two-brown-wooden-bar-stools-cc0Gg3BegjE"
   },
 
-{
-  url:
-    "https://source.unsplash.com/brown-and-white-wooden-kitchen-cabinet-DQpUeNzRj6s"
+  {
+    url:
+      "https://source.unsplash.com/brown-and-white-wooden-kitchen-cabinet-DQpUeNzRj6s"
   }
 ];
 
@@ -189,40 +247,40 @@ const Collection = () => {
     })
   }, []);
 
- 
+
   return (<>
 
 
     <div id='fry'>
       <h3
-    
+
       >INDIA’S NO.1 INTERIOR & ARCHITECTURAL BRAND</h3>
 
     </div>
-<div className="flex items-center justify-center">
+    <div className="flex items-center justify-center">
 
-    <TypeAnimation
-      sequence={[
-        'TOP KITCHEN & CLOSET BRAND ',
-        1000, // wait 1s before replacing "Mice" with "Hamsters"
-        ' LARGEST KITCHEN DEALERS',
-        1000,
-        'MODULAR KITCHEN & CLOSET',
-        1000,
-        'LARGEST ARCHITECTURAL BRAND',
-        1000,
-        'TOP AWARDED INTERIORS',
-        1000,
-  
+      <TypeAnimation
+        sequence={[
+          'TOP KITCHEN & CLOSET BRAND ',
+          1000, // wait 1s before replacing "Mice" with "Hamsters"
+          ' LARGEST KITCHEN DEALERS',
+          1000,
+          'MODULAR KITCHEN & CLOSET',
+          1000,
+          'LARGEST ARCHITECTURAL BRAND',
+          1000,
+          'TOP AWARDED INTERIORS',
+          1000,
 
-      ]}
 
-      style={{ fontSize: "55px" }}
-      wrapper="span"
-      speed={50}
-      repeat={Infinity}
-    />
-</div>
+        ]}
+
+        style={{ fontSize: "55px" }}
+        wrapper="span"
+        speed={50}
+        repeat={Infinity}
+      />
+    </div>
 
     <div className="main-hero mt-5">
       <div className="cover">
@@ -234,10 +292,10 @@ const Collection = () => {
           </h1>
         </div>
         <div className="box b">
-        <h1>   OUR STYLE
-          <br />
-          IS TO DELIVER SMILES
-       </h1> </div>
+          <h1>   OUR STYLE
+            <br />
+            IS TO DELIVER SMILES
+          </h1> </div>
       </div>
     </div>
     {/*  <div className="container mx-auto rounded-3xl ">
@@ -274,7 +332,7 @@ const Collection = () => {
         />
       </div>
       <div className="callout">
-        <h3>Looking for Interiors or Modular Works</h3><br/>
+        <h3>Looking for Interiors or Modular Works</h3><br />
         <a className="button" href="/collections/all">
           Connect with us
         </a>
@@ -283,7 +341,7 @@ const Collection = () => {
 
 
 
-   
+
 
 
     <div className="read-more mb-12">
@@ -293,11 +351,11 @@ const Collection = () => {
         className="read-more__checkbox"
         aria-hidden="true"
       />
-  
+
       <p className="read-more__text mb-2">
         Design Indian Homes is India&#39;s top Interior, Architectural & Modular
-         Interior Brand serving across Delhi, Gurgaon, Noida & NCR. It is the most
-          sought out by Homemakers, Architects, Interior Designers, Developers & just anyone who needs an Affordable Interior Makeover, Renovation Services, Architectural Services, Modular Kitchen, Wardrobe, Vanities, TV Units, Living works, Bathroom Or Just a peaceful Turnkey Work by Our Team. We are serving End to End Interiors & Modular Interiors across Delhi, Gurgaon, Noida, Faridabad & across NCR.
+        Interior Brand serving across Delhi, Gurgaon, Noida & NCR. It is the most
+        sought out by Homemakers, Architects, Interior Designers, Developers & just anyone who needs an Affordable Interior Makeover, Renovation Services, Architectural Services, Modular Kitchen, Wardrobe, Vanities, TV Units, Living works, Bathroom Or Just a peaceful Turnkey Work by Our Team. We are serving End to End Interiors & Modular Interiors across Delhi, Gurgaon, Noida, Faridabad & across NCR.
         <br /> Our Brand Design Indian Homes was established in 2007,
         we are a professional team of certified architects, interior remodelers,
         and also happen to be Largest manufacturers of Modular Kitchens, Wardrobes,
@@ -317,11 +375,11 @@ const Collection = () => {
 
 
         <br />We have the largest Modular Interior facilities and are serving extensively with most affordable solutions for the following services : -
-       <br/> <br />Modular Kitchens * Wardrobes * TV Units * Vanities <br />* Crockery Units * Shoe Racks * Bookshelves * Partitions <br />* Studies & Bar Units * Mandir Units * End To End Interiors * Complete Structures <br />* Luxury Interiors & Residences * Luxury Kitchens And Wardrobes * Italian - German - Swedish - Danish - Spanish Modular Kitchens & Wardrobes<br /><br />We assure you 100% Guaranteed Quotes across New Delhi - NCR for any type of Interior Works, Architectural Works, renovation works, Modular Kitchens, Wardrobes,  TV units or just any Modular Works, custom interior works or architectural consultancy works. We have the most affordable modular interiors and serve all clients with perfect understanding of the requirements. <br />We also assure you to bring us any quotes and assure you flat 7% less on any offerings by any vendor across New Delhi - NCR.<br />
+        <br /> <br />Modular Kitchens * Wardrobes * TV Units * Vanities <br />* Crockery Units * Shoe Racks * Bookshelves * Partitions <br />* Studies & Bar Units * Mandir Units * End To End Interiors * Complete Structures <br />* Luxury Interiors & Residences * Luxury Kitchens And Wardrobes * Italian - German - Swedish - Danish - Spanish Modular Kitchens & Wardrobes<br /><br />We assure you 100% Guaranteed Quotes across New Delhi - NCR for any type of Interior Works, Architectural Works, renovation works, Modular Kitchens, Wardrobes,  TV units or just any Modular Works, custom interior works or architectural consultancy works. We have the most affordable modular interiors and serve all clients with perfect understanding of the requirements. <br />We also assure you to bring us any quotes and assure you flat 7% less on any offerings by any vendor across New Delhi - NCR.<br />
         Connect with the Largest Interior, Architectural, Modular Kitchens & Wardrobes Brand Across New Delhi - NCR - India.<br />We are the Top Awarded Largest manufacturers for Modular Kitchens & Wardrobes across Delhi - NCR & have been rated as the TOP Interior & Architectural  Brand by The Architectural Congress India and Real Wood Societies since 2016.<br />
 
 
-      </p> 
+      </p>
       <label
         htmlFor="read-more-checkbox"
         className="read-more__label"
@@ -351,8 +409,8 @@ const Collection = () => {
       <section className="newz">
         <div className="flex flex-wrap  ">
           <div className=" mb-4" id='news'>
-          <section class="bordered bordersec">
- </section>
+            <section class="bordered bordersec">
+            </section>
             <div className="main-hero">
               <div className="cover">
                 <div className="box ai">
@@ -365,34 +423,34 @@ const Collection = () => {
             </div>
             <video loop autoPlay controls={isPlaying} src="video/lux.mp4" alt="" height={10} width={1500}
               className="rounded shadow-md" id='seek' style={{ marginBottom: "6%" }} />
-<section class="bordered bordersec">
- </section>
-      <div className="main-hero">
-        <div className="cover">
-          <div className="box ai">
-           
-          </div>
-          <div className="box bi">
-          
-          </div>
-        </div>
-      </div>
-      <div className="wrapperlatest">
-        <h1>Our Exclusive Content</h1>
-        
-      </div>
+            <section class="bordered bordersec">
+            </section>
+            <div className="main-hero">
+              <div className="cover">
+                <div className="box ai">
 
-<video
-          loop
-          autoPlay
-          controls={isPlaying}
-          src="/video/dkivid.mp4"
-          width={1500}
-          height={550}
-          className="rounded shadow-md"
-          style={{}}
-        />
-{/* 
+                </div>
+                <div className="box bi">
+
+                </div>
+              </div>
+            </div>
+            <div className="wrapperlatest">
+              <h1>Our Exclusive Content</h1>
+
+            </div>
+
+            <video
+              loop
+              autoPlay
+              controls={isPlaying}
+              src="/video/dkivid.mp4"
+              width={1500}
+              height={550}
+              className="rounded shadow-md"
+              style={{}}
+            />
+            {/* 
             <video loop autoPlay controls={isPlaying} src="video/vid21.mp4" alt="" height={10} width={1500}
               className="rounded shadow-md"
 
@@ -447,16 +505,30 @@ const Collection = () => {
 
             />
           </div>
-             <div className="md:w-1/2 mb-4" id='news'>
-            <ReactBeforeSliderComponent
-              firstImage={FIRST_IMAGE}
-              secondImage={SECOND_IMAGE}
-              
-            />
+          <div className="md:w-1/2 mb-4" id='news'>
+            <Carousel
+              responsive={falshResponsive}
+              autoPlay={false}
+              swipeable={false}
+              draggable={false}
+              showDots={false}
+              infinite={false}
+              partialVisible={false}
+              dotListClass="custom-dot-list-style"
+            >
+              {flasherslider.map((item, index) => {
+                return (
+                  <ReactBeforeSliderComponent
+                    firstImage={FIRST_IMAGE}
+                    secondImage={SECOND_IMAGE}
+                  />
+                );
+              })}
+            </Carousel>
           </div>
           <div className="md:w-1/2 px-16" id='news'>
 
-          {/*   <div className="main-hero">
+            {/*   <div className="main-hero">
               <div className="cover">
                 <div className="box ai">
 
@@ -476,10 +548,6 @@ const Collection = () => {
 
 
             <div className="wrapperlatest" >
-
-
-
-
               <h1>Before And After</h1>
               <h3>Affordable Luxury</h3>
               <p className='px-6 py-4'>We often use collective nouns to refer to groups of people. Examples: team, gang, squad, army, jury, clergy, cult, crew.</p>
@@ -503,7 +571,7 @@ const Collection = () => {
 
 
 
-    
+
 
 
 
@@ -589,11 +657,11 @@ const Collection = () => {
       </div>
     </div>
 
-   
+
 
 
     <section class="bordered bordersec">
- </section>
+    </section>
     <div className="main-hero">
       <div className="cover">
         <div className="box ai">
@@ -668,38 +736,38 @@ const Collection = () => {
 
 
     <div className="main">
-    <img src="/images/left.gif" width={50} height={50} />
-<svg id="rotatingText" viewBox="0 0 200 200" width={200} height={200}>
-  <defs>
-    <path
-      id="circle"
-      d="M 100, 100
+      <img src="/images/left.gif" width={50} height={50} />
+      <svg id="rotatingText" viewBox="0 0 200 200" width={200} height={200}>
+        <defs>
+          <path
+            id="circle"
+            d="M 100, 100
    m -75, 0
    a 75, 75 0 1, 0 150, 0
    a 75, 75 0 1, 0 -150, 0
    "
-    ></path>
-  </defs>
-  <text width={400}>
-    <textPath
-      alignmentBaseline="top"
-      xlinkHref="#circle"
-      className="text"
-    >
-      The Best Home Interior Brand of India -
-    </textPath>
-  </text>
-</svg>
-</div>
+          ></path>
+        </defs>
+        <text width={400}>
+          <textPath
+            alignmentBaseline="top"
+            xlinkHref="#circle"
+            className="text"
+          >
+            The Best Home Interior Brand of India -
+          </textPath>
+        </text>
+      </svg>
+    </div>
 
 
 
-      <div className="wrapperlatest ">
-        <h1 >Best Trending Kitchens</h1>
-        
-      </div>
+    <div className="wrapperlatest ">
+      <h1 >Best Trending Kitchens</h1>
 
-      <div className="parent">
+    </div>
+
+    <div className="parent">
       <Carousel
         responsive={responsive}
         autoPlay={true}
@@ -719,16 +787,16 @@ const Collection = () => {
         })}
       </Carousel>
       <div className="flex justify-center items-center "><button className=' bg-green-700 text-lg py-3 px-3 mb-12 rounded-full text-white  font-bold '>Check Out Our Collections</button>
-     </div> 
+      </div>
     </div>
 
-   
-    <div className="wrapperlatest ">
-        <h1 >Best Trending Wardrobes</h1>
-        
-      </div>
 
-      <div className="parent">
+    <div className="wrapperlatest ">
+      <h1 >Best Trending Wardrobes</h1>
+
+    </div>
+
+    <div className="parent">
       <Carousel
         responsive={responsive}
         autoPlay={true}
@@ -748,16 +816,16 @@ const Collection = () => {
         })}
       </Carousel>
       <div className="flex justify-center items-center "><button className=' bg-green-700 text-lg py-3 px-3 mb-12 rounded-full text-white  font-bold '>Check Out Our Collections</button>
-     </div> 
+      </div>
     </div>
 
 
     <div className="wrapperlatest ">
-        <h1 >Best Trending Interiors</h1>
-        
-      </div>
+      <h1 >Best Trending Interiors</h1>
 
-      <div className="parent">
+    </div>
+
+    <div className="parent">
       <Carousel
         responsive={responsive}
         autoPlay={true}
@@ -776,17 +844,17 @@ const Collection = () => {
           );
         })}
       </Carousel>
-      
-       <div className="flex justify-center items-center "><button className=' bg-green-700 text-lg py-3 px-3 mb-12 rounded-full text-white  font-bold '>Check Out Our Collections</button>
-     </div> 
+
+      <div className="flex justify-center items-center "><button className=' bg-green-700 text-lg py-3 px-3 mb-12 rounded-full text-white  font-bold '>Check Out Our Collections</button>
+      </div>
     </div>
 
     <div className="wrapperlatest ">
-        <h1 >Best Trending Structures</h1>
-        
-      </div>
+      <h1 >Best Trending Structures</h1>
 
-      <div className="parent">
+    </div>
+
+    <div className="parent">
       <Carousel
         responsive={responsive}
         autoPlay={true}
@@ -805,9 +873,9 @@ const Collection = () => {
           );
         })}
       </Carousel>
-     <div className="flex justify-center items-center "><button className=' bg-green-700 text-lg py-3 px-3 mb-12 rounded-full text-white  font-bold '>Check Out Our Collections</button>
-     </div> 
-</div>
+      <div className="flex justify-center items-center "><button className=' bg-green-700 text-lg py-3 px-3 mb-12 rounded-full text-white  font-bold '>Check Out Our Collections</button>
+      </div>
+    </div>
 
 
 
@@ -842,29 +910,29 @@ const Collection = () => {
       </div>
 
 
-      
+
       <div className="text-center mt-4 md:mt-0">
         <Image
-         width={0}
-         height={0}
-         sizes="100vw"
-         style={{ width: '50%', height: 'auto' }}
+          width={0}
+          height={0}
+          sizes="100vw"
+          style={{ width: '50%', height: 'auto' }}
           src="/images/icon/interior-design.png"
           alt=""
           className="w-60 h-70 mx-auto"
         />
         <h1 className="font-bold text-center">Live 3D Design</h1>
         <p className="text-sm">
-    
-Explore life-like 3D designs online that are made for your floor plan.
+
+          Explore life-like 3D designs online that are made for your floor plan.
         </p>
       </div>
       <div className="text-center mt-4 md:mt-0">
         <Image
-         width={0}
-         height={0}
-         sizes="100vw"
-         style={{ width: '50%', height: 'auto' }}
+          width={0}
+          height={0}
+          sizes="100vw"
+          style={{ width: '50%', height: 'auto' }}
           src="/images/icon/badge.png"
           alt=""
           className="w-60 h-70 mx-auto"
@@ -877,28 +945,28 @@ Explore life-like 3D designs online that are made for your floor plan.
       </div>
       <div className="text-center mt-4 md:mt-0">
         <Image
-         width={0}
-         height={0}
-         sizes="100vw"
-         style={{ width: '65%', height: 'auto' }}
+          width={0}
+          height={0}
+          sizes="100vw"
+          style={{ width: '65%', height: 'auto' }}
           src="/images/icon/payment.png"
           alt=""
           className="w-60 h-70 mx-auto"
         />
         <h1 className="font-bold text-center">Instant Pricing</h1>
         <p className="text-sm">
-        Enjoy complete price transparency and stay within budget.
+          Enjoy complete price transparency and stay within budget.
 
 
         </p>
       </div>
-   
 
-   
+
+
     </div>
 
     <section class="bordered bordersec">
- </section>
+    </section>
     <div className="main-hero">
       <div className="cover">
         <div className="box ai">
@@ -918,7 +986,7 @@ Explore life-like 3D designs online that are made for your floor plan.
       <div className="slide-track">
         <div className="slide">
           <Image src="/images/vedh.png" height={300} width={300} alt="" />
-        
+
         </div>
         <div className="slide">
           <Image src="/images/vedh.png" height={300} width={300} alt="" />
@@ -962,40 +1030,40 @@ Explore life-like 3D designs online that are made for your floor plan.
       </div>
     </div>
     <div className="main">
-    <img src="/images/left.gif" width={50} height={50} />
-<svg id="rotatingText" viewBox="0 0 200 200" width={200} height={200}>
-  <defs>
-    <path
-      id="circle"
-      d="M 100, 100
+      <img src="/images/left.gif" width={50} height={50} />
+      <svg id="rotatingText" viewBox="0 0 200 200" width={200} height={200}>
+        <defs>
+          <path
+            id="circle"
+            d="M 100, 100
    m -75, 0
    a 75, 75 0 1, 0 150, 0
    a 75, 75 0 1, 0 -150, 0
    "
-    ></path>
-  </defs>
-  <text width={400}>
-    <textPath
-      alignmentBaseline="top"
-      xlinkHref="#circle"
-      className="text"
-    >
-     No.1 Architectural Brand in India 
-    </textPath>
-  </text>
-</svg>
-</div>
+          ></path>
+        </defs>
+        <text width={400}>
+          <textPath
+            alignmentBaseline="top"
+            xlinkHref="#circle"
+            className="text"
+          >
+            No.1 Architectural Brand in India
+          </textPath>
+        </text>
+      </svg>
+    </div>
 
-<div className="wrapperlatest">
+    <div className="wrapperlatest">
       <h1>Brands you will find in our products</h1>
       <h3></h3>
     </div>
-   
+
     <div className="slider">
       <div className="slide-track">
         <div className="slide">
           <Image src="/images/vedh.png" height={300} width={300} alt="" />
-        
+
         </div>
         <div className="slide">
           <Image src="/images/vedh.png" height={300} width={300} alt="" />
