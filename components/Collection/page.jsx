@@ -201,7 +201,7 @@ const Collection = () => {
       >INDIA’S NO.1 INTERIOR & ARCHITECTURAL BRAND</h3>
 
     </div>
-
+<div className="flex items-center justify-center">
 
     <TypeAnimation
       sequence={[
@@ -224,7 +224,7 @@ const Collection = () => {
       speed={50}
       repeat={Infinity}
     />
-
+</div>
 
     <div className="main-hero mt-5">
       <div className="cover">
