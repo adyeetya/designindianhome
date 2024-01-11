@@ -65,12 +65,12 @@ const StepperComponent = () => {
           </div>
 
           {/* Stepper Section (50% width) */}
-          <div className="w-full md:w-1/2 mt-4 sm:mt-0">
-            <div className="mb-4">
+          <div className="w-full md:w-1/2 mt-4 my-auto sm:mt-28">
+            {/* <div className="mb-4">
               <h2 className="text-2xl font-bold">
                 The Process of Booking With Us
               </h2>
-            </div>
+            </div> */}
             <Stepper activeStep={activeStep} alternativeLabel>
               {steps.map((step, index) => (
                 <Step key={index} onClick={() => handleStepChange(index)}>
