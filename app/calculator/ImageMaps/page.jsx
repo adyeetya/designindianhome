@@ -37,7 +37,9 @@ const page = () => {
             </div>
           </div>
           <div className="m-4">
-            <p>Tap the desired components and add to your project's scope</p>
+            <p>
+              Tap the desired components and add to your project&apos;s scope
+            </p>
           </div>
 
           {/* the image map */}
