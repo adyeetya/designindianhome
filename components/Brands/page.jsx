@@ -1,30 +1,55 @@
 import Image from 'next/image';
 
-
+import ReactCardSlider from 'react-card-slider-component';
 const Brands = () => {
 
- 
-  return (
-  <>
+  const slides = [
+    { image: "https://source.unsplash.com/gray-2-seat-sofa-near-round-table-WPqcd-gpJeE", 
+    title: "AFFORDABLE, YET WHOLESOME", description: " On Top Priority" },
+    {
+      image: "https://source.unsplash.com/clear-glass-top-table-with-brown-wooden-base-YAp3j8EcjUo "
+      , title: "POCKET FRIENDLY, YET WELCOMING", description: "Handcrafted for You"
+    },
+    {
+      image: "https://source.unsplash.com/a-living-room-with-a-couch-coffee-table-and-potted-plant-Rf0a8n0VV_M"
+      , title: "MINIMAL, YET OVERALL COVERAGE", description: "Be Carefree & Happy"
+    },
+    { image: "https://source.unsplash.com/a-living-room-filled-with-furniture-and-a-fire-place-CXFt0FGdD58",
+     title: "LUXURY, YET AFFORDABLE", description: "Over the Top" 
+    },
+    { image:"https://source.unsplash.com/white-wooden-coffee-table-near-white-sofa-WgkA3CSFrjc",
+    title: "HIGH QUALITY WITH COMPLETE COMMITMENT", description: "Premier Plus " 
+   },
+   /*  {
+      img: "https://source.unsplash.com/white-wooden-coffee-table-near-white-sofa-WgkA3CSFrjc",
+      title: "HIGH QUALITY WITH COMPLETE COMMITMENT", description: " Premier Plus "
+    },
+    */
+    { image: "https://source.unsplash.com/black-metal-3-tier-rack-beside-white-couch-L5L2hiSh2Bo ",description: "Redefine Luxury",
+     title: " TOP NOTCH LUXURY, WITH TOP NOTCH PRICING" },
 
-     
-<Image src="/images/bar.png" height={200} width={1500} />
+  ]
+  return (
+    <>
+
+<section class="bordered bordersec">
+ </section>
       <div className="main-hero">
         <div className="cover">
           <div className="box ai">
-           
+
           </div>
           <div className="box bi">
-          
+
           </div>
         </div>
       </div>
-      <div className="wrapperlatest">
-        <h1>Our Deals</h1>
-        <h3>Affordable Luxury</h3>
+      <div className="wrapperlatesti">
+        <h1>Our Exclusive Packages</h1>
+        <h3 >The Best in Class &#34; Tailormade &#34; Interior Plans</h3>
       </div>
 
-  
+
 
 
 
@@ -117,7 +142,17 @@ const Brands = () => {
             </div>
           </div>
         </div>
-      </div> 
+      </div>
+
+
+
+<div className="jiu-mob">
+
+      <ReactCardSlider slides={slides} />
+
+
+
+</div>
 
 
 
@@ -127,35 +162,76 @@ const Brands = () => {
 
 
 
-
-
-
-      <Image src="/images/bar.png" height={200} width={1500} />
+<section class="bordered bordersec">
+ </section>
       <div className="main-hero">
         <div className="cover">
           <div className="box ai">
-           
+
           </div>
           <div className="box bi">
-          
+
           </div>
         </div>
       </div>
       <div className="wrapperlatest">
         <h1>Why We Deliver Inspiring Interiors</h1>
-        
+
       </div>
-<div className="body">
-      <ul className="smol-flexbox-grid">
-  <li>Since <br/><span>2004</span></li>
-  <li>Premium<br/><span> Materials</span></li>
-  <li>10 Years <br/> <span>Warranty</span></li>
-  <li>Completion  <br/> <span>45 Years</span></li>
-  <li>Furnishing  <br/><span>200 Homes/Month</span></li>
-  <li>Lifelong <br/><span> Service Supplier</span></li>
-</ul>
-</div>
-    
+
+      <div className="key-container">
+        <div data-key={65}>
+          <span>
+            <kbd>Since</kbd>2004
+          </span>
+        </div>
+        <div data-key={83}>
+          <span>
+            <kbd>Premium
+            </kbd>Materials
+          </span>
+        </div>
+        <div data-key={68}>
+          <span>
+            <kbd>10 Years
+            </kbd>
+            Warranty
+          </span>
+        </div>
+        <div data-key={70}>
+          <span>
+            <kbd> Completion</kbd>
+            45 Years
+          </span>
+        </div>
+        <div data-key={71}>
+          <span>
+            <kbd>Furnishing</kbd>
+            200 Homes/MTH
+          </span>
+        </div>
+        <div data-key={72}>
+          <span>
+            <kbd>Lifelong</kbd>
+            Service Supplier
+          </span>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     </>
   )
 }

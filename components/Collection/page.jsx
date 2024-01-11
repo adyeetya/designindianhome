@@ -6,7 +6,12 @@ import ReactBeforeSliderComponent from 'react-before-after-slider-component'
 import 'react-before-after-slider-component/dist/build.css'
 import React, { useState, useEffect, useRef } from 'react'
 import ReactPlayer from 'react-player';
-window.$ = window.jQuery = require('jquery')
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+
+
+
+
 const FIRST_IMAGE = {
   imageUrl:
     'https://source.unsplash.com/a-kitchen-with-blue-cabinets-and-a-black-refrigerator-zFGBEikZoRg',
@@ -15,10 +20,218 @@ const SECOND_IMAGE = {
   imageUrl:
     'https://source.unsplash.com/a-ladder-and-buckets-of-paint-in-a-room-under-construction-XXanshmt5so',
 }
-const THIRD_IMAGE = {
-  imageUrl:
-    'https://source.unsplash.com/a-kitchen-with-blue-cabinets-and-a-black-refrigerator-zFGBEikZoRg',
-}
+
+const falshResponsive = {
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 1,
+    slidesToSlide: 1 // optional, default to 1.
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 768 },
+    items: 1,
+    slidesToSlide: 1 // optional, default to 1.
+  },
+  mobile: {
+    breakpoint: { max: 767, min: 264 },
+    items: 1,
+    slidesToSlide: 1 // optional, default to 1.
+  }
+};
+
+
+const responsive = {
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 4,
+    slidesToSlide: 4 // optional, default to 1.
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 768 },
+    items: 3,
+    slidesToSlide: 3 // optional, default to 1.
+  },
+  mobile: {
+    breakpoint: { max: 767, min: 264 },
+    items: 2,
+    slidesToSlide: 1 // optional, default to 1.
+  }
+};
+const StructureImageUrl = [
+  //First image url
+  {
+    url:
+      "https://source.unsplash.com/black-flat-screen-tv-mounted-on-white-wall-3hEGHI4b4gg"
+  },
+  {
+    url:
+      "https://source.unsplash.com/white-wooden-kitchen-island-and-cupboard-cabinets-near-glass-panel-door-AQl-J19ocWE"
+  },
+  //Second image url
+  {
+    url:
+      "https://source.unsplash.com/white-and-black-kitchen-cabinet-jylx7bVZMIk"
+  },
+  //Third image url
+  {
+    url:
+      "https://source.unsplash.com/black-round-bowl-on-brown-wooden-seat-NWG-vYPZDoM"
+  },
+
+  //Fourth image url
+
+  {
+    url:
+      "https://source.unsplash.com/two-brown-wooden-bar-stools-cc0Gg3BegjE"
+  },
+
+  {
+    url:
+      "https://source.unsplash.com/brown-and-white-wooden-kitchen-cabinet-DQpUeNzRj6s"
+  }
+];
+
+
+const flasherslider = [
+  {
+    id: 0,
+    firstImage: 'https://source.unsplash.com/a-kitchen-with-blue-cabinets-and-a-black-refrigerator-zFGBEikZoRg',
+    secondImage: 'https://source.unsplash.com/a-ladder-and-buckets-of-paint-in-a-room-under-construction-XXanshmt5so',
+  },
+  {
+    id: 1,
+    firstImage: 'https://source.unsplash.com/a-kitchen-with-blue-cabinets-and-a-black-refrigerator-zFGBEikZoRg',
+    secondImage: 'https://source.unsplash.com/a-ladder-and-buckets-of-paint-in-a-room-under-construction-XXanshmt5so',
+  },
+  {
+    id: 2,
+    firstImage: 'https://source.unsplash.com/a-kitchen-with-blue-cabinets-and-a-black-refrigerator-zFGBEikZoRg',
+    secondImage: 'https://source.unsplash.com/a-ladder-and-buckets-of-paint-in-a-room-under-construction-XXanshmt5so',
+  },
+  {
+    id: 3,
+    firstImage: 'https://source.unsplash.com/a-kitchen-with-blue-cabinets-and-a-black-refrigerator-zFGBEikZoRg',
+    secondImage: 'https://source.unsplash.com/a-ladder-and-buckets-of-paint-in-a-room-under-construction-XXanshmt5so',
+  },
+  {
+    id: 4,
+    firstImage: 'https://source.unsplash.com/a-kitchen-with-blue-cabinets-and-a-black-refrigerator-zFGBEikZoRg',
+    secondImage: 'https://source.unsplash.com/a-ladder-and-buckets-of-paint-in-a-room-under-construction-XXanshmt5so',
+  },
+  {
+    id: 5,
+    firstImage: 'https://source.unsplash.com/a-kitchen-with-blue-cabinets-and-a-black-refrigerator-zFGBEikZoRg',
+    secondImage: 'https://source.unsplash.com/a-ladder-and-buckets-of-paint-in-a-room-under-construction-XXanshmt5so',
+  },
+  {
+    id: 6,
+    firstImage: 'https://source.unsplash.com/a-kitchen-with-blue-cabinets-and-a-black-refrigerator-zFGBEikZoRg',
+    secondImage: 'https://source.unsplash.com/a-ladder-and-buckets-of-paint-in-a-room-under-construction-XXanshmt5so',
+  }
+]
+
+const KitchenImageUrl = [
+  //First image url
+  {
+    url:
+      "https://source.unsplash.com/black-flat-screen-tv-mounted-on-white-wall-3hEGHI4b4gg"
+  },
+  {
+    url:
+      "https://source.unsplash.com/white-wooden-kitchen-island-and-cupboard-cabinets-near-glass-panel-door-AQl-J19ocWE"
+  },
+  //Second image url
+  {
+    url:
+      "https://source.unsplash.com/white-and-black-kitchen-cabinet-jylx7bVZMIk"
+  },
+  //Third image url
+  {
+    url:
+      "https://source.unsplash.com/black-round-bowl-on-brown-wooden-seat-NWG-vYPZDoM"
+  },
+
+  //Fourth image url
+
+  {
+    url:
+      "https://source.unsplash.com/two-brown-wooden-bar-stools-cc0Gg3BegjE"
+  },
+
+  {
+    url:
+      "https://source.unsplash.com/brown-and-white-wooden-kitchen-cabinet-DQpUeNzRj6s"
+  }
+];
+
+const InteriorImageUrl = [
+  //First image url
+  {
+    url:
+      "https://source.unsplash.com/black-flat-screen-tv-mounted-on-white-wall-3hEGHI4b4gg"
+  },
+  {
+    url:
+      "https://source.unsplash.com/white-wooden-kitchen-island-and-cupboard-cabinets-near-glass-panel-door-AQl-J19ocWE"
+  },
+  //Second image url
+  {
+    url:
+      "https://source.unsplash.com/white-and-black-kitchen-cabinet-jylx7bVZMIk"
+  },
+  //Third image url
+  {
+    url:
+      "https://source.unsplash.com/black-round-bowl-on-brown-wooden-seat-NWG-vYPZDoM"
+  },
+
+  //Fourth image url
+
+  {
+    url:
+      "https://source.unsplash.com/two-brown-wooden-bar-stools-cc0Gg3BegjE"
+  },
+
+  {
+    url:
+      "https://source.unsplash.com/brown-and-white-wooden-kitchen-cabinet-DQpUeNzRj6s"
+  }
+];
+
+const WardrobeImageUrl = [
+  //First image url
+  {
+    url:
+      "https://source.unsplash.com/black-flat-screen-tv-mounted-on-white-wall-3hEGHI4b4gg"
+  },
+  {
+    url:
+      "https://source.unsplash.com/white-wooden-kitchen-island-and-cupboard-cabinets-near-glass-panel-door-AQl-J19ocWE"
+  },
+  //Second image url
+  {
+    url:
+      "https://source.unsplash.com/white-and-black-kitchen-cabinet-jylx7bVZMIk"
+  },
+  //Third image url
+  {
+    url:
+      "https://source.unsplash.com/black-round-bowl-on-brown-wooden-seat-NWG-vYPZDoM"
+  },
+
+  //Fourth image url
+
+  {
+    url:
+      "https://source.unsplash.com/two-brown-wooden-bar-stools-cc0Gg3BegjE"
+  },
+
+  {
+    url:
+      "https://source.unsplash.com/brown-and-white-wooden-kitchen-cabinet-DQpUeNzRj6s"
+  }
+];
+
 const Collection = () => {
 
 
@@ -36,19 +249,19 @@ const Collection = () => {
 
 
   return (<>
-    
 
-      <div id='fry'>
-        <h3
 
-        >INDIA’S NO.1 INTERIOR & ARCHITECTURAL BRAND</h3>
+    <div id='fry'>
+      <h3
 
-      </div>
+      >INDIA’S NO.1 INTERIOR & ARCHITECTURAL BRAND</h3>
 
+    </div>
+    <div className="flex items-center justify-center">
 
       <TypeAnimation
         sequence={[
-          'TOP KITCHEN & CLOSE BRAND ',
+          'TOP KITCHEN & CLOSET BRAND ',
           1000, // wait 1s before replacing "Mice" with "Hamsters"
           ' LARGEST KITCHEN DEALERS',
           1000,
@@ -59,8 +272,6 @@ const Collection = () => {
           'TOP AWARDED INTERIORS',
           1000,
 
-          'MODULAR INTERIOR COMPANY',
-          1000,
 
         ]}
 
@@ -69,9 +280,9 @@ const Collection = () => {
         speed={50}
         repeat={Infinity}
       />
+    </div>
 
-
-    <div className="main-hero">
+    <div className="main-hero mt-5">
       <div className="cover">
         <div className="box a">
           <h1>
@@ -81,92 +292,70 @@ const Collection = () => {
           </h1>
         </div>
         <div className="box b">
-          OUR STYLE
-          <br />
-          IS TO DELIVER SMILES
-        </div>
+          <h1>   OUR STYLE
+            <br />
+            IS TO DELIVER SMILES
+          </h1> </div>
       </div>
-</div>
-      {/*  <div className="container mx-auto rounded-3xl ">
+    </div>
+    {/*  <div className="container mx-auto rounded-3xl ">
 
 
 
-        <section className="newz">
-          <div className="flex flex-wrap  ">
-            <div className=" mb-4" id="news">
-              <video
-                loop
-                autoPlay
-                controls={isPlaying}
-                src="https://www.designindiankitchen.com/wp-content/themes/dkiblogs/assets/images/dkivid.mp4"
-                height={10}
-                width={1500}
-                className="rounded shadow-md"
-              />
-            </div>
-          </div>
-        </section>
 
 
       </div> */}
-      <div className='hidden sm:flex justify-center items-center absolute'>
-        <h1 className=' bg-white text-black text-5xl font-bold px-4' style={{ zIndex: '10', marginLeft: '150px', marginTop: '350px', }}>
-          Looking for Interiors or Modular Works
-        </h1>
+    {/* <div className='hidden sm:flex justify-center items-center absolute'>
+      <h1 className=' bg-white text-black text-5xl font-bold px-4' style={{ zIndex: '10', marginLeft: '150px', marginTop: '350px', }}>
+        Looking for Interiors or Modular Works
+      </h1>
 
-      </div>
-      <a className='hidden sm:flex justify-center absolute text-4xl text-black font-bold hover:bg-white' href="/collections/all" style={{ zIndex: '10',marginLeft: '500px', marginTop: '420px', border: "4px solid black", padding: '2px', borderRadius: '10px' }}>
-        Connect with us
-      </a>
-
-
-
-      <section className="outter hero-video" >
-  <section className="video-container rounded-3xl" style={{height: '550px'}}>
-    <video
-      loop
-      autoPlay
-      controls={isPlaying}
-      src="/video/dkivid.mp4"
-      width={1500}
-      height={550} 
-      className="rounded shadow-md"
-      style={{ height: '550px' }}
-    ></video>
-
-    <div className="callout">
-      <h1>Looking for Interiors or Modular Works</h1>
-      <a className="button" href="/collections/all">
-        Connect with us
-      </a>
     </div>
-  </section>
-</section>
+    <a className='hidden sm:flex justify-center absolute text-4xl text-black font-bold hover:bg-white' href="/collections/all" style={{ zIndex: '10', marginLeft: '500px', marginTop: '420px', border: "4px solid black", padding: '2px', borderRadius: '10px' }}>
+      Connect with us
+    </a> */}
 
 
 
-      <Marquee style={{ backgroundColor: " yellow ", marginTop: "5%" }}>
-        <div className="marquee">
+    <section className="outter hero-video" >
+      <div
+        className='videoBox mt-3'>
+        <video
+          loop
+          autoPlay
+          controls={isPlaying}
+          src="/video/dkivid.mp4"
+          width={1500}
+          height={550}
+          className="rounded shadow-md"
+          style={{}}
+        />
+      </div>
+      <div className="callout">
+        <h3>Looking for Interiors or Modular Works</h3><br />
+        <a className="button" href="/collections/all">
+          Connect with us
+        </a>
+      </div>
+    </section>
 
 
-          <h3
 
-          >Top Interior, Architectural & Modular Kitchen - Wardrobe  Brand in Delhi - NCR - India</h3>
 
-        </div>
-
-      </Marquee>
 
 
     <div className="read-more mb-12">
-  <input
-    id="read-more-checkbox"
-    type="checkbox"
-    className="read-more__checkbox"
-    aria-hidden="true"
-  />
-  <p className="read-more__text mb-2">
-  Design Indian Homes is India's top Interior, Architectural & Modular Interior Brand serving across Delhi, Gurgaon, Noida & NCR. It is the most sought out by Homemakers, Architects, Interior Designers, Developers & just anyone who needs an Affordable Interior Makeover, Renovation Services, Architectural Services, Modular Kitchen, Wardrobe, Vanities, TV Units, Living works, Bathroom Or Just a peaceful Turnkey Work by Our Team. We are serving End to End Interiors & Modular Interiors across Delhi, Gurgaon, Noida, Faridabad & across NCR.
+      <input
+        id="read-more-checkbox"
+        type="checkbox"
+        className="read-more__checkbox"
+        aria-hidden="true"
+      />
+
+      <p className="read-more__text mb-2">
+        Design Indian Homes is India&#39;s top Interior, Architectural & Modular
+        Interior Brand serving across Delhi, Gurgaon, Noida & NCR. It is the most
+        sought out by Homemakers, Architects, Interior Designers, Developers & just anyone who needs an Affordable Interior Makeover, Renovation Services, Architectural Services, Modular Kitchen, Wardrobe, Vanities, TV Units, Living works, Bathroom Or Just a peaceful Turnkey Work by Our Team. We are serving End to End Interiors & Modular Interiors across Delhi, Gurgaon, Noida, Faridabad & across NCR.
         <br /> Our Brand Design Indian Homes was established in 2007,
         we are a professional team of certified architects, interior remodelers,
         and also happen to be Largest manufacturers of Modular Kitchens, Wardrobes,
@@ -186,22 +375,32 @@ const Collection = () => {
 
 
         <br />We have the largest Modular Interior facilities and are serving extensively with most affordable solutions for the following services : -
-        <br />Modular Kitchens * Wardrobes * TV Units * Vanities * Crockery Units * Shoe Racks * Bookshelves * Partitions * Studies & Bar Units * Mandir Units * End To End Interiors * Complete Structures * Luxury Interiors & Residences * Luxury Kitchens And Wardrobes * Italian - German - Swedish - Danish - Spanish Modular Kitchens & Wardrobes<br />We assure you 100% Guaranteed Quotes across New Delhi - NCR for any type of Interior Works, Architectural Works, renovation works, Modular Kitchens, Wardrobes,  TV units or just any Modular Works, custom interior works or architectural consultancy works. We have the most affordable modular interiors and serve all clients with perfect understanding of the requirements. <br />We also assure you to bring us any quotes and assure you flat 7% less on any offerings by any vendor across New Delhi - NCR.<br />
+        <br /> <br />Modular Kitchens * Wardrobes * TV Units * Vanities <br />* Crockery Units * Shoe Racks * Bookshelves * Partitions <br />* Studies & Bar Units * Mandir Units * End To End Interiors * Complete Structures <br />* Luxury Interiors & Residences * Luxury Kitchens And Wardrobes * Italian - German - Swedish - Danish - Spanish Modular Kitchens & Wardrobes<br /><br />We assure you 100% Guaranteed Quotes across New Delhi - NCR for any type of Interior Works, Architectural Works, renovation works, Modular Kitchens, Wardrobes,  TV units or just any Modular Works, custom interior works or architectural consultancy works. We have the most affordable modular interiors and serve all clients with perfect understanding of the requirements. <br />We also assure you to bring us any quotes and assure you flat 7% less on any offerings by any vendor across New Delhi - NCR.<br />
         Connect with the Largest Interior, Architectural, Modular Kitchens & Wardrobes Brand Across New Delhi - NCR - India.<br />We are the Top Awarded Largest manufacturers for Modular Kitchens & Wardrobes across Delhi - NCR & have been rated as the TOP Interior & Architectural  Brand by The Architectural Congress India and Real Wood Societies since 2016.<br />
 
 
-  </p>
-  <label
-    htmlFor="read-more-checkbox"
-    className="read-more__label"
-    data-read-more="Read more"
-    data-read-less="See less"
-    aria-hidden="true"
-  />
-</div>
+      </p>
+      <label
+        htmlFor="read-more-checkbox"
+        className="read-more__label"
+        data-read-more="Read more"
+        data-read-less="See less"
+        aria-hidden="true"
+      />
+    </div>
 
 
+    <Marquee style={{ backgroundColor: " yellow ", marginTop: "5%" }}>
+      <div className="marquee">
 
+
+        <h3
+
+        >Top Interior, Architectural & Modular Kitchen - Wardrobe  Brand in Delhi - NCR - India</h3>
+
+      </div>
+
+    </Marquee>
 
 
 
@@ -210,8 +409,8 @@ const Collection = () => {
       <section className="newz">
         <div className="flex flex-wrap  ">
           <div className=" mb-4" id='news'>
-            <Image src="/images/bar.png" height={200} width={1500} />
-
+            <section class="bordered bordersec">
+            </section>
             <div className="main-hero">
               <div className="cover">
                 <div className="box ai">
@@ -223,17 +422,40 @@ const Collection = () => {
               </div>
             </div>
             <video loop autoPlay controls={isPlaying} src="video/lux.mp4" alt="" height={10} width={1500}
-              className="rounded shadow-md" id='seek' style={{ marginBottom: "3%" }} />
+              className="rounded shadow-md" id='seek' style={{ marginBottom: "6%" }} />
+            <section class="bordered bordersec">
+            </section>
+            <div className="main-hero">
+              <div className="cover">
+                <div className="box ai">
 
+                </div>
+                <div className="box bi">
 
+                </div>
+              </div>
+            </div>
+            <div className="wrapperlatest">
+              <h1>Our Exclusive Content</h1>
 
+            </div>
 
-
+            <video
+              loop
+              autoPlay
+              controls={isPlaying}
+              src="/video/dkivid.mp4"
+              width={1500}
+              height={550}
+              className="rounded shadow-md"
+              style={{}}
+            />
+            {/* 
             <video loop autoPlay controls={isPlaying} src="video/vid21.mp4" alt="" height={10} width={1500}
               className="rounded shadow-md"
 
 
-            />
+            /> */}
           </div>
 
           <div className="md:w-1/3 mb-4" id='news'>
@@ -283,17 +505,30 @@ const Collection = () => {
 
             />
           </div>
-          <Image src="/images/bar.png" height={200} width={1500} />
           <div className="md:w-1/2 mb-4" id='news'>
-            <ReactBeforeSliderComponent
-              firstImage={FIRST_IMAGE}
-              secondImage={SECOND_IMAGE}
-              thirdImage={THIRD_IMAGE}
-            />
+            <Carousel
+              responsive={falshResponsive}
+              autoPlay={false}
+              swipeable={false}
+              draggable={false}
+              showDots={false}
+              infinite={false}
+              partialVisible={false}
+              dotListClass="custom-dot-list-style"
+            >
+              {flasherslider.map((item, index) => {
+                return (
+                  <ReactBeforeSliderComponent
+                    firstImage={FIRST_IMAGE}
+                    secondImage={SECOND_IMAGE}
+                  />
+                );
+              })}
+            </Carousel>
           </div>
           <div className="md:w-1/2 px-16" id='news'>
 
-            <div className="main-hero">
+            {/*   <div className="main-hero">
               <div className="cover">
                 <div className="box ai">
 
@@ -303,6 +538,7 @@ const Collection = () => {
                 </div>
               </div>
             </div>
+ */}
 
 
 
@@ -311,115 +547,33 @@ const Collection = () => {
 
 
 
-
-            <div className="wrapperlatest">
-
-
-
-
+            <div className="wrapperlatest" >
               <h1>Before And After</h1>
               <h3>Affordable Luxury</h3>
-              <p>We often use collective nouns to refer to groups of people. Examples: team, gang, squad, army, jury, clergy, cult, crew.</p>
+              <p className='px-6 py-4'>We often use collective nouns to refer to groups of people. Examples: team, gang, squad, army, jury, clergy, cult, crew.</p>
             </div>
           </div>
         </div>
       </section>
     </div>
 
-    <div className="main">
-      <img src="/images/left.gif" width={50} height={50} />
 
-      <svg id="rotatingText" viewBox="0 0 200 200" width={200} height={200}>
-        <defs>
-          <path
-            id="circle"
-            d="M 100, 100
-         m -75, 0
-         a 75, 75 0 1, 0 150, 0
-         a 75, 75 0 1, 0 -150, 0
-         "
-          ></path>
-        </defs>
-        <text width={400}>
-          <textPath
-            alignmentBaseline="top"
-            xlinkHref="#circle"
-            className="text"
-          >
-            The Best Home Interior Brand of India -
-          </textPath>
-        </text>
-      </svg>
-    </div>
-    <div className="wrapper " id="rev">
-      <h1>Explore Our Collection</h1>
-      <h3>For Beautiful Homes!</h3>
-      <div className="img-area ">
-        <div className="single-img" id="name">
-          <Image width={400} height={400} src="/images/1.png" alt="" />
-          <p className="text-lg font-bold" id="rem">
-            3 Seater Sofas Plush
-          </p>
-          <p className="text-md ">Plush, Stylish & Relaxing</p>
-        </div>
-        <div className="single-img" id="name">
-          <Image width={400} height={400} src="/images/2.png" alt="" />
-          <p className="text-lg font-bold" id="rem">
-            3 Seater Sofas Plush
-          </p>
-          <p className="text-md ">Plush, Stylish & Relaxing</p>
-        </div>
-        <div className="single-img" id="name">
-          <Image width={400} height={400} src="/images/3.png" alt="" />
-          <p className="text-lg font-bold" id="rem">
-            3 Seater Sofas Plush
-          </p>
-          <p className="text-md ">Plush, Stylish & Relaxing</p>
-        </div>
-        <div className="single-img" id="name">
-          <Image width={400} height={400} src="/images/4.png" alt="" />
-          <p className="text-lg font-bold" id="rem">
-            3 Seater Sofas Plush
-          </p>
-          <p className="text-md ">Plush, Stylish & Relaxing</p>
-        </div>
-        <div className="single-img" id="name">
-          <Image width={400} height={400} src="/images/78.png" alt="" />{' '}
-          <p className="text-lg font-bold" id="rem">
-            3 Seater Sofas Plush
-          </p>
-          <p className="text-md ">Plush, Stylish & Relaxing</p>
-        </div>
-        <div className="single-img" id="name">
-          <Image width={400} height={400} src="/images/56.png" alt="" />{' '}
-          <p className="text-lg font-bold" id="rem">
-            3 Seater Sofas Plush
-          </p>
-          <p className="text-md ">Plush, Stylish & Relaxing</p>
-        </div>
-        <div className="single-img" id="name">
-          <Image width={400} height={400} src="/images/1.png" alt="" />{' '}
-          <p className="text-lg font-bold" id="rem">
-            3 Seater Sofas Plush
-          </p>
-          <p className="text-md ">Plush, Stylish & Relaxing</p>
-        </div>
-        <div className="single-img" id="name">
-          <Image width={400} height={400} src="/images/2.png" alt="" />
-          <p className="text-lg font-bold" id="rem">
-            3 Seater Sofas Plush
-          </p>
-          <p className="text-md ">Plush, Stylish & Relaxing</p>
-        </div>
-        <div className="single-img" id="name">
-          <Image width={400} height={400} src="/images/3.png" alt="" />{' '}
-          <p className="text-lg font-bold" id="rem">
-            3 Seater Sofas Plush
-          </p>
-          <p className="text-md ">Plush, Stylish & Relaxing</p>
-        </div>
-      </div>
-    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <div className="containr">
       <h1>Why Design Indian Homes?</h1>
@@ -503,35 +657,11 @@ const Collection = () => {
       </div>
     </div>
 
-    <div className="main">
-      <img src="/images/left.gif" width={50} height={50} />
-
-      <svg id="rotatingText" viewBox="0 0 200 200" width={200} height={200}>
-        <defs>
-          <path
-            id="circle"
-            d="M 100, 100
-         m -75, 0
-         a 75, 75 0 1, 0 150, 0
-         a 75, 75 0 1, 0 -150, 0
-         "
-          ></path>
-        </defs>
-        <text width={400}>
-          <textPath
-            alignmentBaseline="top"
-            xlinkHref="#circle"
-            className="text"
-          >
-            The Best Home Interior Brand of India -
-          </textPath>
-        </text>
-      </svg>
-    </div>
 
 
 
-    <Image src="/images/bar.png" height={200} width={1500} />
+    <section class="bordered bordersec">
+    </section>
     <div className="main-hero">
       <div className="cover">
         <div className="box ai">
@@ -603,6 +733,159 @@ const Collection = () => {
 
 
 
+
+
+    <div className="main">
+      <img src="/images/left.gif" width={50} height={50} />
+      <svg id="rotatingText" viewBox="0 0 200 200" width={200} height={200}>
+        <defs>
+          <path
+            id="circle"
+            d="M 100, 100
+   m -75, 0
+   a 75, 75 0 1, 0 150, 0
+   a 75, 75 0 1, 0 -150, 0
+   "
+          ></path>
+        </defs>
+        <text width={400}>
+          <textPath
+            alignmentBaseline="top"
+            xlinkHref="#circle"
+            className="text"
+          >
+            The Best Home Interior Brand of India -
+          </textPath>
+        </text>
+      </svg>
+    </div>
+
+
+
+    <div className="wrapperlatest ">
+      <h1 >Best Trending Kitchens</h1>
+
+    </div>
+
+    <div className="parent">
+      <Carousel
+        responsive={responsive}
+        autoPlay={true}
+        swipeable={true}
+        draggable={true}
+        showDots={true}
+        infinite={true}
+        partialVisible={false}
+        dotListClass="custom-dot-list-style"
+      >
+        {KitchenImageUrl.map((imageUrl, index) => {
+          return (
+            <div className="slidering" key={index}>
+              <img src={imageUrl.url} alt="movie" />
+            </div>
+          );
+        })}
+      </Carousel>
+      <div className="flex justify-center items-center "><button className=' bg-green-700 text-lg py-3 px-3 mb-12 rounded-full text-white  font-bold '>Check Out Our Collections</button>
+      </div>
+    </div>
+
+
+    <div className="wrapperlatest ">
+      <h1 >Best Trending Wardrobes</h1>
+
+    </div>
+
+    <div className="parent">
+      <Carousel
+        responsive={responsive}
+        autoPlay={true}
+        swipeable={true}
+        draggable={true}
+        showDots={true}
+        infinite={true}
+        partialVisible={false}
+        dotListClass="custom-dot-list-style"
+      >
+        {WardrobeImageUrl.map((imageUrl, index) => {
+          return (
+            <div className="slidering" key={index}>
+              <img src={imageUrl.url} alt="kitchen" />
+            </div>
+          );
+        })}
+      </Carousel>
+      <div className="flex justify-center items-center "><button className=' bg-green-700 text-lg py-3 px-3 mb-12 rounded-full text-white  font-bold '>Check Out Our Collections</button>
+      </div>
+    </div>
+
+
+    <div className="wrapperlatest ">
+      <h1 >Best Trending Interiors</h1>
+
+    </div>
+
+    <div className="parent">
+      <Carousel
+        responsive={responsive}
+        autoPlay={true}
+        swipeable={true}
+        draggable={true}
+        showDots={true}
+        infinite={true}
+        partialVisible={false}
+        dotListClass="custom-dot-list-style"
+      >
+        {InteriorImageUrl.map((imageUrl, index) => {
+          return (
+            <div className="slidering" key={index}>
+              <img src={imageUrl.url} alt="kitchen" />
+            </div>
+          );
+        })}
+      </Carousel>
+
+      <div className="flex justify-center items-center "><button className=' bg-green-700 text-lg py-3 px-3 mb-12 rounded-full text-white  font-bold '>Check Out Our Collections</button>
+      </div>
+    </div>
+
+    <div className="wrapperlatest ">
+      <h1 >Best Trending Structures</h1>
+
+    </div>
+
+    <div className="parent">
+      <Carousel
+        responsive={responsive}
+        autoPlay={true}
+        swipeable={true}
+        draggable={true}
+        showDots={true}
+        infinite={true}
+        partialVisible={false}
+        dotListClass="custom-dot-list-style"
+      >
+        {StructureImageUrl.map((imageUrl, index) => {
+          return (
+            <div className="slidering" key={index}>
+              <img src={imageUrl.url} alt="kitchen" />
+            </div>
+          );
+        })}
+      </Carousel>
+      <div className="flex justify-center items-center "><button className=' bg-green-700 text-lg py-3 px-3 mb-12 rounded-full text-white  font-bold '>Check Out Our Collections</button>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
     <div
       className="flex flex-col items-center md:flex-row justify-center p-10 gap-6 mt-10"
       id="bg"
@@ -611,9 +894,11 @@ const Collection = () => {
       <br />
       <div className="text-center">
         <Image
-          width={100}
-          height={100}
-          src="/images/icon/12.png"
+          width={0}
+          height={0}
+          sizes="100vw"
+          style={{ width: '40%', height: 'auto' }}
+          src="/images/icon/working.png"
           alt=""
           className="w-60 h-70 mx-auto"
         />
@@ -625,11 +910,30 @@ const Collection = () => {
       </div>
 
 
+
       <div className="text-center mt-4 md:mt-0">
         <Image
-          width={100}
-          height={100}
-          src="/images/icon/5.png"
+          width={0}
+          height={0}
+          sizes="100vw"
+          style={{ width: '50%', height: 'auto' }}
+          src="/images/icon/interior-design.png"
+          alt=""
+          className="w-60 h-70 mx-auto"
+        />
+        <h1 className="font-bold text-center">Live 3D Design</h1>
+        <p className="text-sm">
+
+          Explore life-like 3D designs online that are made for your floor plan.
+        </p>
+      </div>
+      <div className="text-center mt-4 md:mt-0">
+        <Image
+          width={0}
+          height={0}
+          sizes="100vw"
+          style={{ width: '50%', height: 'auto' }}
+          src="/images/icon/badge.png"
           alt=""
           className="w-60 h-70 mx-auto"
         />
@@ -639,109 +943,30 @@ const Collection = () => {
           online.
         </p>
       </div>
-
       <div className="text-center mt-4 md:mt-0">
         <Image
-          width={100}
-          height={100}
-          src="/images/icon/1.png"
-          alt=""
-          className="w-60 h-70 mx-auto"
-        />
-        <h1 className="font-bold text-center">Live 3D Designs</h1>
-        <p className="text-sm">
-          Explore life-like 3D designs online that are made for your floor
-          plan.
-        </p>
-
-
-
-      <div
-        className="flex flex-col items-center md:flex-row justify-center p-10 gap-6 mt-10"
-        id="bg"
-      >
-        <h1 className="font-bold text-2xl">Stay safe. Design virtually.</h1>
-        <br />
-        <div className="text-center">
-          <Image
-            width={100}
-            height={100}
-            src="/images/icon/12.png"
-            alt=""
-            className="w-60 h-70 mx-auto"
-          />
-          <h1 className="font-bold text-center">Contactless Experience</h1>
-          <p className="text-sm">
-            No stepping out. Design your home interiors from the safety and
-            comfort of your home.
-          </p>
-        </div>
-
-
-        <div className="text-center mt-4 md:mt-0">
-          <Image
-            width={100}
-            height={100}
-            src="/images/icon/5.png"
-            alt=""
-            className="w-60 h-70 mx-auto"
-          />
-          <h1 className="font-bold text-center">Online Expertise</h1>
-          <p className="text-sm">
-            Connect with our 600+ designers virtually and explore designs
-            online.
-          </p>
-        </div>
-
-        <div className="text-center mt-4 md:mt-0">
-          <Image
-            width={100}
-            height={100}
-            src="/images/icon/1.png"
-            alt=""
-            className="w-60 h-70 mx-auto"
-          />
-          <h1 className="font-bold text-center">Live 3D Designs</h1>
-          <p className="text-sm">
-            Explore life-like 3D designs online that are made for your floor
-            plan.
-          </p>
-        </div>
-
-
-        <div className="text-center mt-4 md:mt-0">
-          <Image
-            width={100}
-            height={100}
-            src="/images/icon/2.png"
-            alt=""
-            className="w-60 h-70 mx-auto"
-          />
-          <h1 className="font-bold text-center">Instant Pricing</h1>
-          <p className="text-sm">
-            Enjoy complete price transparency and stay within budget.
-          </p>
-        </div>
-      </div>
-
-
-      <div className="text-center mt-4 md:mt-0">
-        <Image
-          width={100}
-          height={100}
-          src="/images/icon/2.png"
+          width={0}
+          height={0}
+          sizes="100vw"
+          style={{ width: '65%', height: 'auto' }}
+          src="/images/icon/payment.png"
           alt=""
           className="w-60 h-70 mx-auto"
         />
         <h1 className="font-bold text-center">Instant Pricing</h1>
         <p className="text-sm">
           Enjoy complete price transparency and stay within budget.
+
+
         </p>
       </div>
-    </div>
-</div>
 
-    <Image src="/images/bar.png" height={200} width={1500} />
+
+
+    </div>
+
+    <section class="bordered bordersec">
+    </section>
     <div className="main-hero">
       <div className="cover">
         <div className="box ai">
@@ -754,14 +979,91 @@ const Collection = () => {
     </div>
 
     <div className="wrapperlatest">
-      <h1>Brands you will find in our products</h1>
+      <h1>Our Corporate presence</h1>
+      <h3></h3>
     </div>
     <div className="slider">
       <div className="slide-track">
         <div className="slide">
           <Image src="/images/vedh.png" height={300} width={300} alt="" />
-          <p>hi zswedrtygfcv</p>
-          <button>click me</button>
+
+        </div>
+        <div className="slide">
+          <Image src="/images/vedh.png" height={300} width={300} alt="" />
+        </div>
+        <div className="slide">
+          <Image src="/images/vedh.png" height={300} width={300} alt="" />
+        </div>
+        <div className="slide">
+          <Image src="/images/vedh.png" height={300} width={300} alt="" />
+        </div>
+        <div className="slide">
+          <Image src="/images/vedh.png" height={300} width={300} alt="" />
+        </div>
+        <div className="slide">
+          <Image src="/images/vedh.png" height={300} width={300} alt="" />
+        </div>
+        <div className="slide">
+          <Image src="/images/vedh.png" height={300} width={300} alt="" />
+        </div>
+        <div className="slide">
+          <Image src="/images/vedh.png" height={300} width={300} alt="" />
+        </div>
+        <div className="slide">
+          <Image src="/images/vedh.png" height={300} width={300} alt="" />
+        </div>
+        <div className="slide">
+          <Image src="/images/vedh.png" height={300} width={300} alt="" />
+        </div>
+        <div className="slide">
+          <Image src="/images/vedh.png" height={300} width={300} alt="" />
+        </div>
+        <div className="slide">
+          <Image src="/images/vedh.png" height={300} width={300} alt="" />
+        </div>
+        <div className="slide">
+          <Image src="/images/vedh.png" height={300} width={300} alt="" />
+        </div>
+        <div className="slide">
+          <Image src="/images/vedh.png" height={300} width={300} alt="" />
+        </div>
+      </div>
+    </div>
+    <div className="main">
+      <img src="/images/left.gif" width={50} height={50} />
+      <svg id="rotatingText" viewBox="0 0 200 200" width={200} height={200}>
+        <defs>
+          <path
+            id="circle"
+            d="M 100, 100
+   m -75, 0
+   a 75, 75 0 1, 0 150, 0
+   a 75, 75 0 1, 0 -150, 0
+   "
+          ></path>
+        </defs>
+        <text width={400}>
+          <textPath
+            alignmentBaseline="top"
+            xlinkHref="#circle"
+            className="text"
+          >
+            No.1 Architectural Brand in India
+          </textPath>
+        </text>
+      </svg>
+    </div>
+
+    <div className="wrapperlatest">
+      <h1>Brands you will find in our products</h1>
+      <h3></h3>
+    </div>
+
+    <div className="slider">
+      <div className="slide-track">
+        <div className="slide">
+          <Image src="/images/vedh.png" height={300} width={300} alt="" />
+
         </div>
         <div className="slide">
           <Image src="/images/vedh.png" height={300} width={300} alt="" />
@@ -805,7 +1107,7 @@ const Collection = () => {
       </div>
     </div>
 
-    
+
   </>
   )
 }

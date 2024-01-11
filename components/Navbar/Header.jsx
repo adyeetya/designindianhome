@@ -3,7 +3,8 @@ import React, { useEffect, useState, useRef } from 'react';
 import { useSpring, animated } from 'react-spring';
 import { SocialIcon } from 'react-social-icons';
 import Modal from 'react-modal';
-import { Link } from 'react-router-dom';
+
+import Link from 'next/link'
 import Image from 'next/image'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPalette, faPencil, faNewspaper, faEllipsisH } from '@fortawesome/free-solid-svg-icons';
@@ -764,8 +765,8 @@ const Header = () => {
       <div className='flex'>
         <div class >
           <ul className='text-sm 	font-bold pr-12'>
-            <h3 className='text-lg'>Renovation</h3>
-            <h3 className='text-lg'> Book a Virtual Meeting</h3>
+            <h3 className='text-lg'><Link  href=" designindianhomes.com/home-renovation-services-in-delhi-gurgaon-noida-india">Renovation</Link></h3>  
+            <h3 className='text-lg'>Book a Virtual Meeting</h3>
             <h3 className='text-lg'> About Us</h3>
             <h3 className='text-lg'>The Team</h3>
             <h3 className='text-lg'>Collaborate with Us</h3>
@@ -1061,7 +1062,7 @@ const Header = () => {
                 </div>
 
                 <button className="bg-yellow-400 text-sm py-2 px-2 rounded-full -mt-4 center mb-1">Get Quotes</button>
-                <button className='-mt-4 text-sm py-2 px-4 mb-1' style={{ alignItems: 'center', borderRadius: '50px', border: '1px solid black' }}>Contact</button>
+                <button className='-mt-4 text-sm py-2 px-4 mb-1' style={{ alignItems: 'center', borderRadius: '50px', border: '1px solid black' }}><Link href="designindianhomes.com/contact-top-interior-designers-architects-in-delhi-gurgaon-noida-india">Contact</Link></button>
 
               </nav>
             </div>
