@@ -29,6 +29,7 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Allura&display=swap"
           rel="stylesheet"
         />
+  
       </Head>
       <body className="dark:text-white">
         <Providers>
