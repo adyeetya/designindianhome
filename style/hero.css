@@ -2319,18 +2319,21 @@ padding: 0;}
 @media screen and (max-width: 600px){
 .brandsbox-b {
     height: 380px!important;
+}
+.corp {
+  margin-left: 0% !important;
 }}
 @media (max-width: 767px){
 .brandsbox-b {
     height: 380px!important;
+}.corp {
+  margin-left: 0% !important;
 }}
 .brandsbox-b {
     padding-top: 0px;
     padding-bottom: 15rem!important;
 }
-.brandsbox-b {
-    height: 78rem!important;
-}
+
 .brands-box {
     text-align: center;
     padding: 5rem 0rem;
@@ -2338,4 +2341,8 @@ padding: 0;}
 .brands-box {
     max-width: 96rem;
     margin: 0 auto;
+}
+
+.corp {
+  margin-left: 20%;
 }

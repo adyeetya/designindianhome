@@ -44,7 +44,7 @@ const PostFooter = () => {
 
 
 
-{/* 
+
 
  <section className="Form-block" style={{ background: "#F1F9F9" }}>
   <div className="container">
@@ -55,7 +55,7 @@ const PostFooter = () => {
         Designers and Developers across Delhi - NCR
       </p>
     </div>
-    <div className="row">
+    <div className="row flex p-4">
       <div className="col-lg-4">
         <div className="form-part">
           <marquee
@@ -405,7 +405,7 @@ const PostFooter = () => {
       </div>
     </div>
   </div>
-</section>  */}
+</section> 
 
 
 

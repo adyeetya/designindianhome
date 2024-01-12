@@ -1077,7 +1077,7 @@ const Collection = () => {
     our Corporate Presence
   </h2><div className="flexbox">
   <div className="row " >
-    <div className="col-lg-12 flex justify-center">
+    <div className="corp container">
       <img
         src="https://www.designindiankitchen.com/wp-content/themes/dkiblogs/assets/images/gruplogos.png"
         style={{ filter: "invert(0)" }}
