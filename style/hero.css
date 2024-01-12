@@ -2314,3 +2314,28 @@ padding: 0;}
     text-transform: uppercase;
     font-weight: bold;
 }
+
+
+@media screen and (max-width: 600px){
+.brandsbox-b {
+    height: 380px!important;
+}}
+@media (max-width: 767px){
+.brandsbox-b {
+    height: 380px!important;
+}}
+.brandsbox-b {
+    padding-top: 0px;
+    padding-bottom: 15rem!important;
+}
+.brandsbox-b {
+    height: 78rem!important;
+}
+.brands-box {
+    text-align: center;
+    padding: 5rem 0rem;
+}
+.brands-box {
+    max-width: 96rem;
+    margin: 0 auto;
+}

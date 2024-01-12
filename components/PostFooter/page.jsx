@@ -44,9 +44,9 @@ const PostFooter = () => {
 
 
 
+{/* 
 
-
-{/* <section className="Form-block" style={{ background: "#F1F9F9" }}>
+ <section className="Form-block" style={{ background: "#F1F9F9" }}>
   <div className="container">
     <div className="section-header">
       <h2>Dont Miss.. ! Look Here</h2>
@@ -405,8 +405,7 @@ const PostFooter = () => {
       </div>
     </div>
   </div>
-</section> */}
-
+</section>  */}
 
 
 
@@ -596,7 +595,7 @@ const PostFooter = () => {
       </g>
    </svg>
    <h3>REFER AND PARTNER WITH US AND WE ASSURE GREAT REWARDS</h3>
-</section> 
+</section>  
 
 
 
@@ -653,8 +652,7 @@ const PostFooter = () => {
       src="https://www.designindiankitchen.com/wp-content/themes/dkiblogs/assets/images/cloudCloud.png"
       style={{ filter: "invert(0)" }}
     />
-    {/*<img class="cloudSquiggle" alt="kitchen-renovation-service-india" src="https://www.designindiankitchen.com/wp-content/themes/dkiblogs/assets/images/cloudSquiggle.png" />*/}
-    <img
+      <img
       className="squiggle1"
       alt="kitchen-renovation-service"
       src="https://www.designindiankitchen.com/wp-content/themes/dkiblogs/assets/images/squiggle1.png"
