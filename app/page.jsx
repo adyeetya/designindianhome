@@ -15,7 +15,7 @@ import TabsSection from '../components/TabsSection/page'
 import MyForm from '../components/MyForm'
 import '../style/hero.css'
 import Omsairam from '../components/Navbar/Omsairam'
-
+import PostFooter from '../components/PostFooter/page'
 export default function Home() {
   return (
     <>
@@ -34,9 +34,9 @@ export default function Home() {
         <FAQ />
         <div className="bg-amber-50 p-4 dark:text-white">
           <MyForm />
-        </div>
-
-        <Footer />
+        </div> 
+<PostFooter/>
+        <Footer /> 
       </Fragment>
     </>
   )
