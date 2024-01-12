@@ -3,8 +3,6 @@ import React, { useEffect, useState, useRef } from 'react';
 import { useSpring, animated } from 'react-spring';
 import { SocialIcon } from 'react-social-icons';
 import Modal from 'react-modal';
-
-import Link from 'next/link'
 import Image from 'next/image'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPalette, faPencil, faNewspaper, faEllipsisH } from '@fortawesome/free-solid-svg-icons';
@@ -12,7 +10,9 @@ import ThemeSwitcher from '@/app/ThemeSwitcher'
 import { faWhatsapp, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faPhone, faLightbulb, faHome, faBuilding, faUtensils, faCouch, faWrench, faChevronDown, faQuoteRight, faCog } from '@fortawesome/free-solid-svg-icons';
 import './Omsai.css'
+import Link from 'next/link'
 
+import {MdArchitecture, MdGiKitchenScale, MdOutlineKitchen } from "react-icons/md";
 
 
 
@@ -135,9 +135,10 @@ const Header = () => {
         onMouseLeave={handleMouseLeave} style={{ marginTop: '96px' }}>
         <div >
           <ul className='text-xs'>
-            <h3 className='text-lg font-bold'>Modular Interior Designs</h3>
+            <h3 className='text-base font-bold'>Modular Interior Designs</h3>
             <li>Modular Kitchens</li>
-            <li>Wardrobes</li>
+            <Link href="/wardrobe-designs"><li>Wardrobes</li></Link>
+            
             <li>Vanities </li>
             <li>Dressers</li>
             <li>TV Units</li>
@@ -150,7 +151,7 @@ const Header = () => {
 
         <div>
           <ul className='text-sm'>
-            <h3 className='text-lg font-bold'>Interior Design Solutions</h3>
+            <h3 className='text-base font-bold'>Interior Design Solutions</h3>
             <li>1BHK residence interior designs</li>
             <li>2BHK Residence interior designs</li>
             <li>3BHK Residence interior designs</li>
@@ -168,7 +169,7 @@ const Header = () => {
 
         <div>
           <ul className='text-xs'>
-            <h3 className='text-lg font-bold'>Interior Design Ideas</h3>
+            <h3 className='text-base font-bold'>Interior Design Ideas</h3>
             <li>Wooden Polishing</li>
             <li>Wooden Flooring</li>
             <li>Vertical Gardens</li>
@@ -195,7 +196,7 @@ const Header = () => {
 
         <div>
           <ul className='text-xs'>
-            <h3 className='text-lg font-bold'>Architectural Designs </h3>
+            <h3 className='text-base font-bold'>Architectural Designs </h3>
             <li>Architectural Consultancy</li>
             <li>End to End Architectural Services</li>
             <li>Architectural Designing and Planning</li>
@@ -206,7 +207,7 @@ const Header = () => {
 
         <div>
           <ul className='text-xs'>
-            <h3 className='text-lg font-bold'>Home Renovation Services</h3>
+            <h3 className='text-base font-bold'>Home Renovation Services</h3>
             <li>Structural Renovation</li>
             <li>Interior Renovation</li>
             <li>Bedroom Renovation</li>
@@ -915,11 +916,11 @@ const Header = () => {
   }, [mobileMenuVisible]);
   return (
     <div className={`bg-white  ${scrollDirection === 'down'}`}>
-      <div className="hidden lg:flex">
+      <div className=" invisible xl:visible lg:flex">
 
         {/* Desktop Header */}
         <div
-          className={`bg-white py-0 drop-shadow-lg mb-px w-full z-50 transition-transform ease-in-out duration-300 ${scrollDirection === 'down' ? '-translate-y-10' : 'translate-y-0'
+          className={`bg-white py-0 drop-shadow-lg  mb-px w-full z-50 transition-transform ease-in-out duration-300 ${scrollDirection === 'down' ? '-translate-y-10' : 'translate-y-0'
             }`}
           style={{
             position: 'fixed',
@@ -950,7 +951,7 @@ const Header = () => {
                 <h1 className="text-xs text-black font-bold mt-2">Call Us</h1>
               </div>
               <div className="flex gap-4 md:text-xs text-black mt-2">
-                <p>Book a Visit</p>
+               <Link href="/book-a-interior-design-visit"> <p>Book a Visit</p></Link>
                 <p>| Refer a Rewards</p>
                 <p>| Architects & Interior Designs</p>
               </div>
@@ -984,6 +985,8 @@ const Header = () => {
             className="w-full"
             style={{ display: 'flex', justifyContent: 'center' }}
           >
+            <Link href="/">
+            
             <animated.img
               srcSet="/images/left.gif"
               alt="Left Logo"
@@ -996,31 +999,32 @@ const Header = () => {
                 marginTop: '10px'
               }}
             />
-
+</Link>
 
             {/* Main Header Navigation scroll up header */}
-            <div className="sm:px-0 md:px-0 lg:px-1 xl:px-0 ">
-              <nav className="flex flex-wrap md:flex-nowrap justify-center items-center mt-8 text-black font-bold space-x-4 sm:space-x-5" style={{ justifyContent: 'center' }}>
-                <p className="text-sm font-bold" onMouseOver={() => handleMouseOver('DesignIdeas')}>
-                  <FontAwesomeIcon icon={faLightbulb} className="mr-1" />
+            <div className="sm:px-0 md:px-0 xl:px-1 xl:px-0 ">
+              <nav className="flex flex-wrap xl:flex-nowrap justify-center items-center mt-8 text-black font-bold space-x-4 sm:space-x-5" style={{ justifyContent: 'center' }}>
+                <p className=" flex center text-sm font-bold" onMouseOver={() => handleMouseOver('DesignIdeas')}>
+              
                   Design Ideas
                 </p>
 
-                <p className="text-sm font-bold" onMouseOver={() => handleMouseOver('Interiors')}>
-                  <FontAwesomeIcon icon={faHome} className="mr-1 text-xs" />
+                <p className="flex text-sm font-bold" onMouseOver={() => handleMouseOver('Interiors')}>
+               
                   Interiors
                 </p>
 
-                <p className="text-sm font-bold" onMouseOver={() => handleMouseOver('Architectural')}>
-                  <FontAwesomeIcon icon={faBuilding} className="mr-1 text-xs" />
+                <p className="flex text-sm font-bold" onMouseOver={() => handleMouseOver('Architectural')}>
+               
                   Architectural
                 </p>
 
-                <p className="text-sm font-bold" onMouseOver={() => handleMouseOver('Modular Kitchen')}>
-                  <FontAwesomeIcon icon={faUtensils} className="mr-1 text-xs" />
+                <p className="flex text-sm font-bold" onMouseOver={() => handleMouseOver('Modular Kitchen')}>
+                
                   Modular Kitchen
                 </p>
-
+                <Link href="/">
+                
                 <animated.img
                   srcSet="/images/Logo.gif"
                   alt="Center Logo"
@@ -1038,25 +1042,28 @@ const Header = () => {
                     height: '30px',
                   }}
                 />
+                </Link>
+
+
+
 
                 <p className="text-sm font-bold" onMouseOver={() => handleMouseOver('Wardrobes')}>
-                  <FontAwesomeIcon icon={faCouch} className="mr-1 text-xs" />
+                <i class="fi fi-tr-clothes-hanger"></i>
                   Wardrobes
                 </p>
 
                 <p className="text-sm font-bold" onMouseOver={() => handleMouseOver('Living')}>
-                  <FontAwesomeIcon icon={faWrench} className="mr-1 text-xs" />
+                <i class="fi fi-ts-fireplace"></i>
                   Living
                 </p>
 
                 <p className="text-sm font-bold" onMouseOver={() => handleMouseOver('Modular Interiors')}>
-                  <FontAwesomeIcon icon={faCouch} className="mr-1 text-xs" />
+                <i class="fi fi-ts-loveseat"></i>
                   Modular Interiors
                 </p>
 
                 <div>
                   <p className="text-sm font-bold" onMouseOver={() => handleMouseOver('More')}>
-                    <FontAwesomeIcon icon={faChevronDown} className="mr-1 text-xs" />
                     More
                   </p>
                 </div>
@@ -1073,7 +1080,7 @@ const Header = () => {
 
       {/* {bottom menu} */}
 
-      <div className="relative lg:hidden">
+      <div className="relative xl:hidden">
         {/* Your existing content */}
 
         <div className="fixed bottom-16 right-4 flex flex-col items-center mb-4" style={{ zIndex: '800' }}>
@@ -1120,7 +1127,7 @@ const Header = () => {
       {/* {mobiler logo} */}
 
 
-      <div className='lg:hidden flex justify-between items-center px-0 py-0 bg-white drop-shadow-lg mt-8 fixed top-0 w-full' style={{ zIndex: '200' }}>
+      <div className='xl:hidden flex justify-between items-center px-0 py-0 bg-white drop-shadow-lg mt-8 fixed top-0 w-full' style={{ zIndex: '200' }}>
         <div>
           <Image src="/images/Logo.gif" alt='left logo' width={90} height={80} style={{ width: '120px', height: 'auto', marginLeft: '10px', padding: '1px', marginTop: '10px' }} />
         </div>
