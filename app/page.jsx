@@ -20,7 +20,7 @@ export default function Home() {
   return (
     <>
       <Fragment>
-        <Omsairam />
+      <Omsairam />
         <Header />
         <Hero />
         <Collection />
@@ -34,7 +34,7 @@ export default function Home() {
         <FAQ />
         <div className="bg-amber-50 p-4 dark:text-white">
           <MyForm />
-        </div> 
+        </div>  
 <PostFooter/>
         <Footer /> 
       </Fragment>

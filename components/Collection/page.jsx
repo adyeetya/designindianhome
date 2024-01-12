@@ -1025,66 +1025,51 @@ const Collection = () => {
       </div>
 
      
-
-      {/* <div className="slider">
+      <div className="wrapperlatest">
+        <h1>Our Corporate Presece</h1>
+        <h3></h3>
+      </div>
+      <div className="slider">
         <div className="slide-track">
           <div className="slide">
-            <Image src="/1q.png" height={300} width={300} alt="" />
+            <Image src="/1q1.png" height={300} width={300} alt="" />
           </div>
           <div className="slide">
-            <Image src="/1q.png" height={300} width={300} alt="" />
+            <Image src="/1q2.png" height={300} width={300} alt="" />
           </div>
           <div className="slide">
-            <Image src="/images/vedh.png" height={300} width={300} alt="" />
+            <Image src="/1a3.png" height={300} width={300} alt="" />
           </div>
           <div className="slide">
-            <Image src="/images/vedh.png" height={300} width={300} alt="" />
+            <Image src="/1a4.png" height={300} width={300} alt="" />
           </div>
           <div className="slide">
-            <Image src="/images/vedh.png" height={300} width={300} alt="" />
+            <Image src="/1a5.png" height={300} width={300} alt="" />
           </div>
           <div className="slide">
-            <Image src="/images/vedh.png" height={300} width={300} alt="" />
+            <Image src="/1a6.png" height={300} width={300} alt="" />
           </div>
           <div className="slide">
-            <Image src="/images/vedh.png" height={300} width={300} alt="" />
+            <Image src="/1a7.png" height={300} width={300} alt="" />
           </div>
           <div className="slide">
-            <Image src="/images/vedh.png" height={300} width={300} alt="" />
+            <Image src="/1a8.png" height={300} width={300} alt="" />
           </div>
           <div className="slide">
-            <Image src="/images/vedh.png" height={300} width={300} alt="" />
+            <Image src="/1q1.png" height={300} width={300} alt="" />
           </div>
           <div className="slide">
-            <Image src="/images/vedh.png" height={300} width={300} alt="" />
+            <Image src="/1q2.png" height={300} width={300} alt="" />
           </div>
           <div className="slide">
-            <Image src="/images/vedh.png" height={300} width={300} alt="" />
+            <Image src="/1a3.png" height={300} width={300} alt="" />
           </div>
           <div className="slide">
-            <Image src="/images/vedh.png" height={300} width={300} alt="" />
-          </div>
-          <div className="slide">
-            <Image src="/images/vedh.png" height={300} width={300} alt="" />
-          </div>
-          <div className="slide">
-            <Image src="/images/vedh.png" height={300} width={300} alt="" />
+            <Image src="/1a4.png" height={300} width={300} alt="" />
           </div>
         </div>
-      </div> */}
-      <div className="brands-box brandsbox-b">
-  <h2 className="text-uppercase view-heading text-center">
-    our Corporate Presence
-  </h2><div className="flexbox">
-  <div className="row " >
-    <div className="corp container">
-      <img
-        src="https://www.designindiankitchen.com/wp-content/themes/dkiblogs/assets/images/gruplogos.png"
-        style={{ filter: "invert(0)" }}
-      />
-    </div>
-  </div>
-</div></div>
+      </div> 
+      
 
     </>
   )
