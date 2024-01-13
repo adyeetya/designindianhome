@@ -16,7 +16,7 @@ const Page = ({}) => {
     const fetchImages = async () => {
       try {
         const timestamp = Date.now();
-        const response = await fetch(`http://89.116.34.51:3002/api/images/${categoryIds}?timestamp=${timestamp}`);
+        const response = await fetch(`https://api.designindianwardrobe.com/images/${categoryIds}?timestamp=${timestamp}`);
         if (response.ok) {
           const data = await response.json();
           setImages(data);
@@ -57,7 +57,7 @@ const Page = ({}) => {
         
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 px-7 mt-16">
         {images.map((image) => (
-          <img key={image.id} src={`http://89.116.34.51:3002/uploads/${image.filename}`} alt={image.filename} style={{width: '300px', height: '200px', borderRadius: '10px', border: '1px solid black'}}/>
+          <img key={image.id} src={`https://api.designindianwardrobe.com/uploads/${image.filename}`} alt={image.filename} style={{width: '300px', height: '200px', borderRadius: '10px', border: '1px solid black'}}/>
         ))}
         </div>
       </div>
