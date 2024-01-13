@@ -564,7 +564,7 @@ const page = () => {
     <>
       <Omsairam />
       <Header />
-      <div className="mt-32 lg:mt-64 mb-16 mx-auto sm:mx-16">
+      <div className="mt-20 lg:mt-36 xl:mt-32 mb-16 mx-auto sm:mx-16">
         {/* breadcrumb */}
         <div className="px-4  ">
           <span className="text-green-500 text-sm">

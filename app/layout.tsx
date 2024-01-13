@@ -3,7 +3,7 @@
 import Head from 'next/head'
 import type { Metadata } from 'next'
 import { GlobalStyle } from '../components/GlobalStyles'
-import Navbar from '@/components/Navbar/Navbar'
+
 import './globals.css'
 import ThemeSwitcher from './ThemeSwitcher'
 import Providers from './providers'
