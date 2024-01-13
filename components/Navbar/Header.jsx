@@ -1005,8 +1005,8 @@ const Header = () => {
             <div className="sm:px-0 md:px-0 xl:px-1 xl:px-0 ">
               <nav className="flex flex-wrap xl:flex-nowrap justify-center items-center mt-8 text-black font-bold space-x-4 sm:space-x-5" style={{ justifyContent: 'center' }}>
                 <p className=" flex center text-sm font-bold" onMouseOver={() => handleMouseOver('DesignIdeas')}>
-              
-                  Design Ideas
+              <Link href="/design-ideas"> Design Ideas</Link>
+                  
                 </p>
 
                 <p className="flex text-sm font-bold" onMouseOver={() => handleMouseOver('Interiors')}>
