@@ -1,149 +1,66 @@
 'use client'
-import MaxWidthWrapper from '@/components/MaxWidthWrapper'
-import React from 'react'
-
+// import MaxWidthWrapper from '@/components/MaxWidthWrapper'
+import React, { useState, useEffect } from 'react';
 import Header from '../../components/Navbar/Header'
 import Footer from '../../components/Footer/Footer'
 import Link from 'next/link'
 import ProgressBar from '../../components/Progressbar'
-import Card from './Card'
+// import Card from './Card'
 import MyForm from '../../components/MyForm'
 import Omsairam from '../../components/Navbar/Omsairam'
-const page = () => {
-  const data = [
-    {
-      id: 1,
-      heading: 'Card 1',
-      smallText: 'Description for Card 1',
-      image: '/images/stock-image.avif',
-    },
-    {
-      id: 2,
-      heading: 'Card 2',
-      smallText: 'Description for Card 2',
-      image: '/images/stock-image.avif',
-    },
-    {
-      id: 3,
-      heading: 'Card 3',
-      smallText: 'Description for Card 3',
-      image: '/images/stock-image.avif',
-    },
-    {
-      id: 4,
-      heading: 'Card 4',
-      smallText: 'Description for Card 4',
-      image: '/images/stock-image.avif',
-    },
-    {
-      id: 5,
-      heading: 'Card 5',
-      smallText: 'Description for Card 5',
-      image: '/images/stock-image.avif',
-    },
-    {
-      id: 6,
-      heading: 'Card 6',
-      smallText: 'Description for Card 6',
-      image: '/images/stock-image.avif',
-    },
-    {
-      id: 7,
-      heading: 'Card 7',
-      smallText: 'Description for Card 7',
-      image: '/images/stock-image.avif',
-    },
-    {
-      id: 8,
-      heading: 'Card 8',
-      smallText: 'Description for Card 8',
-      image: '/images/stock-image.avif',
-    },
-    {
-      id: 9,
-      heading: 'Card 9',
-      smallText: 'Description for Card 9',
-      image: '/images/stock-image.avif',
-    },
-    {
-      id: 10,
-      heading: 'Card 10',
-      smallText: 'Description for Card 10',
-      image: '/images/stock-image.avif',
-    },
-    {
-      id: 11,
-      heading: 'Card 11',
-      smallText: 'Description for Card 11',
-      image: '/images/stock-image.avif',
-    },
-    {
-      id: 12,
-      heading: 'Card 12',
-      smallText: 'Description for Card 12',
-      image: '/images/stock-image.avif',
-    },
-    {
-      id: 13,
-      heading: 'Card 13',
-      smallText: 'Description for Card 13',
-      image: '/images/stock-image.avif',
-    },
-    {
-      id: 14,
-      heading: 'Card 14',
-      smallText: 'Description for Card 14',
-      image: '/images/stock-image.avif',
-    },
-    {
-      id: 15,
-      heading: 'Card 15',
-      smallText: 'Description for Card 15',
-      image: '/images/stock-image.avif',
-    },
-    {
-      id: 16,
-      heading: 'Card 16',
-      smallText: 'Description for Card 16',
-      image: '/images/stock-image.avif',
-    },
-    {
-      id: 17,
-      heading: 'Card 17',
-      smallText: 'Description for Card 17',
-      image: '/images/stock-image.avif',
-    },
-    {
-      id: 18,
-      heading: 'Card 18',
-      smallText: 'Description for Card 18',
-      image: '/images/stock-image.avif',
-    },
-    {
-      id: 19,
-      heading: 'Card 19',
-      smallText: 'Description for Card 19',
-      image: '/images/stock-image.avif',
-    },
-    {
-      id: 20,
-      heading: 'Card 20',
-      smallText: 'Description for Card 20',
-      image: '/images/stock-image.avif',
-    },
-    {
-      id: 21,
-      heading: 'Card 21',
-      smallText: 'Description for Card 21',
-      image: '/images/stock-image.avif',
-    },
-    {
-      id: 22,
-      heading: 'Card 22',
-      smallText: 'Description for Card 22',
-      image: '/images/stock-image.avif',
-    },
-  ]
+const page = ({}) => {
+  const [categoryDataArray, setCategoryDataArray] = useState([]);
+
+  useEffect(() => {
+    const fetchCategoryData = async () => {
+      try {
+        const timestamp = Date.now();
+        const categoryIds = [64, 65, 66, 67, 68, 69, 70]; // Add the category IDs you want to fetch
+
+        // Fetch category data
+        const categoryPromises = categoryIds.map(async (categoryId) => {
+          const response = await fetch(`http://89.116.34.51:3002/api/categories/${categoryId}?timestamp=${timestamp}`);
+          if (response.ok) {
+            const data = await response.json();
+            return data;
+          } else {
+            console.error(`Error fetching data for category ${categoryId}:`, response.statusText);
+            return {};
+          }
+        });
+
+        const categoryDataArray = await Promise.all(categoryPromises);
+
+        // Fetch image data for each category
+        const imageDataPromises = categoryDataArray.map(async (categoryData) => {
+          const imageResponse = await fetch(`http://89.116.34.51:3002/api/images/${categoryData.id}?timestamp=${timestamp}`);
+          if (imageResponse.ok) {
+            const imageData = await imageResponse.json();
+            // Assuming you want only one image per category
+            const selectedImage = imageData[0];
+            return selectedImage;
+          } else {
+            console.error(`Error fetching image for category ${categoryData.id}:`, imageResponse.statusText);
+            return {};
+          }
+        });
+
+        const imageDataArray = await Promise.all(imageDataPromises);
+
+        // Combine category data with corresponding image data
+        const mergedDataArray = categoryDataArray.map((categoryData, index) => ({
+          ...categoryData,
+          image: imageDataArray[index],
+        }));
+
+        setCategoryDataArray(mergedDataArray);
+      } catch (error) {
+        console.error('Error during fetch:', error);
+      }
+    };
+
+    fetchCategoryData();
+  }, []);
 
   return (
     <>
@@ -160,7 +77,6 @@ const page = () => {
 
         <div className="flex items-center bg-white p-4">
           <div className="w-1 h-8 rounded bg-green-500 mr-2"></div>
-
           <h1 className="text-3xl font-bold">Home Interior Design</h1>
         </div>
         <p className="text-gray-700 text-sm px-7">
@@ -171,11 +87,22 @@ const page = () => {
           living room and more, to help you pick a design that will best suit
           your home interior requirements.
         </p>
-        {/* Rest of the page content goes here */}
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 px-7 mt-16">
-          {data.map((item) => (
-            <Card key={item.id} data={item} />
+          {categoryDataArray.map((categoryData) => (
+            <div key={categoryData.id} className="bg-white rounded-md shadow-md p-6">
+               {categoryData.image && (
+                <img
+                  src={`http://89.116.34.51:3002/uploads/${categoryData.image.filename}`}
+                  alt={categoryData.image.filename}
+                  
+                  style={{width: '300px', height: '150px', borderRadius: '10px'}}
+                />
+              )}
+              <h2 className="text-xl font-semibold mb-4">{categoryData.name}</h2>
+              <p className="text-gray-700 mb-4">{categoryData.description}</p>
+             
+            </div>
           ))}
         </div>
       </div>
@@ -186,7 +113,6 @@ const page = () => {
 
       <Footer />
     </>
-  )
-}
-
+  );
+};
 export default page
