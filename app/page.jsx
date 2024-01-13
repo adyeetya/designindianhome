@@ -2,7 +2,6 @@
 import Hero from '../components/Hero/page'
 import { Fragment } from 'react'
 import ImageGrid from '../components/ImageGrid/page'
-import Image from 'next/image'
 import Brands from '../components/Brands/page'
 import Header from '../components/Navbar/Header'
 import Footer from '../components/Footer/Footer'

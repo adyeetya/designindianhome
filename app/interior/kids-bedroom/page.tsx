@@ -16,7 +16,7 @@ const page = () => {
       <Omsairam />
       <Header />
 
-      <div className="mt-32 lg:mt-64 mb-16 mx-auto sm:mx-16">
+      <div className="mt-32 lg:mt-64 mb-16 mx-auto mx-8 sm:mx-16">
         {/* breadcrumb */}
         <div className="p-4  ">
           <span className="text-green-500 text-sm">
@@ -26,11 +26,11 @@ const page = () => {
           <span className="text-green-500 text-sm">
             <Link href="/design-ideas">Design ideas</Link>
           </span>{' '}
-          / <span className="text-gray-600 text-sm">Foyer</span>
+          / <span className="text-gray-600 text-sm">Kids bedroom</span>
         </div>
 
         {/* tabs */}
-        <Tabs id={12} />
+        <Tabs id={8} />
       </div>
       <Footer />
     </>
