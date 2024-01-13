@@ -1,6 +1,16 @@
 import Marquee from 'react-fast-marquee'
+import React, { useState, useEffect, useRef } from 'react'
 import Link from "next/link"
 const PostFooter = () => {
+  const ref = useRef()
+  const videoRef = useRef()
+  const [isPlaying, setIsPlaying] = useState(false)
+  useEffect(() => {
+    const video = document.querySelector('video')
+    video.addEventListener('load', () => {
+      setIsPlaying(true)
+    })
+  }, [])
   return (
     <>
 
@@ -553,20 +563,57 @@ const PostFooter = () => {
 
 <div class="container m-auto p-8 text-grey-darkest">
   <div class="flex flex-wrap -mx-2 mb-8">
-      <div class="w-full md:w-1/2 lg:w-1/4 px-2 mb-4">
-         <div class="border h-12 text-sm text-grey-dark flex items-center justify-center">
-            <p>full / half / quarter</p>
+      <div class="w-full md:w-1/2 lg:w-1/4 px-2 mb-4 ">
+         <div class="video-sec">
+         <video
+                loop
+                autoPlay
+                controls={isPlaying}
+                src="/video/dkivid.mp4"
+               
+                className="rounded shadow-md 
+                "
+                width={0}
+                height={0} 
+                sizes="100vw"
+                style={{ width: '100%', height: 'auto', backgroundAttachment:'fixed' }} 
+              />
          </div>
       </div>
      
-      <div class="w-full lg:w-1/2 px-2">
-         <div class="border h-12 text-sm text-grey-dark flex items-center justify-center">
-            <p>full / half</p>
+      <div class="w-full lg:w-1/2 px-2 py-20 max-[600px]:py-10">
+         <div class=" h-12 text-lg text-grey-dark flex items-center text-center justify-center">
+            <p>The Pioneers in the Modular Kitchen Industry</p>
+          
          </div>
+         <div className="text-6xl max-[600px]:text-2xl max-[600px]:py-4 text-grey-dark text-center  items-center justify-center px-24 " style={{fontFamily:"Impact"}}>
+            <p>The Most Reliable,<br/>
+Most Recommended <br/>
+ &
+Most
+Loved ❤️ Brand ✌
+</p>
+
+<button className="font-extralight max-[600px]:text-xl  text-3xl bg-amber-400 text-gray-dark p-3 rounded-lg max-[600px]:w-2/3 w-1/2 focus:outline-none focus:shadow-outline mt-8">
+                  Who We Are
+                </button>
+
+            </div>
       </div>
       <div class="w-full md:w-1/2 lg:w-1/4 px-2 mb-4">
-         <div class="border h-12 text-sm text-grey-dark flex items-center justify-center">
-            <p>full / half / quarter</p>
+         <div class="">
+         <video
+                loop
+                autoPlay
+                controls={isPlaying}
+                src="/video/dkivid.mp4"
+               
+                className="rounded shadow-md"
+                width={0}
+                height={0}
+                sizes="100vw"
+                style={{ width: '100%', height: 'auto' }} 
+              />
          </div>
       </div>
    </div>

@@ -391,7 +391,9 @@ margin-top: 5%;
   
 }
 
-
+.lastsec{
+  background: url(/public/video/dkivid.mp4);
+}
 .hide{
   background-color: rgb(241 245 249 / var(--tw-bg-opacity));;
 }
@@ -404,6 +406,9 @@ margin-top: 5%;
     }
   .containering {
     flex-direction: column;
+  }
+  .lastsec{
+
   }
 }
 .section1 {
@@ -1536,6 +1541,9 @@ section.outter.hero-video {
   text-transform: uppercase;
 }
 
+.video-sec{
+  background: url(/public/video/dkivid.mp4);
+}
 .callout a {
   border: .5rem solid;
   padding: 1rem 2rem;
