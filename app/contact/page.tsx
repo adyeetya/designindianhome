@@ -435,7 +435,7 @@ const FullScreenImage = () => {
 const ScheduleChatSection = () => {
   return (
     <section
-      className="my-2 relative sm:-mx-16"
+      className="my-2 relative"
       style={{
         backgroundImage: 'url("images/footer_BG_01.jpg")',
         backgroundPosition: 'center top',

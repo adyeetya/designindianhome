@@ -57,12 +57,18 @@ app.post('/upload', upload.single('file'), async (req, res) => {
       ],
       html: `<p><strong>Name:</strong> ${body.name}</p>
              <p><strong>Email:</strong> ${body.email}</p>
-             <p><strong>Address:</strong> ${body.address}</p>
+             <p><strong>Address:</strong> ${
+               body.address ? body.address : 'Not Provided'
+             }</p>
              <p><strong>Number:</strong> ${body.number}</p>
-             <p><strong>Date:</strong> ${body.date}</p>
-             <p><strong>Floor Plan:</strong> ${body.FloorPlan}</p>
-             <p><strong>Purpose:</strong> ${body.purpose}</p>
-             <p><strong>Requirements:</strong> ${body.requirements}</p>
+             <p><strong>Date:</strong> ${
+               body.date ? body.date : 'Not Provided'
+             }</p>
+             <p><strong>Floor Plan:</strong> ${
+               body.FloorPlan ? body.FloorPlan : 'Not Provided'
+             }</p>
+             <p><strong>Purpose:</strong> ${body.purpose?body.purpose:'Not Provided'}</p>
+             <p><strong>Requirements:</strong> ${body.requirements?body.requirements:'Not Provided'}</p>
            
              <p><strong>Attached File:</strong> ${file.originalname}</p>`,
     }

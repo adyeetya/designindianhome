@@ -1,8 +1,7 @@
 'use client'
 import React, { useState } from 'react'
-import Header from '../../components/Navbar/Header'
-import Omsairam from '../../components/Navbar/Omsairam'
-import Footer from '../../components/Footer/Footer'
+
+
 import MaxWidthWrapper from '../../components/MaxWidthWrapper'
 const FileUploadForm = () => {
   const [selectedFile, setSelectedFile] = useState(null)
@@ -74,10 +73,8 @@ const FileUploadForm = () => {
 
   return (
     <>
-      <Omsairam />
-      <Header />
       <MaxWidthWrapper className="">
-        <div className="mx-auto p-8 bg-amber-50 rounded-lg mt-32 lg:mt-64 mb-16 sm:mx-16">
+        <div className="mx-auto p-8 bg-amber-50 rounded-lg mb-8 sm:mb-16 sm:mx-16">
           <form onSubmit={handleSubmit}>
             <div className="grid grid-cols-1 sm:grid-cols-2 sm:gap-4">
               {/* Left Column */}
@@ -171,7 +168,7 @@ const FileUploadForm = () => {
                     htmlFor="date"
                     className="block text-sm font-medium text-gray-600 mb-1"
                   >
-                    Date:
+                    When would you like the project to start?
                   </label>
                   <input
                     type="date"
@@ -186,7 +183,7 @@ const FileUploadForm = () => {
                     htmlFor="FloorPlan"
                     className="block text-sm font-medium text-gray-600 mb-1"
                   >
-                    Your Floor Plan:
+                    Your Floor Plan
                   </label>
                   <select
                     required
@@ -207,7 +204,7 @@ const FileUploadForm = () => {
                     htmlFor="purpose"
                     className="block text-sm font-medium text-gray-600 mb-1"
                   >
-                    Purpose:
+                    Purpose
                   </label>
                   <select
                     required
@@ -229,7 +226,7 @@ const FileUploadForm = () => {
                     htmlFor="requirements"
                     className="block text-sm font-medium text-gray-600 mb-1"
                   >
-                    Your requirements *:
+                    Your requirements *
                   </label>
                   <select
                     required
@@ -258,7 +255,6 @@ const FileUploadForm = () => {
           </form>
         </div>
       </MaxWidthWrapper>
-      <Footer />
     </>
   )
 }
