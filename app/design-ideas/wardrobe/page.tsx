@@ -9,11 +9,10 @@ import Nav from 'react-bootstrap/Nav'
 import Omsairam from '../../../components/Navbar/Omsairam'
 import React, { useState, useEffect } from 'react';
 
-const page = () => {
-  const [images, setImages] = useState([]);
-  const categoryIds = [65]; // Add the category IDs you want to fetch
+const Page = ({}) => {
+  const [images, setImages] = useState<Array<{ id: number; filename: string }>>([]);
   useEffect(() => {
-    
+    const categoryIds = [65]; // Add the category IDs you want to fetch
     const fetchImages = async () => {
       try {
         const timestamp = Date.now();
@@ -30,7 +29,7 @@ const page = () => {
     };
 
     fetchImages();
-  }, [categoryIds]);
+  }, []);
 
   return (
     <>
@@ -64,4 +63,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

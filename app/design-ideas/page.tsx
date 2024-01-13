@@ -8,8 +8,8 @@ import ProgressBar from '../../components/Progressbar'
 // import Card from './Card'
 import MyForm from '../../components/MyForm'
 import Omsairam from '../../components/Navbar/Omsairam'
-const page = ({}) => {
-  const [categoryDataArray, setCategoryDataArray] = useState([]);
+const Page = ({}) => {
+  const [categoryDataArray, setCategoryDataArray] =useState<any[]>([]);
 
   useEffect(() => {
     const fetchCategoryData = async () => {
@@ -115,4 +115,4 @@ const page = ({}) => {
     </>
   );
 };
-export default page
+export default Page

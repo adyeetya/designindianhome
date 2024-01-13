@@ -1,4 +1,4 @@
-'use client'
+'use client';
 import React, { useState, useEffect } from 'react';
 import Header from '../../../components/Navbar/Header'
 import Footer from '../../../components/Footer/Footer'
@@ -9,11 +9,10 @@ import Tabs from '../Tabs'
 import Nav from 'react-bootstrap/Nav'
 import Omsairam from '../../../components/Navbar/Omsairam'
 
-const page = () => {
-  const [images, setImages] = useState([]);
-  const categoryIds = [70]; // Add the category IDs you want to fetch
+const Page = ({}) => {
+  const [images, setImages] = useState<Array<{ id: number; filename: string }>>([]);
   useEffect(() => {
-    
+    const categoryIds = [70]; // Add the category IDs you want to fetch
     const fetchImages = async () => {
       try {
         const timestamp = Date.now();
@@ -30,7 +29,7 @@ const page = () => {
     };
 
     fetchImages();
-  }, [categoryIds]);
+  }, []);
 
 
   return (
@@ -55,9 +54,9 @@ const page = () => {
         {/* tabs */}
         <Tabs id={3} />
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 px-7 mt-16">
-        {images.map((image) => (
-          <img key={image.id} src={`http://89.116.34.51:3002/uploads/${image.filename}`} alt={image.filename} style={{width: '300px', height: '200px', borderRadius: '10px', border: '1px solid black'}}/>
-        ))}
+        {Array.isArray(images) && images.map((image) => (
+    <img key={image.id} src={`http://89.116.34.51:3002/uploads/${image.filename}`} alt={image.filename} style={{width: '300px', height: '200px', borderRadius: '10px'}}/>
+  ))}
         </div>
       </div>
       <Footer />
@@ -65,4 +64,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

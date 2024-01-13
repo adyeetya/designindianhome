@@ -46,7 +46,7 @@ export const pagesData = [
   },
   {
     id: 5,
-    name: 'Dressers',
+    name: 'Study room designs',
     slug: 'study-room-design',
     noItems: '123',
     heading: 'Study Room Design Ideas',
@@ -62,5 +62,22 @@ export const pagesData = [
     desc: 'Livspace design ideas is your one-stop shop for wardrobe solutions. Our modular wardrobe designs are ergonomically designed and come in a wide spectrum of colours, finishes and materials. Built for smart storage, our cupboard designs are function-forward, easy to use and promise to make stunning additions to the spaces in your bedroom. Explore our extensive collection of wardrobe interior designs and find one you can customise for your bedroom today.',
     items: [],
   },
- 
+  {
+    id: 7,
+    name: 'Tv unit designs',
+    slug: 'tv-unit-designs',
+    noItems: '1012',
+    heading: 'Modular TV Unit Design Ideas',
+    desc: 'Trending TV unit designs from Livspace that can be customised to your style, preference and TV sizes. TV units are essential piece of furniture that serves as a focal point for your room while giving you amazing storage options. From wall-mounted TV unit designs for the living room to TV cupboard units in the hall and traditional TV cabinets for your bedroom, Livspace helps you create a functional and stylish TV unit. Browse through our budget-friendly modern TV unit designs that will help you transform the look of your home.',
+    items: [],
+  },
+  {
+    id: 8,
+    name: 'Kids bedroom',
+    slug: 'kids-bedroom',
+    noItems: '1053',
+    heading: 'Kids Bedroom Designs',
+    desc: 'Designing your kid’s bedroom space can be an exciting time for you and your child. We’re certain you’ll find a healthy dose of inspiration and trending kid’s room designs that will match your childs personality! Our handpicked, affordable kid’s bedroom designs can be customised to suit your space requirements and your child’s imagination. Get in touch with our experts today to build a bedroom that your child will love.',
+    items: [],
+  },
 ]

@@ -8,11 +8,10 @@ import ProgressBar from '../../../components/Progressbar'
 import Tabs from '../Tabs'
 import Nav from 'react-bootstrap/Nav'
 import Omsairam from '../../../components/Navbar/Omsairam'
-const page = () => {
-  const [images, setImages] = useState([]);
-  const categoryIds = [66]; // Add the category IDs you want to fetch
+const Page = ({}) => {
+  const [images, setImages] = useState<Array<{ id: number; filename: string }>>([]);
   useEffect(() => {
-    
+    const categoryIds = [66]; // Add the category IDs you want to fetch
     const fetchImages = async () => {
       try {
         const timestamp = Date.now();
@@ -29,7 +28,7 @@ const page = () => {
     };
 
     fetchImages();
-  }, [categoryIds]);
+  }, []);
 
   return (
     <>
@@ -65,4 +64,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page
