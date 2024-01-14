@@ -220,33 +220,119 @@ const WardrobeImageUrl = [
 
 
 const Collection = () => {
+const brand =  [
+  {
+    id:1,
+    img:"https://www.modularkitcheninnoida.com/assets/images/b1.png",
+  },
+  {
+    id:2,
+    img:"https://www.modularkitcheninnoida.com/assets/images/b2.png",
+  },
+  {
+    id:3,
+    img:"https://www.modularkitcheninnoida.com/assets/images/b3.png",
+  },
+  {
+    id:4,
+    img:"https://www.modularkitcheninnoida.com/assets/images/b4.png",
+  },{
+    id:5,
+    img:"https://www.modularkitcheninnoida.com/assets/images/b5.png",
+  },{
+    id:6,
+    img:"https://www.modularkitcheninnoida.com/assets/images/b6.png",
+  },{
+    id:7,
+    img:"https://www.modularkitcheninnoida.com/assets/images/b7.png",
+  },
+  {
+    id:8,
+    img:"https://www.modularkitcheninnoida.com/assets/images/b8.png",
+  },
+  {
+    id:9,
+    img:"https://www.modularkitcheninnoida.com/assets/images/b9.png",
+  },
+  {
+    id:10,
+    img:"https://www.modularkitcheninnoida.com/assets/images/b10.png",
+  },
+  {
+    id:11,
+    img:"https://www.modularkitcheninnoida.com/assets/images/b1.png",
+  },
+  {
+    id:12,
+    img:"https://www.modularkitcheninnoida.com/assets/images/b2.png",
+  },
+
+  {
+    id:13,
+    img:"https://www.modularkitcheninnoida.com/assets/images/b3.png",
+  },
+  {
+    id:14,
+    img:"https://www.modularkitcheninnoida.com/assets/images/b4.png",
+  },]
 
   const data = [
     {
       id:1,
-      img:"/1q.png",
+      img:"https://www.modularkitcheninnoida.com/assets/images/c1.png",
     },
     {
       id:2,
-      img:"/1q1.png",
+      img:"https://www.modularkitcheninnoida.com/assets/images/c2.png",
     },
     {
       id:3,
-      img:"/1a3.png",
+      img:"https://www.modularkitcheninnoida.com/assets/images/c3.png",
     },
     {
       id:4,
-      img:"/1a4.png",
+      img:"https://www.modularkitcheninnoida.com/assets/images/c4.png",
     },{
       id:5,
-      img:"/1a5.png",
+      img:"https://www.modularkitcheninnoida.com/assets/images/c5.png",
     },{
       id:6,
-      img:"/1a6.png",
-    },{
-      id:4,
       img:"https://www.modularkitcheninnoida.com/assets/images/c6.png",
+    },{
+      id:7,
+      img:"https://www.modularkitcheninnoida.com/assets/images/c7.png",
     },
+    {
+      id:8,
+      img:"https://www.modularkitcheninnoida.com/assets/images/c8.png",
+    },
+    {
+      id:9,
+      img:"https://www.modularkitcheninnoida.com/assets/images/c9.png",
+    },
+    {
+      id:10,
+      img:"https://www.modularkitcheninnoida.com/assets/images/c10.png",
+    },
+    {
+      id:11,
+      img:"https://www.modularkitcheninnoida.com/assets/images/c1.png",
+    },
+    {
+      id:12,
+      img:"https://www.modularkitcheninnoida.com/assets/images/c2.png",
+    },
+
+    {
+      id:13,
+      img:"https://www.modularkitcheninnoida.com/assets/images/c3.png",
+    },
+    {
+      id:14,
+      img:"https://www.modularkitcheninnoida.com/assets/images/c4.png",
+    },
+    
+    
   ]
   const ref = useRef()
   const videoRef = useRef()
@@ -962,73 +1048,23 @@ const Collection = () => {
       </div>
 
       <div className="wrapperlatest">
-        <h1>BRANDS YOU WILL FIND IN OUR PRODUCTS</h1>
+        <h1>Brands you will find in our products</h1>
         <h3></h3>
       </div>
       <div className="slider">
         <div className="slide-track">
+        {brand.map((item) => (
           <div className="slide">
-            <Image src="/1q.png" height={300} width={300} alt="" />
-          </div>
-          <div className="slide">
-            <Image src="/1q1.png" height={300} width={300} alt="" />
-          </div>
-          <div className="slide">
-            <Image src="/1q2.png" height={300} width={300} alt="" />
-          </div>
-          <div className="slide">
-            <Image src="/1q3.png" height={300} width={300} alt="" />
-          </div>
-          <div className="slide">
-            <Image src="/1q4.png" height={300} width={300} alt="" />
-          </div>
-          <div className="slide">
-            <Image src="/1q5.png" height={300} width={300} alt="" />
-          </div>
-          <div className="slide">
-            <Image src="/1q6.png" height={300} width={300} alt="" />
-          </div>
-          <div className="slide">
-            <Image src="/1q7.png" height={300} width={300} alt="" />
-          </div>
-          <div className="slide">
-            <Image src="/1q8.png" height={300} width={300} alt="" />
-          </div>
-          <div className="slide">
-            <Image src="/1q9.png" height={300} width={300} alt="" />
-          </div>
-          <div className="slide">
-            <Image src="/1q11.png" height={300} width={300} alt="" />
-          </div>
-          <div className="slide">
-            <Image src="/1q12.png" height={300} width={300} alt="" />
-          </div>
-          <div className="slide">
-            <Image src="/1q13.png" height={300} width={300} alt="" />
-          </div>
-          <div className="slide">
-            <Image src="/1q14.png" height={300} width={300} alt="" />
-          </div>
-          <div className="slide">
-            <Image src="/1q15.png" height={300} width={300} alt="" />
-          </div> <div className="slide">
-            <Image src="/1q16.png" height={300} width={300} alt="" />
-          </div> <div className="slide">
-            <Image src="/1q17.png" height={300} width={300} alt="" />
-          </div> <div className="slide">
-            <Image src="/1q18.png" height={300} width={300} alt="" />
-          </div> <div className="slide">
-            <Image src="/1q19.png" height={300} width={300} alt="" />
-          </div>
-          <div className="slide">
-            <Image src="/1q.png" height={300} width={300} alt="" />
-          </div>
-          <div className="slide">
-            <Image src="/1q1.png" height={300} width={300} alt="" />
-          </div>
-          
+            <Image key={item.id} src={item.img}   width={0}
+  height={0}
+  sizes="100vw"
+  style={{ width: '120%', height: 'auto' }}/>
+            </div>  ))}
+            
+       
+        
         </div>
-      </div>
+      </div> 
       <div className="main">
         <img src="/images/left.gif" width={50} height={50} />
         <svg id="rotatingText" viewBox="0 0 200 200" width={200} height={200}>
@@ -1063,42 +1099,14 @@ const Collection = () => {
         <div className="slide-track">
         {data.map((item) => (
           <div className="slide">
-            <Image key={item.id} src={item.img}  height={300} width={300} alt="" />
+            <Image key={item.id} src={item.img}   width={0}
+  height={0}
+  sizes="100vw"
+  style={{ width: '120%', height: 'auto' }}/>
             </div>  ))}
             
-        {/*   <div className="slide">
-            <Image src="/1q2.png" height={300} width={300} alt="" />
-          </div>
-          <div className="slide">
-            <Image src="/1a3.png" height={300} width={300} alt="" />
-          </div>
-          <div className="slide">
-            <Image src="/1a4.png" height={300} width={300} alt="" />
-          </div>
-          <div className="slide">
-            <Image src="/1a5.png" height={300} width={300} alt="" />
-          </div>
-          <div className="slide">
-            <Image src="/1a6.png" height={300} width={300} alt="" />
-          </div>
-          <div className="slide">
-            <Image src="/1a7.png" height={300} width={300} alt="" />
-          </div>
-          <div className="slide">
-            <Image src="/1a8.png" height={300} width={300} alt="" />
-          </div>
-          <div className="slide">
-            <Image src="/1q1.png" height={300} width={300} alt="" />
-          </div>
-          <div className="slide">
-            <Image src="/1q2.png" height={300} width={300} alt="" />
-          </div>
-          <div className="slide">
-            <Image src="/1a3.png" height={300} width={300} alt="" />
-          </div>
-          <div className="slide">
-            <Image src="/1a4.png" height={300} width={300} alt="" />
-          </div> */}
+       
+        
         </div>
       </div> 
       

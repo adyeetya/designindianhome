@@ -2,6 +2,10 @@
 // next.config.js
 const nextConfig = {
     // ...other configurations
+
+    images: {
+      domains: ['www.modularkitcheninnoida.com'],
+  },
     async rewrites() {
       return [
         {
