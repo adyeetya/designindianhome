@@ -1053,13 +1053,14 @@ const brand =  [
       </div>
       <div className="slider">
         <div className="slide-track">
-        {brand.map((item) => (
+        {data.map((item) => (
           <div className="slide">
             <Image key={item.id} src={item.img}   width={0}
   height={0}
   sizes="100vw"
   style={{ width: '120%', height: 'auto' }}/>
             </div>  ))}
+            
             
        
         
@@ -1095,7 +1096,8 @@ const brand =  [
         <h1>Our Corporate Presece</h1>
         
       </div>
-      <div className="slider">
+   
+        <div className="slider">
         <div className="slide-track">
         {data.map((item) => (
           <div className="slide">
@@ -1105,7 +1107,6 @@ const brand =  [
   style={{ width: '120%', height: 'auto' }}/>
             </div>  ))}
             
-       
         
         </div>
       </div> 
