@@ -218,6 +218,17 @@ const WardrobeImageUrl = [
 ]
 
 const Collection = () => {
+
+  const data = [
+    {
+      id:1,
+      src:"/1q2.png",
+    },
+    {
+      id:2,
+      src:"/1q1.png",
+    },
+  ]
   const ref = useRef()
   const videoRef = useRef()
   const [isPlaying, setIsPlaying] = useState(false)
@@ -1027,14 +1038,16 @@ const Collection = () => {
      
       <div className="wrapperlatest">
         <h1>Our Corporate Presece</h1>
-        <h3></h3>
+        
       </div>
       <div className="slider">
         <div className="slide-track">
           <div className="slide">
-            <Image src="/1q1.png" height={300} width={300} alt="" />
-          </div>
-          <div className="slide">
+          {data.map((item) => (
+            <Image key={item.id} data={item}  height={300} width={300} alt="" />
+          ))}
+            </div>
+        {/*   <div className="slide">
             <Image src="/1q2.png" height={300} width={300} alt="" />
           </div>
           <div className="slide">
@@ -1066,7 +1079,7 @@ const Collection = () => {
           </div>
           <div className="slide">
             <Image src="/1a4.png" height={300} width={300} alt="" />
-          </div>
+          </div> */}
         </div>
       </div> 
       
