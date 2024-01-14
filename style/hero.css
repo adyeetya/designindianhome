@@ -163,7 +163,7 @@ font-size: 1.4rem;
 
 /* Don't forget focus and hover styles for accessibility! */
 .read-more_checkbox:focus~.read-more_label {
-  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+  box-shadow: 0 0 0 3px rgba(17, 19, 22, 0.5);
 }
 
 .read-more_checkbox:hover~.read-more_label {

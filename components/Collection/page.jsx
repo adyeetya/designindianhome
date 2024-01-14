@@ -400,14 +400,14 @@ const Collection = () => {
         </p>
         <label
           htmlFor="read-more-checkbox"
-          className="read-more__label"
+          className="read-more__label "
           data-read-more="Read more"
           data-read-less="See less"
-          aria-hidden="true"
+          aria-hidden="true" 
         />
       </div>
 
-      <Marquee style={{ backgroundColor: ' yellow ', marginTop: '5%' }}>
+      <Marquee style={{ backgroundColor: ' yellow '}} className='my-6'>
         <div className="marquee">
           <h3>
             Top Interior, Architectural & Modular Kitchen - Wardrobe Brand in
@@ -435,9 +435,9 @@ const Collection = () => {
                 alt=""
                 height={10}
                 width={1500}
-                className="rounded shadow-md"
+                className="rounded shadow-md my-6 max-[600px]:mb-10"
                 id="seek"
-                style={{ marginBottom: '6%' }}
+              
               />
               <section class="bordered bordersec"></section>
               <div className="main-hero">
