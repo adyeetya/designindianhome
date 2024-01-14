@@ -217,16 +217,35 @@ const WardrobeImageUrl = [
   },
 ]
 
+
+
 const Collection = () => {
 
   const data = [
     {
       id:1,
-      src:"/1q2.png",
+      img:"/1q.png",
     },
     {
       id:2,
-      src:"/1q1.png",
+      img:"/1q1.png",
+    },
+    {
+      id:3,
+      img:"/1a3.png",
+    },
+    {
+      id:4,
+      img:"/1a4.png",
+    },{
+      id:5,
+      img:"/1a5.png",
+    },{
+      id:6,
+      img:"/1a6.png",
+    },{
+      id:4,
+      img:"https://www.modularkitcheninnoida.com/assets/images/c6.png",
     },
   ]
   const ref = useRef()
@@ -1042,11 +1061,11 @@ const Collection = () => {
       </div>
       <div className="slider">
         <div className="slide-track">
+        {data.map((item) => (
           <div className="slide">
-          {data.map((item) => (
-            <Image key={item.id} data={item}  height={300} width={300} alt="" />
-          ))}
-            </div>
+            <Image key={item.id} src={item.img}  height={300} width={300} alt="" />
+            </div>  ))}
+            
         {/*   <div className="slide">
             <Image src="/1q2.png" height={300} width={300} alt="" />
           </div>
