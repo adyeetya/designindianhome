@@ -158,11 +158,11 @@ const PostFooter = () => {
                 />
               </div>
               <div className="mt-8 flex items-center gap-4">
-                <button className="uppercase text-sm font-bold tracking-wide bg-slate-950 text-gray-100 p-3 rounded-lg w-full focus:outline-none focus:shadow-outline">
+                <button className="uppercase text-sm font-bold tracking-wide bg-slate-950 text-gray-100 p-3 rounded-lg w-full focus:outline-none focus:shadow-outline max-[400px]:text-xs">
                   Choose File
                 </button>
 
-                <button className="uppercase text-sm font-bold tracking-wide bg-slate-950 text-gray-100 p-3 rounded-lg w-full focus:outline-none focus:shadow-outline">
+                <button className="uppercase text-sm font-bold tracking-wide bg-slate-950 text-gray-100 p-3 rounded-lg w-full focus:outline-none focus:shadow-outline max-[400px]:text-xs">
                   Submit
                 </button>
 
@@ -586,7 +586,7 @@ const PostFooter = () => {
             <p>The Pioneers in the Modular Kitchen Industry</p>
           
          </div>
-         <div className="text-6xl max-[600px]:text-2xl max-[600px]:py-4 text-grey-dark text-center  items-center justify-center px-24 " style={{fontFamily:"Impact"}}>
+         <div className="text-6xl max-[600px]:text-2xl max-[600px]:py-4 text-grey-dark text-center  items-center justify-center px-24 max-[400px]:px-4" style={{fontFamily:"Impact"}}>
             <p>The Most Reliable,<br/>
 Most Recommended <br/>
  &
