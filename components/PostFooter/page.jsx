@@ -606,7 +606,7 @@ Loved ❤️ Brand ✌
                 loop
                 autoPlay
                 controls={isPlaying}
-                src="/video/fry.mp4"
+                src="/video/fr.mp4"
                
                 className="rounded shadow-md"
                 width={0}
