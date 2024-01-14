@@ -569,7 +569,7 @@ const PostFooter = () => {
                 loop
                 autoPlay
                 controls={isPlaying}
-                src="/video/dkivid.mp4"
+                src="/video/fry.mp4"
                
                 className="rounded shadow-md 
                 "
@@ -606,7 +606,7 @@ Loved ❤️ Brand ✌
                 loop
                 autoPlay
                 controls={isPlaying}
-                src="/video/dkivid.mp4"
+                src="/video/fry.mp4"
                
                 className="rounded shadow-md"
                 width={0}
