@@ -928,6 +928,7 @@ const brand =  [
               </div>
             )
           })}
+          
         </Carousel>
 
         <div className="flex justify-center items-center ">
@@ -952,6 +953,10 @@ const brand =  [
           partialVisible={false}
           dotListClass="custom-dot-list-style"
         >
+          
+
+
+          
           {StructureImageUrl.map((imageUrl, index) => {
             return (
               <div className="slidering" key={index}>
@@ -1053,14 +1058,17 @@ const brand =  [
       </div>
       <div className="slider">
         <div className="slide-track">
-        {data.map((item) => (
-          <div className="slide">
-            <Image key={item.id} src={item.img}   width={0}
-  height={0}
-  sizes="100vw"
-  style={{ width: '120%', height: 'auto' }}/>
-            </div>  ))}
-            
+        {brand.map((item, index) => (
+  <div key={index} className="slide">
+    <Image
+      src={item.img}
+      width={0}
+      height={0}
+      sizes="100vw"
+      style={{ width: '120%', height: 'auto' }}
+    />
+  </div>
+))}
             
        
         
