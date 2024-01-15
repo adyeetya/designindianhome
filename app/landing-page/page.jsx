@@ -659,8 +659,8 @@ const DownloadSection = () => {
           Download home interior guide
         </h1>
         <h1 className="text-sm font-bold text-center mb-4">
-          Don't forget to consider these fundamental design guidelines to know
-          before you start interior designing!
+          Don&apos;t forget to consider these fundamental design guidelines to
+          know before you start interior designing!
         </h1>
 
         {/* Button below the heading text */}

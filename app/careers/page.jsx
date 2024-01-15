@@ -70,7 +70,7 @@ const page = () => {
         <p className=" text-center mb-8">
           The Work culture with Design Indian Kitchen is chilled up, we listen
           to what you say, we also correct mistakes and realize our going the
-          other way humbly. We are always willing to take each and every one's
+          other way humbly. We are always willing to take each and every one is
           experience and analyze our plan and implement it.
         </p>
         <p className=" text-center mb-16">

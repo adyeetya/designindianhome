@@ -45,11 +45,11 @@ const page = () => {
       <Header />
       <div className=" mt-16 lg:mt-36 mb-16">
         <h1 className="text-5xl font-extrabold text-center mb-8 mx-auto">
-          JOIN TODAY WITH INDIA'S TOP MODULAR BRAND
+          JOIN TODAY WITH INDIA&apos;S TOP MODULAR BRAND
         </h1>
         <p className="uppercase text-md font-bold text-center mb-16">
-          We are Delhi-NCR's fastest growing Kitchen & Interior brand with
-          multiple designer's on our panel and looking for experienced and
+          We are Delhi-NCR&apos;s fastest growing Kitchen & Interior brand with
+          multiple designer&apos;s on our panel and looking for experienced and
           fresher designers to join us as freelancers/Regular and also be a part
           of our Team.
         </p>

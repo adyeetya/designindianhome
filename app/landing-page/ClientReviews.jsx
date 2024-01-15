@@ -228,7 +228,7 @@ const ClientReviewsSection = () => {
           <div className="flex flex-col sm:flex-row justify-between">
             <div className=" justify-center items-center sm:my-8 mt-8 sm:mt-4 sm:ml-6 ml-4">
               <h2 className="sm:text-3xl text-2xl font-bold text-left">
-                We'll let our clients do the talking
+                We&apos;ll let our clients do the talking
               </h2>
               <p className="sm:text-xl text-left">
                 Here’s what they have to say
