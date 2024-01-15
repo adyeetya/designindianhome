@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from '../../components/Navbar/Header'
 import Omsairam from '../../components/Navbar/Omsairam'
+import ContactForm from '../../components/ContactForm/page'
 import Footer from '../../components/Footer/Footer'
 import Customer from './Customer'
 import CustomerVideos from './CustomerVideos'
@@ -42,7 +43,7 @@ const ScheduleChatSection = () => {
 
 const SectionWithImage = () => {
   return (
-    <div className="container mx-auto p-4 sm:p-16 bg-gray-300">
+    <div className="p-4 sm:p-16 bg-gray-300">
       <section className="flex flex-col md:flex-row items-center">
         <div className="lg:w-1/2 pr-8">
           <h2 className="text-3xl font-bold mb-4 text-center sm:text-left mx-auto">
@@ -158,6 +159,7 @@ const page = () => {
       <ArchitectSpeak />
       <Customer />
       <ScheduleChatSection />
+      <ContactForm />
       <Footer />
     </>
   )

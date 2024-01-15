@@ -3,7 +3,7 @@ import Header from '../../components/Navbar/Header'
 import Omsairam from '../../components/Navbar/Omsairam'
 import Footer from '../../components/Footer/Footer'
 import Form from './form'
-
+import ContactForm from '../../components/ContactForm/page'
 const ScheduleChatSection = () => {
   return (
     <section
@@ -58,6 +58,7 @@ const page = () => {
         <Form />
       </div>
       <ScheduleChatSection />
+      <ContactForm />
       <Footer />
     </>
   )

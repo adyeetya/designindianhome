@@ -2,6 +2,7 @@ import React from 'react'
 import Form from './form'
 import Header from '../../components/Navbar/Header'
 import Omsairam from '../../components/Navbar/Omsairam'
+import ContactForm from '../../components/ContactForm/page'
 import Footer from '../../components/Footer/Footer'
 const FullWidthSection = () => {
   return (
@@ -71,7 +72,8 @@ const page = () => {
         <p className=" text-center mb-8">Get Quotes</p>
         <Form />
       </div>
-      <ScheduleChatSection/>
+      <ScheduleChatSection />
+      <ContactForm />
       <Footer />
     </>
   )

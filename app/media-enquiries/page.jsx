@@ -1,5 +1,5 @@
 import React from 'react'
-
+import ContactForm from '../../components/ContactForm/page'
 import Header from '../../components/Navbar/Header'
 import Omsairam from '../../components/Navbar/Omsairam'
 import Footer from '../../components/Footer/Footer'
@@ -104,6 +104,7 @@ const page = () => {
       </div>
       <GoogleMapSection />
       <ScheduleChatSection />
+      <ContactForm />
       <Footer />
     </>
   )
