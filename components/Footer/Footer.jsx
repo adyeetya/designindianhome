@@ -2,12 +2,14 @@
 import React, { Component } from 'react'
 import { SocialIcon } from 'react-social-icons'
 import Image from 'next/image'
-
+import WaveGradient from '@/components/Navbar/WaveGradient'
+import './Gradient.css'
 export class Footer extends Component {
     render() {
         return (
             
-            <div className="mt-22 container" style={{marginTop: '40px'}}>
+            <div className="mt-22 container gradient" >
+                      {/* <WaveGradient /> */}
                 <div className=" row">
                     <div className="text-black col-lg-12 flex items-center justify-center">
                         <button className=" display-center run rounded-full border-dotted border-2 border-black py-12  mt-4  md:py-48 hover:bg-black hover:text-white" >
@@ -47,7 +49,7 @@ export class Footer extends Component {
 
 
                 {/* Features Section */}
-                <div className="flex flex-col items-center md:flex-row justify-center bg-gray-200 p-10 gap-6 mt-10 text-black" style={{alignItems: 'center'}}>
+                <div className="flex flex-col items-center md:flex-row justify-center    p-10 gap-6 mt-10 text-black" style={{alignItems: 'center'}}>
                     {/* Feature 1 */}
                     <div className="text-center">
                         <div className='flex justify-center'>
@@ -90,7 +92,7 @@ export class Footer extends Component {
                 </div>
 
                 {/* Social Media and Copyright Section */}
-                <div className="flex flex-col md:flex-row justify-center bg-gray-200 gap-6 p-6  text-black">
+                <div className="flex flex-col md:flex-row justify-center  gap-6 p-6  text-black">
                     {/* Social Media Icons */}
                     <div className="text-left">
                         <Image src="/desig indian homes.gif" alt="footer logo"  width={128} height={80} />
@@ -140,7 +142,7 @@ export class Footer extends Component {
                     </div>
 
                 </div>
-                <div className="bg-gray-200 pt-1 md:p-4 text-black">
+                <div className=" pt-1 md:p-4 text-black">
                     <hr className="flex justify-center h-2 w-11/12 border-1 border-black ml-4 md:ml-14" />
 
                     <p className="text-xs pl-4 md:pl-14 pr-4 md:pr-14 text-left">

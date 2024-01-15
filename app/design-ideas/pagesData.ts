@@ -11,7 +11,7 @@ export const pagesData = [
   {
     id: 1,
     name: 'Venities',
-    slug: 'Venities',
+    slug: 'venities',
     noItems: '2874',
     heading: 'Venities',
     desc: 'At Livspace, we’ve got a wide range of affordable and stylish bedroom designs that you’ll love. Our carefully-curated master bedroom designs come in a variety of styles, colour schemes and decor ideas - all of which can be customised to your taste. Whether you’re looking for a contemporary style or a room with rustic sensibilities, we’ve got all the bedroom interior design inspiration you’ll need to create a space that reflects your personality and taste. Take your pick from these trending designs and start your bedroom renovation journey today with Livspace.',
@@ -20,7 +20,7 @@ export const pagesData = [
   {
     id: 2,
     name: 'Crockery Units',
-    slug: 'living-room',
+    slug: 'crockery-units',
     noItems: '1816',
     heading: 'Crockery Units',
     desc: 'Discover a wide range of handpicked, living room interior designs and décor ideas at Livspace. We bring you living room designs that are customizable, practical and trendy. From modular TV units to wall paintings and living room wall designs, you’ll find all the inspiration you’ll need to get started. Browse now to zero in on your favourite design and create a living room space that reflects your style.',
@@ -29,7 +29,7 @@ export const pagesData = [
   {
     id: 3,
     name: 'Glass Partiton',
-    slug: 'homes',
+    slug: 'glass-partiton',
     noItems: '162',
     heading: '2,3 & 4BHK Home Interior Designs by Livspace',
     desc: 'With over 75,000 happy homes delivered, Livspace helps you build your dream home in your design and style. Browse through the homes we have delivered for some inspiration. Customised, budget-friendly home designs delivered across cities. Be it renovation or a full home design, apartment or villa home, we have got you covered.',
@@ -38,14 +38,14 @@ export const pagesData = [
   {
     id: 4,
     name: 'Dressers',
-    slug: 'bathroom',
+    slug: 'dressers',
     noItems: '809',
-    heading: 'Bathroom Designs',
+    heading: 'Dressers',
     desc: 'Livspace brings you bathroom interior designs that are functional and also stylish. Whether you’re looking for small bathroom ideas or spacious ones, we’ve created some elegant bathroom designs for you to consider for your next home renovation project.',
     items: [],
   },
   {
-    id: 6,
+    id: 5,
     name: 'Wardrobe',
     slug: 'wardrobe',
     noItems: '1165',
@@ -54,7 +54,7 @@ export const pagesData = [
     items: [],
   },
   {
-    id: 7,
+    id: 6,
     name: 'Tv unit designs',
     slug: 'tv-unit-designs',
     noItems: '1012',

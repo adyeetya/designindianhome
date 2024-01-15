@@ -19,7 +19,7 @@ const Page = ({}) => {
 
         // Fetch category data
         const categoryPromises = categoryIds.map(async (categoryId) => {
-          const response = await fetch(`https://api.designindianwardrobe.com/categories/${categoryId}?timestamp=${timestamp}`);
+          const response = await fetch(`https://api.designindianwardrobe.com/api/categories/${categoryId}?timestamp=${timestamp}`);
           if (response.ok) {
             const data = await response.json();
             return data;
@@ -96,7 +96,7 @@ const Page = ({}) => {
                   src={`https://api.designindianwardrobe.com/uploads/${categoryData.image.filename}`}
                   alt={categoryData.image.filename}
                   
-                  style={{width: '300px', height: '150px', borderRadius: '10px'}}
+                  style={{width: '450px', height: '230px', borderRadius: '10px'}}
                 />
               )}
               <h2 className="text-xl font-semibold mb-4">{categoryData.name}</h2>

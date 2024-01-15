@@ -15,11 +15,11 @@ const Page = ({}) => {
     const fetchCategoryData = async () => {
       try {
         const timestamp = Date.now();
-        const categoryIds = [64, 65, 66, 67, 68, 69, 70]; // Add the category IDs you want to fetch
+        const categoryIds = [72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82]; // Add the category IDs you want to fetch
 
         // Fetch category data
         const categoryPromises = categoryIds.map(async (categoryId) => {
-          const response = await fetch(`http://89.116.34.51:3002/api/categories/${categoryId}?timestamp=${timestamp}`);
+          const response = await fetch(`https://api.designindianwardrobe.com/api/categories/${categoryId}?timestamp=${timestamp}`);
           if (response.ok) {
             const data = await response.json();
             return data;
@@ -33,7 +33,7 @@ const Page = ({}) => {
 
         // Fetch image data for each category
         const imageDataPromises = categoryDataArray.map(async (categoryData) => {
-          const imageResponse = await fetch(`http://89.116.34.51:3002/api/images/${categoryData.id}?timestamp=${timestamp}`);
+          const imageResponse = await fetch(`https://api.designindianwardrobe.com/api/images/${categoryData.id}?timestamp=${timestamp}`);
           if (imageResponse.ok) {
             const imageData = await imageResponse.json();
             // Assuming you want only one image per category
@@ -72,12 +72,12 @@ const Page = ({}) => {
           <span className="text-green-500 text-sm">
             <Link href="/">Home</Link>
           </span>{' '}
-          / <span className="text-gray-600 text-sm">Design ideas</span>
+          / <span className="text-gray-600 text-sm">Interior</span>
         </div>
 
         <div className="flex items-center bg-white p-4">
           <div className="w-1 h-8 rounded bg-green-500 mr-2"></div>
-          <h1 className="text-3xl font-bold">Home Interior Design</h1>
+          <h1 className="text-3xl font-bold">Home Interior</h1>
         </div>
         <p className="text-gray-700 text-sm px-7">
           We bring you carefully-curated interior design ideas, to give your
@@ -93,13 +93,13 @@ const Page = ({}) => {
             <div key={categoryData.id} className="bg-white rounded-md shadow-md p-6">
                {categoryData.image && (
                 <img
-                  src={`http://89.116.34.51:3002/uploads/${categoryData.image.filename}`}
+                  src={`https://api.designindianwardrobe.com/uploads/${categoryData.image.filename}`}
                   alt={categoryData.image.filename}
                   
-                  style={{width: '300px', height: '150px', borderRadius: '10px'}}
+                  style={{width: '450px', height: '200px', borderRadius: '10px'}}
                 />
               )}
-              <h2 className="text-xl font-semibold mb-4">{categoryData.name}</h2>
+              <h2 className="text-base font-semibold mt-4">{categoryData.name}</h2>
               <p className="text-gray-700 mb-4">{categoryData.description}</p>
              
             </div>
