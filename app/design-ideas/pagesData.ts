@@ -11,9 +11,9 @@ export const pagesData = [
   {
     id: 1,
     name: 'Venities',
-    slug: 'master-bedroom',
+    slug: 'Venities',
     noItems: '2874',
-    heading: 'Bedroom Interior Designs',
+    heading: 'Venities',
     desc: 'At Livspace, we’ve got a wide range of affordable and stylish bedroom designs that you’ll love. Our carefully-curated master bedroom designs come in a variety of styles, colour schemes and decor ideas - all of which can be customised to your taste. Whether you’re looking for a contemporary style or a room with rustic sensibilities, we’ve got all the bedroom interior design inspiration you’ll need to create a space that reflects your personality and taste. Take your pick from these trending designs and start your bedroom renovation journey today with Livspace.',
     items: [],
   },
@@ -37,20 +37,11 @@ export const pagesData = [
   },
   {
     id: 4,
-    name: 'Bathroom',
+    name: 'Dressers',
     slug: 'bathroom',
     noItems: '809',
     heading: 'Bathroom Designs',
     desc: 'Livspace brings you bathroom interior designs that are functional and also stylish. Whether you’re looking for small bathroom ideas or spacious ones, we’ve created some elegant bathroom designs for you to consider for your next home renovation project.',
-    items: [],
-  },
-  {
-    id: 5,
-    name: 'Dressers',
-    slug: 'study-room-design',
-    noItems: '123',
-    heading: 'Study Room Design Ideas',
-    desc: 'Welcome to Livspace Study Room Designs category, where we offer a treasure trove of study room ideas to inspire your perfect space. Explore modern study room designs, featuring stylish decor, furniture, and smart organization solutions. Whether you are seeking study room design inspiration, trendy study room decor ideas, or functional study room furniture, we have you covered. Discover the latest trends in modern study room design and transform your study space into a productive and stylish oasis with our expert tips and curated collection.',
     items: [],
   },
   {
@@ -62,5 +53,14 @@ export const pagesData = [
     desc: 'Livspace design ideas is your one-stop shop for wardrobe solutions. Our modular wardrobe designs are ergonomically designed and come in a wide spectrum of colours, finishes and materials. Built for smart storage, our cupboard designs are function-forward, easy to use and promise to make stunning additions to the spaces in your bedroom. Explore our extensive collection of wardrobe interior designs and find one you can customise for your bedroom today.',
     items: [],
   },
- 
+  {
+    id: 7,
+    name: 'Tv unit designs',
+    slug: 'tv-unit-designs',
+    noItems: '1012',
+    heading: 'Modular TV Unit Design Ideas',
+    desc: 'Trending TV unit designs from Livspace that can be customised to your style, preference and TV sizes. TV units are essential piece of furniture that serves as a focal point for your room while giving you amazing storage options. From wall-mounted TV unit designs for the living room to TV cupboard units in the hall and traditional TV cabinets for your bedroom, Livspace helps you create a functional and stylish TV unit. Browse through our budget-friendly modern TV unit designs that will help you transform the look of your home.',
+    items: [],
+  },
+
 ]

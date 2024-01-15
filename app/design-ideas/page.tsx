@@ -8,8 +8,8 @@ import ProgressBar from '../../components/Progressbar'
 // import Card from './Card'
 import MyForm from '../../components/MyForm'
 import Omsairam from '../../components/Navbar/Omsairam'
-const page = ({}) => {
-  const [categoryDataArray, setCategoryDataArray] = useState([]);
+const Page = ({}) => {
+  const [categoryDataArray, setCategoryDataArray] =useState<any[]>([]);
 
   useEffect(() => {
     const fetchCategoryData = async () => {
@@ -19,7 +19,7 @@ const page = ({}) => {
 
         // Fetch category data
         const categoryPromises = categoryIds.map(async (categoryId) => {
-          const response = await fetch(`http://89.116.34.51:3002/api/categories/${categoryId}?timestamp=${timestamp}`);
+          const response = await fetch(`https://api.designindianwardrobe.com/categories/${categoryId}?timestamp=${timestamp}`);
           if (response.ok) {
             const data = await response.json();
             return data;
@@ -33,7 +33,7 @@ const page = ({}) => {
 
         // Fetch image data for each category
         const imageDataPromises = categoryDataArray.map(async (categoryData) => {
-          const imageResponse = await fetch(`http://89.116.34.51:3002/api/images/${categoryData.id}?timestamp=${timestamp}`);
+          const imageResponse = await fetch(`https://api.designindianwardrobe.com/api/images/${categoryData.id}?timestamp=${timestamp}`);
           if (imageResponse.ok) {
             const imageData = await imageResponse.json();
             // Assuming you want only one image per category
@@ -93,7 +93,7 @@ const page = ({}) => {
             <div key={categoryData.id} className="bg-white rounded-md shadow-md p-6">
                {categoryData.image && (
                 <img
-                  src={`http://89.116.34.51:3002/uploads/${categoryData.image.filename}`}
+                  src={`https://api.designindianwardrobe.com/uploads/${categoryData.image.filename}`}
                   alt={categoryData.image.filename}
                   
                   style={{width: '300px', height: '150px', borderRadius: '10px'}}
@@ -115,4 +115,4 @@ const page = ({}) => {
     </>
   );
 };
-export default page
+export default Page

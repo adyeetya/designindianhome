@@ -2,7 +2,6 @@
 import Hero from '../components/Hero/page'
 import { Fragment } from 'react'
 import ImageGrid from '../components/ImageGrid/page'
-import Image from 'next/image'
 import Brands from '../components/Brands/page'
 import Header from '../components/Navbar/Header'
 import Footer from '../components/Footer/Footer'
@@ -20,7 +19,7 @@ export default function Home() {
   return (
     <>
       <Fragment>
-        <Omsairam />
+     <Omsairam />
         <Header />
         <Hero />
         <Collection />
@@ -35,7 +34,7 @@ export default function Home() {
         <div className="bg-amber-50 p-4 dark:text-white">
           <MyForm />
         </div> 
-{/* <PostFooter/> */}
+<PostFooter/>
         <Footer /> 
       </Fragment>
     </>
