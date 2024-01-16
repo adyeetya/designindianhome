@@ -683,7 +683,7 @@ const Header = () => {
         <div className=''>
           <div className=''>
             <h1 className="text-4xl font-bold" style={{ width: "350px" }}>End to End Modular Interior Solutions</h1>
-            <p className='text-black' style={{ width: '450px' }}>Modular Interior Execution, Designs, Manufacturing, Tips, Ideas and Advice from Industry's Top Experts</p>
+            <p className='text-black' style={{ width: '450px' }}>Modular Interior Execution, Designs, Manufacturing, Tips, Ideas and Advice from Industry&apos;s Top Experts</p>
             <button className='bg-green-600 text-2xl py-3 px-6 rounded-full text-white mt-6'>explore Now</button>
           </div>
         </div>
@@ -695,7 +695,7 @@ const Header = () => {
                 <Image src="/images/living/beautiful-design-tv-unit-in-delhi-gurgaon-noida.jpg" alt="" width={100} height={50} style={{ width: '100px', height: '50px', borderRadius: '4px' }} />
                 <div>
                   <Link href="/mandir-designs"><h3 className='text-base font-extrabold absolute px-2 py-1  text-white bg-black' onMouseOver={() => handleMouseOverImage('mandir_interior')}>Mandir</h3></Link>
-                  
+
                   <p className='text-xs mt-8'>Connect with the top end to end interior Brand</p>
                 </div>
               </div>
@@ -705,7 +705,7 @@ const Header = () => {
                 <Image src="/images/living/best-designing-services-crockery-unit-in-gurgaon-delhi-noida-faridabad.jpeg" alt="" width={100} height={50} style={{ width: '100px', height: '50px', borderRadius: '4px' }} />
                 <div>
                   <Link href="/chest-of-drawer-designs"><h3 className='text-base font-extrabold absolute px-2 py-1  text-white bg-black' onMouseOver={() => handleMouseOverImage('chest_drawer')}>Chest of Drawers</h3></Link>
-                  
+
                   <p className='text-xs mt-8'>Connect with the top end to end interior Brand</p>
                 </div>
               </div>
@@ -716,7 +716,7 @@ const Header = () => {
                 <div>
                   <Link href="/Bar-unit-designs
 "><h3 className='text-base font-extrabold absolute px-2 py-1  text-white bg-black' onMouseOver={() => handleMouseOverImage('bar_unit')}>Bar Units</h3></Link>
-                  
+
                   <p className='text-xs mt-8'>Connect with the top end to end interior Brand</p>
                 </div>
               </div>
@@ -725,7 +725,7 @@ const Header = () => {
                 <Image src="/images/living/beautiful-design-shoe-racks-in-delhi-gurgaon-noida-faridabad.jpeg" alt="" width={100} height={50} style={{ width: '100px', height: '50px', borderRadius: '4px' }} />
                 <div>
                   <Link href="/side-table-designs"><h3 className='text-base font-extrabold absolute px-2 py-1  text-white bg-black' onMouseOver={() => handleMouseOverImage('side_table')}>Side Tables</h3></Link>
-                  
+
                   <p className='text-xs mt-8'>Connect with the top end to end interior Brand</p>
                 </div>
               </div>
@@ -740,7 +740,7 @@ const Header = () => {
 
               <div>
                 <Link href="/foldable-area-designs"><h3 className='text-base font-extrabold absolute px-2 py-1  text-white bg-black' onMouseOver={() => handleMouseOverImage('foldable_bed')}>Foldable Beds</h3></Link>
-                
+
                 <p className='text-xs mt-8'>Connect with the top end to end interior Brand</p>
               </div>
 
@@ -752,7 +752,7 @@ const Header = () => {
 
               <div>
                 <Link href="/foyer-area-designs"><h3 className='text-base font-extrabold absolute px-2 py-1  text-white bg-black' onMouseOver={() => handleMouseOverImage('foyer_cabinet')}>Foyer Cabinets</h3></Link>
-                
+
                 <p className='text-xs mt-8'>Connect with the top end to end interior Brand</p>
               </div>
             </div>
@@ -760,7 +760,7 @@ const Header = () => {
               <Image src="/images/living/best-interior-designing-company-in-delhi-gurgaon-noida-india-Design-Indian-Homes (6).jpg" alt="" width={100} height={50} style={{ width: '100px', height: '50px', borderRadius: '4px' }} />
               <div>
                 <Link href="/vanity-designs"> <h3 className='text-base font-extrabold absolute px-2 py-1  text-white bg-black' onMouseOver={() => handleMouseOverImage('bathroom_vatities')}>Bathroom Vanities</h3></Link>
-               
+
                 <p className='text-xs mt-8'>Connect with the top end to end interior Brand</p>
               </div>
             </div>
@@ -790,27 +790,27 @@ const Header = () => {
         <div class >
           <ul className='text-sm 	font-bold pr-12'>
             <h3 className='text-lg'><Link href="/home-renovation-services-in-delhi-gurgaon-noida-india">Renovation</Link></h3>
-           <Link href="/virtual-interior-designing-meeting"><h3 className='text-lg'>Book a Virtual Meeting</h3></Link>
-           <Link href="/about-best-interior-designers-architects"><h3 className='text-lg'> About Us</h3></Link>
-           <Link href="/largest-interior-designing-brand"><h3 className='text-lg'>The Team</h3></Link>
-           <Link href="/collaborate-with-architects-interior-designers"><h3 className='text-lg'>Collaborate with Us</h3></Link>
+            <Link href="/virtual-interior-designing-meeting"><h3 className='text-lg'>Book a Virtual Meeting</h3></Link>
+            <Link href="/about-best-interior-designers-architects"><h3 className='text-lg'> About Us</h3></Link>
+            <Link href="/largest-interior-designing-brand"><h3 className='text-lg'>The Team</h3></Link>
+            <Link href="/collaborate-with-architects-interior-designers"><h3 className='text-lg'>Collaborate with Us</h3></Link>
 
           </ul>
           <Link href="/interior-designing-estimates-pricing"><button className='bg-green-600 text-2xl py-3 px-6 rounded-full text-white font-bold mt-6'>Get Quotes</button></Link>
-          
+
 
         </div>
         <div class >
           <ul className='text-sm font-bold'>
-          <Link href="/customer-reviews-interior-designs"> <h3 className='text-lg'>Reviews</h3></Link>
-          <Link href="/interior-designing-plans-for-residences"><h3 className='text-lg'> Our Packages </h3></Link>
-          <Link href="/why-choose-the-best-interior-designers"><h3 className='text-lg'>Why Choose Us</h3></Link>
-          <Link href="/join-the-largest-interior-designing-brand"><h3 className='text-lg'>Join As a Designer</h3></Link>
-          <Link href="/book-with-top-interior-designers-architects"><h3 className='text-lg'>Book a Design Visit</h3></Link>            
-           
+            <Link href="/customer-reviews-interior-designs"> <h3 className='text-lg'>Reviews</h3></Link>
+            <Link href="/interior-designing-plans-for-residences"><h3 className='text-lg'> Our Packages </h3></Link>
+            <Link href="/why-choose-the-best-interior-designers"><h3 className='text-lg'>Why Choose Us</h3></Link>
+            <Link href="/join-the-largest-interior-designing-brand"><h3 className='text-lg'>Join As a Designer</h3></Link>
+            <Link href="/book-with-top-interior-designers-architects"><h3 className='text-lg'>Book a Design Visit</h3></Link>
+
           </ul>
-            <Link href="/refer-and-get-rewards-interior-designers"><button className=' bg-green-600 text-2xl py-3 px-6 rounded-full text-white font-bold mt-6'>Refer for Rewards</button></Link>
-          
+          <Link href="/refer-and-get-rewards-interior-designers"><button className=' bg-green-600 text-2xl py-3 px-6 rounded-full text-white font-bold mt-6'>Refer for Rewards</button></Link>
+
 
         </div>
         <div className='ml-48'>
@@ -1045,12 +1045,12 @@ const Header = () => {
 
                 <p className="flex text-sm font-bold" onMouseOver={() => handleMouseOver('Architectural')}>
                   <Link href="/architectural-designs">Architectural</Link>
-                 
+
                 </p>
 
                 <p className="flex text-sm font-bold" onMouseOver={() => handleMouseOver('Modular Kitchen')}>
-                 <Link href="/modular-kitchen-designs"> Modular Kitchen</Link>
-                 
+                  <Link href="/modular-kitchen-designs"> Modular Kitchen</Link>
+
                 </p>
                 <Link href="/">
 
@@ -1069,7 +1069,7 @@ const Header = () => {
                       transition: 'transform 0.1s ease-in-out, opacity 0.1s ease-in-out',
                       width: '60px',
                       height: '30px',
-                      
+
                     }}
                   />
                 </Link>
@@ -1080,7 +1080,7 @@ const Header = () => {
                 <p className="text-sm font-bold" onMouseOver={() => handleMouseOver('Wardrobes')}>
                   <i class="fi fi-tr-clothes-hanger"></i>
                   <Link href="/wardrobe-designs">Wardrobes</Link>
-                  
+
                 </p>
 
                 {/* <p className="text-sm font-bold" onMouseOver={() => handleMouseOver('Living')}>
@@ -1090,7 +1090,7 @@ const Header = () => {
 
                 <p className="text-sm font-bold" onMouseOver={() => handleMouseOver('Modular Interiors')}>
                   <i class="fi fi-ts-loveseat"></i>
-                 <Link href="/modular-kitchen-designs"> Modular Interiors</Link>
+                  <Link href="/modular-kitchen-designs"> Modular Interiors</Link>
                 </p>
 
                 <div>
@@ -1234,13 +1234,14 @@ const Header = () => {
                           <ul className='text-xs'>
                             <h3 className='text-3xl'>Modular Interior Designs</h3>
                             <div className='text-base'>
-                              <li>Modular Kitchens</li>
-                              <li>Wardrobes</li>
-                              <li>Vanities </li>
-                              <li>Dressers</li>
-                              <li>TV Units</li>
-                              <li>Crockery Units</li>
-                              <li>Glass Partitions</li>
+
+                              <Link href="/modular-kitchen-designs"><li>Modular Kitchens</li></Link>
+                              <Link href="/wardrobe-designs"><li>Wardrobes</li></Link>
+                              <Link href="/vanity-designs"> <li>Vanities </li></Link>
+                              <Link href="/dressers-designs"><li>Dressers</li></Link>
+                              <Link href="/tv-unit-designs"><li>TV Units</li></Link>
+                              <Link href="/crockery-unit-designs"> <li>Crockery Units</li></Link>
+                              <Link href="/glass-partition-designs"><li>Glass Partitions</li></Link>
                             </div>
 
 
@@ -1253,17 +1254,17 @@ const Header = () => {
                             <h3 className='text-3xl'>Interior Design Solutions</h3>
 
                             <div className='text-base text-black'>
-                              <li>1BHK residence interior designs</li>
-                              <li>2BHK Residence interior designs</li>
-                              <li>3BHK Residence interior designs</li>
-                              <li>4BHK Residence interior designs</li>
-                              <li>Villa interior designs</li>
-                              <li>Farmhouse interior designs</li>
-                              <li>Penthouse interior designs</li>
-                              <li>studio apartment interior designs</li>
-                              <li>Bunglow interior designs</li>
-                              <li>Duplex Residence interior designs</li>
-                              <li>Cottage interior designs</li>
+                              <Link href="/1bhk-apartment-interior-designs"><li>1BHK residence interior designs</li></Link>
+                              <Link href="/2bhk-apartment-interior-designs"> <li>2BHK Residence interior designs</li></Link>
+                              <Link href="/3bhk-apartment-interior-designs"> <li>3BHK Residence interior designs</li></Link>
+                              <Link href="/4bhk-apartment-interior-designs"><li>4BHK Residence interior designs</li></Link>
+                              <Link href="/villa-interior-designs"> <li>Villa interior designs</li></Link>
+                              <Link href="/farmhouse-interior-designs"><li>Farmhouse interior designs</li></Link>
+                              <Link href="/penthouse-interior-designs"><li>Penthouse interior designs</li></Link>
+                              <Link href="/studio-apartment-interior-designs"><li>studio apartment interior designs</li></Link>
+                              <Link href="/bungalow-interior-designs"> <li>Bunglow interior designs</li></Link>
+                              <Link href="/duplex-interior-designs"> <li>Duplex Residence interior designs</li></Link>
+                              <Link href="/cottage-interior-designs"><li>Cottage interior designs</li></Link>
                             </div>
 
                           </ul>
@@ -1275,24 +1276,24 @@ const Header = () => {
                             <h3 className='text-3xl'>Interior Design Ideas</h3>
 
                             <div className='text-base text-black'>
-                              <li>Wooden Polishing</li>
-                              <li>Wooden Flooring</li>
-                              <li>Vertical Gardens</li>
-                              <li>UPVC Windows</li>
-                              <li>Tiling Designs</li>
-                              <li>Sofa Designs</li>
-                              <li>Kitchen Lightening</li>
-                              <li>Plumbings</li>
-                              <li>Glass Partitions</li>
-                              <li>ceilings</li>
-                              <li> Wall Panelling</li>
-                              <li>Exterior Cladding</li>
-                              <li>Doors</li>
-                              <li>Electric Works</li>
-                              <li>Beds</li>
-                              <li>Paints</li>
-                              <li>End to End Interiors</li>
-                              <li>Commercial Interiors</li>
+                              <Link href="/wooden-polishing"><li>Wooden Polishing</li></Link>
+                              <Link href="/wooden-flooring-designs"> <li>Wooden Flooring</li></Link>
+                              <Link href="/vertical-gardens-designs"> <li>Vertical Gardens</li></Link>
+                              <Link href="/upvc-windows-designs"> <li>UPVC Windows</li></Link>
+                              <Link href="/tiling-designs">  <li>Tiling Designs</li></Link>
+                              <Link href="/sofa-designs">  <li>Sofa Designs</li></Link>
+                              <Link href="/kitchen-lightening-designs">  <li>Kitchen Lightening</li></Link>
+                              <Link href="/plumbing-works-interiors"> <li>Plumbings</li></Link>
+                              <Link href="/glass-partition-designs">  <li>Glass Partitions</li></Link>
+                              <Link href="/ceiling-designs"> <li>ceilings</li></Link>
+                              <Link href="/wall-panelling"> <li> Wall Panelling</li></Link>
+                              <Link href="/exterior-cladding-designs">  <li>Exterior Cladding</li></Link>
+                              <Link href="/wood-door-designs"> <li>Doors</li></Link>
+                              <Link href="/electric-works-interiors">  <li>Electric Works</li></Link>
+                              <Link href="/beds-designs"> <li>Beds</li></Link>
+                              <Link href="/paint-works-interiors"><li>Paints</li></Link>
+                              <Link href="/complete-end-to-end-interior-works"> <li>End to End Interiors</li></Link>
+                              <Link href="/commercial-interior-works-interiors"> <li>Commercial Interiors</li></Link>
                             </div>
 
 
@@ -1305,10 +1306,10 @@ const Header = () => {
                           <ul className='text-xs'>
                             <h3 className='text-3xl'>Architectural Designs </h3>
                             <div className='text-base text-black'>
-                              <li>Architectural Consultancy</li>
-                              <li>End to End Architectural Services</li>
-                              <li>Architectural Designing and Planning</li>
-                              <li>Commercial Architectural Services</li>
+                              <Link href="/architectural-consultancy"><li>Architectural Consultancy</li></Link>
+                              <Link href="/top-architects-in-india"><li>End to End Architectural Services</li></Link>
+                              <Link href="/architectural-brand-in-india"><li>Architectural Designing and Planning</li></Link>
+                              <Link href="/commercial-architectural-delhi-india"><li>Commercial Architectural Services</li></Link>
                             </div>
 
 
@@ -1319,22 +1320,21 @@ const Header = () => {
                           <ul className='text-xs'>
                             <h3 className='text-3xl'>Home Renovation Services</h3>
                             <div className='text-base text-black'>
-                              <li>Structural Renovation</li>
-                              <li>Interior Renovation</li>
-                              <li>Bedroom Renovation</li>
-                              <li>Lounge Renovation</li>
-                              <li>Bathroom Renovation</li>
-                              <li>Terrace Renovation</li>
-                              <li>Living room Renovation</li>
-                              <li>Modular kitchen Renovation</li>
-                              <li>Wardrobe Renovation</li>
-                              <li>Living Room Renovation</li>
-                              <li>Mandir Renovation</li>
-                              <li>GYM & Spas Renovation</li>
-                              <li>Hotel Renovation</li>
-                              <li>Farmhouse Renovation</li>
-                              <li>Banquet Renovation</li>
-                              <li>Villa Renovation</li>
+                              <Link href="/structural-renovation-services"><li>Structural Renovation</li></Link>
+                              <Link href="/interior-renovation-services"><li>Interior Renovation</li></Link>
+                              <Link href="/bedroom-renovation-services"><li>Bedroom Renovation</li></Link>
+                              <Link href="/lounge-renovation-services"><li>Lounge Renovation</li></Link>
+                              <Link href="/bathroom-renovation-services"><li>Bathroom Renovation</li></Link>
+                              <Link href="/terrace-renovation-services"><li>Terrace Renovation</li></Link>
+                              <Link href="/living-room-renovation-services"><li>Living room Renovation</li></Link>
+                              <Link href="/modular-kitchen-renovation-services"><li>Modular kitchen Renovation</li></Link>
+                              <Link href="/wardrobe-renovation-services"><li>Wardrobe Renovation</li></Link>
+                              <Link href="/mandir-renovation-services"><li>Mandir Renovation</li></Link>
+                              <Link href="/gym-spa-renovation-services"><li>GYM & Spas Renovation</li></Link>
+                              <Link href="/hotel-renovation-services"><li>Hotel Renovation</li></Link>
+                              <Link href="/farmhouse-renovation-services"><li>Farmhouse Renovation</li></Link>
+                              <Link href="/banquet-renovation-services"><li>Banquet Renovation</li></Link>
+                              <Link href="/villa-renovation-services"><li>Villa Renovation</li></Link>
                             </div>
 
                           </ul>
@@ -1362,24 +1362,18 @@ const Header = () => {
 
                             <div className='text-base text-black'>
 
+                              <Link href="/1bhk-apartment-interior-designs">   <li onMouseOver={() => handleMouseOverImage('1bhk')} onMouseLeave={handleMouseLeaveImage}>1bhk residence interior designs</li>  </Link>
+                              <Link href="/2bhk-apartment-interior-designs"><li onMouseOver={() => handleMouseOverImage('2bhk')} onMouseLeave={handleMouseLeaveImage}>2bhk residence interior designs</li>  </Link>
+                              <Link href="/3bhk-apartment-interior-designs"><li onMouseOver={() => handleMouseOverImage('3bhk')} onMouseLeave={handleMouseLeaveImage}>3bhk residence interior designs </li>  </Link>
+                              <Link href="/4bhk-apartment-interior-designs"><li onMouseOver={() => handleMouseOverImage('4bhk')} onMouseLeave={handleMouseLeaveImage}>4bhk residence interior designs</li>  </Link>
+                              <Link href="/villa-interior-designs"><li onMouseOver={() => handleMouseOverImage('villa')} onMouseLeave={handleMouseLeaveImage}>Villa interior designs</li>  </Link>
+                              <Link href="/farmhouse-interior-designs"><li onMouseOver={() => handleMouseOverImage('farmhouse')} onMouseLeave={handleMouseLeaveImage}>farmhouse interior designs</li>  </Link>
+                              <Link href="/penthouse-interior-designs"><li onMouseOver={() => handleMouseOverImage('pent')} onMouseLeave={handleMouseLeaveImage}>Penthouse interior designs</li>  </Link>
+                              <Link href="/studio-apartment-interior-designs"><li onMouseOver={() => handleMouseOverImage('office')} onMouseLeave={handleMouseLeaveImage}>Studio apartment interior designs</li>  </Link>
+                              <Link href="/bungalow-interior-designs"><li onMouseOver={() => handleMouseOverImage('bunglow')} onMouseLeave={handleMouseLeaveImage}>Bungalow interior designs</li>  </Link>
+                              <Link href="/duplex-interior-designs"><li onMouseOver={() => handleMouseOverImage('duplex')} onMouseLeave={handleMouseLeaveImage}>Duplex Residence interior Designs</li>  </Link>
+                              <Link href="/cottage-interior-designs"><li onMouseOver={() => handleMouseOverImage('cottage')} onMouseLeave={handleMouseLeaveImage}>Cottage Interior Designs</li>  </Link>
 
-                              <li
-
-                                onMouseOver={() => handleMouseOverImage('1bhk')}
-                                onMouseLeave={handleMouseLeaveImage}
-                              >
-                                1bhk residence interior designs
-                              </li>
-                              <li onMouseOver={() => handleMouseOverImage('2bhk')} onMouseLeave={handleMouseLeaveImage}>2bhk residence interior designs</li>
-                              <li onMouseOver={() => handleMouseOverImage('3bhk')} onMouseLeave={handleMouseLeaveImage}>3bhk residence interior designs </li>
-                              <li onMouseOver={() => handleMouseOverImage('4bhk')} onMouseLeave={handleMouseLeaveImage}>4bhk residence interior designs</li>
-                              <li onMouseOver={() => handleMouseOverImage('villa')} onMouseLeave={handleMouseLeaveImage}>Villa interior designs</li>
-                              <li onMouseOver={() => handleMouseOverImage('farmhouse')} onMouseLeave={handleMouseLeaveImage}>farmhouse interior designs</li>
-                              <li onMouseOver={() => handleMouseOverImage('pent')} onMouseLeave={handleMouseLeaveImage}>Penthouse interior designs</li>
-                              <li onMouseOver={() => handleMouseOverImage('office')} onMouseLeave={handleMouseLeaveImage}>Studio apartment interior designs</li>
-                              <li onMouseOver={() => handleMouseOverImage('bunglow')} onMouseLeave={handleMouseLeaveImage}>Bungalow interior designs</li>
-                              <li onMouseOver={() => handleMouseOverImage('duplex')} onMouseLeave={handleMouseLeaveImage}>Duplex Residence interior Designs</li>
-                              <li onMouseOver={() => handleMouseOverImage('cottage')} onMouseLeave={handleMouseLeaveImage}>Cottage Interior Designs</li>
                             </div>
                           </ul>
                         </div>
@@ -1391,23 +1385,22 @@ const Header = () => {
 
                             <div className='text-base text-black'>
 
+                              <Link href="/structural-renovation-services"><li onMouseOver={() => handleMouseOverImage('')}>Structural Renovation</li>   </Link>
+                              <Link href="/interior-renovation-services"><li onMouseOver={() => handleMouseOverImage('interiorRenovation')}>Interior Renovation</li>   </Link>
+                              <Link href="/bedroom-renovation-services"><li onMouseOver={() => handleMouseOverImage('bedroom')}>Bedroom Renovation</li>   </Link>
+                              <Link href="/lounge-renovation-services"><li onMouseOver={() => handleMouseOverImage('loungRenovation')}>Lounge Renovation</li>   </Link>
+                              <Link href="/bathroom-renovation-services"><li onMouseOver={() => handleMouseOverImage('bathroom')}>Bathroom Renovation</li>   </Link>
+                              <Link href="/terrace-renovation-services"><li onMouseOver={() => handleMouseOverImage('terrace')}>Terrace Renovation</li>   </Link>
+                              <Link href="/living-room-renovation-services"><li onMouseOver={() => handleMouseOverImage('livingroom')}>Living room Renovation</li>   </Link>
+                              <Link href="/modular-kitchen-renovation-services"><li onMouseOver={() => handleMouseOverImage('modularKitchen')}>Modular kitchen Renovation</li>   </Link>
+                              <Link href="/wardrobe-renovation-services"><li onMouseOver={() => handleMouseOverImage('wardrobeRenovation')}>Wardrobe Renovation</li>   </Link>
+                              <Link href="/mandir-renovation-services"><li onMouseOver={() => handleMouseOverImage('mandir')}>Mandir Renovation</li>  </Link>
+                              <Link href="/gym-spa-renovation-services"><li onMouseOver={() => handleMouseOverImage('gym')}>GYM & Spas Renovation</li>  </Link>
+                              <Link href="/hotel-renovation-services"><li onMouseOver={() => handleMouseOverImage('hotel')}>Hotel Renovation</li>  </Link>
+                              <Link href="/farmhouse-renovation-services"><li onMouseOver={() => handleMouseOverImage('farmhouseRenovation')}>Farmhouse Renovation</li>  </Link>
+                              <Link href="/banquet-renovation-services"><li onMouseOver={() => handleMouseOverImage('banquet')}>Banquet Renovation</li>  </Link>
+                              <Link href="/villa-renovation-services"><li onMouseOver={() => handleMouseOverImage('villaRenovation')}>Villa Renovation</li>  </Link>
 
-                              <li onMouseOver={() => handleMouseOverImage('')}>Structural Renovation</li>
-                              <li onMouseOver={() => handleMouseOverImage('interiorRenovation')}>Interior Renovation</li>
-                              <li onMouseOver={() => handleMouseOverImage('bedroom')}>Bedroom Renovation</li>
-                              <li onMouseOver={() => handleMouseOverImage('loungRenovation')}>Lounge Renovation</li>
-                              <li onMouseOver={() => handleMouseOverImage('bathroom')}>Bathroom Renovation</li>
-                              <li onMouseOver={() => handleMouseOverImage('terrace')}>Terrace Renovation</li>
-                              <li onMouseOver={() => handleMouseOverImage('livingroom')}>Living room Renovation</li>
-                              <li onMouseOver={() => handleMouseOverImage('modularKitchen')}>Modular kitchen Renovation</li>
-                              <li onMouseOver={() => handleMouseOverImage('wardrobeRenovation')}>Wardrobe Renovation</li>
-
-                              <li onMouseOver={() => handleMouseOverImage('mandir')}>Mandir Renovation</li>
-                              <li onMouseOver={() => handleMouseOverImage('gym')}>GYM & Spas Renovation</li>
-                              <li onMouseOver={() => handleMouseOverImage('hotel')}>Hotel Renovation</li>
-                              <li onMouseOver={() => handleMouseOverImage('farmhouseRenovation')}>Farmhouse Renovation</li>
-                              <li onMouseOver={() => handleMouseOverImage('banquet')}>Banquet Renovation</li>
-                              <li onMouseOver={() => handleMouseOverImage('villaRenovation')}>Villa Renovation</li>
                             </div>
                           </ul>
                         </div>
@@ -1453,7 +1446,8 @@ const Header = () => {
                               <div className='flex gap-2'>
                                 <Image src="/images/consultancy/short_image/Consultancy - in delhi - gurgaon - noida - faridabad.jpeg" alt="" width={100} height={50} style={{ width: '100px', height: '50px', borderRadius: '4px' }} />
                                 <div>
-                                  <h3 className='text-sm text-white bg-black p-1 absolute' onMouseOver={() => handleMouseOverImage('consultant')}>Consultancy</h3>
+                                  <Link href="/architectural-consultancy"><h3 className='text-sm text-white bg-black p-1 absolute' onMouseOver={() => handleMouseOverImage('consultant')}>Consultancy</h3>
+                                  </Link>
                                   <p className='text-xs text-black mt-8'>Connect with the top end to end interior Brand</p>
                                 </div>
                               </div>
@@ -1462,7 +1456,8 @@ const Header = () => {
                               <div className='flex gap-2 mt-2'>
                                 <Image src="/images/consultancy/short_image/Beautiful - Design- project - in - delhi - gurgaon- noida.jpeg" alt="" width={100} height={50} style={{ width: '80px', height: '50px', borderRadius: '4px' }} />
                                 <div>
-                                  <h3 className='text-sm text-white bg-black p-1 absolute' onMouseOver={() => handleMouseOverImage('design')}>Designing & Planning</h3>
+                                  <Link href="/architectural-brand-in-india"> <h3 className='text-sm text-white bg-black p-1 absolute' onMouseOver={() => handleMouseOverImage('design')}>Designing & Planning</h3></Link>
+
                                   <p className='text-xs text-black mt-8'>Connect with the top end to end interior Brand</p>
                                 </div>
                               </div>
@@ -1471,7 +1466,8 @@ const Header = () => {
                               <div className='flex gap-2 mt-2 '>
                                 <Image src="/images/consultancy/short_image/complete-turnkey-structures-builders-developers-end-to-end-building-works-in-delhi-gurgaon-noida-india (6).jpg" alt="" width={100} height={50} style={{ width: '100px', height: '50px', borderRadius: '4px' }} />
                                 <div>
-                                  <h3 className='text-sm text-white bg-black p-1 absolute' onMouseOver={() => handleMouseOverImage('project')}>End to End Structural Projects</h3>
+                                  <Link href="/top-architects-in-india"><h3 className='text-sm text-white bg-black p-1 absolute' onMouseOver={() => handleMouseOverImage('project')}>End to End Structural Projects</h3></Link>
+
                                   <p className='text-xs mt-4 mt-8'>Connect with the top end to end interior Brand</p>
                                 </div>
                               </div>
@@ -1485,7 +1481,8 @@ const Header = () => {
                               <Image src="/images/consultancy/short_image/affordable-luxury-residences-flats-apartments-interior-designs-in-delhi-gurgaon-noida-india (5).jpg" alt="" width={100} height={50} style={{ width: '100px', height: '50px', borderRadius: '4px' }} />
 
                               <div>
-                                <h3 className='text-sm text-white bg-black p-1 absolute' onMouseOver={() => handleMouseOverImage('luxury')}>Luxury Residences</h3>
+                                <Link href="/commercial-architectural-delhi-india"><h3 className='text-sm text-white bg-black p-1 absolute' onMouseOver={() => handleMouseOverImage('luxury')}>Luxury Residences</h3></Link>
+
                                 <p className='text-xs mt-8'>Connect with the top end to end interior Brand</p>
                               </div>
 
@@ -1496,7 +1493,8 @@ const Header = () => {
                               <Image src="/images/consultancy/short_image/villa-renovation-services-in-delhi-gurgaon-india-noida (1).jpg" alt="" width={100} height={50} style={{ width: '100px', height: '50px', borderRadius: '4px' }} />
 
                               <div>
-                                <h3 className='text-sm text-white bg-black p-1 absolute' onMouseOver={() => handleMouseOverImage('renovation')}>Renovations</h3>
+                                <Link href="/home-renovation-services"><h3 className='text-sm text-white bg-black p-1 absolute' onMouseOver={() => handleMouseOverImage('renovation')}>Renovations</h3></Link>
+
                                 <p className='text-xs mt-8'>Connect with the top end to end interior Brand</p>
                               </div>
                             </div>
@@ -1541,7 +1539,8 @@ const Header = () => {
                               <div className='flex gap-2'>
                                 <Image src="/images/modular_kitchen/short/best-modular-kitchen-wardrobes-designs-small-kitchen-designs-wardrobe-designs-in-delhi-gurgaon-noida-india (5).jpg" alt="" width={100} height={50} style={{ width: '130px', height: '60px', borderRadius: '4px' }} />
                                 <div>
-                                  <h3 className='text-sm text-white bg-black absolute  p-1' onMouseOver={() => handleMouseOverImage('type')}>Types of Modular Kitchen</h3>
+                                  <Link href="/modular-kitchen-types"> <h3 className='text-sm text-white bg-black absolute  p-1' onMouseOver={() => handleMouseOverImage('type')}>Types of Modular Kitchen</h3></Link>
+                                 
                                   <p className='text-xs text-black mt-8'>Connect with the top end to end interior Brand</p>
                                 </div>
                               </div>
@@ -1550,7 +1549,7 @@ const Header = () => {
                               <div className='flex gap-2 mt-4'>
                                 <Image src="/images/modular_kitchen/short/modular-kitchen-wardrobe-designs-dealers-manufacturers-in-delhi-gurgaon-noida-india (1).png" alt="" width={100} height={50} style={{ width: '130px', height: '60px', borderRadius: '4px' }} />
                                 <div>
-                                  <h3 className='text-sm text-white bg-black absolute  p-1' onMouseOver={() => handleMouseOverImage('modular')}>Modular Kitchen Designs</h3>
+                                  <Link href="/modular-kitchen-designs"><h3 className='text-sm text-white bg-black absolute  p-1' onMouseOver={() => handleMouseOverImage('modular')}>Modular Kitchen Designs</h3></Link>
                                   <p className='text-xs text-black mt-8'>Connect with the top end to end interior Brand</p>
                                 </div>
                               </div>
@@ -1559,7 +1558,7 @@ const Header = () => {
                               <div className='flex gap-2 mt-4'>
                                 <Image src="/images/modular_kitchen/short/modular-kitchen-wardrobe-designs-dealers-manufacturers-in-delhi-gurgaon-noida-india (7).jpg" alt="" width={100} height={50} style={{ width: '130px', height: '60px', borderRadius: '4px' }} />
                                 <div>
-                                  <h3 className='text-sm text-white bg-black absolute  p-1' onMouseOver={() => handleMouseOverImage('luxury_modular')}>Luxury Modular Kitchen</h3>
+                                  <Link href="/luxury-modular-kitchen-india"><h3 className='text-sm text-white bg-black absolute  p-1' onMouseOver={() => handleMouseOverImage('luxury_modular')}>Luxury Modular Kitchen</h3></Link>
                                   <p className='text-xs mt-4 mt-8'>Connect with the top end to end interior Brand</p>
                                 </div>
                               </div>
@@ -1573,7 +1572,8 @@ const Header = () => {
                               <Image src="/images/modular_kitchen/short/modular-kitchen-wardrobe-largest-manufacturers-dealers-in-delhi-gurgaon-noida-faridabad-india (5).jpg" alt="" width={100} height={50} style={{ width: '130px', height: '60px', borderRadius: '4px' }} />
 
                               <div>
-                                <h3 className='text-sm text-white bg-black absolute  p-1' onMouseOver={() => handleMouseOverImage('kitchen_renovation')}>Kitchen Renovation</h3>
+                                <Link href="/modular-kitchen-renovation-services"><h3 className='text-sm text-white bg-black absolute  p-1' onMouseOver={() => handleMouseOverImage('kitchen_renovation')}>Kitchen Renovation</h3></Link>
+                                
                                 <p className='text-xs mt-8'>Connect with the top end to end interior Brand</p>
                               </div>
 
@@ -1584,7 +1584,8 @@ const Header = () => {
                               <Image src="/images/modular_kitchen/short/top-modular-kitchen-and-wardrobe-brand-in-delhi-gurgaon-noida-india (7).jpg" alt="" width={100} height={50} style={{ width: '130px', height: '60px', borderRadius: '4px' }} />
 
                               <div>
-                                <h3 className='text-sm text-white bg-black absolute  p-1' onMouseOver={() => handleMouseOverImage('renovationss')}>Renovations</h3>
+                                <Link href="/modular-kitchen-price-estimator"><h3 className='text-sm text-white bg-black absolute  p-1' onMouseOver={() => handleMouseOverImage('renovationss')}>Renovations</h3></Link>
+                                
                                 <p className='text-xs mt-8'>Connect with the top end to end interior Brand</p>
                               </div>
                             </div>
