@@ -1,7 +1,7 @@
 'use client'
 import React, { FormEvent, useEffect, useState } from 'react'
 import Image from 'next/image'
-import Header from '@/components/Navbar/Header'
+import Header from '../../../components/Navbar/Header'
 import SimpleImageSlider from 'react-simple-image-slider'
 import 'react-responsive-carousel/lib/styles/carousel.min.css' // requires a loader
 import { Carousel } from 'react-responsive-carousel'

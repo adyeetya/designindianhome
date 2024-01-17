@@ -1014,6 +1014,12 @@ background: rgb(255, 68, 68) !important;display: none;
 .newz {
   margin: 0px 95px;
 }
+@media (max-width: 768px) {
+  
+  .newz{
+    margin: 0px 95px;
+  }
+}
 
 #news {
   padding: 0px 5px;

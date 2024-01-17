@@ -41,12 +41,12 @@ const ThemeSwitcher = () => {
             stroke="currentColor"
             className="w-4 h-4 text-gray-800"
           >
-            <path
+            {/* <path
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth="2"
               d="M12 5a2 2 0 100 4 2 2 0 000-4zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"
-            ></path>
+            ></path> */}
           </svg>
         ) : (
           // Sun icon for light mode
@@ -57,7 +57,7 @@ const ThemeSwitcher = () => {
             stroke="currentColor"
             className="w-4 h-4 text-gray-800"
           >
-            <path
+            {/* <path
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth="2"
@@ -68,7 +68,7 @@ const ThemeSwitcher = () => {
               strokeLinejoin="round"
               strokeWidth="2"
               d="M12 2v2m0 16v2m4-12h2m-16 0H2m2 12l-1.5-1.5m3 0L7 14m3 0L10.5 15.5m3 0L14 14"
-            ></path>
+            ></path> */}
           </svg>
         )}
       </div>
