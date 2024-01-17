@@ -217,7 +217,123 @@ const WardrobeImageUrl = [
   },
 ]
 
+
+
 const Collection = () => {
+  const brand = [
+    {
+      id: 1,
+      img: "https://www.modularkitcheninnoida.com/assets/images/b1.png",
+    },
+    {
+      id: 2,
+      img: "https://www.modularkitcheninnoida.com/assets/images/b2.png",
+    },
+    {
+      id: 3,
+      img: "https://www.modularkitcheninnoida.com/assets/images/b3.png",
+    },
+    {
+      id: 4,
+      img: "https://www.modularkitcheninnoida.com/assets/images/b4.png",
+    }, {
+      id: 5,
+      img: "https://www.modularkitcheninnoida.com/assets/images/b5.png",
+    }, {
+      id: 6,
+      img: "https://www.modularkitcheninnoida.com/assets/images/b6.png",
+    }, {
+      id: 7,
+      img: "https://www.modularkitcheninnoida.com/assets/images/b7.png",
+    },
+    {
+      id: 8,
+      img: "https://www.modularkitcheninnoida.com/assets/images/b8.png",
+    },
+    {
+      id: 9,
+      img: "https://www.modularkitcheninnoida.com/assets/images/b9.png",
+    },
+    {
+      id: 10,
+      img: "https://www.modularkitcheninnoida.com/assets/images/b10.png",
+    },
+    {
+      id: 11,
+      img: "https://www.modularkitcheninnoida.com/assets/images/b1.png",
+    },
+    {
+      id: 12,
+      img: "https://www.modularkitcheninnoida.com/assets/images/b2.png",
+    },
+
+    {
+      id: 13,
+      img: "https://www.modularkitcheninnoida.com/assets/images/b3.png",
+    },
+    {
+      id: 14,
+      img: "https://www.modularkitcheninnoida.com/assets/images/b4.png",
+    },]
+
+  const data = [
+    {
+      id: 1,
+      img: "https://www.modularkitcheninnoida.com/assets/images/c1.png",
+    },
+    {
+      id: 2,
+      img: "https://www.modularkitcheninnoida.com/assets/images/c2.png",
+    },
+    {
+      id: 3,
+      img: "https://www.modularkitcheninnoida.com/assets/images/c3.png",
+    },
+    {
+      id: 4,
+      img: "https://www.modularkitcheninnoida.com/assets/images/c4.png",
+    }, {
+      id: 5,
+      img: "https://www.modularkitcheninnoida.com/assets/images/c5.png",
+    }, {
+      id: 6,
+      img: "https://www.modularkitcheninnoida.com/assets/images/c6.png",
+    }, {
+      id: 7,
+      img: "https://www.modularkitcheninnoida.com/assets/images/c7.png",
+    },
+    {
+      id: 8,
+      img: "https://www.modularkitcheninnoida.com/assets/images/c8.png",
+    },
+    {
+      id: 9,
+      img: "https://www.modularkitcheninnoida.com/assets/images/c9.png",
+    },
+    {
+      id: 10,
+      img: "https://www.modularkitcheninnoida.com/assets/images/c10.png",
+    },
+    {
+      id: 11,
+      img: "https://www.modularkitcheninnoida.com/assets/images/c1.png",
+    },
+    {
+      id: 12,
+      img: "https://www.modularkitcheninnoida.com/assets/images/c2.png",
+    },
+
+    {
+      id: 13,
+      img: "https://www.modularkitcheninnoida.com/assets/images/c3.png",
+    },
+    {
+      id: 14,
+      img: "https://www.modularkitcheninnoida.com/assets/images/c4.png",
+    },
+
+
+  ]
   const ref = useRef()
   const videoRef = useRef()
   const [isPlaying, setIsPlaying] = useState(false)
@@ -400,14 +516,14 @@ const Collection = () => {
         </p>
         <label
           htmlFor="read-more-checkbox"
-          className="read-more__label"
+          className="read-more__label "
           data-read-more="Read more"
           data-read-less="See less"
           aria-hidden="true"
         />
       </div>
 
-      <Marquee style={{ backgroundColor: ' yellow ', marginTop: '5%' }}>
+      <Marquee style={{ backgroundColor: ' yellow ' }} className='my-6'>
         <div className="marquee">
           <h3>
             Top Interior, Architectural & Modular Kitchen - Wardrobe Brand in
@@ -435,9 +551,9 @@ const Collection = () => {
                 alt=""
                 height={10}
                 width={1500}
-                className="rounded shadow-md"
+                className="rounded shadow-md my-6 max-[600px]:mb-10"
                 id="seek"
-                style={{ marginBottom: '6%' }}
+
               />
               <section class="bordered bordersec"></section>
               <div className="main-hero">
@@ -524,15 +640,15 @@ const Collection = () => {
               />
             </div>
             <div className="md:w-1/2 mb-4" id="news">
-          
-               
-                 
-                    <ReactBeforeSliderComponent
-                     
-                      firstImage={FIRST_IMAGE}
-                      secondImage={SECOND_IMAGE}
-                    />
-          
+
+
+
+              <ReactBeforeSliderComponent
+
+                firstImage={FIRST_IMAGE}
+                secondImage={SECOND_IMAGE}
+              />
+
             </div>
             <div className="md:w-1/2 px-16" id="news">
               {/*   <div className="main-hero">
@@ -812,6 +928,7 @@ const Collection = () => {
               </div>
             )
           })}
+
         </Carousel>
 
         <div className="flex justify-center items-center ">
@@ -836,6 +953,10 @@ const Collection = () => {
           partialVisible={false}
           dotListClass="custom-dot-list-style"
         >
+
+
+
+
           {StructureImageUrl.map((imageUrl, index) => {
             return (
               <div className="slidering" key={index}>
@@ -932,71 +1053,25 @@ const Collection = () => {
       </div>
 
       <div className="wrapperlatest">
-        <h1>BRANDS YOU WILL FIND IN OUR PRODUCTS</h1>
+        <h1>Brands you will find in our products</h1>
         <h3></h3>
       </div>
       <div className="slider">
         <div className="slide-track">
-          <div className="slide">
-            <Image src="/1q.png" height={300} width={300} alt="" />
-          </div>
-          <div className="slide">
-            <Image src="/1q1.png" height={300} width={300} alt="" />
-          </div>
-          <div className="slide">
-            <Image src="/1q2.png" height={300} width={300} alt="" />
-          </div>
-          <div className="slide">
-            <Image src="/1q3.png" height={300} width={300} alt="" />
-          </div>
-          <div className="slide">
-            <Image src="/1q4.png" height={300} width={300} alt="" />
-          </div>
-          <div className="slide">
-            <Image src="/1q5.png" height={300} width={300} alt="" />
-          </div>
-          <div className="slide">
-            <Image src="/1q6.png" height={300} width={300} alt="" />
-          </div>
-          <div className="slide">
-            <Image src="/1q7.png" height={300} width={300} alt="" />
-          </div>
-          <div className="slide">
-            <Image src="/1q8.png" height={300} width={300} alt="" />
-          </div>
-          <div className="slide">
-            <Image src="/1q9.png" height={300} width={300} alt="" />
-          </div>
-          <div className="slide">
-            <Image src="/1q11.png" height={300} width={300} alt="" />
-          </div>
-          <div className="slide">
-            <Image src="/1q12.png" height={300} width={300} alt="" />
-          </div>
-          <div className="slide">
-            <Image src="/1q13.png" height={300} width={300} alt="" />
-          </div>
-          <div className="slide">
-            <Image src="/1q14.png" height={300} width={300} alt="" />
-          </div>
-          <div className="slide">
-            <Image src="/1q15.png" height={300} width={300} alt="" />
-          </div> <div className="slide">
-            <Image src="/1q16.png" height={300} width={300} alt="" />
-          </div> <div className="slide">
-            <Image src="/1q17.png" height={300} width={300} alt="" />
-          </div> <div className="slide">
-            <Image src="/1q18.png" height={300} width={300} alt="" />
-          </div> <div className="slide">
-            <Image src="/1q19.png" height={300} width={300} alt="" />
-          </div>
-          <div className="slide">
-            <Image src="/1q.png" height={300} width={300} alt="" />
-          </div>
-          <div className="slide">
-            <Image src="/1q1.png" height={300} width={300} alt="" />
-          </div>
-          
+          {brand.map((item, index) => (
+            <div key={index} className="slide">
+              <Image
+                src={item.img}
+                width={0}
+                height={0}
+                sizes="100vw"
+                style={{ width: '120%', height: 'auto' }}
+              />
+            </div>
+          ))}
+
+
+
         </div>
       </div>
       <div className="main">
@@ -1024,67 +1099,27 @@ const Collection = () => {
         </svg>
       </div>
 
-     
 
-      {/* <div className="slider">
+      <div className="wrapperlatest">
+        <h1>Our Corporate Presece</h1>
+
+      </div>
+
+      <div className="slider">
         <div className="slide-track">
-          <div className="slide">
-            <Image src="/1q.png" height={300} width={300} alt="" />
-          </div>
-          <div className="slide">
-            <Image src="/1q.png" height={300} width={300} alt="" />
-          </div>
-          <div className="slide">
-            <Image src="/images/vedh.png" height={300} width={300} alt="" />
-          </div>
-          <div className="slide">
-            <Image src="/images/vedh.png" height={300} width={300} alt="" />
-          </div>
-          <div className="slide">
-            <Image src="/images/vedh.png" height={300} width={300} alt="" />
-          </div>
-          <div className="slide">
-            <Image src="/images/vedh.png" height={300} width={300} alt="" />
-          </div>
-          <div className="slide">
-            <Image src="/images/vedh.png" height={300} width={300} alt="" />
-          </div>
-          <div className="slide">
-            <Image src="/images/vedh.png" height={300} width={300} alt="" />
-          </div>
-          <div className="slide">
-            <Image src="/images/vedh.png" height={300} width={300} alt="" />
-          </div>
-          <div className="slide">
-            <Image src="/images/vedh.png" height={300} width={300} alt="" />
-          </div>
-          <div className="slide">
-            <Image src="/images/vedh.png" height={300} width={300} alt="" />
-          </div>
-          <div className="slide">
-            <Image src="/images/vedh.png" height={300} width={300} alt="" />
-          </div>
-          <div className="slide">
-            <Image src="/images/vedh.png" height={300} width={300} alt="" />
-          </div>
-          <div className="slide">
-            <Image src="/images/vedh.png" height={300} width={300} alt="" />
-          </div>
+          {data.map((item,index) => (
+            <div key={index} className="slide">
+              <Image src={item.img}
+                width={0}
+                height={0}
+                sizes="100vw"
+                style={{ width: '120%', height: 'auto' }} 
+                />
+            </div>
+            ))}
         </div>
-      </div> */}
-      <div className="brands-box brandsbox-b">
-  <h2 className="text-uppercase view-heading text-center">
-    our Corporate Presence
-  </h2><div className="flexbox">
-  <div className="row " >
-    <div className="corp container">
-      <img
-        src="https://www.designindiankitchen.com/wp-content/themes/dkiblogs/assets/images/gruplogos.png"
-        style={{ filter: "invert(0)" }}
-      />
-    </div>
-  </div>
-</div></div>
+      </div>
+
 
     </>
   )
