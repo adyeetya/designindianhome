@@ -975,7 +975,9 @@ background: rgb(255, 68, 68) !important;display: none;
 }
 
 .newz {
-  margin: 0px 9px;
+  margin: 0px;
+  margin-left: 95px;
+  margin-right: 95px;
 }
 
 #news {
