@@ -944,7 +944,7 @@ const Header = () => {
     };
   }, [mobileMenuVisible]);
   return (
-    <div className={`bg-white  ${scrollDirection === 'down'}`}>
+    <div className={`bg-white  ${scrollDirection === 'down'}`} >
       <div className=" invisible xl:visible lg:flex">
 
         {/* Desktop Header */}

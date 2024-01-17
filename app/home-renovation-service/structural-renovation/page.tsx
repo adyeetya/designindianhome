@@ -52,7 +52,7 @@ const Page = ({}) => {
         {/* tabs */}
         
         <Tabs id={0} />
-
+        
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 px-7 mt-16">
         {images.map((image) => (
           <img key={image.id} src={`https://api.designindianwardrobe.com/uploads/${image.filename}`} alt={image.filename} style={{width: '450px', height: '250px', borderRadius: '10px'}}/>

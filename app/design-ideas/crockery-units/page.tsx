@@ -1,18 +1,20 @@
-'use client'
+"use client";
 import React, { useState, useEffect } from 'react';
-import Header from '../../../components/Navbar/Header'
-import Footer from '../../../components/Footer/Footer'
+import Header from '../../../components/Navbar/Header';
+import Footer from '../../../components/Footer/Footer';
+import Link from 'next/link';
+import ProgressBar from '../../../components/Progressbar';
+import Tabs from '../Tabs';
+import Omsairam from '../../../components/Navbar/Omsairam';
+import Slider from '../../slider/Page';
 
-import Link from 'next/link'
-import ProgressBar from '../../../components/Progressbar'
-import Tabs from '../Tabs'
-import Nav from 'react-bootstrap/Nav'
-import Omsairam from '../../../components/Navbar/Omsairam'
-const Page = ({}) => {
-  
+const Page = () => {
   const [images, setImages] = useState<Array<{ id: number; filename: string }>>([]);
+  const [photoIndex, setPhotoIndex] = useState(0);
+  const [showSlider, setShowSlider] = useState(false);
+
   useEffect(() => {
-    const categoryIds = [69]; // Add the category IDs you want to fetch
+    const categoryIds = [69];
     const fetchImages = async () => {
       try {
         const timestamp = Date.now();
@@ -30,7 +32,15 @@ const Page = ({}) => {
 
     fetchImages();
   }, []);
+  const handleImageClick = (index: number) => {
+    setPhotoIndex(index);
+    setShowSlider(true);
+  };
+  
 
+  const handleCloseSlider = () => {
+    setShowSlider(false);
+  };
 
   return (
     <>
@@ -52,18 +62,33 @@ const Page = ({}) => {
         </div>
 
         {/* tabs */}
-
         <Tabs id={2} />
-        
+
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 px-7 mt-16">
-        {images.map((image) => (
-          <img key={image.id} src={`https://api.designindianwardrobe.com/uploads/${image.filename}`} alt={image.filename} style={{width: '450px', height: '250px', borderRadius: '10px'}}/>
-        ))}
+          {images.map((image, index) => (
+            <div key={image.id} onClick={() => handleImageClick(index)} style={{ cursor: 'pointer' }}>
+              <img
+                src={`https://api.designindianwardrobe.com/uploads/${image.filename}`}
+                alt={image.filename}
+                style={{ width: '450px', height: '250px', borderRadius: '10px' }}
+              />
+            </div>
+          ))}
         </div>
       </div>
+     {showSlider && (
+      <Slider
+        images={images}
+        initialSlide={photoIndex}
+        onClose={handleCloseSlider}
+        onNextSlide={() => setPhotoIndex((prevIndex) => (prevIndex + 1) % images.length)}
+        onPrevSlide={() => setPhotoIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length)}
+      />
+    )}
+
       <Footer />
     </>
-  )
-}
+  );
+};
 
-export default Page
+export default Page;
