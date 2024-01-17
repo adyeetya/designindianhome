@@ -1124,7 +1124,7 @@ const Header = () => {
         </div>
         {/* Bottom Navigation Bar */}
         <div className='fixed bottom-0 left-0 w-full' style={{ zIndex: '800' }}>
-          <div className={`bg-white bg-gradient-to-t from-green-400 text-black w-full h-16 flex items-center justify-around`}>
+          <div className={`bg-white bg-white text-black w-full h-16 flex items-center justify-around`}>
             <button className="flex flex-col items-center text-sm font-bold">
               <FontAwesomeIcon icon={faHome} size="2x" />
               Home
@@ -1160,7 +1160,7 @@ const Header = () => {
 
       <div className='xl:hidden flex justify-between items-center px-0 py-0 bg-white drop-shadow-lg mt-8 fixed top-0 w-full' style={{ zIndex: '200' }}>
         <div>
-          <Image src="/images/Logo.gif" alt='left logo' width={90} height={80} style={{ width: '120px', height: 'auto', marginLeft: '10px', padding: '1px', marginTop: '10px' }} />
+          <Image src="/images/Logo.gif" alt='left logo' width={0} height={0} style={{ width: '90px', height: '80', marginLeft: '10px', marginTop: '10px' }} />
         </div>
         <div >
           <button className='bg-black text-white py-5 px-6 m-0 '> Get Estimate</button>
