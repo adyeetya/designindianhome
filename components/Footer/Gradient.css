@@ -1,6 +1,6 @@
 .gradient {
   position: relative;
-  height: 1700px;
+  height: auto; /* Set height to auto or remove it altogether */
   overflow: hidden;
 }
 
@@ -16,4 +16,12 @@
   background: radial-gradient(circle at 10% 100%, #0267ff 0%, rgba(17,255,226,0.83) 20%, transparent 20%, transparent 100%),
               radial-gradient(circle at 30% 100%, #0267ff 0%, rgba(17,255,226,0.83) 20%, transparent 20%, transparent 100%);
   background-size: 250% 110%; /* Adjust the background-size value */
+
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+  .gradient {
+    height: auto; /* Set height to auto or remove it altogether */
+  }
 }
