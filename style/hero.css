@@ -1014,14 +1014,14 @@ background: rgb(255, 68, 68) !important;display: none;
 .newz {
   margin: 0px 95px;
   margin-left: -29px;
-  margin-right: 30px;
+  margin-right: -30px;
 }
 @media (max-width: 768px) {
   
   .newz{
     margin: 0px 95px;
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: -30px;
+    margin-right: -30px;
   }
 }
 
