@@ -412,10 +412,11 @@ const Collection = () => {
           <video
             loop
             autoPlay
-            controls={isPlaying}
-            src="/video/dkivid.mp4"
-            width={1500}
+            muted
+            src="/video/video-interior-designer-company-in-delhi-gurgaon-noida-india.mp4"
+            width={1600}
             height={550}
+            playsInline
             className="rounded shadow-md"
             style={{}}
           />

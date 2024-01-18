@@ -392,7 +392,7 @@ margin-top: 5%;
 }
 
 .lastsec{
-  background: url(/public/video/dkivid.mp4);
+  background: url(/public/video/video-interior-designer-company-in-delhi-gurgaon-noida-india.mp4);
 }
 .hide{
   background-color: rgb(241 245 249 / var(--tw-bg-opacity));;
@@ -1013,11 +1013,15 @@ background: rgb(255, 68, 68) !important;display: none;
 
 .newz {
   margin: 0px 95px;
+  margin-left: -29px;
+  margin-right: 30px;
 }
 @media (max-width: 768px) {
   
   .newz{
     margin: 0px 95px;
+    margin-left: 30px;
+    margin-right: 30px;
   }
 }
 
@@ -1548,7 +1552,7 @@ section.outter.hero-video {
 }
 
 .video-sec{
-  background: url(/public/video/dkivid.mp4);
+  background: url(/public/video/video-interior-designer-company-in-delhi-gurgaon-noida-india.mp4);
 }
 .callout a {
   border: .5rem solid;
