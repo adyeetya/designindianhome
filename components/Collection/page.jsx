@@ -217,122 +217,125 @@ const WardrobeImageUrl = [
   },
 ]
 
-
-
 const Collection = () => {
   const brand = [
     {
       id: 1,
-      img: "https://www.modularkitcheninnoida.com/assets/images/b1.png",
+      img: 'https://www.modularkitcheninnoida.com/assets/images/b1.png',
     },
     {
       id: 2,
-      img: "https://www.modularkitcheninnoida.com/assets/images/b2.png",
+      img: 'https://www.modularkitcheninnoida.com/assets/images/b2.png',
     },
     {
       id: 3,
-      img: "https://www.modularkitcheninnoida.com/assets/images/b3.png",
+      img: 'https://www.modularkitcheninnoida.com/assets/images/b3.png',
     },
     {
       id: 4,
-      img: "https://www.modularkitcheninnoida.com/assets/images/b4.png",
-    }, {
+      img: 'https://www.modularkitcheninnoida.com/assets/images/b4.png',
+    },
+    {
       id: 5,
-      img: "https://www.modularkitcheninnoida.com/assets/images/b5.png",
-    }, {
+      img: 'https://www.modularkitcheninnoida.com/assets/images/b5.png',
+    },
+    {
       id: 6,
-      img: "https://www.modularkitcheninnoida.com/assets/images/b6.png",
-    }, {
+      img: 'https://www.modularkitcheninnoida.com/assets/images/b6.png',
+    },
+    {
       id: 7,
-      img: "https://www.modularkitcheninnoida.com/assets/images/b7.png",
+      img: 'https://www.modularkitcheninnoida.com/assets/images/b7.png',
     },
     {
       id: 8,
-      img: "https://www.modularkitcheninnoida.com/assets/images/b8.png",
+      img: 'https://www.modularkitcheninnoida.com/assets/images/b8.png',
     },
     {
       id: 9,
-      img: "https://www.modularkitcheninnoida.com/assets/images/b9.png",
+      img: 'https://www.modularkitcheninnoida.com/assets/images/b9.png',
     },
     {
       id: 10,
-      img: "https://www.modularkitcheninnoida.com/assets/images/b10.png",
+      img: 'https://www.modularkitcheninnoida.com/assets/images/b10.png',
     },
     {
       id: 11,
-      img: "https://www.modularkitcheninnoida.com/assets/images/b1.png",
+      img: 'https://www.modularkitcheninnoida.com/assets/images/b1.png',
     },
     {
       id: 12,
-      img: "https://www.modularkitcheninnoida.com/assets/images/b2.png",
+      img: 'https://www.modularkitcheninnoida.com/assets/images/b2.png',
     },
 
     {
       id: 13,
-      img: "https://www.modularkitcheninnoida.com/assets/images/b3.png",
+      img: 'https://www.modularkitcheninnoida.com/assets/images/b3.png',
     },
     {
       id: 14,
-      img: "https://www.modularkitcheninnoida.com/assets/images/b4.png",
-    },]
+      img: 'https://www.modularkitcheninnoida.com/assets/images/b4.png',
+    },
+  ]
 
   const data = [
     {
       id: 1,
-      img: "https://www.modularkitcheninnoida.com/assets/images/c1.png",
+      img: 'https://www.modularkitcheninnoida.com/assets/images/c1.png',
     },
     {
       id: 2,
-      img: "https://www.modularkitcheninnoida.com/assets/images/c2.png",
+      img: 'https://www.modularkitcheninnoida.com/assets/images/c2.png',
     },
     {
       id: 3,
-      img: "https://www.modularkitcheninnoida.com/assets/images/c3.png",
+      img: 'https://www.modularkitcheninnoida.com/assets/images/c3.png',
     },
     {
       id: 4,
-      img: "https://www.modularkitcheninnoida.com/assets/images/c4.png",
-    }, {
+      img: 'https://www.modularkitcheninnoida.com/assets/images/c4.png',
+    },
+    {
       id: 5,
-      img: "https://www.modularkitcheninnoida.com/assets/images/c5.png",
-    }, {
+      img: 'https://www.modularkitcheninnoida.com/assets/images/c5.png',
+    },
+    {
       id: 6,
-      img: "https://www.modularkitcheninnoida.com/assets/images/c6.png",
-    }, {
+      img: 'https://www.modularkitcheninnoida.com/assets/images/c6.png',
+    },
+    {
       id: 7,
-      img: "https://www.modularkitcheninnoida.com/assets/images/c7.png",
+      img: 'https://www.modularkitcheninnoida.com/assets/images/c7.png',
     },
     {
       id: 8,
-      img: "https://www.modularkitcheninnoida.com/assets/images/c8.png",
+      img: 'https://www.modularkitcheninnoida.com/assets/images/c8.png',
     },
     {
       id: 9,
-      img: "https://www.modularkitcheninnoida.com/assets/images/c9.png",
+      img: 'https://www.modularkitcheninnoida.com/assets/images/c9.png',
     },
     {
       id: 10,
-      img: "https://www.modularkitcheninnoida.com/assets/images/c10.png",
+      img: 'https://www.modularkitcheninnoida.com/assets/images/c10.png',
     },
     {
       id: 11,
-      img: "https://www.modularkitcheninnoida.com/assets/images/c1.png",
+      img: 'https://www.modularkitcheninnoida.com/assets/images/c1.png',
     },
     {
       id: 12,
-      img: "https://www.modularkitcheninnoida.com/assets/images/c2.png",
+      img: 'https://www.modularkitcheninnoida.com/assets/images/c2.png',
     },
 
     {
       id: 13,
-      img: "https://www.modularkitcheninnoida.com/assets/images/c3.png",
+      img: 'https://www.modularkitcheninnoida.com/assets/images/c3.png',
     },
     {
       id: 14,
-      img: "https://www.modularkitcheninnoida.com/assets/images/c4.png",
+      img: 'https://www.modularkitcheninnoida.com/assets/images/c4.png',
     },
-
-
   ]
   const ref = useRef()
   const videoRef = useRef()
@@ -408,7 +411,7 @@ const Collection = () => {
     </a> */}
 
       <section className="outter hero-video">
-        <div className="videoBox mt-3">
+        <div className="videoBox mt-3 rounded-xl">
           <video
             loop
             autoPlay
@@ -417,14 +420,16 @@ const Collection = () => {
             width={1600}
             height={550}
             playsInline
-            className="rounded shadow-md"
+            className="rounded-xl shadow-md mx-auto sm:w-[90%]"
             style={{}}
           />
         </div>
         <div className="callout">
-          <h3>Looking for Interiors or Modular Works</h3>
+          <h3 className="bg-transparent text-md sm:text-xxl">
+            Looking for Interiors or Modular Works
+          </h3>
           <br />
-          <a className="button" href="/collections/all">
+          <a className="button hover:bg-white" href="/collections/all">
             Connect with us
           </a>
         </div>
@@ -524,7 +529,7 @@ const Collection = () => {
         />
       </div>
 
-      <Marquee style={{ backgroundColor: ' yellow ' }} className='my-6'>
+      <Marquee style={{ backgroundColor: ' yellow ' }} className="my-6">
         <div className="marquee">
           <h3>
             Top Interior, Architectural & Modular Kitchen - Wardrobe Brand in
@@ -554,7 +559,6 @@ const Collection = () => {
                 width={1500}
                 className="rounded shadow-md my-6 max-[600px]:mb-10"
                 id="seek"
-
               />
               <section class="bordered bordersec"></section>
               <div className="main-hero">
@@ -641,15 +645,10 @@ const Collection = () => {
               />
             </div>
             <div className="md:w-1/2 mb-4" id="news">
-
-
-
               <ReactBeforeSliderComponent
-
                 firstImage={FIRST_IMAGE}
                 secondImage={SECOND_IMAGE}
               />
-
             </div>
             <div className="md:w-1/2 px-16" id="news">
               {/*   <div className="main-hero">
@@ -929,7 +928,6 @@ const Collection = () => {
               </div>
             )
           })}
-
         </Carousel>
 
         <div className="flex justify-center items-center ">
@@ -954,10 +952,6 @@ const Collection = () => {
           partialVisible={false}
           dotListClass="custom-dot-list-style"
         >
-
-
-
-
           {StructureImageUrl.map((imageUrl, index) => {
             return (
               <div className="slidering" key={index}>
@@ -1070,9 +1064,6 @@ const Collection = () => {
               />
             </div>
           ))}
-
-
-
         </div>
       </div>
       <div className="main">
@@ -1100,28 +1091,25 @@ const Collection = () => {
         </svg>
       </div>
 
-
       <div className="wrapperlatest">
         <h1>Our Corporate Presece</h1>
-
       </div>
 
       <div className="slider">
         <div className="slide-track">
-          {data.map((item,index) => (
+          {data.map((item, index) => (
             <div key={index} className="slide">
-              <Image src={item.img}
+              <Image
+                src={item.img}
                 width={0}
                 height={0}
                 sizes="100vw"
-                style={{ width: '120%', height: 'auto' }} 
-                />
+                style={{ width: '120%', height: 'auto' }}
+              />
             </div>
-            ))}
+          ))}
         </div>
       </div>
-
-
     </>
   )
 }
