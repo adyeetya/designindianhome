@@ -1,46 +1,49 @@
-"use client";
-import React, { useState, useEffect } from 'react';
-import Header from '../../../components/Navbar/Header';
-import Footer from '../../../components/Footer/Footer';
-import Link from 'next/link';
-import ProgressBar from '../../../components/Progressbar';
-import Tabs from '../Tabs';
-import Omsairam from '../../../components/Navbar/Omsairam';
-import Slider from '../../slider/Page';
+'use client'
+import React, { useState, useEffect } from 'react'
+import Header from '../../../components/Navbar/Header'
+import Footer from '../../../components/Footer/Footer'
+import Link from 'next/link'
+import ProgressBar from '../../../components/Progressbar'
+import Tabs from '../Tabs'
+import Omsairam from '../../../components/Navbar/Omsairam'
+import Slider from '../../slider/Page'
 
 const Page = () => {
-  const [images, setImages] = useState<Array<{ id: number; filename: string }>>([]);
-  const [photoIndex, setPhotoIndex] = useState(0);
-  const [showSlider, setShowSlider] = useState(false);
+  const [images, setImages] = useState<Array<{ id: number; filename: string }>>(
+    []
+  )
+  const [photoIndex, setPhotoIndex] = useState(0)
+  const [showSlider, setShowSlider] = useState(false)
 
   useEffect(() => {
-    const categoryIds = [69];
+    const categoryIds = [69]
     const fetchImages = async () => {
       try {
-        const timestamp = Date.now();
-        const response = await fetch(`https://api.designindianwardrobe.com/api/images/${categoryIds}?timestamp=${timestamp}`);
+        const timestamp = Date.now()
+        const response = await fetch(
+          `https://api.designindianwardrobe.com/api/images/${categoryIds}?timestamp=${timestamp}`
+        )
         if (response.ok) {
-          const data = await response.json();
-          setImages(data);
+          const data = await response.json()
+          setImages(data)
         } else {
-          console.error('Error fetching images:', response.statusText);
+          console.error('Error fetching images:', response.statusText)
         }
       } catch (error) {
-        console.error('Error during fetch:', error);
+        console.error('Error during fetch:', error)
       }
-    };
+    }
 
-    fetchImages();
-  }, []);
+    fetchImages()
+  }, [])
   const handleImageClick = (index: number) => {
-    setPhotoIndex(index);
-    setShowSlider(true);
-  };
-  
+    setPhotoIndex(index)
+    setShowSlider(true)
+  }
 
   const handleCloseSlider = () => {
-    setShowSlider(false);
-  };
+    setShowSlider(false)
+  }
 
   return (
     <>
@@ -66,29 +69,43 @@ const Page = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 px-7 mt-16">
           {images.map((image, index) => (
-            <div key={image.id} onClick={() => handleImageClick(index)} style={{ cursor: 'pointer' }}>
+            <div
+              key={image.id}
+              onClick={() => handleImageClick(index)}
+              style={{ cursor: 'pointer' }}
+            >
               <img
                 src={`https://api.designindianwardrobe.com/uploads/${image.filename}`}
                 alt={image.filename}
-                style={{ width: '450px', height: '250px', borderRadius: '10px' }}
+                style={{
+                  width: '450px',
+                  height: '250px',
+                  borderRadius: '10px',
+                }}
               />
             </div>
           ))}
         </div>
       </div>
-     {showSlider && (
-      <Slider
-        images={images}
-        initialSlide={photoIndex}
-        onClose={handleCloseSlider}
-        onNextSlide={() => setPhotoIndex((prevIndex) => (prevIndex + 1) % images.length)}
-        onPrevSlide={() => setPhotoIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length)}
-      />
-    )}
+      {showSlider && (
+        <Slider
+          images={images}
+          initialSlide={photoIndex}
+          onClose={handleCloseSlider}
+          onNextSlide={() =>
+            setPhotoIndex((prevIndex) => (prevIndex + 1) % images.length)
+          }
+          onPrevSlide={() =>
+            setPhotoIndex(
+              (prevIndex) => (prevIndex - 1 + images.length) % images.length
+            )
+          }
+        />
+      )}
 
       <Footer />
     </>
-  );
-};
+  )
+}
 
-export default Page;
+export default Page
