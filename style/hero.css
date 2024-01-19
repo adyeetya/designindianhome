@@ -1626,13 +1626,12 @@ section.outter.hero-video {
     display: none;
   }
   .jiu-mob {
-    width: 400px;
+    margin-top:'20px';
     height: auto;
-    
+    margin-left: -50px;
     display: flex;
     justify-content:center;
-
-  }
+ }
 }
 
 section.bordersec {

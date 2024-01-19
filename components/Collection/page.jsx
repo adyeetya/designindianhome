@@ -646,24 +646,8 @@ const Collection = () => {
                 alt=""
               />
             </div>
-            <div className="md:w-1/2 mb-4" id="news">
-              <ReactBeforeSliderComponent
-                firstImage={FIRST_IMAGE}
-                secondImage={SECOND_IMAGE}
-              />
-            </div>
-            <div className="md:w-1/2 px-16" id="news">
-              {/*   <div className="main-hero">
-              <div className="cover">
-                <div className="box ai">
-
-                </div>
-                <div className="box bi">
-
-                </div>
-              </div>
-            </div>
- */}
+            <div className="md:w-1/2 px-16 my-auto" id="news">
+            
 
               <div className="wrapperlatest">
                 <h1>Before And After</h1>
@@ -674,6 +658,13 @@ const Collection = () => {
                 </p>
               </div>
             </div>
+            <div className="md:w-1/2 mb-16" id="news">
+              <ReactBeforeSliderComponent
+                firstImage={FIRST_IMAGE}
+                secondImage={SECOND_IMAGE}
+              />
+            </div>
+            
           </div>
         </section>
       </div>
