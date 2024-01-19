@@ -899,11 +899,11 @@ wrapper h1 {
 
 .slider::before,
 .slider::after {
-  background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+  /* background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%); */
   content: '';
   height: 100px;
   position: absolute;
-  width: 200px;
+  width: 210px;
   z-index: 2;
 }
 
@@ -919,10 +919,13 @@ wrapper h1 {
 }
 
 .slider .slide-track {
-  -webkit-animation: scroll 40s linear infinite;
+  /* -webkit-animation: scroll 40s linear infinite; */
   animation: scroll 40s linear infinite;
   display: flex;
   width: calc(250px * 14);
+}
+@media(max-width:786px){
+
 }
 
 .slider .slide {
@@ -1399,6 +1402,16 @@ li span {
   padding-top: 15%;
   font-size: 15px;
 }
+@media(max-width:786px){
+  .b {
+    border-left: 1px solid #303030;
+    text-align: right;
+    align-items: end;
+  
+    padding-top: 15%;
+    font-size: 15px;
+  }
+}
 
 @media (max-width: 380px) {
   .marquee {
@@ -1486,10 +1499,21 @@ section.outter.hero-video {
   font-size: 3rem;
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 1rem;
-  backdrop-filter: blur(10px);
-  padding: 0.1rem 2rem;
+  backdrop-filter: blur(5px);
+  padding: 2rem 2rem;
   text-align: center;
   text-transform: uppercase;
+}
+@media(max-width:786px){
+  .callout h3 {
+    font-size: 3rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 1rem;
+    backdrop-filter: blur(5px);
+    padding: 0.1rem 2rem;
+    text-align: center;
+    text-transform: uppercase;
+  }
 }
 
 .video-sec {
@@ -1601,12 +1625,20 @@ section.outter.hero-video {
   .jiu {
     display: none;
   }
+  .jiu-mob {
+    width: 400px;
+    height: auto;
+    
+    display: flex;
+    justify-content:center;
+
+  }
 }
 
 section.bordersec {
   border-top: 1px solid #e34603;
   position: relative;
-  margin-top: 5%;
+  margin-top: 10%;
 }
 section.bordersec::after {
   content: '';
@@ -1793,9 +1825,17 @@ section.Form-block {
 }
 .townImage .clouds .cloud3 {
   width: 10.352%;
+  width: 7.041%;
+  height: auto;
+  -webkit-animation-name: cloudC;
+  animation-name: cloudC;
 }
 .townImage .clouds .cloudCloud {
   width: 9.301%;
+  width: 7.041%;
+  height: auto;
+  -webkit-animation-name: cloudCloud;
+  animation-name: cloudCloud;
 }
 .townImage .clouds .squiggle1 {
   width: 3.258%;
@@ -1828,10 +1868,11 @@ section.Form-block {
 .townImage .balloons .balloonCloud {
   width: 10.247%;
   height: auto;
-  -webkit-animation-name: balloonCloud;
+  position: absolute;
   animation-name: balloonCloud;
-  -webkit-animation-duration: 240s;
   animation-duration: 240s;
+  animation-iteration-count: infinite;
+  z-index: 55;
 }
 .townImage .balloons .smallBalloon {
   width: 2.522%;
@@ -1853,25 +1894,21 @@ section.Form-block {
 .townImage .vehicles .bus {
   width: 9.563%;
   height: auto;
-  -ms-transform: translateX(50%);
-  -webkit-transform: translateX(50%);
-  transform: translateX(50%);
-  -webkit-animation-name: bus;
+  position: absolute;
   animation-name: bus;
-  -webkit-animation-duration: 45s;
   animation-duration: 45s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
   z-index: 40;
 }
 .townImage .vehicles .car {
   width: 7.987%;
   height: auto;
-  -ms-transform: translateX(-50%);
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
-  -webkit-animation-name: car;
+  position: absolute;
   animation-name: car;
-  -webkit-animation-duration: 35s;
   animation-duration: 35s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
   z-index: 39;
 }
 @keyframes cloudA {
@@ -2001,22 +2038,27 @@ section.Form-block {
 }
 @keyframes balloonCloud {
   0% {
-    right: 45%;
-    top: 0;
+    right: -5%; 
+    top:0%; 
   }
   22.5% {
-    top: 5%;
+    right: 105%; 
+    top: 0%; 
   }
   45% {
-    right: -5%;
-    top: 0%;
-  }
+    right: -5%; 
+    top: 0%; }
   45.001% {
-    right: 105%;
-    top: 0%;
+    right: 105%; 
+    top: 0%; 
   }
   77.5% {
-    top: 5%;
+    right: -5%; 
+    top: 0%; 
+  }
+  100% {
+    right: 105%; 
+    top: 0%; 
   }
 }
 @keyframes smallBalloon {
@@ -2046,7 +2088,7 @@ section.Form-block {
 
 @keyframes bus {
   0% {
-    right: 70%;
+    left: -5%;
     bottom: 0;
   }
   20% {
@@ -2077,11 +2119,11 @@ section.Form-block {
     bottom: 0;
   }
   70% {
-    right: -5%;
+    left: 105%;
     bottom: 0;
   }
   70.001% {
-    right: 105%;
+    left: -5%;
     bottom: 0;
   }
   80% {
@@ -2095,13 +2137,13 @@ section.Form-block {
     bottom: 0;
   }
   100% {
-    right: 70%;
+    left: -5%;
     bottom: 0;
   }
 }
 @keyframes car {
   0% {
-    left: 64%;
+    right: -5%;
     bottom: 3%;
   }
   20% {
@@ -2132,11 +2174,11 @@ section.Form-block {
     bottom: 3%;
   }
   64% {
-    left: -5%;
+    right: 105%;
     bottom: 3%;
   }
   64.001% {
-    left: 105%;
+    right: -5%;
     bottom: 3%;
   }
   80% {
@@ -2149,7 +2191,7 @@ section.Form-block {
     bottom: 3%;
   }
   100% {
-    left: 64%;
+    right: -5%;
     bottom: 3%;
   }
 }

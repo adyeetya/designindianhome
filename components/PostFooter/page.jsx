@@ -570,7 +570,8 @@ const PostFooter = () => {
                 autoPlay
                 controls={isPlaying}
                 src="/video/fry.mp4"
-               
+               playsInline
+               muted
                 className="rounded shadow-md 
                 "
                 width={0}
@@ -586,9 +587,9 @@ const PostFooter = () => {
             <p>The Pioneers in the Modular Kitchen Industry</p>
           
          </div>
-         <div className="text-6xl max-[600px]:text-2xl max-[600px]:py-4 text-grey-dark text-center  items-center justify-center px-24 max-[400px]:px-4" style={{fontFamily:"Impact"}}>
-            <p>The Most Reliable,<br/>
-Most Recommended <br/>
+         <div className="text-6xl w-full sm:w-fit max-[600px]:text-2xl max-[600px]:py-4 text-grey-dark text-center  items-center justify-center px-24 max-[400px]:px-4" style={{fontFamily:"Impact"}}>
+            <p className='w-full'>The Most Reliable,
+Most Recommended
  &
 Most
 Loved ❤️ Brand ✌
@@ -607,7 +608,8 @@ Loved ❤️ Brand ✌
                 autoPlay
                 controls={isPlaying}
                 src="/video/fr.mp4"
-               
+               playsInline
+               muted
                 className="rounded shadow-md"
                 width={0}
                 height={0}

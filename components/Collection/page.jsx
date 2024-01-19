@@ -425,7 +425,7 @@ const Collection = () => {
           />
         </div>
         <div className="callout">
-          <h3 className="bg-transparent text-md sm:text-xxl">
+          <h3 className="bg-transparent text-sm sm:text-xxl">
             Looking for Interiors or Modular Works
           </h3>
           <br />
@@ -574,10 +574,12 @@ const Collection = () => {
               <video
                 loop
                 autoPlay
+                muted
                 controls={isPlaying}
                 src="/video/dkivid.mp4"
                 width={1500}
                 height={550}
+                playsInline
                 className="rounded shadow-md"
                 style={{}}
               />
@@ -1060,7 +1062,7 @@ const Collection = () => {
                 width={0}
                 height={0}
                 sizes="100vw"
-                style={{ width: '120%', height: 'auto' }}
+                style={{ width: '120%', height: '75px' }}
               />
             </div>
           ))}
@@ -1104,7 +1106,7 @@ const Collection = () => {
                 width={0}
                 height={0}
                 sizes="100vw"
-                style={{ width: '120%', height: 'auto' }}
+                style={{ width: '120%', height: '75px' }}
               />
             </div>
           ))}

@@ -16,7 +16,7 @@ const MyForm: React.FC<MyFormProps> = () => {
         'guest room?',
         'living room?',
       ],
-      typeSpeed: 10,
+      typeSpeed: 100,
       loop: true,
       loopCount: Infinity,
     })
@@ -58,11 +58,11 @@ const MyForm: React.FC<MyFormProps> = () => {
     <div className="flex flex-col sm:flex-row lg:mx-16">
       {/* Left side with heading and paragraph */}
       <div className="sm:w-1/2 p-4">
-        <h1 className="text-2xl sm:text-4xl font-bold mb-4 text-sky-700">
+        <h1 className="text-2xl sm:text-4xl font-bold mb-4 text-green-500">
           Looking for expert guidance to design your <br />
           <span ref={el} className="text-purple-700" />
         </h1>
-        <p className="text-gray-700 text-sm">
+        <p className="text-gray-900 text-sm">
           Leave your information and we will call you to book your preferred
           consultation slot
         </p>
@@ -78,7 +78,7 @@ const MyForm: React.FC<MyFormProps> = () => {
           <div className="mb-4">
             <label
               htmlFor="fullName"
-              className="block text-sm font-medium text-gray-700"
+              className="block text-sm font-medium text-gray-900"
             >
               Full Name*
             </label>
@@ -86,7 +86,7 @@ const MyForm: React.FC<MyFormProps> = () => {
               type="text"
               id="fullName"
               name="fullName"
-              className="mt-1 p-2 w-full bg-amber-50 border-b border-gray-500 focus:outline-none focus:border-blue-500"
+              className="mt-1 p-2 w-full bg-transparent border-b border-gray-500 focus:outline-none focus:border-blue-500"
               required
             />
           </div>
@@ -94,7 +94,7 @@ const MyForm: React.FC<MyFormProps> = () => {
           <div className="mb-4">
             <label
               htmlFor="email"
-              className="block text-sm font-medium text-gray-700"
+              className="block text-sm font-medium text-gray-900"
             >
               Email ID*
             </label>
@@ -102,7 +102,7 @@ const MyForm: React.FC<MyFormProps> = () => {
               type="email"
               id="email"
               name="email"
-              className="mt-1 p-2 w-full bg-amber-50 border-b border-gray-500 focus:outline-none focus:border-blue-500"
+              className="mt-1 p-2 w-full bg-transparent border-b border-gray-500 focus:outline-none focus:border-blue-500"
               required
             />
           </div>
@@ -110,7 +110,7 @@ const MyForm: React.FC<MyFormProps> = () => {
           <div className="mb-4">
             <label
               htmlFor="mobileNumber"
-              className="block text-sm font-medium text-gray-700"
+              className="block text-sm font-medium text-gray-900"
             >
               Mobile Number*
             </label>
@@ -118,7 +118,7 @@ const MyForm: React.FC<MyFormProps> = () => {
               type="tel"
               id="mobileNumber"
               name="mobileNumber"
-              className="mt-1 p-2 w-full bg-amber-50 border-b border-gray-500 focus:outline-none focus:border-blue-500"
+              className="mt-1 p-2 w-full bg-transparent border-b border-gray-500 focus:outline-none focus:border-blue-500"
               required
             />
           </div>
@@ -126,7 +126,7 @@ const MyForm: React.FC<MyFormProps> = () => {
           <div className="mb-4">
             <label
               htmlFor="pincode"
-              className="block text-sm font-medium text-gray-700"
+              className="block text-sm font-medium text-gray-900"
             >
               Pincode*
             </label>
@@ -134,7 +134,7 @@ const MyForm: React.FC<MyFormProps> = () => {
               type="text"
               id="pincode"
               name="pincode"
-              className="mt-1 p-2 w-full bg-amber-50 border-b border-gray-500 focus:outline-none focus:border-blue-500"
+              className="mt-1 p-2 w-full bg-transparent border-b border-gray-500 focus:outline-none focus:border-blue-500"
               required
             />
           </div>
@@ -142,7 +142,7 @@ const MyForm: React.FC<MyFormProps> = () => {
           <div className="mb-4">
             <label htmlFor="agree" className="flex items-center">
               <input type="checkbox" id="agree" name="agree" className="mr-2" />
-              <span className="text-sm text-gray-700">
+              <span className="text-sm text-gray-900">
                 Yes, I would like to receive important updates and notifications
                 on WhatsApp
               </span>
@@ -150,7 +150,7 @@ const MyForm: React.FC<MyFormProps> = () => {
           </div>
           <button
             type="submit"
-            className="bg-blue-500 text-white px-4 py-2 rounded-3xl flex items-center justify-center hover:bg-blue-600 mt-4 sm:mt-0"
+            className="bg-green-500 text-white px-4 py-2 rounded-3xl flex items-center justify-center hover:bg-green-600 mt-4 sm:mt-0"
           >
             Book Free Site Visit <ChevronRight className="ml-2" />
           </button>

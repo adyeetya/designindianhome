@@ -31,9 +31,9 @@ export default function Home() {
         <TabsSection />
         <EndToEndImageGrid />
         <FAQ />
-        <div className="bg-amber-50 p-4 dark:text-white">
-          <MyForm />
-        </div> 
+        <div className="bg-gradient-to-br from-orange-200 to-yellow-300 p-4 dark:text-white">
+      <MyForm />
+    </div>
 <PostFooter/>
         <Footer /> 
       </Fragment>

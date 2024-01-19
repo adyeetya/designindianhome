@@ -391,14 +391,14 @@ export class Footer extends Component {
 
 
                 </div>
-                <div className='flex flex-col md:flex-row justify-center items-center' style={{ width: '100%' }}>
+                {/* <div className='flex flex-col md:flex-row justify-center items-center' style={{ width: '100%' }}>
                     <div className='md:w-1/2 mb-4 md:mb-0'>
                         <Image src="/design-indian-home-1.gif" alt="design Indian Homes" width={550} height={550} style={{ width: '100%', height: '550px' }} />
                     </div>
                     <div className='md:w-1/2'>
                         <Image src="/reward.jpg" alt='reward' width={550} height={550} style={{ width: '100%', height: "550px" }} />
                     </div>
-                </div>
+                </div> */}
                 <div className='text-center text-black text-sm  py-4 bg-white'>
                     <p>DESIGN INDIAN HOMES | ALL RIGHTS RESERVED 2024-25 CRAFTED WITH LOVE BY IN HOUSE BRAND - THE DESIGNER LOUNGE | PRIVACY | LEGAL | SITEMAP</p>
                 </div>
