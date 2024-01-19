@@ -54,8 +54,8 @@ const PostFooter = () => {
 
 
 
-      <div className="containering bg-slate-100">
-        <div className="boxes ml-24 pb-4">
+      <div className="flex flex-col sm:flex-row gap-4 bg-slate-100 w-full mx-auto py-16">
+        <div className="p-4 bg-white rounded-lg shadow-lg sm:w-1/3">
 
           <div className="font-bold text-gray-800 px-8 ">
             <Marquee style={{ color: 'Red' }}>
@@ -114,7 +114,7 @@ const PostFooter = () => {
 
           </div>
         </div>
-        <div className="boxes ml-8 py-8">
+        <div className="p-4 bg-white rounded-lg shadow-lg sm:w-1/3">
           <div className="bold text-gray-800 px-8 ">
             ARE YOU AN ARCHITECT,INTERIOR <br />
             DESIGNER OR DEVELOPER <br />
@@ -174,7 +174,7 @@ const PostFooter = () => {
 
           </div>
         </div>
-        <div className="boxes hide mr-24 ml-8">
+        <div className="p-4 bg-white rounded-lg shadow-lg sm:w-1/3">
 
           <div className="bold text-gray-800  ">
             <p className="w-full p-8 bg-slate-950 focus:outline-none focus:shadow-outline text-xl text-center uppercase text-gray-100 border-b-2 border-b-gray-500"

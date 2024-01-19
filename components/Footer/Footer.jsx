@@ -1,11 +1,72 @@
 "use client"
-import React, { Component } from 'react'
+import React, { Component, useState } from 'react'
 import { SocialIcon } from 'react-social-icons'
 import Image from 'next/image'
 import WaveGradient from '@/components/Navbar/WaveGradient'
 import Link from 'next/link'
 import './Gradient.css'
+import { Tabs, Tab, Box, Container, Typography } from '@mui/material'
+import { styled } from '@mui/material/styles'
+const ParagraphTab = ({ text }) => {
+    return <p className="text-lg">{text}</p>;
+  }
+  const LocationsTabs = () => {const [value, setValue] = React.useState(0);
+
+    const handleChange = (event, newValue) => {
+      setValue(newValue);
+    };
+  
+    const paragraphs = [
+      'Exclusive Lacquer Glass Wardrobe Designs Wardrobe – Wardrobe Dealers & Manufacturers in Ghitorni Wardrobe Designs – Wardrobe Dealers & Manufacturers in Golf Links Wardrobe Designs – Wardrobe Dealers & Manufacturers in Greater Kailash Wardrobe Designs – Wardrobe Dealers & Manufacturers in Greater Noida Wardrobe Designs – Wardrobe Dealers & Manufacturers in Green Park Wardrobe Designs – Wardrobe Dealers & Manufacturers in Gulmohar Park Wardrobe Designs – Wardrobe Dealers & Manufacturers in Gurgaon Wardrobe Designs – Wardrobe Dealers & Manufacturers in Hauz Khas Wardrobe Designs – Wardrobe Dealers & Manufacturers in Jaipur Wardrobe Designs – Wardrobe Dealers & Manufacturers in Janak Puri – Delhi Wardrobe Designs – Wardrobe Dealers & Manufacturers in Kalkaji Wardrobe Designs – Wardrobe Dealers & Manufacturers in Karol Bagh Wardrobe Designs – Wardrobe Dealers & Manufacturers in Mayur Vihar Wardrobe Designs – Wardrobe Dealers & Manufacturers in Meena Bagh Wardrobe Designs – Wardrobe Dealers & Manufacturers in Mehrauli Wardrobe Designs – Wardrobe Dealers & Manufacturers in Neeti Bagh Wardrobe Designs – Wardrobe Dealers & Manufacturers in Noida Wardrobe Designs – Wardrobe Dealers & Manufacturers in Panchsheel Wardrobe Designs – Wardrobe Dealers & Manufacturers in Punjabi Bagh Wardrobe Designs – Wardrobe Dealers & Manufacturers in Rajinder Nagar Wardrobe Designs – Wardrobe Dealers & Manufacturers in Rajouri Garden Wardrobe Designs – Wardrobe Dealers & Manufacturers in Rishikesh Wardrobe Designs – Wardrobe Dealers & Manufacturers in Sainik Farms Wardrobe Designs – Wardrobe Dealers & Manufacturers in Sarita Vihar Wardrobe Designs – Wardrobe Dealers & Manufacturers in Shanti Niketan Wardrobe Designs – Wardrobe Dealers & Manufacturers in Vaishali Wardrobe Designs – Wardrobe Dealers & Manufacturers in Vasant Kunj Wardrobe Designs – Wardrobe Dealers & Manufacturers in Vasant Vihar wardrobe-dealers-delhi-gurgaon-india wardrobe-designs-gallery-delhi-gurgaon-noida Wardrobe Dealers & Manufacturers in Safdarjung Enclave, Delhi Wardrobe Designs – Dealers & Manufacturers in New Friends Colony Wardrobe Designs – Dealers & Manufacturers in Pamposh Enclave Wardrobe Designs – Wardrobe Dealers & Manufacturers in Alaknanda – Delhi Wardrobe Designs – Wardrobe Dealers & Manufacturers in Anand Lok – Delhi Wardrobe Designs – Wardrobe Dealers & Manufacturers in Anand Niketan – Delhi Wardrobe Designs – Wardrobe Dealers & Manufacturers in Asiad Village – Delhi Wardrobe Designs – Wardrobe Dealers & Manufacturers in Chanakyapuri Wardrobe Designs – Wardrobe Dealers & Manufacturers in Chirag Delhi Wardrobe Designs – Wardrobe Dealers & Manufacturers in CR Park Wardrobe Designs – Wardrobe Dealers & Manufacturers in Defence Colony Wardrobe Designs – Wardrobe Dealers & Manufacturers in Delhi Wardrobe Designs – Wardrobe Dealers & Manufacturers in East of Kailash Wardrobe Designs – Wardrobe Dealers & Manufacturers in Faridabad',
+      'Mandir-manufacturers-delhi-gurgaon Modular Kitchen Dealers & Manufacturers in Alaknanda – New Delhi Modular Kitchen Dealers & Manufacturers in Anand Lok – New Delhi Modular Kitchen Dealers & Manufacturers in Anand Niketan – New Delhi Modular Kitchen Dealers & Manufacturers in Ashok Vihar – New Delhi Modular Kitchen Dealers & Manufacturers in Asiad Village – New Delhi Modular Kitchen Dealers & Manufacturers in Chanakyapuri – New Delhi Modular Kitchen Dealers & Manufacturers in Chirag Delhi – New Delhi Modular Kitchen Dealers & Manufacturers in Civil Lines Modular Kitchen Dealers & Manufacturers in CR Park – New Delhi Modular Kitchen Dealers & Manufacturers in Defence Colony Modular Kitchen Dealers & Manufacturers in Dehradun Modular Kitchen Dealers & Manufacturers in Dwarka – New Delhi Modular Kitchen Dealers & Manufacturers in East of Kailash – New Delhi Modular Kitchen Dealers & Manufacturers in Faridabad Modular Kitchen Dealers & Manufacturers in Greater Kailash – New Delhi Modular Kitchen Dealers & Manufacturers in Greater Noida Modular Kitchen Dealers & Manufacturers in Green Park – New Delhi Modular Kitchen Dealers & Manufacturers in Gulmohar Park – Delhi Modular Kitchen Dealers & Manufacturers in Gurgaon – Gurugram Modular Kitchen Dealers & Manufacturers in Haridwar Modular Kitchen Dealers & Manufacturers in Hauz Khas – New Delhi Modular Kitchen Dealers & Manufacturers in Jaipur Modular Kitchen Dealers & Manufacturers in Janak Puri – Delhi Modular Kitchen Dealers & Manufacturers in Kalindi Kunj – New Delhi Modular Kitchen Dealers & Manufacturers in Kalkaji – New Delhi Modular Kitchen Dealers & Manufacturers in Karol Bagh – Delhi Modular Kitchen Dealers & Manufacturers in Khan Market – New Delhi Modular Kitchen Dealers & Manufacturers in Mayur Vihar – New Delhi Modular Kitchen Dealers & Manufacturers in Meena Bagh Modular Kitchen Dealers & Manufacturers in Mehrauli – Delhi Modular Kitchen Dealers & Manufacturers in Model Town – New Delhi Modular Kitchen Dealers & Manufacturers in Neeti Bagh Modular Kitchen Dealers & Manufacturers in New Delhi Modular Kitchen Dealers & Manufacturers in New Friends Colony Modular Kitchen Dealers & Manufacturers in Noida Modular Kitchen Dealers & Manufacturers in Pamposh Enclave – Delhi Modular Kitchen Dealers & Manufacturers in Panchsheel – New Delhi Modular Kitchen Dealers & Manufacturers in Patel Nagar Modular Kitchen Dealers & Manufacturers in Pitam Pura – Delhi Modular Kitchen Dealers & Manufacturers in Preet Vihar – New Delhi Modular Kitchen Dealers & Manufacturers in Punjabi Bagh Modular Kitchen Dealers & Manufacturers in Rajinder Nagar Modular Kitchen Dealers & Manufacturers in Rajokri – New Delhi Modular Kitchen Dealers & Manufacturers in Rajouri Garden – New Delhi Modular Kitchen Dealers & Manufacturers in Rishikesh Modular Kitchen Dealers & Manufacturers in Safdarjung Enclave – New Delhi Modular Kitchen Dealers & Manufacturers in Sainik Farms – New Delhi Modular Kitchen Dealers & Manufacturers in Saket – New Delhi Modular Kitchen Dealers & Manufacturers in Sarita Vihar – New Delhi Modular Kitchen Dealers & Manufacturers in Shanti Niketan – New Delhi Modular Kitchen Dealers & Manufacturers in Vaishali – New Delhi Modular Kitchen Dealers & Manufacturers in Vasant Vihar – New Delhi',
+      'White Colour Modular Kitchen Designs Yellow Colour Modular Kitchen Designs in Delhi Gurgaon Noida India Silver Colour Modular Kitchen Designs Sky Blue Modular Kitchens Designs in Delhi Gurgaon Noida India Orange Modular Kitchen Designs in Delhi Gurgaon Noida India Pink Modular Kitchen Designs in Delhi Gurgaon Noida India Purple Modular Kitchen Design collection in Delhi and India Red Colour Modular Kitchen Designs Beige Colour Modular Kitchen designs in Delhi Gurgaon Noida India Black Modular Kitchen Designs in Delhi & India Blue Colour Modular Kitchens in Delhi Gurgaon Noida India Brown Colour Modular Kitchens in Delhi Gurgaon Noida India Cappuccino Cream colour modular kitchen designs in delhi india Charcoal Modular Kitchen Designs Colourful Modular Kitchen in Delhi gurgaon Noida India Green Colour Modular Kitchen Designs Grey Colour Modular Kitchen Designs in Delhi Maroon Modular Kitchen Designs in Delhi Gurgaon Noida India'
+    ];
+
+    const StyledTab = styled((props) => <Tab disableRipple {...props} />)(
+        ({ theme }) => ({
+          textTransform: 'none',
+         
+      
+          marginRight: theme.spacing(1),
+          color: '#99adc9',
+          fontFamily:'BioRhyme',
+        
+          '&.Mui-selected': {
+            color: '#ffffff',
+          },
+          '&.Mui-focusVisible': {
+            backgroundColor: 'rgba(100, 95, 228, 0.32)',
+          },
+        })
+      )
+ 
+    return (
+        <div className="container mx-auto mt-8 p-0">
+        <Tabs
+          value={value}
+          onChange={handleChange}
+      
+          variant="fullWidth"
+  scrollButtons="auto" // Add this to make tabs span the full width
+          
+        
+          className="text-center whitespace-nowrap" // Add this to center the text in tabs
+        >
+          <StyledTab label="LOCATION - WARDROBE DESIGNS" className="sm:text-xl text-sm font-[500] my-2" />
+          <StyledTab label="LOCATION - WARDROBE DESIGNS" className="sm:text-xl text-sm font-[500] my-2" />
+          <StyledTab label="LOCATION - WARDROBE DESIGNS" className="sm:text-xl text-sm font-[500] my-2" />
+        </Tabs>
+        <Box width="100%" className="mt-2">
+          {value === 0 && <ParagraphTab text={paragraphs[0]} />}
+          {value === 1 && <ParagraphTab text={paragraphs[1]} />}
+          {value === 2 && <ParagraphTab text={paragraphs[2]} />}
+        </Box>
+      </div>
+      
+    );
+  };
 export class Footer extends Component {
+   
     render() {
         return (
             <div className='gradient'>
@@ -93,7 +154,7 @@ export class Footer extends Component {
                     </div>
 
                     {/* Social Media and Copyright Section */}
-                    <div className="flex flex-col md:flex-row justify-center gap-2  text-black">
+                    <div className="flex flex-col md:flex-row justify-center gap-8  text-black">
                         {/* Social Media Icons */}
                         <div className="text-left">
                             <Image src="/desig indian homes.gif" alt="footer logo" width={128} height={80} />
@@ -108,7 +169,7 @@ export class Footer extends Component {
 
                         <div>
                             <h3 className="font-bold">Design Ideas</h3>
-                            <ul className="leading-7">
+                            <ul className="leading-7 text-sm">
                                 <Link href="/modular-kitchen-designs"><li>Modular Kitchens</li></Link>
                                 <Link href="/wardrobe-designs"><li>Wardrobes</li></Link>
                                 <Link href="/vanity-designs"> <li>Vanities </li></Link>
@@ -120,7 +181,7 @@ export class Footer extends Component {
                         </div>
                         <div>
                             <h3 className="font-bold">Interior</h3>
-                            <ul className="leading-7">
+                            <ul className="leading-7 text-sm">
                                 <Link href="/1bhk-apartment-interior-designs">   <li  >1bhk residence interior designs</li>  </Link>
                                 <Link href="/2bhk-apartment-interior-designs"><li>2bhk residence interior designs</li>  </Link>
                                 <Link href="/3bhk-apartment-interior-designs"><li>3bhk residence interior designs </li>  </Link>
@@ -151,7 +212,7 @@ export class Footer extends Component {
                         </div>
                         <div>
                             <h3 className="font-bold">Architecture</h3>
-                            <ul className="leading-7">
+                            <ul className="leading-7 text-sm">
                                 <Link href="/architectural-consultancy"><li>Consultancy</li></Link>
                                 <Link href="/architectural-brand-in-india"><li>Designing & Planning</li></Link>
                                 <Link href="/top-architects-in-india"><li>End to End Structural Projects</li></Link>
@@ -162,7 +223,7 @@ export class Footer extends Component {
                         </div>
                         <div>
                             <h3 className="font-bold">modular Kitchen</h3>
-                            <ul className="leading-7">
+                            <ul className="leading-7 text-sm">
 
                                 <Link href="/modular-kitchen-types"><li>Types of Modular Kitchen</li></Link>
                                 <Link href="/modular-kitchen-designs"> <li>Modular Kitchen Designs</li></Link>
@@ -176,7 +237,7 @@ export class Footer extends Component {
                         </div>
                         <div>
                             <h3 className="font-bold">Wardrobes</h3>
-                            <ul className="leading-7">
+                            <ul className="leading-7 text-sm">
                                 <Link href="/types-of-wardrobe-designs"><li>Types of Wardrobes</li></Link>
                                 <Link href="/luxury-wardrobe-designs-india"><li >Luxury Wardrobes</li></Link>
                                 <Link href="/wardrobe-designs"><li>Wardrobe Designs</li></Link>
@@ -187,7 +248,7 @@ export class Footer extends Component {
                         </div>
                         <div>
                             <h3 className="font-bold">Modular Interior</h3>
-                            <ul className="leading-7">
+                            <ul className="leading-7 text-sm">
                                 <Link href="/mandir-designs"><li>Mandir</li></Link>
                                 <Link href="/chest-of-drawer-designs"><li>Chest of Drawers</li></Link>
                                 <Link href="/Bar-unit-designs"><li >Bar Units</li></Link>
@@ -252,56 +313,54 @@ export class Footer extends Component {
                             <div>
                                 <h1 className='text-4xl font-bold'>LETS CONNECT</h1>
                                 <form onSubmit={null} className='mt-4'>
-                                    <label className='text-lg '>
-                                        Name:<br />
+                                    
                                         <input
                                             type="text"
                                             name="name"
                                             value={null}
-                                            placeholder='Name'
+                                            placeholder='Name-'
+                                            className='bg-transparent'
                                             style={{ width: '350px', height: '50px', padding: '5px' }} // Increase width and add padding
 
                                             onChange={null}
                                         />
-                                    </label>
+                                  
                                     <br />
-                                    <label className='text-lg'>
-                                        Email:<br />
+                               
                                         <input
                                             type="email"
                                             name="email"
-                                            placeholder='Email'
+                                            placeholder='Email-'
                                             value={null}
                                             style={{ width: '350px', height: '50px', padding: '5px' }} // Increase width and add padding
-
+                                            className='bg-transparent'
                                             onChange={null}
-                                        />
-                                    </label>
+                                            />
+                                   
                                     <br />
-                                    <label className='text-lg'>
-                                        Contact Number:<br />
+                                 
                                         <input
                                             type="text"
                                             name="contactNumber"
                                             value={null}
-                                            placeholder='Mobile Number'
+                                            placeholder='Mobile Number-'
                                             style={{ width: '350px', height: '50px', padding: '5px' }} // Increase width and add padding
-
+                                            className='bg-transparent'
                                             onChange={null}
                                         />
-                                    </label>
+                              
                                     <br />
-                                    <label className='text-lg'>
-                                        Message:<br />
+                                  
                                         <textarea
                                             name="message"
                                             value={null}
-                                            placeholder='Message'
+                                            placeholder='Message-'
                                             onChange={null}
+                                            className='bg-transparent'
                                             style={{ width: '300px', height: '100px', padding: '5px' }} // Increase width, height, and add padding
 
                                         />
-                                    </label>
+                           
                                     <br />
                                     <button type="submit" className='py-2 px-6 hover:text-white hover:bg-black' style={{ border: '1px solid black' }}>Submit</button>
                                 </form>
@@ -312,7 +371,7 @@ export class Footer extends Component {
                         <div className='flex flex-col md:flex-row justify-center text-black' style={{ gap: '110px', marginTop: '100px' }}>
                             <div style={{ width: '300px' }}>
                                 <h1 className='font-bold text-3xl'>Contact Us</h1>
-                                <div className='mt-8'>
+                                <div className='mt-8 text-sm'>
                                     <p className='mb-4 font-bold'>DESIGNING & OPERATIONS OFFICE 25/42, A BLOCK, MIDDLE CIRCLE, CONNAUGHT PLACE, NEW DELHI - 110001 NEAR RAJIV CHOWK METRO STN, GATE NO.8 </p>
                                     <p className='mb-4 font-bold'>CORPORATE INDUSTRIAL UNIT G - 984, NARELA DSIIDC INDUSTRIAL AREA, NEW DELHI - 110040</p>
                                     <p className='mb-4 font-bold'>largest-modular-kitchen-brand-india 0-9899264978 / 0-9582827928/ 0-9899239097 LANDLINE - 01144127897 best-modular-kitchen-brand-in-delhi-gurgaon-noida-india ENQUIRY@DESIGNINDIANKITCHEN.COM modular-kitchen-in-delhi MONDAY - SATURDAY: 10:30 AM - 7:30 PM  modular-kitchen-dealers-in-delhi SUNDAY: 11:00 AM - 7:00 PM ONLY FOR SITE VISITS</p>
@@ -321,7 +380,7 @@ export class Footer extends Component {
                             </div>
                             <div>
                                 <h1 className='font-bold text-2xl'>OTHER BUSINESS SITES</h1>
-                                <ul className='mt-8'>
+                                <ul className='mt-8 text-sm'>
                                     <li className='mb-4 font-bold' ><a>DESIGN INDIAN KITCHEN</a></li>
                                     <li className='mb-4 font-bold'><a>DESIGN INDIAN WARDROBE</a></li>
                                     <li className='mb-4 font-bold'><a>MODULAR KITCHEN IN DELHI</a></li>
@@ -336,7 +395,7 @@ export class Footer extends Component {
                             </div>
                             <div>
                                 <h1 className='font-bold text-2xl'>CHECK US OUT</h1>
-                                <ul className='mt-8'>
+                                <ul className='mt-8 text-sm'>
                                     <li className='mb-4 font-bold'><a>CUSTOMER REVIEWS</a></li>
                                     <li className='mb-4 font-bold'><a>THE MODULAR PROCESS</a></li>
                                     <li className='mb-4 font-bold'><a>REQUEST A BROCHURE</a></li>
@@ -399,6 +458,25 @@ export class Footer extends Component {
                         <Image src="/reward.jpg" alt='reward' width={550} height={550} style={{ width: '100%', height: "550px" }} />
                     </div>
                 </div> */}
+
+{/* <div className="location mx-4 sm:mx-12 my-16">
+    <div className="location-wardrobe-design my-12 ">
+        <h2 className='sm:text-4xl text-xl text-white font-[800] my-12'>LOCATION - WARDROBE DESIGNS</h2>
+        <p>Exclusive Lacquer Glass Wardrobe Designs Wardrobe – Wardrobe Dealers & Manufacturers in Ghitorni Wardrobe Designs – Wardrobe Dealers & Manufacturers in Golf Links Wardrobe Designs – Wardrobe Dealers & Manufacturers in Greater Kailash Wardrobe Designs – Wardrobe Dealers & Manufacturers in Greater Noida Wardrobe Designs – Wardrobe Dealers & Manufacturers in Green Park Wardrobe Designs – Wardrobe Dealers & Manufacturers in Gulmohar Park Wardrobe Designs – Wardrobe Dealers & Manufacturers in Gurgaon Wardrobe Designs – Wardrobe Dealers & Manufacturers in Hauz Khas Wardrobe Designs – Wardrobe Dealers & Manufacturers in Jaipur Wardrobe Designs – Wardrobe Dealers & Manufacturers in Janak Puri – Delhi Wardrobe Designs – Wardrobe Dealers & Manufacturers in Kalkaji Wardrobe Designs – Wardrobe Dealers & Manufacturers in Karol Bagh Wardrobe Designs – Wardrobe Dealers & Manufacturers in Mayur Vihar Wardrobe Designs – Wardrobe Dealers & Manufacturers in Meena Bagh Wardrobe Designs – Wardrobe Dealers & Manufacturers in Mehrauli Wardrobe Designs – Wardrobe Dealers & Manufacturers in Neeti Bagh Wardrobe Designs – Wardrobe Dealers & Manufacturers in Noida Wardrobe Designs – Wardrobe Dealers & Manufacturers in Panchsheel Wardrobe Designs – Wardrobe Dealers & Manufacturers in Punjabi Bagh Wardrobe Designs – Wardrobe Dealers & Manufacturers in Rajinder Nagar Wardrobe Designs – Wardrobe Dealers & Manufacturers in Rajouri Garden Wardrobe Designs – Wardrobe Dealers & Manufacturers in Rishikesh Wardrobe Designs – Wardrobe Dealers & Manufacturers in Sainik Farms Wardrobe Designs – Wardrobe Dealers & Manufacturers in Sarita Vihar Wardrobe Designs – Wardrobe Dealers & Manufacturers in Shanti Niketan Wardrobe Designs – Wardrobe Dealers & Manufacturers in Vaishali Wardrobe Designs – Wardrobe Dealers & Manufacturers in Vasant Kunj Wardrobe Designs – Wardrobe Dealers & Manufacturers in Vasant Vihar wardrobe-dealers-delhi-gurgaon-india wardrobe-designs-gallery-delhi-gurgaon-noida Wardrobe Dealers & Manufacturers in Safdarjung Enclave, Delhi Wardrobe Designs – Dealers & Manufacturers in New Friends Colony Wardrobe Designs – Dealers & Manufacturers in Pamposh Enclave Wardrobe Designs – Wardrobe Dealers & Manufacturers in Alaknanda – Delhi Wardrobe Designs – Wardrobe Dealers & Manufacturers in Anand Lok – Delhi Wardrobe Designs – Wardrobe Dealers & Manufacturers in Anand Niketan – Delhi Wardrobe Designs – Wardrobe Dealers & Manufacturers in Asiad Village – Delhi Wardrobe Designs – Wardrobe Dealers & Manufacturers in Chanakyapuri Wardrobe Designs – Wardrobe Dealers & Manufacturers in Chirag Delhi Wardrobe Designs – Wardrobe Dealers & Manufacturers in CR Park Wardrobe Designs – Wardrobe Dealers & Manufacturers in Defence Colony Wardrobe Designs – Wardrobe Dealers & Manufacturers in Delhi Wardrobe Designs – Wardrobe Dealers & Manufacturers in East of Kailash Wardrobe Designs – Wardrobe Dealers & Manufacturers in Faridabad</p>
+    </div>
+    <div className="location-modular-kitchen my-12">
+        <h2 className='sm:text-4xl text-xl text-white font-[800] my-12'>LOCATION - MODULAR KITCHEN</h2>
+        <p>mandir-manufacturers-delhi-gurgaon Modular Kitchen Dealers & Manufacturers in Alaknanda – New Delhi Modular Kitchen Dealers & Manufacturers in Anand Lok – New Delhi Modular Kitchen Dealers & Manufacturers in Anand Niketan – New Delhi Modular Kitchen Dealers & Manufacturers in Ashok Vihar – New Delhi Modular Kitchen Dealers & Manufacturers in Asiad Village – New Delhi Modular Kitchen Dealers & Manufacturers in Chanakyapuri – New Delhi Modular Kitchen Dealers & Manufacturers in Chirag Delhi – New Delhi Modular Kitchen Dealers & Manufacturers in Civil Lines Modular Kitchen Dealers & Manufacturers in CR Park – New Delhi Modular Kitchen Dealers & Manufacturers in Defence Colony Modular Kitchen Dealers & Manufacturers in Dehradun Modular Kitchen Dealers & Manufacturers in Dwarka – New Delhi Modular Kitchen Dealers & Manufacturers in East of Kailash – New Delhi Modular Kitchen Dealers & Manufacturers in Faridabad Modular Kitchen Dealers & Manufacturers in Greater Kailash – New Delhi Modular Kitchen Dealers & Manufacturers in Greater Noida Modular Kitchen Dealers & Manufacturers in Green Park – New Delhi Modular Kitchen Dealers & Manufacturers in Gulmohar Park – Delhi Modular Kitchen Dealers & Manufacturers in Gurgaon – Gurugram Modular Kitchen Dealers & Manufacturers in Haridwar Modular Kitchen Dealers & Manufacturers in Hauz Khas – New Delhi Modular Kitchen Dealers & Manufacturers in Jaipur Modular Kitchen Dealers & Manufacturers in Janak Puri – Delhi Modular Kitchen Dealers & Manufacturers in Kalindi Kunj – New Delhi Modular Kitchen Dealers & Manufacturers in Kalkaji – New Delhi Modular Kitchen Dealers & Manufacturers in Karol Bagh – Delhi Modular Kitchen Dealers & Manufacturers in Khan Market – New Delhi Modular Kitchen Dealers & Manufacturers in Mayur Vihar – New Delhi Modular Kitchen Dealers & Manufacturers in Meena Bagh Modular Kitchen Dealers & Manufacturers in Mehrauli – Delhi Modular Kitchen Dealers & Manufacturers in Model Town – New Delhi Modular Kitchen Dealers & Manufacturers in Neeti Bagh Modular Kitchen Dealers & Manufacturers in New Delhi Modular Kitchen Dealers & Manufacturers in New Friends Colony Modular Kitchen Dealers & Manufacturers in Noida Modular Kitchen Dealers & Manufacturers in Pamposh Enclave – Delhi Modular Kitchen Dealers & Manufacturers in Panchsheel – New Delhi Modular Kitchen Dealers & Manufacturers in Patel Nagar Modular Kitchen Dealers & Manufacturers in Pitam Pura – Delhi Modular Kitchen Dealers & Manufacturers in Preet Vihar – New Delhi Modular Kitchen Dealers & Manufacturers in Punjabi Bagh Modular Kitchen Dealers & Manufacturers in Rajinder Nagar Modular Kitchen Dealers & Manufacturers in Rajokri – New Delhi Modular Kitchen Dealers & Manufacturers in Rajouri Garden – New Delhi Modular Kitchen Dealers & Manufacturers in Rishikesh Modular Kitchen Dealers & Manufacturers in Safdarjung Enclave – New Delhi Modular Kitchen Dealers & Manufacturers in Sainik Farms – New Delhi Modular Kitchen Dealers & Manufacturers in Saket – New Delhi Modular Kitchen Dealers & Manufacturers in Sarita Vihar – New Delhi Modular Kitchen Dealers & Manufacturers in Shanti Niketan – New Delhi Modular Kitchen Dealers & Manufacturers in Vaishali – New Delhi Modular Kitchen Dealers & Manufacturers in Vasant Vihar – New Delhi</p>
+    </div>
+    <div className="colors-modular-kitchen my-12">
+        <h2 className='sm:text-4xl text-xl text-white font-[800] my-12'>COLOURS OF MODULAR KITCHEN</h2>
+        <p>White Colour Modular Kitchen Designs Yellow Colour Modular Kitchen Designs in Delhi Gurgaon Noida India Silver Colour Modular Kitchen Designs Sky Blue Modular Kitchens Designs in Delhi Gurgaon Noida India Orange Modular Kitchen Designs in Delhi Gurgaon Noida India Pink Modular Kitchen Designs in Delhi Gurgaon Noida India Purple Modular Kitchen Design collection in Delhi and India Red Colour Modular Kitchen Designs Beige Colour Modular Kitchen designs in Delhi Gurgaon Noida India Black Modular Kitchen Designs in Delhi & India Blue Colour Modular Kitchens in Delhi Gurgaon Noida India Brown Colour Modular Kitchens in Delhi Gurgaon Noida India Cappuccino Cream colour modular kitchen designs in delhi india Charcoal Modular Kitchen Designs Colourful Modular Kitchen in Delhi gurgaon Noida India Green Colour Modular Kitchen Designs Grey Colour Modular Kitchen Designs in Delhi Maroon Modular Kitchen Designs in Delhi Gurgaon Noida India</p>
+    </div>
+</div> */}
+<div className="location mx-4 sm:mx-12 my-16">
+    <LocationsTabs/>
+</div>
+
                 <div className='text-center text-black text-sm  py-4 bg-white'>
                     <p>DESIGN INDIAN HOMES | ALL RIGHTS RESERVED 2024-25 CRAFTED WITH LOVE BY IN HOUSE BRAND - THE DESIGNER LOUNGE | PRIVACY | LEGAL | SITEMAP</p>
                 </div>

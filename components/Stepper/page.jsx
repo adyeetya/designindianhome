@@ -1,5 +1,5 @@
 'use client'
-import React, { useState } from 'react'
+import React, { useState,useEffect } from 'react'
 import { Stepper, Step, StepLabel, Typography, Button } from '@mui/material'
 import Image from 'next/image'
 import MaxWidthWrapper from '../MaxWidthWrapper'
@@ -48,6 +48,15 @@ const StepperComponent = () => {
   const handleStepChange = (step) => {
     setActiveStep(step)
   }
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      const nextStep = (activeStep + 1) % steps.length;
+      handleStepChange(nextStep);
+    }, 5000); // Change step every 5 seconds
+
+    return () => clearInterval(interval);
+  }, [activeStep]);
 
   return (
     <>
