@@ -110,7 +110,7 @@ const Page = ({ images, initialSlide, onClose, onNextSlide, onPrevSlide }) => {
               requirements.
             </h2>
             <div className="flex justify-between mb-2">
-              <h2 className="text-md py-2 italic text-green-500 text-center text-white">
+              <h2 className="text-md py-2 italic  text-center text-white">
                 Book a Visit Today
               </h2>
               <button onClick={handleShare} className="p-0 m-0">
