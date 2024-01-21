@@ -58,9 +58,9 @@ const MyForm: React.FC<MyFormProps> = () => {
     <div className="flex flex-col sm:flex-row lg:mx-16">
       {/* Left side with heading and paragraph */}
       <div className="sm:w-1/2 p-4">
-        <h1 className="text-2xl sm:text-4xl font-bold mb-4 text-green-500">
+        <h1 className="text-2xl sm:text-4xl font-bold mb-4 text-white">
           Looking for expert guidance to design your <br />
-          <span ref={el} className="text-purple-700" />
+          <span ref={el} className="text-yellow-300" />
         </h1>
         <p className="text-gray-900 text-sm">
           Leave your information and we will call you to book your preferred

@@ -1,22 +1,22 @@
-'use client'
-import Image from 'next/image'
-import { TypeAnimation } from 'react-type-animation'
-import Marquee from 'react-fast-marquee'
-import ReactBeforeSliderComponent from 'react-before-after-slider-component'
-import 'react-before-after-slider-component/dist/build.css'
-import React, { useState, useEffect, useRef } from 'react'
-import ReactPlayer from 'react-player'
-import Carousel from 'react-multi-carousel'
-import 'react-multi-carousel/lib/styles.css'
+"use client";
+import Image from "next/image";
+import { TypeAnimation } from "react-type-animation";
+import Marquee from "react-fast-marquee";
+import ReactBeforeSliderComponent from "react-before-after-slider-component";
+import "react-before-after-slider-component/dist/build.css";
+import React, { useState, useEffect, useRef } from "react";
+import ReactPlayer from "react-player";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 
 const FIRST_IMAGE = {
   imageUrl:
-    'https://source.unsplash.com/a-kitchen-with-blue-cabinets-and-a-black-refrigerator-zFGBEikZoRg',
-}
+    "https://source.unsplash.com/a-kitchen-with-blue-cabinets-and-a-black-refrigerator-zFGBEikZoRg",
+};
 const SECOND_IMAGE = {
   imageUrl:
-    'https://source.unsplash.com/a-ladder-and-buckets-of-paint-in-a-room-under-construction-XXanshmt5so',
-}
+    "https://source.unsplash.com/a-ladder-and-buckets-of-paint-in-a-room-under-construction-XXanshmt5so",
+};
 
 const falshResponsive = {
   desktop: {
@@ -34,7 +34,7 @@ const falshResponsive = {
     items: 1,
     slidesToSlide: 1, // optional, default to 1.
   },
-}
+};
 
 const responsive = {
   desktop: {
@@ -52,301 +52,301 @@ const responsive = {
     items: 2,
     slidesToSlide: 1, // optional, default to 1.
   },
-}
+};
 const StructureImageUrl = [
   //First image url
   {
-    url: 'https://source.unsplash.com/black-flat-screen-tv-mounted-on-white-wall-3hEGHI4b4gg',
+    url: "https://source.unsplash.com/black-flat-screen-tv-mounted-on-white-wall-3hEGHI4b4gg",
   },
   {
-    url: 'https://source.unsplash.com/white-wooden-kitchen-island-and-cupboard-cabinets-near-glass-panel-door-AQl-J19ocWE',
+    url: "https://source.unsplash.com/white-wooden-kitchen-island-and-cupboard-cabinets-near-glass-panel-door-AQl-J19ocWE",
   },
   //Second image url
   {
-    url: 'https://source.unsplash.com/white-and-black-kitchen-cabinet-jylx7bVZMIk',
+    url: "https://source.unsplash.com/white-and-black-kitchen-cabinet-jylx7bVZMIk",
   },
   //Third image url
   {
-    url: 'https://source.unsplash.com/black-round-bowl-on-brown-wooden-seat-NWG-vYPZDoM',
+    url: "https://source.unsplash.com/black-round-bowl-on-brown-wooden-seat-NWG-vYPZDoM",
   },
 
   //Fourth image url
 
   {
-    url: 'https://source.unsplash.com/two-brown-wooden-bar-stools-cc0Gg3BegjE',
+    url: "https://source.unsplash.com/two-brown-wooden-bar-stools-cc0Gg3BegjE",
   },
 
   {
-    url: 'https://source.unsplash.com/brown-and-white-wooden-kitchen-cabinet-DQpUeNzRj6s',
+    url: "https://source.unsplash.com/brown-and-white-wooden-kitchen-cabinet-DQpUeNzRj6s",
   },
-]
+];
 
 const flasherslider = [
   {
     id: 0,
     firstImage:
-      'https://source.unsplash.com/a-kitchen-with-blue-cabinets-and-a-black-refrigerator-zFGBEikZoRg',
+      "https://source.unsplash.com/a-kitchen-with-blue-cabinets-and-a-black-refrigerator-zFGBEikZoRg",
     secondImage:
-      'https://source.unsplash.com/a-ladder-and-buckets-of-paint-in-a-room-under-construction-XXanshmt5so',
+      "https://source.unsplash.com/a-ladder-and-buckets-of-paint-in-a-room-under-construction-XXanshmt5so",
   },
   {
     id: 1,
     firstImage:
-      'https://source.unsplash.com/a-kitchen-with-blue-cabinets-and-a-black-refrigerator-zFGBEikZoRg',
+      "https://source.unsplash.com/a-kitchen-with-blue-cabinets-and-a-black-refrigerator-zFGBEikZoRg",
     secondImage:
-      'https://source.unsplash.com/a-ladder-and-buckets-of-paint-in-a-room-under-construction-XXanshmt5so',
+      "https://source.unsplash.com/a-ladder-and-buckets-of-paint-in-a-room-under-construction-XXanshmt5so",
   },
   {
     id: 2,
     firstImage:
-      'https://source.unsplash.com/a-kitchen-with-blue-cabinets-and-a-black-refrigerator-zFGBEikZoRg',
+      "https://source.unsplash.com/a-kitchen-with-blue-cabinets-and-a-black-refrigerator-zFGBEikZoRg",
     secondImage:
-      'https://source.unsplash.com/a-ladder-and-buckets-of-paint-in-a-room-under-construction-XXanshmt5so',
+      "https://source.unsplash.com/a-ladder-and-buckets-of-paint-in-a-room-under-construction-XXanshmt5so",
   },
   {
     id: 3,
     firstImage:
-      'https://source.unsplash.com/a-kitchen-with-blue-cabinets-and-a-black-refrigerator-zFGBEikZoRg',
+      "https://source.unsplash.com/a-kitchen-with-blue-cabinets-and-a-black-refrigerator-zFGBEikZoRg",
     secondImage:
-      'https://source.unsplash.com/a-ladder-and-buckets-of-paint-in-a-room-under-construction-XXanshmt5so',
+      "https://source.unsplash.com/a-ladder-and-buckets-of-paint-in-a-room-under-construction-XXanshmt5so",
   },
   {
     id: 4,
     firstImage:
-      'https://source.unsplash.com/a-kitchen-with-blue-cabinets-and-a-black-refrigerator-zFGBEikZoRg',
+      "https://source.unsplash.com/a-kitchen-with-blue-cabinets-and-a-black-refrigerator-zFGBEikZoRg",
     secondImage:
-      'https://source.unsplash.com/a-ladder-and-buckets-of-paint-in-a-room-under-construction-XXanshmt5so',
+      "https://source.unsplash.com/a-ladder-and-buckets-of-paint-in-a-room-under-construction-XXanshmt5so",
   },
   {
     id: 5,
     firstImage:
-      'https://source.unsplash.com/a-kitchen-with-blue-cabinets-and-a-black-refrigerator-zFGBEikZoRg',
+      "https://source.unsplash.com/a-kitchen-with-blue-cabinets-and-a-black-refrigerator-zFGBEikZoRg",
     secondImage:
-      'https://source.unsplash.com/a-ladder-and-buckets-of-paint-in-a-room-under-construction-XXanshmt5so',
+      "https://source.unsplash.com/a-ladder-and-buckets-of-paint-in-a-room-under-construction-XXanshmt5so",
   },
   {
     id: 6,
     firstImage:
-      'https://source.unsplash.com/a-kitchen-with-blue-cabinets-and-a-black-refrigerator-zFGBEikZoRg',
+      "https://source.unsplash.com/a-kitchen-with-blue-cabinets-and-a-black-refrigerator-zFGBEikZoRg",
     secondImage:
-      'https://source.unsplash.com/a-ladder-and-buckets-of-paint-in-a-room-under-construction-XXanshmt5so',
+      "https://source.unsplash.com/a-ladder-and-buckets-of-paint-in-a-room-under-construction-XXanshmt5so",
   },
-]
+];
 
 const KitchenImageUrl = [
   //First image url
   {
-    url: 'https://source.unsplash.com/black-flat-screen-tv-mounted-on-white-wall-3hEGHI4b4gg',
+    url: "https://source.unsplash.com/black-flat-screen-tv-mounted-on-white-wall-3hEGHI4b4gg",
   },
   {
-    url: 'https://source.unsplash.com/white-wooden-kitchen-island-and-cupboard-cabinets-near-glass-panel-door-AQl-J19ocWE',
+    url: "https://source.unsplash.com/white-wooden-kitchen-island-and-cupboard-cabinets-near-glass-panel-door-AQl-J19ocWE",
   },
   //Second image url
   {
-    url: 'https://source.unsplash.com/white-and-black-kitchen-cabinet-jylx7bVZMIk',
+    url: "https://source.unsplash.com/white-and-black-kitchen-cabinet-jylx7bVZMIk",
   },
   //Third image url
   {
-    url: 'https://source.unsplash.com/black-round-bowl-on-brown-wooden-seat-NWG-vYPZDoM',
+    url: "https://source.unsplash.com/black-round-bowl-on-brown-wooden-seat-NWG-vYPZDoM",
   },
 
   //Fourth image url
 
   {
-    url: 'https://source.unsplash.com/two-brown-wooden-bar-stools-cc0Gg3BegjE',
+    url: "https://source.unsplash.com/two-brown-wooden-bar-stools-cc0Gg3BegjE",
   },
 
   {
-    url: 'https://source.unsplash.com/brown-and-white-wooden-kitchen-cabinet-DQpUeNzRj6s',
+    url: "https://source.unsplash.com/brown-and-white-wooden-kitchen-cabinet-DQpUeNzRj6s",
   },
-]
+];
 
 const InteriorImageUrl = [
   //First image url
   {
-    url: 'https://source.unsplash.com/black-flat-screen-tv-mounted-on-white-wall-3hEGHI4b4gg',
+    url: "https://source.unsplash.com/black-flat-screen-tv-mounted-on-white-wall-3hEGHI4b4gg",
   },
   {
-    url: 'https://source.unsplash.com/white-wooden-kitchen-island-and-cupboard-cabinets-near-glass-panel-door-AQl-J19ocWE',
+    url: "https://source.unsplash.com/white-wooden-kitchen-island-and-cupboard-cabinets-near-glass-panel-door-AQl-J19ocWE",
   },
   //Second image url
   {
-    url: 'https://source.unsplash.com/white-and-black-kitchen-cabinet-jylx7bVZMIk',
+    url: "https://source.unsplash.com/white-and-black-kitchen-cabinet-jylx7bVZMIk",
   },
   //Third image url
   {
-    url: 'https://source.unsplash.com/black-round-bowl-on-brown-wooden-seat-NWG-vYPZDoM',
+    url: "https://source.unsplash.com/black-round-bowl-on-brown-wooden-seat-NWG-vYPZDoM",
   },
 
   //Fourth image url
 
   {
-    url: 'https://source.unsplash.com/two-brown-wooden-bar-stools-cc0Gg3BegjE',
+    url: "https://source.unsplash.com/two-brown-wooden-bar-stools-cc0Gg3BegjE",
   },
 
   {
-    url: 'https://source.unsplash.com/brown-and-white-wooden-kitchen-cabinet-DQpUeNzRj6s',
+    url: "https://source.unsplash.com/brown-and-white-wooden-kitchen-cabinet-DQpUeNzRj6s",
   },
-]
+];
 
 const WardrobeImageUrl = [
   //First image url
   {
-    url: 'https://source.unsplash.com/black-flat-screen-tv-mounted-on-white-wall-3hEGHI4b4gg',
+    url: "https://source.unsplash.com/black-flat-screen-tv-mounted-on-white-wall-3hEGHI4b4gg",
   },
   {
-    url: 'https://source.unsplash.com/white-wooden-kitchen-island-and-cupboard-cabinets-near-glass-panel-door-AQl-J19ocWE',
+    url: "https://source.unsplash.com/white-wooden-kitchen-island-and-cupboard-cabinets-near-glass-panel-door-AQl-J19ocWE",
   },
   //Second image url
   {
-    url: 'https://source.unsplash.com/white-and-black-kitchen-cabinet-jylx7bVZMIk',
+    url: "https://source.unsplash.com/white-and-black-kitchen-cabinet-jylx7bVZMIk",
   },
   //Third image url
   {
-    url: 'https://source.unsplash.com/black-round-bowl-on-brown-wooden-seat-NWG-vYPZDoM',
+    url: "https://source.unsplash.com/black-round-bowl-on-brown-wooden-seat-NWG-vYPZDoM",
   },
 
   //Fourth image url
 
   {
-    url: 'https://source.unsplash.com/two-brown-wooden-bar-stools-cc0Gg3BegjE',
+    url: "https://source.unsplash.com/two-brown-wooden-bar-stools-cc0Gg3BegjE",
   },
 
   {
-    url: 'https://source.unsplash.com/brown-and-white-wooden-kitchen-cabinet-DQpUeNzRj6s',
+    url: "https://source.unsplash.com/brown-and-white-wooden-kitchen-cabinet-DQpUeNzRj6s",
   },
-]
+];
 
 const Collection = () => {
   const brand = [
     {
       id: 1,
-      img: 'https://www.modularkitcheninnoida.com/assets/images/b1.png',
+      img: "https://www.modularkitcheninnoida.com/assets/images/b1.png",
     },
     {
       id: 2,
-      img: 'https://www.modularkitcheninnoida.com/assets/images/b2.png',
+      img: "https://www.modularkitcheninnoida.com/assets/images/b2.png",
     },
     {
       id: 3,
-      img: 'https://www.modularkitcheninnoida.com/assets/images/b3.png',
+      img: "https://www.modularkitcheninnoida.com/assets/images/b3.png",
     },
     {
       id: 4,
-      img: 'https://www.modularkitcheninnoida.com/assets/images/b4.png',
+      img: "https://www.modularkitcheninnoida.com/assets/images/b4.png",
     },
     {
       id: 5,
-      img: 'https://www.modularkitcheninnoida.com/assets/images/b5.png',
+      img: "https://www.modularkitcheninnoida.com/assets/images/b5.png",
     },
     {
       id: 6,
-      img: 'https://www.modularkitcheninnoida.com/assets/images/b6.png',
+      img: "https://www.modularkitcheninnoida.com/assets/images/b6.png",
     },
     {
       id: 7,
-      img: 'https://www.modularkitcheninnoida.com/assets/images/b7.png',
+      img: "https://www.modularkitcheninnoida.com/assets/images/b7.png",
     },
     {
       id: 8,
-      img: 'https://www.modularkitcheninnoida.com/assets/images/b8.png',
+      img: "https://www.modularkitcheninnoida.com/assets/images/b8.png",
     },
     {
       id: 9,
-      img: 'https://www.modularkitcheninnoida.com/assets/images/b9.png',
+      img: "https://www.modularkitcheninnoida.com/assets/images/b9.png",
     },
     {
       id: 10,
-      img: 'https://www.modularkitcheninnoida.com/assets/images/b10.png',
+      img: "https://www.modularkitcheninnoida.com/assets/images/b10.png",
     },
     {
       id: 11,
-      img: 'https://www.modularkitcheninnoida.com/assets/images/b1.png',
+      img: "https://www.modularkitcheninnoida.com/assets/images/b1.png",
     },
     {
       id: 12,
-      img: 'https://www.modularkitcheninnoida.com/assets/images/b2.png',
+      img: "https://www.modularkitcheninnoida.com/assets/images/b2.png",
     },
 
     {
       id: 13,
-      img: 'https://www.modularkitcheninnoida.com/assets/images/b3.png',
+      img: "https://www.modularkitcheninnoida.com/assets/images/b3.png",
     },
     {
       id: 14,
-      img: 'https://www.modularkitcheninnoida.com/assets/images/b4.png',
+      img: "https://www.modularkitcheninnoida.com/assets/images/b4.png",
     },
-  ]
+  ];
 
   const data = [
     {
       id: 1,
-      img: 'https://www.modularkitcheninnoida.com/assets/images/c1.png',
+      img: "https://www.modularkitcheninnoida.com/assets/images/c1.png",
     },
     {
       id: 2,
-      img: 'https://www.modularkitcheninnoida.com/assets/images/c2.png',
+      img: "https://www.modularkitcheninnoida.com/assets/images/c2.png",
     },
     {
       id: 3,
-      img: 'https://www.modularkitcheninnoida.com/assets/images/c3.png',
+      img: "https://www.modularkitcheninnoida.com/assets/images/c3.png",
     },
     {
       id: 4,
-      img: 'https://www.modularkitcheninnoida.com/assets/images/c4.png',
+      img: "https://www.modularkitcheninnoida.com/assets/images/c4.png",
     },
     {
       id: 5,
-      img: 'https://www.modularkitcheninnoida.com/assets/images/c5.png',
+      img: "https://www.modularkitcheninnoida.com/assets/images/c5.png",
     },
     {
       id: 6,
-      img: 'https://www.modularkitcheninnoida.com/assets/images/c6.png',
+      img: "https://www.modularkitcheninnoida.com/assets/images/c6.png",
     },
     {
       id: 7,
-      img: 'https://www.modularkitcheninnoida.com/assets/images/c7.png',
+      img: "https://www.modularkitcheninnoida.com/assets/images/c7.png",
     },
     {
       id: 8,
-      img: 'https://www.modularkitcheninnoida.com/assets/images/c8.png',
+      img: "https://www.modularkitcheninnoida.com/assets/images/c8.png",
     },
     {
       id: 9,
-      img: 'https://www.modularkitcheninnoida.com/assets/images/c9.png',
+      img: "https://www.modularkitcheninnoida.com/assets/images/c9.png",
     },
     {
       id: 10,
-      img: 'https://www.modularkitcheninnoida.com/assets/images/c10.png',
+      img: "https://www.modularkitcheninnoida.com/assets/images/c10.png",
     },
     {
       id: 11,
-      img: 'https://www.modularkitcheninnoida.com/assets/images/c1.png',
+      img: "https://www.modularkitcheninnoida.com/assets/images/c1.png",
     },
     {
       id: 12,
-      img: 'https://www.modularkitcheninnoida.com/assets/images/c2.png',
+      img: "https://www.modularkitcheninnoida.com/assets/images/c2.png",
     },
 
     {
       id: 13,
-      img: 'https://www.modularkitcheninnoida.com/assets/images/c3.png',
+      img: "https://www.modularkitcheninnoida.com/assets/images/c3.png",
     },
     {
       id: 14,
-      img: 'https://www.modularkitcheninnoida.com/assets/images/c4.png',
+      img: "https://www.modularkitcheninnoida.com/assets/images/c4.png",
     },
-  ]
-  const ref = useRef()
-  const videoRef = useRef()
-  const [isPlaying, setIsPlaying] = useState(false)
+  ];
+  const ref = useRef();
+  const videoRef = useRef();
+  const [isPlaying, setIsPlaying] = useState(false);
 
   useEffect(() => {
-    const video = document.querySelector('video')
-    video.addEventListener('load', () => {
-      setIsPlaying(true)
-    })
-  }, [])
+    const video = document.querySelector("video");
+    video.addEventListener("load", () => {
+      setIsPlaying(true);
+    });
+  }, []);
 
   return (
     <>
@@ -356,18 +356,18 @@ const Collection = () => {
       <div className="flex items-center justify-center">
         <TypeAnimation
           sequence={[
-            'TOP KITCHEN & CLOSET BRAND ',
+            "TOP KITCHEN & CLOSET BRAND ",
             1000, // wait 1s before replacing "Mice" with "Hamsters"
-            ' LARGEST KITCHEN DEALERS',
+            " LARGEST KITCHEN DEALERS",
             1000,
-            'MODULAR KITCHEN & CLOSET',
+            "MODULAR KITCHEN & CLOSET",
             1000,
-            'LARGEST ARCHITECTURAL BRAND',
+            "LARGEST ARCHITECTURAL BRAND",
             1000,
-            'TOP AWARDED INTERIORS',
+            "TOP AWARDED INTERIORS",
             1000,
           ]}
-          style={{ fontSize: '55px' }}
+          style={{ fontSize: "55px" }}
           wrapper="span"
           speed={50}
           repeat={Infinity}
@@ -385,11 +385,11 @@ const Collection = () => {
           </div>
           <div className="box b">
             <h1>
-              {' '}
+              {" "}
               OUR STYLE
               <br />
               IS TO DELIVER SMILES
-            </h1>{' '}
+            </h1>{" "}
           </div>
         </div>
       </div>
@@ -425,11 +425,11 @@ const Collection = () => {
           />
         </div>
         <div className="callout">
-          <h3 className="bg-transparent text-sm sm:text-xxl">
+          <h3 className="bg-transparent text-sm md:text-4xl">
             Looking for Interiors or Modular Works
           </h3>
           <br />
-          <a className="button hover:bg-white" href="/collections/all">
+          <a className=" button hover:bg-white" href="/collections/all">
             Connect with us
           </a>
         </div>
@@ -496,7 +496,7 @@ const Collection = () => {
           <br /> <br />
           Modular Kitchens * Wardrobes * TV Units * Vanities <br />* Crockery
           Units * Shoe Racks * Bookshelves * Partitions <br />* Studies & Bar
-          Units * Mandir Units * End To End Interiors * Complete Structures{' '}
+          Units * Mandir Units * End To End Interiors * Complete Structures{" "}
           <br />* Luxury Interiors & Residences * Luxury Kitchens And Wardrobes
           * Italian - German - Swedish - Danish - Spanish Modular Kitchens &
           Wardrobes
@@ -529,7 +529,7 @@ const Collection = () => {
         />
       </div>
 
-      <Marquee style={{ backgroundColor: ' yellow ' }} className="my-6">
+      <Marquee style={{ backgroundColor: " yellow " }} className="my-6">
         <div className="marquee">
           <h3>
             Top Interior, Architectural & Modular Kitchen - Wardrobe Brand in
@@ -549,9 +549,14 @@ const Collection = () => {
                   <div className="box bi"></div>
                 </div>
               </div>
+              <h2 className="text-4xl font-bold text-center">
+                Dive Deep into the Luxurious World of DIH
+              </h2>
               <video
                 loop
                 autoPlay
+                playsInline
+                muted
                 controls={isPlaying}
                 src="video/lux.mp4"
                 alt=""
@@ -646,25 +651,26 @@ const Collection = () => {
                 alt=""
               />
             </div>
-            <div className="md:w-1/2 px-16 my-auto" id="news">
-            
 
-              <div className="wrapperlatest">
-                <h1>Before And After</h1>
-                <h3>Affordable Luxury</h3>
-                <p className="px-6 py-4">
-                  We often use collective nouns to refer to groups of people.
-                  Examples: team, gang, squad, army, jury, clergy, cult, crew.
-                </p>
+            <div>
+              <div className=" px-16 my-auto" id="news">
+                <div className="wrapperlatest">
+                  <h1>Before And After</h1>
+                  <h3>Affordable Luxury</h3>
+                  <p className="px-6 py-4 text-center">
+                    We often use collective nouns to refer to groups of people.
+                    Examples: team, gang, squad, army, jury, clergy, cult, crew.
+                  </p>
+                </div>
+              </div>
+
+              <div className=" mb-16" id="news">
+                <ReactBeforeSliderComponent
+                  firstImage={FIRST_IMAGE}
+                  secondImage={SECOND_IMAGE}
+                />
               </div>
             </div>
-            <div className="md:w-1/2 mb-16" id="news">
-              <ReactBeforeSliderComponent
-                firstImage={FIRST_IMAGE}
-                secondImage={SECOND_IMAGE}
-              />
-            </div>
-            
           </div>
         </section>
       </div>
@@ -758,11 +764,43 @@ const Collection = () => {
           <div className="box bi"></div>
         </div>
       </div>
-      <div className="wrapperlatest">
-        <h1>Connect With Us</h1>
+      {/* ------------------------------------------------ */}
+      <div className="z-10 text-center text-2xl sm:text-4xl sm:py-12 py-8 font-bold">
+        <h1 className="sm:-mb-16">Connect With Us</h1>
       </div>
 
-      <div className="section1">
+      <div className="section1 relative">
+        {/*------------------------------------------ */}
+        <div className="main1">
+          <img src="/images/left.gif" width={50} height={50} />
+          <svg
+            id="rotatingText1"
+            viewBox="0 0 200 200"
+            width={200}
+            height={200}
+          >
+            <defs>
+              <path
+                id="circle"
+                d="M 100, 100
+   m -75, 0
+   a 75, 75 0 1, 0 150, 0
+   a 75, 75 0 1, 0 -150, 0
+   "
+              ></path>
+            </defs>
+            <text width={400}>
+              <textPath
+                alignmentBaseline="top"
+                xlinkHref="#circle"
+                className="text"
+              >
+                The Best Home Interior Brand of India -
+              </textPath>
+            </text>
+          </svg>
+        </div>
+        {/* ------------------------------- */}
         <section>
           <div className="card">
             <div className="grin">
@@ -813,31 +851,7 @@ const Collection = () => {
           </div>
         </section>
       </div>
-
-      <div className="main">
-        <img src="/images/left.gif" width={50} height={50} />
-        <svg id="rotatingText" viewBox="0 0 200 200" width={200} height={200}>
-          <defs>
-            <path
-              id="circle"
-              d="M 100, 100
-   m -75, 0
-   a 75, 75 0 1, 0 150, 0
-   a 75, 75 0 1, 0 -150, 0
-   "
-            ></path>
-          </defs>
-          <text width={400}>
-            <textPath
-              alignmentBaseline="top"
-              xlinkHref="#circle"
-              className="text"
-            >
-              The Best Home Interior Brand of India -
-            </textPath>
-          </text>
-        </svg>
-      </div>
+      {/* ------------------------------------------ */}
 
       <div className="wrapperlatest ">
         <h1>Best Trending Kitchens</h1>
@@ -859,7 +873,7 @@ const Collection = () => {
               <div className="slidering" key={index}>
                 <img src={imageUrl.url} alt="movie" />
               </div>
-            )
+            );
           })}
         </Carousel>
         <div className="flex justify-center items-center ">
@@ -889,7 +903,7 @@ const Collection = () => {
               <div className="slidering" key={index}>
                 <img src={imageUrl.url} alt="kitchen" />
               </div>
-            )
+            );
           })}
         </Carousel>
         <div className="flex justify-center items-center ">
@@ -919,7 +933,7 @@ const Collection = () => {
               <div className="slidering" key={index}>
                 <img src={imageUrl.url} alt="kitchen" />
               </div>
-            )
+            );
           })}
         </Carousel>
 
@@ -950,7 +964,7 @@ const Collection = () => {
               <div className="slidering" key={index}>
                 <img src={imageUrl.url} alt="kitchen" />
               </div>
-            )
+            );
           })}
         </Carousel>
         <div className="flex justify-center items-center ">
@@ -971,7 +985,7 @@ const Collection = () => {
             width={0}
             height={0}
             sizes="100vw"
-            style={{ width: '40%', height: 'auto' }}
+            style={{ width: "40%", height: "auto" }}
             src="/images/icon/working.png"
             alt=""
             className="w-60 h-70 mx-auto"
@@ -988,7 +1002,7 @@ const Collection = () => {
             width={0}
             height={0}
             sizes="100vw"
-            style={{ width: '50%', height: 'auto' }}
+            style={{ width: "50%", height: "auto" }}
             src="/images/icon/interior-design.png"
             alt=""
             className="w-60 h-70 mx-auto"
@@ -1004,7 +1018,7 @@ const Collection = () => {
             width={0}
             height={0}
             sizes="100vw"
-            style={{ width: '50%', height: 'auto' }}
+            style={{ width: "50%", height: "auto" }}
             src="/images/icon/badge.png"
             alt=""
             className="w-60 h-70 mx-auto"
@@ -1020,7 +1034,7 @@ const Collection = () => {
             width={0}
             height={0}
             sizes="100vw"
-            style={{ width: '65%', height: 'auto' }}
+            style={{ width: "65%", height: "auto" }}
             src="/images/icon/payment.png"
             alt=""
             className="w-60 h-70 mx-auto"
@@ -1042,9 +1056,11 @@ const Collection = () => {
 
       <div className="wrapperlatest">
         <h1>Brands you will find in our products</h1>
-        <h3></h3>
       </div>
       <div className="slider">
+        {/* ----------------- */}
+
+        {/* -------------------------- */}
         <div className="slide-track">
           {brand.map((item, index) => (
             <div key={index} className="slide">
@@ -1053,13 +1069,13 @@ const Collection = () => {
                 width={0}
                 height={0}
                 sizes="100vw"
-                style={{ width: '120%', height: '75px' }}
+                style={{ width: "120%", height: "75px" }}
               />
             </div>
           ))}
         </div>
       </div>
-      <div className="main">
+      {/* <div className="main">
         <img src="/images/left.gif" width={50} height={50} />
         <svg id="rotatingText" viewBox="0 0 200 200" width={200} height={200}>
           <defs>
@@ -1082,10 +1098,37 @@ const Collection = () => {
             </textPath>
           </text>
         </svg>
-      </div>
+      </div> */}
 
-      <div className="wrapperlatest">
-        <h1>Our Corporate Presece</h1>
+      <div className="flex items-center justify-c">
+        <div className="w-1/6 main2">
+          <img src="/images/left.gif" width={50} height={50} />
+          <svg id="rotatingText" viewBox="0 0 200 200" width={200} height={200}>
+            <defs>
+              <path
+                id="circle"
+                d="M 100, 100
+            m -75, 0
+            a 75, 75 0 1, 0 150, 0
+            a 75, 75 0 1, 0 -150, 0"
+              ></path>
+            </defs>
+            <text width={400}>
+              <textPath
+                alignmentBaseline="top"
+                xlinkHref="#circle"
+                className="text"
+              >
+                No.1 Architectural Brand in India
+              </textPath>
+            </text>
+          </svg>
+        </div>
+        <div className="w-full wrapperlatest">
+          <h1 className=" mr-[15%] text-center mx-auto">
+            Our Corporate Presence
+          </h1>
+        </div>
       </div>
 
       <div className="slider">
@@ -1097,14 +1140,14 @@ const Collection = () => {
                 width={0}
                 height={0}
                 sizes="100vw"
-                style={{ width: '120%', height: '75px' }}
+                style={{ width: "120%", height: "75px" }}
               />
             </div>
           ))}
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default Collection
+export default Collection;
