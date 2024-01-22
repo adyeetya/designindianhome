@@ -1,62 +1,125 @@
-import Image from 'next/image';
-
-import ReactCardSlider from 'react-card-slider-component';
+import { motion } from "framer-motion";
+import ReactCardSlider from "react-card-slider-component";
 const Brands = () => {
-
   const slides = [
-    { image: "https://source.unsplash.com/gray-2-seat-sofa-near-round-table-WPqcd-gpJeE", 
-    title: "AFFORDABLE, YET WHOLESOME", description: " On Top Priority" },
     {
-      image: "https://source.unsplash.com/clear-glass-top-table-with-brown-wooden-base-YAp3j8EcjUo "
-      , title: "POCKET FRIENDLY, YET WELCOMING", description: "Handcrafted for You"
+      image:
+        "https://source.unsplash.com/gray-2-seat-sofa-near-round-table-WPqcd-gpJeE",
+      title: "AFFORDABLE, YET WHOLESOME",
+      description: " On Top Priority",
     },
     {
-      image: "https://source.unsplash.com/a-living-room-with-a-couch-coffee-table-and-potted-plant-Rf0a8n0VV_M"
-      , title: "MINIMAL, YET OVERALL COVERAGE", description: "Be Carefree & Happy"
+      image:
+        "https://source.unsplash.com/clear-glass-top-table-with-brown-wooden-base-YAp3j8EcjUo ",
+      title: "POCKET FRIENDLY, YET WELCOMING",
+      description: "Handcrafted for You",
     },
-    { image: "https://source.unsplash.com/a-living-room-filled-with-furniture-and-a-fire-place-CXFt0FGdD58",
-     title: "LUXURY, YET AFFORDABLE", description: "Over the Top" 
+    {
+      image:
+        "https://source.unsplash.com/a-living-room-with-a-couch-coffee-table-and-potted-plant-Rf0a8n0VV_M",
+      title: "MINIMAL, YET OVERALL COVERAGE",
+      description: "Be Carefree & Happy",
     },
-    { image:"https://source.unsplash.com/white-wooden-coffee-table-near-white-sofa-WgkA3CSFrjc",
-    title: "HIGH QUALITY WITH COMPLETE COMMITMENT", description: "Premier Plus " 
-   },
-   /*  {
+    {
+      image:
+        "https://source.unsplash.com/a-living-room-filled-with-furniture-and-a-fire-place-CXFt0FGdD58",
+      title: "LUXURY, YET AFFORDABLE",
+      description: "Over the Top",
+    },
+    {
+      image:
+        "https://source.unsplash.com/white-wooden-coffee-table-near-white-sofa-WgkA3CSFrjc",
+      title: "HIGH QUALITY WITH COMPLETE COMMITMENT",
+      description: "Premier Plus ",
+    },
+    /*  {
       img: "https://source.unsplash.com/white-wooden-coffee-table-near-white-sofa-WgkA3CSFrjc",
       title: "HIGH QUALITY WITH COMPLETE COMMITMENT", description: " Premier Plus "
     },
     */
-    { image: "https://source.unsplash.com/black-metal-3-tier-rack-beside-white-couch-L5L2hiSh2Bo ",description: "Redefine Luxury",
-     title: " TOP NOTCH LUXURY, WITH TOP NOTCH PRICING" },
+    {
+      image:
+        "https://source.unsplash.com/black-metal-3-tier-rack-beside-white-couch-L5L2hiSh2Bo ",
+      description: "Redefine Luxury",
+      title: " TOP NOTCH LUXURY, WITH TOP NOTCH PRICING",
+    },
+  ];
 
-  ]
+  const imagesVariant = {
+    initial: {
+      y: 10,
+      opacity: 0,
+    },
+    animate: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        duration: 2,
+        staggerChildren: 0.2,
+      },
+    },
+  };
+
+  const containerStyle = {
+    position: "relative",
+    height: "fit-content", // Adjust as needed
+    width: "fit-content", // Adjust as needed
+    display: "inline-block", // Ensure the container only takes the size of its content
+  };
+
+  const textContainerStyle = {
+    zIndex: "1", // Ensure text is above the background image
+    textAlign: "center", // Center the text
+    position: "relative", // Position the text within the container
+  };
+
+  const backgroundImageStyle = {
+    position: "absolute", // Position the image behind the text
+    top: "0",
+    left: "0",
+    width: "100%", // Set the width to 100%
+    height: "100%", // Set the height to 100%
+    objectFit: "cover", // Ensure the image covers the container
+    opacity: "0.5", // Adjust the opacity as needed
+  };
+
   return (
     <>
-
-<section class="bordered bordersec">
- </section>
+      <section className="bordered bordersec"></section>
       <div className="main-hero">
         <div className="cover">
-          <div className="box ai">
-
-          </div>
-          <div className="box bi">
-
-          </div>
+          <div className="box ai"></div>
+          <div className="box bi"></div>
         </div>
       </div>
       <div className="wrapperlatesti">
-        <h1>Our Exclusive Packages</h1>
-        <h3 >The Best in Class &#34; Tailormade &#34; Interior Plans</h3>
+        {/* <h1>Our Exclusive Packages</h1> */}
+        <div className="flex justify-center items-center sm:my-8">
+          <div style={containerStyle}>
+            <div style={textContainerStyle} className="flex justify-center ">
+              <h1 className="sm:text-4xl text-xl font-bold text-center">
+                Our Exclusive Packages
+              </h1>
+            </div>
+            <img
+              src="https://www.onlygfx.com/wp-content/uploads/2022/03/simple-gold-brush-stroke-banner-5.png"
+              alt="Paint Brush"
+              style={backgroundImageStyle}
+            />
+          </div>
+        </div>
+        <h3>The Best in Class &#34; Tailormade &#34; Interior Plans</h3>
       </div>
-
-
-
-
-
-
+      {/* section visible in the large view */}
       <div className="jiu">
-        <div className="containeru">
-          <div className="blog-post">
+        <motion.div
+          variants={imagesVariant}
+          initial="initial"
+          whileInView="animate"
+          className="containeru"
+        >
+          {/* 1 */}
+          <motion.div variants={imagesVariant} className="blog-post">
             <img
               src="https://source.unsplash.com/gray-2-seat-sofa-near-round-table-WPqcd-gpJeE"
               alt="Man"
@@ -70,8 +133,9 @@ const Brands = () => {
               <h3 className="post-mini"> On Top Priority</h3>
               <h2 className="post-title">AFFORDABLE, YET WHOLESOME</h2>
             </div>
-          </div>
-          <div className="blog-post">
+          </motion.div>
+          {/* 2 */}
+          <motion.div variants={imagesVariant} className="blog-post">
             <img
               src="https://source.unsplash.com/clear-glass-top-table-with-brown-wooden-base-YAp3j8EcjUo "
               alt="Man"
@@ -85,8 +149,9 @@ const Brands = () => {
               <h3 className="post-mini">Handcrafted for You</h3>
               <h2 className="post-title"> POCKET FRIENDLY, YET WELCOMING</h2>
             </div>
-          </div>
-          <div className="blog-post">
+          </motion.div>
+          {/* 3 */}
+          <motion.div variants={imagesVariant} className="blog-post">
             <img src="https://source.unsplash.com/a-living-room-with-a-couch-coffee-table-and-potted-plant-Rf0a8n0VV_M" />
 
             <div className="text-content">
@@ -94,8 +159,9 @@ const Brands = () => {
               <h3 className="post-mini"> Be Carefree & Happy </h3>
               <h2 className="post-title">MINIMAL, YET OVERALL COVERAGE</h2>
             </div>
-          </div>
-          <div className="blog-post">
+          </motion.div>
+          {/* 4 */}
+          <motion.div variants={imagesVariant} className="blog-post">
             <img
               src="https://source.unsplash.com/a-living-room-filled-with-furniture-and-a-fire-place-CXFt0FGdD58"
               alt="Man"
@@ -106,8 +172,9 @@ const Brands = () => {
               <h3 className="post-mini">Over the Top</h3>
               <h2 className="post-title">LUXURY, YET AFFORDABLE</h2>
             </div>
-          </div>
-          <div className="blog-post">
+          </motion.div>
+          {/* 5 */}
+          <motion.div variants={imagesVariant} className="blog-post">
             <img
               src="https://source.unsplash.com/white-wooden-coffee-table-near-white-sofa-WgkA3CSFrjc"
               alt="Man"
@@ -123,8 +190,9 @@ const Brands = () => {
                 HIGH QUALITY WITH COMPLETE COMMITMENT
               </h2>
             </div>
-          </div>
-          <div className="blog-post">
+          </motion.div>
+          {/* 6 */}
+          <motion.div variants={imagesVariant} className="blog-post">
             <img
               src="https://source.unsplash.com/black-metal-3-tier-rack-beside-white-couch-L5L2hiSh2Bo "
               alt="Man"
@@ -140,43 +208,38 @@ const Brands = () => {
                 TOP NOTCH LUXURY, WITH TOP NOTCH PRICING
               </h2>
             </div>
-          </div>
-        </div>
+          </motion.div>
+          {/* ------------ */}
+        </motion.div>
       </div>
-
-
-
-<div className="jiu-mob">
-
-      <ReactCardSlider slides={slides} />
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
-<section class="bordered bordersec">
- </section>
+      {/* section of carousel not visible in laptop in mobile */}
+      <div className="jiu-mob">
+        <ReactCardSlider slides={slides} />
+      </div>
+      {/* section of black circles */}
+      <section class="bordered bordersec"></section>
       <div className="main-hero">
         <div className="cover">
-          <div className="box ai">
-
-          </div>
-          <div className="box bi">
-
-          </div>
+          <div className="box ai"></div>
+          <div className="box bi"></div>
         </div>
       </div>
       <div className="wrapperlatest">
-        <h1>Why We Deliver Inspiring Interiors</h1>
-
+        {/* <h1>Why We Deliver Inspiring Interiors</h1> */}
+        <div className="flex justify-center items-center sm:my-8">
+          <div style={containerStyle}>
+            <div style={textContainerStyle} className="flex justify-center ">
+              <h1 className="sm:text-4xl text-xl font-bold text-center">
+                Why We Deliver Inspiring Interiors
+              </h1>
+            </div>
+            <img
+              src="https://www.onlygfx.com/wp-content/uploads/2022/03/simple-gold-brush-stroke-banner-5.png"
+              alt="Paint Brush"
+              style={backgroundImageStyle}
+            />
+          </div>
+        </div>
       </div>
 
       <div className="key-container">
@@ -187,14 +250,12 @@ const Brands = () => {
         </div>
         <div data-key={83}>
           <span>
-            <kbd>Premium
-            </kbd>Materials
+            <kbd>Premium</kbd>Materials
           </span>
         </div>
         <div data-key={68}>
           <span>
-            <kbd>10 Years
-            </kbd>
+            <kbd>10 Years</kbd>
             Warranty
           </span>
         </div>
@@ -217,22 +278,7 @@ const Brands = () => {
           </span>
         </div>
       </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     </>
-  )
-}
-export default Brands
+  );
+};
+export default Brands;

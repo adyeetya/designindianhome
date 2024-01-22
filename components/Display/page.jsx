@@ -3,7 +3,7 @@ import Image from "next/image";
 import React, { useState, useEffect } from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-
+import { motion } from "framer-motion";
 const responsive = {
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
@@ -52,13 +52,49 @@ const sliderImageUrl = [
 
 const Display = () => {
   const [isPlaying, setIsPlaying] = useState(false);
-
+  const imagesVariant = {
+    initial: {
+      y: 10,
+      opacity: 0,
+    },
+    animate: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        duration: 2,
+        staggerChildren: 0.5,
+      },
+    },
+  };
   useEffect(() => {
     const video = document.querySelector("video");
     video.addEventListener("load", () => {
       setIsPlaying(true);
     });
   }, []);
+
+  const containerStyle = {
+    position: "relative",
+    height: "fit-content", // Adjust as needed
+    width: "fit-content", // Adjust as needed
+    display: "inline-block", // Ensure the container only takes the size of its content
+  };
+
+  const textContainerStyle = {
+    zIndex: "1", // Ensure text is above the background image
+    textAlign: "center", // Center the text
+    position: "relative", // Position the text within the container
+  };
+
+  const backgroundImageStyle = {
+    position: "absolute", // Position the image behind the text
+    top: "0",
+    left: "0",
+    width: "100%", // Set the width to 100%
+    height: "100%", // Set the height to 100%
+    objectFit: "cover", // Ensure the image covers the container
+    opacity: "0.5", // Adjust the opacity as needed
+  };
 
   return (
     <>
@@ -85,21 +121,42 @@ const Display = () => {
 </div> */}
 
       <div className="wrapperlatesti">
-        <h1>Exquisite Designs</h1>
+        {/* <h1>Exquisite Designs</h1> */}
+        <div className="flex justify-center items-center sm:my-8">
+          <div style={containerStyle}>
+            <div style={textContainerStyle} className="flex justify-center ">
+              <h1 className="sm:text-4xl text-xl font-bold text-center">
+                Exquisite Designs
+              </h1>
+            </div>
+            <img
+              src="https://www.onlygfx.com/wp-content/uploads/2022/03/simple-gold-brush-stroke-banner-5.png"
+              alt="Paint Brush"
+              style={backgroundImageStyle}
+            />
+          </div>
+        </div>
         <h3> Exquisite Makeovers</h3>
       </div>
 
       <div className="wrapper">
-        <div className="img-areai ">
-          <div className="single-imgi">
+        <motion.div
+          variants={imagesVariant}
+          initial="initial"
+          whileInView="animate"
+          className="img-areai "
+        >
+          {/* 1 */}
+          <motion.div variants={imagesVariant} className="single-imgi">
             <Image
               src="/images/bannernew.png"
               alt=""
               width={600}
               height={600}
             />
-          </div>
-          <div className="single-imgi">
+          </motion.div>
+          {/* 2 */}
+          <motion.div variants={imagesVariant} className="single-imgi">
             <video
               loop
               autoPlay
@@ -110,8 +167,9 @@ const Display = () => {
               width={600}
               height={600}
             />
-          </div>
-          <div className="single-imgi">
+          </motion.div>
+          {/* 3 */}
+          <motion.div variants={imagesVariant} className="single-imgi">
             <video
               loop
               autoPlay
@@ -121,11 +179,13 @@ const Display = () => {
               width={600}
               height={600}
             />
-          </div>
-          <div className="single-imgi">
+          </motion.div>
+          {/* 4 */}
+          <motion.div variants={imagesVariant} className="single-imgi">
             <Image src="/images/banner1.png" alt="" width={600} height={600} />
-          </div>
-        </div>
+          </motion.div>
+          {/* ----- */}
+        </motion.div>
       </div>
 
       <section class="bordered bordersec"></section>

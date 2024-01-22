@@ -8,7 +8,8 @@ import React, { useState, useEffect, useRef } from "react";
 import ReactPlayer from "react-player";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-
+import { motion, useScroll, useSpring, useTransform } from "framer-motion";
+import useMedia from "use-media";
 const FIRST_IMAGE = {
   imageUrl:
     "https://source.unsplash.com/a-kitchen-with-blue-cabinets-and-a-black-refrigerator-zFGBEikZoRg",
@@ -218,6 +219,8 @@ const WardrobeImageUrl = [
 ];
 
 const Collection = () => {
+  const isLargeScreen = useMedia({ minWidth: "768px" });
+  console.log(isLargeScreen);
   const brand = [
     {
       id: 1,
@@ -337,8 +340,111 @@ const Collection = () => {
       img: "https://www.modularkitcheninnoida.com/assets/images/c4.png",
     },
   ];
-  const ref = useRef();
-  const videoRef = useRef();
+
+  const aniRef = useRef();
+  const { scrollYProgress } = useScroll({
+    target: aniRef,
+  });
+
+  let translateXrightWithSpring;
+  let translateXlefttWithSpring;
+  if (isLargeScreen) {
+    const translateXright = useTransform(scrollYProgress, [1, 0], [0, 70]);
+    const translateXleft = useTransform(scrollYProgress, [1, 0], [0, -70]);
+    translateXrightWithSpring = useSpring(translateXright, {
+      stiffness: 200,
+      damping: 10,
+    });
+    translateXlefttWithSpring = useSpring(translateXleft, {
+      stiffness: 200,
+      damping: 10,
+    });
+  } else {
+    const translateXright = useTransform(scrollYProgress, [1, 0], [0, 10]);
+    const translateXleft = useTransform(scrollYProgress, [1, 0], [0, -10]);
+    translateXrightWithSpring = useSpring(translateXright, {
+      stiffness: 200,
+      damping: 10,
+    });
+    translateXlefttWithSpring = useSpring(translateXleft, {
+      stiffness: 200,
+      damping: 10,
+    });
+  }
+  let videoVariants;
+  if (isLargeScreen) {
+    videoVariants = {
+      initial: {
+        x: -200,
+        y: 0,
+        opacity: 0,
+      },
+      animate: {
+        x: 0,
+        y: 0,
+        opacity: 1,
+        transition: {
+          duration: 1,
+          staggerChildren: 0.1,
+        },
+      },
+    };
+  } else {
+    videoVariants = {
+      initial: {
+        y: 100,
+        x: 0,
+        opacity: 0,
+      },
+      animate: {
+        y: 0,
+        x: 0,
+        opacity: 1,
+        transition: {
+          duration: 1,
+          staggerChildren: 0.1,
+        },
+      },
+    };
+  }
+
+  let imagesVariants;
+  if (isLargeScreen) {
+    imagesVariants = {
+      initial: {
+        x: -100,
+        y: 0,
+        opacity: 0,
+      },
+      animate: {
+        x: 0,
+        y: 0,
+        opacity: 1,
+        transition: {
+          duration: 1,
+          staggerChildren: 0.5,
+        },
+      },
+    };
+  } else {
+    imagesVariants = {
+      initial: {
+        y: 300,
+        x: 0,
+        opacity: 0,
+      },
+      animate: {
+        y: 0,
+        x: 0,
+        opacity: 1,
+        transition: {
+          duration: 1,
+          staggerChildren: 0.5,
+        },
+      },
+    };
+  }
+
   const [isPlaying, setIsPlaying] = useState(false);
 
   useEffect(() => {
@@ -348,10 +454,44 @@ const Collection = () => {
     });
   }, []);
 
+  const containerStyle = {
+    position: "relative",
+    height: "fit-content", // Adjust as needed
+    width: "fit-content", // Adjust as needed
+    display: "inline-block", // Ensure the container only takes the size of its content
+  };
+
+  const textContainerStyle = {
+    zIndex: "1", // Ensure text is above the background image
+    textAlign: "center", // Center the text
+    position: "relative", // Position the text within the container
+  };
+
+  const backgroundImageStyle = {
+    position: "absolute", // Position the image behind the text
+    top: "0",
+    left: "0",
+    width: "100%", // Set the width to 100%
+    height: "100%", // Set the height to 100%
+    objectFit: "cover", // Ensure the image covers the container
+    opacity: "0.5", // Adjust the opacity as needed
+  };
+
   return (
     <>
       <div id="fry">
-        <h3>INDIA’S NO.1 INTERIOR & ARCHITECTURAL BRAND</h3>
+        <div style={containerStyle}>
+          <div style={textContainerStyle}>
+            <h3 className="sm:text-3xl text-xl font-bold">
+              INDIA’S NO.1 INTERIOR & ARCHITECTURAL BRAND
+            </h3>
+          </div>
+          <img
+            src="https://www.onlygfx.com/wp-content/uploads/2022/03/simple-gold-brush-stroke-banner-5.png"
+            alt="Paint Brush"
+            style={backgroundImageStyle}
+          />
+        </div>
       </div>
       <div className="flex items-center justify-center">
         <TypeAnimation
@@ -393,26 +533,10 @@ const Collection = () => {
           </div>
         </div>
       </div>
-      {/*  <div className="container mx-auto rounded-3xl ">
-
-
-
-
-
-      </div> */}
-      {/* <div className='hidden sm:flex justify-center items-center absolute'>
-      <h1 className=' bg-white text-black text-5xl font-bold px-4' style={{ zIndex: '10', marginLeft: '150px', marginTop: '350px', }}>
-        Looking for Interiors or Modular Works
-      </h1>
-
-    </div>
-    <a className='hidden sm:flex justify-center absolute text-4xl text-black font-bold hover:bg-white' href="/collections/all" style={{ zIndex: '10', marginLeft: '500px', marginTop: '420px', border: "4px solid black", padding: '2px', borderRadius: '10px' }}>
-      Connect with us
-    </a> */}
 
       <section className="outter hero-video">
         <div className="videoBox mt-3 rounded-xl">
-          <video
+          <motion.video
             loop
             autoPlay
             muted
@@ -422,6 +546,9 @@ const Collection = () => {
             playsInline
             className="rounded-xl shadow-md mx-auto sm:w-[90%]"
             style={{}}
+            variants={videoVariants}
+            initial="initial"
+            whileInView="animate"
           />
         </div>
         <div className="callout">
@@ -540,31 +667,46 @@ const Collection = () => {
 
       <div className="container mx-auto ">
         <section className="newz">
-          <div className="flex flex-wrap  ">
+          <div className="flex flex-wrap">
             <div className=" mb-4" id="news">
               <section class="bordered bordersec"></section>
-              <div className="main-hero">
+              <div className="main-hero" ref={aniRef}>
                 <div className="cover">
                   <div className="box ai"></div>
                   <div className="box bi"></div>
                 </div>
               </div>
-              <h2 className="text-4xl font-bold text-center">
-                Dive Deep into the Luxurious World of DIH
-              </h2>
-              <video
-                loop
-                autoPlay
-                playsInline
-                muted
-                controls={isPlaying}
-                src="video/lux.mp4"
-                alt=""
-                height={10}
-                width={1500}
-                className="rounded shadow-md my-6 max-[600px]:mb-10"
-                id="seek"
-              />
+              <div className="animated">
+                <motion.h2
+                  className="md:text-6xl text-2xl  text-center"
+                  style={{ x: translateXlefttWithSpring }}
+                >
+                  <b>Dive Deep</b> into the
+                </motion.h2>
+                <motion.h2
+                  className="md:text-6xl text-2xl  text-center"
+                  style={{ x: translateXrightWithSpring }}
+                >
+                  Luxurious World of <b>DIH</b>
+                </motion.h2>
+
+                <motion.video
+                  loop
+                  autoPlay
+                  playsInline
+                  muted
+                  controls={isPlaying}
+                  src="video/lux.mp4"
+                  alt=""
+                  height={10}
+                  width={1500}
+                  className="rounded shadow-md my-6 max-[600px]:mb-10"
+                  id="seek"
+                  variants={videoVariants}
+                  initial="initial"
+                  whileInView="animate"
+                />
+              </div>
               <section class="bordered bordersec"></section>
               <div className="main-hero">
                 <div className="cover">
@@ -572,11 +714,25 @@ const Collection = () => {
                   <div className="box bi"></div>
                 </div>
               </div>
-              <div className="wrapperlatest">
-                <h1>Our Exclusive Content</h1>
+              <div className="flex justify-center items-center sm:my-8">
+                <div style={containerStyle}>
+                  <div
+                    style={textContainerStyle}
+                    className="flex justify-center "
+                  >
+                    <h1 className="sm:text-4xl text-xl font-bold text-center">
+                      Our Exclusive Content
+                    </h1>
+                  </div>
+                  <img
+                    src="https://www.onlygfx.com/wp-content/uploads/2022/03/simple-gold-brush-stroke-banner-5.png"
+                    alt="Paint Brush"
+                    style={backgroundImageStyle}
+                  />
+                </div>
               </div>
 
-              <video
+              <motion.video
                 loop
                 autoPlay
                 muted
@@ -587,6 +743,9 @@ const Collection = () => {
                 playsInline
                 className="rounded shadow-md"
                 style={{}}
+                variants={videoVariants}
+                initial="initial"
+                whileInView="animate"
               />
               {/* 
             <video loop autoPlay controls={isPlaying} src="video/vid21.mp4" alt="" height={10} width={1500}
@@ -595,83 +754,140 @@ const Collection = () => {
 
             /> */}
             </div>
-
-            <div className="md:w-1/3 mb-4" id="news">
-              <Image
-                height={350}
-                width={700}
-                className="rounded shadow-md"
-                src="/images/qwer.png"
-                alt=""
-              />
-            </div>
-            <div className="md:w-1/3 mb-4" id="news">
-              <Image
-                height={350}
-                width={700}
-                className="rounded shadow-md"
-                src="/images/qwert.png"
-                alt=""
-              />
-            </div>
-            <div className="md:w-1/3 mb-4" id="news">
-              <Image
-                height={350}
-                width={700}
-                className="rounded shadow-md"
-                src="/images/qwerty.png"
-                alt=""
-              />
-            </div>
-
-            <div className="md:w-1/3 mb-4" id="news">
-              <Image
-                height={350}
-                width={700}
-                className="rounded shadow-md"
-                src="/images/asd.png"
-                alt=""
-              />
-            </div>
-            <div className="md:w-1/3 mb-4" id="news">
-              <Image
-                height={350}
-                width={700}
-                className="rounded shadow-md"
-                src="/images/asdf.png"
-                alt=""
-              />
-            </div>
-            <div className="md:w-1/3 mb-4" id="news">
-              <Image
-                height={350}
-                width={700}
-                className="rounded shadow-md"
-                src="/images/talk.png"
-                alt=""
-              />
-            </div>
-
-            <div>
-              <div className=" px-16 my-auto" id="news">
-                <div className="wrapperlatest">
-                  <h1>Before And After</h1>
-                  <h3>Affordable Luxury</h3>
-                  <p className="px-6 py-4 text-center">
-                    We often use collective nouns to refer to groups of people.
-                    Examples: team, gang, squad, army, jury, clergy, cult, crew.
-                  </p>
-                </div>
-              </div>
-
-              <div className=" mb-16" id="news">
-                <ReactBeforeSliderComponent
-                  firstImage={FIRST_IMAGE}
-                  secondImage={SECOND_IMAGE}
+            <motion.div
+              className="imagesContainer flex flex-wrap justify-center"
+              variants={imagesVariants}
+              initial="initial"
+              whileInView="animate"
+            >
+              {/* Image 1 */}
+              <motion.div
+                className="md:w-1/2 lg:w-1/3 mb-4"
+                variants={imagesVariants}
+                id="news"
+              >
+                <Image
+                  height={350}
+                  width={700}
+                  className="rounded shadow-md"
+                  src="/images/qwer.png"
+                  alt=""
                 />
+              </motion.div>
+
+              {/* Image 2 */}
+              <motion.div
+                className="md:w-1/2 lg:w-1/3 mb-4"
+                variants={imagesVariants}
+                id="news"
+              >
+                <Image
+                  height={350}
+                  width={700}
+                  className="rounded shadow-md"
+                  src="/images/qwert.png"
+                  alt=""
+                />
+              </motion.div>
+
+              {/* Image 3 */}
+              <motion.div
+                className="md:w-1/2 lg:w-1/3 mb-4"
+                variants={imagesVariants}
+                id="news"
+              >
+                <Image
+                  height={350}
+                  width={700}
+                  className="rounded shadow-md"
+                  src="/images/qwerty.png"
+                  alt=""
+                />
+              </motion.div>
+
+              {/* Image 4 */}
+              <motion.div
+                className="md:w-1/2 lg:w-1/3 mb-4"
+                variants={imagesVariants}
+                id="news"
+              >
+                <Image
+                  height={350}
+                  width={700}
+                  className="rounded shadow-md"
+                  src="/images/asd.png"
+                  alt=""
+                />
+              </motion.div>
+
+              {/* Image 5 */}
+              <motion.div
+                className="md:w-1/2 lg:w-1/3 mb-4"
+                variants={imagesVariants}
+                id="news"
+              >
+                <Image
+                  height={350}
+                  width={700}
+                  className="rounded shadow-md"
+                  src="/images/asdf.png"
+                  alt=""
+                />
+              </motion.div>
+
+              {/* Image 6 */}
+              <motion.div
+                className="md:w-1/2 lg:w-1/3 mb-4"
+                variants={imagesVariants}
+                id="news"
+              >
+                <Image
+                  height={350}
+                  width={700}
+                  className="rounded shadow-md"
+                  src="/images/talk.png"
+                  alt=""
+                />
+              </motion.div>
+            </motion.div>
+          </div>
+          {/* before and after */}
+          <div className="flex flex-col justify-center items-center">
+            <div className="px-16 m-auto" id="news">
+              <div className="wrapperlatest">
+                <div className="flex justify-center items-center sm:my-8">
+                  <div style={containerStyle}>
+                    <div
+                      style={textContainerStyle}
+                      className="flex justify-center "
+                    >
+                      <h1 className="sm:text-4xl text-xl font-bold text-center">
+                        Before And After
+                      </h1>
+                    </div>
+                    <img
+                      src="https://www.onlygfx.com/wp-content/uploads/2022/03/simple-gold-brush-stroke-banner-5.png"
+                      alt="Paint Brush"
+                      style={backgroundImageStyle}
+                    />
+                  </div>
+                </div>
+                <h3>Affordable Luxury</h3>
+                <p className="px-6 py-4 text-center">
+                  We often use collective nouns to refer to groups of people.
+                  Examples: team, gang, squad, army, jury, clergy, cult, crew.
+                </p>
               </div>
+            </div>
+
+            <div className=" mb-16" id="news">
+              <ReactBeforeSliderComponent
+                firstImage={FIRST_IMAGE}
+                secondImage={SECOND_IMAGE}
+              />
             </div>
           </div>
+          {/* ------------ */}
         </section>
       </div>
 
@@ -766,7 +982,21 @@ const Collection = () => {
       </div>
       {/* ------------------------------------------------ */}
       <div className="z-10 text-center text-2xl sm:text-4xl sm:py-12 py-8 font-bold">
-        <h1 className="sm:-mb-16">Connect With Us</h1>
+        {/* <h1 className="sm:-mb-16">Connect With Us</h1> */}
+        <div className="flex justify-center items-center sm:my-8">
+          <div style={containerStyle}>
+            <div style={textContainerStyle} className="flex justify-center ">
+              <h1 className="sm:text-4xl text-xl font-bold text-center">
+                Connect With Us
+              </h1>
+            </div>
+            <img
+              src="https://www.onlygfx.com/wp-content/uploads/2022/03/simple-gold-brush-stroke-banner-5.png"
+              alt="Paint Brush"
+              style={backgroundImageStyle}
+            />
+          </div>
+        </div>
       </div>
 
       <div className="section1 relative">
@@ -801,8 +1031,12 @@ const Collection = () => {
           </svg>
         </div>
         {/* ------------------------------- */}
-        <section>
-          <div className="card">
+        <motion.section
+          variants={imagesVariants}
+          initial="initial"
+          whileInView="animate"
+        >
+          <motion.div className="card" variants={imagesVariants}>
             <div className="grin">
               <article className="mainz ">
                 <h2>Connect on</h2>
@@ -816,9 +1050,9 @@ const Collection = () => {
                 />
               </section>
             </div>
-          </div>
+          </motion.div>
 
-          <div className="card">
+          <motion.div className="card" variants={imagesVariants}>
             <div className="grin">
               <article className="mainz ">
                 <h2>Book An</h2>
@@ -832,9 +1066,9 @@ const Collection = () => {
                 />
               </section>
             </div>
-          </div>
+          </motion.div>
 
-          <div className="card">
+          <motion.div className="card" variants={imagesVariants}>
             <div className="grin">
               <article className="mainz ">
                 <h2>Schedule A</h2>
@@ -848,13 +1082,27 @@ const Collection = () => {
                 />
               </section>
             </div>
-          </div>
-        </section>
+          </motion.div>
+        </motion.section>
       </div>
       {/* ------------------------------------------ */}
 
       <div className="wrapperlatest ">
-        <h1>Best Trending Kitchens</h1>
+        {/* <h1>Best Trending Kitchens</h1> */}
+        <div className="flex justify-center items-center sm:my-8">
+          <div style={containerStyle}>
+            <div style={textContainerStyle} className="flex justify-center ">
+              <h1 className="sm:text-4xl text-xl font-bold text-center">
+                Best Trending Kitchens
+              </h1>
+            </div>
+            <img
+              src="https://www.onlygfx.com/wp-content/uploads/2022/03/simple-gold-brush-stroke-banner-5.png"
+              alt="Paint Brush"
+              style={backgroundImageStyle}
+            />
+          </div>
+        </div>
       </div>
 
       <div className="parent">
@@ -884,7 +1132,21 @@ const Collection = () => {
       </div>
 
       <div className="wrapperlatest ">
-        <h1>Best Trending Wardrobes</h1>
+        {/* <h1>Best Trending Wardrobes</h1> */}
+        <div className="flex justify-center items-center sm:my-8">
+          <div style={containerStyle}>
+            <div style={textContainerStyle} className="flex justify-center ">
+              <h1 className="sm:text-4xl text-xl font-bold text-center">
+                Best Trending Wardrobes
+              </h1>
+            </div>
+            <img
+              src="https://www.onlygfx.com/wp-content/uploads/2022/03/simple-gold-brush-stroke-banner-5.png"
+              alt="Paint Brush"
+              style={backgroundImageStyle}
+            />
+          </div>
+        </div>
       </div>
 
       <div className="parent">
@@ -914,7 +1176,21 @@ const Collection = () => {
       </div>
 
       <div className="wrapperlatest ">
-        <h1>Best Trending Interiors</h1>
+        {/* <h1>Best Trending Interiors</h1> */}
+        <div className="flex justify-center items-center sm:my-8">
+          <div style={containerStyle}>
+            <div style={textContainerStyle} className="flex justify-center ">
+              <h1 className="sm:text-4xl text-xl font-bold text-center">
+                Best Trending Interiors
+              </h1>
+            </div>
+            <img
+              src="https://www.onlygfx.com/wp-content/uploads/2022/03/simple-gold-brush-stroke-banner-5.png"
+              alt="Paint Brush"
+              style={backgroundImageStyle}
+            />
+          </div>
+        </div>
       </div>
 
       <div className="parent">
@@ -945,7 +1221,21 @@ const Collection = () => {
       </div>
 
       <div className="wrapperlatest ">
-        <h1>Best Trending Structures</h1>
+        {/* <h1>Best Trending Structures</h1> */}
+        <div className="flex justify-center items-center sm:my-8">
+          <div style={containerStyle}>
+            <div style={textContainerStyle} className="flex justify-center ">
+              <h1 className="sm:text-4xl text-xl font-bold text-center">
+                Best Trending Structures
+              </h1>
+            </div>
+            <img
+              src="https://www.onlygfx.com/wp-content/uploads/2022/03/simple-gold-brush-stroke-banner-5.png"
+              alt="Paint Brush"
+              style={backgroundImageStyle}
+            />
+          </div>
+        </div>
       </div>
 
       <div className="parent">
@@ -1055,7 +1345,21 @@ const Collection = () => {
       </div>
 
       <div className="wrapperlatest">
-        <h1>Brands you will find in our products</h1>
+        {/* <h1>Brands you will find in our products</h1> */}
+        <div className="flex justify-center items-center sm:my-8">
+          <div style={containerStyle}>
+            <div style={textContainerStyle} className="flex justify-center ">
+              <h1 className="sm:text-4xl text-xl font-bold text-center">
+                Brands you will find in our products
+              </h1>
+            </div>
+            <img
+              src="https://www.onlygfx.com/wp-content/uploads/2022/03/simple-gold-brush-stroke-banner-5.png"
+              alt="Paint Brush"
+              style={backgroundImageStyle}
+            />
+          </div>
+        </div>
       </div>
       <div className="slider">
         {/* ----------------- */}
@@ -1125,9 +1429,23 @@ const Collection = () => {
           </svg>
         </div>
         <div className="w-full wrapperlatest">
-          <h1 className=" mr-[15%] text-center mx-auto">
+          {/* <h1 className=" mr-[15%] text-center mx-auto">
             Our Corporate Presence
-          </h1>
+          </h1> */}
+          <div className="flex justify-center items-center sm:my-8">
+            <div style={containerStyle} className="mr-[15%]">
+              <div style={textContainerStyle} className="flex justify-center ">
+                <h1 className="sm:text-4xl text-xl font-bold text-center   mx-auto">
+                  Our Corporate Presence
+                </h1>
+              </div>
+              <img
+                src="https://www.onlygfx.com/wp-content/uploads/2022/03/simple-gold-brush-stroke-banner-5.png"
+                alt="Paint Brush"
+                style={backgroundImageStyle}
+              />
+            </div>
+          </div>
         </div>
       </div>
 
