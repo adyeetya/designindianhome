@@ -346,104 +346,50 @@ const Collection = () => {
     target: aniRef,
   });
 
-  let translateXrightWithSpring;
-  let translateXlefttWithSpring;
-  if (isLargeScreen) {
-    const translateXright = useTransform(scrollYProgress, [1, 0], [0, 70]);
-    const translateXleft = useTransform(scrollYProgress, [1, 0], [0, -70]);
-    translateXrightWithSpring = useSpring(translateXright, {
-      stiffness: 200,
-      damping: 10,
-    });
-    translateXlefttWithSpring = useSpring(translateXleft, {
-      stiffness: 200,
-      damping: 10,
-    });
-  } else {
-    const translateXright = useTransform(scrollYProgress, [1, 0], [0, 10]);
-    const translateXleft = useTransform(scrollYProgress, [1, 0], [0, -10]);
-    translateXrightWithSpring = useSpring(translateXright, {
-      stiffness: 200,
-      damping: 10,
-    });
-    translateXlefttWithSpring = useSpring(translateXleft, {
-      stiffness: 200,
-      damping: 10,
-    });
-  }
-  let videoVariants;
-  if (isLargeScreen) {
-    videoVariants = {
-      initial: {
-        x: -200,
-        y: 0,
-        opacity: 0,
-      },
-      animate: {
-        x: 0,
-        y: 0,
-        opacity: 1,
-        transition: {
-          duration: 1,
-          staggerChildren: 0.1,
-        },
-      },
-    };
-  } else {
-    videoVariants = {
-      initial: {
-        y: 100,
-        x: 0,
-        opacity: 0,
-      },
-      animate: {
-        y: 0,
-        x: 0,
-        opacity: 1,
-        transition: {
-          duration: 1,
-          staggerChildren: 0.1,
-        },
-      },
-    };
-  }
+  const translateXright = useTransform(scrollYProgress, [1, 0], [0, 10]);
+  const translateXleft = useTransform(scrollYProgress, [1, 0], [0, -10]);
+  const translateXrightWithSpring = useSpring(translateXright, {
+    stiffness: 200,
+    damping: 10,
+  });
+  const translateXlefttWithSpring = useSpring(translateXleft, {
+    stiffness: 200,
+    damping: 10,
+  });
 
-  let imagesVariants;
-  if (isLargeScreen) {
-    imagesVariants = {
-      initial: {
-        x: -100,
-        y: 0,
-        opacity: 0,
+  const videoVariants = {
+    initial: {
+      y: 100,
+      x: 0,
+      opacity: 0,
+    },
+    animate: {
+      y: 0,
+      x: 0,
+      opacity: 1,
+      transition: {
+        duration: 1,
+        staggerChildren: 0.1,
       },
-      animate: {
-        x: 0,
-        y: 0,
-        opacity: 1,
-        transition: {
-          duration: 1,
-          staggerChildren: 0.5,
-        },
+    },
+  };
+
+  const imagesVariants = {
+    initial: {
+      y: 300,
+      x: 0,
+      opacity: 0,
+    },
+    animate: {
+      y: 0,
+      x: 0,
+      opacity: 1,
+      transition: {
+        duration: 1,
+        staggerChildren: 0.5,
       },
-    };
-  } else {
-    imagesVariants = {
-      initial: {
-        y: 300,
-        x: 0,
-        opacity: 0,
-      },
-      animate: {
-        y: 0,
-        x: 0,
-        opacity: 1,
-        transition: {
-          duration: 1,
-          staggerChildren: 0.5,
-        },
-      },
-    };
-  }
+    },
+  };
 
   const [isPlaying, setIsPlaying] = useState(false);
 
