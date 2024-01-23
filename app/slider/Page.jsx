@@ -125,13 +125,13 @@ const Page = ({ images, initialSlide, onClose, onNextSlide, onPrevSlide }) => {
         </div>
 
         {/* Form Section */}
-        <div className="md:px-12 p-2 mb-24 sm:mb-0   flex flex-col  justify-center bg-white md:w-[400px] lg:w-[500px] md:rounded-r-lg max-h-[90%] overflow-y-auto">
+        <div className="md:px-8 p-2 mb-24 sm:mb-0   flex flex-col  justify-center bg-white md:w-[400px] lg:w-[500px] md:rounded-r-lg max-h-[90%] overflow-y-auto">
           <form
-            className="w-full max-w-md p-2 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg shadow-md overflow-y-auto"
+            className="w-full max-w-md p-2 rounded-lg shadow-md overflow-y-auto"
             method="post"
             onSubmit={handleSubmit}
           >
-            <h2 className="text-xl text-center font-bold pt-10 text-white">
+            <h2 className="text-xl text-center font-bold pt-10 text-gray-700">
               Our designer will call you to help with your interior
               requirements.
             </h2>
@@ -221,20 +221,40 @@ const Page = ({ images, initialSlide, onClose, onNextSlide, onPrevSlide }) => {
               <select
                 id="Interest"
                 name="Interest"
-                className="mt-1 p-2 w-full border border-gray-300 text-sm focus:outline-none rounded-md"
+                className="mt-1 p-2 w-full border-b border-gray-300 text-sm focus:outline-none rounded-md"
                 required
               >
                 <option className="text-gray-400" value="" disabled selected>
                   Interested in
                 </option>
-                <option value="Kitchen">Kitchen</option>
-                <option value="Interior">Interior</option>
+                <option value="Complete Modular Interiors">
+                  Complete Modular Interiors
+                </option>
+                <option value="End to End Interiors">
+                  End to End Interiors
+                </option>
+                <option value="Architectural Consultancy">
+                  Architectural Consultancy
+                </option>
+                <option value="Modular Kitchens">Modular Kitchens</option>
+                <option value="Wardrobes">Wardrobes</option>
+                <option value="Living or Bedroom Renovation">
+                  Living or Bedroom Renovation
+                </option>
+                <option value="Bathroom or Balcony Renovation">
+                  Bathroom or Balcony Renovation
+                </option>
+                <option value="Commercial Interiors">
+                  Commercial Interiors
+                </option>
+                <option value="Luxury Interiors">Luxury Interiors</option>
+
                 {/* Add more options as needed */}
               </select>
             </div>
             <button
               type="submit"
-              className="bg-gradient-to-r from-green-500 to-blue-500 hover:from-green-600 hover:to-blue-600 hover:shadow-lg text-white py-3 px-6 rounded-md  w-full"
+              className="bg-gradient-to-r bg-green-500 hover:bg-green-600 hover:shadow-lg text-white py-3 px-6 rounded-md  w-full"
             >
               Book Design Session
             </button>
