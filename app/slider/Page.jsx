@@ -230,19 +230,10 @@ const Page = ({ images, initialSlide, onClose, onNextSlide, onPrevSlide }) => {
                   className="w-12 self-center"
                 />
                 <p className="text-[8px] text-center text-gray-700">
-                  Top Quality
+                  Top<br/> Quality
                 </p>
               </div>
-              <div className="flex flex-col w-20 rounded-3xl border-[1px] p-2 border-gray-600">
-                <img
-                  src="/images/gallery/save.png"
-                  alt=""
-                  className="w-12 self-center"
-                />
-                <p className="text-[8px] text-center text-gray-700">
-                  Affordable Prices
-                </p>
-              </div>
+              
               <div className="flex justify-content-center flex-col w-20 rounded-3xl border-[1px] p-2 border-gray-600">
                 <img
                   src="/images/gallery/guarantee.png"
@@ -255,12 +246,22 @@ const Page = ({ images, initialSlide, onClose, onNextSlide, onPrevSlide }) => {
               </div>
               <div className="flex flex-col w-20 rounded-3xl border-[1px] p-2 border-gray-600">
                 <img
+                  src="/images/gallery/save.png"
+                  alt=""
+                  className="w-12 self-center"
+                />
+                <p className="text-[8px] text-center text-gray-700">
+                  Affordable Prices
+                </p>
+              </div>
+              <div className="flex flex-col w-20 rounded-3xl border-[1px] p-2 border-gray-600">
+                <img
                   src="/images/gallery/fast-delivery.png"
                   alt=""
                   className="w-12 self-center"
                 />
                 <p className="text-[8px] text-center text-gray-700">
-                  25 Day Delivery
+                  25 Day<br/> Delivery
                 </p>
               </div>
             </div>
