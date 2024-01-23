@@ -225,7 +225,7 @@ const Page = ({ images, initialSlide, onClose, onNextSlide, onPrevSlide }) => {
             <div className="flex justify-evenly my-4">
               <div className="flex flex-col w-20 rounded-3xl border-[1px] p-2 border-gray-600">
                 <img
-                  src="/images/gallery/interior-design.png"
+                  src="/images/gallery/top.png"
                   alt=""
                   className="w-12 self-center"
                 />
@@ -235,7 +235,7 @@ const Page = ({ images, initialSlide, onClose, onNextSlide, onPrevSlide }) => {
               </div>
               <div className="flex flex-col w-20 rounded-3xl border-[1px] p-2 border-gray-600">
                 <img
-                  src="/images/gallery/finance.png"
+                  src="/images/gallery/save.png"
                   alt=""
                   className="w-12 self-center"
                 />
@@ -255,7 +255,7 @@ const Page = ({ images, initialSlide, onClose, onNextSlide, onPrevSlide }) => {
               </div>
               <div className="flex flex-col w-20 rounded-3xl border-[1px] p-2 border-gray-600">
                 <img
-                  src="/images/gallery/rating.png"
+                  src="/images/gallery/fast-delivery.png"
                   alt=""
                   className="w-12 self-center"
                 />
