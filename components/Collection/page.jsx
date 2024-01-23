@@ -373,7 +373,7 @@ const Collection = () => {
 
   const videoVariants = {
     initial: {
-      y: 100,
+      y: 30,
       x: 0,
       opacity: 0,
     },
@@ -390,7 +390,7 @@ const Collection = () => {
 
   const imagesVariants = {
     initial: {
-      y: 300,
+      y: 50,
       x: 0,
       opacity: 0,
     },
@@ -400,7 +400,7 @@ const Collection = () => {
       opacity: 1,
       transition: {
         duration: 1,
-        staggerChildren: 0.5,
+        staggerChildren: 0.2,
       },
     },
   };

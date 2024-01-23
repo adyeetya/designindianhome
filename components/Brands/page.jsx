@@ -55,7 +55,7 @@ const Brands = () => {
       opacity: 1,
       transition: {
         duration: 2,
-        staggerChildren: 0.2,
+        staggerChildren: 0.3,
       },
     },
   };
