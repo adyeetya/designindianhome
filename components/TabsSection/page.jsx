@@ -91,7 +91,7 @@ const ResponsiveTabs = () => {
             <div className="box bi"></div>
           </div>
         </div>
-        <div className="wrapperlatest">
+        <div className="">
           {/* <h1>End-to-End Interior Solutions</h1> */}
           <div className="flex justify-center items-center sm:my-8">
             <div style={containerStyle}>
@@ -107,7 +107,7 @@ const ResponsiveTabs = () => {
               />
             </div>
           </div>
-          <h3>Our Interior services </h3>
+          <h3 className="font-bold text-center">Our Interior services </h3>
         </div>
         <Container maxWidth="md" className="mt-8">
           <Box className=" flex justify-center sm:px-8 py-4 sm:py-8">

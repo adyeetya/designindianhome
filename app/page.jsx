@@ -32,7 +32,7 @@ export default function Home() {
         <EndToEndImageGrid />
         <FAQ />
         {/* <div className="bg-gradient-to-br from-orange-200 to-yellow-300 p-4 dark:text-white"> */}
-        <div className="bg-red-400 p-4 dark:text-white">
+        <div className="bg-red-500 p-4 dark:text-white">
           <MyForm />
         </div>
         <PostFooter />

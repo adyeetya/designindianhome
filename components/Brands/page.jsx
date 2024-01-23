@@ -92,7 +92,7 @@ const Brands = () => {
           <div className="box bi"></div>
         </div>
       </div>
-      <div className="wrapperlatesti">
+      <div className="">
         {/* <h1>Our Exclusive Packages</h1> */}
         <div className="flex justify-center items-center sm:my-8">
           <div style={containerStyle}>
@@ -108,7 +108,7 @@ const Brands = () => {
             />
           </div>
         </div>
-        <h3>The Best in Class &#34; Tailormade &#34; Interior Plans</h3>
+        <h3 className="font-bold text-center">The Best in Class &#34; Tailormade &#34; Interior Plans</h3>
       </div>
       {/* section visible in the large view */}
       <div className="jiu">
@@ -224,7 +224,7 @@ const Brands = () => {
           <div className="box bi"></div>
         </div>
       </div>
-      <div className="wrapperlatest">
+      <div className="">
         {/* <h1>Why We Deliver Inspiring Interiors</h1> */}
         <div className="flex justify-center items-center sm:my-8">
           <div style={containerStyle}>

@@ -120,7 +120,7 @@ const Display = () => {
  </svg>
 </div> */}
 
-      <div className="wrapperlatesti">
+      <div className="">
         {/* <h1>Exquisite Designs</h1> */}
         <div className="flex justify-center items-center sm:my-8">
           <div style={containerStyle}>
@@ -136,7 +136,7 @@ const Display = () => {
             />
           </div>
         </div>
-        <h3> Exquisite Makeovers</h3>
+        <h3 className="font-bold text-center"> Exquisite Makeovers</h3>
       </div>
 
       <div className="wrapper">

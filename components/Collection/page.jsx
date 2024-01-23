@@ -346,16 +346,30 @@ const Collection = () => {
     target: aniRef,
   });
 
-  const translateXright = useTransform(scrollYProgress, [1, 0], [0, 10]);
-  const translateXleft = useTransform(scrollYProgress, [1, 0], [0, -10]);
+  const translateXright = useTransform(scrollYProgress, [1, 0], [20, -20]);
+  const translateXleft = useTransform(scrollYProgress, [1, 0], [-20, 20]);
+
+  const translateXrightMob = useTransform(scrollYProgress, [1, 0], [100, -100]);
+  const translateXleftMob = useTransform(scrollYProgress, [1, 0], [-100, 100]);
+
   const translateXrightWithSpring = useSpring(translateXright, {
     stiffness: 200,
-    damping: 10,
+    damping: 40,
   });
-  const translateXlefttWithSpring = useSpring(translateXleft, {
+  const translateXleftWithSpring = useSpring(translateXleft, {
     stiffness: 200,
+    damping: 40,
+  });
+
+  const translateXrightWithSpringMob = useSpring(translateXrightMob, {
+    stiffness: 10,
     damping: 10,
   });
+  const translateXleftWithSpringMob = useSpring(translateXleftMob, {
+    stiffness: 10,
+    damping: 10,
+  });
+
 
   const videoVariants = {
     initial: {
@@ -624,16 +638,16 @@ const Collection = () => {
               </div>
               <div className="animated">
                 <motion.h2
-                  className="md:text-6xl text-2xl  text-center"
-                  style={{ x: translateXlefttWithSpring }}
+                  className="md:text-3xl text-md  text-center overflow-hidden uppercase"
+                  style={isLargeScreen?{ x: translateXleftWithSpringMob }:{ x: translateXleftWithSpring }}
                 >
-                  <b>Dive Deep</b> into the
+                  <b>Dive Deep</b> into the World of <b>DIH</b>
                 </motion.h2>
                 <motion.h2
-                  className="md:text-6xl text-2xl  text-center"
-                  style={{ x: translateXrightWithSpring }}
+                  className="md:text-3xl text-md  text-center  overflow-hidden uppercase"
+                  style={isLargeScreen?{ x: translateXrightWithSpringMob }:{ x: translateXrightWithSpring }}
                 >
-                  Luxurious World of <b>DIH</b>
+                  <b>Dive Deep</b> into the World of <b>DIH</b>
                 </motion.h2>
 
                 <motion.video
@@ -800,7 +814,7 @@ const Collection = () => {
           {/* before and after */}
           <div className="flex flex-col justify-center items-center">
             <div className="px-16 m-auto" id="news">
-              <div className="wrapperlatest">
+              <div className="">
                 <div className="flex justify-center items-center sm:my-8">
                   <div style={containerStyle}>
                     <div
@@ -818,7 +832,7 @@ const Collection = () => {
                     />
                   </div>
                 </div>
-                <h3>Affordable Luxury</h3>
+                <h3 className="font-bold text-center">Affordable Luxury</h3>
                 <p className="px-6 py-4 text-center">
                   We often use collective nouns to refer to groups of people.
                   Examples: team, gang, squad, army, jury, clergy, cult, crew.
@@ -1033,7 +1047,7 @@ const Collection = () => {
       </div>
       {/* ------------------------------------------ */}
 
-      <div className="wrapperlatest ">
+      <div className=" ">
         {/* <h1>Best Trending Kitchens</h1> */}
         <div className="flex justify-center items-center sm:my-8">
           <div style={containerStyle}>
@@ -1077,7 +1091,7 @@ const Collection = () => {
         </div>
       </div>
 
-      <div className="wrapperlatest ">
+      <div className=" ">
         {/* <h1>Best Trending Wardrobes</h1> */}
         <div className="flex justify-center items-center sm:my-8">
           <div style={containerStyle}>
@@ -1121,7 +1135,7 @@ const Collection = () => {
         </div>
       </div>
 
-      <div className="wrapperlatest ">
+      <div className=" ">
         {/* <h1>Best Trending Interiors</h1> */}
         <div className="flex justify-center items-center sm:my-8">
           <div style={containerStyle}>
@@ -1166,7 +1180,7 @@ const Collection = () => {
         </div>
       </div>
 
-      <div className="wrapperlatest ">
+      <div className=" ">
         {/* <h1>Best Trending Structures</h1> */}
         <div className="flex justify-center items-center sm:my-8">
           <div style={containerStyle}>
@@ -1290,7 +1304,7 @@ const Collection = () => {
         </div>
       </div>
 
-      <div className="wrapperlatest">
+      <div className="">
         {/* <h1>Brands you will find in our products</h1> */}
         <div className="flex justify-center items-center sm:my-8">
           <div style={containerStyle}>
@@ -1374,7 +1388,7 @@ const Collection = () => {
             </text>
           </svg>
         </div>
-        <div className="w-full wrapperlatest">
+        <div className="w-full">
           {/* <h1 className=" mr-[15%] text-center mx-auto">
             Our Corporate Presence
           </h1> */}
