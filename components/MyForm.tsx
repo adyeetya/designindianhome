@@ -150,7 +150,7 @@ const MyForm: React.FC<MyFormProps> = () => {
           </div>
           <button
             type="submit"
-            className="bg-green-500 text-white px-4 py-2 rounded-3xl flex items-center justify-center hover:bg-green-600 mt-4 sm:mt-0"
+            className="mt-8 bg-green-400 hover:bg-green-600 text-lg py-3 px-6 mb-12 rounded-full hover:text-white flex justify-center items-center "
           >
             Book Free Site Visit <ChevronRight className="ml-2" />
           </button>

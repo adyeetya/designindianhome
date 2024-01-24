@@ -138,7 +138,7 @@ const EndToEndImageGrid = () => {
               variants={textVariant}
               className="flex justify-center items-center sm:my-8"
             >
-              <div style={containerStyle}>
+              <div style={containerStyle} className="mb-4">
                 <div
                   style={textContainerStyle}
                   className="flex justify-center "
@@ -164,7 +164,7 @@ const EndToEndImageGrid = () => {
               variants={imagesVariant}
               initial="initial"
               whileInView="animate"
-              className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4"
+              className="grid grid-cols-2 md:grid-cols-3 gap-16"
             >
               {imageList.map((item, index) => (
                 <motion.div
@@ -172,10 +172,19 @@ const EndToEndImageGrid = () => {
                   key={index}
                   className="text-center md:w-full sm:w-4/5"
                 >
-                  <div className="mb-4 sm:ml-8">
+                  {/* <div className="mb-4 sm:ml-8">
                     <Image
                       height={100}
                       width={200}
+                      src={item.src}
+                      alt={item.text}
+                      className="w-full object-cover"
+                    />
+                    <p className="text-sm mt-2">{item.text}</p>
+                  </div> */}
+                  <div className="mb-4 sm:w-[300px] w-[200px] sm:ml-8">
+                    <img
+                    
                       src={item.src}
                       alt={item.text}
                       className="w-full object-cover"

@@ -91,7 +91,7 @@ const ResponsiveTabs = () => {
             <div className="box bi"></div>
           </div>
         </div>
-        <div className="">
+        <div className="mt-16">
           {/* <h1>End-to-End Interior Solutions</h1> */}
           <div className="flex justify-center items-center sm:my-8">
             <div style={containerStyle}>

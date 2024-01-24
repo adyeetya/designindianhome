@@ -96,9 +96,8 @@ const DesignDropdown = ({
           {heading}
         </span>
         <svg
-          className={`ml-2 h-4 w-4 inline-block transform ${
-            isOpen ? "rotate-180" : ""
-          }`}
+          className={`ml-2 h-4 w-4 inline-block transform ${isOpen ? "rotate-180" : ""
+            }`}
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"
@@ -280,11 +279,13 @@ export class Footer extends Component {
           {/* <WaveGradient /> */}
           <div className=" row">
             <div className="text-black col-lg-12 flex items-center justify-center">
-              <button className=" display-center run rounded-full border-dotted border-2 border-black py-12  mt-4  md:py-48 hover:bg-black hover:text-white">
-                Call Us Today! <br />
-                <span className="button2 pb-4">
-                  We can talk about how big this button is.
-                </span>
+              <button className="display-center run rounded-full border-dotted border-2 border-black py-12 mt-4 md:py-48 hover:bg-black hover:text-white">
+                <a href="tel:+919899264978" className="">
+                  Call Us Today! <br />
+                  <span className="button2 pb-4">
+                    We can talk about how big this button is.
+                  </span>
+                </a>
               </button>
             </div>
           </div>
@@ -295,47 +296,53 @@ export class Footer extends Component {
 
           <div className="flex flex-col items-center md:flex-row justify-center gap-6 md:gap-32 w-full mt-5">
             {/* Brand 1 */}
-            <div className="text-center">
-              <Image
-                src="/dkilogo.png"
-                alt=""
-                width={200}
-                height={80}
-                style={{ alignContent: "center" }}
-              />
+            <a href="https://www.designindiankitchen.com" target="_blank" rel="noopener noreferrer">
+              <div className="text-center flex flex-col items-center justify-center">
 
-              <p className="text-green-500 text-2xl font-medium">
-                Design Indian Kitchen
-              </p>
-            </div>
+                <Image
+                  src="/dkilogo.png"
+                  alt=""
+                  width={200}
+                  height={80}
+                />
+                <p className="text-green-500 text-2xl font-medium">
+                  Design Indian Kitchen
+                </p>
+
+              </div>
+            </a>
 
             {/* Brand 2 */}
-            <div className="text-center mt-4 md:mt-0">
-              <Image
-                src="/desig indian homes.gif"
-                alt=""
-                width={200}
-                height={80}
-                style={{ alignContent: "center" }}
-              />
-              <p className="text-green-500 text-2xl font-medium">
-                Design Indian Home
-              </p>
-            </div>
+            <a href="https://www.designindianhomes.com" target="_blank" rel="noopener noreferrer">
+              <div className="text-center flex flex-col items-center justify-center">
+                <Image
+                  src="/desig indian homes.gif"
+                  alt=""
+                  width={200}
+                  height={80}
+
+                />
+                <p className="text-green-500 text-2xl font-medium">
+                  Design Indian Home
+                </p>
+              </div>
+            </a>
 
             {/* Brand 3 */}
-            <div className="text-center mt-4 md:mt-0">
-              <Image
-                src="/footer-logo-multi.png"
-                alt=""
-                width={300}
-                height={80}
-                style={{ alignContent: "center" }}
-              />
-              <p className="text-green-500 text-2xl font-medium">
-                Design Indian Wardrobe
-              </p>
-            </div>
+            <a href="https://www.designindianwardrobes.com" target="_blank" rel="noopener noreferrer">
+              <div className="text-center flex flex-col items-center justify-center">
+                <Image
+                  src="/footer-logo-multi.png"
+                  alt=""
+                  width={300}
+                  height={80}
+
+                />
+                <p className="text-green-500 text-2xl font-medium">
+                  Design Indian Wardrobe
+                </p>
+              </div>
+            </a>
           </div>
 
           {/* Features Section */}
@@ -416,7 +423,9 @@ export class Footer extends Component {
           </div>
 
           {/* Social Media and Copyright Section */}
+          {/* add hr */}
           <div className="flex flex-col md:flex-row justify-center gap-8  text-black">
+       
             {/* Social Media Icons */}
             <div className="text-left">
               <Image
@@ -622,10 +631,10 @@ export class Footer extends Component {
             </div>
           </div>
           <div>
-            <h1 className="text-6xl md:text-lg font-extrabold text-center my-16">
+            {/* <h1 className="text-6xl md:text-lg font-extrabold text-center my-16">
               WE ARE DELHI BASED
-            </h1>
-            <div className="flex flex-col md:flex-row justify-center gap-36  text-black">
+            </h1> */}
+            <div className="flex flex-col md:flex-row justify-center gap-36 mt-16  text-black">
               <div>
                 <h1 className="text-4xl font-bold ">THE BRAND</h1>
                 <ul className="text-lg font-bold mt-4">

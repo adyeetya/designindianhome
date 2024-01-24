@@ -42,6 +42,8 @@ const steps = [
   },
 ]
 
+
+
 const StepperComponent = () => {
   const [activeStep, setActiveStep] = useState(0)
 
@@ -58,10 +60,48 @@ const StepperComponent = () => {
     return () => clearInterval(interval);
   }, [activeStep]);
 
+  const containerStyle = {
+    position: "relative",
+    height: "fit-content", // Adjust as needed
+    width: "fit-content", // Adjust as needed
+    display: "inline-block", // Ensure the container only takes the size of its content
+  };
+
+  const textContainerStyle = {
+    zIndex: "1", // Ensure text is above the background image
+    textAlign: "center", // Center the text
+    position: "relative", // Position the text within the container
+  };
+
+  const backgroundImageStyle = {
+    position: "absolute", // Position the image behind the text
+    top: "0",
+    left: "0",
+    width: "100%", // Set the width to 100%
+    height: "100%", // Set the height to 100%
+    objectFit: "cover", // Ensure the image covers the container
+    opacity: "0.5", // Adjust the opacity as needed
+  };
+
   return (
     <>
       <MaxWidthWrapper>
+      <div className="flex justify-center items-center sm:my-8">
+          <div style={containerStyle} className='my-16'>
+            <div style={textContainerStyle} className="flex justify-center ">
+              <h1 className="sm:text-4xl text-xl font-bold text-center">
+               Our Design Process
+              </h1>
+            </div>
+            <img
+              src="https://www.onlygfx.com/wp-content/uploads/2022/03/simple-gold-brush-stroke-banner-5.png"
+              alt="Paint Brush"
+              style={backgroundImageStyle}
+            />
+          </div>
+        </div>
         <div className="flex flex-col md:flex-row m-8">
+        
           {/* Image Section (50% width) */}
           <div className="w-full md:w-1/2">
             <Image

@@ -136,7 +136,7 @@ const ImageGrid = () => {
 
   return (
     <>
-      <MaxWidthWrapper className="mb-12 mt-28 sm:mt-40 flex flex-col items-center justify-center text-center">
+      <MaxWidthWrapper className="mb-12 sm:mt-28 mt-16 flex flex-col items-center justify-center text-center">
         <div className="py-2">
           <motion.div
             variants={textVariant}
@@ -148,10 +148,13 @@ const ImageGrid = () => {
               variants={textVariant}
               className="text-4xl font-bold mb-4"
             >
-              Top Picks For You
+              End To End Structural
             </motion.h2> */}
-            <motion.div  variants={textVariant} className="flex justify-center items-center sm:my-8">
-              <div style={containerStyle}>
+            <motion.div
+              variants={textVariant}
+              className="flex justify-center items-center sm:my-8"
+            >
+              <div style={containerStyle} className="mb-4">
                 <div
                   style={textContainerStyle}
                   className="flex justify-center "
@@ -168,7 +171,7 @@ const ImageGrid = () => {
               </div>
             </motion.div>
             <motion.p variants={textVariant} className="text-gray-600">
-              Impressive Collection For Your Home
+            Impressive Collection For Your Home
             </motion.p>
           </motion.div>
 
@@ -177,7 +180,7 @@ const ImageGrid = () => {
               variants={imagesVariant}
               initial="initial"
               whileInView="animate"
-              className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4"
+              className="grid grid-cols-2 md:grid-cols-3 gap-16"
             >
               {imageList.map((item, index) => (
                 <motion.div
@@ -185,10 +188,9 @@ const ImageGrid = () => {
                   key={index}
                   className="text-center md:w-full sm:w-4/5"
                 >
-                  <div className="mb-4 sm:ml-8">
-                    <Image
-                      height={100}
-                      width={200}
+                  <div className="mb-4 sm:w-[300px] w-[200px] sm:ml-8">
+                    <img
+                    
                       src={item.src}
                       alt={item.text}
                       className="w-full object-cover"
