@@ -188,7 +188,7 @@ const ImageGrid = () => {
                   key={index}
                   className="text-center md:w-full sm:w-4/5"
                 >
-                  <div className="mb-4 sm:w-[300px] w-[200px] sm:ml-8">
+                  <div className="mb-4 sm:w-[300px] w-[150px] sm:ml-8">
                     <img
                     
                       src={item.src}

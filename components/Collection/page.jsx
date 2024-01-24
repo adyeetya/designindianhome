@@ -2,22 +2,16 @@
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 import Marquee from "react-fast-marquee";
-import ReactBeforeSliderComponent from "react-before-after-slider-component";
+
 import "react-before-after-slider-component/dist/build.css";
 import React, { useState, useEffect, useRef } from "react";
-import ReactPlayer from "react-player";
+
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 import useMedia from "use-media";
-const FIRST_IMAGE = {
-  imageUrl:
-    "https://source.unsplash.com/a-kitchen-with-blue-cabinets-and-a-black-refrigerator-zFGBEikZoRg",
-};
-const SECOND_IMAGE = {
-  imageUrl:
-    "https://source.unsplash.com/a-ladder-and-buckets-of-paint-in-a-room-under-construction-XXanshmt5so",
-};
+import CarouselBeforeAfter from './CarousalBefore'
 
 const falshResponsive = {
   desktop: {
@@ -218,9 +212,32 @@ const WardrobeImageUrl = [
   },
 ];
 
+const containerStyle = {
+  position: "relative",
+  height: "fit-content", // Adjust as needed
+  width: "fit-content", // Adjust as needed
+  display: "inline-block", // Ensure the container only takes the size of its content
+};
+
+const textContainerStyle = {
+  zIndex: "1", // Ensure text is above the background image
+  textAlign: "center", // Center the text
+  position: "relative", // Position the text within the container
+};
+
+const backgroundImageStyle = {
+  position: "absolute", // Position the image behind the text
+  top: "0",
+  left: "0",
+  width: "100%", // Set the width to 100%
+  height: "100%", // Set the height to 100%
+  objectFit: "cover", // Ensure the image covers the container
+  opacity: "0.5", // Adjust the opacity as needed
+};
+
 const TruncatedText = () => {
 
-  
+
   const [showFullText, setShowFullText] = useState(false);
 
   const toggleFullText = () => {
@@ -230,93 +247,93 @@ const TruncatedText = () => {
   return (
     <div className=" text-center">
       <div className={` ${showFullText ? 'my-8' : 'my-2'}`}>
-        {showFullText ? 
-        <p className=" mb-2">
-        Design Indian Homes is India&#39;s top Interior, Architectural &
-        Modular Interior Brand serving across Delhi, Gurgaon, Noida & NCR. It
-        is the most sought out by Homemakers, Architects, Interior Designers,
-        Developers & just anyone who needs an Affordable Interior Makeover,
-        Renovation Services, Architectural Services, Modular Kitchen,
-        Wardrobe, Vanities, TV Units, Living works, Bathroom Or Just a
-        peaceful Turnkey Work by Our Team. We are serving End to End Interiors
-        & Modular Interiors across Delhi, Gurgaon, Noida, Faridabad & across
-        NCR.
-        <br /> Our Brand Design Indian Homes was established in 2007, we are a
-        professional team of certified architects, interior remodelers, and
-        also happen to be Largest manufacturers of Modular Kitchens,
-        Wardrobes, Tv units, Crockery units, Bookshelves, and just anything
-        residential or commercial. We are delivering affordable top quality
-        Interiors, Architectural Solutions, Modular Kitchens, Wardrobes, Tv
-        Units, Bookshelves, Shoeracks, Crockery Units etc & executing end to
-        end projects for our Clients. We are the Largest Manufacturers of
-        Modular Kitchens, Wardrobes & TV Units across New Delhi - Gurgaon -
-        Noida NCR, we have multiple modular manufacturing facilities across
-        North India and are associated with more than 900+ Architects,
-        Interior Designers, developers and Builders along with our thousands
-        of direct clients across New delhi - NCR. <br />
-        We have over 5000+ interior designs, and can cater to any custom
-        requirements for our clients and associates. Delivering the most
-        Affordable Luxury is our Principle and we work with utmost integrity
-        and complete transparency.
-        <br />
-        Due to the Goodwill built by the brand and faith of our clients, we
-        are the most referred to modular interior Brand in Delhi - Gurgaon -
-        Noida and across India. All our interior designs, architectural
-        concepts, modular kitchen designs, wardrobe designs, tv units designs
-        or any modular kitchens are planned to perfection as per the design
-        requirements. We create smooth, crisp and meticulous designs for your
-        residence & also are top modular kitchen & modular wardrobe
-        manufacturers with a precision timing in delivery, extensive warranty
-        and a life long relation with our Brand.
-        <br />
-        Our Modular Interior brand is also the top Modular brand in Delhi -
-        NCR India, and we are honoured with the prestigious award of the Top
-        Modular brand in India by the Timber Wood Society of India.
-        <br />
-        This is all due to the Hard work put in by our architectural
-        designers, our installers, our supervisors, our management and our
-        entire Team which works tirelessly 24/7 in delivering top notch
-        modular kitchen designs to our clients across New Delhi - India.
-        <br />
-        We have the largest Modular Interior facilities and are serving
-        extensively with most affordable solutions for the following services
-        : -
-        <br /> <br />
-        Modular Kitchens * Wardrobes * TV Units * Vanities <br />* Crockery
-        Units * Shoe Racks * Bookshelves * Partitions <br />* Studies & Bar
-        Units * Mandir Units * End To End Interiors * Complete Structures{" "}
-        <br />* Luxury Interiors & Residences * Luxury Kitchens And Wardrobes
-        * Italian - German - Swedish - Danish - Spanish Modular Kitchens &
-        Wardrobes
-        <br />
-        <br />
-        We assure you 100% Guaranteed Quotes across New Delhi - NCR for any
-        type of Interior Works, Architectural Works, renovation works, Modular
-        Kitchens, Wardrobes, TV units or just any Modular Works, custom
-        interior works or architectural consultancy works. We have the most
-        affordable modular interiors and serve all clients with perfect
-        understanding of the requirements. <br />
-        We also assure you to bring us any quotes and assure you flat 7% less
-        on any offerings by any vendor across New Delhi - NCR.
-        <br />
-        Connect with the Largest Interior, Architectural, Modular Kitchens &
-        Wardrobes Brand Across New Delhi - NCR - India.
-        <br />
-        We are the Top Awarded Largest manufacturers for Modular Kitchens &
-        Wardrobes across Delhi - NCR & have been rated as the TOP Interior &
-        Architectural Brand by The Architectural Congress India and Real Wood
-        Societies since 2016.
-        <br />
-      </p> :  <p className=" mb-2">
-        Design Indian Homes is India&#39;s top Interior, Architectural &
-        Modular Interior Brand serving across Delhi, Gurgaon, Noida & NCR. It
-        is the most sought out by Homemakers, Architects, Interior Designers,
-        Developers & just anyone who needs an Affordable Interior Makeover,
-        Renovation Services, Architectural Services, Modular Kitchen,
-        Wardrobe, Vanities, TV Units, Living works, Bathroom Or Just a
-        peaceful Turnkey Work by Our Team. We are serving End to End Interiors
-        & Modular Interiors across Delhi, Gurgaon, Noida, Faridabad & across
-        NCR.</p>}
+        {showFullText ?
+          <p className=" mb-2">
+            Design Indian Homes is India&#39;s top Interior, Architectural &
+            Modular Interior Brand serving across Delhi, Gurgaon, Noida & NCR. It
+            is the most sought out by Homemakers, Architects, Interior Designers,
+            Developers & just anyone who needs an Affordable Interior Makeover,
+            Renovation Services, Architectural Services, Modular Kitchen,
+            Wardrobe, Vanities, TV Units, Living works, Bathroom Or Just a
+            peaceful Turnkey Work by Our Team. We are serving End to End Interiors
+            & Modular Interiors across Delhi, Gurgaon, Noida, Faridabad & across
+            NCR.
+            <br /> Our Brand Design Indian Homes was established in 2007, we are a
+            professional team of certified architects, interior remodelers, and
+            also happen to be Largest manufacturers of Modular Kitchens,
+            Wardrobes, Tv units, Crockery units, Bookshelves, and just anything
+            residential or commercial. We are delivering affordable top quality
+            Interiors, Architectural Solutions, Modular Kitchens, Wardrobes, Tv
+            Units, Bookshelves, Shoeracks, Crockery Units etc & executing end to
+            end projects for our Clients. We are the Largest Manufacturers of
+            Modular Kitchens, Wardrobes & TV Units across New Delhi - Gurgaon -
+            Noida NCR, we have multiple modular manufacturing facilities across
+            North India and are associated with more than 900+ Architects,
+            Interior Designers, developers and Builders along with our thousands
+            of direct clients across New delhi - NCR. <br />
+            We have over 5000+ interior designs, and can cater to any custom
+            requirements for our clients and associates. Delivering the most
+            Affordable Luxury is our Principle and we work with utmost integrity
+            and complete transparency.
+            <br />
+            Due to the Goodwill built by the brand and faith of our clients, we
+            are the most referred to modular interior Brand in Delhi - Gurgaon -
+            Noida and across India. All our interior designs, architectural
+            concepts, modular kitchen designs, wardrobe designs, tv units designs
+            or any modular kitchens are planned to perfection as per the design
+            requirements. We create smooth, crisp and meticulous designs for your
+            residence & also are top modular kitchen & modular wardrobe
+            manufacturers with a precision timing in delivery, extensive warranty
+            and a life long relation with our Brand.
+            <br />
+            Our Modular Interior brand is also the top Modular brand in Delhi -
+            NCR India, and we are honoured with the prestigious award of the Top
+            Modular brand in India by the Timber Wood Society of India.
+            <br />
+            This is all due to the Hard work put in by our architectural
+            designers, our installers, our supervisors, our management and our
+            entire Team which works tirelessly 24/7 in delivering top notch
+            modular kitchen designs to our clients across New Delhi - India.
+            <br />
+            We have the largest Modular Interior facilities and are serving
+            extensively with most affordable solutions for the following services
+            : -
+            <br /> <br />
+            Modular Kitchens * Wardrobes * TV Units * Vanities <br />* Crockery
+            Units * Shoe Racks * Bookshelves * Partitions <br />* Studies & Bar
+            Units * Mandir Units * End To End Interiors * Complete Structures{" "}
+            <br />* Luxury Interiors & Residences * Luxury Kitchens And Wardrobes
+            * Italian - German - Swedish - Danish - Spanish Modular Kitchens &
+            Wardrobes
+            <br />
+            <br />
+            We assure you 100% Guaranteed Quotes across New Delhi - NCR for any
+            type of Interior Works, Architectural Works, renovation works, Modular
+            Kitchens, Wardrobes, TV units or just any Modular Works, custom
+            interior works or architectural consultancy works. We have the most
+            affordable modular interiors and serve all clients with perfect
+            understanding of the requirements. <br />
+            We also assure you to bring us any quotes and assure you flat 7% less
+            on any offerings by any vendor across New Delhi - NCR.
+            <br />
+            Connect with the Largest Interior, Architectural, Modular Kitchens &
+            Wardrobes Brand Across New Delhi - NCR - India.
+            <br />
+            We are the Top Awarded Largest manufacturers for Modular Kitchens &
+            Wardrobes across Delhi - NCR & have been rated as the TOP Interior &
+            Architectural Brand by The Architectural Congress India and Real Wood
+            Societies since 2016.
+            <br />
+          </p> : <p className=" mb-2">
+            Design Indian Homes is India&#39;s top Interior, Architectural &
+            Modular Interior Brand serving across Delhi, Gurgaon, Noida & NCR. It
+            is the most sought out by Homemakers, Architects, Interior Designers,
+            Developers & just anyone who needs an Affordable Interior Makeover,
+            Renovation Services, Architectural Services, Modular Kitchen,
+            Wardrobe, Vanities, TV Units, Living works, Bathroom Or Just a
+            peaceful Turnkey Work by Our Team. We are serving End to End Interiors
+            & Modular Interiors across Delhi, Gurgaon, Noida, Faridabad & across
+            NCR.</p>}
       </div>
 
       {/* Read More / Read Less button */}
@@ -329,6 +346,7 @@ const TruncatedText = () => {
     </div>
   );
 };
+
 
 
 const Collection = () => {
@@ -527,28 +545,7 @@ const Collection = () => {
     });
   }, []);
 
-  const containerStyle = {
-    position: "relative",
-    height: "fit-content", // Adjust as needed
-    width: "fit-content", // Adjust as needed
-    display: "inline-block", // Ensure the container only takes the size of its content
-  };
 
-  const textContainerStyle = {
-    zIndex: "1", // Ensure text is above the background image
-    textAlign: "center", // Center the text
-    position: "relative", // Position the text within the container
-  };
-
-  const backgroundImageStyle = {
-    position: "absolute", // Position the image behind the text
-    top: "0",
-    left: "0",
-    width: "100%", // Set the width to 100%
-    height: "100%", // Set the height to 100%
-    objectFit: "cover", // Ensure the image covers the container
-    opacity: "0.5", // Adjust the opacity as needed
-  };
 
 
 
@@ -638,87 +635,10 @@ const Collection = () => {
       </section>
 
       <div className="mb-12">
-      
 
-        {/* <p className="read-more__text mb-2">
-          Design Indian Homes is India&#39;s top Interior, Architectural &
-          Modular Interior Brand serving across Delhi, Gurgaon, Noida & NCR. It
-          is the most sought out by Homemakers, Architects, Interior Designers,
-          Developers & just anyone who needs an Affordable Interior Makeover,
-          Renovation Services, Architectural Services, Modular Kitchen,
-          Wardrobe, Vanities, TV Units, Living works, Bathroom Or Just a
-          peaceful Turnkey Work by Our Team. We are serving End to End Interiors
-          & Modular Interiors across Delhi, Gurgaon, Noida, Faridabad & across
-          NCR.
-          <br /> Our Brand Design Indian Homes was established in 2007, we are a
-          professional team of certified architects, interior remodelers, and
-          also happen to be Largest manufacturers of Modular Kitchens,
-          Wardrobes, Tv units, Crockery units, Bookshelves, and just anything
-          residential or commercial. We are delivering affordable top quality
-          Interiors, Architectural Solutions, Modular Kitchens, Wardrobes, Tv
-          Units, Bookshelves, Shoeracks, Crockery Units etc & executing end to
-          end projects for our Clients. We are the Largest Manufacturers of
-          Modular Kitchens, Wardrobes & TV Units across New Delhi - Gurgaon -
-          Noida NCR, we have multiple modular manufacturing facilities across
-          North India and are associated with more than 900+ Architects,
-          Interior Designers, developers and Builders along with our thousands
-          of direct clients across New delhi - NCR. <br />
-          We have over 5000+ interior designs, and can cater to any custom
-          requirements for our clients and associates. Delivering the most
-          Affordable Luxury is our Principle and we work with utmost integrity
-          and complete transparency.
-          <br />
-          Due to the Goodwill built by the brand and faith of our clients, we
-          are the most referred to modular interior Brand in Delhi - Gurgaon -
-          Noida and across India. All our interior designs, architectural
-          concepts, modular kitchen designs, wardrobe designs, tv units designs
-          or any modular kitchens are planned to perfection as per the design
-          requirements. We create smooth, crisp and meticulous designs for your
-          residence & also are top modular kitchen & modular wardrobe
-          manufacturers with a precision timing in delivery, extensive warranty
-          and a life long relation with our Brand.
-          <br />
-          Our Modular Interior brand is also the top Modular brand in Delhi -
-          NCR India, and we are honoured with the prestigious award of the Top
-          Modular brand in India by the Timber Wood Society of India.
-          <br />
-          This is all due to the Hard work put in by our architectural
-          designers, our installers, our supervisors, our management and our
-          entire Team which works tirelessly 24/7 in delivering top notch
-          modular kitchen designs to our clients across New Delhi - India.
-          <br />
-          We have the largest Modular Interior facilities and are serving
-          extensively with most affordable solutions for the following services
-          : -
-          <br /> <br />
-          Modular Kitchens * Wardrobes * TV Units * Vanities <br />* Crockery
-          Units * Shoe Racks * Bookshelves * Partitions <br />* Studies & Bar
-          Units * Mandir Units * End To End Interiors * Complete Structures{" "}
-          <br />* Luxury Interiors & Residences * Luxury Kitchens And Wardrobes
-          * Italian - German - Swedish - Danish - Spanish Modular Kitchens &
-          Wardrobes
-          <br />
-          <br />
-          We assure you 100% Guaranteed Quotes across New Delhi - NCR for any
-          type of Interior Works, Architectural Works, renovation works, Modular
-          Kitchens, Wardrobes, TV units or just any Modular Works, custom
-          interior works or architectural consultancy works. We have the most
-          affordable modular interiors and serve all clients with perfect
-          understanding of the requirements. <br />
-          We also assure you to bring us any quotes and assure you flat 7% less
-          on any offerings by any vendor across New Delhi - NCR.
-          <br />
-          Connect with the Largest Interior, Architectural, Modular Kitchens &
-          Wardrobes Brand Across New Delhi - NCR - India.
-          <br />
-          We are the Top Awarded Largest manufacturers for Modular Kitchens &
-          Wardrobes across Delhi - NCR & have been rated as the TOP Interior &
-          Architectural Brand by The Architectural Congress India and Real Wood
-          Societies since 2016.
-          <br />
-        </p> */}
-        <TruncatedText/>
-      
+
+        <TruncatedText />
+
       </div>
 
       <Marquee style={{ backgroundColor: " yellow " }} className="my-6">
@@ -744,13 +664,13 @@ const Collection = () => {
               <div className="animated">
                 <motion.h2
                   className="md:text-4xl font-extrabold text-md  text-center overflow-hidden uppercase mt-8"
-                  style={isLargeScreen?{ x: translateXleftWithSpringMob }:{ x: translateXleftWithSpring }}
+                  style={isLargeScreen ? { x: translateXleftWithSpringMob } : { x: translateXleftWithSpring }}
                 >
                   <span className="text-red-500">Dive Deep</span> into the World of <span className="">DIH</span>
                 </motion.h2>
                 <motion.h2
                   className="md:text-4xl font-extrabold text-md  text-center  overflow-hidden uppercase mb-8"
-                  style={isLargeScreen?{ x: translateXrightWithSpringMob }:{ x: translateXrightWithSpring }}
+                  style={isLargeScreen ? { x: translateXrightWithSpringMob } : { x: translateXrightWithSpring }}
                 >
                   <b>Dive Deep</b> into the World of <b className="text-red-500">DIH</b>
                 </motion.h2>
@@ -916,43 +836,11 @@ const Collection = () => {
               </motion.div>
             </motion.div>
           </div>
-          {/* before and after */}
-          <div className="flex flex-col justify-center items-center">
-            <div className="px-16 m-auto my-16" id="news">
-              <div className="mt-16 sm:mt-0">
-                <div className="flex justify-center items-center sm:my-8">
-                  <div style={containerStyle} className="mb-4">
-                    <div
-                      style={textContainerStyle}
-                      className="flex justify-center "
-                    >
-                      <h1 className="sm:text-4xl text-xl font-bold text-center">
-                        Before And After
-                      </h1>
-                    </div>
-                    <img
-                      src="https://www.onlygfx.com/wp-content/uploads/2022/03/simple-gold-brush-stroke-banner-5.png"
-                      alt="Paint Brush"
-                      style={backgroundImageStyle}
-                    />
-                  </div>
-                </div>
-                <h3 className="font-bold text-center">Affordable Luxury</h3>
-                <p className="px-6 text-sm py-4 text-center">
-                Transforming spaces into dreams waiting to unfold, our skilled team revives the ordinary into extraordinary.
-                </p>
-              </div>
-            </div>
-
-            <div className=" mb-16" id="news">
-              <ReactBeforeSliderComponent
-                firstImage={FIRST_IMAGE}
-                secondImage={SECOND_IMAGE}
-              />
-            </div>
-          </div>
-          {/* ------------ */}
+         
         </section>
+         {/* before and after */}
+         <CarouselBeforeAfter/>
+          {/* ------------ */}
       </div>
 
       <div className="containr">
@@ -1233,7 +1121,7 @@ const Collection = () => {
           })}
         </Carousel>
         <div className="flex justify-center items-center ">
-        <button className=" bg-green-400 hover:bg-green-600 text-lg py-3 px-6 mb-12 rounded-full hover:text-white  font-bold ">
+          <button className=" bg-green-400 hover:bg-green-600 text-lg py-3 px-6 mb-12 rounded-full hover:text-white  font-bold ">
             Check Out Our Collections
           </button>
         </div>
@@ -1278,7 +1166,7 @@ const Collection = () => {
         </Carousel>
 
         <div className="flex justify-center items-center ">
-        <button className=" bg-green-400 hover:bg-green-600 text-lg py-3 px-6 mb-12 rounded-full hover:text-white  font-bold ">
+          <button className=" bg-green-400 hover:bg-green-600 text-lg py-3 px-6 mb-12 rounded-full hover:text-white  font-bold ">
             Check Out Our Collections
           </button>
         </div>
@@ -1322,7 +1210,7 @@ const Collection = () => {
           })}
         </Carousel>
         <div className="flex justify-center items-center ">
-        <button className=" bg-green-400 hover:bg-green-600 text-lg py-3 px-6 mb-12 rounded-full hover:text-white  font-bold ">
+          <button className=" bg-green-400 hover:bg-green-600 text-lg py-3 px-6 mb-12 rounded-full hover:text-white  font-bold ">
             Check Out Our Collections
           </button>
         </div>

@@ -742,7 +742,7 @@ export class Footer extends Component {
           <p>
             DESIGN INDIAN HOMES | ALL RIGHTS RESERVED 2024-25 CRAFTED WITH LOVE
             BY IN HOUSE BRAND - <a
-              href="https://designerlounge.com"
+              href="https://www.designerlounge.com"
               target="_blank"
               rel="noopener noreferrer"
               className="text-yellow-400 font-bold underline"

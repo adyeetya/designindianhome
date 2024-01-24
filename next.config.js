@@ -4,7 +4,7 @@ const nextConfig = {
     // ...other configurations
 
     images: {
-      domains: ['www.modularkitcheninnoida.com'],
+      domains: ['www.modularkitcheninnoida.com', "images.unsplash.com"],
   },
     async rewrites() {
       return [
