@@ -116,7 +116,7 @@ const AccordionSection = () => {
     width: "100%", // Set the width to 100%
     height: "100%", // Set the height to 100%
     objectFit: "cover", // Ensure the image covers the container
-    opacity: "0.5", // Adjust the opacity as needed
+    opacity: "1", // Adjust the opacity as needed
   };
 
   return (

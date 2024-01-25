@@ -232,7 +232,7 @@ const backgroundImageStyle = {
   width: "100%", // Set the width to 100%
   height: "100%", // Set the height to 100%
   objectFit: "cover", // Ensure the image covers the container
-  opacity: "0.5", // Adjust the opacity as needed
+  opacity: "1", // Adjust the opacity as needed
 };
 
 const TruncatedText = () => {
@@ -338,11 +338,11 @@ const TruncatedText = () => {
 
       {/* Read More / Read Less button */}
       <button
-        className="text-blue-500 underline cursor-pointer"
-        onClick={toggleFullText}
-      >
-        {showFullText ? 'Read Less' : 'Read More'}
-      </button>
+  className={`border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white px-4 py-2 rounded-lg cursor-pointer transition duration-300 ${showFullText ? 'text-blue-500 cursor-pointer' : ''}`}
+  onClick={toggleFullText}
+>
+  {showFullText ? 'Read Less' : 'Read More'}
+</button>
     </div>
   );
 };
@@ -480,8 +480,8 @@ const Collection = () => {
   const translateXright = useTransform(scrollYProgress, [1, 0], [20, -20]);
   const translateXleft = useTransform(scrollYProgress, [1, 0], [-20, 20]);
 
-  const translateXrightMob = useTransform(scrollYProgress, [1, 0], [100, -100]);
-  const translateXleftMob = useTransform(scrollYProgress, [1, 0], [-100, 100]);
+  const translateXrightMob = useTransform(scrollYProgress, [1, 0], [60, -60]);
+  const translateXleftMob = useTransform(scrollYProgress, [1, 0], [-60, 60]);
 
   const translateXrightWithSpring = useSpring(translateXright, {
     stiffness: 200,
@@ -552,7 +552,7 @@ const Collection = () => {
   return (
     <>
       <div id="fry">
-        <div style={containerStyle}>
+        <div style={containerStyle} className="sm:mt-8"> 
           <div style={textContainerStyle}>
             <h3 className="sm:text-3xl text-xl font-bold">
               INDIA’S NO.1 INTERIOR & ARCHITECTURAL BRAND
@@ -663,16 +663,16 @@ const Collection = () => {
               </div>
               <div className="animated">
                 <motion.h2
-                  className="md:text-4xl font-extrabold text-md  text-center overflow-hidden uppercase mt-8"
+                  className="md:text-6xl font-extrabold text-md  text-center overflow-hidden uppercase mt-8"
                   style={isLargeScreen ? { x: translateXleftWithSpringMob } : { x: translateXleftWithSpring }}
                 >
-                  <span className="text-red-500">Dive Deep</span> into the World of <span className="">DIH</span>
+                  <span className="text-red-500">Dive Deep</span> <span className="italic font-light">into</span> 
                 </motion.h2>
                 <motion.h2
-                  className="md:text-4xl font-extrabold text-md  text-center  overflow-hidden uppercase mb-8"
+                  className="md:text-6xl font-extrabold text-md  text-center  overflow-hidden uppercase mb-8"
                   style={isLargeScreen ? { x: translateXrightWithSpringMob } : { x: translateXrightWithSpring }}
                 >
-                  <b>Dive Deep</b> into the World of <b className="text-red-500">DIH</b>
+                 <span className="italic font-light">the World of </span> <b className="text-red-500">DIH</b>
                 </motion.h2>
 
                 <motion.video
