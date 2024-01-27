@@ -480,8 +480,8 @@ const Collection = () => {
   const translateXright = useTransform(scrollYProgress, [1, 0], [20, -20]);
   const translateXleft = useTransform(scrollYProgress, [1, 0], [-20, 20]);
 
-  const translateXrightMob = useTransform(scrollYProgress, [1, 0], [60, -60]);
-  const translateXleftMob = useTransform(scrollYProgress, [1, 0], [-60, 60]);
+  const translateXrightMob = useTransform(scrollYProgress, [1, 0], [40, -40]);
+  const translateXleftMob = useTransform(scrollYProgress, [1, 0], [-40, 40]);
 
   const translateXrightWithSpring = useSpring(translateXright, {
     stiffness: 200,
