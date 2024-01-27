@@ -5,7 +5,7 @@ import Marquee from "react-fast-marquee";
 
 import "react-before-after-slider-component/dist/build.css";
 import React, { useState, useEffect, useRef } from "react";
-
+import Link from 'next/link';
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
@@ -338,11 +338,11 @@ const TruncatedText = () => {
 
       {/* Read More / Read Less button */}
       <button
-  className={`border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white px-4 py-2 rounded-lg cursor-pointer transition duration-300 ${showFullText ? 'text-blue-500 cursor-pointer' : ''}`}
-  onClick={toggleFullText}
->
-  {showFullText ? 'Read Less' : 'Read More'}
-</button>
+        className={`border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white px-4 py-2 rounded-lg cursor-pointer transition duration-300 ${showFullText ? 'text-blue-500 cursor-pointer' : ''}`}
+        onClick={toggleFullText}
+      >
+        {showFullText ? 'Read Less' : 'Read More'}
+      </button>
     </div>
   );
 };
@@ -552,7 +552,7 @@ const Collection = () => {
   return (
     <>
       <div id="fry">
-        <div style={containerStyle} className="sm:mt-8"> 
+        <div style={containerStyle} className="sm:mt-8">
           <div style={textContainerStyle}>
             <h3 className="sm:text-3xl text-xl font-bold">
               INDIA’S NO.1 INTERIOR & ARCHITECTURAL BRAND
@@ -666,31 +666,33 @@ const Collection = () => {
                   className="md:text-6xl font-extrabold text-md  text-center overflow-hidden uppercase mt-8"
                   style={isLargeScreen ? { x: translateXleftWithSpringMob } : { x: translateXleftWithSpring }}
                 >
-                  <span className="text-red-500">Dive Deep</span> <span className="italic font-light">into</span> 
+                  <span className="text-red-500">Dive Deep</span> <span className="italic font-light">into</span>
                 </motion.h2>
                 <motion.h2
                   className="md:text-6xl font-extrabold text-md  text-center  overflow-hidden uppercase mb-8"
                   style={isLargeScreen ? { x: translateXrightWithSpringMob } : { x: translateXrightWithSpring }}
                 >
-                 <span className="italic font-light">the World of </span> <b className="text-red-500">DIH</b>
+                  <span className="italic font-light">the World of </span> <b className="text-red-500">DIH</b>
                 </motion.h2>
 
-                <motion.video
-                  loop
-                  autoPlay
-                  playsInline
-                  muted
-                  controls={isPlaying}
-                  src="video/lux.mp4"
-                  alt=""
-                  height={10}
-                  width={1500}
-                  className="rounded shadow-md my-6 max-[600px]:mb-10"
-                  id="seek"
-                  variants={videoVariants}
-                  initial="initial"
-                  whileInView="animate"
-                />
+                <Link href="/luxe">
+                  <motion.video
+                    loop
+                    autoPlay
+                    playsInline
+                    muted
+                    controls={isPlaying}
+                    src="video/lux.mp4"
+                    alt=""
+                    height={10}
+                    width={1500}
+                    className="rounded shadow-md my-6 max-[600px]:mb-10"
+                    id="seek"
+                    variants={videoVariants}
+                    initial="initial"
+                    whileInView="animate"
+                  />
+                </Link>
               </div>
               <section class="bordered bordersec"></section>
               <div className="main-hero">
@@ -836,11 +838,11 @@ const Collection = () => {
               </motion.div>
             </motion.div>
           </div>
-         
+
         </section>
-         {/* before and after */}
-         <CarouselBeforeAfter/>
-          {/* ------------ */}
+        {/* before and after */}
+        <CarouselBeforeAfter />
+        {/* ------------ */}
       </div>
 
       <div className="containr">

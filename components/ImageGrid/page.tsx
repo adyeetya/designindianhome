@@ -136,8 +136,8 @@ const ImageGrid = () => {
 
   return (
     <>
-      <MaxWidthWrapper className="mb-12 sm:mt-28 mt-16 flex flex-col items-center justify-center text-center">
-        <div className="py-2">
+     
+        <div className="py-2 mb-12 sm:mt-28 mt-16 flex flex-col items-center justify-center text-center">
           <motion.div
             variants={textVariant}
             initial="initial"
@@ -176,11 +176,11 @@ const ImageGrid = () => {
           </motion.div>
 
           <div className="container mx-auto mt-8">
-            <motion.div
+          <motion.div
               variants={imagesVariant}
               initial="initial"
               whileInView="animate"
-              className="grid grid-cols-2 md:grid-cols-3 gap-16"
+              className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 lg:gap-4 gap-4"
             >
               {imageList.map((item, index) => (
                 <motion.div
@@ -188,12 +188,22 @@ const ImageGrid = () => {
                   key={index}
                   className="text-center md:w-full sm:w-4/5"
                 >
-                  <div className="mb-4 sm:w-[300px] w-[150px] sm:ml-8">
+                  {/* <div className="mb-4 sm:ml-8">
+                    <Image
+                      height={100}
+                      width={200}
+                      src={item.src}
+                      alt={item.text}
+                      className="w-full object-cover"
+                    />
+                    <p className="text-sm mt-2">{item.text}</p>
+                  </div> */}
+                  <div className="mb-4 sm:w-[200px] w-[150px]">
                     <img
                     
                       src={item.src}
                       alt={item.text}
-                      className="w-full object-cover"
+                      className="w-full object-cover mr-4"
                     />
                     <p className="text-sm mt-2">{item.text}</p>
                   </div>
@@ -202,7 +212,7 @@ const ImageGrid = () => {
             </motion.div>
           </div>
         </div>
-      </MaxWidthWrapper>
+     
     </>
   );
 };
