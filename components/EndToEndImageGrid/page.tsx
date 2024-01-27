@@ -164,7 +164,7 @@ const EndToEndImageGrid = () => {
               variants={imagesVariant}
               initial="initial"
               whileInView="animate"
-              className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 lg:gap-4 gap-4"
+              className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 lg:gap-4 gap-4"
             >
               {imageList.map((item, index) => (
                 <motion.div

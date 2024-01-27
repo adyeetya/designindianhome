@@ -51,29 +51,24 @@ const responsive = {
 const StructureImageUrl = [
   //First image url
   {
-    url: "https://source.unsplash.com/black-flat-screen-tv-mounted-on-white-wall-3hEGHI4b4gg",
+    url: "/images/structural/str1.jpg",
   },
   {
-    url: "https://source.unsplash.com/white-wooden-kitchen-island-and-cupboard-cabinets-near-glass-panel-door-AQl-J19ocWE",
+    url: "/images/structural/str2.jpg",
   },
-  //Second image url
   {
-    url: "https://source.unsplash.com/white-and-black-kitchen-cabinet-jylx7bVZMIk",
+    url: "/images/structural/str3.jpg",
   },
-  //Third image url
   {
-    url: "https://source.unsplash.com/black-round-bowl-on-brown-wooden-seat-NWG-vYPZDoM",
+    url: "/images/structural/str4.jpg",
   },
-
-  //Fourth image url
-
   {
-    url: "https://source.unsplash.com/two-brown-wooden-bar-stools-cc0Gg3BegjE",
+    url: "/images/structural/str5.jpg",
   },
-
   {
-    url: "https://source.unsplash.com/brown-and-white-wooden-kitchen-cabinet-DQpUeNzRj6s",
+    url: "/images/structural/str6.jpg",
   },
+  
 ];
 
 const flasherslider = [
@@ -131,84 +126,74 @@ const flasherslider = [
 const KitchenImageUrl = [
   //First image url
   {
-    url: "https://source.unsplash.com/black-flat-screen-tv-mounted-on-white-wall-3hEGHI4b4gg",
+    url: "/images/kitchen/k1.avif",
   },
   {
-    url: "https://source.unsplash.com/white-wooden-kitchen-island-and-cupboard-cabinets-near-glass-panel-door-AQl-J19ocWE",
+    url: "/images/kitchen/k2.avif",
   },
-  //Second image url
   {
-    url: "https://source.unsplash.com/white-and-black-kitchen-cabinet-jylx7bVZMIk",
+    url: "/images/kitchen/k3.avif",
   },
-  //Third image url
   {
-    url: "https://source.unsplash.com/black-round-bowl-on-brown-wooden-seat-NWG-vYPZDoM",
+    url: "/images/kitchen/k4.avif",
   },
-
-  //Fourth image url
-
   {
-    url: "https://source.unsplash.com/two-brown-wooden-bar-stools-cc0Gg3BegjE",
+    url: "/images/kitchen/k5.avif",
   },
-
   {
-    url: "https://source.unsplash.com/brown-and-white-wooden-kitchen-cabinet-DQpUeNzRj6s",
+    url: "/images/kitchen/k6.avif",
   },
+ 
 ];
 
 const InteriorImageUrl = [
   //First image url
   {
-    url: "https://source.unsplash.com/black-flat-screen-tv-mounted-on-white-wall-3hEGHI4b4gg",
+    url: "/images/interior/int1.avif",
   },
   {
-    url: "https://source.unsplash.com/white-wooden-kitchen-island-and-cupboard-cabinets-near-glass-panel-door-AQl-J19ocWE",
+    url: "/images/interior/int2.avif",
   },
-  //Second image url
   {
-    url: "https://source.unsplash.com/white-and-black-kitchen-cabinet-jylx7bVZMIk",
+    url: "/images/interior/int3.avif",
   },
-  //Third image url
   {
-    url: "https://source.unsplash.com/black-round-bowl-on-brown-wooden-seat-NWG-vYPZDoM",
+    url: "/images/interior/int4.avif",
   },
-
-  //Fourth image url
-
   {
-    url: "https://source.unsplash.com/two-brown-wooden-bar-stools-cc0Gg3BegjE",
+    url: "/images/interior/int5.avif",
   },
-
   {
-    url: "https://source.unsplash.com/brown-and-white-wooden-kitchen-cabinet-DQpUeNzRj6s",
+    url: "/images/interior/int6.avif",
   },
+ 
 ];
 
 const WardrobeImageUrl = [
   //First image url
   {
-    url: "https://source.unsplash.com/black-flat-screen-tv-mounted-on-white-wall-3hEGHI4b4gg",
+    url: "/images/wardrobe/complete-modular-kitchens-wardrobe-renovation-services-in-delhi-gurgaon-noida-india (1).jpg",
   },
   {
-    url: "https://source.unsplash.com/white-wooden-kitchen-island-and-cupboard-cabinets-near-glass-panel-door-AQl-J19ocWE",
+    url: "/images/wardrobe/complete-modular-kitchens-wardrobe-renovation-services-in-delhi-gurgaon-noida-india (2).jpg",
   },
   //Second image url
   {
-    url: "https://source.unsplash.com/white-and-black-kitchen-cabinet-jylx7bVZMIk",
+    url: "/images/wardrobe/largest-collection-of-modular-kitchens-wardrobes-designs-in-delhi-gurgaon-noida-india (5).jpg",
   },
   //Third image url
   {
-    url: "https://source.unsplash.com/black-round-bowl-on-brown-wooden-seat-NWG-vYPZDoM",
+    url: "/images/wardrobe/modular-kitchen-wardrobe-largest-manufacturers-dealers-in-delhi-gurgaon-noida-faridabad-india (2).jpg",
   },
 
   //Fourth image url
 
   {
-    url: "https://source.unsplash.com/two-brown-wooden-bar-stools-cc0Gg3BegjE",
+    url: "/images/wardrobe/modular-kitchen-wardrobe-largest-manufacturers-dealers-in-delhi-gurgaon-noida-faridabad-india (6).jpg",
   },
 
   {
-    url: "https://source.unsplash.com/brown-and-white-wooden-kitchen-cabinet-DQpUeNzRj6s",
+    url: "/images/wardrobe/larg/complete-modular-kitchens-wardrobe-renovation-services-in-delhi-gurgaon-noida-india (3).jpg",
   },
 ];
 
@@ -355,120 +340,120 @@ const Collection = () => {
   const brand = [
     {
       id: 1,
-      img: "https://www.modularkitcheninnoida.com/assets/images/b1.png",
+      img: "/images/brands/b1.png",
     },
     {
       id: 2,
-      img: "https://www.modularkitcheninnoida.com/assets/images/b2.png",
+      img: "/images/brands/b2.png",
     },
     {
       id: 3,
-      img: "https://www.modularkitcheninnoida.com/assets/images/b3.png",
+      img: "/images/brands/b3.png",
     },
     {
       id: 4,
-      img: "https://www.modularkitcheninnoida.com/assets/images/b4.png",
+      img: "/images/brands/b4.png",
     },
     {
       id: 5,
-      img: "https://www.modularkitcheninnoida.com/assets/images/b5.png",
+      img: "/images/brands/b5.png",
     },
     {
       id: 6,
-      img: "https://www.modularkitcheninnoida.com/assets/images/b6.png",
+      img: "/images/brands/b6.png",
     },
     {
       id: 7,
-      img: "https://www.modularkitcheninnoida.com/assets/images/b7.png",
+      img: "/images/brands/b7.png",
     },
     {
       id: 8,
-      img: "https://www.modularkitcheninnoida.com/assets/images/b8.png",
+      img: "/images/brands/b8.png",
     },
     {
       id: 9,
-      img: "https://www.modularkitcheninnoida.com/assets/images/b9.png",
+      img: "/images/brands/b9.png",
     },
     {
       id: 10,
-      img: "https://www.modularkitcheninnoida.com/assets/images/b10.png",
+      img: "/images/brands/b10.png",
     },
     {
       id: 11,
-      img: "https://www.modularkitcheninnoida.com/assets/images/b1.png",
+      img: "/images/brands/b1.png",
     },
     {
       id: 12,
-      img: "https://www.modularkitcheninnoida.com/assets/images/b2.png",
+      img: "/images/brands/b2.png",
     },
 
     {
       id: 13,
-      img: "https://www.modularkitcheninnoida.com/assets/images/b3.png",
+      img: "/images/brands/b3.png",
     },
     {
       id: 14,
-      img: "https://www.modularkitcheninnoida.com/assets/images/b4.png",
+      img: "/images/brands/b4.png",
     },
   ];
 
   const data = [
     {
       id: 1,
-      img: "https://www.modularkitcheninnoida.com/assets/images/c1.png",
+      img: "/images/brands/c1.png",
     },
     {
       id: 2,
-      img: "https://www.modularkitcheninnoida.com/assets/images/c2.png",
+      img: "/images/brands/c2.png",
     },
     {
       id: 3,
-      img: "https://www.modularkitcheninnoida.com/assets/images/c3.png",
+      img: "/images/brands/c3.png",
     },
     {
       id: 4,
-      img: "https://www.modularkitcheninnoida.com/assets/images/c4.png",
+      img: "/images/brands/c4.png",
     },
     {
       id: 5,
-      img: "https://www.modularkitcheninnoida.com/assets/images/c5.png",
+      img: "/images/brands/c5.png",
     },
     {
       id: 6,
-      img: "https://www.modularkitcheninnoida.com/assets/images/c6.png",
+      img: "/images/brands/c6.png",
     },
     {
       id: 7,
-      img: "https://www.modularkitcheninnoida.com/assets/images/c7.png",
+      img: "/images/brands/c7.png",
     },
     {
       id: 8,
-      img: "https://www.modularkitcheninnoida.com/assets/images/c8.png",
+      img: "/images/brands/c8.png",
     },
     {
       id: 9,
-      img: "https://www.modularkitcheninnoida.com/assets/images/c9.png",
+      img: "/images/brands/c9.png",
     },
     {
       id: 10,
-      img: "https://www.modularkitcheninnoida.com/assets/images/c10.png",
+      img: "/images/brands/c10.png",
     },
     {
       id: 11,
-      img: "https://www.modularkitcheninnoida.com/assets/images/c1.png",
+      img: "/images/brands/c1.png",
     },
     {
       id: 12,
-      img: "https://www.modularkitcheninnoida.com/assets/images/c2.png",
+      img: "/images/brands/c2.png",
     },
 
     {
       id: 13,
-      img: "https://www.modularkitcheninnoida.com/assets/images/c3.png",
+      img: "/images/brands/c3.png",
     },
     {
       id: 14,
-      img: "https://www.modularkitcheninnoida.com/assets/images/c4.png",
+      img: "/images/brands/c4.png",
     },
   ];
 
@@ -1333,30 +1318,7 @@ const Collection = () => {
           ))}
         </div>
       </div>
-      {/* <div className="main">
-        <img src="/images/left.gif" width={50} height={50} />
-        <svg id="rotatingText" viewBox="0 0 200 200" width={200} height={200}>
-          <defs>
-            <path
-              id="circle"
-              d="M 100, 100
-   m -75, 0
-   a 75, 75 0 1, 0 150, 0
-   a 75, 75 0 1, 0 -150, 0
-   "
-            ></path>
-          </defs>
-          <text width={400}>
-            <textPath
-              alignmentBaseline="top"
-              xlinkHref="#circle"
-              className="text"
-            >
-              No.1 Architectural Brand in India
-            </textPath>
-          </text>
-        </svg>
-      </div> */}
+    
 
       <div className="flex items-center justify-c">
         <div className="w-1/6 main2">

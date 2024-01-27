@@ -7,7 +7,7 @@ import Image from "next/image";
 // Sample data for images
 const tabData = [
   // Data for Tab 1
-  [" /images/a.png", " /images/b.png", " /images/c.png", " /images/d.png"],
+  [" /images/ext1.avif", " /images/ext2.avif", " /images/ext3.avif", " /images/ext4.avif"],
   [" /images/e.png", " /images/f.png", " /images/g.png", " /images/h.png"],
   [" /images/i.png", " /images/j.png", " /images/k.png", " /images/l.png"],
   // Data for Tab 2 (and so on...)
